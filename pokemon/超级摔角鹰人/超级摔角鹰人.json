@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 701,
+  "name": "超级摔角鹰人",
+  "species_name": "摔角鹰人",
+  "form_name": "超级摔角鹰人",
+  "wiki_name": "超级摔角鹰人",
+  "directory": "超级摔角鹰人",
+  "source_slug": "hawlucha-mega",
+  "base_stats": {
+    "hp": 78,
+    "attack": 137,
+    "defense": 100,
+    "special_attack": 74,
+    "special_defense": 93,
+    "speed": 118
+  },
+  "base_stat_total": 600,
+  "images": {
+    "normal": {
+      "file": "超级摔角鹰人.png",
+      "source_url": "https://media.52poke.com/wiki/c/cd/Champions_0701M_Sprite.png",
+      "source_filename": "Champions_0701M_Sprite.png",
+      "sha256": "2d5315836523380a50911091f36794158a195499285f36dba1c752664142f169",
+      "width": 128,
+      "height": 128,
+      "bytes": 16567
+    },
+    "shiny": {
+      "file": "超级摔角鹰人_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/7/70/Champions_0701M_s_Sprite.png",
+      "source_filename": "Champions_0701M_s_Sprite.png",
+      "sha256": "fadb6b9ad35743e884686a955c136f646364d0f441271c74cf2068ebb7d83972",
+      "width": 128,
+      "height": 128,
+      "bytes": 16489
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/hawlucha?format=double&season=M-5",
+    "raw_path": "_sources/details/hawlucha.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

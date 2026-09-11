@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 525,
+  "base_stats": {
+    "attack": 55,
+    "defense": 90,
+    "hp": 83,
+    "special_attack": 130,
+    "special_defense": 81,
+    "speed": 86
+  },
+  "dex_number": 970,
+  "directory": "晶光花",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 10868,
+      "file": "晶光花.png",
+      "height": 128,
+      "sha256": "07a4ecac16e4488597b86dc5017fd48d2cbb54baf49a9cf264366fecc911657e",
+      "source_filename": "Champions_0970_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/ba/Champions_0970_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11379,
+      "file": "晶光花_闪光.png",
+      "height": 128,
+      "sha256": "2db1b0f18469b2551d18c8135113c6ea1484ad3251d8dc7bd89e40e39854457a",
+      "source_filename": "Champions_0970_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/59/Champions_0970_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "晶光花",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "glimmora",
+  "species_name": "晶光花",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/glimmora.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/glimmora?format=double&season=M-5"
+  },
+  "wiki_name": "晶光花"
+}

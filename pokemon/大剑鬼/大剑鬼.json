@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 503,
+  "name": "大剑鬼",
+  "species_name": "大剑鬼",
+  "form_name": null,
+  "wiki_name": "大剑鬼",
+  "directory": "大剑鬼",
+  "source_slug": "samurott",
+  "base_stats": {
+    "hp": 95,
+    "attack": 100,
+    "defense": 85,
+    "special_attack": 108,
+    "special_defense": 70,
+    "speed": 70
+  },
+  "base_stat_total": 528,
+  "images": {
+    "normal": {
+      "file": "大剑鬼.png",
+      "source_url": "https://media.52poke.com/wiki/7/73/Champions_0503_Sprite.png",
+      "source_filename": "Champions_0503_Sprite.png",
+      "sha256": "11e16e9379e5addc9d958504e4fde670bfec77ea4b784f7f73b76617122fb4f9",
+      "width": 128,
+      "height": 128,
+      "bytes": 16627
+    },
+    "shiny": {
+      "file": "大剑鬼_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/1/16/Champions_0503_s_Sprite.png",
+      "source_filename": "Champions_0503_s_Sprite.png",
+      "sha256": "0271b98cd35b919134428e5b40883d28403d992f9870f694c7aae8c4a9646d59",
+      "width": 128,
+      "height": 128,
+      "bytes": 16440
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/samurott?format=double&season=M-5",
+    "raw_path": "_sources/details/samurott.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

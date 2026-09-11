@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 681,
+  "name": "坚盾剑怪（盾牌形态）",
+  "species_name": "坚盾剑怪",
+  "form_name": "盾牌形态",
+  "wiki_name": "坚盾剑怪（盾牌形态）",
+  "directory": "坚盾剑怪（盾牌形态）",
+  "source_slug": "aegislash",
+  "base_stats": {
+    "hp": 60,
+    "attack": 50,
+    "defense": 140,
+    "special_attack": 50,
+    "special_defense": 140,
+    "speed": 60
+  },
+  "base_stat_total": 500,
+  "images": {
+    "normal": {
+      "file": "坚盾剑怪（盾牌形态）.png",
+      "source_url": "https://media.52poke.com/wiki/0/06/Champions_0681_Sprite.png",
+      "source_filename": "Champions_0681_Sprite.png",
+      "sha256": "aed233a1fab9d902d54681c424a50346b9e98d4ef0758c0dc8232944a55b831f",
+      "width": 128,
+      "height": 128,
+      "bytes": 14631
+    },
+    "shiny": {
+      "file": "坚盾剑怪（盾牌形态）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/c/c1/Champions_0681_s_Sprite.png",
+      "source_filename": "Champions_0681_s_Sprite.png",
+      "sha256": "013e4c38fec1538ea30a2552951e1242d9d80335818edb7b497d7b1910d8f076",
+      "width": 128,
+      "height": 128,
+      "bytes": 14418
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/aegislash?format=double&season=M-5",
+    "raw_path": "_sources/details/aegislash.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

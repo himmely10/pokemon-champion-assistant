@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 887,
+  "name": "多龙巴鲁托",
+  "species_name": "多龙巴鲁托",
+  "form_name": null,
+  "wiki_name": "多龙巴鲁托",
+  "directory": "多龙巴鲁托",
+  "source_slug": "dragapult",
+  "base_stats": {
+    "hp": 88,
+    "attack": 120,
+    "defense": 75,
+    "special_attack": 100,
+    "special_defense": 75,
+    "speed": 142
+  },
+  "base_stat_total": 600,
+  "images": {
+    "normal": {
+      "file": "多龙巴鲁托.png",
+      "source_url": "https://media.52poke.com/wiki/3/3c/Champions_0887_Sprite.png",
+      "source_filename": "Champions_0887_Sprite.png",
+      "sha256": "4471c60c1c0617f123bd1ef03fa9803509ba9105763dd4624760c0766bca7483",
+      "width": 128,
+      "height": 128,
+      "bytes": 14999
+    },
+    "shiny": {
+      "file": "多龙巴鲁托_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/0/0b/Champions_0887_s_Sprite.png",
+      "source_filename": "Champions_0887_s_Sprite.png",
+      "sha256": "ceaf01126fd71aa7ae81a80bb43175c7d232980d038ae417eef95db66c57eab2",
+      "width": 128,
+      "height": 128,
+      "bytes": 14993
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/dragapult?format=double&season=M-5",
+    "raw_path": "_sources/details/dragapult.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

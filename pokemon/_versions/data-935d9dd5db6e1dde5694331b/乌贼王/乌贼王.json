@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "乌贼王"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 482,
+  "base_stats": {
+    "attack": 92,
+    "defense": 88,
+    "hp": 86,
+    "special_attack": 68,
+    "special_defense": 75,
+    "speed": 73
+  },
+  "data_ready": true,
+  "dex_number": 687,
+  "directory": "乌贼王",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 15049,
+      "file": "乌贼王.png",
+      "height": 128,
+      "sha256": "b084984ccac4e86738035b4e7d4ea60a733c1596f6d6141b1d9432b74752e4e7",
+      "source_filename": "Champions_0687_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b6/Champions_0687_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14986,
+      "file": "乌贼王_闪光.png",
+      "height": 128,
+      "sha256": "9586557532224c1e545360173582d73e01441f85965b11249b0d9004388ebe72",
+      "source_filename": "Champions_0687_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/8a/Champions_0687_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:687:超级乌贼王"
+  ],
+  "mega_item": null,
+  "name": "乌贼王",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 687,
+  "opgg_key": "malamar",
+  "recognition_ready": true,
+  "record_id": "legacy:687:乌贼王",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "malamar",
+  "species_name": "乌贼王",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/malamar"
+  },
+  "type_names": [
+    "恶",
+    "超能力"
+  ],
+  "types": [
+    "dark",
+    "psychic"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/malamar"
+  },
+  "wiki_name": "乌贼王"
+}

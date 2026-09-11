@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 505,
+  "base_stats": {
+    "attack": 130,
+    "defense": 80,
+    "hp": 95,
+    "special_attack": 70,
+    "special_defense": 80,
+    "speed": 50
+  },
+  "dex_number": 614,
+  "directory": "冻原熊",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14709,
+      "file": "冻原熊.png",
+      "height": 128,
+      "sha256": "e52b1815d92be98b07cdb915cb29e0349edb404f8ea7aedc202812e848a6f6dd",
+      "source_filename": "Champions_0614_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/00/Champions_0614_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15332,
+      "file": "冻原熊_闪光.png",
+      "height": 128,
+      "sha256": "142d6895b2aa032ab9edf3608e12f1ea830eb0fd0e0c9f3855acb081320b298d",
+      "source_filename": "Champions_0614_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/8a/Champions_0614_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "冻原熊",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "beartic",
+  "species_name": "冻原熊",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/beartic.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/beartic?format=double&season=M-5"
+  },
+  "wiki_name": "冻原熊"
+}

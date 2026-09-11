@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "超级雷电兽"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 575,
+  "base_stats": {
+    "attack": 75,
+    "defense": 80,
+    "hp": 70,
+    "special_attack": 135,
+    "special_defense": 80,
+    "speed": 135
+  },
+  "data_ready": true,
+  "dex_number": 310,
+  "directory": "超级雷电兽",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级雷电兽",
+  "images": {
+    "normal": {
+      "bytes": 16136,
+      "file": "超级雷电兽.png",
+      "height": 128,
+      "sha256": "e73b870777d3c659b6db14aa486bf3abfac2264ef5802331da341ea1912bc1e5",
+      "source_filename": "Champions_0310M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/84/Champions_0310M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15983,
+      "file": "超级雷电兽_闪光.png",
+      "height": 128,
+      "sha256": "bd794a2891d02b7dd63caecfabc58f823a82cba21f516088743b3d0ddb188517",
+      "source_filename": "Champions_0310M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/57/Champions_0310M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "manectite",
+  "name": "超级雷电兽",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10055,
+  "opgg_key": "mega-manectric",
+  "recognition_ready": true,
+  "record_id": "legacy:310:超级雷电兽",
+  "schema_version": 1,
+  "source_base_key": "manectric",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "manectric-mega",
+  "species_name": "雷电兽",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-manectric"
+  },
+  "type_names": [
+    "电"
+  ],
+  "types": [
+    "electric"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-manectric"
+  },
+  "wiki_name": "超级雷电兽"
+}

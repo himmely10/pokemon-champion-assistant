@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 655,
+  "name": "超级妖火红狐",
+  "species_name": "妖火红狐",
+  "form_name": "超级妖火红狐",
+  "wiki_name": "超级妖火红狐",
+  "directory": "超级妖火红狐",
+  "source_slug": "delphox-mega",
+  "base_stats": {
+    "hp": 75,
+    "attack": 69,
+    "defense": 72,
+    "special_attack": 159,
+    "special_defense": 125,
+    "speed": 134
+  },
+  "base_stat_total": 634,
+  "images": {
+    "normal": {
+      "file": "超级妖火红狐.png",
+      "source_url": "https://media.52poke.com/wiki/a/a5/Champions_0655M_Sprite.png",
+      "source_filename": "Champions_0655M_Sprite.png",
+      "sha256": "d663ac94ccda6ecdc20447b3ea23c778bbc0d81e2be50a4aa275aaa8c403b249",
+      "width": 128,
+      "height": 128,
+      "bytes": 20482
+    },
+    "shiny": {
+      "file": "超级妖火红狐_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/7/74/Champions_0655M_s_Sprite.png",
+      "source_filename": "Champions_0655M_s_Sprite.png",
+      "sha256": "4d6ceee78e2f21e609f715325a168ed6ccdf290b48293075a9f4d448c7eb816b",
+      "width": 128,
+      "height": 128,
+      "bytes": 21240
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/delphox?format=double&season=M-5",
+    "raw_path": "_sources/details/delphox.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

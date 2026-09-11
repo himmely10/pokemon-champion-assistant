@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 80,
+  "name": "超级呆壳兽",
+  "species_name": "呆壳兽",
+  "form_name": "超级呆壳兽",
+  "wiki_name": "超级呆壳兽",
+  "directory": "超级呆壳兽",
+  "source_slug": "slowbro-mega",
+  "base_stats": {
+    "hp": 95,
+    "attack": 75,
+    "defense": 180,
+    "special_attack": 130,
+    "special_defense": 80,
+    "speed": 30
+  },
+  "base_stat_total": 590,
+  "images": {
+    "normal": {
+      "file": "超级呆壳兽.png",
+      "source_url": "https://media.52poke.com/wiki/e/ea/Champions_0080M_Sprite.png",
+      "source_filename": "Champions_0080M_Sprite.png",
+      "sha256": "f75391020e69ae479340f191f105e63c55bcede1a2292cb3284241999ff83f08",
+      "width": 128,
+      "height": 128,
+      "bytes": 14921
+    },
+    "shiny": {
+      "file": "超级呆壳兽_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/e/e2/Champions_0080M_s_Sprite.png",
+      "source_filename": "Champions_0080M_s_Sprite.png",
+      "sha256": "60fcc6d8b8b965191a027cbf1a850a3eeb22fd3812b9a7576662ce33739547b7",
+      "width": 128,
+      "height": 128,
+      "bytes": 14865
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/slowbro?format=double&season=M-5",
+    "raw_path": "_sources/details/slowbro.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

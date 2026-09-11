@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 128,
+  "name": "肯泰罗（水澜种）",
+  "species_name": "肯泰罗",
+  "form_name": "帕底亚的样子水澜种",
+  "wiki_name": "肯泰罗（帕底亚的样子水澜种）",
+  "directory": "肯泰罗（水澜种）",
+  "source_slug": "tauros-paldea-aqua",
+  "base_stats": {
+    "hp": 75,
+    "attack": 110,
+    "defense": 105,
+    "special_attack": 30,
+    "special_defense": 70,
+    "speed": 100
+  },
+  "base_stat_total": 490,
+  "images": {
+    "normal": {
+      "file": "肯泰罗（水澜种）.png",
+      "source_url": "https://media.52poke.com/wiki/c/ca/Champions_0128PA_Sprite.png",
+      "source_filename": "Champions_0128PA_Sprite.png",
+      "sha256": "c7166081495519c5f1975df70c5acd3c32cd23257ccf81b378bdb6cea69612df",
+      "width": 128,
+      "height": 128,
+      "bytes": 11279
+    },
+    "shiny": {
+      "file": "肯泰罗（水澜种）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/1/1c/Champions_0128PA_s_Sprite.png",
+      "source_filename": "Champions_0128PA_s_Sprite.png",
+      "sha256": "0abf59b01ccb0b7014898f4057c36d2cbcf1e3083135a2c2ebc54efd09fdbd66",
+      "width": 128,
+      "height": 128,
+      "bytes": 11795
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tauros-paldea-aqua?format=double&season=M-5",
+    "raw_path": "_sources/details/tauros-paldea-aqua.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

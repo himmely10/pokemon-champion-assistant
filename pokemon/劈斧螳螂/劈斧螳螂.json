@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 900,
+  "name": "劈斧螳螂",
+  "species_name": "劈斧螳螂",
+  "form_name": null,
+  "wiki_name": "劈斧螳螂",
+  "directory": "劈斧螳螂",
+  "source_slug": "kleavor",
+  "base_stats": {
+    "hp": 70,
+    "attack": 135,
+    "defense": 95,
+    "special_attack": 45,
+    "special_defense": 70,
+    "speed": 85
+  },
+  "base_stat_total": 500,
+  "images": {
+    "normal": {
+      "file": "劈斧螳螂.png",
+      "source_url": "https://media.52poke.com/wiki/3/34/Champions_0900_Sprite.png",
+      "source_filename": "Champions_0900_Sprite.png",
+      "sha256": "b74278296954469f7d6522876bdb0b3b9c9aec7222a0f22760f590cbb196abee",
+      "width": 128,
+      "height": 128,
+      "bytes": 13048
+    },
+    "shiny": {
+      "file": "劈斧螳螂_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/7/78/Champions_0900_s_Sprite.png",
+      "source_filename": "Champions_0900_s_Sprite.png",
+      "sha256": "bcf8fe16774716e9f7d921b263de2460e25bbd222dbff7b1e9e45155f1eb9610",
+      "width": 128,
+      "height": 128,
+      "bytes": 12892
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/kleavor?format=double&season=M-5",
+    "raw_path": "_sources/details/kleavor.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

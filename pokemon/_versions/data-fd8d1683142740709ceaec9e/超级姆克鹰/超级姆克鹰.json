@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "超级姆克鹰"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 585,
+  "base_stats": {
+    "attack": 140,
+    "defense": 100,
+    "hp": 85,
+    "special_attack": 60,
+    "special_defense": 90,
+    "speed": 110
+  },
+  "data_ready": true,
+  "dex_number": 398,
+  "directory": "超级姆克鹰",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级姆克鹰",
+  "images": {
+    "normal": {
+      "bytes": 19219,
+      "file": "超级姆克鹰.png",
+      "height": 128,
+      "sha256": "6d732c2aa9fdf381152d431b742a839c06fd5d5d51d980a33afe97e717a23efa",
+      "source_filename": "Champions_0398M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/5a/Champions_0398M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 19745,
+      "file": "超级姆克鹰_闪光.png",
+      "height": 128,
+      "sha256": "1f5fa2b9dfe52a29c35753476c6bc0c21fe291facf6b2d1397f787c13229caab",
+      "source_filename": "Champions_0398M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/3d/Champions_0398M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "staraptorite",
+  "name": "超级姆克鹰",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10308,
+  "opgg_key": "mega-staraptor",
+  "recognition_ready": true,
+  "record_id": "legacy:398:超级姆克鹰",
+  "schema_version": 1,
+  "source_base_key": "staraptor",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "staraptor-mega",
+  "species_name": "姆克鹰",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-staraptor"
+  },
+  "type_names": [
+    "格斗",
+    "飞行"
+  ],
+  "types": [
+    "fighting",
+    "flying"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-staraptor"
+  },
+  "wiki_name": "超级姆克鹰"
+}

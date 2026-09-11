@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "战槌龙"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 495,
+  "base_stats": {
+    "attack": 165,
+    "defense": 60,
+    "hp": 97,
+    "special_attack": 65,
+    "special_defense": 50,
+    "speed": 58
+  },
+  "data_ready": true,
+  "dex_number": 409,
+  "directory": "战槌龙",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 12939,
+      "file": "战槌龙.png",
+      "height": 128,
+      "sha256": "152bcddb3566a470f09e4ece63bd305edbe829df75bda46be7686df00ff23f0e",
+      "source_filename": "Champions_0409_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/cf/Champions_0409_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13950,
+      "file": "战槌龙_闪光.png",
+      "height": 128,
+      "sha256": "9da0a939cb1e127b5c4de99feaa4d8d3b19baf9e77fbf1392ead87c68a2ac71f",
+      "source_filename": "Champions_0409_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/f0/Champions_0409_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "战槌龙",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 409,
+  "opgg_key": "rampardos",
+  "recognition_ready": true,
+  "record_id": "legacy:409:战槌龙",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "rampardos",
+  "species_name": "战槌龙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/rampardos"
+  },
+  "type_names": [
+    "岩石"
+  ],
+  "types": [
+    "rock"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/rampardos"
+  },
+  "wiki_name": "战槌龙"
+}

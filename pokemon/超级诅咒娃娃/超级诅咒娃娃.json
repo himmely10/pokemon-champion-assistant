@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 354,
+  "name": "超级诅咒娃娃",
+  "species_name": "诅咒娃娃",
+  "form_name": "超级诅咒娃娃",
+  "wiki_name": "超级诅咒娃娃",
+  "directory": "超级诅咒娃娃",
+  "source_slug": "banette-mega",
+  "base_stats": {
+    "hp": 64,
+    "attack": 165,
+    "defense": 75,
+    "special_attack": 93,
+    "special_defense": 83,
+    "speed": 75
+  },
+  "base_stat_total": 555,
+  "images": {
+    "normal": {
+      "file": "超级诅咒娃娃.png",
+      "source_url": "https://media.52poke.com/wiki/9/9c/Champions_0354M_Sprite.png",
+      "source_filename": "Champions_0354M_Sprite.png",
+      "sha256": "c2a50d8460d60f73a0e186b8672873cc9399c3611b4a8c7f2648ffc7a35ab20b",
+      "width": 128,
+      "height": 128,
+      "bytes": 14357
+    },
+    "shiny": {
+      "file": "超级诅咒娃娃_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/3/3b/Champions_0354M_s_Sprite.png",
+      "source_filename": "Champions_0354M_s_Sprite.png",
+      "sha256": "7b9ba1776e8bfb2b6f4f489d950579d72936c5508d6799643f3e360eb1f8b6a5",
+      "width": 128,
+      "height": 128,
+      "bytes": 14740
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/banette?format=double&season=M-5",
+    "raw_path": "_sources/details/banette.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

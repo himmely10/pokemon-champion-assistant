@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 516,
+  "name": "冷水猿",
+  "species_name": "冷水猿",
+  "form_name": null,
+  "wiki_name": "冷水猿",
+  "directory": "冷水猿",
+  "source_slug": "simipour",
+  "base_stats": {
+    "hp": 75,
+    "attack": 98,
+    "defense": 63,
+    "special_attack": 98,
+    "special_defense": 63,
+    "speed": 101
+  },
+  "base_stat_total": 498,
+  "images": {
+    "normal": {
+      "file": "冷水猿.png",
+      "source_url": "https://media.52poke.com/wiki/e/e5/Champions_0516_Sprite.png",
+      "source_filename": "Champions_0516_Sprite.png",
+      "sha256": "6b0d960806a81b564c62785164493fc96ad42e97c733f3a1854545f661747d97",
+      "width": 128,
+      "height": 128,
+      "bytes": 15938
+    },
+    "shiny": {
+      "file": "冷水猿_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/e/e2/Champions_0516_s_Sprite.png",
+      "source_filename": "Champions_0516_s_Sprite.png",
+      "sha256": "e7e2b1e767fe1ffb2288f82763da0d45642710bece0f4c42f7dd0b25857af461",
+      "width": 128,
+      "height": 128,
+      "bytes": 15832
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/simipour?format=double&season=M-5",
+    "raw_path": "_sources/details/simipour.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

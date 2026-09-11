@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 952,
+  "name": "狠辣椒",
+  "species_name": "狠辣椒",
+  "form_name": null,
+  "wiki_name": "狠辣椒",
+  "directory": "狠辣椒",
+  "source_slug": "scovillain",
+  "base_stats": {
+    "hp": 65,
+    "attack": 108,
+    "defense": 65,
+    "special_attack": 108,
+    "special_defense": 65,
+    "speed": 75
+  },
+  "base_stat_total": 486,
+  "images": {
+    "normal": {
+      "file": "狠辣椒.png",
+      "source_url": "https://media.52poke.com/wiki/b/b6/Champions_0952_Sprite.png",
+      "source_filename": "Champions_0952_Sprite.png",
+      "sha256": "5ed26b273b9dd54ad4d1343b33d5926713af6ae76fb0f969e8a4d6b107bffaad",
+      "width": 128,
+      "height": 128,
+      "bytes": 14682
+    },
+    "shiny": {
+      "file": "狠辣椒_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/3/37/Champions_0952_s_Sprite.png",
+      "source_filename": "Champions_0952_s_Sprite.png",
+      "sha256": "b5059bb18f1a864e757405361772260517b7b54eff162c158ea1497d83070866",
+      "width": 128,
+      "height": 128,
+      "bytes": 15285
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/scovillain?format=double&season=M-5",
+    "raw_path": "_sources/details/scovillain.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

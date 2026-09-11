@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 480,
+  "base_stats": {
+    "attack": 80,
+    "defense": 86,
+    "hp": 82,
+    "special_attack": 85,
+    "special_defense": 75,
+    "speed": 72
+  },
+  "dex_number": 685,
+  "directory": "胖甜妮",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 11950,
+      "file": "胖甜妮.png",
+      "height": 128,
+      "sha256": "9828b167c4e06a23c8a63d2f25fc98cb40d56d246770b8b57fa5e4d0b2840ca3",
+      "source_filename": "Champions_0685_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/66/Champions_0685_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12050,
+      "file": "胖甜妮_闪光.png",
+      "height": 128,
+      "sha256": "9aca0502ee06a9c675fa77c2cd7ce1479be13c77b36e4270595c258f36365011",
+      "source_filename": "Champions_0685_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/42/Champions_0685_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "胖甜妮",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "slurpuff",
+  "species_name": "胖甜妮",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/slurpuff.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/slurpuff?format=double&season=M-5"
+  },
+  "wiki_name": "胖甜妮"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 959,
+  "name": "巨锻匠",
+  "species_name": "巨锻匠",
+  "form_name": null,
+  "wiki_name": "巨锻匠",
+  "directory": "巨锻匠",
+  "source_slug": "tinkaton",
+  "base_stats": {
+    "hp": 85,
+    "attack": 75,
+    "defense": 77,
+    "special_attack": 70,
+    "special_defense": 105,
+    "speed": 94
+  },
+  "base_stat_total": 506,
+  "images": {
+    "normal": {
+      "file": "巨锻匠.png",
+      "source_url": "https://media.52poke.com/wiki/4/45/Champions_0959_Sprite.png",
+      "source_filename": "Champions_0959_Sprite.png",
+      "sha256": "9218ffce496fe2977fd0ffb2a0bbf6b33f577f40b11eff311fe93b116d25c68f",
+      "width": 128,
+      "height": 128,
+      "bytes": 18860
+    },
+    "shiny": {
+      "file": "巨锻匠_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/f/f4/Champions_0959_s_Sprite.png",
+      "source_filename": "Champions_0959_s_Sprite.png",
+      "sha256": "0afe6aee34cb0010ad865d7a6041c6a6f99d6ffa75c063a3aeb0e7a768924079",
+      "width": 128,
+      "height": 128,
+      "bytes": 18540
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tinkaton?format=double&season=M-5",
+    "raw_path": "_sources/details/tinkaton.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

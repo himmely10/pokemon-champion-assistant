@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "幽尾玄鱼 (雌性的样子)"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 530,
+  "base_stats": {
+    "attack": 92,
+    "defense": 65,
+    "hp": 120,
+    "special_attack": 100,
+    "special_defense": 75,
+    "speed": 78
+  },
+  "data_ready": true,
+  "dex_number": 902,
+  "directory": "幽尾玄鱼（雌性）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "雌性的样子",
+  "images": {
+    "normal": {
+      "bytes": 17364,
+      "file": "幽尾玄鱼（雌性）.png",
+      "height": 128,
+      "sha256": "26de5a0ed9843f7c4313779e40c34116bacbb9991833a3b6820ebed43ffcf838",
+      "source_filename": "Champions_0902F_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b1/Champions_0902F_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 17503,
+      "file": "幽尾玄鱼（雌性）_闪光.png",
+      "height": 128,
+      "sha256": "d4b0cef6af10e3b98a6651b87c35344f686e335b0ac8cc4004c2f0c66a3c2a10",
+      "source_filename": "Champions_0902F_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/46/Champions_0902F_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "幽尾玄鱼（雌性）",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10248,
+  "opgg_key": "basculegion-female",
+  "recognition_ready": true,
+  "record_id": "legacy:902:幽尾玄鱼（雌性）",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "basculegion-female",
+  "species_name": "幽尾玄鱼",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/basculegion-female"
+  },
+  "type_names": [
+    "水",
+    "幽灵"
+  ],
+  "types": [
+    "water",
+    "ghost"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/basculegion-female"
+  },
+  "wiki_name": "幽尾玄鱼（雌性的样子）"
+}

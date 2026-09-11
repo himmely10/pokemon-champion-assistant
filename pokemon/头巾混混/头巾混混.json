@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 560,
+  "name": "头巾混混",
+  "species_name": "头巾混混",
+  "form_name": null,
+  "wiki_name": "头巾混混",
+  "directory": "头巾混混",
+  "source_slug": "scrafty",
+  "base_stats": {
+    "hp": 65,
+    "attack": 90,
+    "defense": 115,
+    "special_attack": 45,
+    "special_defense": 115,
+    "speed": 58
+  },
+  "base_stat_total": 488,
+  "images": {
+    "normal": {
+      "file": "头巾混混.png",
+      "source_url": "https://media.52poke.com/wiki/7/7f/Champions_0560_Sprite.png",
+      "source_filename": "Champions_0560_Sprite.png",
+      "sha256": "f46f2d754fec4a33f75d408e06f7d221f34ad426348a942a1bc2fbdd636a08ac",
+      "width": 128,
+      "height": 128,
+      "bytes": 11512
+    },
+    "shiny": {
+      "file": "头巾混混_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/f/f0/Champions_0560_s_Sprite.png",
+      "source_filename": "Champions_0560_s_Sprite.png",
+      "sha256": "a82f9bee2befa6b1af8c0390e3f56a76ca8d3e8f8c52414bfd88b29463a27216",
+      "width": 128,
+      "height": 128,
+      "bytes": 11626
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/scrafty?format=double&season=M-5",
+    "raw_path": "_sources/details/scrafty.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

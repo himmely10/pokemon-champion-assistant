@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 65,
+  "name": "胡地",
+  "species_name": "胡地",
+  "form_name": null,
+  "wiki_name": "胡地",
+  "directory": "胡地",
+  "source_slug": "alakazam",
+  "base_stats": {
+    "hp": 55,
+    "attack": 50,
+    "defense": 45,
+    "special_attack": 135,
+    "special_defense": 95,
+    "speed": 120
+  },
+  "base_stat_total": 500,
+  "images": {
+    "normal": {
+      "file": "胡地.png",
+      "source_url": "https://media.52poke.com/wiki/2/2c/Champions_0065_Sprite.png",
+      "source_filename": "Champions_0065_Sprite.png",
+      "sha256": "88276b486a15462e23b5f728669f26ac5ce0200d5779f481132343ca6eac94f2",
+      "width": 128,
+      "height": 128,
+      "bytes": 20462
+    },
+    "shiny": {
+      "file": "胡地_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/b/b0/Champions_0065_s_Sprite.png",
+      "source_filename": "Champions_0065_s_Sprite.png",
+      "sha256": "fd1833618681655338f999a4acf741fb0938998218cab7acc8b565e83676c536",
+      "width": 128,
+      "height": 128,
+      "bytes": 20845
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/alakazam?format=double&season=M-5",
+    "raw_path": "_sources/details/alakazam.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

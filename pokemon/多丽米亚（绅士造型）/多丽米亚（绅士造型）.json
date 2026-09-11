@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dex_number": 676,
+  "name": "多丽米亚（绅士造型）",
+  "species_name": "多丽米亚",
+  "form_name": "绅士造型",
+  "wiki_name": "多丽米亚（绅士造型）",
+  "directory": "多丽米亚（绅士造型）",
+  "source_slug": "furfrou",
+  "base_stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 60,
+    "special_attack": 65,
+    "special_defense": 90,
+    "speed": 102
+  },
+  "base_stat_total": 472,
+  "images": {
+    "normal": {
+      "file": "多丽米亚（绅士造型）.png",
+      "source_url": "https://media.52poke.com/wiki/6/63/Champions_0676Da_Sprite.png",
+      "source_filename": "Champions_0676Da_Sprite.png",
+      "sha256": "d68055fdfb32c0d8d21598d1527be5d5bbf895a68076dab769ede0fa66120110",
+      "width": 128,
+      "height": 128,
+      "bytes": 11998
+    },
+    "shiny": {
+      "file": "多丽米亚（绅士造型）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/82/Champions_0676Da_s_Sprite.png",
+      "source_filename": "Champions_0676Da_s_Sprite.png",
+      "sha256": "1e26c1aa302fe026c6e98ee687532d59d8a874c825ee901fb649a9df86333172",
+      "width": 128,
+      "height": 128,
+      "bytes": 11588
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/furfrou?format=double&season=M-5",
+    "raw_path": "_sources/details/furfrou.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "shared_species_profile",
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。"
+}

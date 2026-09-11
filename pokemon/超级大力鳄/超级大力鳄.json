@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 160,
+  "name": "超级大力鳄",
+  "species_name": "大力鳄",
+  "form_name": "超级大力鳄",
+  "wiki_name": "超级大力鳄",
+  "directory": "超级大力鳄",
+  "source_slug": "feraligatr-mega",
+  "base_stats": {
+    "hp": 85,
+    "attack": 160,
+    "defense": 125,
+    "special_attack": 89,
+    "special_defense": 93,
+    "speed": 78
+  },
+  "base_stat_total": 630,
+  "images": {
+    "normal": {
+      "file": "超级大力鳄.png",
+      "source_url": "https://media.52poke.com/wiki/0/0c/Champions_0160M_Sprite.png",
+      "source_filename": "Champions_0160M_Sprite.png",
+      "sha256": "63e79438bb6d2b0ad993918941d36378a997e6dad37669f05a5a33cf1cfe793c",
+      "width": 128,
+      "height": 128,
+      "bytes": 15333
+    },
+    "shiny": {
+      "file": "超级大力鳄_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/4/47/Champions_0160M_s_Sprite.png",
+      "source_filename": "Champions_0160M_s_Sprite.png",
+      "sha256": "25fae665489570a39b94d89d8fb162028dcceaaf745dadc88901456a104aa398",
+      "width": 128,
+      "height": 128,
+      "bytes": 15603
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/feraligatr?format=double&season=M-5",
+    "raw_path": "_sources/details/feraligatr.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

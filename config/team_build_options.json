@@ -1,0 +1,7055 @@
+{
+  "abilities": {
+    "adaptability": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "与自己同属性的招式威力 不会是1.5倍，而是会变为2倍。",
+      "id": 91,
+      "key": "adaptability",
+      "name": "适应力",
+      "regulation": "M-A"
+    },
+    "aerilate": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "一般属性的招式会变为飞行属性， 且威力会变为1.2倍。",
+      "id": 184,
+      "key": "aerilate",
+      "name": "飞行皮肤",
+      "regulation": "M-A"
+    },
+    "aftermath": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到接触类招式的影响而陷入昏厥时， 会给予对手其最大HP的1/4的伤害。",
+      "id": 106,
+      "key": "aftermath",
+      "name": "诱爆",
+      "regulation": "M-A"
+    },
+    "air-lock": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "所有天气的影响都会消失。",
+      "id": 76,
+      "key": "air-lock",
+      "name": "气闸",
+      "regulation": "M-A"
+    },
+    "analytic": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "在回合的最后使出招式时， 招式的威力会变为1.3倍。",
+      "id": 148,
+      "key": "analytic",
+      "name": "分析",
+      "regulation": "M-A"
+    },
+    "anger-point": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "被对手的攻击击中要害时， 自己的攻击会提高至第6阶。",
+      "id": 83,
+      "key": "anger-point",
+      "name": "愤怒穴位",
+      "regulation": "M-A"
+    },
+    "anger-shell": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "因攻击使HP降到一半以下时，宝可梦会愤怒。防御和特防会降低，但攻击、特攻和速度会提高。",
+      "id": 271,
+      "key": "anger-shell",
+      "name": "愤怒甲壳",
+      "regulation": "M-A"
+    },
+    "anticipation": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "出场时，若对手拥有对自己效果绝佳 或一击必杀的招式，则可以察觉。",
+      "id": 107,
+      "key": "anticipation",
+      "name": "危险预知",
+      "regulation": "M-A"
+    },
+    "aqua-boost": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10055,
+      "key": "aqua-boost",
+      "name": "Aqua Boost",
+      "regulation": "M-A"
+    },
+    "arena-trap": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "在战斗中让对手无法逃走。",
+      "id": 71,
+      "key": "arena-trap",
+      "name": "沙穴",
+      "regulation": "M-A"
+    },
+    "armor-tail": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "对手无法对自己和同伴使出先制招式。",
+      "id": 296,
+      "key": "armor-tail",
+      "name": "尾甲",
+      "regulation": "M-A"
+    },
+    "aroma-veil": {
+      "buffEffectRefs": [
+        {
+          "id": 14,
+          "label": {
+            "key": "BTR_STATE_SYN_13_03",
+            "name": "着迷状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 29,
+          "label": {
+            "key": "BTR_STATE_SYN_34_03",
+            "name": "挑衅状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 18,
+          "label": {
+            "key": "BTR_STATE_SYN_18_03",
+            "name": "无法连续状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 21,
+          "label": {
+            "key": "BTR_STATE_SYN_24_03",
+            "name": "招式封锁状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 20,
+          "label": {
+            "key": "BTR_STATE_SYN_111_03",
+            "name": "回复封锁状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 16,
+          "label": {
+            "key": "BTR_STATE_SYN_16_03",
+            "name": "再来一次状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "自己和同伴不会陷入着迷、挑衅、 无法连续、招式封锁、回复封锁、 再来一次状态。",
+      "id": 165,
+      "key": "aroma-veil",
+      "name": "芳香幕",
+      "regulation": "M-A"
+    },
+    "as-one-glastrier": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "兼备蕾冠王的紧张感和 雪暴马的苍白嘶鸣这两种特性。",
+      "id": 266,
+      "key": "as-one-glastrier",
+      "name": "人马一体",
+      "regulation": "M-A"
+    },
+    "as-one-spectrier": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "兼备蕾冠王的紧张感和 灵幽马的漆黑嘶鸣这两种特性。",
+      "id": 267,
+      "key": "as-one-spectrier",
+      "name": "人马一体",
+      "regulation": "M-A"
+    },
+    "aura-break": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "让气场的效果发生逆转， 降低威力。",
+      "id": 188,
+      "key": "aura-break",
+      "name": "气场破坏",
+      "regulation": "M-A"
+    },
+    "aura-guard": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到对手使用的接触类物理招式攻击时，伤害减半。",
+      "id": 319,
+      "isNew": true,
+      "key": "aura-guard",
+      "name": "气场守护",
+      "regulation": "M-C"
+    },
+    "bad-dreams": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 6,
+          "label": {
+            "key": "ui_control_nemuri",
+            "name": "睡眠",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "给予睡眠状态的对手伤害。",
+      "id": 123,
+      "key": "bad-dreams",
+      "name": "梦魇",
+      "regulation": "M-A"
+    },
+    "ball-fetch": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "没有携带道具时， 会拾取第１个投出后 捕捉失败的精灵球。",
+      "id": 237,
+      "key": "ball-fetch",
+      "name": "捡球",
+      "regulation": "M-A"
+    },
+    "battery": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "会提高我方的 特殊招式的威力。",
+      "id": 217,
+      "key": "battery",
+      "name": "蓄电池",
+      "regulation": "M-A"
+    },
+    "battle-armor": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "不会被对手的攻击击中要害。",
+      "id": 4,
+      "key": "battle-armor",
+      "name": "战斗盔甲",
+      "regulation": "M-A"
+    },
+    "battle-bond": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "打倒对手时，与训练家的牵绊会增强， 变为小智版甲贺忍蛙。 飞水手里剑的招式威力会增强。",
+      "id": 210,
+      "key": "battle-bond",
+      "name": "牵绊变身",
+      "regulation": "M-A"
+    },
+    "beads-of-ruin": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "除自己以外的所有宝可梦的特防会降低。",
+      "id": 287,
+      "key": "beads-of-ruin",
+      "name": "灾祸之玉",
+      "regulation": "M-A"
+    },
+    "beast-boost": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "打倒对手的时候， 自己最高的那项能力会提高。",
+      "id": 224,
+      "key": "beast-boost",
+      "name": "异兽提升",
+      "regulation": "M-A"
+    },
+    "berserk": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "HP因对手的攻击而变为1/2以下时， 特攻会提高1阶。",
+      "id": 201,
+      "key": "berserk",
+      "name": "怒火冲天",
+      "regulation": "M-A"
+    },
+    "big-pecks": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "不会被对手的招式或特性降低防御。",
+      "id": 145,
+      "key": "big-pecks",
+      "name": "健壮胸肌",
+      "regulation": "M-A"
+    },
+    "black-hole": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10048,
+      "key": "black-hole",
+      "name": "Black Hole",
+      "regulation": "M-A"
+    },
+    "blaze": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "HP变为最大HP的1/3以下时， 火属性招式的威力会变为1.5倍。",
+      "id": 66,
+      "key": "blaze",
+      "name": "猛火",
+      "regulation": "M-A"
+    },
+    "bodyguard": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10027,
+      "key": "bodyguard",
+      "name": "Bodyguard",
+      "regulation": "M-A"
+    },
+    "bonanza": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10044,
+      "key": "bonanza",
+      "name": "Bonanza",
+      "regulation": "M-A"
+    },
+    "bulletproof": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "球弹类招式将无效。",
+      "id": 171,
+      "key": "bulletproof",
+      "name": "防弹",
+      "regulation": "M-A"
+    },
+    "calming": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10037,
+      "key": "calming",
+      "name": "Calming",
+      "regulation": "M-A"
+    },
+    "celebrate": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10035,
+      "key": "celebrate",
+      "name": "Celebrate",
+      "regulation": "M-A"
+    },
+    "cheek-pouch": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "吃掉树果后，在其效果的基础上 还会回复最大HP的1/3。",
+      "id": 167,
+      "key": "cheek-pouch",
+      "name": "颊囊",
+      "regulation": "M-A"
+    },
+    "chilling-neigh": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "打倒对手时 会用冰冷的声音嘶鸣 并提高攻击。",
+      "id": 264,
+      "key": "chilling-neigh",
+      "name": "苍白嘶鸣",
+      "regulation": "M-A"
+    },
+    "chlorophyll": {
+      "buffEffectRefs": [
+        {
+          "id": 1,
+          "label": {
+            "key": "BTR_STATE_SYN_01_03",
+            "name": "大晴天状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "大晴天状态时，速度会变为2倍。",
+      "id": 34,
+      "key": "chlorophyll",
+      "name": "叶绿素",
+      "regulation": "M-A"
+    },
+    "clear-body": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "不会因对手的招式或特性 而被降低能力。",
+      "id": 29,
+      "key": "clear-body",
+      "name": "恒净之躯",
+      "regulation": "M-A"
+    },
+    "climber": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10053,
+      "key": "climber",
+      "name": "Climber",
+      "regulation": "M-A"
+    },
+    "cloud-nine": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "会消除所有天气的影响。",
+      "id": 13,
+      "key": "cloud-nine",
+      "name": "无关天气",
+      "regulation": "M-A"
+    },
+    "color-change": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "自己的属性会变为 从对手处所受招式的属性。",
+      "id": 16,
+      "key": "color-change",
+      "name": "变色",
+      "regulation": "M-A"
+    },
+    "comatose": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "总是半梦半醒的状态， 绝对不会醒来。 可以就这么睡着进行攻击。",
+      "id": 213,
+      "key": "comatose",
+      "name": "绝对睡眠",
+      "regulation": "M-A"
+    },
+    "commander": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "进入吃吼霸口中，从里面发号施令。",
+      "id": 279,
+      "key": "commander",
+      "name": "发号施令",
+      "regulation": "M-A"
+    },
+    "competitive": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "被对手降低能力时， 特攻会提高2阶。",
+      "id": 172,
+      "key": "competitive",
+      "name": "好胜",
+      "regulation": "M-A"
+    },
+    "compound-eyes": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "招式的命中率会变为1.3倍。",
+      "id": 14,
+      "key": "compound-eyes",
+      "name": "复眼",
+      "regulation": "M-A"
+    },
+    "confidence": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10042,
+      "key": "confidence",
+      "name": "Confidence",
+      "regulation": "M-A"
+    },
+    "conqueror": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10057,
+      "key": "conqueror",
+      "name": "Conqueror",
+      "regulation": "M-A"
+    },
+    "contrary": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "能力的变化会逆转， 原本提高时会降低， 原本降低时会提高。",
+      "id": 126,
+      "key": "contrary",
+      "name": "唱反调",
+      "regulation": "M-A"
+    },
+    "corrosion": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "ui_control_doku",
+            "name": "中毒",
+            "namespace": "ui_control"
+          }
+        },
+        {
+          "id": 5,
+          "label": {
+            "key": "ui_control_moudoku",
+            "name": "剧毒",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "能让钢属性、毒属性 也陷入中毒、剧毒状态。",
+      "id": 212,
+      "key": "corrosion",
+      "name": "腐蚀",
+      "regulation": "M-A"
+    },
+    "costar": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "出场时，会复制我方同伴的能力变化。",
+      "id": 294,
+      "key": "costar",
+      "name": "同台共演",
+      "regulation": "M-A"
+    },
+    "cotton-down": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到攻击后撒下棉絮， 降低除自己以外的 所有宝可梦的速度。",
+      "id": 238,
+      "key": "cotton-down",
+      "name": "棉絮",
+      "regulation": "M-A"
+    },
+    "cud-chew": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "在吃掉树果后的下一回合结束时， 会再吃掉仅1次相同的树果。",
+      "id": 291,
+      "key": "cud-chew",
+      "name": "反刍",
+      "regulation": "M-A"
+    },
+    "curious-medicine": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "出场时，会让同伴的能力变化复原。",
+      "id": 261,
+      "key": "curious-medicine",
+      "name": "怪药",
+      "regulation": "M-A"
+    },
+    "cursed-body": {
+      "buffEffectRefs": [
+        {
+          "id": 21,
+          "label": {
+            "key": "BTR_STATE_SYN_24_03",
+            "name": "招式封锁状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "受到招式的伤害时，有30%的机率 会让对手在4回合内变为招式封锁状态。",
+      "id": 130,
+      "key": "cursed-body",
+      "name": "咒术之躯",
+      "regulation": "M-A"
+    },
+    "cute-charm": {
+      "buffEffectRefs": [
+        {
+          "id": 14,
+          "label": {
+            "key": "BTR_STATE_SYN_13_03",
+            "name": "着迷状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "受到异性的接触类招式影响时， 有30%的机率会让对手陷入着迷状态。",
+      "id": 56,
+      "key": "cute-charm",
+      "name": "迷人之躯",
+      "regulation": "M-A"
+    },
+    "damp": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "所有宝可梦都无法使用爆炸类招式， 会引发爆炸的特性也不会发动。",
+      "id": 6,
+      "key": "damp",
+      "name": "湿气",
+      "regulation": "M-A"
+    },
+    "dancer": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "有谁使出跳舞招式时， 自己也能就这么接着使出跳舞招式。",
+      "id": 216,
+      "key": "dancer",
+      "name": "舞者",
+      "regulation": "M-A"
+    },
+    "dark-aura": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "全体的恶属性招式变强。",
+      "id": 186,
+      "key": "dark-aura",
+      "name": "暗黑气场",
+      "regulation": "M-A"
+    },
+    "dauntless-shield": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "出场时， 防御会提高。",
+      "id": 235,
+      "key": "dauntless-shield",
+      "name": "不屈之盾",
+      "regulation": "M-A"
+    },
+    "daze": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10038,
+      "key": "daze",
+      "name": "Daze",
+      "regulation": "M-A"
+    },
+    "dazzling": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "让对手吓一跳， 使其无法对我方使出先制招式。",
+      "id": 219,
+      "key": "dazzling",
+      "name": "鲜艳之躯",
+      "regulation": "M-A"
+    },
+    "decoy": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10059,
+      "key": "decoy",
+      "name": "Decoy",
+      "regulation": "M-A"
+    },
+    "deep-sleep": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10013,
+      "key": "deep-sleep",
+      "name": "Deep Sleep",
+      "regulation": "M-A"
+    },
+    "defeatist": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "ＨＰ减半时， 会变得软弱， 攻击和特攻会减半。",
+      "id": 129,
+      "key": "defeatist",
+      "name": "软弱",
+      "regulation": "M-A"
+    },
+    "defiant": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "被对手降低能力时， 攻击会提高2阶。",
+      "id": 128,
+      "key": "defiant",
+      "name": "不服输",
+      "regulation": "M-A"
+    },
+    "delta-stream": {
+      "buffEffectRefs": [
+        {
+          "id": 75,
+          "label": {
+            "key": "BTR_STATE_SYN_71_03",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "变为令飞行属性的弱点 消失的天气。",
+      "id": 191,
+      "key": "delta-stream",
+      "name": "德尔塔气流",
+      "regulation": "M-A"
+    },
+    "desolate-land": {
+      "buffEffectRefs": [
+        {
+          "id": 73,
+          "label": {
+            "key": "BTR_STATE_SYN_69_03",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "变为不会受到 水属性攻击的天气。",
+      "id": 190,
+      "key": "desolate-land",
+      "name": "终结之地",
+      "regulation": "M-A"
+    },
+    "disguise": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "若在化形的样子时受到招式的伤害， 则会消耗最大HP的1/8来代替受到的伤害， 并变为现形的样子。",
+      "id": 209,
+      "key": "disguise",
+      "name": "画皮",
+      "regulation": "M-A"
+    },
+    "disgust": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10051,
+      "key": "disgust",
+      "name": "Disgust",
+      "regulation": "M-A"
+    },
+    "dodge": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10008,
+      "key": "dodge",
+      "name": "Dodge",
+      "regulation": "M-A"
+    },
+    "download": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "比较对手的防御和特防， 根据较低的那项能力 相应地提高自己的攻击或特攻。",
+      "id": 88,
+      "key": "download",
+      "name": "下载",
+      "regulation": "M-A"
+    },
+    "dragonize": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "一般属性的招式会变为龙属性， 威力会变为1.2倍。",
+      "id": 312,
+      "isNew": false,
+      "key": "dragonize",
+      "name": "龙皮肤",
+      "regulation": "M-A"
+    },
+    "dragons-maw": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "龙属性的招式威力会提高。",
+      "id": 263,
+      "key": "dragons-maw",
+      "name": "龙颚",
+      "regulation": "M-A"
+    },
+    "drizzle": {
+      "buffEffectRefs": [
+        {
+          "id": 2,
+          "label": {
+            "key": "BTR_STATE_SYN_02_03",
+            "name": "下雨状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "自出场时起，在5回合内 会变为下雨状态。",
+      "id": 2,
+      "key": "drizzle",
+      "name": "降雨",
+      "regulation": "M-A"
+    },
+    "drought": {
+      "buffEffectRefs": [
+        {
+          "id": 1,
+          "label": {
+            "key": "BTR_STATE_SYN_01_03",
+            "name": "大晴天状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "自出场时起，在5回合内 会变为大晴天状态。",
+      "id": 70,
+      "key": "drought",
+      "name": "日照",
+      "regulation": "M-A"
+    },
+    "dry-skin": {
+      "buffEffectRefs": [
+        {
+          "id": 2,
+          "label": {
+            "key": "BTR_STATE_SYN_02_03",
+            "name": "下雨状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 1,
+          "label": {
+            "key": "BTR_STATE_SYN_01_03",
+            "name": "大晴天状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "水属性的招式将无效，且会回复最大HP的1/4， 受到的火属性招式的伤害会变为1.25倍。 下雨状态时，会在回合结束时回复最大HP的1/8， 但大晴天状态时，会在回合结束时减少最大HP的1/8。",
+      "id": 87,
+      "key": "dry-skin",
+      "name": "干燥皮肤",
+      "regulation": "M-A"
+    },
+    "early-bird": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 6,
+          "label": {
+            "key": "ui_control_nemuri",
+            "name": "睡眠",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "即使陷入睡眠状态， 也会以2倍的速度提早醒来。",
+      "id": 48,
+      "key": "early-bird",
+      "name": "早起",
+      "regulation": "M-A"
+    },
+    "earth-eater": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "地面属性的招式将无效， 且会回复最大HP的1/4。",
+      "id": 297,
+      "key": "earth-eater",
+      "name": "食土",
+      "regulation": "M-A"
+    },
+    "eelevate": {
+      "buffEffectRefs": [
+        {
+          "id": 41,
+          "label": {
+            "key": "BTR_STATE_SYN_48_03",
+            "name": "撒菱状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 31,
+          "label": {
+            "key": "BTR_STATE_SYN_37_03",
+            "name": "毒菱状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 33,
+          "label": {
+            "key": "BTR_STATE_SYN_40_03",
+            "name": "黏黏网状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "会变为不在地面上， 地面属性的招式、撒菱、毒菱、 黏黏网状态将无效。 用攻击打倒对手时， 自己最高的那项能力会提高1阶。",
+      "id": 313,
+      "isNew": false,
+      "key": "eelevate",
+      "name": "鳗鳗高升",
+      "regulation": "M-B"
+    },
+    "effect-spore": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "ui_control_doku",
+            "name": "中毒",
+            "namespace": "ui_control"
+          }
+        },
+        {
+          "id": 1,
+          "label": {
+            "key": "ui_control_mahi",
+            "name": "麻痹",
+            "namespace": "ui_control"
+          }
+        },
+        {
+          "id": 6,
+          "label": {
+            "key": "ui_control_nemuri",
+            "name": "睡眠",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "受到接触类招式影响时， 有30%的机率会让对手陷入 中毒、麻痹、睡眠之中的一种状态。",
+      "id": 27,
+      "key": "effect-spore",
+      "name": "孢子",
+      "regulation": "M-A"
+    },
+    "electric-surge": {
+      "buffEffectRefs": [
+        {
+          "id": 5,
+          "label": {
+            "key": "BTR_STATE_SYN_05_03",
+            "name": "电气场地状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "自出场时起，在5回合内 会让整个场地变为电气场地状态。",
+      "id": 226,
+      "key": "electric-surge",
+      "name": "电气制造者",
+      "regulation": "M-A"
+    },
+    "electromorphosis": {
+      "buffEffectRefs": [
+        {
+          "id": 24,
+          "label": {
+            "key": "BTR_STATE_SYN_28_03",
+            "name": "电属性威力提高状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "受到招式的伤害时， 会变为电属性威力提升状态。",
+      "id": 280,
+      "key": "electromorphosis",
+      "name": "电力转换",
+      "regulation": "M-A"
+    },
+    "embody-aspect": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "太晶化时，会提高某项能力。",
+      "id": 301,
+      "key": "embody-aspect",
+      "name": "面影辉映",
+      "regulation": "M-A"
+    },
+    "emergency-exit": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "ＨＰ变为一半时， 为了回避危险， 会退回到同行队伍中。",
+      "id": 194,
+      "key": "emergency-exit",
+      "name": "危险回避",
+      "regulation": "M-A"
+    },
+    "explode": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10045,
+      "key": "explode",
+      "name": "Explode",
+      "regulation": "M-A"
+    },
+    "fairy-aura": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "所有宝可梦的妖精属性招式的 威力会变为1.33倍。",
+      "id": 187,
+      "key": "fairy-aura",
+      "name": "妖精气场",
+      "regulation": "M-A"
+    },
+    "filter": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "因效果绝佳的招式 而受到的伤害会变为3/4。",
+      "id": 111,
+      "key": "filter",
+      "name": "过滤",
+      "regulation": "M-A"
+    },
+    "fire-mane": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "火属性招式的威力会变为1.5倍。",
+      "id": 316,
+      "isNew": false,
+      "key": "fire-mane",
+      "name": "火焰鬃毛",
+      "regulation": "M-B"
+    },
+    "flame-body": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 3,
+          "label": {
+            "key": "ui_control_yakedo",
+            "name": "灼伤",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "受到接触类招式影响时， 有30%的机率会让对手陷入灼伤状态。",
+      "id": 49,
+      "key": "flame-body",
+      "name": "火焰之躯",
+      "regulation": "M-A"
+    },
+    "flame-boost": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10054,
+      "key": "flame-boost",
+      "name": "Flame Boost",
+      "regulation": "M-A"
+    },
+    "flare-boost": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 3,
+          "label": {
+            "key": "ui_control_yakedo",
+            "name": "灼伤",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "变为灼伤状态时， 特殊招式的威力会提高。",
+      "id": 138,
+      "key": "flare-boost",
+      "name": "受热激升",
+      "regulation": "M-A"
+    },
+    "flash-fire": {
+      "buffEffectRefs": [
+        {
+          "id": 68,
+          "label": {
+            "key": "BTR_STATE_SYN_121_03",
+            "name": "引火状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "火属性的招式攻击将无效， 且自己会变为引火状态。",
+      "id": 18,
+      "key": "flash-fire",
+      "name": "引火",
+      "regulation": "M-A"
+    },
+    "flower-gift": {
+      "buffEffectRefs": [
+        {
+          "id": 1,
+          "label": {
+            "key": "BTR_STATE_SYN_01_03",
+            "name": "大晴天状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "晴朗天气时， 自己与同伴的攻击和 特防能力会提高。",
+      "id": 122,
+      "key": "flower-gift",
+      "name": "花之礼",
+      "regulation": "M-A"
+    },
+    "flower-veil": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "我方的草属性宝可梦能力不会降低， 也不会陷入异常状态。",
+      "id": 166,
+      "key": "flower-veil",
+      "name": "花幕",
+      "regulation": "M-A"
+    },
+    "fluffy": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "因接触类招式而受到的伤害会减半。 因火属性招式而受到的伤害会变为2倍。",
+      "id": 218,
+      "key": "fluffy",
+      "name": "毛茸茸",
+      "regulation": "M-A"
+    },
+    "forecast": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到天气的影响，会变为 水属性、火属性、冰属性之中的一种。",
+      "id": 59,
+      "key": "forecast",
+      "name": "阴晴不定",
+      "regulation": "M-A"
+    },
+    "forewarn": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "出场时，会从对手的招式中 读取1种威力高的招式。",
+      "id": 108,
+      "key": "forewarn",
+      "name": "预知梦",
+      "regulation": "M-A"
+    },
+    "fortune": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10043,
+      "key": "fortune",
+      "name": "Fortune",
+      "regulation": "M-A"
+    },
+    "friend-guard": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "会让同伴受到的伤害变为3/4。",
+      "id": 132,
+      "key": "friend-guard",
+      "name": "友情防守",
+      "regulation": "M-A"
+    },
+    "frighten": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10039,
+      "key": "frighten",
+      "name": "Frighten",
+      "regulation": "M-A"
+    },
+    "frisk": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "出场时，能得知对手携带的道具。",
+      "id": 119,
+      "key": "frisk",
+      "name": "察觉",
+      "regulation": "M-A"
+    },
+    "frostbite": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10010,
+      "key": "frostbite",
+      "name": "Frostbite",
+      "regulation": "M-A"
+    },
+    "full-metal-body": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "不会因为对手的招式或特性 而被降低能力。",
+      "id": 230,
+      "key": "full-metal-body",
+      "name": "金属防护",
+      "regulation": "M-A"
+    },
+    "fur-coat": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "因物理招式而受到的伤害会减半。",
+      "id": 169,
+      "key": "fur-coat",
+      "name": "毛皮大衣",
+      "regulation": "M-A"
+    },
+    "gale-wings": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "HP全满时，飞行属性招式的 优先度会提高1阶。",
+      "id": 177,
+      "key": "gale-wings",
+      "name": "疾风之翼",
+      "regulation": "M-A"
+    },
+    "galvanize": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "一般属性的招式 会变为电属性。 威力会少量提高。",
+      "id": 206,
+      "key": "galvanize",
+      "name": "电气皮肤",
+      "regulation": "M-A"
+    },
+    "gluttony": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "会在HP变为1/2以下时，就吃掉原本 在HP变为1/4以下时才会吃的树果。",
+      "id": 82,
+      "key": "gluttony",
+      "name": "贪吃鬼",
+      "regulation": "M-A"
+    },
+    "good-as-gold": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "来自对手的变化招式将无效。",
+      "id": 283,
+      "key": "good-as-gold",
+      "name": "黄金之躯",
+      "regulation": "M-A"
+    },
+    "gooey": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到接触类招式影响时， 会让对手的速度降低1阶。",
+      "id": 183,
+      "key": "gooey",
+      "name": "黏滑",
+      "regulation": "M-A"
+    },
+    "gorilla-tactics": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "虽然攻击会提高， 但是只能使出 一开始所选的招式。",
+      "id": 255,
+      "key": "gorilla-tactics",
+      "name": "一猩一意",
+      "regulation": "M-A"
+    },
+    "grass-cloak": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10034,
+      "key": "grass-cloak",
+      "name": "Grass Cloak",
+      "regulation": "M-A"
+    },
+    "grass-pelt": {
+      "buffEffectRefs": [
+        {
+          "id": 6,
+          "label": {
+            "key": "BTR_STATE_SYN_06_03",
+            "name": "青草场地状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "在青草场地时， 防御会提高。",
+      "id": 179,
+      "key": "grass-pelt",
+      "name": "草之毛皮",
+      "regulation": "M-A"
+    },
+    "grassy-surge": {
+      "buffEffectRefs": [
+        {
+          "id": 6,
+          "label": {
+            "key": "BTR_STATE_SYN_06_03",
+            "name": "青草场地状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "出场时， 会布下青草场地。",
+      "id": 229,
+      "key": "grassy-surge",
+      "name": "青草制造者",
+      "regulation": "M-A"
+    },
+    "grim-neigh": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "打倒对手时 会用恐怖的声音嘶鸣 并提高特攻。",
+      "id": 265,
+      "key": "grim-neigh",
+      "name": "漆黑嘶鸣",
+      "regulation": "M-A"
+    },
+    "guard-dog": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到威吓时，攻击会提高。也不会被迫替换下场。",
+      "id": 275,
+      "key": "guard-dog",
+      "name": "看门犬",
+      "regulation": "M-A"
+    },
+    "gulp": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10017,
+      "key": "gulp",
+      "name": "Gulp",
+      "regulation": "M-A"
+    },
+    "gulp-missile": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "冲浪或潜水时会叼来猎物。 受到伤害时， 会吐出猎物进行攻击。",
+      "id": 241,
+      "key": "gulp-missile",
+      "name": "一口导弹",
+      "regulation": "M-A"
+    },
+    "guts": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 3,
+          "label": {
+            "key": "ui_control_yakedo",
+            "name": "灼伤",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "陷入异常状态时，攻击会变为1.5倍， 且会无视灼伤状态造成的 物理招式的伤害减半的效果。",
+      "id": 62,
+      "key": "guts",
+      "name": "毅力",
+      "regulation": "M-A"
+    },
+    "hadron-engine": {
+      "buffEffectRefs": [
+        {
+          "id": 5,
+          "label": {
+            "key": "BTR_STATE_SYN_05_03",
+            "name": "电气场地状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "出场时，会将场地变为电气场地。",
+      "id": 289,
+      "key": "hadron-engine",
+      "name": "强子引擎",
+      "regulation": "M-A"
+    },
+    "harvest": {
+      "buffEffectRefs": [
+        {
+          "id": 1,
+          "label": {
+            "key": "BTR_STATE_SYN_01_03",
+            "name": "大晴天状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "回合结束时，有50%的机率 会制作出已使用的树果。 大晴天状态时，必定会制作出树果。",
+      "id": 139,
+      "key": "harvest",
+      "name": "收获",
+      "regulation": "M-A"
+    },
+    "healer": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "回合结束时，有50%的机率 会治愈异常状态的同伴。",
+      "id": 131,
+      "key": "healer",
+      "name": "治愈之心",
+      "regulation": "M-A"
+    },
+    "heatproof": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 3,
+          "label": {
+            "key": "ui_control_yakedo",
+            "name": "灼伤",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "因火属性招式而受到的伤害会减半。 因灼伤状态而受到的伤害也会减半。",
+      "id": 85,
+      "key": "heatproof",
+      "name": "耐热",
+      "regulation": "M-A"
+    },
+    "heavy-metal": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "自己的重量会变为2倍。",
+      "id": 134,
+      "key": "heavy-metal",
+      "name": "重金属",
+      "regulation": "M-A"
+    },
+    "herbivore": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10018,
+      "key": "herbivore",
+      "name": "Herbivore",
+      "regulation": "M-A"
+    },
+    "hero": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10028,
+      "key": "hero",
+      "name": "Hero",
+      "regulation": "M-A"
+    },
+    "high-rise": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10052,
+      "key": "high-rise",
+      "name": "High-rise",
+      "regulation": "M-A"
+    },
+    "honey-gather": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "战斗结束时， 有时候会捡来甜甜蜜。",
+      "id": 118,
+      "key": "honey-gather",
+      "name": "采蜜",
+      "regulation": "M-A"
+    },
+    "hospitality": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "出场时，会让同伴的HP 回复该同伴最大HP的1/4。",
+      "id": 299,
+      "key": "hospitality",
+      "name": "款待",
+      "regulation": "M-A"
+    },
+    "hot-blooded": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10020,
+      "key": "hot-blooded",
+      "name": "Hot Blooded",
+      "regulation": "M-A"
+    },
+    "huge-power": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "物理招式的威力会变为2倍。",
+      "id": 37,
+      "key": "huge-power",
+      "name": "大力士",
+      "regulation": "M-A"
+    },
+    "hunger-switch": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "回合结束时，会在满腹花纹和 空腹花纹之间交替改变样子。",
+      "id": 258,
+      "key": "hunger-switch",
+      "name": "饱了又饿",
+      "regulation": "M-A"
+    },
+    "hustle": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "使用物理招式时， 自己的攻击会变为1.5倍， 但命中率会变为0.8倍。",
+      "id": 55,
+      "key": "hustle",
+      "name": "活力",
+      "regulation": "M-A"
+    },
+    "hydration": {
+      "buffEffectRefs": [
+        {
+          "id": 2,
+          "label": {
+            "key": "BTR_STATE_SYN_02_03",
+            "name": "下雨状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "下雨状态时，在回合结束时 异常状态会痊愈。",
+      "id": 93,
+      "key": "hydration",
+      "name": "湿润之躯",
+      "regulation": "M-A"
+    },
+    "hyper-cutter": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "不会被对手的招式或特性降低攻击。",
+      "id": 52,
+      "key": "hyper-cutter",
+      "name": "怪力钳",
+      "regulation": "M-A"
+    },
+    "ice-body": {
+      "buffEffectRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "BTR_STATE_SYN_04_03",
+            "name": "下雪状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "下雪状态时，会在回合结束时 回复最大HP的1/16。",
+      "id": 115,
+      "key": "ice-body",
+      "name": "冰冻之躯",
+      "regulation": "M-A"
+    },
+    "ice-face": {
+      "buffEffectRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "BTR_STATE_SYN_04_03",
+            "name": "下雪状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "头部的冰会代替自己承受 物理攻击，但是样子会改变。 下冰雹时，冰会恢复原状。",
+      "id": 248,
+      "key": "ice-face",
+      "name": "结冻头",
+      "regulation": "M-A"
+    },
+    "ice-scales": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "由于有冰鳞粉的守护， 受到的特殊攻击伤害会减半。",
+      "id": 246,
+      "key": "ice-scales",
+      "name": "冰鳞粉",
+      "regulation": "M-A"
+    },
+    "illuminate": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "会无视对手的闪避率变化， 且命中率也不会被降低。",
+      "id": 35,
+      "key": "illuminate",
+      "name": "发光",
+      "regulation": "M-A"
+    },
+    "illusion": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "会以同行队伍中最后一只宝可梦的样子出场。 受到招式的伤害时会复原。",
+      "id": 149,
+      "key": "illusion",
+      "name": "幻觉",
+      "regulation": "M-A"
+    },
+    "immunity": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "ui_control_doku",
+            "name": "中毒",
+            "namespace": "ui_control"
+          }
+        },
+        {
+          "id": 5,
+          "label": {
+            "key": "ui_control_moudoku",
+            "name": "剧毒",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "不会陷入中毒、剧毒状态。",
+      "id": 17,
+      "key": "immunity",
+      "name": "免疫",
+      "regulation": "M-A"
+    },
+    "imposter": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "会变身为当前面对的宝可梦。 HP以外的能力也会变为相同。",
+      "id": 150,
+      "key": "imposter",
+      "name": "变身者",
+      "regulation": "M-A"
+    },
+    "infiltrator": {
+      "buffEffectRefs": [
+        {
+          "id": 37,
+          "label": {
+            "key": "BTR_STATE_SYN_44_03",
+            "name": "光墙状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 38,
+          "label": {
+            "key": "BTR_STATE_SYN_45_03",
+            "name": "反射壁状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 54,
+          "label": {
+            "key": "BTR_STATE_SYN_74_03",
+            "name": "极光幕状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 26,
+          "label": {
+            "key": "BTR_STATE_SYN_31_03",
+            "name": "神秘守护状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "能无视对手的光墙、反射壁、 极光幕、神秘守护、替身使用招式。",
+      "id": 151,
+      "key": "infiltrator",
+      "name": "穿透",
+      "regulation": "M-A"
+    },
+    "innards-out": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到会导致昏厥的招式的伤害时， 会将受到的来自对手的伤害反还给对手。",
+      "id": 215,
+      "key": "innards-out",
+      "name": "飞出的内在物",
+      "regulation": "M-A"
+    },
+    "inner-focus": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "不会因对手的攻击而畏缩， 威吓也将无效。",
+      "id": 39,
+      "key": "inner-focus",
+      "name": "精神力",
+      "regulation": "M-A"
+    },
+    "insomnia": {
+      "buffEffectRefs": [
+        {
+          "id": 15,
+          "label": {
+            "key": "BTR_STATE_SYN_15_03",
+            "name": "瞌睡状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [
+        {
+          "id": 6,
+          "label": {
+            "key": "ui_control_nemuri",
+            "name": "睡眠",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "不会陷入睡眠、瞌睡状态。",
+      "id": 15,
+      "key": "insomnia",
+      "name": "不眠",
+      "regulation": "M-A"
+    },
+    "instinct": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10007,
+      "key": "instinct",
+      "name": "Instinct",
+      "regulation": "M-A"
+    },
+    "interference": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10040,
+      "key": "interference",
+      "name": "Interference",
+      "regulation": "M-A"
+    },
+    "intimidate": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "出场时，会让对手的攻击降低1阶。",
+      "id": 22,
+      "key": "intimidate",
+      "name": "威吓",
+      "regulation": "M-A"
+    },
+    "intrepid-sword": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "出场时， 攻击会提高。",
+      "id": 234,
+      "key": "intrepid-sword",
+      "name": "不挠之剑",
+      "regulation": "M-A"
+    },
+    "iron-barbs": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "用铁刺给予接触到自己的 对手伤害。",
+      "id": 160,
+      "key": "iron-barbs",
+      "name": "铁刺",
+      "regulation": "M-A"
+    },
+    "iron-fist": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "拳类招式的威力会变为1.2倍。",
+      "id": 89,
+      "key": "iron-fist",
+      "name": "铁拳",
+      "regulation": "M-A"
+    },
+    "jagged-edge": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10009,
+      "key": "jagged-edge",
+      "name": "Jagged Edge",
+      "regulation": "M-A"
+    },
+    "justified": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到恶属性招式的伤害时， 攻击会提高1阶。",
+      "id": 154,
+      "key": "justified",
+      "name": "正义之心",
+      "regulation": "M-A"
+    },
+    "keen-eye": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "会无视对手的闪避率变化， 且命中率也不会被降低。",
+      "id": 51,
+      "key": "keen-eye",
+      "name": "锐利目光",
+      "regulation": "M-A"
+    },
+    "klutz": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "这只宝可梦携带的道具 不会发挥效果。",
+      "id": 103,
+      "key": "klutz",
+      "name": "笨拙",
+      "regulation": "M-A"
+    },
+    "last-bastion": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10029,
+      "key": "last-bastion",
+      "name": "Last Bastion",
+      "regulation": "M-A"
+    },
+    "leaf-guard": {
+      "buffEffectRefs": [
+        {
+          "id": 1,
+          "label": {
+            "key": "BTR_STATE_SYN_01_03",
+            "name": "大晴天状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "大晴天状态时，不会陷入异常状态。",
+      "id": 102,
+      "key": "leaf-guard",
+      "name": "叶子防守",
+      "regulation": "M-A"
+    },
+    "levitate": {
+      "buffEffectRefs": [
+        {
+          "id": 41,
+          "label": {
+            "key": "BTR_STATE_SYN_48_03",
+            "name": "撒菱状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 31,
+          "label": {
+            "key": "BTR_STATE_SYN_37_03",
+            "name": "毒菱状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 33,
+          "label": {
+            "key": "BTR_STATE_SYN_40_03",
+            "name": "黏黏网状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "会变为不在地面上， 地面属性的招式、撒菱、毒菱、 黏黏网状态将无效。",
+      "id": 26,
+      "key": "levitate",
+      "name": "飘浮",
+      "regulation": "M-A"
+    },
+    "libero": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "变为与自己使出的招式 相同的属性。",
+      "id": 236,
+      "key": "libero",
+      "name": "自由者",
+      "regulation": "M-A"
+    },
+    "life-force": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10022,
+      "key": "life-force",
+      "name": "Life Force",
+      "regulation": "M-A"
+    },
+    "light-metal": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "自己的重量会变为1/2。",
+      "id": 135,
+      "key": "light-metal",
+      "name": "轻金属",
+      "regulation": "M-A"
+    },
+    "lightning-rod": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "将电属性的招式吸引到自己身上。 该招式将无效，且特攻会提高1阶。",
+      "id": 31,
+      "key": "lightning-rod",
+      "name": "避雷针",
+      "regulation": "M-A"
+    },
+    "limber": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 1,
+          "label": {
+            "key": "ui_control_mahi",
+            "name": "麻痹",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "不会陷入麻痹状态。",
+      "id": 7,
+      "key": "limber",
+      "name": "柔软",
+      "regulation": "M-A"
+    },
+    "lingering-aroma": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "接触到自己的对手，特性会变为甩不掉的气味。",
+      "id": 268,
+      "key": "lingering-aroma",
+      "name": "甩不掉的气味",
+      "regulation": "M-A"
+    },
+    "liquid-ooze": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "吸收了污泥浆的对手 会因强烈的恶臭 而受到伤害，减少ＨＰ。",
+      "id": 64,
+      "key": "liquid-ooze",
+      "name": "污泥浆",
+      "regulation": "M-A"
+    },
+    "liquid-voice": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "声音类招式会变为水属性。",
+      "id": 204,
+      "key": "liquid-voice",
+      "name": "湿润之声",
+      "regulation": "M-A"
+    },
+    "long-reach": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "使用的招式将不再是接触类招式。",
+      "id": 203,
+      "key": "long-reach",
+      "name": "远隔",
+      "regulation": "M-A"
+    },
+    "lullaby": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10036,
+      "key": "lullaby",
+      "name": "Lullaby",
+      "regulation": "M-A"
+    },
+    "lunchbox": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10023,
+      "key": "lunchbox",
+      "name": "Lunchbox",
+      "regulation": "M-A"
+    },
+    "magic-bounce": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "不会受到对手的变化招式影响， 且会将其反弹给对手。",
+      "id": 156,
+      "key": "magic-bounce",
+      "name": "魔法镜",
+      "regulation": "M-A"
+    },
+    "magic-guard": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "攻击以外的伤害将无效。",
+      "id": 98,
+      "key": "magic-guard",
+      "name": "魔法防守",
+      "regulation": "M-A"
+    },
+    "magician": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "在自己没有携带道具时， 会夺走用招式给予伤害的对手的道具。",
+      "id": 170,
+      "key": "magician",
+      "name": "魔术师",
+      "regulation": "M-A"
+    },
+    "magma-armor": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 2,
+          "label": {
+            "key": "ui_control_koori",
+            "name": "冰冻",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "不会陷入冰冻状态。",
+      "id": 40,
+      "key": "magma-armor",
+      "name": "熔岩铠甲",
+      "regulation": "M-A"
+    },
+    "magnet-pull": {
+      "buffEffectRefs": [
+        {
+          "id": 22,
+          "label": {
+            "key": "BTR_STATE_SYN_25_03",
+            "name": "无法逃走状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "用磁力吸住钢属性的宝可梦， 使其无法逃走。",
+      "id": 42,
+      "key": "magnet-pull",
+      "name": "磁力",
+      "regulation": "M-A"
+    },
+    "marvel-scale": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "陷入异常状态时，防御会变为1.5倍。",
+      "id": 63,
+      "key": "marvel-scale",
+      "name": "神奇鳞片",
+      "regulation": "M-A"
+    },
+    "medic": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10021,
+      "key": "medic",
+      "name": "Medic",
+      "regulation": "M-A"
+    },
+    "mega-launcher": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "波动／波导类招式的威力会变为1.5倍。",
+      "id": 178,
+      "key": "mega-launcher",
+      "name": "超级发射器",
+      "regulation": "M-A"
+    },
+    "mega-sol": {
+      "buffEffectRefs": [
+        {
+          "id": 1,
+          "label": {
+            "key": "BTR_STATE_SYN_01_03",
+            "name": "大晴天状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "即使天气不是大晴天状态， 也能以大晴天状态使用招式。",
+      "id": 315,
+      "isNew": false,
+      "key": "mega-sol",
+      "name": "超级日光",
+      "regulation": "M-A"
+    },
+    "melee": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10025,
+      "key": "melee",
+      "name": "Melee",
+      "regulation": "M-A"
+    },
+    "merciless": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "ui_control_doku",
+            "name": "中毒",
+            "namespace": "ui_control"
+          }
+        },
+        {
+          "id": 5,
+          "label": {
+            "key": "ui_control_moudoku",
+            "name": "剧毒",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "攻击陷入中毒、剧毒状态的对手时， 必定会击中要害。",
+      "id": 196,
+      "key": "merciless",
+      "name": "不仁不义",
+      "regulation": "M-A"
+    },
+    "mimicry": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "属性会根据场地而改变。",
+      "id": 250,
+      "key": "mimicry",
+      "name": "拟态",
+      "regulation": "M-A"
+    },
+    "minds-eye": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "一般属性和格斗属性的招式能击中幽灵属性的宝可梦。",
+      "id": 300,
+      "key": "minds-eye",
+      "name": "心眼",
+      "regulation": "M-A"
+    },
+    "minus": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "拥有正电或负电特性的同伴在场上时， 自己的特攻会变为1.5倍。",
+      "id": 58,
+      "key": "minus",
+      "name": "负电",
+      "regulation": "M-A"
+    },
+    "mirror-armor": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "自己不会受到降低能力的效果影响， 且会将其反弹给对手。",
+      "id": 240,
+      "key": "mirror-armor",
+      "name": "镜甲",
+      "regulation": "M-A"
+    },
+    "misty-surge": {
+      "buffEffectRefs": [
+        {
+          "id": 7,
+          "label": {
+            "key": "BTR_STATE_SYN_07_03",
+            "name": "薄雾场地状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "出场时， 会布下薄雾场地。",
+      "id": 228,
+      "key": "misty-surge",
+      "name": "薄雾制造者",
+      "regulation": "M-A"
+    },
+    "mold-breaker": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "能不受对手的特性影响使出招式。 也存在例外的特性。",
+      "id": 104,
+      "key": "mold-breaker",
+      "name": "破格",
+      "regulation": "M-A"
+    },
+    "mood-maker": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10041,
+      "key": "mood-maker",
+      "name": "Mood Maker",
+      "regulation": "M-A"
+    },
+    "moody": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "回合结束时，某种能力会提高2阶， 而另外某种能力会降低1阶。",
+      "id": 141,
+      "key": "moody",
+      "name": "心情不定",
+      "regulation": "M-A"
+    },
+    "motor-drive": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "电属性的招式将无效， 且速度会提高1阶。",
+      "id": 78,
+      "key": "motor-drive",
+      "name": "电气引擎",
+      "regulation": "M-A"
+    },
+    "mountaineer": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10001,
+      "key": "mountaineer",
+      "name": "Mountaineer",
+      "regulation": "M-A"
+    },
+    "moxie": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "用攻击打倒对手时， 攻击会提高1阶。",
+      "id": 153,
+      "key": "moxie",
+      "name": "自信过度",
+      "regulation": "M-A"
+    },
+    "multiscale": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "HP全满时， 受到的伤害会减半。",
+      "id": 136,
+      "key": "multiscale",
+      "name": "多重鳞片",
+      "regulation": "M-A"
+    },
+    "multitype": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "自己的属性会根据持有的石板 或Ｚ纯晶的属性而改变。",
+      "id": 121,
+      "key": "multitype",
+      "name": "多属性",
+      "regulation": "M-A"
+    },
+    "mummy": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到接触类招式影响时， 会让对手的特性变为木乃伊。",
+      "id": 152,
+      "key": "mummy",
+      "name": "木乃伊",
+      "regulation": "M-A"
+    },
+    "mycelium-might": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "使用变化招式时，行动会变慢，但不受对手特性的干扰。",
+      "id": 298,
+      "key": "mycelium-might",
+      "name": "菌丝之力",
+      "regulation": "M-A"
+    },
+    "natural-cure": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "回到同行队伍后，异常状态会痊愈。",
+      "id": 30,
+      "key": "natural-cure",
+      "name": "自然回复",
+      "regulation": "M-A"
+    },
+    "neuroforce": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "效果绝佳的攻击， 威力会变得更强。",
+      "id": 233,
+      "key": "neuroforce",
+      "name": "脑核之力",
+      "regulation": "M-A"
+    },
+    "neutralizing-gas": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "特性为化学变化气体的宝可梦在场时， 场上所有宝可梦的 特性效果都会消失或者无法生效。",
+      "id": 256,
+      "key": "neutralizing-gas",
+      "name": "化学变化气体",
+      "regulation": "M-A"
+    },
+    "no-guard": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "双方招式的命中率都会变为100%。",
+      "id": 99,
+      "key": "no-guard",
+      "name": "无防守",
+      "regulation": "M-A"
+    },
+    "nomad": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10032,
+      "key": "nomad",
+      "name": "Nomad",
+      "regulation": "M-A"
+    },
+    "normalize": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "无论是什么属性的招式， 全部会变为一般属性。 威力会少量提高。",
+      "id": 96,
+      "key": "normalize",
+      "name": "一般皮肤",
+      "regulation": "M-A"
+    },
+    "nurse": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10024,
+      "key": "nurse",
+      "name": "Nurse",
+      "regulation": "M-A"
+    },
+    "oblivious": {
+      "buffEffectRefs": [
+        {
+          "id": 14,
+          "label": {
+            "key": "BTR_STATE_SYN_13_03",
+            "name": "着迷状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 29,
+          "label": {
+            "key": "BTR_STATE_SYN_34_03",
+            "name": "挑衅状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "不会陷入着迷、挑衅状态。 威吓也将无效。",
+      "id": 12,
+      "key": "oblivious",
+      "name": "迟钝",
+      "regulation": "M-A"
+    },
+    "omnipotent": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10046,
+      "key": "omnipotent",
+      "name": "Omnipotent",
+      "regulation": "M-A"
+    },
+    "opportunist": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "对手的能力提高时， 自己也会同样地提高能力。",
+      "id": 290,
+      "key": "opportunist",
+      "name": "跟风",
+      "regulation": "M-A"
+    },
+    "orichalcum-pulse": {
+      "buffEffectRefs": [
+        {
+          "id": 1,
+          "label": {
+            "key": "BTR_STATE_SYN_01_03",
+            "name": "大晴天状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "出场时，会将天气变为晴朗。",
+      "id": 288,
+      "key": "orichalcum-pulse",
+      "name": "绯红脉动",
+      "regulation": "M-A"
+    },
+    "overcoat": {
+      "buffEffectRefs": [
+        {
+          "id": 3,
+          "label": {
+            "key": "BTR_STATE_SYN_03_03",
+            "name": "沙暴状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "因沙暴状态而受到的伤害将无效。 粉末类招式、特性也将无效。",
+      "id": 142,
+      "key": "overcoat",
+      "name": "防尘",
+      "regulation": "M-A"
+    },
+    "overgrow": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "因HP变为最大HP的1/3以下时， 草属性招式的威力会变为1.5倍。",
+      "id": 65,
+      "key": "overgrow",
+      "name": "茂盛",
+      "regulation": "M-A"
+    },
+    "own-tempo": {
+      "buffEffectRefs": [
+        {
+          "id": 13,
+          "label": {
+            "key": "BTR_STATE_SYN_12_03",
+            "name": "混乱状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "不会陷入混乱状态， 威吓也将无效。",
+      "id": 20,
+      "key": "own-tempo",
+      "name": "我行我素",
+      "regulation": "M-A"
+    },
+    "parental-bond": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "母亲和孩子合计能攻击2次。 孩子的攻击威力为母亲的0.25倍。",
+      "id": 185,
+      "key": "parental-bond",
+      "name": "亲子爱",
+      "regulation": "M-A"
+    },
+    "parry": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10006,
+      "key": "parry",
+      "name": "Parry",
+      "regulation": "M-A"
+    },
+    "pastel-veil": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "ui_control_doku",
+            "name": "中毒",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "自己和同伴都不会 陷入中毒的异常状态。",
+      "id": 257,
+      "key": "pastel-veil",
+      "name": "粉彩护幕",
+      "regulation": "M-A"
+    },
+    "perception": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10005,
+      "key": "perception",
+      "name": "Perception",
+      "regulation": "M-A"
+    },
+    "perish-body": {
+      "buffEffectRefs": [
+        {
+          "id": 40,
+          "label": {
+            "key": "BTR_STATE_SYN_47_03",
+            "name": "终焉状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "受到接触类招式攻击时， 双方都会在３回合后变为濒死状态。 替换后效果消失。",
+      "id": 253,
+      "key": "perish-body",
+      "name": "灭亡之躯",
+      "regulation": "M-A"
+    },
+    "pickpocket": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "在自己没有携带道具时， 若受到接触类招式影响， 则会盗取对手的道具。",
+      "id": 124,
+      "key": "pickpocket",
+      "name": "顺手牵羊",
+      "regulation": "M-A"
+    },
+    "pickup": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "自己没有携带道具时， 会在回合结束时捡来 自己以外的宝可梦消耗的道具。",
+      "id": 53,
+      "key": "pickup",
+      "name": "捡拾",
+      "regulation": "M-A"
+    },
+    "piercing-drill": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "使用接触类招式时， 会无视对手的防守效果， 给予原本的1/4的伤害。 对手的防守效果以外的效果会发动。",
+      "id": 311,
+      "isNew": false,
+      "key": "piercing-drill",
+      "name": "贯穿钻",
+      "regulation": "M-A"
+    },
+    "pixilate": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "一般属性的招式会变为妖精属性， 且威力会变为1.2倍。",
+      "id": 182,
+      "key": "pixilate",
+      "name": "妖精皮肤",
+      "regulation": "M-A"
+    },
+    "plus": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "拥有正电或负电特性的同伴在场上时， 自己的特攻会变为1.5倍。",
+      "id": 57,
+      "key": "plus",
+      "name": "正电",
+      "regulation": "M-A"
+    },
+    "poison-heal": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "ui_control_doku",
+            "name": "中毒",
+            "namespace": "ui_control"
+          }
+        },
+        {
+          "id": 5,
+          "label": {
+            "key": "ui_control_moudoku",
+            "name": "剧毒",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "陷入中毒、剧毒状态时， 在回合结束时HP不会减少， 而是会回复最大HP的1/8。",
+      "id": 90,
+      "key": "poison-heal",
+      "name": "毒疗",
+      "regulation": "M-A"
+    },
+    "poison-point": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "ui_control_doku",
+            "name": "中毒",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "受到接触类招式影响时， 有30%的机率会让对手陷入中毒状态。",
+      "id": 38,
+      "key": "poison-point",
+      "name": "毒刺",
+      "regulation": "M-A"
+    },
+    "poison-puppeteer": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "ui_control_doku",
+            "name": "中毒",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "被桃歹郎的招式变为中毒状态的宝可梦，也会变为混乱状态。",
+      "id": 310,
+      "key": "poison-puppeteer",
+      "name": "毒傀儡",
+      "regulation": "M-A"
+    },
+    "poison-touch": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "ui_control_doku",
+            "name": "中毒",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "用接触类招式击中对手时， 有30%的机率会让其陷入中毒状态。",
+      "id": 143,
+      "key": "poison-touch",
+      "name": "毒手",
+      "regulation": "M-A"
+    },
+    "power-construct": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "ＨＰ变为一半时， 细胞们会赶来支援， 变为完全体形态。",
+      "id": 211,
+      "key": "power-construct",
+      "name": "群聚变形",
+      "regulation": "M-A"
+    },
+    "power-nap": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10014,
+      "key": "power-nap",
+      "name": "Power Nap",
+      "regulation": "M-A"
+    },
+    "power-of-alchemy": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "继承被打倒的同伴的特性， 变为相同的特性。",
+      "id": 223,
+      "key": "power-of-alchemy",
+      "name": "化学之力",
+      "regulation": "M-A"
+    },
+    "power-spot": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "只要处在相邻位置， 招式的威力就会提高。",
+      "id": 249,
+      "key": "power-spot",
+      "name": "能量点",
+      "regulation": "M-A"
+    },
+    "prankster": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "变化招式的优先度会提高1阶。",
+      "id": 158,
+      "key": "prankster",
+      "name": "恶作剧之心",
+      "regulation": "M-A"
+    },
+    "pressure": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "让对手对自己使用的招式的PP额外减少1。",
+      "id": 46,
+      "key": "pressure",
+      "name": "压迫感",
+      "regulation": "M-A"
+    },
+    "pride": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10012,
+      "key": "pride",
+      "name": "Pride",
+      "regulation": "M-A"
+    },
+    "primordial-sea": {
+      "buffEffectRefs": [
+        {
+          "id": 74,
+          "label": {
+            "key": "BTR_STATE_SYN_70_03",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "变为不会受到 火属性攻击的天气。",
+      "id": 189,
+      "key": "primordial-sea",
+      "name": "始源之海",
+      "regulation": "M-A"
+    },
+    "prism-armor": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到效果绝佳的攻击时， 可以减弱其威力。",
+      "id": 232,
+      "key": "prism-armor",
+      "name": "棱镜装甲",
+      "regulation": "M-A"
+    },
+    "propeller-tail": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "能无视具有吸引 对手招式效果的 特性或招式的影响。",
+      "id": 239,
+      "key": "propeller-tail",
+      "name": "螺旋尾鳍",
+      "regulation": "M-A"
+    },
+    "protean": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "每次出场时， 会变为和自己使出的招式 相同的属性仅1次。",
+      "id": 168,
+      "key": "protean",
+      "name": "变幻自如",
+      "regulation": "M-A"
+    },
+    "protosynthesis": {
+      "buffEffectRefs": [
+        {
+          "id": 1,
+          "label": {
+            "key": "BTR_STATE_SYN_01_03",
+            "name": "大晴天状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "天气为晴朗时，或携带着驱劲能量时，最高的能力会提高。",
+      "id": 281,
+      "key": "protosynthesis",
+      "name": "古代活性",
+      "regulation": "M-A"
+    },
+    "psychic-surge": {
+      "buffEffectRefs": [
+        {
+          "id": 8,
+          "label": {
+            "key": "BTR_STATE_SYN_72_03",
+            "name": "精神场地状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "出场时， 会布下精神场地。",
+      "id": 227,
+      "key": "psychic-surge",
+      "name": "精神制造者",
+      "regulation": "M-A"
+    },
+    "punk-rock": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "声音招式的威力会提高。 受到的声音招式伤害会减半。",
+      "id": 244,
+      "key": "punk-rock",
+      "name": "庞克摇滚",
+      "regulation": "M-A"
+    },
+    "pure-power": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "物理招式的威力会变为2倍。",
+      "id": 74,
+      "key": "pure-power",
+      "name": "瑜伽之力",
+      "regulation": "M-A"
+    },
+    "purifying-salt": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "不会陷入异常状态。 因幽灵属性招式 而受到的伤害会减半。",
+      "id": 272,
+      "key": "purifying-salt",
+      "name": "洁净之盐",
+      "regulation": "M-A"
+    },
+    "quark-drive": {
+      "buffEffectRefs": [
+        {
+          "id": 5,
+          "label": {
+            "key": "BTR_STATE_SYN_05_03",
+            "name": "电气场地状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "场地为电气场地时，或携带着驱劲能量时，最高的能力会提高。",
+      "id": 282,
+      "key": "quark-drive",
+      "name": "夸克充能",
+      "regulation": "M-A"
+    },
+    "queenly-majesty": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "对手无法对自己和同伴使出先制招式。",
+      "id": 214,
+      "key": "queenly-majesty",
+      "name": "女王的威严",
+      "regulation": "M-A"
+    },
+    "quick-draw": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "有30%的机率会在相同优先度的 招式中第一个行动。",
+      "id": 259,
+      "key": "quick-draw",
+      "name": "速击",
+      "regulation": "M-A"
+    },
+    "quick-feet": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 1,
+          "label": {
+            "key": "ui_control_mahi",
+            "name": "麻痹",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "陷入异常状态时，速度会变为1.5倍， 且会无视陷入麻痹状态时速度变慢的效果。",
+      "id": 95,
+      "key": "quick-feet",
+      "name": "飞毛腿",
+      "regulation": "M-A"
+    },
+    "rain-dish": {
+      "buffEffectRefs": [
+        {
+          "id": 2,
+          "label": {
+            "key": "BTR_STATE_SYN_02_03",
+            "name": "下雨状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "下雨状态时，会在回合结束时 回复最大HP的1/16。",
+      "id": 44,
+      "key": "rain-dish",
+      "name": "雨盘",
+      "regulation": "M-A"
+    },
+    "rattled": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到恶属性、幽灵属性 和虫属性的招式攻击时， 会因胆怯而速度提高。",
+      "id": 155,
+      "key": "rattled",
+      "name": "胆怯",
+      "regulation": "M-A"
+    },
+    "receiver": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "会变为和被打倒的同伴相同的特性。",
+      "id": 222,
+      "key": "receiver",
+      "name": "接球手",
+      "regulation": "M-A"
+    },
+    "reckless": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "会让自己也受到伤害的 招式的威力会变为1.2倍。",
+      "id": 120,
+      "key": "reckless",
+      "name": "舍身",
+      "regulation": "M-A"
+    },
+    "refrigerate": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "一般属性的招式会变为冰属性， 且威力会变为1.2倍。",
+      "id": 174,
+      "key": "refrigerate",
+      "name": "冰冻皮肤",
+      "regulation": "M-A"
+    },
+    "regenerator": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "回到同行队伍后，会回复最大HP的1/3。",
+      "id": 144,
+      "key": "regenerator",
+      "name": "再生力",
+      "regulation": "M-A"
+    },
+    "ripen": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "吃掉的树果效果会变为2倍。",
+      "id": 247,
+      "key": "ripen",
+      "name": "熟成",
+      "regulation": "M-A"
+    },
+    "rivalry": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "与对手性别相同时，招式的威力会变为1.25倍。 若与对手性别不同，则会变为0.75倍。 若对手性别不明，则会变为通常的威力。",
+      "id": 79,
+      "key": "rivalry",
+      "name": "斗争心",
+      "regulation": "M-A"
+    },
+    "rks-system": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "根据持有的存储碟， 自己的属性会改变。",
+      "id": 225,
+      "key": "rks-system",
+      "name": "ＡＲ系统",
+      "regulation": "M-A"
+    },
+    "rock-head": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "即使使出会让自己也受到伤害的招式， HP也不会减少。",
+      "id": 69,
+      "key": "rock-head",
+      "name": "坚硬脑袋",
+      "regulation": "M-A"
+    },
+    "rocky-payload": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "岩石属性招式的威力会提高。",
+      "id": 276,
+      "key": "rocky-payload",
+      "name": "搬岩",
+      "regulation": "M-A"
+    },
+    "rough-skin": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到接触类招式影响时， 会给予对手其最大HP的1/8的伤害。",
+      "id": 24,
+      "key": "rough-skin",
+      "name": "粗糙皮肤",
+      "regulation": "M-A"
+    },
+    "run-away": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "一定能从野生宝可梦 那儿逃走。",
+      "id": 50,
+      "key": "run-away",
+      "name": "逃跑",
+      "regulation": "M-A"
+    },
+    "run-up": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10056,
+      "key": "run-up",
+      "name": "Run Up",
+      "regulation": "M-A"
+    },
+    "sand-force": {
+      "buffEffectRefs": [
+        {
+          "id": 3,
+          "label": {
+            "key": "BTR_STATE_SYN_03_03",
+            "name": "沙暴状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "沙暴状态时， 岩石、地面、钢属性 招式的威力会变为1.3倍。",
+      "id": 159,
+      "key": "sand-force",
+      "name": "沙之力",
+      "regulation": "M-A"
+    },
+    "sand-rush": {
+      "buffEffectRefs": [
+        {
+          "id": 3,
+          "label": {
+            "key": "BTR_STATE_SYN_03_03",
+            "name": "沙暴状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "沙暴状态时，速度会变为2倍。",
+      "id": 146,
+      "key": "sand-rush",
+      "name": "拨沙",
+      "regulation": "M-A"
+    },
+    "sand-spit": {
+      "buffEffectRefs": [
+        {
+          "id": 3,
+          "label": {
+            "key": "BTR_STATE_SYN_03_03",
+            "name": "沙暴状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "自受到招式的伤害时起，在5回合内 会变为沙暴状态。",
+      "id": 245,
+      "key": "sand-spit",
+      "name": "吐沙",
+      "regulation": "M-A"
+    },
+    "sand-stream": {
+      "buffEffectRefs": [
+        {
+          "id": 3,
+          "label": {
+            "key": "BTR_STATE_SYN_03_03",
+            "name": "沙暴状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "自出场时起，在5回合内 会变为沙暴状态。",
+      "id": 45,
+      "key": "sand-stream",
+      "name": "扬沙",
+      "regulation": "M-A"
+    },
+    "sand-veil": {
+      "buffEffectRefs": [
+        {
+          "id": 3,
+          "label": {
+            "key": "BTR_STATE_SYN_03_03",
+            "name": "沙暴状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "沙暴状态时， 闪避率会变为1.25倍。",
+      "id": 8,
+      "key": "sand-veil",
+      "name": "沙隐",
+      "regulation": "M-A"
+    },
+    "sandpit": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10019,
+      "key": "sandpit",
+      "name": "Sandpit",
+      "regulation": "M-A"
+    },
+    "sap-sipper": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "草属性的招式将无效， 且攻击会提高1阶。",
+      "id": 157,
+      "key": "sap-sipper",
+      "name": "食草",
+      "regulation": "M-A"
+    },
+    "schooling": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "ＨＰ多的时候会聚起来变强。 ＨＰ剩余量变少时， 群体会分崩离析。",
+      "id": 208,
+      "key": "schooling",
+      "name": "鱼群",
+      "regulation": "M-A"
+    },
+    "scrappy": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "一般属性、格斗属性的招式 能击中幽灵属性的宝可梦。 威吓也将无效。",
+      "id": 113,
+      "key": "scrappy",
+      "name": "胆量",
+      "regulation": "M-A"
+    },
+    "screen-cleaner": {
+      "buffEffectRefs": [
+        {
+          "id": 37,
+          "label": {
+            "key": "BTR_STATE_SYN_44_03",
+            "name": "光墙状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 38,
+          "label": {
+            "key": "BTR_STATE_SYN_45_03",
+            "name": "反射壁状态",
+            "namespace": "btl_state_syn"
+          }
+        },
+        {
+          "id": 54,
+          "label": {
+            "key": "BTR_STATE_SYN_74_03",
+            "name": "极光幕状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "出场时，会解除光墙、反射壁、 极光幕状态。",
+      "id": 251,
+      "key": "screen-cleaner",
+      "name": "除障",
+      "regulation": "M-A"
+    },
+    "seed-sower": {
+      "buffEffectRefs": [
+        {
+          "id": 6,
+          "label": {
+            "key": "BTR_STATE_SYN_06_03",
+            "name": "青草场地状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "受到攻击时，会将场地变成青草场地。",
+      "id": 269,
+      "key": "seed-sower",
+      "name": "掉出种子",
+      "regulation": "M-A"
+    },
+    "sequence": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10033,
+      "key": "sequence",
+      "name": "Sequence",
+      "regulation": "M-A"
+    },
+    "serene-grace": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "托天恩的福， 招式的追加效果容易出现。",
+      "id": 32,
+      "key": "serene-grace",
+      "name": "天恩",
+      "regulation": "M-A"
+    },
+    "shackle": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10058,
+      "key": "shackle",
+      "name": "Shackle",
+      "regulation": "M-A"
+    },
+    "shadow-dash": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10049,
+      "key": "shadow-dash",
+      "name": "Shadow Dash",
+      "regulation": "M-A"
+    },
+    "shadow-shield": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "ＨＰ全满时， 受到的伤害会变少。",
+      "id": 231,
+      "key": "shadow-shield",
+      "name": "幻影防守",
+      "regulation": "M-A"
+    },
+    "shadow-tag": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "对手无法进行替换。",
+      "id": 23,
+      "key": "shadow-tag",
+      "name": "踩影",
+      "regulation": "M-A"
+    },
+    "share": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10047,
+      "key": "share",
+      "name": "Share",
+      "regulation": "M-A"
+    },
+    "sharpness": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "切斩类招式的威力会变为1.5倍。",
+      "id": 292,
+      "key": "sharpness",
+      "name": "锋锐",
+      "regulation": "M-A"
+    },
+    "shed-skin": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "回合结束时， 异常状态有30%的机率会痊愈。",
+      "id": 61,
+      "key": "shed-skin",
+      "name": "蜕皮",
+      "regulation": "M-A"
+    },
+    "sheer-force": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "攻击的追加效果会消失， 但能以1.3倍的威力使出招式。",
+      "id": 125,
+      "key": "sheer-force",
+      "name": "强行",
+      "regulation": "M-A"
+    },
+    "shell-armor": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "不会被对手的攻击击中要害。",
+      "id": 75,
+      "key": "shell-armor",
+      "name": "硬壳盔甲",
+      "regulation": "M-A"
+    },
+    "shield": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10060,
+      "key": "shield",
+      "name": "Shield",
+      "regulation": "M-A"
+    },
+    "shield-dust": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "攻击的追加效果将无效。",
+      "id": 19,
+      "key": "shield-dust",
+      "name": "鳞粉",
+      "regulation": "M-A"
+    },
+    "shields-down": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "ＨＰ变为一半时， 壳会坏掉，变得有攻击性。",
+      "id": 197,
+      "key": "shields-down",
+      "name": "界限盾壳",
+      "regulation": "M-A"
+    },
+    "simple": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "能力变化会变为通常的2倍。",
+      "id": 86,
+      "key": "simple",
+      "name": "单纯",
+      "regulation": "M-A"
+    },
+    "skater": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10003,
+      "key": "skater",
+      "name": "Skater",
+      "regulation": "M-A"
+    },
+    "skill-link": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "使用连续招式时，能使出最多次数。",
+      "id": 92,
+      "key": "skill-link",
+      "name": "连续攻击",
+      "regulation": "M-A"
+    },
+    "slow-start": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "在５回合内， 攻击和速度减半。",
+      "id": 112,
+      "key": "slow-start",
+      "name": "慢启动",
+      "regulation": "M-A"
+    },
+    "slush-rush": {
+      "buffEffectRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "BTR_STATE_SYN_04_03",
+            "name": "下雪状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "下雪状态时，速度会变为2倍。",
+      "id": 202,
+      "key": "slush-rush",
+      "name": "拨雪",
+      "regulation": "M-A"
+    },
+    "sniper": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "击中要害时的威力不会是1.5倍， 而是会变为2.25倍。",
+      "id": 97,
+      "key": "sniper",
+      "name": "狙击手",
+      "regulation": "M-A"
+    },
+    "snow-cloak": {
+      "buffEffectRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "BTR_STATE_SYN_04_03",
+            "name": "下雪状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "下雪状态时， 闪避率会变为1.25倍。",
+      "id": 81,
+      "key": "snow-cloak",
+      "name": "雪隐",
+      "regulation": "M-A"
+    },
+    "snow-warning": {
+      "buffEffectRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "BTR_STATE_SYN_04_03",
+            "name": "下雪状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "自出场时起，在5回合内 会变为下雪状态。",
+      "id": 117,
+      "key": "snow-warning",
+      "name": "降雪",
+      "regulation": "M-A"
+    },
+    "solar-power": {
+      "buffEffectRefs": [
+        {
+          "id": 1,
+          "label": {
+            "key": "BTR_STATE_SYN_01_03",
+            "name": "大晴天状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "大晴天状态时，特攻会变为1.5倍， 但在回合结束时会减少最大HP的1/8。",
+      "id": 94,
+      "key": "solar-power",
+      "name": "太阳之力",
+      "regulation": "M-A"
+    },
+    "solid-rock": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "因效果绝佳的招式 而受到的伤害会变为3/4。",
+      "id": 116,
+      "key": "solid-rock",
+      "name": "坚硬岩石",
+      "regulation": "M-A"
+    },
+    "soul-heart": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "宝可梦每次变为濒死状态时， 特攻会提高。",
+      "id": 220,
+      "key": "soul-heart",
+      "name": "魂心",
+      "regulation": "M-A"
+    },
+    "soundproof": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "声音类招式将无效。",
+      "id": 43,
+      "key": "soundproof",
+      "name": "隔音",
+      "regulation": "M-A"
+    },
+    "speed-boost": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "回合结束时，速度会提高1阶。",
+      "id": 3,
+      "key": "speed-boost",
+      "name": "加速",
+      "regulation": "M-A"
+    },
+    "spicy-spray": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 3,
+          "label": {
+            "key": "ui_control_yakedo",
+            "name": "灼伤",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "受到招式的伤害时， 会让对手陷入灼伤状态。",
+      "id": 318,
+      "isNew": false,
+      "key": "spicy-spray",
+      "name": "辣椒喷发",
+      "regulation": "M-A"
+    },
+    "spirit": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10015,
+      "key": "spirit",
+      "name": "Spirit",
+      "regulation": "M-A"
+    },
+    "sponge": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10026,
+      "key": "sponge",
+      "name": "Sponge",
+      "regulation": "M-A"
+    },
+    "sprint": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10050,
+      "key": "sprint",
+      "name": "Sprint",
+      "regulation": "M-A"
+    },
+    "stakeout": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "可以对替换出场的对手 以２倍的伤害进行攻击。",
+      "id": 198,
+      "key": "stakeout",
+      "name": "蹲守",
+      "regulation": "M-A"
+    },
+    "stall": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "会在相同优先度的招式中 最后一个行动。",
+      "id": 100,
+      "key": "stall",
+      "name": "慢出",
+      "regulation": "M-A"
+    },
+    "stalwart": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "会无视具有吸引招式效果的 特性或招式的影响。",
+      "id": 242,
+      "key": "stalwart",
+      "name": "坚毅",
+      "regulation": "M-A"
+    },
+    "stamina": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到招式的伤害时， 防御会提高1阶。",
+      "id": 192,
+      "key": "stamina",
+      "name": "持久力",
+      "regulation": "M-A"
+    },
+    "stance-change": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "使出攻击时，会变为刀剑形态， 使出招式“王者盾牌”时， 会变为盾牌形态。",
+      "id": 176,
+      "key": "stance-change",
+      "name": "战斗切换",
+      "regulation": "M-A"
+    },
+    "static": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 1,
+          "label": {
+            "key": "ui_control_mahi",
+            "name": "麻痹",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "受到接触类招式影响时， 有30%的机率会让对手陷入麻痹状态。",
+      "id": 9,
+      "key": "static",
+      "name": "静电",
+      "regulation": "M-A"
+    },
+    "steadfast": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "畏缩时，速度会提高1阶。",
+      "id": 80,
+      "key": "steadfast",
+      "name": "不屈之心",
+      "regulation": "M-A"
+    },
+    "stealth": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10030,
+      "key": "stealth",
+      "name": "Stealth",
+      "regulation": "M-A"
+    },
+    "steam-engine": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到水属性或 火属性的招式攻击时， 速度会巨幅提高。",
+      "id": 243,
+      "key": "steam-engine",
+      "name": "蒸汽机",
+      "regulation": "M-A"
+    },
+    "steelworker": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "钢属性的招式威力会提高。",
+      "id": 200,
+      "key": "steelworker",
+      "name": "钢能力者",
+      "regulation": "M-A"
+    },
+    "steely-spirit": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "我方的钢属性 攻击威力会提高。",
+      "id": 252,
+      "key": "steely-spirit",
+      "name": "钢之意志",
+      "regulation": "M-A"
+    },
+    "stench": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "用招式给予伤害时， 有10%的机率会让对手畏缩。",
+      "id": 1,
+      "key": "stench",
+      "name": "恶臭",
+      "regulation": "M-A"
+    },
+    "sticky-hold": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "不会被对手夺走或失去携带的道具。",
+      "id": 60,
+      "key": "sticky-hold",
+      "name": "黏着",
+      "regulation": "M-A"
+    },
+    "storm-drain": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "将水属性的招式引到自己身上， 不会受到伤害，而是会提高特攻。",
+      "id": 114,
+      "key": "storm-drain",
+      "name": "引水",
+      "regulation": "M-A"
+    },
+    "strong-jaw": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "啃咬类招式的威力会变为1.5倍。",
+      "id": 173,
+      "key": "strong-jaw",
+      "name": "强壮之颚",
+      "regulation": "M-A"
+    },
+    "sturdy": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "HP全满时， 若受到会一击导致昏厥的招式的伤害， 则会剩下1HP并撑过去。 一击必杀的招式也将无效。",
+      "id": 5,
+      "key": "sturdy",
+      "name": "结实",
+      "regulation": "M-A"
+    },
+    "suction-cups": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "对手的迫使自己进行替换的招式和道具将无效。",
+      "id": 21,
+      "key": "suction-cups",
+      "name": "吸盘",
+      "regulation": "M-A"
+    },
+    "super-luck": {
+      "buffEffectRefs": [
+        {
+          "id": 12,
+          "label": {
+            "key": "BTR_STATE_SYN_11_03",
+            "name": "易中要害状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "会变为易中要害+1。",
+      "id": 105,
+      "key": "super-luck",
+      "name": "超幸运",
+      "regulation": "M-A"
+    },
+    "supersweet-syrup": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "出场时，会让对手的闪避率降低1阶。 在1场战斗中只会发动1次。",
+      "id": 306,
+      "key": "supersweet-syrup",
+      "name": "甘露之蜜",
+      "regulation": "M-A"
+    },
+    "supreme-overlord": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "出场时，在该场战斗中每有1只同行队伍中的 宝可梦被打倒，招式的威力就会提高10%。 最多会提高至50%。",
+      "id": 293,
+      "key": "supreme-overlord",
+      "name": "大将",
+      "regulation": "M-A"
+    },
+    "surge-surfer": {
+      "buffEffectRefs": [
+        {
+          "id": 5,
+          "label": {
+            "key": "BTR_STATE_SYN_05_03",
+            "name": "电气场地状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "电气场地状态时，速度会变为2倍。",
+      "id": 207,
+      "key": "surge-surfer",
+      "name": "冲浪之尾",
+      "regulation": "M-A"
+    },
+    "swarm": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "HP变为最大HP的1/3以下时， 虫属性招式的威力会变为1.5倍。",
+      "id": 68,
+      "key": "swarm",
+      "name": "虫之预感",
+      "regulation": "M-A"
+    },
+    "sweet-veil": {
+      "buffEffectRefs": [
+        {
+          "id": 15,
+          "label": {
+            "key": "BTR_STATE_SYN_15_03",
+            "name": "瞌睡状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [
+        {
+          "id": 6,
+          "label": {
+            "key": "ui_control_nemuri",
+            "name": "睡眠",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "自己和同伴 不会陷入睡眠、瞌睡状态。",
+      "id": 175,
+      "key": "sweet-veil",
+      "name": "甜幕",
+      "regulation": "M-A"
+    },
+    "swift-swim": {
+      "buffEffectRefs": [
+        {
+          "id": 2,
+          "label": {
+            "key": "BTR_STATE_SYN_02_03",
+            "name": "下雨状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "下雨状态时，速度会变为2倍。",
+      "id": 33,
+      "key": "swift-swim",
+      "name": "悠游自如",
+      "regulation": "M-A"
+    },
+    "sword-of-ruin": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "除自己以外的所有宝可梦的防御会降低。",
+      "id": 285,
+      "key": "sword-of-ruin",
+      "name": "灾祸之剑",
+      "regulation": "M-A"
+    },
+    "symbiosis": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "同伴消耗道具时， 会把自己携带的道具交给同伴。",
+      "id": 180,
+      "key": "symbiosis",
+      "name": "共生",
+      "regulation": "M-A"
+    },
+    "synchronize": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "ui_control_doku",
+            "name": "中毒",
+            "namespace": "ui_control"
+          }
+        },
+        {
+          "id": 5,
+          "label": {
+            "key": "ui_control_moudoku",
+            "name": "剧毒",
+            "namespace": "ui_control"
+          }
+        },
+        {
+          "id": 1,
+          "label": {
+            "key": "ui_control_mahi",
+            "name": "麻痹",
+            "namespace": "ui_control"
+          }
+        },
+        {
+          "id": 3,
+          "label": {
+            "key": "ui_control_yakedo",
+            "name": "灼伤",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "因对手的招式或特性 而陷入中毒、剧毒、麻痹、灼伤状态时， 会让对手也陷入相同状态。",
+      "id": 28,
+      "key": "synchronize",
+      "name": "同步",
+      "regulation": "M-A"
+    },
+    "tablets-of-ruin": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "除自己以外的所有宝可梦的攻击会降低。",
+      "id": 286,
+      "key": "tablets-of-ruin",
+      "name": "灾祸之简",
+      "regulation": "M-A"
+    },
+    "tangled-feet": {
+      "buffEffectRefs": [
+        {
+          "id": 13,
+          "label": {
+            "key": "BTR_STATE_SYN_12_03",
+            "name": "混乱状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "混乱状态时，闪避率会变为2倍。",
+      "id": 77,
+      "key": "tangled-feet",
+      "name": "蹒跚",
+      "regulation": "M-A"
+    },
+    "tangling-hair": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到接触类招式影响时， 会让对手的速度降低1阶。",
+      "id": 221,
+      "key": "tangling-hair",
+      "name": "卷发",
+      "regulation": "M-A"
+    },
+    "technician": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "威力为60以下的 招式的威力会变为1.5倍。",
+      "id": 101,
+      "key": "technician",
+      "name": "技术高手",
+      "regulation": "M-A"
+    },
+    "telepathy": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "会闪避来自同伴的攻击。",
+      "id": 140,
+      "key": "telepathy",
+      "name": "心灵感应",
+      "regulation": "M-A"
+    },
+    "tenacity": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10011,
+      "key": "tenacity",
+      "name": "Tenacity",
+      "regulation": "M-A"
+    },
+    "tera-shell": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "HP全满时，受到的所有招式伤害会减少。",
+      "id": 308,
+      "key": "tera-shell",
+      "name": "太晶甲壳",
+      "regulation": "M-A"
+    },
+    "tera-shift": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "出场时，会变成太晶形态。",
+      "id": 307,
+      "key": "tera-shift",
+      "name": "太晶变形",
+      "regulation": "M-A"
+    },
+    "teraform-zero": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "星晶形态时，会消除天气和场地的影响。",
+      "id": 309,
+      "key": "teraform-zero",
+      "name": "归零化境",
+      "regulation": "M-A"
+    },
+    "teravolt": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "可以不受对手特性的干扰， 向对手使出招式。",
+      "id": 164,
+      "key": "teravolt",
+      "name": "兆级电压",
+      "regulation": "M-A"
+    },
+    "thermal-exchange": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到火属性招式攻击时，攻击会提高。",
+      "id": 270,
+      "key": "thermal-exchange",
+      "name": "热交换",
+      "regulation": "M-A"
+    },
+    "thick-fat": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "因火属性、冰属性招式 而受到的伤害会减半。",
+      "id": 47,
+      "key": "thick-fat",
+      "name": "厚脂肪",
+      "regulation": "M-A"
+    },
+    "thrust": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10004,
+      "key": "thrust",
+      "name": "Thrust",
+      "regulation": "M-A"
+    },
+    "tinted-lens": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "可以将效果不好的招式 以通常的威力使出。",
+      "id": 110,
+      "key": "tinted-lens",
+      "name": "有色眼镜",
+      "regulation": "M-A"
+    },
+    "torrent": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "HP变为最大HP的1/3以下时， 水属性招式的威力会变为1.5倍。",
+      "id": 67,
+      "key": "torrent",
+      "name": "激流",
+      "regulation": "M-A"
+    },
+    "tough-claws": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "接触类招式的威力会变为1.3倍。",
+      "id": 181,
+      "key": "tough-claws",
+      "name": "硬爪",
+      "regulation": "M-A"
+    },
+    "toxic-boost": {
+      "buffEffectRefs": [
+        {
+          "id": 47,
+          "label": {
+            "key": "BTR_STATE_SYN_59_03",
+            "name": "剧毒状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [
+        {
+          "id": 4,
+          "label": {
+            "key": "ui_control_doku",
+            "name": "中毒",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "变为中毒状态时， 物理招式的威力会提高。",
+      "id": 137,
+      "key": "toxic-boost",
+      "name": "中毒激升",
+      "regulation": "M-A"
+    },
+    "toxic-chain": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "使用招式攻击时，有30%几率让对手陷入剧毒状态。",
+      "id": 305,
+      "key": "toxic-chain",
+      "name": "毒锁链",
+      "regulation": "M-A"
+    },
+    "toxic-debris": {
+      "buffEffectRefs": [
+        {
+          "id": 31,
+          "label": {
+            "key": "BTR_STATE_SYN_37_03",
+            "name": "毒菱状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "受到物理招式的伤害时， 会让对手的场地变为毒菱状态。",
+      "id": 295,
+      "key": "toxic-debris",
+      "name": "毒满地",
+      "regulation": "M-A"
+    },
+    "trace": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "出场时，会变为和对手相同的特性。",
+      "id": 36,
+      "key": "trace",
+      "name": "复制",
+      "regulation": "M-A"
+    },
+    "transistor": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "电属性的招式威力会提高。",
+      "id": 262,
+      "key": "transistor",
+      "name": "电晶体",
+      "regulation": "M-A"
+    },
+    "triage": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "可以率先使出回复招式。",
+      "id": 205,
+      "key": "triage",
+      "name": "先行治疗",
+      "regulation": "M-A"
+    },
+    "truant": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "如果使出招式， 下一回合就会休息。",
+      "id": 54,
+      "key": "truant",
+      "name": "懒惰",
+      "regulation": "M-A"
+    },
+    "turboblaze": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "可以不受对手特性的干扰， 向对手使出招式。",
+      "id": 163,
+      "key": "turboblaze",
+      "name": "涡轮火焰",
+      "regulation": "M-A"
+    },
+    "unaware": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "能无视对手的能力变化进行攻击。 会无视对手的能力变化受到攻击。 无法无视速度的变化。",
+      "id": 109,
+      "key": "unaware",
+      "name": "纯朴",
+      "regulation": "M-A"
+    },
+    "unburden": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "失去携带的道具时， 速度会变为2倍。",
+      "id": 84,
+      "key": "unburden",
+      "name": "轻装",
+      "regulation": "M-A"
+    },
+    "unnerve": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "会让对手的树果无法被吃掉。",
+      "id": 127,
+      "key": "unnerve",
+      "name": "紧张感",
+      "regulation": "M-A"
+    },
+    "unseen-fist": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "使用接触类招式时， 会无视对手的防守效果， 给予原本的1/4的伤害。 对手的防守效果以外的效果会发动。",
+      "id": 260,
+      "key": "unseen-fist",
+      "name": "无形拳",
+      "regulation": "M-A"
+    },
+    "vanguard": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10031,
+      "key": "vanguard",
+      "name": "Vanguard",
+      "regulation": "M-A"
+    },
+    "vessel-of-ruin": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "除自己以外的所有宝可梦的特攻会降低。",
+      "id": 284,
+      "key": "vessel-of-ruin",
+      "name": "灾祸之鼎",
+      "regulation": "M-A"
+    },
+    "victory-star": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "自己和同伴的命中率会提高。",
+      "id": 162,
+      "key": "victory-star",
+      "name": "胜利之星",
+      "regulation": "M-A"
+    },
+    "vital-spirit": {
+      "buffEffectRefs": [
+        {
+          "id": 15,
+          "label": {
+            "key": "BTR_STATE_SYN_15_03",
+            "name": "瞌睡状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [
+        {
+          "id": 6,
+          "label": {
+            "key": "ui_control_nemuri",
+            "name": "睡眠",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "不会陷入睡眠、瞌睡状态。",
+      "id": 72,
+      "key": "vital-spirit",
+      "name": "干劲",
+      "regulation": "M-A"
+    },
+    "volt-absorb": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "电属性的招式将无效， 且会回复最大HP的1/4。",
+      "id": 10,
+      "key": "volt-absorb",
+      "name": "蓄电",
+      "regulation": "M-A"
+    },
+    "wandering-spirit": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到接触类招式影响时， 会和对手互换特性。",
+      "id": 254,
+      "key": "wandering-spirit",
+      "name": "游魂",
+      "regulation": "M-A"
+    },
+    "warm-blanket": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10016,
+      "key": "warm-blanket",
+      "name": "Warm Blanket",
+      "regulation": "M-A"
+    },
+    "water-absorb": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "水属性的招式将无效， 且会回复最大HP的1/4。",
+      "id": 11,
+      "key": "water-absorb",
+      "name": "储水",
+      "regulation": "M-A"
+    },
+    "water-bubble": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 3,
+          "label": {
+            "key": "ui_control_yakedo",
+            "name": "灼伤",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "因火属性招式而受到的伤害会减半。 水属性招式的威力会变为2倍。 不会陷入灼伤状态。",
+      "id": 199,
+      "key": "water-bubble",
+      "name": "水泡",
+      "regulation": "M-A"
+    },
+    "water-compaction": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到水属性的招式攻击时， 防御会大幅提高。",
+      "id": 195,
+      "key": "water-compaction",
+      "name": "遇水凝固",
+      "regulation": "M-A"
+    },
+    "water-veil": {
+      "buffEffectRefs": [],
+      "conditionRefs": [
+        {
+          "id": 3,
+          "label": {
+            "key": "ui_control_yakedo",
+            "name": "灼伤",
+            "namespace": "ui_control"
+          }
+        }
+      ],
+      "description": "将水幕裹在身上， 不会变为灼伤状态。",
+      "id": 41,
+      "key": "water-veil",
+      "name": "水幕",
+      "regulation": "M-A"
+    },
+    "wave-rider": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "id": 10002,
+      "key": "wave-rider",
+      "name": "Wave Rider",
+      "regulation": "M-A"
+    },
+    "weak-armor": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到物理招式的伤害时， 防御会降低1阶， 速度会提高2阶。",
+      "id": 133,
+      "key": "weak-armor",
+      "name": "碎裂铠甲",
+      "regulation": "M-A"
+    },
+    "well-baked-body": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "受到火属性招式攻击时，不会受到伤害，而是防御会大幅提高。",
+      "id": 273,
+      "key": "well-baked-body",
+      "name": "焦香之躯",
+      "regulation": "M-A"
+    },
+    "white-smoke": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "不会因对手的招式或特性 而被降低能力。",
+      "id": 73,
+      "key": "white-smoke",
+      "name": "白色烟雾",
+      "regulation": "M-A"
+    },
+    "wimp-out": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "ＨＰ变为一半时， 会慌慌张张逃走， 退回同行队伍中。",
+      "id": 193,
+      "key": "wimp-out",
+      "name": "跃跃欲逃",
+      "regulation": "M-A"
+    },
+    "wind-power": {
+      "buffEffectRefs": [
+        {
+          "id": 19,
+          "label": {
+            "key": "BTR_STATE_SYN_19_03",
+            "name": "顺风状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "受到风的招式攻击时，会变为充电状态。",
+      "id": 277,
+      "key": "wind-power",
+      "name": "风力发电",
+      "regulation": "M-A"
+    },
+    "wind-rider": {
+      "buffEffectRefs": [
+        {
+          "id": 19,
+          "label": {
+            "key": "BTR_STATE_SYN_19_03",
+            "name": "顺风状态",
+            "namespace": "btl_state_syn"
+          }
+        }
+      ],
+      "conditionRefs": [],
+      "description": "受到风的招式攻击时，不会受到伤害，而是攻击会提高。顺风开始时，攻击也会提高。",
+      "id": 274,
+      "key": "wind-rider",
+      "name": "乘风",
+      "regulation": "M-A"
+    },
+    "wonder-guard": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "不可思议的力量， 只有效果绝佳的招式才能击中。",
+      "id": 25,
+      "key": "wonder-guard",
+      "name": "神奇守护",
+      "regulation": "M-A"
+    },
+    "wonder-skin": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "成为不易受到变化招式 攻击的身体。",
+      "id": 147,
+      "key": "wonder-skin",
+      "name": "奇迹皮肤",
+      "regulation": "M-A"
+    },
+    "zen-mode": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "ＨＰ变为一半以下时， 样子会改变。",
+      "id": 161,
+      "key": "zen-mode",
+      "name": "达摩模式",
+      "regulation": "M-A"
+    },
+    "zero-to-hero": {
+      "buffEffectRefs": [],
+      "conditionRefs": [],
+      "description": "回到同行队伍后，会变为全能形态。",
+      "id": 278,
+      "key": "zero-to-hero",
+      "name": "全能变身",
+      "regulation": "M-A"
+    }
+  },
+  "items": {
+    "abomasite": {
+      "affectedPokemonKeys": [
+        "mega-abomasnow"
+      ],
+      "category": "mega-stones",
+      "effect": "能让暴雪王进行超级进化的持有物。",
+      "id": 674,
+      "key": "abomasite",
+      "location": "Mega Evolution Tutorial",
+      "name": "暴雪王进化石",
+      "pokemon_key": "mega-abomasnow",
+      "regulation": "M-A"
+    },
+    "absolite": {
+      "affectedPokemonKeys": [
+        "mega-absol"
+      ],
+      "category": "mega-stones",
+      "effect": "能让阿勃梭鲁进行超级进化的持有物。 （超级阿勃梭鲁）",
+      "id": 677,
+      "key": "absolite",
+      "location": "Shop",
+      "name": "阿勃梭鲁进化石",
+      "pokemon_key": "mega-absol",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "absolite-z": {
+      "affectedPokemonKeys": [
+        "mega-absol-z"
+      ],
+      "category": "mega-stones",
+      "effect": "能让阿勃梭鲁进行超级进化的持有物。 （超级阿勃梭鲁Z）",
+      "id": 2638,
+      "isNew": true,
+      "key": "absolite-z",
+      "location": "Shop",
+      "name": "阿勃梭鲁进化石Z",
+      "pokemon_key": "mega-absol-z",
+      "regulation": "M-C",
+      "vp": 2000
+    },
+    "aerodactylite": {
+      "affectedPokemonKeys": [
+        "mega-aerodactyl"
+      ],
+      "category": "mega-stones",
+      "effect": "能让化石翼龙进行超级进化的持有物。",
+      "id": 672,
+      "key": "aerodactylite",
+      "location": "Shop",
+      "name": "化石翼龙进化石",
+      "pokemon_key": "mega-aerodactyl",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "aggronite": {
+      "affectedPokemonKeys": [
+        "mega-aggron"
+      ],
+      "category": "mega-stones",
+      "effect": "能让波士可多拉进行超级进化的持有物。",
+      "id": 667,
+      "key": "aggronite",
+      "location": "Mega Evolution Tutorial",
+      "name": "波士可多拉进化石",
+      "pokemon_key": "mega-aggron",
+      "regulation": "M-A"
+    },
+    "air-balloon": {
+      "category": "hold-items",
+      "effect": "让宝可梦携带后，宝可梦会浮在空中。受到攻击就会破裂。",
+      "id": 541,
+      "isNew": true,
+      "key": "air-balloon",
+      "location": "Shop",
+      "name": "气球",
+      "regulation": "M-C",
+      "vp": 1000
+    },
+    "alakazite": {
+      "affectedPokemonKeys": [
+        "mega-alakazam"
+      ],
+      "category": "mega-stones",
+      "effect": "能让胡地进行超级进化的持有物。",
+      "id": 679,
+      "key": "alakazite",
+      "location": "Shop",
+      "name": "胡地进化石",
+      "pokemon_key": "mega-alakazam",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "altarianite": {
+      "affectedPokemonKeys": [
+        "mega-altaria"
+      ],
+      "category": "mega-stones",
+      "effect": "能让七夕青鸟进行超级进化的持有物。",
+      "id": 755,
+      "key": "altarianite",
+      "location": "Shop",
+      "name": "七夕青鸟进化石",
+      "pokemon_key": "mega-altaria",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "ampharosite": {
+      "affectedPokemonKeys": [
+        "mega-ampharos"
+      ],
+      "category": "mega-stones",
+      "effect": "能让电龙进行超级进化的持有物。",
+      "id": 658,
+      "key": "ampharosite",
+      "location": "Shop",
+      "name": "电龙进化石",
+      "pokemon_key": "mega-ampharos",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "aspear-berry": {
+      "affectedConditionKeys": [
+        "freezing"
+      ],
+      "category": "berries",
+      "effect": "可以治愈冰冻状态。 使用1次后就会在该次对战中消失。",
+      "id": 153,
+      "key": "aspear-berry",
+      "location": "Shop",
+      "name": "利木果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "audinite": {
+      "affectedPokemonKeys": [
+        "mega-audino"
+      ],
+      "category": "mega-stones",
+      "effect": "能让差不多娃娃进行超级进化的持有物。",
+      "id": 757,
+      "key": "audinite",
+      "location": "Shop",
+      "name": "差不多娃娃进化石",
+      "pokemon_key": "mega-audino",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "babiri-berry": {
+      "affectedMoveTypeKeys": [
+        "steel"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的钢属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 199,
+      "key": "babiri-berry",
+      "location": "Shop",
+      "name": "霹霹果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "banettite": {
+      "affectedPokemonKeys": [
+        "mega-banette"
+      ],
+      "category": "mega-stones",
+      "effect": "能让诅咒娃娃进行超级进化的持有物。",
+      "id": 668,
+      "key": "banettite",
+      "location": "Shop",
+      "name": "诅咒娃娃进化石",
+      "pokemon_key": "mega-banette",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "barbaraclite": {
+      "affectedPokemonKeys": [
+        "mega-barbaracle"
+      ],
+      "category": "mega-stones",
+      "effect": "能让龟足巨铠进行超级进化的持有物。",
+      "id": 2581,
+      "isNew": false,
+      "key": "barbaraclite",
+      "location": "Shop",
+      "name": "龟足巨铠进化石",
+      "pokemon_key": "mega-barbaracle",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "baxcalibrite": {
+      "affectedPokemonKeys": [
+        "mega-baxcalibur"
+      ],
+      "category": "mega-stones",
+      "effect": "能让戟脊龙进行超级进化的持有物。",
+      "id": 2648,
+      "isNew": true,
+      "key": "baxcalibrite",
+      "location": "Shop",
+      "name": "戟脊龙进化石",
+      "pokemon_key": "mega-baxcalibur",
+      "regulation": "M-C",
+      "vp": 2000
+    },
+    "beedrillite": {
+      "affectedPokemonKeys": [
+        "mega-beedrill"
+      ],
+      "category": "mega-stones",
+      "effect": "能让大针蜂进行超级进化的持有物。",
+      "id": 770,
+      "key": "beedrillite",
+      "location": "Mega Evolution Tutorial",
+      "name": "大针蜂进化石",
+      "pokemon_key": "mega-beedrill",
+      "regulation": "M-A"
+    },
+    "big-root": {
+      "affectedMoveKeys": [
+        "absorb",
+        "mega-drain",
+        "dream-eater",
+        "leech-life",
+        "giga-drain",
+        "ingrain",
+        "drain-punch",
+        "horn-leech",
+        "parabolic-charge",
+        "draining-kiss",
+        "oblivion-wing",
+        "bouncy-bubble",
+        "aqua-ring",
+        "leech-seed",
+        "strength-sap"
+      ],
+      "category": "hold-items",
+      "effect": "吸取HP的招式的回复量 会变为1.3倍。扎根、吸取力量等的 回复量也会变为1.3倍。",
+      "id": 296,
+      "isNew": false,
+      "key": "big-root",
+      "location": "Shop",
+      "name": "大根茎",
+      "regulation": "M-B",
+      "vp": 700
+    },
+    "binding-band": {
+      "affectedMoveKeys": [
+        "bind",
+        "wrap",
+        "fire-spin",
+        "clamp",
+        "whirlpool",
+        "sand-tomb",
+        "magma-storm",
+        "infestation",
+        "snap-trap",
+        "thunder-cage"
+      ],
+      "category": "hold-items",
+      "effect": "能增强绑紧招式的束带。携带后，绑紧招式的威力会变强。",
+      "id": 544,
+      "isNew": true,
+      "key": "binding-band",
+      "location": "Shop",
+      "name": "紧绑束带",
+      "regulation": "M-C",
+      "vp": 700
+    },
+    "black-belt": {
+      "affectedMoveTypeKeys": [
+        "fighting"
+      ],
+      "category": "hold-items",
+      "effect": "格斗属性招式的威力会变为1.2倍。",
+      "id": 241,
+      "key": "black-belt",
+      "location": "Shop",
+      "name": "黑带",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "black-glasses": {
+      "affectedMoveTypeKeys": [
+        "dark"
+      ],
+      "category": "hold-items",
+      "effect": "恶属性招式的威力会变为1.2倍。",
+      "id": 240,
+      "key": "black-glasses",
+      "location": "Shop",
+      "name": "黑色眼镜",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "blastoisinite": {
+      "affectedPokemonKeys": [
+        "mega-blastoise"
+      ],
+      "category": "mega-stones",
+      "effect": "能让水箭龟进行超级进化的持有物。",
+      "id": 661,
+      "key": "blastoisinite",
+      "location": "Shop",
+      "name": "水箭龟进化石",
+      "pokemon_key": "mega-blastoise",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "blazikenite": {
+      "affectedPokemonKeys": [
+        "mega-blaziken"
+      ],
+      "category": "mega-stones",
+      "effect": "能让火焰鸡进行超级进化的持有物。",
+      "id": 664,
+      "isNew": false,
+      "key": "blazikenite",
+      "location": "Shop",
+      "name": "火焰鸡进化石",
+      "pokemon_key": "mega-blaziken",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "bright-powder": {
+      "category": "hold-items",
+      "effect": "对手对自己使用的 招式的命中率会变为0.9倍。",
+      "id": 213,
+      "key": "bright-powder",
+      "location": "Beginning",
+      "name": "光粉",
+      "regulation": "M-A"
+    },
+    "bug-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "bug"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见虫属性宝可梦。",
+      "key": "bug-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "虫属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "cameruptite": {
+      "affectedPokemonKeys": [
+        "mega-camerupt"
+      ],
+      "category": "mega-stones",
+      "effect": "能让喷火驼进行超级进化的持有物。",
+      "id": 767,
+      "key": "cameruptite",
+      "location": "Shop",
+      "name": "喷火驼进化石",
+      "pokemon_key": "mega-camerupt",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "chandelurite": {
+      "affectedPokemonKeys": [
+        "mega-chandelure"
+      ],
+      "category": "mega-stones",
+      "effect": "能让水晶灯火灵进行超级进化的持有物。",
+      "id": 2574,
+      "key": "chandelurite",
+      "location": "Shop",
+      "name": "水晶灯火灵进化石",
+      "pokemon_key": "mega-chandelure",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "charcoal": {
+      "affectedMoveTypeKeys": [
+        "fire"
+      ],
+      "category": "hold-items",
+      "effect": "火属性招式的威力会变为1.2倍。",
+      "id": 249,
+      "key": "charcoal",
+      "location": "Shop",
+      "name": "木炭",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "charizardite-x": {
+      "affectedPokemonKeys": [
+        "mega-charizard-x"
+      ],
+      "category": "mega-stones",
+      "effect": "能让喷火龙进行超级进化的持有物。 （超级喷火龙Ｘ）",
+      "id": 660,
+      "key": "charizardite-x",
+      "location": "Shop",
+      "name": "喷火龙进化石Ｘ",
+      "pokemon_key": "mega-charizard-x",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "charizardite-y": {
+      "affectedPokemonKeys": [
+        "mega-charizard-y"
+      ],
+      "category": "mega-stones",
+      "effect": "能让喷火龙进行超级进化的持有物。 （超级喷火龙Ｙ）",
+      "id": 678,
+      "key": "charizardite-y",
+      "location": "Shop",
+      "name": "喷火龙进化石Ｙ",
+      "pokemon_key": "mega-charizard-y",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "charti-berry": {
+      "affectedMoveTypeKeys": [
+        "rock"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的岩石属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 195,
+      "key": "charti-berry",
+      "location": "Shop",
+      "name": "草蚕果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "cheri-berry": {
+      "affectedConditionKeys": [
+        "paralysis"
+      ],
+      "category": "berries",
+      "effect": "可以治愈麻痹状态。 使用1次后就会在该次对战中消失。",
+      "id": 149,
+      "key": "cheri-berry",
+      "location": "Shop",
+      "name": "樱子果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "chesnaughtite": {
+      "affectedPokemonKeys": [
+        "mega-chesnaught"
+      ],
+      "category": "mega-stones",
+      "effect": "能让布里卡隆进行超级进化的持有物。",
+      "id": 2575,
+      "key": "chesnaughtite",
+      "location": "Deposit Chesnaught from Pokemon Legends: Z-A",
+      "name": "布里卡隆进化石",
+      "pokemon_key": "mega-chesnaught",
+      "regulation": "M-A"
+    },
+    "chesto-berry": {
+      "affectedConditionKeys": [
+        "sleep"
+      ],
+      "category": "berries",
+      "effect": "可以治愈睡眠状态。 使用1次后就会在该次对战中消失。",
+      "id": 150,
+      "key": "chesto-berry",
+      "location": "Shop",
+      "name": "零余果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "chilan-berry": {
+      "affectedMoveTypeKeys": [
+        "normal"
+      ],
+      "category": "berries",
+      "effect": "受到一般属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 200,
+      "key": "chilan-berry",
+      "location": "Shop",
+      "name": "灯浆果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "chimechite": {
+      "affectedPokemonKeys": [
+        "mega-chimecho"
+      ],
+      "category": "mega-stones",
+      "effect": "能让风铃铃进行超级进化的持有物。",
+      "id": 2637,
+      "key": "chimechite",
+      "location": "Shop",
+      "name": "风铃铃进化石",
+      "pokemon_key": "mega-chimecho",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "choice-scarf": {
+      "category": "hold-items",
+      "effect": "速度会变为1.5倍， 但一旦使出招式，直到替换为止 就会变得只能使出该招式。",
+      "id": 287,
+      "key": "choice-scarf",
+      "location": "Beginning",
+      "name": "讲究围巾",
+      "regulation": "M-A"
+    },
+    "chople-berry": {
+      "affectedMoveTypeKeys": [
+        "fighting"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的格斗属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 189,
+      "key": "chople-berry",
+      "location": "Shop",
+      "name": "莲蒲果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "clefablite": {
+      "affectedPokemonKeys": [
+        "mega-clefable"
+      ],
+      "category": "mega-stones",
+      "effect": "能让皮可西进行超级进化的持有物。",
+      "id": 2559,
+      "key": "clefablite",
+      "location": "Shop",
+      "name": "皮可西进化石",
+      "pokemon_key": "mega-clefable",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "coba-berry": {
+      "affectedMoveTypeKeys": [
+        "flying"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的飞行属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 192,
+      "key": "coba-berry",
+      "location": "Shop",
+      "name": "棱瓜果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "colbur-berry": {
+      "affectedMoveTypeKeys": [
+        "dark"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的恶属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 198,
+      "key": "colbur-berry",
+      "location": "Shop",
+      "name": "刺耳果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "crabominite": {
+      "affectedPokemonKeys": [
+        "mega-crabominable"
+      ],
+      "category": "mega-stones",
+      "effect": "能让好胜毛蟹进行超级进化的持有物。",
+      "id": 2644,
+      "key": "crabominite",
+      "location": "Shop",
+      "name": "好胜毛蟹进化石",
+      "pokemon_key": "mega-crabominable",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "damp-rock": {
+      "affectedBuffEffectKeys": [
+        "buff-effect-2"
+      ],
+      "category": "hold-items",
+      "effect": "因招式或特性变为下雨状态时， 持续时间会延长3回合。 （合计8回合）",
+      "id": 285,
+      "isNew": false,
+      "key": "damp-rock",
+      "location": "Shop",
+      "name": "潮湿岩石",
+      "regulation": "M-B",
+      "vp": 700
+    },
+    "dark-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "dark"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见恶属性宝可梦。",
+      "key": "dark-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "恶属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "delphoxite": {
+      "affectedPokemonKeys": [
+        "mega-delphox"
+      ],
+      "category": "mega-stones",
+      "effect": "能让妖火红狐进行超级进化的持有物。",
+      "id": 2576,
+      "key": "delphoxite",
+      "location": "Deposit Delphox from Pokemon Legends: Z-A",
+      "name": "妖火红狐进化石",
+      "pokemon_key": "mega-delphox",
+      "regulation": "M-A"
+    },
+    "dive-ball-guaranteed-ticket": {
+      "category": "miscellaneous",
+      "effect": "可遇见装在潜水球里的宝可梦阵容的票券。",
+      "key": "dive-ball-guaranteed-ticket",
+      "name": "潜水球保证票券",
+      "regulation": "M-A"
+    },
+    "dragalgite": {
+      "affectedPokemonKeys": [
+        "mega-dragalge"
+      ],
+      "category": "mega-stones",
+      "effect": "能让毒藻龙进行超级进化的持有物。",
+      "id": 2582,
+      "isNew": false,
+      "key": "dragalgite",
+      "location": "Shop",
+      "name": "毒藻龙进化石",
+      "pokemon_key": "mega-dragalge",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "dragon-fang": {
+      "affectedMoveTypeKeys": [
+        "dragon"
+      ],
+      "category": "hold-items",
+      "effect": "龙属性招式的威力会变为1.2倍。",
+      "id": 250,
+      "key": "dragon-fang",
+      "location": "Shop",
+      "name": "龙之牙",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "dragon-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "dragon"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见龙属性宝可梦。",
+      "key": "dragon-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "龙属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "dragoninite": {
+      "affectedPokemonKeys": [
+        "mega-dragonite"
+      ],
+      "category": "mega-stones",
+      "effect": "能让快龙进行超级进化的持有物。",
+      "id": 2562,
+      "key": "dragoninite",
+      "location": "Shop",
+      "name": "快龙进化石",
+      "pokemon_key": "mega-dragonite",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "drampanite": {
+      "affectedPokemonKeys": [
+        "mega-drampa"
+      ],
+      "category": "mega-stones",
+      "effect": "能让老翁龙进行超级进化的持有物。",
+      "id": 2585,
+      "key": "drampanite",
+      "location": "Shop",
+      "name": "老翁龙进化石",
+      "pokemon_key": "mega-drampa",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "dusk-ball-guaranteed-ticket": {
+      "category": "miscellaneous",
+      "effect": "可遇见装在黑暗球里的宝可梦阵容的票券。",
+      "key": "dusk-ball-guaranteed-ticket",
+      "name": "黑暗球保证票券",
+      "regulation": "M-A"
+    },
+    "eelektrossite": {
+      "affectedPokemonKeys": [
+        "mega-eelektross"
+      ],
+      "category": "mega-stones",
+      "effect": "能让麻麻鳗鱼王进行超级进化的持有物。",
+      "id": 2573,
+      "isNew": false,
+      "key": "eelektrossite",
+      "location": "Shop",
+      "name": "麻麻鳗鱼王进化石",
+      "pokemon_key": "mega-eelektross",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "eject-button": {
+      "category": "hold-items",
+      "effect": "携带它的宝可梦如果受到招式攻击，就能逃脱战斗，并和同行的其他宝可梦进行替换。",
+      "id": 547,
+      "isNew": true,
+      "key": "eject-button",
+      "location": "Shop",
+      "name": "逃脱按键",
+      "regulation": "M-C",
+      "vp": 700
+    },
+    "electric-seed": {
+      "affectedBuffEffectKeys": [
+        "buff-effect-5"
+      ],
+      "affectedMoveKeys": [
+        "electric-terrain"
+      ],
+      "category": "hold-items",
+      "effect": "让宝可梦携带后，在电气场地上使用，防御就会提高。",
+      "id": 881,
+      "isNew": true,
+      "key": "electric-seed",
+      "location": "Shop",
+      "name": "电气种子",
+      "regulation": "M-C",
+      "vp": 700
+    },
+    "electric-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "electric"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见电属性宝可梦。",
+      "key": "electric-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "电属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "emboarite": {
+      "affectedPokemonKeys": [
+        "mega-emboar"
+      ],
+      "category": "mega-stones",
+      "effect": "能让炎武王进行超级进化的持有物。",
+      "id": 2569,
+      "key": "emboarite",
+      "location": "Shop",
+      "name": "炎武王进化石",
+      "pokemon_key": "mega-emboar",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "excadrite": {
+      "affectedPokemonKeys": [
+        "mega-excadrill"
+      ],
+      "category": "mega-stones",
+      "effect": "能让龙头地鼠进行超级进化的持有物。",
+      "id": 2570,
+      "key": "excadrite",
+      "location": "Shop",
+      "name": "龙头地鼠进化石",
+      "pokemon_key": "mega-excadrill",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "expert-belt": {
+      "category": "hold-items",
+      "effect": "使出的招式为效果绝佳时， 威力会变为1.2倍。",
+      "id": 268,
+      "isNew": false,
+      "key": "expert-belt",
+      "location": "Shop",
+      "name": "达人带",
+      "regulation": "M-B",
+      "vp": 1000
+    },
+    "fairy-feather": {
+      "affectedMoveTypeKeys": [
+        "fairy"
+      ],
+      "category": "hold-items",
+      "effect": "妖精属性招式的威力会变为1.2倍。",
+      "id": 2401,
+      "key": "fairy-feather",
+      "location": "Shop",
+      "name": "妖精之羽",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "fairy-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "fairy"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见妖精属性宝可梦。",
+      "key": "fairy-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "妖精属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "falinksite": {
+      "affectedPokemonKeys": [
+        "mega-falinks"
+      ],
+      "category": "mega-stones",
+      "effect": "能让列阵兵进行超级进化的持有物。",
+      "id": 2587,
+      "isNew": false,
+      "key": "falinksite",
+      "location": "Shop",
+      "name": "列阵兵进化石",
+      "pokemon_key": "mega-falinks",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "feraligite": {
+      "affectedPokemonKeys": [
+        "mega-feraligatr"
+      ],
+      "category": "mega-stones",
+      "effect": "能让大力鳄进行超级进化的持有物。",
+      "id": 2564,
+      "key": "feraligite",
+      "location": "Shop",
+      "name": "大力鳄进化石",
+      "pokemon_key": "mega-feraligatr",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "fighting-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "fighting"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见格斗属性宝可梦。",
+      "key": "fighting-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "格斗属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "fire-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "fire"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见火属性宝可梦。",
+      "key": "fire-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "火属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "floettite": {
+      "affectedPokemonKeys": [
+        "mega-floette"
+      ],
+      "category": "mega-stones",
+      "effect": "能让花叶蒂（永恒之花）进行超级进化的持有物。",
+      "id": 2579,
+      "key": "floettite",
+      "location": "Deposit Floette Eternal Flower from Pokemon Legends: Z-A",
+      "name": "花叶蒂进化石",
+      "pokemon_key": "mega-floette",
+      "regulation": "M-A"
+    },
+    "flying-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "flying"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见飞行属性宝可梦。",
+      "key": "flying-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "飞行属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "focus-band": {
+      "category": "hold-items",
+      "effect": "受到会导致昏厥的招式的伤害时， 有10％的机率会剩下1HP并撑过去。",
+      "id": 230,
+      "key": "focus-band",
+      "location": "Beginning",
+      "name": "气势头带",
+      "regulation": "M-A"
+    },
+    "focus-sash": {
+      "category": "hold-items",
+      "effect": "HP全满时， 若受到会一击导致昏厥的招式的伤害， 则会剩下1HP并撑过去。 使用1次后就会在该次对战中消失。",
+      "id": 275,
+      "key": "focus-sash",
+      "location": "Beginning",
+      "name": "气势披带",
+      "regulation": "M-A"
+    },
+    "froslassite": {
+      "affectedPokemonKeys": [
+        "mega-froslass"
+      ],
+      "category": "mega-stones",
+      "effect": "能让雪妖女进行超级进化的持有物。",
+      "id": 2566,
+      "key": "froslassite",
+      "location": "Shop",
+      "name": "雪妖女进化石",
+      "pokemon_key": "mega-froslass",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "galladite": {
+      "affectedPokemonKeys": [
+        "mega-gallade"
+      ],
+      "category": "mega-stones",
+      "effect": "能让艾路雷朵进行超级进化的持有物。",
+      "id": 756,
+      "key": "galladite",
+      "location": "Shop",
+      "name": "艾路雷朵进化石",
+      "pokemon_key": "mega-gallade",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "garchompite": {
+      "affectedPokemonKeys": [
+        "mega-garchomp"
+      ],
+      "category": "mega-stones",
+      "effect": "能让烈咬陆鲨进行超级进化的持有物。 （超级烈咬陆鲨）",
+      "id": 683,
+      "key": "garchompite",
+      "location": "Mega Evolution Tutorial",
+      "name": "烈咬陆鲨进化石",
+      "pokemon_key": "mega-garchomp",
+      "regulation": "M-A"
+    },
+    "garchompite-z": {
+      "affectedPokemonKeys": [
+        "mega-garchomp-z"
+      ],
+      "category": "mega-stones",
+      "effect": "能让烈咬陆鲨进行超级进化的持有物。 （超级烈咬陆鲨Z）",
+      "id": 2640,
+      "isNew": true,
+      "key": "garchompite-z",
+      "location": "Shop",
+      "name": "烈咬陆鲨进化石Z",
+      "pokemon_key": "mega-garchomp-z",
+      "regulation": "M-C",
+      "vp": 2000
+    },
+    "gardevoirite": {
+      "affectedPokemonKeys": [
+        "mega-gardevoir"
+      ],
+      "category": "mega-stones",
+      "effect": "能让沙奈朵进行超级进化的持有物。",
+      "id": 657,
+      "key": "gardevoirite",
+      "location": "Shop",
+      "name": "沙奈朵进化石",
+      "pokemon_key": "mega-gardevoir",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "gengarite": {
+      "affectedPokemonKeys": [
+        "mega-gengar"
+      ],
+      "category": "mega-stones",
+      "effect": "能让耿鬼进行超级进化的持有物。",
+      "id": 656,
+      "key": "gengarite",
+      "location": "Shop",
+      "name": "耿鬼进化石",
+      "pokemon_key": "mega-gengar",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "ghost-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "ghost"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见幽灵属性宝可梦。",
+      "key": "ghost-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "幽灵属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "glalitite": {
+      "affectedPokemonKeys": [
+        "mega-glalie"
+      ],
+      "category": "mega-stones",
+      "effect": "能让冰鬼护进行超级进化的持有物。",
+      "id": 763,
+      "key": "glalitite",
+      "location": "Shop",
+      "name": "冰鬼护进化石",
+      "pokemon_key": "mega-glalie",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "glimmoranite": {
+      "affectedPokemonKeys": [
+        "mega-glimmora"
+      ],
+      "category": "mega-stones",
+      "effect": "能让晶光花进行超级进化的持有物。",
+      "id": 2650,
+      "key": "glimmoranite",
+      "location": "Shop",
+      "name": "晶光花进化石",
+      "pokemon_key": "mega-glimmora",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "golisopite": {
+      "affectedPokemonKeys": [
+        "mega-golisopod"
+      ],
+      "category": "mega-stones",
+      "effect": "能让具甲武者进行超级进化的持有物。",
+      "id": 2645,
+      "isNew": true,
+      "key": "golisopite",
+      "location": "Shop",
+      "name": "具甲武者进化石",
+      "pokemon_key": "mega-golisopod",
+      "regulation": "M-C",
+      "vp": 2000
+    },
+    "golurkite": {
+      "affectedPokemonKeys": [
+        "mega-golurk"
+      ],
+      "category": "mega-stones",
+      "effect": "能让泥偶巨人进行超级进化的持有物。",
+      "id": 2642,
+      "key": "golurkite",
+      "location": "Shop",
+      "name": "泥偶巨人进化石",
+      "pokemon_key": "mega-golurk",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "grass-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "grass"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见草属性宝可梦。",
+      "key": "grass-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "草属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "grassy-seed": {
+      "affectedBuffEffectKeys": [
+        "buff-effect-6"
+      ],
+      "affectedMoveKeys": [
+        "grassy-terrain"
+      ],
+      "category": "hold-items",
+      "effect": "让宝可梦携带后，在青草场地上使用，防御就会提高。",
+      "id": 884,
+      "isNew": true,
+      "key": "grassy-seed",
+      "location": "Shop",
+      "name": "青草种子",
+      "regulation": "M-C",
+      "vp": 700
+    },
+    "great-ball-guaranteed-ticket": {
+      "category": "miscellaneous",
+      "effect": "可遇见装在超级球里的宝可梦阵容的票券。",
+      "key": "great-ball-guaranteed-ticket",
+      "name": "超级球保证票券",
+      "regulation": "M-A"
+    },
+    "greninjite": {
+      "affectedPokemonKeys": [
+        "mega-greninja"
+      ],
+      "category": "mega-stones",
+      "effect": "能让甲贺忍蛙进行超级进化的持有物。",
+      "id": 2577,
+      "key": "greninjite",
+      "location": "Deposit Greninja from Pokemon Legends: Z-A",
+      "name": "甲贺忍蛙进化石",
+      "pokemon_key": "mega-greninja",
+      "regulation": "M-A"
+    },
+    "ground-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "ground"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见地面属性宝可梦。",
+      "key": "ground-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "地面属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "gyaradosite": {
+      "affectedPokemonKeys": [
+        "mega-gyarados"
+      ],
+      "category": "mega-stones",
+      "effect": "能让暴鲤龙进行超级进化的持有物。",
+      "id": 676,
+      "key": "gyaradosite",
+      "location": "Mega Evolution Tutorial",
+      "name": "暴鲤龙进化石",
+      "pokemon_key": "mega-gyarados",
+      "regulation": "M-A"
+    },
+    "haban-berry": {
+      "affectedMoveTypeKeys": [
+        "dragon"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的龙属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 197,
+      "key": "haban-berry",
+      "location": "Shop",
+      "name": "莓榴果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "hard-stone": {
+      "affectedMoveTypeKeys": [
+        "rock"
+      ],
+      "category": "hold-items",
+      "effect": "岩石属性招式的威力会变为1.2倍。",
+      "id": 238,
+      "key": "hard-stone",
+      "location": "Shop",
+      "name": "硬石头",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "hawluchanite": {
+      "affectedPokemonKeys": [
+        "mega-hawlucha"
+      ],
+      "category": "mega-stones",
+      "effect": "能让摔角鹰人进行超级进化的持有物。",
+      "id": 2583,
+      "key": "hawluchanite",
+      "location": "Shop",
+      "name": "摔角鹰人进化石",
+      "pokemon_key": "mega-hawlucha",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "heal-ball-guaranteed-ticket": {
+      "category": "miscellaneous",
+      "effect": "可遇见装在治愈球里的宝可梦阵容的票券。",
+      "key": "heal-ball-guaranteed-ticket",
+      "name": "治愈球保证票券",
+      "regulation": "M-A"
+    },
+    "heat-rock": {
+      "affectedBuffEffectKeys": [
+        "buff-effect-1"
+      ],
+      "category": "hold-items",
+      "effect": "因招式或特性变为大晴天状态时， 持续时间会延长3回合。 （合计8回合）",
+      "id": 284,
+      "isNew": false,
+      "key": "heat-rock",
+      "location": "Shop",
+      "name": "炽热岩石",
+      "regulation": "M-B",
+      "vp": 700
+    },
+    "heracronite": {
+      "affectedPokemonKeys": [
+        "mega-heracross"
+      ],
+      "category": "mega-stones",
+      "effect": "能让赫拉克罗斯进行超级进化的持有物。",
+      "id": 680,
+      "key": "heracronite",
+      "location": "Mega Evolution Tutorial",
+      "name": "赫拉克罗斯进化石",
+      "pokemon_key": "mega-heracross",
+      "regulation": "M-A"
+    },
+    "houndoominite": {
+      "affectedPokemonKeys": [
+        "mega-houndoom"
+      ],
+      "category": "mega-stones",
+      "effect": "能让黑鲁加进行超级进化的持有物。",
+      "id": 666,
+      "key": "houndoominite",
+      "location": "Shop",
+      "name": "黑鲁加进化石",
+      "pokemon_key": "mega-houndoom",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "ice-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "ice"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见冰属性宝可梦。",
+      "key": "ice-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "冰属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "icy-rock": {
+      "affectedBuffEffectKeys": [
+        "buff-effect-4"
+      ],
+      "category": "hold-items",
+      "effect": "因招式或特性变为下雪状态时， 持续时间会延长3回合。 （合计8回合）",
+      "id": 282,
+      "isNew": false,
+      "key": "icy-rock",
+      "location": "Shop",
+      "name": "冰冷岩石",
+      "regulation": "M-B",
+      "vp": 700
+    },
+    "iron-ball": {
+      "affectedBuffEffectKeys": [
+        "buff-effect-41",
+        "buff-effect-31",
+        "buff-effect-33"
+      ],
+      "affectedMoveTypeKeys": [
+        "ground"
+      ],
+      "category": "hold-items",
+      "effect": "速度会变为1/2。不在地面上的 宝可梦会变为在地面上， 且地面属性的招式、撒菱、 毒菱、黏黏网状态会生效。",
+      "id": 278,
+      "isNew": false,
+      "key": "iron-ball",
+      "location": "Shop",
+      "name": "黑色铁球",
+      "regulation": "M-B",
+      "vp": 1000
+    },
+    "kangaskhanite": {
+      "affectedPokemonKeys": [
+        "mega-kangaskhan"
+      ],
+      "category": "mega-stones",
+      "effect": "能让袋兽进行超级进化的持有物。",
+      "id": 675,
+      "key": "kangaskhanite",
+      "location": "Shop",
+      "name": "袋兽进化石",
+      "pokemon_key": "mega-kangaskhan",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "kasib-berry": {
+      "affectedMoveTypeKeys": [
+        "ghost"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的幽灵属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 196,
+      "key": "kasib-berry",
+      "location": "Shop",
+      "name": "佛柑果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "kebia-berry": {
+      "affectedMoveTypeKeys": [
+        "poison"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的毒属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 190,
+      "key": "kebia-berry",
+      "location": "Shop",
+      "name": "通通果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "kings-rock": {
+      "category": "hold-items",
+      "effect": "用招式给予伤害时， 有10％的机率会让对手畏缩。",
+      "id": 221,
+      "key": "kings-rock",
+      "location": "Beginning",
+      "name": "王者之证",
+      "regulation": "M-A"
+    },
+    "leek": {
+      "affectedPokemonKeys": [
+        "farfetchd",
+        "sirfetchd"
+      ],
+      "category": "hold-items",
+      "effect": "让大葱鸭或葱游兵携带后，招式会更容易击中要害的又长又硬的茎。",
+      "id": 259,
+      "isNew": true,
+      "key": "leek",
+      "location": "Shop",
+      "name": "大葱",
+      "regulation": "M-C",
+      "vp": 700
+    },
+    "leftovers": {
+      "category": "hold-items",
+      "effect": "回合结束时， 会回复最大HP的1/16。",
+      "id": 234,
+      "key": "leftovers",
+      "location": "Beginning",
+      "name": "吃剩的东西",
+      "regulation": "M-A"
+    },
+    "leppa-berry": {
+      "category": "berries",
+      "effect": "可以让PP变为0的招式回复10PP。 使用1次后就会在该次对战中消失。",
+      "id": 154,
+      "key": "leppa-berry",
+      "location": "Shop",
+      "name": "苹野果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "life-orb": {
+      "category": "hold-items",
+      "effect": "招式的威力会变为1.3倍， 但每当成功使出攻击时， 都会减少最大HP的1/10。",
+      "id": 270,
+      "isNew": false,
+      "key": "life-orb",
+      "location": "Shop",
+      "name": "生命宝珠",
+      "regulation": "M-B",
+      "vp": 1000
+    },
+    "light-ball": {
+      "affectedPokemonKeys": [
+        "pikachu"
+      ],
+      "category": "hold-items",
+      "effect": "皮卡丘的 攻击和特攻会变为2倍。",
+      "id": 236,
+      "key": "light-ball",
+      "location": "Shop",
+      "name": "电气球",
+      "regulation": "M-A",
+      "vp": 1000
+    },
+    "light-clay": {
+      "affectedBuffEffectKeys": [
+        "buff-effect-37",
+        "buff-effect-38",
+        "buff-effect-54"
+      ],
+      "category": "hold-items",
+      "effect": "使出光墙、反射壁、极光幕时， 持续时间会延长3回合。 （合计8回合）",
+      "id": 269,
+      "isNew": false,
+      "key": "light-clay",
+      "location": "Shop",
+      "name": "光之黏土",
+      "regulation": "M-B",
+      "vp": 1000
+    },
+    "lopunnite": {
+      "affectedPokemonKeys": [
+        "mega-lopunny"
+      ],
+      "category": "mega-stones",
+      "effect": "能让长耳兔进行超级进化的持有物。",
+      "id": 768,
+      "key": "lopunnite",
+      "location": "Shop",
+      "name": "长耳兔进化石",
+      "pokemon_key": "mega-lopunny",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "lucarionite": {
+      "affectedPokemonKeys": [
+        "mega-lucario"
+      ],
+      "category": "mega-stones",
+      "effect": "能让路卡利欧进行超级进化的持有物。 （超级路卡利欧）",
+      "id": 673,
+      "key": "lucarionite",
+      "location": "Shop",
+      "name": "路卡利欧进化石",
+      "pokemon_key": "mega-lucario",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "lucarionite-z": {
+      "affectedPokemonKeys": [
+        "mega-lucario-z"
+      ],
+      "category": "mega-stones",
+      "effect": "能让路卡利欧进行超级进化的持有物。 （超级路卡利欧Z）",
+      "id": 2641,
+      "isNew": true,
+      "key": "lucarionite-z",
+      "location": "Shop",
+      "name": "路卡利欧进化石Z",
+      "pokemon_key": "mega-lucario-z",
+      "regulation": "M-C",
+      "vp": 2000
+    },
+    "lum-berry": {
+      "affectedConditionKeys": [
+        "paralysis",
+        "freezing",
+        "burning",
+        "poison",
+        "bad-poison",
+        "sleep"
+      ],
+      "category": "berries",
+      "effect": "可以治愈所有异常状态、混乱状态。 使用1次后就会在该次对战中消失。",
+      "id": 157,
+      "key": "lum-berry",
+      "location": "Beginning",
+      "name": "木子果",
+      "regulation": "M-A"
+    },
+    "luxury-ball-guaranteed-ticket": {
+      "category": "miscellaneous",
+      "effect": "可遇见装在豪华球里的宝可梦阵容的票券。",
+      "key": "luxury-ball-guaranteed-ticket",
+      "name": "豪华球保证票券",
+      "regulation": "M-A"
+    },
+    "magnet": {
+      "affectedMoveTypeKeys": [
+        "electric"
+      ],
+      "category": "hold-items",
+      "effect": "电属性招式的威力会变为1.2倍。",
+      "id": 242,
+      "key": "magnet",
+      "location": "Shop",
+      "name": "磁铁",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "malamarite": {
+      "affectedPokemonKeys": [
+        "mega-malamar"
+      ],
+      "category": "mega-stones",
+      "effect": "能让乌贼王进行超级进化的持有物。",
+      "id": 2580,
+      "isNew": false,
+      "key": "malamarite",
+      "location": "Shop",
+      "name": "乌贼王进化石",
+      "pokemon_key": "mega-malamar",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "manectite": {
+      "affectedPokemonKeys": [
+        "mega-manectric"
+      ],
+      "category": "mega-stones",
+      "effect": "能让雷电兽进行超级进化的持有物。",
+      "id": 682,
+      "key": "manectite",
+      "location": "Mega Evolution Tutorial",
+      "name": "雷电兽进化石",
+      "pokemon_key": "mega-manectric",
+      "regulation": "M-A"
+    },
+    "mawilite": {
+      "affectedPokemonKeys": [
+        "mega-mawile"
+      ],
+      "category": "mega-stones",
+      "effect": "能让大嘴娃进行超级进化的持有物。",
+      "id": 681,
+      "isNew": false,
+      "key": "mawilite",
+      "location": "Shop",
+      "name": "大嘴娃进化石",
+      "pokemon_key": "mega-mawile",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "medichamite": {
+      "affectedPokemonKeys": [
+        "mega-medicham"
+      ],
+      "category": "mega-stones",
+      "effect": "能让恰雷姆进行超级进化的持有物。",
+      "id": 665,
+      "key": "medichamite",
+      "location": "Shop",
+      "name": "恰雷姆进化石",
+      "pokemon_key": "mega-medicham",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "meganiumite": {
+      "affectedPokemonKeys": [
+        "mega-meganium"
+      ],
+      "category": "mega-stones",
+      "effect": "能让大竺葵进行超级进化的持有物。",
+      "id": 2563,
+      "key": "meganiumite",
+      "location": "Shop",
+      "name": "大竺葵进化石",
+      "pokemon_key": "mega-meganium",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "mental-herb": {
+      "affectedBuffEffectKeys": [
+        "buff-effect-14",
+        "buff-effect-29",
+        "buff-effect-18",
+        "buff-effect-21",
+        "buff-effect-20",
+        "buff-effect-16"
+      ],
+      "category": "hold-items",
+      "effect": "可以治愈着迷、挑衅、无法连续、 招式封锁、回复封锁、再来一次状态。 使用1次后就会在该次对战中消失。",
+      "id": 219,
+      "key": "mental-herb",
+      "location": "Shop",
+      "name": "心灵香草",
+      "regulation": "M-A",
+      "vp": 1000
+    },
+    "meowsticite": {
+      "affectedPokemonKeys": [
+        "mega-meowstic"
+      ],
+      "category": "mega-stones",
+      "effect": "能让超能妙喵进行超级进化的持有物。",
+      "id": 2643,
+      "key": "meowsticite",
+      "location": "Shop",
+      "name": "超能妙喵进化石",
+      "pokemon_key": "mega-meowstic",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "metagrossite": {
+      "affectedPokemonKeys": [
+        "mega-metagross"
+      ],
+      "category": "mega-stones",
+      "effect": "能让巨金怪进行超级进化的持有物。",
+      "id": 758,
+      "isNew": false,
+      "key": "metagrossite",
+      "location": "Shop",
+      "name": "巨金怪进化石",
+      "pokemon_key": "mega-metagross",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "metal-coat": {
+      "affectedMoveTypeKeys": [
+        "steel"
+      ],
+      "category": "hold-items",
+      "effect": "钢属性招式的威力会变为1.2倍。",
+      "id": 233,
+      "key": "metal-coat",
+      "location": "Shop",
+      "name": "金属膜",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "metronome": {
+      "category": "hold-items",
+      "effect": "若连续使出相同招式，则威力会提高。 第2次提高为1.2倍，第3次提高为1.4倍， 最大会提高至2倍。停止后威力就会复原。",
+      "id": 277,
+      "isNew": false,
+      "key": "metronome",
+      "location": "Shop",
+      "name": "节拍器",
+      "regulation": "M-B",
+      "vp": 700
+    },
+    "miracle-seed": {
+      "affectedMoveTypeKeys": [
+        "grass"
+      ],
+      "category": "hold-items",
+      "effect": "草属性招式的威力会变为1.2倍。",
+      "id": 239,
+      "key": "miracle-seed",
+      "location": "Shop",
+      "name": "奇迹种子",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "misty-seed": {
+      "affectedBuffEffectKeys": [
+        "buff-effect-7"
+      ],
+      "affectedMoveKeys": [
+        "misty-terrain"
+      ],
+      "category": "hold-items",
+      "effect": "让宝可梦携带后，在薄雾场地上使用，特防就会提高。",
+      "id": 883,
+      "isNew": true,
+      "key": "misty-seed",
+      "location": "Shop",
+      "name": "薄雾种子",
+      "regulation": "M-C",
+      "vp": 700
+    },
+    "muscle-band": {
+      "affectedMoveCategoryKeys": [
+        "physical"
+      ],
+      "category": "hold-items",
+      "effect": "物理招式的威力会变为1.1倍。",
+      "id": 266,
+      "isNew": false,
+      "key": "muscle-band",
+      "location": "Shop",
+      "name": "力量头带",
+      "regulation": "M-B",
+      "vp": 700
+    },
+    "mystic-water": {
+      "affectedMoveTypeKeys": [
+        "water"
+      ],
+      "category": "hold-items",
+      "effect": "水属性招式的威力会变为1.2倍。",
+      "id": 243,
+      "key": "mystic-water",
+      "location": "Shop",
+      "name": "神秘水滴",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "nest-ball-guaranteed-ticket": {
+      "category": "miscellaneous",
+      "effect": "可遇见装在巢穴球里的宝可梦阵容的票券。",
+      "key": "nest-ball-guaranteed-ticket",
+      "name": "巢穴球保证票券",
+      "regulation": "M-A"
+    },
+    "net-ball-guaranteed-ticket": {
+      "category": "miscellaneous",
+      "effect": "可遇见装在捕网球里的宝可梦阵容的票券。",
+      "key": "net-ball-guaranteed-ticket",
+      "name": "捕网球保证票券",
+      "regulation": "M-A"
+    },
+    "never-melt-ice": {
+      "affectedMoveTypeKeys": [
+        "ice"
+      ],
+      "category": "hold-items",
+      "effect": "冰属性招式的威力会变为1.2倍。",
+      "id": 246,
+      "key": "never-melt-ice",
+      "location": "Shop",
+      "name": "不融冰",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "normal-gem": {
+      "affectedMoveTypeKeys": [
+        "normal"
+      ],
+      "category": "hold-items",
+      "effect": "一般属性的宝石。携带后，一般属性的招式威力仅会增强１次。",
+      "id": 564,
+      "isNew": true,
+      "key": "normal-gem",
+      "location": "Shop",
+      "name": "一般宝石",
+      "regulation": "M-C",
+      "vp": 1000
+    },
+    "normal-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "normal"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见一般属性宝可梦。",
+      "key": "normal-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "一般属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "occa-berry": {
+      "affectedMoveTypeKeys": [
+        "fire"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的火属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 184,
+      "key": "occa-berry",
+      "location": "Shop",
+      "name": "巧可果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "oran-berry": {
+      "category": "berries",
+      "effect": "剩余HP变为最大HP的1/2以下时， 可以回复10HP。 使用1次后就会在该次对战中消失。",
+      "id": 155,
+      "key": "oran-berry",
+      "location": "Shop",
+      "name": "橙橙果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "passho-berry": {
+      "affectedMoveTypeKeys": [
+        "water"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的水属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 185,
+      "key": "passho-berry",
+      "location": "Shop",
+      "name": "千香果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "payapa-berry": {
+      "affectedMoveTypeKeys": [
+        "psychic"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的超能力属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 193,
+      "key": "payapa-berry",
+      "location": "Shop",
+      "name": "福禄果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "pecha-berry": {
+      "affectedConditionKeys": [
+        "poison",
+        "bad-poison"
+      ],
+      "category": "berries",
+      "effect": "可以治愈中毒、剧毒状态。 使用1次后就会在该次对战中消失。",
+      "id": 151,
+      "key": "pecha-berry",
+      "location": "Shop",
+      "name": "桃桃果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "persim-berry": {
+      "category": "berries",
+      "effect": "可以治愈混乱状态。 使用1次后就会在该次对战中消失。",
+      "id": 156,
+      "key": "persim-berry",
+      "location": "Shop",
+      "name": "柿仔果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "pidgeotite": {
+      "affectedPokemonKeys": [
+        "mega-pidgeot"
+      ],
+      "category": "mega-stones",
+      "effect": "能让大比鸟进行超级进化的持有物。",
+      "id": 762,
+      "key": "pidgeotite",
+      "location": "Shop",
+      "name": "大比鸟进化石",
+      "pokemon_key": "mega-pidgeot",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "pinsirite": {
+      "affectedPokemonKeys": [
+        "mega-pinsir"
+      ],
+      "category": "mega-stones",
+      "effect": "能让凯罗斯进行超级进化的持有物。",
+      "id": 671,
+      "key": "pinsirite",
+      "location": "Shop",
+      "name": "凯罗斯进化石",
+      "pokemon_key": "mega-pinsir",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "poison-barb": {
+      "affectedMoveTypeKeys": [
+        "poison"
+      ],
+      "category": "hold-items",
+      "effect": "毒属性招式的威力会变为1.2倍。",
+      "id": 245,
+      "key": "poison-barb",
+      "location": "Shop",
+      "name": "毒针",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "poison-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "poison"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见毒属性宝可梦。",
+      "key": "poison-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "毒属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "poke-ball-guaranteed-ticket": {
+      "category": "miscellaneous",
+      "effect": "可遇见装在普通精灵球里的宝可梦阵容的票券。",
+      "key": "poke-ball-guaranteed-ticket",
+      "name": "精灵球保证票券",
+      "regulation": "M-A"
+    },
+    "premier-ball-guaranteed-ticket": {
+      "category": "miscellaneous",
+      "effect": "可遇见装在纪念球里的宝可梦阵容的票券。",
+      "key": "premier-ball-guaranteed-ticket",
+      "name": "纪念球保证票券",
+      "regulation": "M-A"
+    },
+    "psychic-seed": {
+      "affectedBuffEffectKeys": [
+        "buff-effect-8"
+      ],
+      "affectedMoveKeys": [
+        "psychic-terrain"
+      ],
+      "category": "hold-items",
+      "effect": "让宝可梦携带后，在精神场地上使用，特防就会提高。",
+      "id": 882,
+      "isNew": true,
+      "key": "psychic-seed",
+      "location": "Shop",
+      "name": "精神种子",
+      "regulation": "M-C",
+      "vp": 700
+    },
+    "psychic-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "psychic"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见超能力属性宝可梦。",
+      "key": "psychic-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "超能力属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "pyroarite": {
+      "affectedPokemonKeys": [
+        "mega-pyroar"
+      ],
+      "category": "mega-stones",
+      "effect": "能让火炎狮进行超级进化的持有物。",
+      "id": 2578,
+      "isNew": false,
+      "key": "pyroarite",
+      "location": "Shop",
+      "name": "火炎狮进化石",
+      "pokemon_key": "mega-pyroar",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "quick-ball-guaranteed-ticket": {
+      "category": "miscellaneous",
+      "effect": "可遇见装在先机球里的宝可梦阵容的票券。",
+      "key": "quick-ball-guaranteed-ticket",
+      "name": "先机球保证票券",
+      "regulation": "M-A"
+    },
+    "quick-claw": {
+      "category": "hold-items",
+      "effect": "有20％的机率会在相同优先度的 招式中第一个行动。",
+      "id": 217,
+      "key": "quick-claw",
+      "location": "Beginning",
+      "name": "先制之爪",
+      "regulation": "M-A"
+    },
+    "quick-coupon": {
+      "category": "miscellaneous",
+      "effect": "缩短招募牧场的等待时间。",
+      "key": "quick-coupon",
+      "location": "Missions, Battle Pass, Achievements",
+      "name": "快速优惠券",
+      "regulation": "M-A"
+    },
+    "raichunite-x": {
+      "affectedPokemonKeys": [
+        "mega-raichu-x"
+      ],
+      "category": "mega-stones",
+      "effect": "能让雷丘进行超级进化的持有物。 对阿罗拉的样子没有效果。 （超级雷丘Ｘ）",
+      "id": 2635,
+      "isNew": false,
+      "isUpcoming": false,
+      "key": "raichunite-x",
+      "location": "Shop",
+      "name": "雷丘进化石Ｘ",
+      "pokemon_key": "mega-raichu-x",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "raichunite-y": {
+      "affectedPokemonKeys": [
+        "mega-raichu-y"
+      ],
+      "category": "mega-stones",
+      "effect": "能让雷丘进行超级进化的持有物。 对阿罗拉的样子没有效果。 （超级雷丘Ｙ）",
+      "id": 2636,
+      "isNew": false,
+      "isUpcoming": false,
+      "key": "raichunite-y",
+      "location": "Shop",
+      "name": "雷丘进化石Ｙ",
+      "pokemon_key": "mega-raichu-y",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "rare-poke-ball-guaranteed-ticket": {
+      "category": "miscellaneous",
+      "effect": "可遇见装在稀有精灵球里的宝可梦阵容的票券。",
+      "key": "rare-poke-ball-guaranteed-ticket",
+      "name": "稀有球保证票券",
+      "regulation": "M-A"
+    },
+    "rawst-berry": {
+      "affectedConditionKeys": [
+        "burning"
+      ],
+      "category": "berries",
+      "effect": "可以治愈灼伤状态。 使用1次后就会在该次对战中消失。",
+      "id": 152,
+      "key": "rawst-berry",
+      "location": "Shop",
+      "name": "莓莓果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "red-card": {
+      "category": "hold-items",
+      "effect": "有着神奇力量的卡片。携带后，能让使用了招式的对手退场。",
+      "id": 542,
+      "isNew": true,
+      "key": "red-card",
+      "location": "Shop",
+      "name": "红牌",
+      "regulation": "M-C",
+      "vp": 1000
+    },
+    "repeat-ball-guaranteed-ticket": {
+      "category": "miscellaneous",
+      "effect": "可遇见装在重复球里的宝可梦阵容的票券。",
+      "key": "repeat-ball-guaranteed-ticket",
+      "name": "重复球保证票券",
+      "regulation": "M-A"
+    },
+    "rindo-berry": {
+      "affectedMoveTypeKeys": [
+        "grass"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的草属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 187,
+      "key": "rindo-berry",
+      "location": "Shop",
+      "name": "罗子果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "rock-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "rock"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见岩石属性宝可梦。",
+      "key": "rock-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "岩石属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "rocky-helmet": {
+      "category": "hold-items",
+      "effect": "让宝可梦携带后，在受到打击招式攻击时，能给予对手伤害。",
+      "id": 540,
+      "isNew": true,
+      "key": "rocky-helmet",
+      "location": "Shop",
+      "name": "凸凸头盔",
+      "regulation": "M-C",
+      "vp": 1000
+    },
+    "roseli-berry": {
+      "affectedMoveTypeKeys": [
+        "fairy"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的妖精属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 686,
+      "key": "roseli-berry",
+      "location": "Shop",
+      "name": "洛玫果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "sablenite": {
+      "affectedPokemonKeys": [
+        "mega-sableye"
+      ],
+      "category": "mega-stones",
+      "effect": "能让勾魂眼进行超级进化的持有物。",
+      "id": 754,
+      "key": "sablenite",
+      "location": "Shop",
+      "name": "勾魂眼进化石",
+      "pokemon_key": "mega-sableye",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "salamencite": {
+      "affectedPokemonKeys": [
+        "mega-salamence"
+      ],
+      "category": "mega-stones",
+      "effect": "能让暴飞龙进行超级进化的持有物。",
+      "id": 769,
+      "isNew": true,
+      "key": "salamencite",
+      "location": "Shop",
+      "name": "暴飞龙进化石",
+      "pokemon_key": "mega-salamence",
+      "regulation": "M-C",
+      "vp": 2000
+    },
+    "sceptilite": {
+      "affectedPokemonKeys": [
+        "mega-sceptile"
+      ],
+      "category": "mega-stones",
+      "effect": "能让蜥蜴王进行超级进化的持有物。",
+      "id": 753,
+      "isNew": false,
+      "key": "sceptilite",
+      "location": "Shop",
+      "name": "蜥蜴王进化石",
+      "pokemon_key": "mega-sceptile",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "scizorite": {
+      "affectedPokemonKeys": [
+        "mega-scizor"
+      ],
+      "category": "mega-stones",
+      "effect": "能让巨钳螳螂进行超级进化的持有物。",
+      "id": 670,
+      "key": "scizorite",
+      "location": "Shop",
+      "name": "巨钳螳螂进化石",
+      "pokemon_key": "mega-scizor",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "scolipedite": {
+      "affectedPokemonKeys": [
+        "mega-scolipede"
+      ],
+      "category": "mega-stones",
+      "effect": "能让蜈蚣王进行超级进化的持有物。",
+      "id": 2571,
+      "isNew": false,
+      "key": "scolipedite",
+      "location": "Shop",
+      "name": "蜈蚣王进化石",
+      "pokemon_key": "mega-scolipede",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "scope-lens": {
+      "category": "hold-items",
+      "effect": "会变为易中要害+1。",
+      "id": 232,
+      "key": "scope-lens",
+      "location": "Shop",
+      "name": "焦点镜",
+      "regulation": "M-A",
+      "vp": 1000
+    },
+    "scovillainite": {
+      "affectedPokemonKeys": [
+        "mega-scovillain"
+      ],
+      "category": "mega-stones",
+      "effect": "能让狠辣椒进行超级进化的持有物。",
+      "id": 2647,
+      "key": "scovillainite",
+      "location": "Shop",
+      "name": "狠辣椒进化石",
+      "pokemon_key": "mega-scovillain",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "scraftite": {
+      "affectedPokemonKeys": [
+        "mega-scrafty"
+      ],
+      "category": "mega-stones",
+      "effect": "能让头巾混混进行超级进化的持有物。",
+      "id": 2572,
+      "isNew": false,
+      "key": "scraftite",
+      "location": "Shop",
+      "name": "头巾混混进化石",
+      "pokemon_key": "mega-scrafty",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "sharp-beak": {
+      "affectedMoveTypeKeys": [
+        "flying"
+      ],
+      "category": "hold-items",
+      "effect": "飞行属性招式的威力会变为1.2倍。",
+      "id": 244,
+      "key": "sharp-beak",
+      "location": "Shop",
+      "name": "锐利鸟嘴",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "sharpedonite": {
+      "affectedPokemonKeys": [
+        "mega-sharpedo"
+      ],
+      "category": "mega-stones",
+      "effect": "能让巨牙鲨进行超级进化的持有物。",
+      "id": 759,
+      "key": "sharpedonite",
+      "location": "Shop",
+      "name": "巨牙鲨进化石",
+      "pokemon_key": "mega-sharpedo",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "shed-shell": {
+      "category": "hold-items",
+      "effect": "能无视妨碍替换的效果， 和同行队伍中的其他宝可梦进行替换。",
+      "id": 295,
+      "isNew": false,
+      "key": "shed-shell",
+      "location": "Shop",
+      "name": "美丽空壳",
+      "regulation": "M-B",
+      "vp": 700
+    },
+    "shell-bell": {
+      "category": "hold-items",
+      "effect": "用招式给予伤害时， 会让自己的HP回复 该伤害的1/8。",
+      "id": 253,
+      "key": "shell-bell",
+      "location": "Shop",
+      "name": "贝壳之铃",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "shuca-berry": {
+      "affectedMoveTypeKeys": [
+        "ground"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的地面属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 191,
+      "key": "shuca-berry",
+      "location": "Shop",
+      "name": "腰木果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "silk-scarf": {
+      "affectedMoveTypeKeys": [
+        "normal"
+      ],
+      "category": "hold-items",
+      "effect": "一般属性招式的威力会变为1.2倍。",
+      "id": 251,
+      "key": "silk-scarf",
+      "location": "Shop",
+      "name": "丝绸围巾",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "silver-powder": {
+      "affectedMoveTypeKeys": [
+        "bug"
+      ],
+      "category": "hold-items",
+      "effect": "虫属性招式的威力会变为1.2倍。",
+      "id": 222,
+      "key": "silver-powder",
+      "location": "Shop",
+      "name": "银粉",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "sitrus-berry": {
+      "category": "berries",
+      "effect": "剩余HP变为最大HP的1/2以下时， 可以回复最大HP的1/4。 使用1次后就会在该次对战中消失。",
+      "id": 158,
+      "key": "sitrus-berry",
+      "location": "Beginning",
+      "name": "文柚果",
+      "regulation": "M-A"
+    },
+    "skarmorite": {
+      "affectedPokemonKeys": [
+        "mega-skarmory"
+      ],
+      "category": "mega-stones",
+      "effect": "能让盔甲鸟进行超级进化的持有物。",
+      "id": 2565,
+      "key": "skarmorite",
+      "location": "Shop",
+      "name": "盔甲鸟进化石",
+      "pokemon_key": "mega-skarmory",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "slowbronite": {
+      "affectedPokemonKeys": [
+        "mega-slowbro"
+      ],
+      "category": "mega-stones",
+      "effect": "能让呆壳兽进行超级进化的持有物。 对伽勒尔的样子没有效果。",
+      "id": 760,
+      "key": "slowbronite",
+      "location": "Shop",
+      "name": "呆壳兽进化石",
+      "pokemon_key": "mega-slowbro",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "smooth-rock": {
+      "affectedBuffEffectKeys": [
+        "buff-effect-3"
+      ],
+      "category": "hold-items",
+      "effect": "因招式或特性变为沙暴状态时， 持续时间会延长3回合。 （合计8回合）",
+      "id": 283,
+      "isNew": false,
+      "key": "smooth-rock",
+      "location": "Shop",
+      "name": "沙沙岩石",
+      "regulation": "M-B",
+      "vp": 700
+    },
+    "soft-sand": {
+      "affectedMoveTypeKeys": [
+        "ground"
+      ],
+      "category": "hold-items",
+      "effect": "地面属性招式的威力会变为1.2倍。",
+      "id": 237,
+      "key": "soft-sand",
+      "location": "Shop",
+      "name": "柔软沙子",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "spell-tag": {
+      "affectedMoveTypeKeys": [
+        "ghost"
+      ],
+      "category": "hold-items",
+      "effect": "幽灵属性招式的威力会变为1.2倍。",
+      "id": 247,
+      "key": "spell-tag",
+      "location": "Shop",
+      "name": "咒术之符",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "staraptorite": {
+      "affectedPokemonKeys": [
+        "mega-staraptor"
+      ],
+      "category": "mega-stones",
+      "effect": "能让姆克鹰进行超级进化的持有物。",
+      "id": 2639,
+      "isNew": false,
+      "key": "staraptorite",
+      "location": "Shop",
+      "name": "姆克鹰进化石",
+      "pokemon_key": "mega-staraptor",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "starminite": {
+      "affectedPokemonKeys": [
+        "mega-starmie"
+      ],
+      "category": "mega-stones",
+      "effect": "能让宝石海星进行超级进化的持有物。",
+      "id": 2561,
+      "key": "starminite",
+      "location": "Shop",
+      "name": "宝石海星进化石",
+      "pokemon_key": "mega-starmie",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "steel-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "steel"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见钢属性宝可梦。",
+      "key": "steel-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "钢属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "steelixite": {
+      "affectedPokemonKeys": [
+        "mega-steelix"
+      ],
+      "category": "mega-stones",
+      "effect": "能让大钢蛇进行超级进化的持有物。",
+      "id": 761,
+      "key": "steelixite",
+      "location": "Mega Evolution Tutorial",
+      "name": "大钢蛇进化石",
+      "pokemon_key": "mega-steelix",
+      "regulation": "M-A"
+    },
+    "swampertite": {
+      "affectedPokemonKeys": [
+        "mega-swampert"
+      ],
+      "category": "mega-stones",
+      "effect": "能让巨沼怪进行超级进化的持有物。",
+      "id": 752,
+      "isNew": false,
+      "key": "swampertite",
+      "location": "Shop",
+      "name": "巨沼怪进化石",
+      "pokemon_key": "mega-swampert",
+      "regulation": "M-B",
+      "vp": 2000
+    },
+    "tanga-berry": {
+      "affectedMoveTypeKeys": [
+        "bug"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的虫属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 194,
+      "key": "tanga-berry",
+      "location": "Shop",
+      "name": "扁樱果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "teammate-ticket": {
+      "category": "miscellaneous",
+      "effect": "在招募牧场招募宝可梦。",
+      "key": "teammate-ticket",
+      "location": "Missions, Battle Pass, Achievements",
+      "name": "伙伴票券",
+      "regulation": "M-A"
+    },
+    "terrain-extender": {
+      "affectedBuffEffectKeys": [
+        "buff-effect-5",
+        "buff-effect-6",
+        "buff-effect-7",
+        "buff-effect-8"
+      ],
+      "affectedMoveKeys": [
+        "electric-terrain",
+        "grassy-terrain",
+        "misty-terrain",
+        "psychic-terrain"
+      ],
+      "category": "hold-items",
+      "effect": "当携带它的宝可梦利用招式或特性展开场地时，场地的持续时间会比平时更长。",
+      "id": 879,
+      "isNew": true,
+      "key": "terrain-extender",
+      "location": "Shop",
+      "name": "大地膜",
+      "regulation": "M-C",
+      "vp": 700
+    },
+    "timer-ball-guaranteed-ticket": {
+      "category": "miscellaneous",
+      "effect": "可遇见装在计时球里的宝可梦阵容的票券。",
+      "key": "timer-ball-guaranteed-ticket",
+      "name": "计时球保证票券",
+      "regulation": "M-A"
+    },
+    "training-ticket": {
+      "category": "miscellaneous",
+      "effect": "不消耗VP训练宝可梦。",
+      "key": "training-ticket",
+      "location": "Missions, Battle Pass, Achievements",
+      "name": "训练票券",
+      "regulation": "M-A"
+    },
+    "twisted-spoon": {
+      "affectedMoveTypeKeys": [
+        "psychic"
+      ],
+      "category": "hold-items",
+      "effect": "超能力属性招式的威力会变为1.2倍。",
+      "id": 248,
+      "key": "twisted-spoon",
+      "location": "Shop",
+      "name": "弯曲的汤匙",
+      "regulation": "M-A",
+      "vp": 700
+    },
+    "tyranitarite": {
+      "affectedPokemonKeys": [
+        "mega-tyranitar"
+      ],
+      "category": "mega-stones",
+      "effect": "能让班基拉斯进行超级进化的持有物。",
+      "id": 669,
+      "key": "tyranitarite",
+      "location": "Shop",
+      "name": "班基拉斯进化石",
+      "pokemon_key": "mega-tyranitar",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "ultra-ball-guaranteed-ticket": {
+      "category": "miscellaneous",
+      "effect": "可遇见装在高级球里的宝可梦阵容的票券。",
+      "key": "ultra-ball-guaranteed-ticket",
+      "name": "高级球保证票券",
+      "regulation": "M-A"
+    },
+    "venusaurite": {
+      "affectedPokemonKeys": [
+        "mega-venusaur"
+      ],
+      "category": "mega-stones",
+      "effect": "能让妙蛙花进行超级进化的持有物。",
+      "id": 659,
+      "key": "venusaurite",
+      "location": "Shop",
+      "name": "妙蛙花进化石",
+      "pokemon_key": "mega-venusaur",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "victreebelite": {
+      "affectedPokemonKeys": [
+        "mega-victreebel"
+      ],
+      "category": "mega-stones",
+      "effect": "能让大食花进行超级进化的持有物。",
+      "id": 2560,
+      "key": "victreebelite",
+      "location": "Shop",
+      "name": "大食花进化石",
+      "pokemon_key": "mega-victreebel",
+      "regulation": "M-A",
+      "vp": 2000
+    },
+    "wacan-berry": {
+      "affectedMoveTypeKeys": [
+        "electric"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的电属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 186,
+      "key": "wacan-berry",
+      "location": "Shop",
+      "name": "烛木果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "water-type-affinity-ticket": {
+      "affectedPokemonTypeKeys": [
+        "water"
+      ],
+      "category": "miscellaneous",
+      "effect": "下一次阵容中更容易遇见水属性宝可梦。",
+      "key": "water-type-affinity-ticket",
+      "location": "Achievements",
+      "name": "水属性遭遇票券",
+      "regulation": "M-A"
+    },
+    "white-herb": {
+      "category": "hold-items",
+      "effect": "能力降低时，可以让能力复原。 使用1次后就会在该次对战中消失。",
+      "id": 214,
+      "key": "white-herb",
+      "location": "Beginning",
+      "name": "白色香草",
+      "regulation": "M-A"
+    },
+    "wide-lens": {
+      "category": "hold-items",
+      "effect": "招式的命中率会变为1.1倍。",
+      "id": 265,
+      "isNew": false,
+      "key": "wide-lens",
+      "location": "Shop",
+      "name": "广角镜",
+      "regulation": "M-B",
+      "vp": 700
+    },
+    "wise-glasses": {
+      "affectedMoveCategoryKeys": [
+        "special"
+      ],
+      "category": "hold-items",
+      "effect": "特殊招式的威力会变为1.1倍。",
+      "id": 267,
+      "isNew": false,
+      "key": "wise-glasses",
+      "location": "Shop",
+      "name": "博识眼镜",
+      "regulation": "M-B",
+      "vp": 700
+    },
+    "yache-berry": {
+      "affectedMoveTypeKeys": [
+        "ice"
+      ],
+      "category": "berries",
+      "effect": "受到效果绝佳的冰属性招式影响时， 伤害会减半。 使用1次后就会在该次对战中消失。",
+      "id": 188,
+      "key": "yache-berry",
+      "location": "Shop",
+      "name": "番荔果",
+      "regulation": "M-A",
+      "vp": 400
+    },
+    "zoom-lens": {
+      "category": "hold-items",
+      "effect": "当携带它的宝可梦比对手行动迟缓时，招式会变得容易命中。",
+      "id": 276,
+      "isNew": false,
+      "key": "zoom-lens",
+      "location": "Shop",
+      "name": "对焦镜",
+      "regulation": "M-B",
+      "vp": 700
+    }
+  },
+  "natures": {
+    "adamant": {
+      "decreased": "spAttack",
+      "id": 3,
+      "increased": "attack",
+      "key": "adamant",
+      "name": "固执"
+    },
+    "bashful": {
+      "decreased": null,
+      "id": 18,
+      "increased": null,
+      "key": "bashful",
+      "name": "害羞"
+    },
+    "bold": {
+      "decreased": "attack",
+      "id": 5,
+      "increased": "defense",
+      "key": "bold",
+      "name": "大胆"
+    },
+    "brave": {
+      "decreased": "speed",
+      "id": 2,
+      "increased": "attack",
+      "key": "brave",
+      "name": "勇敢"
+    },
+    "calm": {
+      "decreased": "attack",
+      "id": 20,
+      "increased": "spDefense",
+      "key": "calm",
+      "name": "温和"
+    },
+    "careful": {
+      "decreased": "spAttack",
+      "id": 23,
+      "increased": "spDefense",
+      "key": "careful",
+      "name": "慎重"
+    },
+    "docile": {
+      "decreased": null,
+      "id": 6,
+      "increased": null,
+      "key": "docile",
+      "name": "坦率"
+    },
+    "gentle": {
+      "decreased": "defense",
+      "id": 21,
+      "increased": "spDefense",
+      "key": "gentle",
+      "name": "温顺"
+    },
+    "hardy": {
+      "decreased": null,
+      "id": 0,
+      "increased": null,
+      "key": "hardy",
+      "name": "勤奋"
+    },
+    "hasty": {
+      "decreased": "defense",
+      "id": 11,
+      "increased": "speed",
+      "key": "hasty",
+      "name": "急躁"
+    },
+    "impish": {
+      "decreased": "spAttack",
+      "id": 8,
+      "increased": "defense",
+      "key": "impish",
+      "name": "淘气"
+    },
+    "jolly": {
+      "decreased": "spAttack",
+      "id": 13,
+      "increased": "speed",
+      "key": "jolly",
+      "name": "爽朗"
+    },
+    "lax": {
+      "decreased": "spDefense",
+      "id": 9,
+      "increased": "defense",
+      "key": "lax",
+      "name": "乐天"
+    },
+    "lonely": {
+      "decreased": "defense",
+      "id": 1,
+      "increased": "attack",
+      "key": "lonely",
+      "name": "怕寂寞"
+    },
+    "mild": {
+      "decreased": "defense",
+      "id": 16,
+      "increased": "spAttack",
+      "key": "mild",
+      "name": "慢吞吞"
+    },
+    "modest": {
+      "decreased": "attack",
+      "id": 15,
+      "increased": "spAttack",
+      "key": "modest",
+      "name": "内敛"
+    },
+    "naive": {
+      "decreased": "spDefense",
+      "id": 14,
+      "increased": "speed",
+      "key": "naive",
+      "name": "天真"
+    },
+    "naughty": {
+      "decreased": "spDefense",
+      "id": 4,
+      "increased": "attack",
+      "key": "naughty",
+      "name": "顽皮"
+    },
+    "quiet": {
+      "decreased": "speed",
+      "id": 17,
+      "increased": "spAttack",
+      "key": "quiet",
+      "name": "冷静"
+    },
+    "quirky": {
+      "decreased": null,
+      "id": 24,
+      "increased": null,
+      "key": "quirky",
+      "name": "浮躁"
+    },
+    "rash": {
+      "decreased": "spDefense",
+      "id": 19,
+      "increased": "spAttack",
+      "key": "rash",
+      "name": "马虎"
+    },
+    "relaxed": {
+      "decreased": "speed",
+      "id": 7,
+      "increased": "defense",
+      "key": "relaxed",
+      "name": "悠闲"
+    },
+    "sassy": {
+      "decreased": "speed",
+      "id": 22,
+      "increased": "spDefense",
+      "key": "sassy",
+      "name": "自大"
+    },
+    "serious": {
+      "decreased": null,
+      "id": 12,
+      "increased": null,
+      "key": "serious",
+      "name": "认真"
+    },
+    "timid": {
+      "decreased": "attack",
+      "id": 10,
+      "increased": "speed",
+      "key": "timid",
+      "name": "胆小"
+    }
+  },
+  "point_rules": {
+    "per_stat": 32,
+    "source": "calculator input max=32 and budget=66",
+    "total": 66,
+    "unit": "champions_training_points"
+  },
+  "schema_version": 1,
+  "source_snapshot": "2026-09-10",
+  "source_url": "https://op.gg/zh-cn/pokemon-champions/calculator"
+}

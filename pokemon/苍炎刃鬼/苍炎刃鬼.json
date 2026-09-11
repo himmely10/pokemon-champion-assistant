@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 937,
+  "name": "苍炎刃鬼",
+  "species_name": "苍炎刃鬼",
+  "form_name": null,
+  "wiki_name": "苍炎刃鬼",
+  "directory": "苍炎刃鬼",
+  "source_slug": "ceruledge",
+  "base_stats": {
+    "hp": 75,
+    "attack": 125,
+    "defense": 80,
+    "special_attack": 60,
+    "special_defense": 100,
+    "speed": 85
+  },
+  "base_stat_total": 525,
+  "images": {
+    "normal": {
+      "file": "苍炎刃鬼.png",
+      "source_url": "https://media.52poke.com/wiki/0/0e/Champions_0937_Sprite.png",
+      "source_filename": "Champions_0937_Sprite.png",
+      "sha256": "355c74986e4ce81d020c5bd4080d713cd5fde7b8067234dcbc9544a855435c2a",
+      "width": 128,
+      "height": 128,
+      "bytes": 12600
+    },
+    "shiny": {
+      "file": "苍炎刃鬼_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/f/f8/Champions_0937_s_Sprite.png",
+      "source_filename": "Champions_0937_s_Sprite.png",
+      "sha256": "f0f583ed6cb8b06f6332acaa8c19b42c94619d76331a86a48013975212737f93",
+      "width": 128,
+      "height": 128,
+      "bytes": 12608
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/ceruledge?format=double&season=M-5",
+    "raw_path": "_sources/details/ceruledge.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

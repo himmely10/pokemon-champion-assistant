@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 128,
+  "name": "肯泰罗（火炽种）",
+  "species_name": "肯泰罗",
+  "form_name": "帕底亚的样子火炽种",
+  "wiki_name": "肯泰罗（帕底亚的样子火炽种）",
+  "directory": "肯泰罗（火炽种）",
+  "source_slug": "tauros-paldea-blaze",
+  "base_stats": {
+    "hp": 75,
+    "attack": 110,
+    "defense": 105,
+    "special_attack": 30,
+    "special_defense": 70,
+    "speed": 100
+  },
+  "base_stat_total": 490,
+  "images": {
+    "normal": {
+      "file": "肯泰罗（火炽种）.png",
+      "source_url": "https://media.52poke.com/wiki/4/4d/Champions_0128PB_Sprite.png",
+      "source_filename": "Champions_0128PB_Sprite.png",
+      "sha256": "d3b394d28d2bee001199238e97229ac2b8c2c68e79205f73a1b1f508274b38ed",
+      "width": 128,
+      "height": 128,
+      "bytes": 10221
+    },
+    "shiny": {
+      "file": "肯泰罗（火炽种）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/a/a0/Champions_0128PB_s_Sprite.png",
+      "source_filename": "Champions_0128PB_s_Sprite.png",
+      "sha256": "f8111a59095a43edf73f7655e5bdfab89f7522f8dc586e878b57379cabec102e",
+      "width": 128,
+      "height": 128,
+      "bytes": 10297
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tauros-paldea-blaze?format=double&season=M-5",
+    "raw_path": "_sources/details/tauros-paldea-blaze.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

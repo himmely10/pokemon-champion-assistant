@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "暴鲤龙"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 540,
+  "base_stats": {
+    "attack": 125,
+    "defense": 79,
+    "hp": 95,
+    "special_attack": 60,
+    "special_defense": 100,
+    "speed": 81
+  },
+  "data_ready": true,
+  "dex_number": 130,
+  "directory": "暴鲤龙",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 20328,
+      "file": "暴鲤龙.png",
+      "height": 128,
+      "sha256": "ae4104ec3c8af289f2f6d722e76eab7527778b7af3c7543729c915a97a637ce2",
+      "source_filename": "Champions_0130_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/d2/Champions_0130_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 20070,
+      "file": "暴鲤龙_闪光.png",
+      "height": 128,
+      "sha256": "74531120de724e06930c93856e88a34c42efbb8b64976f0cefae534c8acf8d76",
+      "source_filename": "Champions_0130_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/86/Champions_0130_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:130:超级暴鲤龙"
+  ],
+  "mega_item": null,
+  "name": "暴鲤龙",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 130,
+  "opgg_key": "gyarados",
+  "recognition_ready": true,
+  "record_id": "legacy:130:暴鲤龙",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "gyarados",
+  "species_name": "暴鲤龙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/gyarados"
+  },
+  "type_names": [
+    "水",
+    "飞行"
+  ],
+  "types": [
+    "water",
+    "flying"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/gyarados"
+  },
+  "wiki_name": "暴鲤龙"
+}

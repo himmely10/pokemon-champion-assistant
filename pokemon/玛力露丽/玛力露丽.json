@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 184,
+  "name": "玛力露丽",
+  "species_name": "玛力露丽",
+  "form_name": null,
+  "wiki_name": "玛力露丽",
+  "directory": "玛力露丽",
+  "source_slug": "azumarill",
+  "base_stats": {
+    "hp": 100,
+    "attack": 50,
+    "defense": 80,
+    "special_attack": 60,
+    "special_defense": 80,
+    "speed": 50
+  },
+  "base_stat_total": 420,
+  "images": {
+    "normal": {
+      "file": "玛力露丽.png",
+      "source_url": "https://media.52poke.com/wiki/d/df/Champions_0184_Sprite.png",
+      "source_filename": "Champions_0184_Sprite.png",
+      "sha256": "f0ddb85e8c592f07706d91b544a83241ab5fe8f5f516c75f9883ddf49fbdccb1",
+      "width": 128,
+      "height": 128,
+      "bytes": 12824
+    },
+    "shiny": {
+      "file": "玛力露丽_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/81/Champions_0184_s_Sprite.png",
+      "source_filename": "Champions_0184_s_Sprite.png",
+      "sha256": "f0cfbd96c5e6f8e40499c0c41e6be92746cf02b8fcec18153e4d6c7113be2afa",
+      "width": 128,
+      "height": 128,
+      "bytes": 12928
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/azumarill?format=double&season=M-5",
+    "raw_path": "_sources/details/azumarill.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

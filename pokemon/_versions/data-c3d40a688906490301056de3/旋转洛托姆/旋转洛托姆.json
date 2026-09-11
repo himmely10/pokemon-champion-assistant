@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 520,
+  "base_stats": {
+    "attack": 65,
+    "defense": 107,
+    "hp": 50,
+    "special_attack": 105,
+    "special_defense": 107,
+    "speed": 86
+  },
+  "dex_number": 479,
+  "directory": "旋转洛托姆",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "旋转洛托姆",
+  "images": {
+    "normal": {
+      "bytes": 11022,
+      "file": "旋转洛托姆.png",
+      "height": 128,
+      "sha256": "3a9e404b425cf939dcc4820f3f2dd8c1d297deb3c85adf02d6cb3efc1d75bd8f",
+      "source_filename": "Champions_0479Fa_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/f1/Champions_0479Fa_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11118,
+      "file": "旋转洛托姆_闪光.png",
+      "height": 128,
+      "sha256": "fbfe6dbc9e62601b6c35b6a753abd98c44b7d203b83af754e3ca610e21a0f471",
+      "source_filename": "Champions_0479Fa_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/d1/Champions_0479Fa_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "旋转洛托姆",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "rotom-fan",
+  "species_name": "洛托姆",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/rotom-fan.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rotom-fan?format=double&season=M-5"
+  },
+  "wiki_name": "洛托姆（旋转洛托姆）"
+}

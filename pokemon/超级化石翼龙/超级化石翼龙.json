@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 142,
+  "name": "超级化石翼龙",
+  "species_name": "化石翼龙",
+  "form_name": "超级化石翼龙",
+  "wiki_name": "超级化石翼龙",
+  "directory": "超级化石翼龙",
+  "source_slug": "aerodactyl-mega",
+  "base_stats": {
+    "hp": 80,
+    "attack": 135,
+    "defense": 85,
+    "special_attack": 70,
+    "special_defense": 95,
+    "speed": 150
+  },
+  "base_stat_total": 615,
+  "images": {
+    "normal": {
+      "file": "超级化石翼龙.png",
+      "source_url": "https://media.52poke.com/wiki/1/1f/Champions_0142M_Sprite.png",
+      "source_filename": "Champions_0142M_Sprite.png",
+      "sha256": "50a258e4094a2e96a20c956740134705a13aa1863b6721ec99068c4b8d8115a9",
+      "width": 128,
+      "height": 128,
+      "bytes": 12776
+    },
+    "shiny": {
+      "file": "超级化石翼龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/84/Champions_0142M_s_Sprite.png",
+      "source_filename": "Champions_0142M_s_Sprite.png",
+      "sha256": "3224fd5d59db7c17771a0d8005296d31688039dd103ee5a9964180b7bd2f7da6",
+      "width": 128,
+      "height": 128,
+      "bytes": 13064
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/aerodactyl?format=double&season=M-5",
+    "raw_path": "_sources/details/aerodactyl.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

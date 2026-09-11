@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "凯罗斯"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 500,
+  "base_stats": {
+    "attack": 125,
+    "defense": 100,
+    "hp": 65,
+    "special_attack": 55,
+    "special_defense": 70,
+    "speed": 85
+  },
+  "data_ready": true,
+  "dex_number": 127,
+  "directory": "凯罗斯",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 13394,
+      "file": "凯罗斯.png",
+      "height": 128,
+      "sha256": "3df98ab9d98765609f8fa8a97cb248faf777a236d7afccc69968eda43ddc6116",
+      "source_filename": "Champions_0127_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/01/Champions_0127_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13824,
+      "file": "凯罗斯_闪光.png",
+      "height": 128,
+      "sha256": "b106ce9af587587daf0124e8b5cf505955222694785650296db7a8b17296793d",
+      "source_filename": "Champions_0127_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/ae/Champions_0127_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:127:超级凯罗斯"
+  ],
+  "mega_item": null,
+  "name": "凯罗斯",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 127,
+  "opgg_key": "pinsir",
+  "recognition_ready": true,
+  "record_id": "legacy:127:凯罗斯",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "pinsir",
+  "species_name": "凯罗斯",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/pinsir"
+  },
+  "type_names": [
+    "虫"
+  ],
+  "types": [
+    "bug"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/pinsir"
+  },
+  "wiki_name": "凯罗斯"
+}

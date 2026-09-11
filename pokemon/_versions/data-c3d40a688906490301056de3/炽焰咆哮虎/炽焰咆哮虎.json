@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 530,
+  "base_stats": {
+    "attack": 115,
+    "defense": 90,
+    "hp": 95,
+    "special_attack": 80,
+    "special_defense": 90,
+    "speed": 60
+  },
+  "dex_number": 727,
+  "directory": "炽焰咆哮虎",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14504,
+      "file": "炽焰咆哮虎.png",
+      "height": 128,
+      "sha256": "921b75451aedc70a71c767eec38c3f8d67e59dc4b82f82deae7aac09766cbcb3",
+      "source_filename": "Champions_0727_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/0e/Champions_0727_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15641,
+      "file": "炽焰咆哮虎_闪光.png",
+      "height": 128,
+      "sha256": "081ba1e93c254b50864a6d2e05a2d9ae37462dd7f59897a3321fce7f32255cc5",
+      "source_filename": "Champions_0727_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/6c/Champions_0727_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "炽焰咆哮虎",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "incineroar",
+  "species_name": "炽焰咆哮虎",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/incineroar.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/incineroar?format=double&season=M-5"
+  },
+  "wiki_name": "炽焰咆哮虎"
+}

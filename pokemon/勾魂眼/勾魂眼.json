@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 302,
+  "name": "勾魂眼",
+  "species_name": "勾魂眼",
+  "form_name": null,
+  "wiki_name": "勾魂眼",
+  "directory": "勾魂眼",
+  "source_slug": "sableye",
+  "base_stats": {
+    "hp": 50,
+    "attack": 75,
+    "defense": 75,
+    "special_attack": 65,
+    "special_defense": 65,
+    "speed": 50
+  },
+  "base_stat_total": 380,
+  "images": {
+    "normal": {
+      "file": "勾魂眼.png",
+      "source_url": "https://media.52poke.com/wiki/e/ea/Champions_0302_Sprite.png",
+      "source_filename": "Champions_0302_Sprite.png",
+      "sha256": "cd84fae80969dd4c67795b08d4dfbdf17ac145096b058ff2d1bcf87f099169ba",
+      "width": 128,
+      "height": 128,
+      "bytes": 10098
+    },
+    "shiny": {
+      "file": "勾魂眼_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/a/a9/Champions_0302_s_Sprite.png",
+      "source_filename": "Champions_0302_s_Sprite.png",
+      "sha256": "1a806b8b95589fe7f52dd1a928b14fce1977721106d8208e29d6908ee5e132ea",
+      "width": 128,
+      "height": 128,
+      "bytes": 10225
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sableye?format=double&season=M-5",
+    "raw_path": "_sources/details/sableye.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

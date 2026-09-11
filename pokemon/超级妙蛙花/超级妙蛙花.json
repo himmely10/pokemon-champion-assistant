@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 3,
+  "name": "超级妙蛙花",
+  "species_name": "妙蛙花",
+  "form_name": "超级妙蛙花",
+  "wiki_name": "超级妙蛙花",
+  "directory": "超级妙蛙花",
+  "source_slug": "venusaur-mega",
+  "base_stats": {
+    "hp": 80,
+    "attack": 100,
+    "defense": 123,
+    "special_attack": 122,
+    "special_defense": 120,
+    "speed": 80
+  },
+  "base_stat_total": 625,
+  "images": {
+    "normal": {
+      "file": "超级妙蛙花.png",
+      "source_url": "https://media.52poke.com/wiki/b/b1/Champions_0003M_Sprite.png",
+      "source_filename": "Champions_0003M_Sprite.png",
+      "sha256": "a6b8f738d126250bd64724ee5a2918c4167e155a443a746514e302235d310c7a",
+      "width": 128,
+      "height": 128,
+      "bytes": 18190
+    },
+    "shiny": {
+      "file": "超级妙蛙花_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/2/2b/Champions_0003M_s_Sprite.png",
+      "source_filename": "Champions_0003M_s_Sprite.png",
+      "sha256": "0d0b7e5e332033e3c2abcd8cbbc89258b4cb700d77c2deb4537feda9cdcc7d26",
+      "width": 128,
+      "height": 128,
+      "bytes": 18342
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/venusaur?format=double&season=M-5",
+    "raw_path": "_sources/details/venusaur.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

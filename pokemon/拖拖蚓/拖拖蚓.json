@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 968,
+  "name": "拖拖蚓",
+  "species_name": "拖拖蚓",
+  "form_name": null,
+  "wiki_name": "拖拖蚓",
+  "directory": "拖拖蚓",
+  "source_slug": "orthworm",
+  "base_stats": {
+    "hp": 70,
+    "attack": 85,
+    "defense": 145,
+    "special_attack": 60,
+    "special_defense": 55,
+    "speed": 65
+  },
+  "base_stat_total": 480,
+  "images": {
+    "normal": {
+      "file": "拖拖蚓.png",
+      "source_url": "https://media.52poke.com/wiki/5/50/Champions_0968_Sprite.png",
+      "source_filename": "Champions_0968_Sprite.png",
+      "sha256": "eb87c2e6ad90581dbd987bb5283c4d43e72a883e75f1085c567f345b73152384",
+      "width": 128,
+      "height": 128,
+      "bytes": 14123
+    },
+    "shiny": {
+      "file": "拖拖蚓_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/7/71/Champions_0968_s_Sprite.png",
+      "source_filename": "Champions_0968_s_Sprite.png",
+      "sha256": "35f31e266d7aecc8206f03ea69a5f8cd50a60834080ad1d823ef2ea472dee488",
+      "width": 128,
+      "height": 128,
+      "bytes": 14297
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/orthworm?format=double&season=M-5",
+    "raw_path": "_sources/details/orthworm.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

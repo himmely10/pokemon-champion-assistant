@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "阿柏怪"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 448,
+  "base_stats": {
+    "attack": 95,
+    "defense": 69,
+    "hp": 60,
+    "special_attack": 65,
+    "special_defense": 79,
+    "speed": 80
+  },
+  "data_ready": true,
+  "dex_number": 24,
+  "directory": "阿柏怪",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14809,
+      "file": "阿柏怪.png",
+      "height": 128,
+      "sha256": "33069ba8f13e85a5942b4b19269e48255b060fbc69ee735dca6752ca9c4bef84",
+      "source_filename": "Champions_0024_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/81/Champions_0024_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15094,
+      "file": "阿柏怪_闪光.png",
+      "height": 128,
+      "sha256": "7a01b97fad867f53441f9f69ae7f60b2ef896bc57c4a12f106cf482fdf777ea0",
+      "source_filename": "Champions_0024_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/06/Champions_0024_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "阿柏怪",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 24,
+  "opgg_key": "arbok",
+  "recognition_ready": true,
+  "record_id": "legacy:24:阿柏怪",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "arbok",
+  "species_name": "阿柏怪",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/arbok"
+  },
+  "type_names": [
+    "毒"
+  ],
+  "types": [
+    "poison"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/arbok"
+  },
+  "wiki_name": "阿柏怪"
+}

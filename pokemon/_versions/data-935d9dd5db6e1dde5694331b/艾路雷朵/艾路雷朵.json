@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "艾路雷朵"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 518,
+  "base_stats": {
+    "attack": 125,
+    "defense": 65,
+    "hp": 68,
+    "special_attack": 65,
+    "special_defense": 115,
+    "speed": 80
+  },
+  "data_ready": true,
+  "dex_number": 475,
+  "directory": "艾路雷朵",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 9449,
+      "file": "艾路雷朵.png",
+      "height": 128,
+      "sha256": "7ff224b9980abac405b180bf7b9ce1e9ccf3176cd4fabec4042f7d0ba18c2c85",
+      "source_filename": "Champions_0475_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/f7/Champions_0475_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 9595,
+      "file": "艾路雷朵_闪光.png",
+      "height": 128,
+      "sha256": "f3bd148ae4f53e1762af6e1aa4d0e38ea05baf50357c1307900cd7d5d0d43dfd",
+      "source_filename": "Champions_0475_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/c8/Champions_0475_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:475:超级艾路雷朵"
+  ],
+  "mega_item": null,
+  "name": "艾路雷朵",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 475,
+  "opgg_key": "gallade",
+  "recognition_ready": true,
+  "record_id": "legacy:475:艾路雷朵",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "gallade",
+  "species_name": "艾路雷朵",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/gallade"
+  },
+  "type_names": [
+    "超能力",
+    "格斗"
+  ],
+  "types": [
+    "psychic",
+    "fighting"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/gallade"
+  },
+  "wiki_name": "艾路雷朵"
+}

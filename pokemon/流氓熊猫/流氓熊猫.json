@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 675,
+  "name": "流氓熊猫",
+  "species_name": "流氓熊猫",
+  "form_name": null,
+  "wiki_name": "霸道熊猫",
+  "directory": "流氓熊猫",
+  "source_slug": "pangoro",
+  "base_stats": {
+    "hp": 95,
+    "attack": 124,
+    "defense": 78,
+    "special_attack": 69,
+    "special_defense": 71,
+    "speed": 58
+  },
+  "base_stat_total": 495,
+  "images": {
+    "normal": {
+      "file": "流氓熊猫.png",
+      "source_url": "https://media.52poke.com/wiki/2/24/Champions_0675_Sprite.png",
+      "source_filename": "Champions_0675_Sprite.png",
+      "sha256": "e0427c67e3fe0f4743f2afd369831d57be3afa89ef3a201c6dae4f1f4803b13d",
+      "width": 128,
+      "height": 128,
+      "bytes": 16720
+    },
+    "shiny": {
+      "file": "流氓熊猫_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/1/14/Champions_0675_s_Sprite.png",
+      "source_filename": "Champions_0675_s_Sprite.png",
+      "sha256": "14c41170096ddb3b9a06ebe3b37b0ca75b3ac95d447b63cf4bebca36fad6950b",
+      "width": 128,
+      "height": 128,
+      "bytes": 16716
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pangoro?format=double&season=M-5",
+    "raw_path": "_sources/details/pangoro.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

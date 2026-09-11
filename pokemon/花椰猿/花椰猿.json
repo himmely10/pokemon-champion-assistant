@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 512,
+  "name": "花椰猿",
+  "species_name": "花椰猿",
+  "form_name": null,
+  "wiki_name": "花椰猿",
+  "directory": "花椰猿",
+  "source_slug": "simisage",
+  "base_stats": {
+    "hp": 75,
+    "attack": 98,
+    "defense": 63,
+    "special_attack": 98,
+    "special_defense": 63,
+    "speed": 101
+  },
+  "base_stat_total": 498,
+  "images": {
+    "normal": {
+      "file": "花椰猿.png",
+      "source_url": "https://media.52poke.com/wiki/c/cf/Champions_0512_Sprite.png",
+      "source_filename": "Champions_0512_Sprite.png",
+      "sha256": "5f52569f3aab697e72be41942ee85142eae04ea4105fba824a9a4e63f1016f8e",
+      "width": 128,
+      "height": 128,
+      "bytes": 13148
+    },
+    "shiny": {
+      "file": "花椰猿_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/a/ac/Champions_0512_s_Sprite.png",
+      "source_filename": "Champions_0512_s_Sprite.png",
+      "sha256": "0be8902b234dfcb43d6262ff78f45e694b0241bf21ec9c9f2269c57ad411049f",
+      "width": 128,
+      "height": 128,
+      "bytes": 13252
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/simisage?format=double&season=M-5",
+    "raw_path": "_sources/details/simisage.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "note": "跨站映射不改变现有 source_slug、简体主名称或外观合并策略。仅列已核验的例外；未知形态进入 unmapped。",
+  "opgg_to_legacy_slug": {
+    "mega-floette": "floette-mega",
+    "mega-meowstic": "meowstic-mega",
+    "floette-eternal-flower": "floette",
+    "meowstic-male": "meowstic",
+    "gourgeist-average": "gourgeist",
+    "mr.-rime": "mr-rime",
+    "basculegion-male": "basculegion",
+    "pyroar-female": "pyroar",
+    "maushold-family-of-four": "maushold",
+    "maushold-family-of-three": "maushold"
+  },
+  "legacy_names": {
+    "pyroar": ["火炎狮（雄性的样子）"],
+    "pyroar-female": ["火炎狮（雌性的样子）"],
+    "maushold-family-of-four": ["一家鼠（四只家庭）"],
+    "maushold-family-of-three": ["一家鼠（三只家庭）"],
+    "castform": ["飘浮泡泡（飘浮泡泡的样子）"],
+    "morpeko": ["莫鲁贝可（满腹花纹）"]
+  },
+  "shared_profile_slugs": ["vivillon", "sinistcha", "florges", "furfrou", "alcremie", "polteageist"],
+  "species_roots": {
+    "toxtricity-low-key": "toxtricity-amped",
+    "indeedee-female": "indeedee-male",
+    "squawkabilly-blue-plumage": "squawkabilly-green-plumage",
+    "squawkabilly-yellow-plumage": "squawkabilly-green-plumage",
+    "squawkabilly-white-plumage": "squawkabilly-green-plumage"
+  }
+}

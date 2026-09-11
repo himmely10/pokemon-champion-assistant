@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "千针鱼"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 440,
+  "base_stats": {
+    "attack": 95,
+    "defense": 85,
+    "hp": 65,
+    "special_attack": 55,
+    "special_defense": 55,
+    "speed": 85
+  },
+  "data_ready": true,
+  "dex_number": 211,
+  "directory": "千针鱼",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 11200,
+      "file": "千针鱼.png",
+      "height": 128,
+      "sha256": "74ccbf2fe06646373a7df70130d6666044e8e1235f2f44847ab83af950e55926",
+      "source_filename": "Champions_0211_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/69/Champions_0211_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11632,
+      "file": "千针鱼_闪光.png",
+      "height": 128,
+      "sha256": "dedb456379fd86d3d3389dd8982922febe9ed63797c6df0fb66c618fb4a5d7e8",
+      "source_filename": "Champions_0211_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/24/Champions_0211_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "千针鱼",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 211,
+  "opgg_key": "qwilfish",
+  "recognition_ready": true,
+  "record_id": "legacy:211:千针鱼",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "qwilfish",
+  "species_name": "千针鱼",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/qwilfish"
+  },
+  "type_names": [
+    "水",
+    "毒"
+  ],
+  "types": [
+    "water",
+    "poison"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/qwilfish"
+  },
+  "wiki_name": "千针鱼"
+}

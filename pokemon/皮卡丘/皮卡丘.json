@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 25,
+  "name": "皮卡丘",
+  "species_name": "皮卡丘",
+  "form_name": null,
+  "wiki_name": "皮卡丘",
+  "directory": "皮卡丘",
+  "source_slug": "pikachu",
+  "base_stats": {
+    "hp": 35,
+    "attack": 55,
+    "defense": 40,
+    "special_attack": 50,
+    "special_defense": 50,
+    "speed": 90
+  },
+  "base_stat_total": 320,
+  "images": {
+    "normal": {
+      "file": "皮卡丘.png",
+      "source_url": "https://media.52poke.com/wiki/4/4e/Champions_0025_Sprite.png",
+      "source_filename": "Champions_0025_Sprite.png",
+      "sha256": "0ce16ff07f6374bd57a433280ec3a41cdced18f0b1e2907d9963d60992808536",
+      "width": 128,
+      "height": 128,
+      "bytes": 9762
+    },
+    "shiny": {
+      "file": "皮卡丘_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/d/d3/Champions_0025_s_Sprite.png",
+      "source_filename": "Champions_0025_s_Sprite.png",
+      "sha256": "ebeb28f24e8c660e6ca50b06e964c28eed343989c8f31a129a8b077a4b11cfa2",
+      "width": 128,
+      "height": 128,
+      "bytes": 9840
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pikachu?format=double&season=M-5",
+    "raw_path": "_sources/details/pikachu.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

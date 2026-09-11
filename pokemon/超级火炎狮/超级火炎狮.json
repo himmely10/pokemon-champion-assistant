@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 668,
+  "name": "超级火炎狮",
+  "species_name": "火炎狮",
+  "form_name": "超级火炎狮",
+  "wiki_name": "超级火炎狮",
+  "directory": "超级火炎狮",
+  "source_slug": "pyroar-mega",
+  "base_stats": {
+    "hp": 86,
+    "attack": 88,
+    "defense": 92,
+    "special_attack": 129,
+    "special_defense": 86,
+    "speed": 126
+  },
+  "base_stat_total": 607,
+  "images": {
+    "normal": {
+      "file": "超级火炎狮.png",
+      "source_url": "https://media.52poke.com/wiki/f/f8/Champions_0668M_Sprite.png",
+      "source_filename": "Champions_0668M_Sprite.png",
+      "sha256": "3588ad086ec29a19dd1be5fa3e61d130b71d01bd72bfa408765e3d4e94d01e8c",
+      "width": 128,
+      "height": 128,
+      "bytes": 16761
+    },
+    "shiny": {
+      "file": "超级火炎狮_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/4/49/Champions_0668M_s_Sprite.png",
+      "source_filename": "Champions_0668M_s_Sprite.png",
+      "sha256": "315162b1558d6e12a1a7a7f41df2510371a7fdfe923a048867fbbcb47b19ab56",
+      "width": 128,
+      "height": 128,
+      "bytes": 16991
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pyroar?format=double&season=M-5",
+    "raw_path": "_sources/details/pyroar.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

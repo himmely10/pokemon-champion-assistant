@@ -1,0 +1,69 @@
+{
+  "active_bundle": "data-fd8d1683142740709ceaec9e",
+  "added": [],
+  "changed": [],
+  "checked_at": "2026-09-10T15:51:32.754685+00:00",
+  "conflicts": [],
+  "download_available": [],
+  "downloads": {
+    "image_fetches": 0,
+    "local_images_reused": 782
+  },
+  "file_library_batches": 1,
+  "has_changes": false,
+  "http": [
+    {
+      "sha256": "c6851fa66fcafa286be3444961eef6095b2cf9c4df723d75a2cc84de925e3658",
+      "status": 200,
+      "url": "https://op.gg/zh-cn/pokemon-champions/pokedex"
+    },
+    {
+      "sha256": "6c1598f3e05a6ed19bc108b6e5d5a2d65c0703d5a5490aa3bdc51593419e0eac",
+      "status": 304,
+      "url": "https://wiki.52poke.com/zh-hans/宝可梦列表（Champions）"
+    },
+    {
+      "sha256": "0c4a4dc4011b933901c64466f8138e61f580dfeb0132c7a135c2295db2539977",
+      "status": 200,
+      "url": "https://wiki.52poke.com/api.php?action=query&format=json&titles=File%3AChampions_0045F_Sprite.png%7CFile%3AChampions_0045F_s_Sprite.png%7CFile%3AChampions_0257F_Sprite.png%7CFile%3AChampions_0257F_s_Sprite.png%7CFile%3AChampions_0398F_Sprite.png%7CFile%3AChampions_0398F_s_Sprite.png&prop=imageinfo&iiprop=url%7Csize"
+    }
+  ],
+  "image_source_changes": [],
+  "large_removal": false,
+  "missing_source": [
+    "飘浮泡泡（雨水的样子）",
+    "飘浮泡泡（太阳的样子）",
+    "飘浮泡泡（雪云的样子）",
+    "莫鲁贝可（空腹花纹）"
+  ],
+  "new_species": [],
+  "note": "来源规则标签不等于当前赛季合法性；未列出的历史条目保留，不自动退签或删除。",
+  "operation": "sync",
+  "pending_assets": [
+    "霸王花（雌性）",
+    "火焰鸡（雌性）",
+    "姆克鹰（雌性）",
+    "颤弦蝾螈（低调的样子）",
+    "怒鹦哥（蓝羽毛）",
+    "怒鹦哥（黄羽毛）",
+    "怒鹦哥（白羽毛）"
+  ],
+  "removed_candidate": [],
+  "requested_battle_format": "double",
+  "source_count": 352,
+  "source_is_new_count": 35,
+  "source_mode": "live_revalidated",
+  "source_regulations": [
+    "M-A",
+    "M-B",
+    "M-C"
+  ],
+  "source_urls": [
+    "https://op.gg/zh-cn/pokemon-champions/pokedex",
+    "https://wiki.52poke.com/zh-hans/宝可梦列表（Champions）"
+  ],
+  "source_version": "9557d7a1ef56451a9936a2f97ef8ab89b92bf647e618af7fba203122dffd42fb",
+  "statistics_included": false,
+  "status": "up_to_date",
+  "unmapped": []
+}

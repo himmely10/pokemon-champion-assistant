@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 68,
+  "name": "怪力",
+  "species_name": "怪力",
+  "form_name": null,
+  "wiki_name": "怪力",
+  "directory": "怪力",
+  "source_slug": "machamp",
+  "base_stats": {
+    "hp": 90,
+    "attack": 130,
+    "defense": 80,
+    "special_attack": 65,
+    "special_defense": 85,
+    "speed": 55
+  },
+  "base_stat_total": 505,
+  "images": {
+    "normal": {
+      "file": "怪力.png",
+      "source_url": "https://media.52poke.com/wiki/6/63/Champions_0068_Sprite.png",
+      "source_filename": "Champions_0068_Sprite.png",
+      "sha256": "62f4f489d1a55ca7b2b297054427cf8eeac9c5d5ed835cad79cbb2eabc0165e7",
+      "width": 128,
+      "height": 128,
+      "bytes": 18130
+    },
+    "shiny": {
+      "file": "怪力_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/8a/Champions_0068_s_Sprite.png",
+      "source_filename": "Champions_0068_s_Sprite.png",
+      "sha256": "9c26d3bb157e6a508ab6c7a9f247a8b4e13ef7b2ca650f614a0d7fe6e7b6f335",
+      "width": 128,
+      "height": 128,
+      "bytes": 17628
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/machamp?format=double&season=M-5",
+    "raw_path": "_sources/details/machamp.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

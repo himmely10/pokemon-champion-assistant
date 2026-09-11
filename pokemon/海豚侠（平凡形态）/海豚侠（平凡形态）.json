@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 964,
+  "name": "海豚侠（平凡形态）",
+  "species_name": "海豚侠",
+  "form_name": "平凡形态",
+  "wiki_name": "海豚侠（平凡形态）",
+  "directory": "海豚侠（平凡形态）",
+  "source_slug": "palafin",
+  "base_stats": {
+    "hp": 100,
+    "attack": 70,
+    "defense": 72,
+    "special_attack": 53,
+    "special_defense": 62,
+    "speed": 100
+  },
+  "base_stat_total": 457,
+  "images": {
+    "normal": {
+      "file": "海豚侠（平凡形态）.png",
+      "source_url": "https://media.52poke.com/wiki/4/43/Champions_0964_Sprite.png",
+      "source_filename": "Champions_0964_Sprite.png",
+      "sha256": "1d5eeba8f37563237ba61b576f04e7961811ff336da693bd074cf71636de9779",
+      "width": 128,
+      "height": 128,
+      "bytes": 12291
+    },
+    "shiny": {
+      "file": "海豚侠（平凡形态）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/2/28/Champions_0964_s_Sprite.png",
+      "source_filename": "Champions_0964_s_Sprite.png",
+      "sha256": "ec61cbde62a731ac1e5b9daca921f484e210d8a079ef3a247bb8eb78548097ce",
+      "width": 128,
+      "height": 128,
+      "bytes": 12183
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/palafin?format=double&season=M-5",
+    "raw_path": "_sources/details/palafin.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

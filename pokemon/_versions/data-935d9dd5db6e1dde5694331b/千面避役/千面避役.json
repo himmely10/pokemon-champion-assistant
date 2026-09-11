@@ -1,0 +1,73 @@
+{
+  "aliases": [
+    "千面避役"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 530,
+  "base_stats": {
+    "attack": 85,
+    "defense": 65,
+    "hp": 70,
+    "special_attack": 125,
+    "special_defense": 65,
+    "speed": 120
+  },
+  "data_ready": true,
+  "dex_number": 818,
+  "directory": "千面避役",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 9462,
+      "file": "千面避役.png",
+      "height": 128,
+      "sha256": "2b2c1bec5fb1e55bf0d7e3fdd39179d962e5e959b426c36d90c2f22771a84f45",
+      "source_filename": "Champions_0818_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/de/Champions_0818_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 9724,
+      "file": "千面避役_闪光.png",
+      "height": 128,
+      "sha256": "592da1de83ce21c06e13ea7c29bd15b5051e7aeb804cce4c374a12cf552c4ca2",
+      "source_filename": "Champions_0818_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/00/Champions_0818_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "千面避役",
+  "name_source": "opgg_zh_cn",
+  "opgg_id": 818,
+  "opgg_key": "inteleon",
+  "recognition_ready": true,
+  "record_id": "opgg:inteleon",
+  "schema_version": 2,
+  "source_base_key": null,
+  "source_is_new": true,
+  "source_presence": "present",
+  "source_regulation": "M-C",
+  "source_slug": "inteleon",
+  "species_name": "千面避役",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/inteleon"
+  },
+  "type_names": [
+    "水"
+  ],
+  "types": [
+    "water"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/inteleon"
+  }
+}

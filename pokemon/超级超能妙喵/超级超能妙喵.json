@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 678,
+  "name": "超级超能妙喵",
+  "species_name": "超能妙喵",
+  "form_name": "超级超能妙喵",
+  "wiki_name": "超级超能妙喵",
+  "directory": "超级超能妙喵",
+  "source_slug": "meowstic-mega",
+  "base_stats": {
+    "hp": 74,
+    "attack": 48,
+    "defense": 76,
+    "special_attack": 143,
+    "special_defense": 101,
+    "speed": 124
+  },
+  "base_stat_total": 566,
+  "images": {
+    "normal": {
+      "file": "超级超能妙喵.png",
+      "source_url": "https://media.52poke.com/wiki/4/4b/Champions_0678M_Sprite.png",
+      "source_filename": "Champions_0678M_Sprite.png",
+      "sha256": "22c7815382908c9299f09add43e684f13eed29ac41c304f073f1b8973af03510",
+      "width": 128,
+      "height": 128,
+      "bytes": 12166
+    },
+    "shiny": {
+      "file": "超级超能妙喵_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/9/94/Champions_0678M_s_Sprite.png",
+      "source_filename": "Champions_0678M_s_Sprite.png",
+      "sha256": "64b33faf9508baaa254528e4db29ff2cd15d5ba4228ed3412cdaf20741e8894a",
+      "width": 128,
+      "height": 128,
+      "bytes": 12611
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/meowstic?format=double&season=M-5",
+    "raw_path": "_sources/details/meowstic.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

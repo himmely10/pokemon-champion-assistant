@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "超级宝石海星"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 620,
+  "base_stats": {
+    "attack": 100,
+    "defense": 105,
+    "hp": 60,
+    "special_attack": 130,
+    "special_defense": 105,
+    "speed": 120
+  },
+  "data_ready": true,
+  "dex_number": 121,
+  "directory": "超级宝石海星",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级宝石海星",
+  "images": {
+    "normal": {
+      "bytes": 16191,
+      "file": "超级宝石海星.png",
+      "height": 128,
+      "sha256": "840543f641d664ff42d264d7d06b7ecdb6a2cde42d89f78634665f9b7feb4575",
+      "source_filename": "Champions_0121M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/97/Champions_0121M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 16308,
+      "file": "超级宝石海星_闪光.png",
+      "height": 128,
+      "sha256": "3038edd10481cd77edceedca04f539b16dab35bcab1a32301430b83c31543a57",
+      "source_filename": "Champions_0121M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/ed/Champions_0121M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "starminite",
+  "name": "超级宝石海星",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10280,
+  "opgg_key": "mega-starmie",
+  "recognition_ready": true,
+  "record_id": "legacy:121:超级宝石海星",
+  "schema_version": 1,
+  "source_base_key": "starmie",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "starmie-mega",
+  "species_name": "宝石海星",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-starmie"
+  },
+  "type_names": [
+    "水",
+    "超能力"
+  ],
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-starmie"
+  },
+  "wiki_name": "超级宝石海星"
+}

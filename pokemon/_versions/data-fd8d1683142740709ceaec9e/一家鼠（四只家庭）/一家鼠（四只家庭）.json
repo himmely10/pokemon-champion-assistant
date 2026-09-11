@@ -1,0 +1,76 @@
+{
+  "aliases": [
+    "一家鼠 (四只家庭)"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 470,
+  "base_stats": {
+    "attack": 75,
+    "defense": 70,
+    "hp": 74,
+    "special_attack": 65,
+    "special_defense": 75,
+    "speed": 111
+  },
+  "data_ready": true,
+  "dex_number": 925,
+  "directory": "一家鼠（四只家庭）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "四只家庭",
+  "images": {
+    "normal": {
+      "bytes": 7636,
+      "file": "一家鼠（四只家庭）.png",
+      "height": 128,
+      "sha256": "31cbb9b010dfde1f62d4606325ff07b8daac2b01b371beff2dfb8378041e40b3",
+      "source_filename": "Champions_0925_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/6b/Champions_0925_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 7607,
+      "file": "一家鼠（四只家庭）_闪光.png",
+      "height": 128,
+      "sha256": "0b82a90b3a91ac0f8ad1f0f8b208f2f40ac7b9853dfe207365799f3700249322",
+      "source_filename": "Champions_0925_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/fc/Champions_0925_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。",
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "一家鼠（四只家庭）",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 925,
+  "opgg_key": "maushold-family-of-four",
+  "recognition_ready": true,
+  "record_id": "legacy:925:一家鼠（四只家庭）",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "maushold",
+  "species_name": "一家鼠",
+  "stats_mapping": "shared_species_profile",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/maushold-family-of-four"
+  },
+  "type_names": [
+    "一般"
+  ],
+  "types": [
+    "normal"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/maushold-family-of-four"
+  },
+  "wiki_name": "一家鼠（四只家庭）"
+}

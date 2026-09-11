@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 844,
+  "name": "沙螺蟒",
+  "species_name": "沙螺蟒",
+  "form_name": null,
+  "wiki_name": "沙螺蟒",
+  "directory": "沙螺蟒",
+  "source_slug": "sandaconda",
+  "base_stats": {
+    "hp": 72,
+    "attack": 107,
+    "defense": 125,
+    "special_attack": 65,
+    "special_defense": 70,
+    "speed": 71
+  },
+  "base_stat_total": 510,
+  "images": {
+    "normal": {
+      "file": "沙螺蟒.png",
+      "source_url": "https://media.52poke.com/wiki/3/34/Champions_0844_Sprite.png",
+      "source_filename": "Champions_0844_Sprite.png",
+      "sha256": "7aa29d0b35ec2c7c861b9ae130835b16b582baf9d53d239a0bbcdf9f1e3ec4d7",
+      "width": 128,
+      "height": 128,
+      "bytes": 14691
+    },
+    "shiny": {
+      "file": "沙螺蟒_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/9/9e/Champions_0844_s_Sprite.png",
+      "source_filename": "Champions_0844_s_Sprite.png",
+      "sha256": "f0b47f033963f0d31e65d0d6875316fd19d723b1b51d8419ab1e82eac4d67339",
+      "width": 128,
+      "height": 128,
+      "bytes": 14291
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sandaconda?format=double&season=M-5",
+    "raw_path": "_sources/details/sandaconda.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

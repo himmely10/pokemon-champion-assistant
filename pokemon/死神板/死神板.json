@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 867,
+  "name": "死神板",
+  "species_name": "死神板",
+  "form_name": null,
+  "wiki_name": "迭失板",
+  "directory": "死神板",
+  "source_slug": "runerigus",
+  "base_stats": {
+    "hp": 58,
+    "attack": 95,
+    "defense": 145,
+    "special_attack": 50,
+    "special_defense": 105,
+    "speed": 30
+  },
+  "base_stat_total": 483,
+  "images": {
+    "normal": {
+      "file": "死神板.png",
+      "source_url": "https://media.52poke.com/wiki/e/ee/Champions_0867_Sprite.png",
+      "source_filename": "Champions_0867_Sprite.png",
+      "sha256": "152d444273042b0ce2c327e872a26b8bc0b2bcb5448fa280232a2b918ba9eb51",
+      "width": 128,
+      "height": 128,
+      "bytes": 15700
+    },
+    "shiny": {
+      "file": "死神板_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/0/0b/Champions_0867_s_Sprite.png",
+      "source_filename": "Champions_0867_s_Sprite.png",
+      "sha256": "984c32ed1dea2272438d8a6f1f5891de42c4fe4734cac7b2b73fd73580808c3c",
+      "width": 128,
+      "height": 128,
+      "bytes": 15765
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/runerigus?format=double&season=M-5",
+    "raw_path": "_sources/details/runerigus.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

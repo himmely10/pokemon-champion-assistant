@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 359,
+  "name": "阿勃梭鲁",
+  "species_name": "阿勃梭鲁",
+  "form_name": null,
+  "wiki_name": "阿勃梭鲁",
+  "directory": "阿勃梭鲁",
+  "source_slug": "absol",
+  "base_stats": {
+    "hp": 65,
+    "attack": 130,
+    "defense": 60,
+    "special_attack": 75,
+    "special_defense": 60,
+    "speed": 75
+  },
+  "base_stat_total": 465,
+  "images": {
+    "normal": {
+      "file": "阿勃梭鲁.png",
+      "source_url": "https://media.52poke.com/wiki/b/bd/Champions_0359_Sprite.png",
+      "source_filename": "Champions_0359_Sprite.png",
+      "sha256": "f92e39dc8c70ee9c3a0b6d94a4bfccb0eaceeea0fd325a24a650a3ab93d3658c",
+      "width": 128,
+      "height": 128,
+      "bytes": 12704
+    },
+    "shiny": {
+      "file": "阿勃梭鲁_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/1/19/Champions_0359_s_Sprite.png",
+      "source_filename": "Champions_0359_s_Sprite.png",
+      "sha256": "23316b17915d9a5e9e4dfbe337e4278e6595dedcee8ed34be9f3adddea076be8",
+      "width": 128,
+      "height": 128,
+      "bytes": 12936
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/absol?format=double&season=M-5",
+    "raw_path": "_sources/details/absol.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 630,
+  "base_stats": {
+    "attack": 110,
+    "defense": 75,
+    "hp": 70,
+    "special_attack": 145,
+    "special_defense": 85,
+    "speed": 145
+  },
+  "dex_number": 254,
+  "directory": "超级蜥蜴王",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级蜥蜴王",
+  "images": {
+    "normal": {
+      "bytes": 13529,
+      "file": "超级蜥蜴王.png",
+      "height": 128,
+      "sha256": "c84ce0e9253d230b6f81907e30640c9fc0f270b596c2ae27a57aed2d64cac7df",
+      "source_filename": "Champions_0254M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/0d/Champions_0254M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14468,
+      "file": "超级蜥蜴王_闪光.png",
+      "height": 128,
+      "sha256": "8c97767564d66f9b122a41ab975c8861268dc0d60d95ef92c6403892933d696c",
+      "source_filename": "Champions_0254M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b7/Champions_0254M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超级蜥蜴王",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "sceptile-mega",
+  "species_name": "蜥蜴王",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "megaForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/sceptile.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sceptile?format=double&season=M-5"
+  },
+  "wiki_name": "超级蜥蜴王"
+}

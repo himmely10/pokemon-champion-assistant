@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 618,
+  "name": "泥巴鱼（伽勒尔）",
+  "species_name": "泥巴鱼",
+  "form_name": "伽勒尔的样子",
+  "wiki_name": "泥巴鱼（伽勒尔的样子）",
+  "directory": "泥巴鱼（伽勒尔）",
+  "source_slug": "stunfisk-galar",
+  "base_stats": {
+    "hp": 109,
+    "attack": 81,
+    "defense": 99,
+    "special_attack": 66,
+    "special_defense": 84,
+    "speed": 32
+  },
+  "base_stat_total": 471,
+  "images": {
+    "normal": {
+      "file": "泥巴鱼（伽勒尔）.png",
+      "source_url": "https://media.52poke.com/wiki/5/5f/Champions_0618G_Sprite.png",
+      "source_filename": "Champions_0618G_Sprite.png",
+      "sha256": "d2cae58b720a8590fcfd38fb3736a9926d6d03169f1c7f0eb9bdb39d5c1b9e54",
+      "width": 128,
+      "height": 128,
+      "bytes": 9833
+    },
+    "shiny": {
+      "file": "泥巴鱼（伽勒尔）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/5/59/Champions_0618G_s_Sprite.png",
+      "source_filename": "Champions_0618G_s_Sprite.png",
+      "sha256": "6baafc0e8f78ea00ed8aa90a532371833d9f5af4a3592d6f083ce0e457d098be",
+      "width": 128,
+      "height": 128,
+      "bytes": 9900
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/stunfisk-galar?format=double&season=M-5",
+    "raw_path": "_sources/details/stunfisk-galar.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

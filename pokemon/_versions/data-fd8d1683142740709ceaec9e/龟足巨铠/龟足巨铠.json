@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "龟足巨铠"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 500,
+  "base_stats": {
+    "attack": 105,
+    "defense": 115,
+    "hp": 72,
+    "special_attack": 54,
+    "special_defense": 86,
+    "speed": 68
+  },
+  "data_ready": true,
+  "dex_number": 689,
+  "directory": "龟足巨铠",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 20581,
+      "file": "龟足巨铠.png",
+      "height": 128,
+      "sha256": "1d6c1f9ae5482c541051ef9b10967e169318a88c203989bb150394a91294be94",
+      "source_filename": "Champions_0689_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b8/Champions_0689_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 20179,
+      "file": "龟足巨铠_闪光.png",
+      "height": 128,
+      "sha256": "f9560f3b9a62ec5af58f28bb66b6a439c72e5a5b64bffc2fc7c9b6acdceeeb78",
+      "source_filename": "Champions_0689_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/dc/Champions_0689_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:689:超级龟足巨铠"
+  ],
+  "mega_item": null,
+  "name": "龟足巨铠",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 689,
+  "opgg_key": "barbaracle",
+  "recognition_ready": true,
+  "record_id": "legacy:689:龟足巨铠",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "barbaracle",
+  "species_name": "龟足巨铠",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/barbaracle"
+  },
+  "type_names": [
+    "岩石",
+    "水"
+  ],
+  "types": [
+    "rock",
+    "water"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/barbaracle"
+  },
+  "wiki_name": "龟足巨铠"
+}

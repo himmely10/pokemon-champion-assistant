@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 71,
+  "name": "超级大食花",
+  "species_name": "大食花",
+  "form_name": "超级大食花",
+  "wiki_name": "超级大食花",
+  "directory": "超级大食花",
+  "source_slug": "victreebel-mega",
+  "base_stats": {
+    "hp": 80,
+    "attack": 125,
+    "defense": 85,
+    "special_attack": 135,
+    "special_defense": 95,
+    "speed": 70
+  },
+  "base_stat_total": 590,
+  "images": {
+    "normal": {
+      "file": "超级大食花.png",
+      "source_url": "https://media.52poke.com/wiki/7/7d/Champions_0071M_Sprite.png",
+      "source_filename": "Champions_0071M_Sprite.png",
+      "sha256": "845681afe55b8c6db2ac74b97441166da1caa55aec157f045a011812606f398b",
+      "width": 128,
+      "height": 128,
+      "bytes": 14586
+    },
+    "shiny": {
+      "file": "超级大食花_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/5/5b/Champions_0071M_s_Sprite.png",
+      "source_filename": "Champions_0071M_s_Sprite.png",
+      "sha256": "e4c116f09de15b9866cf48564297c1fa889a12436b74d5e1ee17fcd90b141d40",
+      "width": 128,
+      "height": 128,
+      "bytes": 14671
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/victreebel?format=double&season=M-5",
+    "raw_path": "_sources/details/victreebel.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

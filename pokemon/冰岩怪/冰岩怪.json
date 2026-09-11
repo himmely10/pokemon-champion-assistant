@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 713,
+  "name": "冰岩怪",
+  "species_name": "冰岩怪",
+  "form_name": null,
+  "wiki_name": "冰岩怪",
+  "directory": "冰岩怪",
+  "source_slug": "avalugg",
+  "base_stats": {
+    "hp": 95,
+    "attack": 117,
+    "defense": 184,
+    "special_attack": 44,
+    "special_defense": 46,
+    "speed": 28
+  },
+  "base_stat_total": 514,
+  "images": {
+    "normal": {
+      "file": "冰岩怪.png",
+      "source_url": "https://media.52poke.com/wiki/a/a1/Champions_0713_Sprite.png",
+      "source_filename": "Champions_0713_Sprite.png",
+      "sha256": "b731a88717b9dd2db96fd30f9baac24617d70a35716c822ccb77ad85d5d441c3",
+      "width": 128,
+      "height": 128,
+      "bytes": 16241
+    },
+    "shiny": {
+      "file": "冰岩怪_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/88/Champions_0713_s_Sprite.png",
+      "source_filename": "Champions_0713_s_Sprite.png",
+      "sha256": "ed4220e11b8d2600fd4c0a5a8b3a3fb40830257c1a63e5ea3cf49f5b4504f988",
+      "width": 128,
+      "height": 128,
+      "bytes": 16145
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/avalugg?format=double&season=M-5",
+    "raw_path": "_sources/details/avalugg.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

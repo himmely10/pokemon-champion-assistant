@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "奇麒麟"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 520,
+  "base_stats": {
+    "attack": 90,
+    "defense": 70,
+    "hp": 120,
+    "special_attack": 110,
+    "special_defense": 70,
+    "speed": 60
+  },
+  "data_ready": true,
+  "dex_number": 981,
+  "directory": "奇麒麟",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 11062,
+      "file": "奇麒麟.png",
+      "height": 128,
+      "sha256": "1a2ab6fd398bd251dd7fd01c91539ce44bda32df29360a21bfe5d022b2c4f197",
+      "source_filename": "Champions_0981_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/63/Champions_0981_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 10995,
+      "file": "奇麒麟_闪光.png",
+      "height": 128,
+      "sha256": "dbfcbaddbcb2e808ce55f569f4655fa8490e7fa455689800c6eb2d5845d8bd0e",
+      "source_filename": "Champions_0981_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/de/Champions_0981_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "奇麒麟",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 981,
+  "opgg_key": "farigiraf",
+  "recognition_ready": true,
+  "record_id": "legacy:981:奇麒麟",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "farigiraf",
+  "species_name": "奇麒麟",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/farigiraf"
+  },
+  "type_names": [
+    "一般",
+    "超能力"
+  ],
+  "types": [
+    "normal",
+    "psychic"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/farigiraf"
+  },
+  "wiki_name": "奇麒麟"
+}

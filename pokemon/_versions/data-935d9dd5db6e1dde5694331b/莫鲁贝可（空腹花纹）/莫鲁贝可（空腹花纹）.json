@@ -1,0 +1,56 @@
+{
+  "availability": "unverified",
+  "base_stat_total": 436,
+  "base_stats": {
+    "attack": 95,
+    "defense": 58,
+    "hp": 58,
+    "special_attack": 70,
+    "special_defense": 58,
+    "speed": 97
+  },
+  "data_ready": true,
+  "dex_number": 877,
+  "directory": "莫鲁贝可（空腹花纹）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "空腹花纹",
+  "images": {
+    "normal": {
+      "bytes": 8692,
+      "file": "莫鲁贝可（空腹花纹）.png",
+      "height": 128,
+      "sha256": "ba00393b3d02e80f796f0edda33a5e52bf10846364a61a33b0c5c186b9d553cf",
+      "source_filename": "Champions_0877H_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/c9/Champions_0877H_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 8726,
+      "file": "莫鲁贝可（空腹花纹）_闪光.png",
+      "height": 128,
+      "sha256": "ebf05be1db358003f960e9b1b3c7ad0128b0237cf6dd92593dce5f0a1dd40f95",
+      "source_filename": "Champions_0877H_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/77/Champions_0877H_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。",
+  "mega_form_ids": [],
+  "name": "莫鲁贝可（空腹花纹）",
+  "name_source": "pokechamdb_zh_hans",
+  "recognition_ready": true,
+  "record_id": "legacy:877:莫鲁贝可（空腹花纹）",
+  "schema_version": 1,
+  "source_presence": "not_listed_or_unmapped",
+  "source_slug": "morpeko",
+  "species_name": "莫鲁贝可",
+  "stats_mapping": "shared_species_profile",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/morpeko.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/morpeko?format=double&season=M-5"
+  },
+  "types_ready": false,
+  "wiki_name": "莫鲁贝可（空腹花纹）"
+}

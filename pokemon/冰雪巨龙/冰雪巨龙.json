@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 699,
+  "name": "冰雪巨龙",
+  "species_name": "冰雪巨龙",
+  "form_name": null,
+  "wiki_name": "冰雪巨龙",
+  "directory": "冰雪巨龙",
+  "source_slug": "aurorus",
+  "base_stats": {
+    "hp": 123,
+    "attack": 77,
+    "defense": 72,
+    "special_attack": 99,
+    "special_defense": 92,
+    "speed": 58
+  },
+  "base_stat_total": 521,
+  "images": {
+    "normal": {
+      "file": "冰雪巨龙.png",
+      "source_url": "https://media.52poke.com/wiki/9/94/Champions_0699_Sprite.png",
+      "source_filename": "Champions_0699_Sprite.png",
+      "sha256": "a271ad3d40281b21698ecc2905f898a707e3a791ccd994575af01924119d1cb9",
+      "width": 128,
+      "height": 128,
+      "bytes": 11034
+    },
+    "shiny": {
+      "file": "冰雪巨龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/4/4f/Champions_0699_s_Sprite.png",
+      "source_filename": "Champions_0699_s_Sprite.png",
+      "sha256": "94fd6ebc260d9d5aec3e756f8c140dbf0541f8a07a2b9f9922a6497ed3597d8c",
+      "width": 128,
+      "height": 128,
+      "bytes": 10856
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/aurorus?format=double&season=M-5",
+    "raw_path": "_sources/details/aurorus.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

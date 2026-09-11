@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 724,
+  "name": "狙射树枭（洗翠）",
+  "species_name": "狙射树枭",
+  "form_name": "洗翠的样子",
+  "wiki_name": "狙射树枭（洗翠的样子）",
+  "directory": "狙射树枭（洗翠）",
+  "source_slug": "decidueye-hisui",
+  "base_stats": {
+    "hp": 88,
+    "attack": 112,
+    "defense": 80,
+    "special_attack": 95,
+    "special_defense": 95,
+    "speed": 60
+  },
+  "base_stat_total": 530,
+  "images": {
+    "normal": {
+      "file": "狙射树枭（洗翠）.png",
+      "source_url": "https://media.52poke.com/wiki/d/d3/Champions_0724H_Sprite.png",
+      "source_filename": "Champions_0724H_Sprite.png",
+      "sha256": "109eb5db244f53d392a130ff50d935f3f422baf8b2f056ba9132628f946759e0",
+      "width": 128,
+      "height": 128,
+      "bytes": 13730
+    },
+    "shiny": {
+      "file": "狙射树枭（洗翠）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/6/6f/Champions_0724H_s_Sprite.png",
+      "source_filename": "Champions_0724H_s_Sprite.png",
+      "sha256": "9ec16eb7d8328232d1975e82a789b1b7ad5945dcc6c019b5e913e8f3c4504d89",
+      "width": 128,
+      "height": 128,
+      "bytes": 13815
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/decidueye-hisui?format=double&season=M-5",
+    "raw_path": "_sources/details/decidueye-hisui.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

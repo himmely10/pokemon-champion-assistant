@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 505,
+  "name": "步哨鼠",
+  "species_name": "步哨鼠",
+  "form_name": null,
+  "wiki_name": "步哨鼠",
+  "directory": "步哨鼠",
+  "source_slug": "watchog",
+  "base_stats": {
+    "hp": 60,
+    "attack": 85,
+    "defense": 69,
+    "special_attack": 60,
+    "special_defense": 69,
+    "speed": 77
+  },
+  "base_stat_total": 420,
+  "images": {
+    "normal": {
+      "file": "步哨鼠.png",
+      "source_url": "https://media.52poke.com/wiki/c/cc/Champions_0505_Sprite.png",
+      "source_filename": "Champions_0505_Sprite.png",
+      "sha256": "c8c11afbd1238a3148425182317cc4fd0f5a4b1a87b1bd9fb7f99f62fa2cc06b",
+      "width": 128,
+      "height": 128,
+      "bytes": 9721
+    },
+    "shiny": {
+      "file": "步哨鼠_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/2/29/Champions_0505_s_Sprite.png",
+      "source_filename": "Champions_0505_s_Sprite.png",
+      "sha256": "50841bcebc1ac043b645bdffc50d9db5ff0be745e79bb8939d4639e2294460a1",
+      "width": 128,
+      "height": 128,
+      "bytes": 9939
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/watchog?format=double&season=M-5",
+    "raw_path": "_sources/details/watchog.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

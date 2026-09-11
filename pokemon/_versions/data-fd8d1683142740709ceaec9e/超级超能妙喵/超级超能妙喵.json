@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "超级超能妙喵"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 566,
+  "base_stats": {
+    "attack": 48,
+    "defense": 76,
+    "hp": 74,
+    "special_attack": 143,
+    "special_defense": 101,
+    "speed": 124
+  },
+  "data_ready": true,
+  "dex_number": 678,
+  "directory": "超级超能妙喵",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级超能妙喵",
+  "images": {
+    "normal": {
+      "bytes": 12166,
+      "file": "超级超能妙喵.png",
+      "height": 128,
+      "sha256": "22c7815382908c9299f09add43e684f13eed29ac41c304f073f1b8973af03510",
+      "source_filename": "Champions_0678M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/4b/Champions_0678M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12611,
+      "file": "超级超能妙喵_闪光.png",
+      "height": 128,
+      "sha256": "64b33faf9508baaa254528e4db29ff2cd15d5ba4228ed3412cdaf20741e8894a",
+      "source_filename": "Champions_0678M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/94/Champions_0678M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "meowsticite",
+  "name": "超级超能妙喵",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10314,
+  "opgg_key": "mega-meowstic",
+  "recognition_ready": true,
+  "record_id": "legacy:678:超级超能妙喵",
+  "schema_version": 1,
+  "source_base_key": "meowstic-male",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "meowstic-mega",
+  "species_name": "超能妙喵",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-meowstic"
+  },
+  "type_names": [
+    "超能力"
+  ],
+  "types": [
+    "psychic"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-meowstic"
+  },
+  "wiki_name": "超级超能妙喵"
+}

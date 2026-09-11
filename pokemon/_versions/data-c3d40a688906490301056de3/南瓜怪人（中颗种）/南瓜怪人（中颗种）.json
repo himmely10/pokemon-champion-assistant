@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 494,
+  "base_stats": {
+    "attack": 90,
+    "defense": 122,
+    "hp": 65,
+    "special_attack": 58,
+    "special_defense": 75,
+    "speed": 84
+  },
+  "dex_number": 711,
+  "directory": "南瓜怪人（中颗种）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "中颗种",
+  "images": {
+    "normal": {
+      "bytes": 11726,
+      "file": "南瓜怪人（中颗种）.png",
+      "height": 128,
+      "sha256": "7ba1b3b6cf6fe90c440e86b85be610d2217b82b6da3ef15d3f08be570b57817e",
+      "source_filename": "Champions_0711_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/52/Champions_0711_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11213,
+      "file": "南瓜怪人（中颗种）_闪光.png",
+      "height": 128,
+      "sha256": "329e60f28171cd72f1b40dc631878a697c92f3845bb040da4f1349f33c5c4557",
+      "source_filename": "Champions_0711_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/78/Champions_0711_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "南瓜怪人（中颗种）",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "gourgeist",
+  "species_name": "南瓜怪人",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/gourgeist.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gourgeist?format=double&season=M-5"
+  },
+  "wiki_name": "南瓜怪人（中颗种）"
+}

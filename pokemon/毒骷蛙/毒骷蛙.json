@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 454,
+  "name": "毒骷蛙",
+  "species_name": "毒骷蛙",
+  "form_name": null,
+  "wiki_name": "毒骷蛙",
+  "directory": "毒骷蛙",
+  "source_slug": "toxicroak",
+  "base_stats": {
+    "hp": 83,
+    "attack": 106,
+    "defense": 65,
+    "special_attack": 86,
+    "special_defense": 65,
+    "speed": 85
+  },
+  "base_stat_total": 490,
+  "images": {
+    "normal": {
+      "file": "毒骷蛙.png",
+      "source_url": "https://media.52poke.com/wiki/c/c5/Champions_0454_Sprite.png",
+      "source_filename": "Champions_0454_Sprite.png",
+      "sha256": "e06fa1f389d660e0d27b3a476fab1b7c538cf1d9be8a92fa209f7b62242cdbce",
+      "width": 128,
+      "height": 128,
+      "bytes": 14889
+    },
+    "shiny": {
+      "file": "毒骷蛙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/0/00/Champions_0454_s_Sprite.png",
+      "source_filename": "Champions_0454_s_Sprite.png",
+      "sha256": "123bcf55fcb3d424729edcaab9935a2821f392f6763e5eabf29090930989f099",
+      "width": 128,
+      "height": 128,
+      "bytes": 15205
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/toxicroak?format=double&season=M-5",
+    "raw_path": "_sources/details/toxicroak.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

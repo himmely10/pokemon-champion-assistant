@@ -1,0 +1,76 @@
+{
+  "aliases": [
+    "霜奶仙"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 495,
+  "base_stats": {
+    "attack": 60,
+    "defense": 75,
+    "hp": 65,
+    "special_attack": 110,
+    "special_defense": 121,
+    "speed": 64
+  },
+  "data_ready": true,
+  "dex_number": 869,
+  "directory": "霜奶仙（奶香雪盐）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "奶香雪盐",
+  "images": {
+    "normal": {
+      "bytes": 10178,
+      "file": "霜奶仙（奶香雪盐）.png",
+      "height": 128,
+      "sha256": "2b7c1bb9a797ad24ffa68c667d5d77eb4cb1445f9870e95267d96e820d297fd0",
+      "source_filename": "Champions_0869SC_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/a4/Champions_0869SC_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11060,
+      "file": "霜奶仙（奶香雪盐）_闪光.png",
+      "height": 128,
+      "sha256": "31f03a90210dc6fce5176438d762c383bc147bfeae17716468a8c0e7183435b2",
+      "source_filename": "Champions_0869SC_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/cb/Champions_0869SC_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。",
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "霜奶仙（奶香雪盐）",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 869,
+  "opgg_key": "alcremie",
+  "recognition_ready": true,
+  "record_id": "legacy:869:霜奶仙（奶香雪盐）",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "alcremie",
+  "species_name": "霜奶仙",
+  "stats_mapping": "shared_species_profile",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/alcremie"
+  },
+  "type_names": [
+    "妖精"
+  ],
+  "types": [
+    "fairy"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/alcremie"
+  },
+  "wiki_name": "霜奶仙（奶香雪盐）"
+}

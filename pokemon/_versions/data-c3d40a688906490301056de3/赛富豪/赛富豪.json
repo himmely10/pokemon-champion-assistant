@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 550,
+  "base_stats": {
+    "attack": 60,
+    "defense": 95,
+    "hp": 87,
+    "special_attack": 133,
+    "special_defense": 91,
+    "speed": 84
+  },
+  "dex_number": 1000,
+  "directory": "赛富豪",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 12844,
+      "file": "赛富豪.png",
+      "height": 128,
+      "sha256": "f29202716aff6d6221cdf1cdc4d53598297a52cb09e37862fe13c1f4260a1ea3",
+      "source_filename": "Champions_1000_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/fb/Champions_1000_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12967,
+      "file": "赛富豪_闪光.png",
+      "height": 128,
+      "sha256": "3b3595d73e404b9e52c778c71f1514c04bb777bfe2a9d0594bf247dd2cd8c1cc",
+      "source_filename": "Champions_1000_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/a4/Champions_1000_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "赛富豪",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "gholdengo",
+  "species_name": "赛富豪",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/gholdengo.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gholdengo?format=double&season=M-5"
+  },
+  "wiki_name": "赛富豪"
+}

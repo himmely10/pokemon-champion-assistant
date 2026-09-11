@@ -1,0 +1,78 @@
+{
+  "aliases": [
+    "来悲粗茶"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 508,
+  "base_stats": {
+    "attack": 60,
+    "defense": 106,
+    "hp": 71,
+    "special_attack": 121,
+    "special_defense": 80,
+    "speed": 70
+  },
+  "data_ready": true,
+  "dex_number": 1013,
+  "directory": "来悲粗茶（凡作的样子）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "凡作的样子",
+  "images": {
+    "normal": {
+      "bytes": 9823,
+      "file": "来悲粗茶（凡作的样子）.png",
+      "height": 128,
+      "sha256": "fdc715d78178f08b65d2b985b61c75f7580014ca971afa67f3043f2974bc92d3",
+      "source_filename": "Champions_1013_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/04/Champions_1013_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 9957,
+      "file": "来悲粗茶（凡作的样子）_闪光.png",
+      "height": 128,
+      "sha256": "8b62ee04825a6c12ef3b32dff96cc7b5be90feed9d387c9abdfd3cc189cbc938",
+      "source_filename": "Champions_1013_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/8a/Champions_1013_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "legacy_mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。",
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "来悲粗茶（凡作的样子）",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 1013,
+  "opgg_key": "sinistcha",
+  "recognition_ready": true,
+  "record_id": "legacy:1013:来悲粗茶（凡作的样子）",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "sinistcha",
+  "species_name": "来悲粗茶",
+  "stats_mapping": "shared_source_profile",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/sinistcha"
+  },
+  "type_names": [
+    "草",
+    "幽灵"
+  ],
+  "types": [
+    "grass",
+    "ghost"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/sinistcha"
+  },
+  "wiki_name": "来悲粗茶（凡作的样子）"
+}

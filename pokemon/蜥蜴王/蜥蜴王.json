@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 254,
+  "name": "蜥蜴王",
+  "species_name": "蜥蜴王",
+  "form_name": null,
+  "wiki_name": "蜥蜴王",
+  "directory": "蜥蜴王",
+  "source_slug": "sceptile",
+  "base_stats": {
+    "hp": 70,
+    "attack": 85,
+    "defense": 65,
+    "special_attack": 105,
+    "special_defense": 85,
+    "speed": 120
+  },
+  "base_stat_total": 530,
+  "images": {
+    "normal": {
+      "file": "蜥蜴王.png",
+      "source_url": "https://media.52poke.com/wiki/f/f7/Champions_0254_Sprite.png",
+      "source_filename": "Champions_0254_Sprite.png",
+      "sha256": "02923fb7940923a994b485c4339f76e9e956770581e5208ccee0118ed5f130c9",
+      "width": 128,
+      "height": 128,
+      "bytes": 16450
+    },
+    "shiny": {
+      "file": "蜥蜴王_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/b/b1/Champions_0254_s_Sprite.png",
+      "source_filename": "Champions_0254_s_Sprite.png",
+      "sha256": "7d52374f14f00308e720286f6bc299ef2264d6b27d72e96aeb997e84d3b8ccd6",
+      "width": 128,
+      "height": 128,
+      "bytes": 17379
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sceptile?format=double&season=M-5",
+    "raw_path": "_sources/details/sceptile.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

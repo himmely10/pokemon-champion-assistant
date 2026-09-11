@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 525,
+  "base_stats": {
+    "attack": 105,
+    "defense": 72,
+    "hp": 103,
+    "special_attack": 105,
+    "special_defense": 75,
+    "speed": 65
+  },
+  "dex_number": 899,
+  "directory": "诡角鹿",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 12268,
+      "file": "诡角鹿.png",
+      "height": 128,
+      "sha256": "d7cf5241de7115c1ce2c38cbbaa959d994d97cdc81103f52b9e3771ec7a90a71",
+      "source_filename": "Champions_0899_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/1b/Champions_0899_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12632,
+      "file": "诡角鹿_闪光.png",
+      "height": 128,
+      "sha256": "73aa23331fbff6fc00dd1c344db32accde4f23ea36f6f37dfa7b527e683b9948",
+      "source_filename": "Champions_0899_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/33/Champions_0899_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "诡角鹿",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "wyrdeer",
+  "species_name": "诡角鹿",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/wyrdeer.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/wyrdeer?format=double&season=M-5"
+  },
+  "wiki_name": "诡角鹿"
+}

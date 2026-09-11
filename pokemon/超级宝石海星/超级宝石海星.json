@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 121,
+  "name": "超级宝石海星",
+  "species_name": "宝石海星",
+  "form_name": "超级宝石海星",
+  "wiki_name": "超级宝石海星",
+  "directory": "超级宝石海星",
+  "source_slug": "starmie-mega",
+  "base_stats": {
+    "hp": 60,
+    "attack": 100,
+    "defense": 105,
+    "special_attack": 130,
+    "special_defense": 105,
+    "speed": 120
+  },
+  "base_stat_total": 620,
+  "images": {
+    "normal": {
+      "file": "超级宝石海星.png",
+      "source_url": "https://media.52poke.com/wiki/9/97/Champions_0121M_Sprite.png",
+      "source_filename": "Champions_0121M_Sprite.png",
+      "sha256": "840543f641d664ff42d264d7d06b7ecdb6a2cde42d89f78634665f9b7feb4575",
+      "width": 128,
+      "height": 128,
+      "bytes": 16191
+    },
+    "shiny": {
+      "file": "超级宝石海星_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/e/ed/Champions_0121M_s_Sprite.png",
+      "source_filename": "Champions_0121M_s_Sprite.png",
+      "sha256": "3038edd10481cd77edceedca04f539b16dab35bcab1a32301430b83c31543a57",
+      "width": 128,
+      "height": 128,
+      "bytes": 16308
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/starmie?format=double&season=M-5",
+    "raw_path": "_sources/details/starmie.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

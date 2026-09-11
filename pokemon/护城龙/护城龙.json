@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 411,
+  "name": "护城龙",
+  "species_name": "护城龙",
+  "form_name": null,
+  "wiki_name": "护城龙",
+  "directory": "护城龙",
+  "source_slug": "bastiodon",
+  "base_stats": {
+    "hp": 60,
+    "attack": 52,
+    "defense": 168,
+    "special_attack": 47,
+    "special_defense": 138,
+    "speed": 30
+  },
+  "base_stat_total": 495,
+  "images": {
+    "normal": {
+      "file": "护城龙.png",
+      "source_url": "https://media.52poke.com/wiki/2/22/Champions_0411_Sprite.png",
+      "source_filename": "Champions_0411_Sprite.png",
+      "sha256": "2883dd8cee533b40d2f423a10d0eabbe0351d4666643013cbaf14130c995d60c",
+      "width": 128,
+      "height": 128,
+      "bytes": 16684
+    },
+    "shiny": {
+      "file": "护城龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/7/74/Champions_0411_s_Sprite.png",
+      "source_filename": "Champions_0411_s_Sprite.png",
+      "sha256": "988c4d8efa8c599efd509e26680f39d677d12f24ebe3405f00afbc61ff29de65",
+      "width": 128,
+      "height": 128,
+      "bytes": 17265
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/bastiodon?format=double&season=M-5",
+    "raw_path": "_sources/details/bastiodon.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

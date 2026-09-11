@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 618,
+  "name": "泥巴鱼",
+  "species_name": "泥巴鱼",
+  "form_name": null,
+  "wiki_name": "泥巴鱼",
+  "directory": "泥巴鱼",
+  "source_slug": "stunfisk",
+  "base_stats": {
+    "hp": 109,
+    "attack": 66,
+    "defense": 84,
+    "special_attack": 81,
+    "special_defense": 99,
+    "speed": 32
+  },
+  "base_stat_total": 471,
+  "images": {
+    "normal": {
+      "file": "泥巴鱼.png",
+      "source_url": "https://media.52poke.com/wiki/3/31/Champions_0618_Sprite.png",
+      "source_filename": "Champions_0618_Sprite.png",
+      "sha256": "d7d28c93e9febd39e4293e9d3a2a731e2cc41a392ab02bfa14efe1b353603f49",
+      "width": 128,
+      "height": 128,
+      "bytes": 10290
+    },
+    "shiny": {
+      "file": "泥巴鱼_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/3/39/Champions_0618_s_Sprite.png",
+      "source_filename": "Champions_0618_s_Sprite.png",
+      "sha256": "c7e265c0bcd4a9f19d313e06dedc1a8499e8babfb206f7b7b0b5dbaa2903bc85",
+      "width": 128,
+      "height": 128,
+      "bytes": 10363
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/stunfisk?format=double&season=M-5",
+    "raw_path": "_sources/details/stunfisk.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

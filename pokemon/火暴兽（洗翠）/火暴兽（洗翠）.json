@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 157,
+  "name": "火暴兽（洗翠）",
+  "species_name": "火暴兽",
+  "form_name": "洗翠的样子",
+  "wiki_name": "火暴兽（洗翠的样子）",
+  "directory": "火暴兽（洗翠）",
+  "source_slug": "typhlosion-hisui",
+  "base_stats": {
+    "hp": 73,
+    "attack": 84,
+    "defense": 78,
+    "special_attack": 119,
+    "special_defense": 85,
+    "speed": 95
+  },
+  "base_stat_total": 534,
+  "images": {
+    "normal": {
+      "file": "火暴兽（洗翠）.png",
+      "source_url": "https://media.52poke.com/wiki/f/f2/Champions_0157H_Sprite.png",
+      "source_filename": "Champions_0157H_Sprite.png",
+      "sha256": "2631a601d236fa2eb61b06d7e82982e3229d13d5471b76d110460f9ad0d996c9",
+      "width": 128,
+      "height": 128,
+      "bytes": 13561
+    },
+    "shiny": {
+      "file": "火暴兽（洗翠）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/f/fe/Champions_0157H_s_Sprite.png",
+      "source_filename": "Champions_0157H_s_Sprite.png",
+      "sha256": "f9f50446ab564c6a4b8ae7c079ecb4500cd9c2f141479af3fd6a24ee33a6f0fa",
+      "width": 128,
+      "height": 128,
+      "bytes": 13575
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/typhlosion-hisui?format=double&season=M-5",
+    "raw_path": "_sources/details/typhlosion-hisui.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

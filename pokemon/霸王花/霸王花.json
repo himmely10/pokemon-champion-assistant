@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 45,
+  "name": "霸王花",
+  "species_name": "霸王花",
+  "form_name": null,
+  "wiki_name": "霸王花",
+  "directory": "霸王花",
+  "source_slug": "vileplume",
+  "base_stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 85,
+    "special_attack": 110,
+    "special_defense": 90,
+    "speed": 50
+  },
+  "base_stat_total": 490,
+  "images": {
+    "normal": {
+      "file": "霸王花.png",
+      "source_url": "https://media.52poke.com/wiki/8/8a/Champions_0045_Sprite.png",
+      "source_filename": "Champions_0045_Sprite.png",
+      "sha256": "1e4ace9d246f76852bc7689c82e3c890be8b871cd6673b1b8c54ee5cceb535f8",
+      "width": 128,
+      "height": 128,
+      "bytes": 11304
+    },
+    "shiny": {
+      "file": "霸王花_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/1/1e/Champions_0045_s_Sprite.png",
+      "source_filename": "Champions_0045_s_Sprite.png",
+      "sha256": "b5d798b481dd14bd3e9ba7a16a5bafbb6c7102f22600c3c3b209d4e7d3ecdb41",
+      "width": 128,
+      "height": 128,
+      "bytes": 11604
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/vileplume?format=double&season=M-5",
+    "raw_path": "_sources/details/vileplume.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

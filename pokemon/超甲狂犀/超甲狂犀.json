@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 464,
+  "name": "超甲狂犀",
+  "species_name": "超甲狂犀",
+  "form_name": null,
+  "wiki_name": "超甲狂犀",
+  "directory": "超甲狂犀",
+  "source_slug": "rhyperior",
+  "base_stats": {
+    "hp": 115,
+    "attack": 140,
+    "defense": 130,
+    "special_attack": 55,
+    "special_defense": 55,
+    "speed": 40
+  },
+  "base_stat_total": 535,
+  "images": {
+    "normal": {
+      "file": "超甲狂犀.png",
+      "source_url": "https://media.52poke.com/wiki/7/75/Champions_0464_Sprite.png",
+      "source_filename": "Champions_0464_Sprite.png",
+      "sha256": "1ace99da8224ba6c32595a7afdf73a7bb7831b43084c37d1e2f220e95fa35c20",
+      "width": 128,
+      "height": 128,
+      "bytes": 20617
+    },
+    "shiny": {
+      "file": "超甲狂犀_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/4/4f/Champions_0464_s_Sprite.png",
+      "source_filename": "Champions_0464_s_Sprite.png",
+      "sha256": "149ea4567ff5185faf225860cad858bec5db243d82fc82b871d496049cd13808",
+      "width": 128,
+      "height": 128,
+      "bytes": 21291
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rhyperior?format=double&season=M-5",
+    "raw_path": "_sources/details/rhyperior.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

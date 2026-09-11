@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 497,
+  "name": "君主蛇",
+  "species_name": "君主蛇",
+  "form_name": null,
+  "wiki_name": "君主蛇",
+  "directory": "君主蛇",
+  "source_slug": "serperior",
+  "base_stats": {
+    "hp": 75,
+    "attack": 75,
+    "defense": 95,
+    "special_attack": 75,
+    "special_defense": 95,
+    "speed": 113
+  },
+  "base_stat_total": 528,
+  "images": {
+    "normal": {
+      "file": "君主蛇.png",
+      "source_url": "https://media.52poke.com/wiki/f/f7/Champions_0497_Sprite.png",
+      "source_filename": "Champions_0497_Sprite.png",
+      "sha256": "7313d0eae50b36e30cb02af3b281da15ae9e33f84de31b75177c86db10baaf7f",
+      "width": 128,
+      "height": 128,
+      "bytes": 15189
+    },
+    "shiny": {
+      "file": "君主蛇_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/5/5b/Champions_0497_s_Sprite.png",
+      "source_filename": "Champions_0497_s_Sprite.png",
+      "sha256": "cd736e2b77b1d43ebf8bf852c1f56390c9c08cc63270c0db2f47b016b735eb9c",
+      "width": 128,
+      "height": 128,
+      "bytes": 15502
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/serperior?format=double&season=M-5",
+    "raw_path": "_sources/details/serperior.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

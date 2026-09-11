@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 530,
+  "base_stats": {
+    "attack": 112,
+    "defense": 65,
+    "hp": 120,
+    "special_attack": 80,
+    "special_defense": 75,
+    "speed": 78
+  },
+  "dex_number": 902,
+  "directory": "幽尾玄鱼（雄性的样子）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "雄性的样子",
+  "images": {
+    "normal": {
+      "bytes": 17972,
+      "file": "幽尾玄鱼（雄性的样子）.png",
+      "height": 128,
+      "sha256": "e2c4a3e1de9634552631620a9711691a77a4d4c053817fbe2b9a04d8ae5fc8a5",
+      "source_filename": "Champions_0902_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/df/Champions_0902_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 18163,
+      "file": "幽尾玄鱼（雄性的样子）_闪光.png",
+      "height": 128,
+      "sha256": "7509123741a06654e778a503badfb11f5c73f6c648c1e9b81b24319bce77957e",
+      "source_filename": "Champions_0902_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/15/Champions_0902_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "幽尾玄鱼（雄性的样子）",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "basculegion",
+  "species_name": "幽尾玄鱼",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/basculegion.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/basculegion?format=double&season=M-5"
+  },
+  "wiki_name": "幽尾玄鱼（雄性的样子）"
+}

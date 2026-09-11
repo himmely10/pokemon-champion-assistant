@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "皮卡丘"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 320,
+  "base_stats": {
+    "attack": 55,
+    "defense": 40,
+    "hp": 35,
+    "special_attack": 50,
+    "special_defense": 50,
+    "speed": 90
+  },
+  "data_ready": true,
+  "dex_number": 25,
+  "directory": "皮卡丘",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 9762,
+      "file": "皮卡丘.png",
+      "height": 128,
+      "sha256": "0ce16ff07f6374bd57a433280ec3a41cdced18f0b1e2907d9963d60992808536",
+      "source_filename": "Champions_0025_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/4e/Champions_0025_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 9840,
+      "file": "皮卡丘_闪光.png",
+      "height": 128,
+      "sha256": "ebeb28f24e8c660e6ca50b06e964c28eed343989c8f31a129a8b077a4b11cfa2",
+      "source_filename": "Champions_0025_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/d3/Champions_0025_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "皮卡丘",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 25,
+  "opgg_key": "pikachu",
+  "recognition_ready": true,
+  "record_id": "legacy:25:皮卡丘",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "pikachu",
+  "species_name": "皮卡丘",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/pikachu"
+  },
+  "type_names": [
+    "电"
+  ],
+  "types": [
+    "electric"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/pikachu"
+  },
+  "wiki_name": "皮卡丘"
+}

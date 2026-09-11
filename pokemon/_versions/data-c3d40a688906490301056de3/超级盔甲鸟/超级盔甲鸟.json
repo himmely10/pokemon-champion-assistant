@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 565,
+  "base_stats": {
+    "attack": 140,
+    "defense": 110,
+    "hp": 65,
+    "special_attack": 40,
+    "special_defense": 100,
+    "speed": 110
+  },
+  "dex_number": 227,
+  "directory": "超级盔甲鸟",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级盔甲鸟",
+  "images": {
+    "normal": {
+      "bytes": 17043,
+      "file": "超级盔甲鸟.png",
+      "height": 128,
+      "sha256": "8cc58f0819c4141089d8f9b1cd15d17da76857672d0065dc5bec1d0422b6fba6",
+      "source_filename": "Champions_0227M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/4c/Champions_0227M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 17291,
+      "file": "超级盔甲鸟_闪光.png",
+      "height": 128,
+      "sha256": "4520159ba4394d9bf8a28669d5bd1079ca030772505ec4eb30a1a3d220edfea8",
+      "source_filename": "Champions_0227M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/db/Champions_0227M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超级盔甲鸟",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "skarmory-mega",
+  "species_name": "盔甲鸟",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "megaForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/skarmory.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/skarmory?format=double&season=M-5"
+  },
+  "wiki_name": "超级盔甲鸟"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 780,
+  "name": "老翁龙",
+  "species_name": "老翁龙",
+  "form_name": null,
+  "wiki_name": "老翁龙",
+  "directory": "老翁龙",
+  "source_slug": "drampa",
+  "base_stats": {
+    "hp": 78,
+    "attack": 60,
+    "defense": 85,
+    "special_attack": 135,
+    "special_defense": 91,
+    "speed": 36
+  },
+  "base_stat_total": 485,
+  "images": {
+    "normal": {
+      "file": "老翁龙.png",
+      "source_url": "https://media.52poke.com/wiki/b/b7/Champions_0780_Sprite.png",
+      "source_filename": "Champions_0780_Sprite.png",
+      "sha256": "23c7d9dec45403dd5f91e01c06069330be84b7c608c71fcaed87e58bb247aefe",
+      "width": 128,
+      "height": 128,
+      "bytes": 14823
+    },
+    "shiny": {
+      "file": "老翁龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/83/Champions_0780_s_Sprite.png",
+      "source_filename": "Champions_0780_s_Sprite.png",
+      "sha256": "60604ccf1b818df2b3db45ec6c1eddb877723820b2e2ea33d95b4bd1cb8aa8d2",
+      "width": 128,
+      "height": 128,
+      "bytes": 14861
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/drampa?format=double&season=M-5",
+    "raw_path": "_sources/details/drampa.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,78 @@
+{
+  "aliases": [
+    "彩粉蝶"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 411,
+  "base_stats": {
+    "attack": 52,
+    "defense": 50,
+    "hp": 80,
+    "special_attack": 90,
+    "special_defense": 50,
+    "speed": 89
+  },
+  "data_ready": true,
+  "dex_number": 666,
+  "directory": "彩粉蝶（大河花纹）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "大河花纹",
+  "images": {
+    "normal": {
+      "bytes": 15988,
+      "file": "彩粉蝶（大河花纹）.png",
+      "height": 128,
+      "sha256": "b3cf9ceb3fb85394a2be77652b77b188b302f34a7c983c23bc3f5265577e13df",
+      "source_filename": "Champions_0666Riv_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/a4/Champions_0666Riv_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 16084,
+      "file": "彩粉蝶（大河花纹）_闪光.png",
+      "height": 128,
+      "sha256": "1181a25f203ee036fd12eaf83b2bf7884ed2964a10587c5f25bdfd63cb79c24d",
+      "source_filename": "Champions_0666Riv_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/ae/Champions_0666Riv_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。",
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "彩粉蝶（大河花纹）",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 666,
+  "opgg_key": "vivillon",
+  "recognition_ready": true,
+  "record_id": "legacy:666:彩粉蝶（大河花纹）",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "vivillon",
+  "species_name": "彩粉蝶",
+  "stats_mapping": "shared_species_profile",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/vivillon"
+  },
+  "type_names": [
+    "虫",
+    "飞行"
+  ],
+  "types": [
+    "bug",
+    "flying"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/vivillon"
+  },
+  "wiki_name": "彩粉蝶（大河花纹）"
+}

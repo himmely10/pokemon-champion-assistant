@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 663,
+  "name": "烈箭鹰",
+  "species_name": "烈箭鹰",
+  "form_name": null,
+  "wiki_name": "烈箭鹰",
+  "directory": "烈箭鹰",
+  "source_slug": "talonflame",
+  "base_stats": {
+    "hp": 78,
+    "attack": 81,
+    "defense": 71,
+    "special_attack": 74,
+    "special_defense": 69,
+    "speed": 126
+  },
+  "base_stat_total": 499,
+  "images": {
+    "normal": {
+      "file": "烈箭鹰.png",
+      "source_url": "https://media.52poke.com/wiki/2/24/Champions_0663_Sprite.png",
+      "source_filename": "Champions_0663_Sprite.png",
+      "sha256": "820f6c8c761918cfa554b8a52d444500a6e3bb9c224da4c6523a916bece9a88d",
+      "width": 128,
+      "height": 128,
+      "bytes": 13217
+    },
+    "shiny": {
+      "file": "烈箭鹰_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/0/01/Champions_0663_s_Sprite.png",
+      "source_filename": "Champions_0663_s_Sprite.png",
+      "sha256": "5048be24c97a720ab7e78af429aa369f679f9d713e451efd74b00b2a7fc4869e",
+      "width": 128,
+      "height": 128,
+      "bytes": 13598
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/talonflame?format=double&season=M-5",
+    "raw_path": "_sources/details/talonflame.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

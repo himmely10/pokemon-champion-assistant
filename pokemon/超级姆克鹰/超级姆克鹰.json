@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 398,
+  "name": "超级姆克鹰",
+  "species_name": "姆克鹰",
+  "form_name": "超级姆克鹰",
+  "wiki_name": "超级姆克鹰",
+  "directory": "超级姆克鹰",
+  "source_slug": "staraptor-mega",
+  "base_stats": {
+    "hp": 85,
+    "attack": 140,
+    "defense": 100,
+    "special_attack": 60,
+    "special_defense": 90,
+    "speed": 110
+  },
+  "base_stat_total": 585,
+  "images": {
+    "normal": {
+      "file": "超级姆克鹰.png",
+      "source_url": "https://media.52poke.com/wiki/5/5a/Champions_0398M_Sprite.png",
+      "source_filename": "Champions_0398M_Sprite.png",
+      "sha256": "6d732c2aa9fdf381152d431b742a839c06fd5d5d51d980a33afe97e717a23efa",
+      "width": 128,
+      "height": 128,
+      "bytes": 19219
+    },
+    "shiny": {
+      "file": "超级姆克鹰_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/3/3d/Champions_0398M_s_Sprite.png",
+      "source_filename": "Champions_0398M_s_Sprite.png",
+      "sha256": "1f5fa2b9dfe52a29c35753476c6bc0c21fe291facf6b2d1397f787c13229caab",
+      "width": 128,
+      "height": 128,
+      "bytes": 19745
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/staraptor?format=double&season=M-5",
+    "raw_path": "_sources/details/staraptor.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

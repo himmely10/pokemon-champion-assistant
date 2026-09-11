@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 604,
+  "name": "超级麻麻鳗鱼王",
+  "species_name": "麻麻鳗鱼王",
+  "form_name": "超级麻麻鳗鱼王",
+  "wiki_name": "超级麻麻鳗鱼王",
+  "directory": "超级麻麻鳗鱼王",
+  "source_slug": "eelektross-mega",
+  "base_stats": {
+    "hp": 85,
+    "attack": 145,
+    "defense": 80,
+    "special_attack": 135,
+    "special_defense": 90,
+    "speed": 80
+  },
+  "base_stat_total": 615,
+  "images": {
+    "normal": {
+      "file": "超级麻麻鳗鱼王.png",
+      "source_url": "https://media.52poke.com/wiki/d/d2/Champions_0604M_Sprite.png",
+      "source_filename": "Champions_0604M_Sprite.png",
+      "sha256": "d468c73703bea8b6a962aeac93f6b75081c7a575acd9060f102f543d72d7f1c5",
+      "width": 128,
+      "height": 128,
+      "bytes": 17363
+    },
+    "shiny": {
+      "file": "超级麻麻鳗鱼王_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/81/Champions_0604M_s_Sprite.png",
+      "source_filename": "Champions_0604M_s_Sprite.png",
+      "sha256": "ccfdfc31398e5e5f93b93849254f04c0a3aa4f9eaaca0fe5bd3ee4b932f727e7",
+      "width": 128,
+      "height": 128,
+      "bytes": 17433
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/eelektross?format=double&season=M-5",
+    "raw_path": "_sources/details/eelektross.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

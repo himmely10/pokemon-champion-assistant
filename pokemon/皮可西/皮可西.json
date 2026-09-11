@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 36,
+  "name": "皮可西",
+  "species_name": "皮可西",
+  "form_name": null,
+  "wiki_name": "皮可西",
+  "directory": "皮可西",
+  "source_slug": "clefable",
+  "base_stats": {
+    "hp": 95,
+    "attack": 70,
+    "defense": 73,
+    "special_attack": 95,
+    "special_defense": 90,
+    "speed": 60
+  },
+  "base_stat_total": 483,
+  "images": {
+    "normal": {
+      "file": "皮可西.png",
+      "source_url": "https://media.52poke.com/wiki/4/4f/Champions_0036_Sprite.png",
+      "source_filename": "Champions_0036_Sprite.png",
+      "sha256": "7e51ab03328f86645ad6f45bb1d62940d165a1bafffd0b3e873eebe5c424d19a",
+      "width": 128,
+      "height": 128,
+      "bytes": 13090
+    },
+    "shiny": {
+      "file": "皮可西_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/6/6b/Champions_0036_s_Sprite.png",
+      "source_filename": "Champions_0036_s_Sprite.png",
+      "sha256": "bbd1bbc7c7c385144ff4bd3f5e002bbf8808ca2f85fc88d0e0b3652b1c49a9d2",
+      "width": 128,
+      "height": 128,
+      "bytes": 13167
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/clefable?format=double&season=M-5",
+    "raw_path": "_sources/details/clefable.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

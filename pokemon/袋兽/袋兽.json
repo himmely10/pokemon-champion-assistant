@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 115,
+  "name": "袋兽",
+  "species_name": "袋兽",
+  "form_name": null,
+  "wiki_name": "袋兽",
+  "directory": "袋兽",
+  "source_slug": "kangaskhan",
+  "base_stats": {
+    "hp": 105,
+    "attack": 95,
+    "defense": 80,
+    "special_attack": 40,
+    "special_defense": 80,
+    "speed": 90
+  },
+  "base_stat_total": 490,
+  "images": {
+    "normal": {
+      "file": "袋兽.png",
+      "source_url": "https://media.52poke.com/wiki/e/eb/Champions_0115_Sprite.png",
+      "source_filename": "Champions_0115_Sprite.png",
+      "sha256": "e0f3d506474f41e93d610faafdb94eb8889f0ad7f5b270a9e743fff827621ff1",
+      "width": 128,
+      "height": 128,
+      "bytes": 17702
+    },
+    "shiny": {
+      "file": "袋兽_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/8d/Champions_0115_s_Sprite.png",
+      "source_filename": "Champions_0115_s_Sprite.png",
+      "sha256": "02515074705fa0e11cc17eb3324fcba669a55f1b43875de5c147ac4689eeba97",
+      "width": 128,
+      "height": 128,
+      "bytes": 17674
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/kangaskhan?format=double&season=M-5",
+    "raw_path": "_sources/details/kangaskhan.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

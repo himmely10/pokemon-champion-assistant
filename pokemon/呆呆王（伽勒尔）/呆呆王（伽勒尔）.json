@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 199,
+  "name": "呆呆王（伽勒尔）",
+  "species_name": "呆呆王",
+  "form_name": "伽勒尔的样子",
+  "wiki_name": "呆呆王（伽勒尔的样子）",
+  "directory": "呆呆王（伽勒尔）",
+  "source_slug": "slowking-galar",
+  "base_stats": {
+    "hp": 95,
+    "attack": 65,
+    "defense": 80,
+    "special_attack": 110,
+    "special_defense": 110,
+    "speed": 30
+  },
+  "base_stat_total": 490,
+  "images": {
+    "normal": {
+      "file": "呆呆王（伽勒尔）.png",
+      "source_url": "https://media.52poke.com/wiki/f/fd/Champions_0199G_Sprite.png",
+      "source_filename": "Champions_0199G_Sprite.png",
+      "sha256": "1cd0a9bcdfa7a833df4c9c2279f11ba39a8299b6692e4bb4548616eeb4f439eb",
+      "width": 128,
+      "height": 128,
+      "bytes": 12633
+    },
+    "shiny": {
+      "file": "呆呆王（伽勒尔）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/c/cb/Champions_0199G_s_Sprite.png",
+      "source_filename": "Champions_0199G_s_Sprite.png",
+      "sha256": "be6f044953703540c55c864492625c138f7a19675cf0df5e667fdea79d1abc5a",
+      "width": 128,
+      "height": 128,
+      "bytes": 12645
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/slowking-galar?format=double&season=M-5",
+    "raw_path": "_sources/details/slowking-galar.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

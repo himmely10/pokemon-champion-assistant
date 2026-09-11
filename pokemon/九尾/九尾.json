@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 38,
+  "name": "九尾",
+  "species_name": "九尾",
+  "form_name": null,
+  "wiki_name": "九尾",
+  "directory": "九尾",
+  "source_slug": "ninetales",
+  "base_stats": {
+    "hp": 73,
+    "attack": 76,
+    "defense": 75,
+    "special_attack": 81,
+    "special_defense": 100,
+    "speed": 100
+  },
+  "base_stat_total": 505,
+  "images": {
+    "normal": {
+      "file": "九尾.png",
+      "source_url": "https://media.52poke.com/wiki/f/fe/Champions_0038_Sprite.png",
+      "source_filename": "Champions_0038_Sprite.png",
+      "sha256": "add6733a0be8e7343931cfa84310f31e9af7bb491a7cf06d035d05ad0bda22ef",
+      "width": 128,
+      "height": 128,
+      "bytes": 18088
+    },
+    "shiny": {
+      "file": "九尾_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/f/ff/Champions_0038_s_Sprite.png",
+      "source_filename": "Champions_0038_s_Sprite.png",
+      "sha256": "4aa1c2cf2460291c2f982dacb77a62bfb0d59b93b9be0ed334b7e3ee4efe1be2",
+      "width": 128,
+      "height": 128,
+      "bytes": 17477
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/ninetales?format=double&season=M-5",
+    "raw_path": "_sources/details/ninetales.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

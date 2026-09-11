@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 26,
+  "name": "雷丘",
+  "species_name": "雷丘",
+  "form_name": null,
+  "wiki_name": "雷丘",
+  "directory": "雷丘",
+  "source_slug": "raichu",
+  "base_stats": {
+    "hp": 60,
+    "attack": 90,
+    "defense": 55,
+    "special_attack": 90,
+    "special_defense": 80,
+    "speed": 110
+  },
+  "base_stat_total": 485,
+  "images": {
+    "normal": {
+      "file": "雷丘.png",
+      "source_url": "https://media.52poke.com/wiki/7/78/Champions_0026_Sprite.png",
+      "source_filename": "Champions_0026_Sprite.png",
+      "sha256": "878e098a1d6d83dc07dc356a155f66f4cd5a4dfbd39865f3dd16dee45db4bac9",
+      "width": 128,
+      "height": 128,
+      "bytes": 14296
+    },
+    "shiny": {
+      "file": "雷丘_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/b/b8/Champions_0026_s_Sprite.png",
+      "source_filename": "Champions_0026_s_Sprite.png",
+      "sha256": "4c2011aa41336e9627bae8680af8ee9ace93916fe9f69072840dbbe2fa0d5bb0",
+      "width": 128,
+      "height": 128,
+      "bytes": 14616
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/raichu?format=double&season=M-5",
+    "raw_path": "_sources/details/raichu.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

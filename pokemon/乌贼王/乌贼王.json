@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 687,
+  "name": "乌贼王",
+  "species_name": "乌贼王",
+  "form_name": null,
+  "wiki_name": "乌贼王",
+  "directory": "乌贼王",
+  "source_slug": "malamar",
+  "base_stats": {
+    "hp": 86,
+    "attack": 92,
+    "defense": 88,
+    "special_attack": 68,
+    "special_defense": 75,
+    "speed": 73
+  },
+  "base_stat_total": 482,
+  "images": {
+    "normal": {
+      "file": "乌贼王.png",
+      "source_url": "https://media.52poke.com/wiki/b/b6/Champions_0687_Sprite.png",
+      "source_filename": "Champions_0687_Sprite.png",
+      "sha256": "b084984ccac4e86738035b4e7d4ea60a733c1596f6d6141b1d9432b74752e4e7",
+      "width": 128,
+      "height": 128,
+      "bytes": 15049
+    },
+    "shiny": {
+      "file": "乌贼王_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/8a/Champions_0687_s_Sprite.png",
+      "source_filename": "Champions_0687_s_Sprite.png",
+      "sha256": "9586557532224c1e545360173582d73e01441f85965b11249b0d9004388ebe72",
+      "width": 128,
+      "height": 128,
+      "bytes": 14986
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/malamar?format=double&season=M-5",
+    "raw_path": "_sources/details/malamar.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

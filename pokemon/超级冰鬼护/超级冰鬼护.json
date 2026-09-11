@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 362,
+  "name": "超级冰鬼护",
+  "species_name": "冰鬼护",
+  "form_name": "超级冰鬼护",
+  "wiki_name": "超级冰鬼护",
+  "directory": "超级冰鬼护",
+  "source_slug": "glalie-mega",
+  "base_stats": {
+    "hp": 80,
+    "attack": 120,
+    "defense": 80,
+    "special_attack": 120,
+    "special_defense": 80,
+    "speed": 100
+  },
+  "base_stat_total": 580,
+  "images": {
+    "normal": {
+      "file": "超级冰鬼护.png",
+      "source_url": "https://media.52poke.com/wiki/3/35/Champions_0362M_Sprite.png",
+      "source_filename": "Champions_0362M_Sprite.png",
+      "sha256": "0ccd4039d6e32900cc96c35f0076827f92f9cf0d685e5cf177ecec0e679703a5",
+      "width": 128,
+      "height": 128,
+      "bytes": 18964
+    },
+    "shiny": {
+      "file": "超级冰鬼护_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/2/2d/Champions_0362M_s_Sprite.png",
+      "source_filename": "Champions_0362M_s_Sprite.png",
+      "sha256": "e82e5c5e0bd03958530c0ce2377499edab79a3548da4a7978ae6d50c7e32548f",
+      "width": 128,
+      "height": 128,
+      "bytes": 19705
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/glalie?format=double&season=M-5",
+    "raw_path": "_sources/details/glalie.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

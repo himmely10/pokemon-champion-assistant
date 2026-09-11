@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 553,
+  "name": "流氓鳄",
+  "species_name": "流氓鳄",
+  "form_name": null,
+  "wiki_name": "流氓鳄",
+  "directory": "流氓鳄",
+  "source_slug": "krookodile",
+  "base_stats": {
+    "hp": 95,
+    "attack": 117,
+    "defense": 80,
+    "special_attack": 65,
+    "special_defense": 70,
+    "speed": 92
+  },
+  "base_stat_total": 519,
+  "images": {
+    "normal": {
+      "file": "流氓鳄.png",
+      "source_url": "https://media.52poke.com/wiki/9/9e/Champions_0553_Sprite.png",
+      "source_filename": "Champions_0553_Sprite.png",
+      "sha256": "db7c5309edb3ececbce05abb780d9c6928b1c5f8906efad12d48b590356ff5e7",
+      "width": 128,
+      "height": 128,
+      "bytes": 17236
+    },
+    "shiny": {
+      "file": "流氓鳄_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/0/0b/Champions_0553_s_Sprite.png",
+      "source_filename": "Champions_0553_s_Sprite.png",
+      "sha256": "d16485f0df6a8f1d56ce47c8e79114f70ff4adf75a101941be0827c91fbe2e6a",
+      "width": 128,
+      "height": 128,
+      "bytes": 18248
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/krookodile?format=double&season=M-5",
+    "raw_path": "_sources/details/krookodile.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

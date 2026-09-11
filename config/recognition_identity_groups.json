@@ -1,0 +1,7 @@
+{
+  "description": "用户确认不需要区分的外观形态。按明确的 source_slug 合并识别身份，不根据种族值相等自动推断，也不按全国编号合并所有形态。",
+  "groups": [
+    {"source_slugs": ["sinistcha"], "name": "来悲粗茶"},
+    {"source_slugs": ["vivillon"], "name": "彩粉蝶"}
+  ]
+}

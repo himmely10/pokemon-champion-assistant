@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 478,
+  "name": "超级雪妖女",
+  "species_name": "雪妖女",
+  "form_name": "超级雪妖女",
+  "wiki_name": "超级雪妖女",
+  "directory": "超级雪妖女",
+  "source_slug": "froslass-mega",
+  "base_stats": {
+    "hp": 70,
+    "attack": 80,
+    "defense": 70,
+    "special_attack": 140,
+    "special_defense": 100,
+    "speed": 120
+  },
+  "base_stat_total": 580,
+  "images": {
+    "normal": {
+      "file": "超级雪妖女.png",
+      "source_url": "https://media.52poke.com/wiki/6/68/Champions_0478M_Sprite.png",
+      "source_filename": "Champions_0478M_Sprite.png",
+      "sha256": "c5ce2d5c397a22a9cd81ca4eeaf7e0ce459704c3603fd10b424b4092fce77a60",
+      "width": 128,
+      "height": 128,
+      "bytes": 16848
+    },
+    "shiny": {
+      "file": "超级雪妖女_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/80/Champions_0478M_s_Sprite.png",
+      "source_filename": "Champions_0478M_s_Sprite.png",
+      "sha256": "af9cb5dd250e90d21cb8045af80dfcffec487e318869bb7a677c307d441cf673",
+      "width": 128,
+      "height": 128,
+      "bytes": 16774
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/froslass?format=double&season=M-5",
+    "raw_path": "_sources/details/froslass.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

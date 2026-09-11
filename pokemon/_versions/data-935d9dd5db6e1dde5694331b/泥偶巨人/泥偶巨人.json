@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "泥偶巨人"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 483,
+  "base_stats": {
+    "attack": 124,
+    "defense": 80,
+    "hp": 89,
+    "special_attack": 55,
+    "special_defense": 80,
+    "speed": 55
+  },
+  "data_ready": true,
+  "dex_number": 623,
+  "directory": "泥偶巨人",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 21882,
+      "file": "泥偶巨人.png",
+      "height": 128,
+      "sha256": "d17fcd3ea9d8aecdfa2bce4124dfb7f78f6ed8d00fb3c94f52a373a3dcdbd2c4",
+      "source_filename": "Champions_0623_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/83/Champions_0623_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 21249,
+      "file": "泥偶巨人_闪光.png",
+      "height": 128,
+      "sha256": "331a86f8bdf5c359682652c7c374c473275058c217669596712dfc676b18cec2",
+      "source_filename": "Champions_0623_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/aa/Champions_0623_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:623:超级泥偶巨人"
+  ],
+  "mega_item": null,
+  "name": "泥偶巨人",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 623,
+  "opgg_key": "golurk",
+  "recognition_ready": true,
+  "record_id": "legacy:623:泥偶巨人",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "golurk",
+  "species_name": "泥偶巨人",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/golurk"
+  },
+  "type_names": [
+    "地面",
+    "幽灵"
+  ],
+  "types": [
+    "ground",
+    "ghost"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/golurk"
+  },
+  "wiki_name": "泥偶巨人"
+}

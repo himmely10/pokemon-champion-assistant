@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "月亮伊布"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 525,
+  "base_stats": {
+    "attack": 65,
+    "defense": 110,
+    "hp": 95,
+    "special_attack": 60,
+    "special_defense": 130,
+    "speed": 65
+  },
+  "data_ready": true,
+  "dex_number": 197,
+  "directory": "月亮伊布",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 10685,
+      "file": "月亮伊布.png",
+      "height": 128,
+      "sha256": "e19c0b8ed93c16bc7f1780f28e887c7eff73ed75d8e473dc530dda0f688c09ad",
+      "source_filename": "Champions_0197_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/6c/Champions_0197_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 10816,
+      "file": "月亮伊布_闪光.png",
+      "height": 128,
+      "sha256": "6e088b1695bb261e4d751fbed7d53e3016853f6478c3e9b31f7ed96e7f58bf0a",
+      "source_filename": "Champions_0197_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/c2/Champions_0197_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "月亮伊布",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 197,
+  "opgg_key": "umbreon",
+  "recognition_ready": true,
+  "record_id": "legacy:197:月亮伊布",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "umbreon",
+  "species_name": "月亮伊布",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/umbreon"
+  },
+  "type_names": [
+    "恶"
+  ],
+  "types": [
+    "dark"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/umbreon"
+  },
+  "wiki_name": "月亮伊布"
+}

@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 520,
+  "base_stats": {
+    "attack": 55,
+    "defense": 90,
+    "hp": 60,
+    "special_attack": 145,
+    "special_defense": 90,
+    "speed": 80
+  },
+  "dex_number": 609,
+  "directory": "水晶灯火灵",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14718,
+      "file": "水晶灯火灵.png",
+      "height": 128,
+      "sha256": "1cf1651ae182f17a337806a647ac116117797989816b5d10d4d16570b0070996",
+      "source_filename": "Champions_0609_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/f5/Champions_0609_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14562,
+      "file": "水晶灯火灵_闪光.png",
+      "height": 128,
+      "sha256": "ea593b03d49f01b0237bc514a1037f59655b592c3575b54834414717937459cc",
+      "source_filename": "Champions_0609_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/cd/Champions_0609_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "水晶灯火灵",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "chandelure",
+  "species_name": "水晶灯火灵",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/chandelure.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/chandelure?format=double&season=M-5"
+  },
+  "wiki_name": "水晶灯火灵"
+}

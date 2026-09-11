@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 466,
+  "base_stats": {
+    "attack": 48,
+    "defense": 76,
+    "hp": 74,
+    "special_attack": 83,
+    "special_defense": 81,
+    "speed": 104
+  },
+  "dex_number": 678,
+  "directory": "超能妙喵（雄性的样子）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "雄性的样子",
+  "images": {
+    "normal": {
+      "bytes": 12502,
+      "file": "超能妙喵（雄性的样子）.png",
+      "height": 128,
+      "sha256": "5484ae874911c5a3dbaeb2b7deb65ca057e9746a38bd67990b488627b4294417",
+      "source_filename": "Champions_0678_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/8e/Champions_0678_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13106,
+      "file": "超能妙喵（雄性的样子）_闪光.png",
+      "height": 128,
+      "sha256": "9c8b15350318976334d1c33748dba37bc41df75c7547547c215e78c49f11bd6e",
+      "source_filename": "Champions_0678_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/2c/Champions_0678_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超能妙喵（雄性的样子）",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "meowstic",
+  "species_name": "超能妙喵",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/meowstic.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/meowstic?format=double&season=M-5"
+  },
+  "wiki_name": "超能妙喵（雄性的样子）"
+}

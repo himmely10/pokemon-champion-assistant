@@ -1,0 +1,76 @@
+{
+  "aliases": [
+    "多丽米亚"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 472,
+  "base_stats": {
+    "attack": 80,
+    "defense": 60,
+    "hp": 75,
+    "special_attack": 65,
+    "special_defense": 90,
+    "speed": 102
+  },
+  "data_ready": true,
+  "dex_number": 676,
+  "directory": "多丽米亚（绅士造型）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "绅士造型",
+  "images": {
+    "normal": {
+      "bytes": 11998,
+      "file": "多丽米亚（绅士造型）.png",
+      "height": 128,
+      "sha256": "d68055fdfb32c0d8d21598d1527be5d5bbf895a68076dab769ede0fa66120110",
+      "source_filename": "Champions_0676Da_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/63/Champions_0676Da_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11588,
+      "file": "多丽米亚（绅士造型）_闪光.png",
+      "height": 128,
+      "sha256": "1e26c1aa302fe026c6e98ee687532d59d8a874c825ee901fb649a9df86333172",
+      "source_filename": "Champions_0676Da_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/82/Champions_0676Da_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。",
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "多丽米亚（绅士造型）",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 676,
+  "opgg_key": "furfrou",
+  "recognition_ready": true,
+  "record_id": "legacy:676:多丽米亚（绅士造型）",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "furfrou",
+  "species_name": "多丽米亚",
+  "stats_mapping": "shared_species_profile",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/furfrou"
+  },
+  "type_names": [
+    "一般"
+  ],
+  "types": [
+    "normal"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/furfrou"
+  },
+  "wiki_name": "多丽米亚（绅士造型）"
+}

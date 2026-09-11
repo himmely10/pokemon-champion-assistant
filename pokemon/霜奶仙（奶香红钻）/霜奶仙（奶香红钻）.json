@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dex_number": 869,
+  "name": "霜奶仙（奶香红钻）",
+  "species_name": "霜奶仙",
+  "form_name": "奶香红钻",
+  "wiki_name": "霜奶仙（奶香红钻）",
+  "directory": "霜奶仙（奶香红钻）",
+  "source_slug": "alcremie",
+  "base_stats": {
+    "hp": 65,
+    "attack": 60,
+    "defense": 75,
+    "special_attack": 110,
+    "special_defense": 121,
+    "speed": 64
+  },
+  "base_stat_total": 495,
+  "images": {
+    "normal": {
+      "file": "霜奶仙（奶香红钻）.png",
+      "source_url": "https://media.52poke.com/wiki/3/30/Champions_0869RC_Sprite.png",
+      "source_filename": "Champions_0869RC_Sprite.png",
+      "sha256": "8e94c5f79144fc723803c4747f4a1754858ec02c1751f60665b1cc9ade80e350",
+      "width": 128,
+      "height": 128,
+      "bytes": 10989
+    },
+    "shiny": {
+      "file": "霜奶仙（奶香红钻）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/b/b1/Champions_0869RC_s_Sprite.png",
+      "source_filename": "Champions_0869RC_s_Sprite.png",
+      "sha256": "31f03a90210dc6fce5176438d762c383bc147bfeae17716468a8c0e7183435b2",
+      "width": 128,
+      "height": 128,
+      "bytes": 11060
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/alcremie?format=double&season=M-5",
+    "raw_path": "_sources/details/alcremie.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "shared_species_profile",
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。"
+}

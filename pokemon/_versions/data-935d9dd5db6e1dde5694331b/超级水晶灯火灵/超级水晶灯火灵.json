@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "超级水晶灯火灵"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 620,
+  "base_stats": {
+    "attack": 75,
+    "defense": 110,
+    "hp": 60,
+    "special_attack": 175,
+    "special_defense": 110,
+    "speed": 90
+  },
+  "data_ready": true,
+  "dex_number": 609,
+  "directory": "超级水晶灯火灵",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级水晶灯火灵",
+  "images": {
+    "normal": {
+      "bytes": 16793,
+      "file": "超级水晶灯火灵.png",
+      "height": 128,
+      "sha256": "7546ea871de7294a3380c6bcd5c0f5d6571c7e2a172abb41c499515f339da117",
+      "source_filename": "Champions_0609M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/f8/Champions_0609M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 16400,
+      "file": "超级水晶灯火灵_闪光.png",
+      "height": 128,
+      "sha256": "3afce000d9db7d9df1d0c14bbeddc8186687543d36b9e966e59494094f6a0e12",
+      "source_filename": "Champions_0609M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/ab/Champions_0609M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "chandelurite",
+  "name": "超级水晶灯火灵",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10291,
+  "opgg_key": "mega-chandelure",
+  "recognition_ready": true,
+  "record_id": "legacy:609:超级水晶灯火灵",
+  "schema_version": 1,
+  "source_base_key": "chandelure",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "chandelure-mega",
+  "species_name": "水晶灯火灵",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-chandelure"
+  },
+  "type_names": [
+    "幽灵",
+    "火"
+  ],
+  "types": [
+    "ghost",
+    "fire"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-chandelure"
+  },
+  "wiki_name": "超级水晶灯火灵"
+}

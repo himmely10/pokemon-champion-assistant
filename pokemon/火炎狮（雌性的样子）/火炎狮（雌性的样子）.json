@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dex_number": 668,
+  "name": "火炎狮（雌性的样子）",
+  "species_name": "火炎狮",
+  "form_name": "雌性的样子",
+  "wiki_name": "火炎狮（（雌性的样子））",
+  "directory": "火炎狮（雌性的样子）",
+  "source_slug": "pyroar",
+  "base_stats": {
+    "hp": 86,
+    "attack": 68,
+    "defense": 72,
+    "special_attack": 109,
+    "special_defense": 66,
+    "speed": 106
+  },
+  "base_stat_total": 507,
+  "images": {
+    "normal": {
+      "file": "火炎狮（雌性的样子）.png",
+      "source_url": "https://media.52poke.com/wiki/a/ab/Champions_0668F_Sprite.png",
+      "source_filename": "Champions_0668F_Sprite.png",
+      "sha256": "4a6ec8f479775f5b5f69dac6b762f10b31722ccb59f79f5ed3f1c9b8fb45afe1",
+      "width": 128,
+      "height": 128,
+      "bytes": 12758
+    },
+    "shiny": {
+      "file": "火炎狮（雌性的样子）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/8b/Champions_0668F_s_Sprite.png",
+      "source_filename": "Champions_0668F_s_Sprite.png",
+      "sha256": "51a1a3f0da81f41055beb0ae1d642e3a13055f93ae24b0c5537a0ff193e29cdb",
+      "width": 128,
+      "height": 128,
+      "bytes": 13170
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pyroar?format=double&season=M-5",
+    "raw_path": "_sources/details/pyroar.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "shared_species_profile",
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。"
+}

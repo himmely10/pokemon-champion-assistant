@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 635,
+  "base_stats": {
+    "attack": 150,
+    "defense": 110,
+    "hp": 100,
+    "special_attack": 95,
+    "special_defense": 110,
+    "speed": 70
+  },
+  "dex_number": 260,
+  "directory": "超级巨沼怪",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级巨沼怪",
+  "images": {
+    "normal": {
+      "bytes": 15267,
+      "file": "超级巨沼怪.png",
+      "height": 128,
+      "sha256": "96933962507c5c6c0196ea05659582e98118225b3b43cd93570ef5c40eaf3ec0",
+      "source_filename": "Champions_0260M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/5e/Champions_0260M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15173,
+      "file": "超级巨沼怪_闪光.png",
+      "height": 128,
+      "sha256": "a87bf7947a3ef5b772218afb5669a23b11e037d77cddcef97ebe369832b98609",
+      "source_filename": "Champions_0260M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/c8/Champions_0260M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超级巨沼怪",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "swampert-mega",
+  "species_name": "巨沼怪",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "megaForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/swampert.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/swampert?format=double&season=M-5"
+  },
+  "wiki_name": "超级巨沼怪"
+}

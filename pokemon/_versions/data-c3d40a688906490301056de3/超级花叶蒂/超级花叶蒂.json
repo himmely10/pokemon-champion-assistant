@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 651,
+  "base_stats": {
+    "attack": 85,
+    "defense": 87,
+    "hp": 74,
+    "special_attack": 155,
+    "special_defense": 148,
+    "speed": 102
+  },
+  "dex_number": 670,
+  "directory": "超级花叶蒂",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级花叶蒂",
+  "images": {
+    "normal": {
+      "bytes": 11181,
+      "file": "超级花叶蒂.png",
+      "height": 128,
+      "sha256": "07eaa55c97418ad9973f9a5e3bab2e30c9c8d3fc521487c2d2256b94dd26f5a4",
+      "source_filename": "Champions_0670M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/52/Champions_0670M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11191,
+      "file": "超级花叶蒂_闪光.png",
+      "height": 128,
+      "sha256": "941e88e7920ea3803e7221e9cf35216a0bf4ae66b436e8041a2a8ffc3d43b34d",
+      "source_filename": "Champions_0670M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b9/Champions_0670M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超级花叶蒂",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "floette-mega",
+  "species_name": "花叶蒂",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "megaForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/floette.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/floette?format=double&season=M-5"
+  },
+  "wiki_name": "超级花叶蒂"
+}

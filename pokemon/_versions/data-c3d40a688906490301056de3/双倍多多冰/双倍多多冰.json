@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 535,
+  "base_stats": {
+    "attack": 95,
+    "defense": 85,
+    "hp": 71,
+    "special_attack": 110,
+    "special_defense": 95,
+    "speed": 79
+  },
+  "dex_number": 584,
+  "directory": "双倍多多冰",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 16357,
+      "file": "双倍多多冰.png",
+      "height": 128,
+      "sha256": "f9f41a4ca095a74246f1c7e4dd8609a752a29abb1c0e84e993becd4831eacf0c",
+      "source_filename": "Champions_0584_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/40/Champions_0584_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 16354,
+      "file": "双倍多多冰_闪光.png",
+      "height": 128,
+      "sha256": "1b3689f06d7a4014e15b04910a924677c28533ced3730f5baff0a599548a51bb",
+      "source_filename": "Champions_0584_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/52/Champions_0584_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "双倍多多冰",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "vanilluxe",
+  "species_name": "双倍多多冰",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/vanilluxe.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/vanilluxe?format=double&season=M-5"
+  },
+  "wiki_name": "双倍多多冰"
+}

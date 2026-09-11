@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 18,
+  "name": "超级大比鸟",
+  "species_name": "大比鸟",
+  "form_name": "超级大比鸟",
+  "wiki_name": "超级大比鸟",
+  "directory": "超级大比鸟",
+  "source_slug": "pidgeot-mega",
+  "base_stats": {
+    "hp": 83,
+    "attack": 80,
+    "defense": 80,
+    "special_attack": 135,
+    "special_defense": 80,
+    "speed": 121
+  },
+  "base_stat_total": 579,
+  "images": {
+    "normal": {
+      "file": "超级大比鸟.png",
+      "source_url": "https://media.52poke.com/wiki/2/2a/Champions_0018M_Sprite.png",
+      "source_filename": "Champions_0018M_Sprite.png",
+      "sha256": "39cbd30cecf2f1fad30118d7401482814c1ca6de22cfff82ad38ff7347bbb6dd",
+      "width": 128,
+      "height": 128,
+      "bytes": 12599
+    },
+    "shiny": {
+      "file": "超级大比鸟_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/c/c2/Champions_0018M_s_Sprite.png",
+      "source_filename": "Champions_0018M_s_Sprite.png",
+      "sha256": "ee03d3634b7a846b357fff44555e8276cbd98337ad95568b633bfb1024b1c202",
+      "width": 128,
+      "height": 128,
+      "bytes": 12531
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pidgeot?format=double&season=M-5",
+    "raw_path": "_sources/details/pidgeot.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

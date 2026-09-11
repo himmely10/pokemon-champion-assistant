@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 479,
+  "name": "清洗洛托姆",
+  "species_name": "洛托姆",
+  "form_name": "清洗洛托姆",
+  "wiki_name": "洛托姆（清洗洛托姆）",
+  "directory": "清洗洛托姆",
+  "source_slug": "rotom-wash",
+  "base_stats": {
+    "hp": 50,
+    "attack": 65,
+    "defense": 107,
+    "special_attack": 105,
+    "special_defense": 107,
+    "speed": 86
+  },
+  "base_stat_total": 520,
+  "images": {
+    "normal": {
+      "file": "清洗洛托姆.png",
+      "source_url": "https://media.52poke.com/wiki/0/0a/Champions_0479W_Sprite.png",
+      "source_filename": "Champions_0479W_Sprite.png",
+      "sha256": "cd073b643b472226a3cc35bc4ca32a8b5181cfe34e690211031c62bde612cdb1",
+      "width": 128,
+      "height": 128,
+      "bytes": 10066
+    },
+    "shiny": {
+      "file": "清洗洛托姆_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/6/66/Champions_0479W_s_Sprite.png",
+      "source_filename": "Champions_0479W_s_Sprite.png",
+      "sha256": "698e743e145a50c8425a89f865007df62ce5223233d5f4c97542f277e9374777",
+      "width": 128,
+      "height": 128,
+      "bytes": 10406
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rotom-wash?format=double&season=M-5",
+    "raw_path": "_sources/details/rotom-wash.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,73 @@
+{
+  "aliases": [
+    "獒教父"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 505,
+  "base_stats": {
+    "attack": 120,
+    "defense": 90,
+    "hp": 80,
+    "special_attack": 60,
+    "special_defense": 70,
+    "speed": 85
+  },
+  "data_ready": true,
+  "dex_number": 943,
+  "directory": "獒教父",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 13255,
+      "file": "獒教父.png",
+      "height": 128,
+      "sha256": "5d3e9ad4a30c714a5bd38f0de15cba64aa9e30e1e8910c0576379fbe12f491eb",
+      "source_filename": "Champions_0943_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b0/Champions_0943_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13642,
+      "file": "獒教父_闪光.png",
+      "height": 128,
+      "sha256": "c27f74411066bbb34d7782b068b256c1dc62d4df81cd8c8d2ec30c26250ca76c",
+      "source_filename": "Champions_0943_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/26/Champions_0943_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "獒教父",
+  "name_source": "opgg_zh_cn",
+  "opgg_id": 943,
+  "opgg_key": "mabosstiff",
+  "recognition_ready": true,
+  "record_id": "opgg:mabosstiff",
+  "schema_version": 2,
+  "source_base_key": null,
+  "source_is_new": true,
+  "source_presence": "present",
+  "source_regulation": "M-C",
+  "source_slug": "mabosstiff",
+  "species_name": "獒教父",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mabosstiff"
+  },
+  "type_names": [
+    "恶"
+  ],
+  "types": [
+    "dark"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mabosstiff"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "毒藻龙"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 494,
+  "base_stats": {
+    "attack": 75,
+    "defense": 90,
+    "hp": 65,
+    "special_attack": 97,
+    "special_defense": 123,
+    "speed": 44
+  },
+  "data_ready": true,
+  "dex_number": 691,
+  "directory": "毒藻龙",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 11464,
+      "file": "毒藻龙.png",
+      "height": 128,
+      "sha256": "451a33d96067db28c3e3ccf9a622dac32c8f3166ec03884d400da4c5874deab1",
+      "source_filename": "Champions_0691_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/4d/Champions_0691_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11756,
+      "file": "毒藻龙_闪光.png",
+      "height": 128,
+      "sha256": "0806679874ceeb85215efe019ea93bfd567121d200dd389dcb882439abccdd96",
+      "source_filename": "Champions_0691_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/03/Champions_0691_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:691:超级毒藻龙"
+  ],
+  "mega_item": null,
+  "name": "毒藻龙",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 691,
+  "opgg_key": "dragalge",
+  "recognition_ready": true,
+  "record_id": "legacy:691:毒藻龙",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "dragalge",
+  "species_name": "毒藻龙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/dragalge"
+  },
+  "type_names": [
+    "毒",
+    "龙"
+  ],
+  "types": [
+    "poison",
+    "dragon"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/dragalge"
+  },
+  "wiki_name": "毒藻龙"
+}

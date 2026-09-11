@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 485,
+  "base_stats": {
+    "attack": 110,
+    "defense": 80,
+    "hp": 70,
+    "special_attack": 95,
+    "special_defense": 60,
+    "speed": 70
+  },
+  "dex_number": 841,
+  "directory": "苹裹龙",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 10678,
+      "file": "苹裹龙.png",
+      "height": 128,
+      "sha256": "a2b98d14af3e28e74a05cea6ef16b5effe1bb03c3514f7827e4e219dcb8d6927",
+      "source_filename": "Champions_0841_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/c3/Champions_0841_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 10727,
+      "file": "苹裹龙_闪光.png",
+      "height": 128,
+      "sha256": "5e9a0e2ab306fdcfe5a6c5d25f2240642bf93b1091b23b05675c37cbd5ea48fb",
+      "source_filename": "Champions_0841_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/8a/Champions_0841_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "苹裹龙",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "flapple",
+  "species_name": "苹裹龙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/flapple.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/flapple?format=double&season=M-5"
+  },
+  "wiki_name": "苹裹龙"
+}

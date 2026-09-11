@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 683,
+  "name": "芳香精",
+  "species_name": "芳香精",
+  "form_name": null,
+  "wiki_name": "芳香精",
+  "directory": "芳香精",
+  "source_slug": "aromatisse",
+  "base_stats": {
+    "hp": 101,
+    "attack": 72,
+    "defense": 72,
+    "special_attack": 99,
+    "special_defense": 89,
+    "speed": 29
+  },
+  "base_stat_total": 462,
+  "images": {
+    "normal": {
+      "file": "芳香精.png",
+      "source_url": "https://media.52poke.com/wiki/3/38/Champions_0683_Sprite.png",
+      "source_filename": "Champions_0683_Sprite.png",
+      "sha256": "ee6db11e54f2050c5ae0e91ac88970112c01703a30280499e5d4035fa50ac6c5",
+      "width": 128,
+      "height": 128,
+      "bytes": 12920
+    },
+    "shiny": {
+      "file": "芳香精_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/5/50/Champions_0683_s_Sprite.png",
+      "source_filename": "Champions_0683_s_Sprite.png",
+      "sha256": "e1c4a95466f7c8a56ec3bea9806bc7c70622febdd2b976c943d5bcdf5fb5e0de",
+      "width": 128,
+      "height": 128,
+      "bytes": 12658
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/aromatisse?format=double&season=M-5",
+    "raw_path": "_sources/details/aromatisse.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

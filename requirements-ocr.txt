@@ -1,0 +1,4 @@
+# Optional local screenshot-import engine; bundled models, no cloud OCR account.
+-r requirements-ui.txt
+rapidocr==3.9.2
+onnxruntime==1.30.0

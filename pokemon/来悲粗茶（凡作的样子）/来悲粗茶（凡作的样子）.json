@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dex_number": 1013,
+  "name": "来悲粗茶（凡作的样子）",
+  "species_name": "来悲粗茶",
+  "form_name": "凡作的样子",
+  "wiki_name": "来悲粗茶（凡作的样子）",
+  "directory": "来悲粗茶（凡作的样子）",
+  "source_slug": "sinistcha",
+  "base_stats": {
+    "hp": 71,
+    "attack": 60,
+    "defense": 106,
+    "special_attack": 121,
+    "special_defense": 80,
+    "speed": 70
+  },
+  "base_stat_total": 508,
+  "images": {
+    "normal": {
+      "file": "来悲粗茶（凡作的样子）.png",
+      "source_url": "https://media.52poke.com/wiki/0/04/Champions_1013_Sprite.png",
+      "source_filename": "Champions_1013_Sprite.png",
+      "sha256": "fdc715d78178f08b65d2b985b61c75f7580014ca971afa67f3043f2974bc92d3",
+      "width": 128,
+      "height": 128,
+      "bytes": 9823
+    },
+    "shiny": {
+      "file": "来悲粗茶（凡作的样子）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/8a/Champions_1013_s_Sprite.png",
+      "source_filename": "Champions_1013_s_Sprite.png",
+      "sha256": "8b62ee04825a6c12ef3b32dff96cc7b5be90feed9d387c9abdfd3cc189cbc938",
+      "width": 128,
+      "height": 128,
+      "bytes": 9957
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sinistcha?format=double&season=M-5",
+    "raw_path": "_sources/details/sinistcha.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "shared_species_profile",
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。"
+}

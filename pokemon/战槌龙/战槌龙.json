@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 409,
+  "name": "战槌龙",
+  "species_name": "战槌龙",
+  "form_name": null,
+  "wiki_name": "战槌龙",
+  "directory": "战槌龙",
+  "source_slug": "rampardos",
+  "base_stats": {
+    "hp": 97,
+    "attack": 165,
+    "defense": 60,
+    "special_attack": 65,
+    "special_defense": 50,
+    "speed": 58
+  },
+  "base_stat_total": 495,
+  "images": {
+    "normal": {
+      "file": "战槌龙.png",
+      "source_url": "https://media.52poke.com/wiki/c/cf/Champions_0409_Sprite.png",
+      "source_filename": "Champions_0409_Sprite.png",
+      "sha256": "152bcddb3566a470f09e4ece63bd305edbe829df75bda46be7686df00ff23f0e",
+      "width": 128,
+      "height": 128,
+      "bytes": 12939
+    },
+    "shiny": {
+      "file": "战槌龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/f/f0/Champions_0409_s_Sprite.png",
+      "source_filename": "Champions_0409_s_Sprite.png",
+      "sha256": "9da0a939cb1e127b5c4de99feaa4d8d3b19baf9e77fbf1392ead87c68a2ac71f",
+      "width": 128,
+      "height": 128,
+      "bytes": 13950
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rampardos?format=double&season=M-5",
+    "raw_path": "_sources/details/rampardos.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

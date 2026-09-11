@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "象牙猪"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 530,
+  "base_stats": {
+    "attack": 130,
+    "defense": 80,
+    "hp": 110,
+    "special_attack": 70,
+    "special_defense": 60,
+    "speed": 80
+  },
+  "data_ready": true,
+  "dex_number": 473,
+  "directory": "象牙猪",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 15837,
+      "file": "象牙猪.png",
+      "height": 128,
+      "sha256": "c3a9db44053e499b9ed7881e35fd83813ab161fb1179dcca8490bf576d9b12b1",
+      "source_filename": "Champions_0473_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/8c/Champions_0473_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15864,
+      "file": "象牙猪_闪光.png",
+      "height": 128,
+      "sha256": "c84124e7cc52b57c77b81b7a628bacd687b763af7b2a0a6d7c52865be434dae6",
+      "source_filename": "Champions_0473_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/17/Champions_0473_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "象牙猪",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 473,
+  "opgg_key": "mamoswine",
+  "recognition_ready": true,
+  "record_id": "legacy:473:象牙猪",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "mamoswine",
+  "species_name": "象牙猪",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mamoswine"
+  },
+  "type_names": [
+    "冰",
+    "地面"
+  ],
+  "types": [
+    "ice",
+    "ground"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mamoswine"
+  },
+  "wiki_name": "象牙猪"
+}

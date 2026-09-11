@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 59,
+  "name": "风速狗",
+  "species_name": "风速狗",
+  "form_name": null,
+  "wiki_name": "风速狗",
+  "directory": "风速狗",
+  "source_slug": "arcanine",
+  "base_stats": {
+    "hp": 90,
+    "attack": 110,
+    "defense": 80,
+    "special_attack": 100,
+    "special_defense": 80,
+    "speed": 95
+  },
+  "base_stat_total": 555,
+  "images": {
+    "normal": {
+      "file": "风速狗.png",
+      "source_url": "https://media.52poke.com/wiki/1/19/Champions_0059_Sprite.png",
+      "source_filename": "Champions_0059_Sprite.png",
+      "sha256": "fd48a3fa5dc58451eaa0357474c1bd6a95f65b215b3c09c148382b88e7c9dddf",
+      "width": 128,
+      "height": 128,
+      "bytes": 17915
+    },
+    "shiny": {
+      "file": "风速狗_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/e/e9/Champions_0059_s_Sprite.png",
+      "source_filename": "Champions_0059_s_Sprite.png",
+      "sha256": "2a6d105360757a2454f44a13ca9adae833242d0306afcc854bc731c351c6bb67",
+      "width": 128,
+      "height": 128,
+      "bytes": 18048
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/arcanine?format=double&season=M-5",
+    "raw_path": "_sources/details/arcanine.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

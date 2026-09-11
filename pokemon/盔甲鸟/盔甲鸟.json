@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 227,
+  "name": "盔甲鸟",
+  "species_name": "盔甲鸟",
+  "form_name": null,
+  "wiki_name": "盔甲鸟",
+  "directory": "盔甲鸟",
+  "source_slug": "skarmory",
+  "base_stats": {
+    "hp": 65,
+    "attack": 80,
+    "defense": 140,
+    "special_attack": 40,
+    "special_defense": 70,
+    "speed": 70
+  },
+  "base_stat_total": 465,
+  "images": {
+    "normal": {
+      "file": "盔甲鸟.png",
+      "source_url": "https://media.52poke.com/wiki/5/50/Champions_0227_Sprite.png",
+      "source_filename": "Champions_0227_Sprite.png",
+      "sha256": "f12cd6b5aad107d05397389a6d049e58e526a15526114829cf649a12e8418c51",
+      "width": 128,
+      "height": 128,
+      "bytes": 16395
+    },
+    "shiny": {
+      "file": "盔甲鸟_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/b/bc/Champions_0227_s_Sprite.png",
+      "source_filename": "Champions_0227_s_Sprite.png",
+      "sha256": "feca588a71190b473d1f2d72b04aafab05f816a0537a89fc79a487045f7b38d5",
+      "width": 128,
+      "height": 128,
+      "bytes": 16356
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/skarmory?format=double&season=M-5",
+    "raw_path": "_sources/details/skarmory.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

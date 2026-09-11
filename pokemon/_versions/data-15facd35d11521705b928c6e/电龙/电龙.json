@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "电龙"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 510,
+  "base_stats": {
+    "attack": 75,
+    "defense": 85,
+    "hp": 90,
+    "special_attack": 115,
+    "special_defense": 90,
+    "speed": 55
+  },
+  "data_ready": true,
+  "dex_number": 181,
+  "directory": "电龙",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 12631,
+      "file": "电龙.png",
+      "height": 128,
+      "sha256": "2bb413d1ff01b0d03453b880ca306a0cc6510027e1d46321ce3a6c268703a6b1",
+      "source_filename": "Champions_0181_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/3d/Champions_0181_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12725,
+      "file": "电龙_闪光.png",
+      "height": 128,
+      "sha256": "0457708ccfa2e91873c7059b8deb74e0ac3eeed0e1d52c7ea3375867078dfd84",
+      "source_filename": "Champions_0181_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/cc/Champions_0181_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:181:超级电龙"
+  ],
+  "mega_item": null,
+  "name": "电龙",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 181,
+  "opgg_key": "ampharos",
+  "recognition_ready": true,
+  "record_id": "legacy:181:电龙",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "ampharos",
+  "species_name": "电龙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/ampharos"
+  },
+  "type_names": [
+    "电"
+  ],
+  "types": [
+    "electric"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/ampharos"
+  },
+  "wiki_name": "电龙"
+}

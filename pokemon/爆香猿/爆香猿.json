@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 514,
+  "name": "爆香猿",
+  "species_name": "爆香猿",
+  "form_name": null,
+  "wiki_name": "爆香猿",
+  "directory": "爆香猿",
+  "source_slug": "simisear",
+  "base_stats": {
+    "hp": 75,
+    "attack": 98,
+    "defense": 63,
+    "special_attack": 98,
+    "special_defense": 63,
+    "speed": 101
+  },
+  "base_stat_total": 498,
+  "images": {
+    "normal": {
+      "file": "爆香猿.png",
+      "source_url": "https://media.52poke.com/wiki/0/03/Champions_0514_Sprite.png",
+      "source_filename": "Champions_0514_Sprite.png",
+      "sha256": "8876c2234b018803b47bb81a9a98102a6fa2d0aafb67e10fde188c4cde64f4a3",
+      "width": 128,
+      "height": 128,
+      "bytes": 16182
+    },
+    "shiny": {
+      "file": "爆香猿_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/f/f9/Champions_0514_s_Sprite.png",
+      "source_filename": "Champions_0514_s_Sprite.png",
+      "sha256": "6970b29e685793c8d6bd9a7f0a8fc146109f0da2d0b18ce2aecad002882cd324",
+      "width": 128,
+      "height": 128,
+      "bytes": 16285
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/simisear?format=double&season=M-5",
+    "raw_path": "_sources/details/simisear.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

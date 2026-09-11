@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "红莲铠骑"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 525,
+  "base_stats": {
+    "attack": 60,
+    "defense": 100,
+    "hp": 85,
+    "special_attack": 125,
+    "special_defense": 80,
+    "speed": 75
+  },
+  "data_ready": true,
+  "dex_number": 936,
+  "directory": "红莲铠骑",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 11879,
+      "file": "红莲铠骑.png",
+      "height": 128,
+      "sha256": "bb03201b207577ed6da2285df798b5dfb6513d393d98d131933cedfc63f8874d",
+      "source_filename": "Champions_0936_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/dc/Champions_0936_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11895,
+      "file": "红莲铠骑_闪光.png",
+      "height": 128,
+      "sha256": "ae6440c6c3ba9d31fd6a0eb44287529affa16206249bf95ebf74e9ebfb6e5e1e",
+      "source_filename": "Champions_0936_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b2/Champions_0936_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "红莲铠骑",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 936,
+  "opgg_key": "armarouge",
+  "recognition_ready": true,
+  "record_id": "legacy:936:红莲铠骑",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "armarouge",
+  "species_name": "红莲铠骑",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/armarouge"
+  },
+  "type_names": [
+    "火",
+    "超能力"
+  ],
+  "types": [
+    "fire",
+    "psychic"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/armarouge"
+  },
+  "wiki_name": "红莲铠骑"
+}

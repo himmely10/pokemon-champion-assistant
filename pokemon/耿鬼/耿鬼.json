@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 94,
+  "name": "耿鬼",
+  "species_name": "耿鬼",
+  "form_name": null,
+  "wiki_name": "耿鬼",
+  "directory": "耿鬼",
+  "source_slug": "gengar",
+  "base_stats": {
+    "hp": 60,
+    "attack": 65,
+    "defense": 60,
+    "special_attack": 130,
+    "special_defense": 75,
+    "speed": 110
+  },
+  "base_stat_total": 500,
+  "images": {
+    "normal": {
+      "file": "耿鬼.png",
+      "source_url": "https://media.52poke.com/wiki/0/0f/Champions_0094_Sprite.png",
+      "source_filename": "Champions_0094_Sprite.png",
+      "sha256": "7e1ea82f4326027d50ea91bad9392a117dc37456d95f33ff42bafa7c90cbfb40",
+      "width": 128,
+      "height": 128,
+      "bytes": 12726
+    },
+    "shiny": {
+      "file": "耿鬼_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/9/99/Champions_0094_s_Sprite.png",
+      "source_filename": "Champions_0094_s_Sprite.png",
+      "sha256": "ac9002e42a39433851911f99ac7a3ff0bba4536cb92a4977f4da23c50b0efac2",
+      "width": 128,
+      "height": 128,
+      "bytes": 12370
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gengar?format=double&season=M-5",
+    "raw_path": "_sources/details/gengar.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

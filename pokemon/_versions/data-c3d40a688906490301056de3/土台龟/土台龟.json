@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 525,
+  "base_stats": {
+    "attack": 109,
+    "defense": 105,
+    "hp": 95,
+    "special_attack": 75,
+    "special_defense": 85,
+    "speed": 56
+  },
+  "dex_number": 389,
+  "directory": "土台龟",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 17734,
+      "file": "土台龟.png",
+      "height": 128,
+      "sha256": "849c2c645622540faacd148a1e5d7b088c412e56bd54c081b6e703ab090edd3c",
+      "source_filename": "Champions_0389_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/99/Champions_0389_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 18194,
+      "file": "土台龟_闪光.png",
+      "height": 128,
+      "sha256": "92e2786354389c054d291a312abef5d1cd4eecbf6e1b09d8dff7ac25a8b1c00b",
+      "source_filename": "Champions_0389_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/a2/Champions_0389_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "土台龟",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "torterra",
+  "species_name": "土台龟",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/torterra.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/torterra?format=double&season=M-5"
+  },
+  "wiki_name": "土台龟"
+}

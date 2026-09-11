@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 479,
+  "base_stats": {
+    "attack": 80,
+    "defense": 75,
+    "hp": 83,
+    "special_attack": 70,
+    "special_defense": 70,
+    "speed": 101
+  },
+  "dex_number": 18,
+  "directory": "大比鸟",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 17972,
+      "file": "大比鸟.png",
+      "height": 128,
+      "sha256": "b5cd5cc54d989e05c626bc12b81fbd62daa8ba5ad8b9243795d8ac379c3a02f6",
+      "source_filename": "Champions_0018_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/59/Champions_0018_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 18039,
+      "file": "大比鸟_闪光.png",
+      "height": 128,
+      "sha256": "da390537f27cb945dc61103b1fed1d60e42aa8892bc5676d0463fe6ea9dba053",
+      "source_filename": "Champions_0018_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/73/Champions_0018_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "大比鸟",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "pidgeot",
+  "species_name": "大比鸟",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/pidgeot.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pidgeot?format=double&season=M-5"
+  },
+  "wiki_name": "大比鸟"
+}

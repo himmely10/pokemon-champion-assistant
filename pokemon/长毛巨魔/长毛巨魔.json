@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 861,
+  "name": "长毛巨魔",
+  "species_name": "长毛巨魔",
+  "form_name": null,
+  "wiki_name": "长毛巨魔",
+  "directory": "长毛巨魔",
+  "source_slug": "grimmsnarl",
+  "base_stats": {
+    "hp": 95,
+    "attack": 120,
+    "defense": 65,
+    "special_attack": 95,
+    "special_defense": 75,
+    "speed": 60
+  },
+  "base_stat_total": 510,
+  "images": {
+    "normal": {
+      "file": "长毛巨魔.png",
+      "source_url": "https://media.52poke.com/wiki/9/9c/Champions_0861_Sprite.png",
+      "source_filename": "Champions_0861_Sprite.png",
+      "sha256": "4cc060a154deeb1e02e517c612b6313ac764ada40be710b639251306638d0ad9",
+      "width": 128,
+      "height": 128,
+      "bytes": 16556
+    },
+    "shiny": {
+      "file": "长毛巨魔_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/5/52/Champions_0861_s_Sprite.png",
+      "source_filename": "Champions_0861_s_Sprite.png",
+      "sha256": "e3cf69aa7bdfcb8e544ad18ef933dccb2e346c020e9b4d564b16520806ed3642",
+      "width": 128,
+      "height": 128,
+      "bytes": 17864
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/grimmsnarl?format=double&season=M-5",
+    "raw_path": "_sources/details/grimmsnarl.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

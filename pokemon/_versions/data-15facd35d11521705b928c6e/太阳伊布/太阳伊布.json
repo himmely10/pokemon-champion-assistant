@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "太阳伊布"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 525,
+  "base_stats": {
+    "attack": 65,
+    "defense": 60,
+    "hp": 65,
+    "special_attack": 130,
+    "special_defense": 95,
+    "speed": 110
+  },
+  "data_ready": true,
+  "dex_number": 196,
+  "directory": "太阳伊布",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 12180,
+      "file": "太阳伊布.png",
+      "height": 128,
+      "sha256": "dc65a6b1c5ed96b34607b4f0b6a6a157dbc7c52d49e7a2081479802f3b1c10be",
+      "source_filename": "Champions_0196_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/c5/Champions_0196_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11693,
+      "file": "太阳伊布_闪光.png",
+      "height": 128,
+      "sha256": "ddf4b60920fd594227329573b33ef5a5f37db0a9a038b4ea4be1de739be50b20",
+      "source_filename": "Champions_0196_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/1b/Champions_0196_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "太阳伊布",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 196,
+  "opgg_key": "espeon",
+  "recognition_ready": true,
+  "record_id": "legacy:196:太阳伊布",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "espeon",
+  "species_name": "太阳伊布",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/espeon"
+  },
+  "type_names": [
+    "超能力"
+  ],
+  "types": [
+    "psychic"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/espeon"
+  },
+  "wiki_name": "太阳伊布"
+}

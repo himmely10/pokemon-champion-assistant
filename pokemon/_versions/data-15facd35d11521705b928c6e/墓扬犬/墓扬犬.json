@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "墓扬犬"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 488,
+  "base_stats": {
+    "attack": 101,
+    "defense": 100,
+    "hp": 72,
+    "special_attack": 50,
+    "special_defense": 97,
+    "speed": 68
+  },
+  "data_ready": true,
+  "dex_number": 972,
+  "directory": "墓扬犬",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 16134,
+      "file": "墓扬犬.png",
+      "height": 128,
+      "sha256": "0c978116c0e71ef9a5f2fc956a3a4a76bcd60029dd8b9ca664530c511f5065fe",
+      "source_filename": "Champions_0972_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/45/Champions_0972_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 16834,
+      "file": "墓扬犬_闪光.png",
+      "height": 128,
+      "sha256": "0614518b60ff855a5d674934d4b4d401e61043f2d090cc5234b0e8c3d56ce04b",
+      "source_filename": "Champions_0972_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/e7/Champions_0972_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "墓扬犬",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 972,
+  "opgg_key": "houndstone",
+  "recognition_ready": true,
+  "record_id": "legacy:972:墓扬犬",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "houndstone",
+  "species_name": "墓扬犬",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/houndstone"
+  },
+  "type_names": [
+    "幽灵"
+  ],
+  "types": [
+    "ghost"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/houndstone"
+  },
+  "wiki_name": "墓扬犬"
+}

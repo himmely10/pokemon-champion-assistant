@@ -1,0 +1,78 @@
+{
+  "aliases": [
+    "阿勃梭鲁"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 465,
+  "base_stats": {
+    "attack": 130,
+    "defense": 60,
+    "hp": 65,
+    "special_attack": 75,
+    "special_defense": 60,
+    "speed": 75
+  },
+  "data_ready": true,
+  "dex_number": 359,
+  "directory": "阿勃梭鲁",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 12704,
+      "file": "阿勃梭鲁.png",
+      "height": 128,
+      "sha256": "f92e39dc8c70ee9c3a0b6d94a4bfccb0eaceeea0fd325a24a650a3ab93d3658c",
+      "source_filename": "Champions_0359_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/bd/Champions_0359_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12936,
+      "file": "阿勃梭鲁_闪光.png",
+      "height": 128,
+      "sha256": "23316b17915d9a5e9e4dfbe337e4278e6595dedcee8ed34be9f3adddea076be8",
+      "source_filename": "Champions_0359_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/19/Champions_0359_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:359:超级阿勃梭鲁",
+    "opgg:mega-absol-z"
+  ],
+  "mega_item": null,
+  "name": "阿勃梭鲁",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 359,
+  "opgg_key": "absol",
+  "recognition_ready": true,
+  "record_id": "legacy:359:阿勃梭鲁",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "absol",
+  "species_name": "阿勃梭鲁",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/absol"
+  },
+  "type_names": [
+    "恶"
+  ],
+  "types": [
+    "dark"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/absol"
+  },
+  "wiki_name": "阿勃梭鲁"
+}

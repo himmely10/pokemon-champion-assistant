@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 630,
+  "base_stats": {
+    "attack": 103,
+    "defense": 120,
+    "hp": 79,
+    "special_attack": 135,
+    "special_defense": 115,
+    "speed": 78
+  },
+  "dex_number": 9,
+  "directory": "超级水箭龟",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级水箭龟",
+  "images": {
+    "normal": {
+      "bytes": 16965,
+      "file": "超级水箭龟.png",
+      "height": 128,
+      "sha256": "d7a79b8be7dc226d7f5f9150da7e3967417a2aac101f90f00e8c59ef07bd3179",
+      "source_filename": "Champions_0009M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/05/Champions_0009M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 17069,
+      "file": "超级水箭龟_闪光.png",
+      "height": 128,
+      "sha256": "ff9ad188ae7f7d114dba5456c5eb321035e2b63b4714efcb08e127e1e857f280",
+      "source_filename": "Champions_0009M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/19/Champions_0009M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超级水箭龟",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "blastoise-mega",
+  "species_name": "水箭龟",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "megaForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/blastoise.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/blastoise?format=double&season=M-5"
+  },
+  "wiki_name": "超级水箭龟"
+}

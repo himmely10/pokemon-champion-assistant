@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 470,
+  "name": "叶伊布",
+  "species_name": "叶伊布",
+  "form_name": null,
+  "wiki_name": "叶伊布",
+  "directory": "叶伊布",
+  "source_slug": "leafeon",
+  "base_stats": {
+    "hp": 65,
+    "attack": 110,
+    "defense": 130,
+    "special_attack": 60,
+    "special_defense": 65,
+    "speed": 95
+  },
+  "base_stat_total": 525,
+  "images": {
+    "normal": {
+      "file": "叶伊布.png",
+      "source_url": "https://media.52poke.com/wiki/4/45/Champions_0470_Sprite.png",
+      "source_filename": "Champions_0470_Sprite.png",
+      "sha256": "671d5e5785bac8429ef61a0c64f66a70fc2eeb3d3fc713b6cb10eea22eedbbd1",
+      "width": 128,
+      "height": 128,
+      "bytes": 14616
+    },
+    "shiny": {
+      "file": "叶伊布_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/1/10/Champions_0470_s_Sprite.png",
+      "source_filename": "Champions_0470_s_Sprite.png",
+      "sha256": "eee9b6f951b9579d52d19320212506572db6d49ae867fa271cfedd875f54e86a",
+      "width": 128,
+      "height": 128,
+      "bytes": 14366
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/leafeon?format=double&season=M-5",
+    "raw_path": "_sources/details/leafeon.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "班基拉斯"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 600,
+  "base_stats": {
+    "attack": 134,
+    "defense": 110,
+    "hp": 100,
+    "special_attack": 95,
+    "special_defense": 100,
+    "speed": 61
+  },
+  "data_ready": true,
+  "dex_number": 248,
+  "directory": "班基拉斯",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 17841,
+      "file": "班基拉斯.png",
+      "height": 128,
+      "sha256": "ec07f82a9eb88be169188008b49afd3a5ac78b09f02c4b8827fad8622e3333c4",
+      "source_filename": "Champions_0248_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/25/Champions_0248_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 18153,
+      "file": "班基拉斯_闪光.png",
+      "height": 128,
+      "sha256": "c74e7744691818ef7c39b33117cd25a0efd520d954fcf79c38ee395c107c6ef3",
+      "source_filename": "Champions_0248_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/c9/Champions_0248_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:248:超级班基拉斯"
+  ],
+  "mega_item": null,
+  "name": "班基拉斯",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 248,
+  "opgg_key": "tyranitar",
+  "recognition_ready": true,
+  "record_id": "legacy:248:班基拉斯",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "tyranitar",
+  "species_name": "班基拉斯",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/tyranitar"
+  },
+  "type_names": [
+    "岩石",
+    "恶"
+  ],
+  "types": [
+    "rock",
+    "dark"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/tyranitar"
+  },
+  "wiki_name": "班基拉斯"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 711,
+  "name": "南瓜怪人（小尺寸）",
+  "species_name": "南瓜怪人",
+  "form_name": "小颗种",
+  "wiki_name": "南瓜怪人（小颗种）",
+  "directory": "南瓜怪人（小尺寸）",
+  "source_slug": "gourgeist-small",
+  "base_stats": {
+    "hp": 55,
+    "attack": 85,
+    "defense": 122,
+    "special_attack": 58,
+    "special_defense": 75,
+    "speed": 99
+  },
+  "base_stat_total": 494,
+  "images": {
+    "normal": {
+      "file": "南瓜怪人（小尺寸）.png",
+      "source_url": "https://media.52poke.com/wiki/a/a9/Champions_0711S_Sprite.png",
+      "source_filename": "Champions_0711S_Sprite.png",
+      "sha256": "7f977d2a1b4694d669d2d316d08eaa9a873b0d82a25d2d8e09b5920fe2920824",
+      "width": 128,
+      "height": 128,
+      "bytes": 10632
+    },
+    "shiny": {
+      "file": "南瓜怪人（小尺寸）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/a/a8/Champions_0711S_s_Sprite.png",
+      "source_filename": "Champions_0711S_s_Sprite.png",
+      "sha256": "b46c8c2c065771b9c7bbf8f7e0949ca8e3aff2d94768024cbc5418b2040db335",
+      "width": 128,
+      "height": 128,
+      "bytes": 10237
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gourgeist-small?format=double&season=M-5",
+    "raw_path": "_sources/details/gourgeist-small.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

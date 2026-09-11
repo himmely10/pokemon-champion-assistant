@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 448,
+  "name": "超级路卡利欧",
+  "species_name": "路卡利欧",
+  "form_name": "超级路卡利欧",
+  "wiki_name": "超级路卡利欧",
+  "directory": "超级路卡利欧",
+  "source_slug": "lucario-mega",
+  "base_stats": {
+    "hp": 70,
+    "attack": 145,
+    "defense": 88,
+    "special_attack": 140,
+    "special_defense": 70,
+    "speed": 112
+  },
+  "base_stat_total": 625,
+  "images": {
+    "normal": {
+      "file": "超级路卡利欧.png",
+      "source_url": "https://media.52poke.com/wiki/8/80/Champions_0448M_Sprite.png",
+      "source_filename": "Champions_0448M_Sprite.png",
+      "sha256": "bf2da49a3210bcd91f95221eb582592a1db9ba83b5d44965ab1ed32320c345e3",
+      "width": 128,
+      "height": 128,
+      "bytes": 13253
+    },
+    "shiny": {
+      "file": "超级路卡利欧_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/0/03/Champions_0448M_s_Sprite.png",
+      "source_filename": "Champions_0448M_s_Sprite.png",
+      "sha256": "1c5d836cdfcee2cffc7c09daff57f2c7832328cfedee0be78544da263463d018",
+      "width": 128,
+      "height": 128,
+      "bytes": 13686
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/lucario?format=double&season=M-5",
+    "raw_path": "_sources/details/lucario.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

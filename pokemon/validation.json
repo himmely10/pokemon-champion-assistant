@@ -1,0 +1,22 @@
+{
+  "validated_at": "2026-09-08T15:58:24.504212+00:00",
+  "species_count": 209,
+  "form_count": 361,
+  "png_count": 722,
+  "metadata_count": 361,
+  "stats_sources": {
+    "pokechamdb": 359,
+    "52poke": 2
+  },
+  "stats_mapping": {
+    "exact_form": 303,
+    "shared_species_profile": 58
+  },
+  "image_sizes": {
+    "128x128": 722
+  },
+  "unique_image_urls": 718,
+  "missing_images": [],
+  "missing_stats": [],
+  "duplicate_names": []
+}

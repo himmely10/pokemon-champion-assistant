@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "钢铠鸦"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 495,
+  "base_stats": {
+    "attack": 87,
+    "defense": 105,
+    "hp": 98,
+    "special_attack": 53,
+    "special_defense": 85,
+    "speed": 67
+  },
+  "data_ready": true,
+  "dex_number": 823,
+  "directory": "钢铠鸦",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 13977,
+      "file": "钢铠鸦.png",
+      "height": 128,
+      "sha256": "d0f36f62fb21b87742bef209e92499a47813882ad70996b6731bff082101c84d",
+      "source_filename": "Champions_0823_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/4f/Champions_0823_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14778,
+      "file": "钢铠鸦_闪光.png",
+      "height": 128,
+      "sha256": "f6d60b84a38de20357ac0745ed7d0d8c9fda1bb2800247aea29c6d308ff9ff04",
+      "source_filename": "Champions_0823_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/09/Champions_0823_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "钢铠鸦",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 823,
+  "opgg_key": "corviknight",
+  "recognition_ready": true,
+  "record_id": "legacy:823:钢铠鸦",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "corviknight",
+  "species_name": "钢铠鸦",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/corviknight"
+  },
+  "type_names": [
+    "飞行",
+    "钢"
+  ],
+  "types": [
+    "flying",
+    "steel"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/corviknight"
+  },
+  "wiki_name": "钢铠鸦"
+}

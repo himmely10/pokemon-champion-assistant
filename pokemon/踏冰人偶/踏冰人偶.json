@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 866,
+  "name": "踏冰人偶",
+  "species_name": "踏冰人偶",
+  "form_name": null,
+  "wiki_name": "踏冰人偶",
+  "directory": "踏冰人偶",
+  "source_slug": "mr-rime",
+  "base_stats": {
+    "hp": 80,
+    "attack": 85,
+    "defense": 75,
+    "special_attack": 110,
+    "special_defense": 100,
+    "speed": 70
+  },
+  "base_stat_total": 520,
+  "images": {
+    "normal": {
+      "file": "踏冰人偶.png",
+      "source_url": "https://media.52poke.com/wiki/1/16/Champions_0866_Sprite.png",
+      "source_filename": "Champions_0866_Sprite.png",
+      "sha256": "fcd75e9c4ab88c84fc11b6066bdf5d860511cfafbfd5e24c1a2386284f95cf10",
+      "width": 128,
+      "height": 128,
+      "bytes": 16927
+    },
+    "shiny": {
+      "file": "踏冰人偶_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/6/6e/Champions_0866_s_Sprite.png",
+      "source_filename": "Champions_0866_s_Sprite.png",
+      "sha256": "24becfd6098b1f88cde47d0d9b48df95b5c7b92e40409970049d4202503fa1fa",
+      "width": 128,
+      "height": 128,
+      "bytes": 16761
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/mr-rime?format=double&season=M-5",
+    "raw_path": "_sources/details/mr-rime.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

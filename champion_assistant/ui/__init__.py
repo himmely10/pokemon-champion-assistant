@@ -1,0 +1,1 @@
+"""Qt desktop reference workspace."""

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 6,
+  "name": "喷火龙",
+  "species_name": "喷火龙",
+  "form_name": null,
+  "wiki_name": "喷火龙",
+  "directory": "喷火龙",
+  "source_slug": "charizard",
+  "base_stats": {
+    "hp": 78,
+    "attack": 84,
+    "defense": 78,
+    "special_attack": 109,
+    "special_defense": 85,
+    "speed": 100
+  },
+  "base_stat_total": 534,
+  "images": {
+    "normal": {
+      "file": "喷火龙.png",
+      "source_url": "https://media.52poke.com/wiki/6/60/Champions_0006_Sprite.png",
+      "source_filename": "Champions_0006_Sprite.png",
+      "sha256": "0469fe60c9f9af7f60576b4d34aabfbdee30b1624d984cf8902be8cac0c4aa18",
+      "width": 128,
+      "height": 128,
+      "bytes": 15765
+    },
+    "shiny": {
+      "file": "喷火龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/c/c2/Champions_0006_s_Sprite.png",
+      "source_filename": "Champions_0006_s_Sprite.png",
+      "sha256": "7de1b5b2b14ab01a629dd6e2cca278069fb62e34ed7daccfbdbf85b05aa6ffdc",
+      "width": 128,
+      "height": 128,
+      "bytes": 14407
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/charizard?format=double&season=M-5",
+    "raw_path": "_sources/details/charizard.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

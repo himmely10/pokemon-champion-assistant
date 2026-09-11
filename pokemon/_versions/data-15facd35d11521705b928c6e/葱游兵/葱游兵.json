@@ -1,0 +1,73 @@
+{
+  "aliases": [
+    "葱游兵"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 507,
+  "base_stats": {
+    "attack": 135,
+    "defense": 95,
+    "hp": 62,
+    "special_attack": 68,
+    "special_defense": 82,
+    "speed": 65
+  },
+  "data_ready": true,
+  "dex_number": 865,
+  "directory": "葱游兵",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 10803,
+      "file": "葱游兵.png",
+      "height": 128,
+      "sha256": "d41b87ae43bcfdf3fa5869471059d02b03795045c636ee08724fb98578d7b564",
+      "source_filename": "Champions_0865_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/45/Champions_0865_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 10949,
+      "file": "葱游兵_闪光.png",
+      "height": 128,
+      "sha256": "b0a4fd37ace44d174a6e3de8a21c31c3c54e70a22b480aefc5acd6005ff8449a",
+      "source_filename": "Champions_0865_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/cc/Champions_0865_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "葱游兵",
+  "name_source": "opgg_zh_cn",
+  "opgg_id": 865,
+  "opgg_key": "sirfetchd",
+  "recognition_ready": true,
+  "record_id": "opgg:sirfetchd",
+  "schema_version": 2,
+  "source_base_key": null,
+  "source_is_new": true,
+  "source_presence": "present",
+  "source_regulation": "M-C",
+  "source_slug": "sirfetchd",
+  "species_name": "葱游兵",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/sirfetchd"
+  },
+  "type_names": [
+    "格斗"
+  ],
+  "types": [
+    "fighting"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/sirfetchd"
+  }
+}

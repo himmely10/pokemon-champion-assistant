@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 545,
+  "base_stats": {
+    "attack": 60,
+    "defense": 126,
+    "hp": 103,
+    "special_attack": 80,
+    "special_defense": 126,
+    "speed": 50
+  },
+  "dex_number": 531,
+  "directory": "超级差不多娃娃",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级差不多娃娃",
+  "images": {
+    "normal": {
+      "bytes": 15352,
+      "file": "超级差不多娃娃.png",
+      "height": 128,
+      "sha256": "a9ee931911009c6e60a572168c4bbb18587b9336e1cf0e072b6e66d4fa98df30",
+      "source_filename": "Champions_0531M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/a1/Champions_0531M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15625,
+      "file": "超级差不多娃娃_闪光.png",
+      "height": 128,
+      "sha256": "74bfb0effed1df1b13e453d7719e02ebe2711b22087a789fb7805a7518fc4601",
+      "source_filename": "Champions_0531M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/04/Champions_0531M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超级差不多娃娃",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "audino-mega",
+  "species_name": "差不多娃娃",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "megaForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/audino.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/audino?format=double&season=M-5"
+  },
+  "wiki_name": "超级差不多娃娃"
+}

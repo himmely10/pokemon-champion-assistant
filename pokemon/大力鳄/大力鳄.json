@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 160,
+  "name": "大力鳄",
+  "species_name": "大力鳄",
+  "form_name": null,
+  "wiki_name": "大力鳄",
+  "directory": "大力鳄",
+  "source_slug": "feraligatr",
+  "base_stats": {
+    "hp": 85,
+    "attack": 105,
+    "defense": 100,
+    "special_attack": 79,
+    "special_defense": 83,
+    "speed": 78
+  },
+  "base_stat_total": 530,
+  "images": {
+    "normal": {
+      "file": "大力鳄.png",
+      "source_url": "https://media.52poke.com/wiki/e/ed/Champions_0160_Sprite.png",
+      "source_filename": "Champions_0160_Sprite.png",
+      "sha256": "c6081f5c0591b1644b2a66e0406958ec816c9327fc9a24058e1938b0fc5fa3b7",
+      "width": 128,
+      "height": 128,
+      "bytes": 18641
+    },
+    "shiny": {
+      "file": "大力鳄_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/2/28/Champions_0160_s_Sprite.png",
+      "source_filename": "Champions_0160_s_Sprite.png",
+      "sha256": "f8e2b87d7950186a00a53edaeb60a174fa464ac9aeff209420ccf50264a83960",
+      "width": 128,
+      "height": 128,
+      "bytes": 18985
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/feraligatr?format=double&season=M-5",
+    "raw_path": "_sources/details/feraligatr.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

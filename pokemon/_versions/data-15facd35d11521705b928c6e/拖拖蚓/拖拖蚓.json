@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "拖拖蚓"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 480,
+  "base_stats": {
+    "attack": 85,
+    "defense": 145,
+    "hp": 70,
+    "special_attack": 60,
+    "special_defense": 55,
+    "speed": 65
+  },
+  "data_ready": true,
+  "dex_number": 968,
+  "directory": "拖拖蚓",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14123,
+      "file": "拖拖蚓.png",
+      "height": 128,
+      "sha256": "eb87c2e6ad90581dbd987bb5283c4d43e72a883e75f1085c567f345b73152384",
+      "source_filename": "Champions_0968_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/50/Champions_0968_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14297,
+      "file": "拖拖蚓_闪光.png",
+      "height": 128,
+      "sha256": "35f31e266d7aecc8206f03ea69a5f8cd50a60834080ad1d823ef2ea472dee488",
+      "source_filename": "Champions_0968_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/71/Champions_0968_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "拖拖蚓",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 968,
+  "opgg_key": "orthworm",
+  "recognition_ready": true,
+  "record_id": "legacy:968:拖拖蚓",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "orthworm",
+  "species_name": "拖拖蚓",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/orthworm"
+  },
+  "type_names": [
+    "钢"
+  ],
+  "types": [
+    "steel"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/orthworm"
+  },
+  "wiki_name": "拖拖蚓"
+}

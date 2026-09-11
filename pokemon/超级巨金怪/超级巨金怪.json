@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 376,
+  "name": "超级巨金怪",
+  "species_name": "巨金怪",
+  "form_name": "超级巨金怪",
+  "wiki_name": "超级巨金怪",
+  "directory": "超级巨金怪",
+  "source_slug": "metagross-mega",
+  "base_stats": {
+    "hp": 80,
+    "attack": 145,
+    "defense": 150,
+    "special_attack": 105,
+    "special_defense": 110,
+    "speed": 110
+  },
+  "base_stat_total": 700,
+  "images": {
+    "normal": {
+      "file": "超级巨金怪.png",
+      "source_url": "https://media.52poke.com/wiki/c/cd/Champions_0376M_Sprite.png",
+      "source_filename": "Champions_0376M_Sprite.png",
+      "sha256": "c3ab509c96e40eae69aa013ab8472ef1d542fbd97f044159d81449099231ea31",
+      "width": 128,
+      "height": 128,
+      "bytes": 20151
+    },
+    "shiny": {
+      "file": "超级巨金怪_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/3/36/Champions_0376M_s_Sprite.png",
+      "source_filename": "Champions_0376M_s_Sprite.png",
+      "sha256": "655d97d09ce081f2acedfa808a619b498e6a9a7f9e673a3ff29df1ea60bd63eb",
+      "width": 128,
+      "height": 128,
+      "bytes": 20682
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/metagross?format=double&season=M-5",
+    "raw_path": "_sources/details/metagross.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

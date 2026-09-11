@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dex_number": 351,
+  "name": "飘浮泡泡（太阳的样子）",
+  "species_name": "飘浮泡泡",
+  "form_name": "太阳的样子",
+  "wiki_name": "飘浮泡泡（太阳的样子）",
+  "directory": "飘浮泡泡（太阳的样子）",
+  "source_slug": "castform",
+  "base_stats": {
+    "hp": 70,
+    "attack": 70,
+    "defense": 70,
+    "special_attack": 70,
+    "special_defense": 70,
+    "speed": 70
+  },
+  "base_stat_total": 420,
+  "images": {
+    "normal": {
+      "file": "飘浮泡泡（太阳的样子）.png",
+      "source_url": "https://media.52poke.com/wiki/1/12/Champions_0351S_Sprite.png",
+      "source_filename": "Champions_0351S_Sprite.png",
+      "sha256": "3dfe264ab494c325fc9f31ca715d5030e966173b442793b698e00b3addf1eaea",
+      "width": 128,
+      "height": 128,
+      "bytes": 11464
+    },
+    "shiny": {
+      "file": "飘浮泡泡（太阳的样子）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/f/fe/Champions_0351S_s_Sprite.png",
+      "source_filename": "Champions_0351S_s_Sprite.png",
+      "sha256": "73db3f8e719fca691789ecaacae66ba9d376958373fc52cf6498663e1e07ca67",
+      "width": 128,
+      "height": 128,
+      "bytes": 11439
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/castform?format=double&season=M-5",
+    "raw_path": "_sources/details/castform.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "shared_species_profile",
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。"
+}

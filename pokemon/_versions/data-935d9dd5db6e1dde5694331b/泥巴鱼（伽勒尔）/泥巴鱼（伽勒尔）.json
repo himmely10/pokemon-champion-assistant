@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "伽勒尔泥巴鱼"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 471,
+  "base_stats": {
+    "attack": 81,
+    "defense": 99,
+    "hp": 109,
+    "special_attack": 66,
+    "special_defense": 84,
+    "speed": 32
+  },
+  "data_ready": true,
+  "dex_number": 618,
+  "directory": "泥巴鱼（伽勒尔）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "伽勒尔的样子",
+  "images": {
+    "normal": {
+      "bytes": 9833,
+      "file": "泥巴鱼（伽勒尔）.png",
+      "height": 128,
+      "sha256": "d2cae58b720a8590fcfd38fb3736a9926d6d03169f1c7f0eb9bdb39d5c1b9e54",
+      "source_filename": "Champions_0618G_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/5f/Champions_0618G_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 9900,
+      "file": "泥巴鱼（伽勒尔）_闪光.png",
+      "height": 128,
+      "sha256": "6baafc0e8f78ea00ed8aa90a532371833d9f5af4a3592d6f083ce0e457d098be",
+      "source_filename": "Champions_0618G_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/59/Champions_0618G_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "泥巴鱼（伽勒尔）",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10180,
+  "opgg_key": "stunfisk-galarian",
+  "recognition_ready": true,
+  "record_id": "legacy:618:泥巴鱼（伽勒尔）",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "stunfisk-galar",
+  "species_name": "泥巴鱼",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/stunfisk-galarian"
+  },
+  "type_names": [
+    "地面",
+    "钢"
+  ],
+  "types": [
+    "ground",
+    "steel"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/stunfisk-galarian"
+  },
+  "wiki_name": "泥巴鱼（伽勒尔的样子）"
+}

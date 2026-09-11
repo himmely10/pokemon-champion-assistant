@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "超级蜥蜴王"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 630,
+  "base_stats": {
+    "attack": 110,
+    "defense": 75,
+    "hp": 70,
+    "special_attack": 145,
+    "special_defense": 85,
+    "speed": 145
+  },
+  "data_ready": true,
+  "dex_number": 254,
+  "directory": "超级蜥蜴王",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级蜥蜴王",
+  "images": {
+    "normal": {
+      "bytes": 13529,
+      "file": "超级蜥蜴王.png",
+      "height": 128,
+      "sha256": "c84ce0e9253d230b6f81907e30640c9fc0f270b596c2ae27a57aed2d64cac7df",
+      "source_filename": "Champions_0254M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/0d/Champions_0254M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14468,
+      "file": "超级蜥蜴王_闪光.png",
+      "height": 128,
+      "sha256": "8c97767564d66f9b122a41ab975c8861268dc0d60d95ef92c6403892933d696c",
+      "source_filename": "Champions_0254M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b7/Champions_0254M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "sceptilite",
+  "name": "超级蜥蜴王",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10065,
+  "opgg_key": "mega-sceptile",
+  "recognition_ready": true,
+  "record_id": "legacy:254:超级蜥蜴王",
+  "schema_version": 1,
+  "source_base_key": "sceptile",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "sceptile-mega",
+  "species_name": "蜥蜴王",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-sceptile"
+  },
+  "type_names": [
+    "草",
+    "龙"
+  ],
+  "types": [
+    "grass",
+    "dragon"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-sceptile"
+  },
+  "wiki_name": "超级蜥蜴王"
+}

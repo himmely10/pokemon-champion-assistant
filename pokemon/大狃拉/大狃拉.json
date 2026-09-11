@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 903,
+  "name": "大狃拉",
+  "species_name": "大狃拉",
+  "form_name": null,
+  "wiki_name": "大狃拉",
+  "directory": "大狃拉",
+  "source_slug": "sneasler",
+  "base_stats": {
+    "hp": 80,
+    "attack": 130,
+    "defense": 60,
+    "special_attack": 40,
+    "special_defense": 80,
+    "speed": 120
+  },
+  "base_stat_total": 510,
+  "images": {
+    "normal": {
+      "file": "大狃拉.png",
+      "source_url": "https://media.52poke.com/wiki/d/d1/Champions_0903_Sprite.png",
+      "source_filename": "Champions_0903_Sprite.png",
+      "sha256": "ea6c8ec017c5ac1ab448ba17785866f3574abbfceb2921b7e9259d87ae69d742",
+      "width": 128,
+      "height": 128,
+      "bytes": 11497
+    },
+    "shiny": {
+      "file": "大狃拉_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/2/2e/Champions_0903_s_Sprite.png",
+      "source_filename": "Champions_0903_s_Sprite.png",
+      "sha256": "d865ad4748221b8f167112c0552ba7d70d629fc829afdd953a31f82bd53a49e1",
+      "width": 128,
+      "height": 128,
+      "bytes": 11395
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sneasler?format=double&season=M-5",
+    "raw_path": "_sources/details/sneasler.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

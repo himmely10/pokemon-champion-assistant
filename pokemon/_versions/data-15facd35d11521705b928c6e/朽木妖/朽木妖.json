@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "朽木妖"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 474,
+  "base_stats": {
+    "attack": 110,
+    "defense": 76,
+    "hp": 85,
+    "special_attack": 65,
+    "special_defense": 82,
+    "speed": 56
+  },
+  "data_ready": true,
+  "dex_number": 709,
+  "directory": "朽木妖",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 15951,
+      "file": "朽木妖.png",
+      "height": 128,
+      "sha256": "ac0980f7ca3ca1c1afc4316edf30218af406cde43ccc7240d1fa7369deee05ba",
+      "source_filename": "Champions_0709_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/01/Champions_0709_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 16264,
+      "file": "朽木妖_闪光.png",
+      "height": 128,
+      "sha256": "ed187d2fc2c8836ab17e6be2cdac3cfd4de827a7c8ce50bea8924c81d960257c",
+      "source_filename": "Champions_0709_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/d9/Champions_0709_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "朽木妖",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 709,
+  "opgg_key": "trevenant",
+  "recognition_ready": true,
+  "record_id": "legacy:709:朽木妖",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "trevenant",
+  "species_name": "朽木妖",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/trevenant"
+  },
+  "type_names": [
+    "幽灵",
+    "草"
+  ],
+  "types": [
+    "ghost",
+    "grass"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/trevenant"
+  },
+  "wiki_name": "朽木妖"
+}

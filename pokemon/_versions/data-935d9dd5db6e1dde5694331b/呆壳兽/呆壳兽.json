@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "呆壳兽"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 490,
+  "base_stats": {
+    "attack": 75,
+    "defense": 110,
+    "hp": 95,
+    "special_attack": 100,
+    "special_defense": 80,
+    "speed": 30
+  },
+  "data_ready": true,
+  "dex_number": 80,
+  "directory": "呆壳兽",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 17201,
+      "file": "呆壳兽.png",
+      "height": 128,
+      "sha256": "d69e6dc15e98ef9a176fcd7b51df65477eca34db4280ce10e342f7e5fee4b7cc",
+      "source_filename": "Champions_0080_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/36/Champions_0080_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 17328,
+      "file": "呆壳兽_闪光.png",
+      "height": 128,
+      "sha256": "684b64158a9b857dd7053a8db40af9cb1bb90ae6c643a52c6250309ffcc48f99",
+      "source_filename": "Champions_0080_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/ca/Champions_0080_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:80:超级呆壳兽"
+  ],
+  "mega_item": null,
+  "name": "呆壳兽",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 80,
+  "opgg_key": "slowbro",
+  "recognition_ready": true,
+  "record_id": "legacy:80:呆壳兽",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "slowbro",
+  "species_name": "呆壳兽",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/slowbro"
+  },
+  "type_names": [
+    "水",
+    "超能力"
+  ],
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/slowbro"
+  },
+  "wiki_name": "呆壳兽"
+}

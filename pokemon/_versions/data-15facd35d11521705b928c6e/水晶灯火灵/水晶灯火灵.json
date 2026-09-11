@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "水晶灯火灵"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 520,
+  "base_stats": {
+    "attack": 55,
+    "defense": 90,
+    "hp": 60,
+    "special_attack": 145,
+    "special_defense": 90,
+    "speed": 80
+  },
+  "data_ready": true,
+  "dex_number": 609,
+  "directory": "水晶灯火灵",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14718,
+      "file": "水晶灯火灵.png",
+      "height": 128,
+      "sha256": "1cf1651ae182f17a337806a647ac116117797989816b5d10d4d16570b0070996",
+      "source_filename": "Champions_0609_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/f5/Champions_0609_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14562,
+      "file": "水晶灯火灵_闪光.png",
+      "height": 128,
+      "sha256": "ea593b03d49f01b0237bc514a1037f59655b592c3575b54834414717937459cc",
+      "source_filename": "Champions_0609_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/cd/Champions_0609_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:609:超级水晶灯火灵"
+  ],
+  "mega_item": null,
+  "name": "水晶灯火灵",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 609,
+  "opgg_key": "chandelure",
+  "recognition_ready": true,
+  "record_id": "legacy:609:水晶灯火灵",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "chandelure",
+  "species_name": "水晶灯火灵",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/chandelure"
+  },
+  "type_names": [
+    "幽灵",
+    "火"
+  ],
+  "types": [
+    "ghost",
+    "fire"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/chandelure"
+  },
+  "wiki_name": "水晶灯火灵"
+}

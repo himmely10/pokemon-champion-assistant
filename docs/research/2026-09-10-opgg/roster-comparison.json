@@ -1,0 +1,147 @@
+{
+  "observed_at": "2026-09-10",
+  "source": "https://op.gg/zh-cn/pokemon-champions/pokedex",
+  "opgg_embedded_records": 352,
+  "opgg_isNew_records": 35,
+  "local_species_count": 209,
+  "local_form_count": 361,
+  "new_base_species_candidates": [
+    {
+      "key": "wigglytuff",
+      "name": "胖可丁",
+      "id": 40,
+      "regulation": "M-C"
+    },
+    {
+      "key": "persian",
+      "name": "猫老大",
+      "id": 53,
+      "regulation": "M-C"
+    },
+    {
+      "key": "farfetchd",
+      "name": "大葱鸭",
+      "id": 83,
+      "regulation": "M-C"
+    },
+    {
+      "key": "mr-mime",
+      "name": "魔墙人偶",
+      "id": 122,
+      "regulation": "M-C"
+    },
+    {
+      "key": "swalot",
+      "name": "吞食兽",
+      "id": 317,
+      "regulation": "M-C"
+    },
+    {
+      "key": "salamence",
+      "name": "暴飞龙",
+      "id": 373,
+      "regulation": "M-C"
+    },
+    {
+      "key": "gogoat",
+      "name": "坐骑山羊",
+      "id": 673,
+      "regulation": "M-C"
+    },
+    {
+      "key": "golisopod",
+      "name": "具甲武者",
+      "id": 768,
+      "regulation": "M-C"
+    },
+    {
+      "key": "rillaboom",
+      "name": "轰擂金刚猩",
+      "id": 812,
+      "regulation": "M-C"
+    },
+    {
+      "key": "cinderace",
+      "name": "闪焰王牌",
+      "id": 815,
+      "regulation": "M-C"
+    },
+    {
+      "key": "inteleon",
+      "name": "千面避役",
+      "id": 818,
+      "regulation": "M-C"
+    },
+    {
+      "key": "thievul",
+      "name": "猾大狐",
+      "id": 828,
+      "regulation": "M-C"
+    },
+    {
+      "key": "toxtricity-amped",
+      "name": "颤弦蝾螈 (高调的样子)",
+      "id": 849,
+      "regulation": "M-C"
+    },
+    {
+      "key": "grapploct",
+      "name": "八爪武师",
+      "id": 853,
+      "regulation": "M-C"
+    },
+    {
+      "key": "perrserker",
+      "name": "喵头目",
+      "id": 863,
+      "regulation": "M-C"
+    },
+    {
+      "key": "sirfetchd",
+      "name": "葱游兵",
+      "id": 865,
+      "regulation": "M-C"
+    },
+    {
+      "key": "pincurchin",
+      "name": "啪嚓海胆",
+      "id": 871,
+      "regulation": "M-C"
+    },
+    {
+      "key": "indeedee-male",
+      "name": "爱管侍 (雄性的样子)",
+      "id": 876,
+      "regulation": "M-C"
+    },
+    {
+      "key": "arboliva",
+      "name": "奥利瓦",
+      "id": 930,
+      "regulation": "M-C"
+    },
+    {
+      "key": "squawkabilly-green-plumage",
+      "name": "怒鹦哥 (绿羽毛)",
+      "id": 931,
+      "regulation": "M-C"
+    },
+    {
+      "key": "mabosstiff",
+      "name": "獒教父",
+      "id": 943,
+      "regulation": "M-C"
+    },
+    {
+      "key": "baxcalibur",
+      "name": "戟脊龙",
+      "id": 998,
+      "regulation": "M-C"
+    }
+  ],
+  "notes": [
+    "按本次原始响应提取；渲染页面和网页缓存可能有不同计数。",
+    "候选增量，未完成所有别名/形态对应和新图标验证，不能视为完整新增名单。",
+    "百科本次主列表仍为361条/209种，不能独自作为实时过签发现源。"
+  ]
+}

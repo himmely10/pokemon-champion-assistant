@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 442,
+  "name": "花岩怪",
+  "species_name": "花岩怪",
+  "form_name": null,
+  "wiki_name": "花岩怪",
+  "directory": "花岩怪",
+  "source_slug": "spiritomb",
+  "base_stats": {
+    "hp": 50,
+    "attack": 92,
+    "defense": 108,
+    "special_attack": 92,
+    "special_defense": 108,
+    "speed": 35
+  },
+  "base_stat_total": 485,
+  "images": {
+    "normal": {
+      "file": "花岩怪.png",
+      "source_url": "https://media.52poke.com/wiki/8/87/Champions_0442_Sprite.png",
+      "source_filename": "Champions_0442_Sprite.png",
+      "sha256": "da2a208d69986860209da962396fbc7a7e3280517970265c69b25a187d83abf5",
+      "width": 128,
+      "height": 128,
+      "bytes": 14296
+    },
+    "shiny": {
+      "file": "花岩怪_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/80/Champions_0442_s_Sprite.png",
+      "source_filename": "Champions_0442_s_Sprite.png",
+      "sha256": "48f4bd464c8bfd70c39dc5ac5cc23839890eb8b37ae3a4092365db4a1920be5a",
+      "width": 128,
+      "height": 128,
+      "bytes": 13771
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/spiritomb?format=double&season=M-5",
+    "raw_path": "_sources/details/spiritomb.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

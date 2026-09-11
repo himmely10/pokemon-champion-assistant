@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "步哨鼠"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 420,
+  "base_stats": {
+    "attack": 85,
+    "defense": 69,
+    "hp": 60,
+    "special_attack": 60,
+    "special_defense": 69,
+    "speed": 77
+  },
+  "data_ready": true,
+  "dex_number": 505,
+  "directory": "步哨鼠",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 9721,
+      "file": "步哨鼠.png",
+      "height": 128,
+      "sha256": "c8c11afbd1238a3148425182317cc4fd0f5a4b1a87b1bd9fb7f99f62fa2cc06b",
+      "source_filename": "Champions_0505_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/cc/Champions_0505_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 9939,
+      "file": "步哨鼠_闪光.png",
+      "height": 128,
+      "sha256": "50841bcebc1ac043b645bdffc50d9db5ff0be745e79bb8939d4639e2294460a1",
+      "source_filename": "Champions_0505_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/29/Champions_0505_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "步哨鼠",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 505,
+  "opgg_key": "watchog",
+  "recognition_ready": true,
+  "record_id": "legacy:505:步哨鼠",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "watchog",
+  "species_name": "步哨鼠",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/watchog"
+  },
+  "type_names": [
+    "一般"
+  ],
+  "types": [
+    "normal"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/watchog"
+  },
+  "wiki_name": "步哨鼠"
+}

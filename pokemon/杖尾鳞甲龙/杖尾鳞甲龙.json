@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 784,
+  "name": "杖尾鳞甲龙",
+  "species_name": "杖尾鳞甲龙",
+  "form_name": null,
+  "wiki_name": "杖尾鳞甲龙",
+  "directory": "杖尾鳞甲龙",
+  "source_slug": "kommo-o",
+  "base_stats": {
+    "hp": 75,
+    "attack": 110,
+    "defense": 125,
+    "special_attack": 100,
+    "special_defense": 105,
+    "speed": 85
+  },
+  "base_stat_total": 600,
+  "images": {
+    "normal": {
+      "file": "杖尾鳞甲龙.png",
+      "source_url": "https://media.52poke.com/wiki/c/c1/Champions_0784_Sprite.png",
+      "source_filename": "Champions_0784_Sprite.png",
+      "sha256": "e0e25755270f4129d75b07506964b960e3a0b4e05c44d13416ce94c5e9e7da94",
+      "width": 128,
+      "height": 128,
+      "bytes": 19815
+    },
+    "shiny": {
+      "file": "杖尾鳞甲龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/e/ed/Champions_0784_s_Sprite.png",
+      "source_filename": "Champions_0784_s_Sprite.png",
+      "sha256": "0e540bae907930113fb40ca7fad444e6478bb00b28cd9d2d7782ed1c35cfa063",
+      "width": 128,
+      "height": 128,
+      "bytes": 20261
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/kommo-o?format=double&season=M-5",
+    "raw_path": "_sources/details/kommo-o.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

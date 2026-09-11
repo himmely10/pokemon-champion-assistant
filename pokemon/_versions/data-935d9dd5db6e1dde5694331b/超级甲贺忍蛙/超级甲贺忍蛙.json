@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "超级甲贺忍蛙"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 630,
+  "base_stats": {
+    "attack": 125,
+    "defense": 77,
+    "hp": 72,
+    "special_attack": 133,
+    "special_defense": 81,
+    "speed": 142
+  },
+  "data_ready": true,
+  "dex_number": 658,
+  "directory": "超级甲贺忍蛙",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级甲贺忍蛙",
+  "images": {
+    "normal": {
+      "bytes": 12213,
+      "file": "超级甲贺忍蛙.png",
+      "height": 128,
+      "sha256": "79120806192bb90e15f184f0f4c1f07de5deb95bac111f9e0032d2ff3319ac84",
+      "source_filename": "Champions_0658M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/01/Champions_0658M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11824,
+      "file": "超级甲贺忍蛙_闪光.png",
+      "height": 128,
+      "sha256": "9091f6fd3dcb202093f4f1f95d85f9abd1625174f5f366791e536965a271101d",
+      "source_filename": "Champions_0658M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/67/Champions_0658M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "greninjite",
+  "name": "超级甲贺忍蛙",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10294,
+  "opgg_key": "mega-greninja",
+  "recognition_ready": true,
+  "record_id": "legacy:658:超级甲贺忍蛙",
+  "schema_version": 1,
+  "source_base_key": "greninja",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "greninja-mega",
+  "species_name": "甲贺忍蛙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-greninja"
+  },
+  "type_names": [
+    "水",
+    "恶"
+  ],
+  "types": [
+    "water",
+    "dark"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-greninja"
+  },
+  "wiki_name": "超级甲贺忍蛙"
+}

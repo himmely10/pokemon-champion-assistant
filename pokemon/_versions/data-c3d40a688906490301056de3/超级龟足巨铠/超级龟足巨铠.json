@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 600,
+  "base_stats": {
+    "attack": 140,
+    "defense": 130,
+    "hp": 72,
+    "special_attack": 64,
+    "special_defense": 106,
+    "speed": 88
+  },
+  "dex_number": 689,
+  "directory": "超级龟足巨铠",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级龟足巨铠",
+  "images": {
+    "normal": {
+      "bytes": 19435,
+      "file": "超级龟足巨铠.png",
+      "height": 128,
+      "sha256": "50d380da1a1a57494ff27951b431f5a861f21e67eebfa658acd5990c5781b2c4",
+      "source_filename": "Champions_0689M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/08/Champions_0689M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 20727,
+      "file": "超级龟足巨铠_闪光.png",
+      "height": 128,
+      "sha256": "39300b77b9af1b0b5ae3eee312a56e07e79eca81c87b9b2639941083d764f6fd",
+      "source_filename": "Champions_0689M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/11/Champions_0689M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超级龟足巨铠",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "barbaracle-mega",
+  "species_name": "龟足巨铠",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "megaForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/barbaracle.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/barbaracle?format=double&season=M-5"
+  },
+  "wiki_name": "超级龟足巨铠"
+}

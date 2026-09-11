@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 545,
+  "name": "超级蜈蚣王",
+  "species_name": "蜈蚣王",
+  "form_name": "超级蜈蚣王",
+  "wiki_name": "超级蜈蚣王",
+  "directory": "超级蜈蚣王",
+  "source_slug": "scolipede-mega",
+  "base_stats": {
+    "hp": 60,
+    "attack": 140,
+    "defense": 149,
+    "special_attack": 75,
+    "special_defense": 99,
+    "speed": 62
+  },
+  "base_stat_total": 585,
+  "images": {
+    "normal": {
+      "file": "超级蜈蚣王.png",
+      "source_url": "https://media.52poke.com/wiki/0/0a/Champions_0545M_Sprite.png",
+      "source_filename": "Champions_0545M_Sprite.png",
+      "sha256": "fa24fb4152a0eb3441b39a338d8b60986ce3cdf1635acf2b29a3c701b37bfdfc",
+      "width": 128,
+      "height": 128,
+      "bytes": 16337
+    },
+    "shiny": {
+      "file": "超级蜈蚣王_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/b/ba/Champions_0545M_s_Sprite.png",
+      "source_filename": "Champions_0545M_s_Sprite.png",
+      "sha256": "d216a98bd869cae2bfcfc2d42541e8e49982f29055407a007218034a85c3f87b",
+      "width": 128,
+      "height": 128,
+      "bytes": 16289
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/scolipede?format=double&season=M-5",
+    "raw_path": "_sources/details/scolipede.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

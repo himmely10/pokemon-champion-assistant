@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 842,
+  "name": "丰蜜龙",
+  "species_name": "丰蜜龙",
+  "form_name": null,
+  "wiki_name": "丰蜜龙",
+  "directory": "丰蜜龙",
+  "source_slug": "appletun",
+  "base_stats": {
+    "hp": 110,
+    "attack": 85,
+    "defense": 80,
+    "special_attack": 100,
+    "special_defense": 80,
+    "speed": 30
+  },
+  "base_stat_total": 485,
+  "images": {
+    "normal": {
+      "file": "丰蜜龙.png",
+      "source_url": "https://media.52poke.com/wiki/0/05/Champions_0842_Sprite.png",
+      "source_filename": "Champions_0842_Sprite.png",
+      "sha256": "93070a96943188cdc7c6d8304554443b3b22d1d3d7e759efe2ddd72f56463f73",
+      "width": 128,
+      "height": 128,
+      "bytes": 10733
+    },
+    "shiny": {
+      "file": "丰蜜龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/4/45/Champions_0842_s_Sprite.png",
+      "source_filename": "Champions_0842_s_Sprite.png",
+      "sha256": "2f32eb0efa8acdba2204cb2095b4e7c0b80306ef9a91bcbb798d0bc3f80f871f",
+      "width": 128,
+      "height": 128,
+      "bytes": 10714
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/appletun?format=double&season=M-5",
+    "raw_path": "_sources/details/appletun.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

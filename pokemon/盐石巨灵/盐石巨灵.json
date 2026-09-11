@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 934,
+  "name": "盐石巨灵",
+  "species_name": "盐石巨灵",
+  "form_name": null,
+  "wiki_name": "盐石巨灵",
+  "directory": "盐石巨灵",
+  "source_slug": "garganacl",
+  "base_stats": {
+    "hp": 100,
+    "attack": 100,
+    "defense": 130,
+    "special_attack": 45,
+    "special_defense": 90,
+    "speed": 35
+  },
+  "base_stat_total": 500,
+  "images": {
+    "normal": {
+      "file": "盐石巨灵.png",
+      "source_url": "https://media.52poke.com/wiki/f/f5/Champions_0934_Sprite.png",
+      "source_filename": "Champions_0934_Sprite.png",
+      "sha256": "3391b0d78f5ed1b9f9a417e721b0255149cd045c5409a825717fb1ad7770f8e5",
+      "width": 128,
+      "height": 128,
+      "bytes": 15519
+    },
+    "shiny": {
+      "file": "盐石巨灵_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/e/ea/Champions_0934_s_Sprite.png",
+      "source_filename": "Champions_0934_s_Sprite.png",
+      "sha256": "d743d81de65249f9fd89a7d363a6fc3045c935597c7bc658ab8a07448097ba1a",
+      "width": 128,
+      "height": 128,
+      "bytes": 16122
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/garganacl?format=double&season=M-5",
+    "raw_path": "_sources/details/garganacl.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

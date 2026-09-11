@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "超级班基拉斯"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 700,
+  "base_stats": {
+    "attack": 164,
+    "defense": 150,
+    "hp": 100,
+    "special_attack": 95,
+    "special_defense": 120,
+    "speed": 71
+  },
+  "data_ready": true,
+  "dex_number": 248,
+  "directory": "超级班基拉斯",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级班基拉斯",
+  "images": {
+    "normal": {
+      "bytes": 18019,
+      "file": "超级班基拉斯.png",
+      "height": 128,
+      "sha256": "ac709de5d00f972ef3409be8f1d3c71ddf911159dc776c469e66059891834a87",
+      "source_filename": "Champions_0248M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/ef/Champions_0248M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 18579,
+      "file": "超级班基拉斯_闪光.png",
+      "height": 128,
+      "sha256": "d2c05d7283b394bbeba0d51e9fbac9bff41b25df56dbc9b0efa1c9b7655a3b33",
+      "source_filename": "Champions_0248M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/f3/Champions_0248M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "tyranitarite",
+  "name": "超级班基拉斯",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10049,
+  "opgg_key": "mega-tyranitar",
+  "recognition_ready": true,
+  "record_id": "legacy:248:超级班基拉斯",
+  "schema_version": 1,
+  "source_base_key": "tyranitar",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "tyranitar-mega",
+  "species_name": "班基拉斯",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-tyranitar"
+  },
+  "type_names": [
+    "岩石",
+    "恶"
+  ],
+  "types": [
+    "rock",
+    "dark"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-tyranitar"
+  },
+  "wiki_name": "超级班基拉斯"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 1019,
+  "name": "蜜集大蛇",
+  "species_name": "蜜集大蛇",
+  "form_name": null,
+  "wiki_name": "蜜集大蛇",
+  "directory": "蜜集大蛇",
+  "source_slug": "hydrapple",
+  "base_stats": {
+    "hp": 106,
+    "attack": 80,
+    "defense": 110,
+    "special_attack": 120,
+    "special_defense": 80,
+    "speed": 44
+  },
+  "base_stat_total": 540,
+  "images": {
+    "normal": {
+      "file": "蜜集大蛇.png",
+      "source_url": "https://media.52poke.com/wiki/b/be/Champions_1019_Sprite.png",
+      "source_filename": "Champions_1019_Sprite.png",
+      "sha256": "334f0b84979133bf79b4adcc2a0398e474985c1339793a7fccd495e7946337a5",
+      "width": 128,
+      "height": 128,
+      "bytes": 10326
+    },
+    "shiny": {
+      "file": "蜜集大蛇_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/8f/Champions_1019_s_Sprite.png",
+      "source_filename": "Champions_1019_s_Sprite.png",
+      "sha256": "d1d84d45d17d34a27a783ec4927d23006806f090f2b5ea62bb5c0ac82432ab55",
+      "width": 128,
+      "height": 128,
+      "bytes": 10493
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/hydrapple?format=double&season=M-5",
+    "raw_path": "_sources/details/hydrapple.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

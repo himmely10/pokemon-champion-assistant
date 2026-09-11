@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 282,
+  "name": "超级沙奈朵",
+  "species_name": "沙奈朵",
+  "form_name": "超级沙奈朵",
+  "wiki_name": "超级沙奈朵",
+  "directory": "超级沙奈朵",
+  "source_slug": "gardevoir-mega",
+  "base_stats": {
+    "hp": 68,
+    "attack": 85,
+    "defense": 65,
+    "special_attack": 165,
+    "special_defense": 135,
+    "speed": 100
+  },
+  "base_stat_total": 618,
+  "images": {
+    "normal": {
+      "file": "超级沙奈朵.png",
+      "source_url": "https://media.52poke.com/wiki/1/18/Champions_0282M_Sprite.png",
+      "source_filename": "Champions_0282M_Sprite.png",
+      "sha256": "e37e7d1d02bfed8dcdad09214acb39e45c730af91afbdc19cb5ee3f8e989796f",
+      "width": 128,
+      "height": 128,
+      "bytes": 12174
+    },
+    "shiny": {
+      "file": "超级沙奈朵_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/5/59/Champions_0282M_s_Sprite.png",
+      "source_filename": "Champions_0282M_s_Sprite.png",
+      "sha256": "722a38e6deb62b5a0bd0f656e98617b9287b86a76fdb38022d1704466fda1f67",
+      "width": 128,
+      "height": 128,
+      "bytes": 11753
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gardevoir?format=double&season=M-5",
+    "raw_path": "_sources/details/gardevoir.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 24,
+  "name": "阿柏怪",
+  "species_name": "阿柏怪",
+  "form_name": null,
+  "wiki_name": "阿柏怪",
+  "directory": "阿柏怪",
+  "source_slug": "arbok",
+  "base_stats": {
+    "hp": 60,
+    "attack": 95,
+    "defense": 69,
+    "special_attack": 65,
+    "special_defense": 79,
+    "speed": 80
+  },
+  "base_stat_total": 448,
+  "images": {
+    "normal": {
+      "file": "阿柏怪.png",
+      "source_url": "https://media.52poke.com/wiki/8/81/Champions_0024_Sprite.png",
+      "source_filename": "Champions_0024_Sprite.png",
+      "sha256": "33069ba8f13e85a5942b4b19269e48255b060fbc69ee735dca6752ca9c4bef84",
+      "width": 128,
+      "height": 128,
+      "bytes": 14809
+    },
+    "shiny": {
+      "file": "阿柏怪_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/0/06/Champions_0024_s_Sprite.png",
+      "source_filename": "Champions_0024_s_Sprite.png",
+      "sha256": "7a01b97fad867f53441f9f69ae7f60b2ef896bc57c4a12f106cf482fdf777ea0",
+      "width": 128,
+      "height": 128,
+      "bytes": 15094
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/arbok?format=double&season=M-5",
+    "raw_path": "_sources/details/arbok.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

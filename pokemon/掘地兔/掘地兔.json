@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 660,
+  "name": "掘地兔",
+  "species_name": "掘地兔",
+  "form_name": null,
+  "wiki_name": "掘地兔",
+  "directory": "掘地兔",
+  "source_slug": "diggersby",
+  "base_stats": {
+    "hp": 85,
+    "attack": 56,
+    "defense": 77,
+    "special_attack": 50,
+    "special_defense": 77,
+    "speed": 78
+  },
+  "base_stat_total": 423,
+  "images": {
+    "normal": {
+      "file": "掘地兔.png",
+      "source_url": "https://media.52poke.com/wiki/e/e1/Champions_0660_Sprite.png",
+      "source_filename": "Champions_0660_Sprite.png",
+      "sha256": "e183e7933011e12dc40a24edffbbaacdf7be05b8839374c089ea3480393d4fad",
+      "width": 128,
+      "height": 128,
+      "bytes": 13912
+    },
+    "shiny": {
+      "file": "掘地兔_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/c/ce/Champions_0660_s_Sprite.png",
+      "source_filename": "Champions_0660_s_Sprite.png",
+      "sha256": "58ac7a0fd473909a88c7086dc6428f44cf5d3f9174d728c3c33a7e26a4699be0",
+      "width": 128,
+      "height": 128,
+      "bytes": 13844
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/diggersby?format=double&season=M-5",
+    "raw_path": "_sources/details/diggersby.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

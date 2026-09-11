@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "长毛巨魔"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 510,
+  "base_stats": {
+    "attack": 120,
+    "defense": 65,
+    "hp": 95,
+    "special_attack": 95,
+    "special_defense": 75,
+    "speed": 60
+  },
+  "data_ready": true,
+  "dex_number": 861,
+  "directory": "长毛巨魔",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 16556,
+      "file": "长毛巨魔.png",
+      "height": 128,
+      "sha256": "4cc060a154deeb1e02e517c612b6313ac764ada40be710b639251306638d0ad9",
+      "source_filename": "Champions_0861_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/9c/Champions_0861_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 17864,
+      "file": "长毛巨魔_闪光.png",
+      "height": 128,
+      "sha256": "e3cf69aa7bdfcb8e544ad18ef933dccb2e346c020e9b4d564b16520806ed3642",
+      "source_filename": "Champions_0861_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/52/Champions_0861_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "长毛巨魔",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 861,
+  "opgg_key": "grimmsnarl",
+  "recognition_ready": true,
+  "record_id": "legacy:861:长毛巨魔",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "grimmsnarl",
+  "species_name": "长毛巨魔",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/grimmsnarl"
+  },
+  "type_names": [
+    "恶",
+    "妖精"
+  ],
+  "types": [
+    "dark",
+    "fairy"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/grimmsnarl"
+  },
+  "wiki_name": "长毛巨魔"
+}

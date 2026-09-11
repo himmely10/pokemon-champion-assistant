@@ -1,0 +1,49 @@
+{
+  "base_stat_total": 411,
+  "base_stats": {
+    "attack": 52,
+    "defense": 50,
+    "hp": 80,
+    "special_attack": 90,
+    "special_defense": 50,
+    "speed": 89
+  },
+  "dex_number": 666,
+  "directory": "彩粉蝶（沙尘花纹）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "沙尘花纹",
+  "images": {
+    "normal": {
+      "bytes": 16720,
+      "file": "彩粉蝶（沙尘花纹）.png",
+      "height": 128,
+      "sha256": "45121596b6c321edc9d077e31d66284ad771e98a593ed7f9de952a7a2ed6b41d",
+      "source_filename": "Champions_0666San_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/5e/Champions_0666San_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 16785,
+      "file": "彩粉蝶（沙尘花纹）_闪光.png",
+      "height": 128,
+      "sha256": "b5b7a63661cec981a262e1904e7329b33380c923826c2ec47a7d461682015a88",
+      "source_filename": "Champions_0666San_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/26/Champions_0666San_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。",
+  "name": "彩粉蝶（沙尘花纹）",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "vivillon",
+  "species_name": "彩粉蝶",
+  "stats_mapping": "shared_species_profile",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/vivillon.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/vivillon?format=double&season=M-5"
+  },
+  "wiki_name": "彩粉蝶（沙尘花纹）"
+}

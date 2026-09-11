@@ -1,0 +1,49 @@
+{
+  "base_stat_total": 472,
+  "base_stats": {
+    "attack": 80,
+    "defense": 60,
+    "hp": 75,
+    "special_attack": 65,
+    "special_defense": 90,
+    "speed": 102
+  },
+  "dex_number": 676,
+  "directory": "多丽米亚（歌舞伎造型）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "歌舞伎造型",
+  "images": {
+    "normal": {
+      "bytes": 13589,
+      "file": "多丽米亚（歌舞伎造型）.png",
+      "height": 128,
+      "sha256": "9726e17bd8e383c74b920f9cf57f0cc8b6b78ea31ac32658b3dd9e805526717b",
+      "source_filename": "Champions_0676Ka_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/af/Champions_0676Ka_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13523,
+      "file": "多丽米亚（歌舞伎造型）_闪光.png",
+      "height": 128,
+      "sha256": "08c17038e267959d683de1fe418a7565d88b23ecfe402bed31ecea7bd962cd7c",
+      "source_filename": "Champions_0676Ka_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/8e/Champions_0676Ka_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。",
+  "name": "多丽米亚（歌舞伎造型）",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "furfrou",
+  "species_name": "多丽米亚",
+  "stats_mapping": "shared_species_profile",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/furfrou.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/furfrou?format=double&season=M-5"
+  },
+  "wiki_name": "多丽米亚（歌舞伎造型）"
+}

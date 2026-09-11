@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dex_number": 666,
+  "name": "彩粉蝶（球球花纹）",
+  "species_name": "彩粉蝶",
+  "form_name": "球球花纹",
+  "wiki_name": "彩粉蝶（球球花纹）",
+  "directory": "彩粉蝶（球球花纹）",
+  "source_slug": "vivillon",
+  "base_stats": {
+    "hp": 80,
+    "attack": 52,
+    "defense": 50,
+    "special_attack": 90,
+    "special_defense": 50,
+    "speed": 89
+  },
+  "base_stat_total": 411,
+  "images": {
+    "normal": {
+      "file": "彩粉蝶（球球花纹）.png",
+      "source_url": "https://media.52poke.com/wiki/9/96/Champions_0666Pok_Sprite.png",
+      "source_filename": "Champions_0666Pok_Sprite.png",
+      "sha256": "ce02ffa50ef29352f2a3e4c88811422e60f8f5baf00b3386d199363e20d43e6b",
+      "width": 128,
+      "height": 128,
+      "bytes": 17568
+    },
+    "shiny": {
+      "file": "彩粉蝶（球球花纹）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/a/a9/Champions_0666Pok_s_Sprite.png",
+      "source_filename": "Champions_0666Pok_s_Sprite.png",
+      "sha256": "066ad6c014750f56772d53dbaa4d09df8396a4973ebb88ed992bb2cacd148a01",
+      "width": 128,
+      "height": 128,
+      "bytes": 17607
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/vivillon?format=double&season=M-5",
+    "raw_path": "_sources/details/vivillon.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "shared_species_profile",
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。"
+}

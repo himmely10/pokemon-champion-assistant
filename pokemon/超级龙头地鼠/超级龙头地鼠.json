@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 530,
+  "name": "超级龙头地鼠",
+  "species_name": "龙头地鼠",
+  "form_name": "超级龙头地鼠",
+  "wiki_name": "超级龙头地鼠",
+  "directory": "超级龙头地鼠",
+  "source_slug": "excadrill-mega",
+  "base_stats": {
+    "hp": 110,
+    "attack": 165,
+    "defense": 100,
+    "special_attack": 65,
+    "special_defense": 65,
+    "speed": 103
+  },
+  "base_stat_total": 608,
+  "images": {
+    "normal": {
+      "file": "超级龙头地鼠.png",
+      "source_url": "https://media.52poke.com/wiki/3/3c/Champions_0530M_Sprite.png",
+      "source_filename": "Champions_0530M_Sprite.png",
+      "sha256": "c5abce6648471c8c9eaa16557d48c7e4ae2564243f6f68e99ec07ef08ae43597",
+      "width": 128,
+      "height": 128,
+      "bytes": 14779
+    },
+    "shiny": {
+      "file": "超级龙头地鼠_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/f/fd/Champions_0530M_s_Sprite.png",
+      "source_filename": "Champions_0530M_s_Sprite.png",
+      "sha256": "97461db0b2939e0beb859f640e36a2b2d64288077d00d31444bd83a18daa9600",
+      "width": 128,
+      "height": 128,
+      "bytes": 15296
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/excadrill?format=double&season=M-5",
+    "raw_path": "_sources/details/excadrill.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

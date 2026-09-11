@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 334,
+  "name": "七夕青鸟",
+  "species_name": "七夕青鸟",
+  "form_name": null,
+  "wiki_name": "七夕青鸟",
+  "directory": "七夕青鸟",
+  "source_slug": "altaria",
+  "base_stats": {
+    "hp": 75,
+    "attack": 70,
+    "defense": 90,
+    "special_attack": 70,
+    "special_defense": 105,
+    "speed": 80
+  },
+  "base_stat_total": 490,
+  "images": {
+    "normal": {
+      "file": "七夕青鸟.png",
+      "source_url": "https://media.52poke.com/wiki/e/ea/Champions_0334_Sprite.png",
+      "source_filename": "Champions_0334_Sprite.png",
+      "sha256": "c2fff633e34b736661a484fc50646dafb7c0868e0733604469d5047545a87152",
+      "width": 128,
+      "height": 128,
+      "bytes": 11300
+    },
+    "shiny": {
+      "file": "七夕青鸟_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/4/4c/Champions_0334_s_Sprite.png",
+      "source_filename": "Champions_0334_s_Sprite.png",
+      "sha256": "9700bf8da0bca1eeb6f49509ea0f7740902601aecb7757f5ecf14f4a727c5b79",
+      "width": 128,
+      "height": 128,
+      "bytes": 11384
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/altaria?format=double&season=M-5",
+    "raw_path": "_sources/details/altaria.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

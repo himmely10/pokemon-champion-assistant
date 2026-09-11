@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 128,
+  "name": "肯泰罗（斗战种）",
+  "species_name": "肯泰罗",
+  "form_name": "帕底亚的样子斗战种",
+  "wiki_name": "肯泰罗（帕底亚的样子斗战种）",
+  "directory": "肯泰罗（斗战种）",
+  "source_slug": "tauros-paldea-combat",
+  "base_stats": {
+    "hp": 75,
+    "attack": 110,
+    "defense": 105,
+    "special_attack": 30,
+    "special_defense": 70,
+    "speed": 100
+  },
+  "base_stat_total": 490,
+  "images": {
+    "normal": {
+      "file": "肯泰罗（斗战种）.png",
+      "source_url": "https://media.52poke.com/wiki/b/b1/Champions_0128PC_Sprite.png",
+      "source_filename": "Champions_0128PC_Sprite.png",
+      "sha256": "7df553f71e284f2debc82faa8e7d4c441efdee9802ee4c96fc9c9482073259c0",
+      "width": 128,
+      "height": 128,
+      "bytes": 10659
+    },
+    "shiny": {
+      "file": "肯泰罗（斗战种）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/6/60/Champions_0128PC_s_Sprite.png",
+      "source_filename": "Champions_0128PC_s_Sprite.png",
+      "sha256": "4ce3b57b8b3ea7c2b55752ec735a014e8470230793fa17a9ae213b7be64f617f",
+      "width": 128,
+      "height": 128,
+      "bytes": 10473
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tauros-paldea-combat?format=double&season=M-5",
+    "raw_path": "_sources/details/tauros-paldea-combat.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

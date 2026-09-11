@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 745,
+  "name": "鬃岩狼人（白昼的样子）",
+  "species_name": "鬃岩狼人",
+  "form_name": "白昼的样子",
+  "wiki_name": "鬃岩狼人（白昼的样子）",
+  "directory": "鬃岩狼人（白昼的样子）",
+  "source_slug": "lycanroc",
+  "base_stats": {
+    "hp": 75,
+    "attack": 115,
+    "defense": 65,
+    "special_attack": 55,
+    "special_defense": 65,
+    "speed": 112
+  },
+  "base_stat_total": 487,
+  "images": {
+    "normal": {
+      "file": "鬃岩狼人（白昼的样子）.png",
+      "source_url": "https://media.52poke.com/wiki/9/9c/Champions_0745_Sprite.png",
+      "source_filename": "Champions_0745_Sprite.png",
+      "sha256": "0703f3334af731071a018228920986377d14bc233d234a7efbdb66e3d6772a2a",
+      "width": 128,
+      "height": 128,
+      "bytes": 12842
+    },
+    "shiny": {
+      "file": "鬃岩狼人（白昼的样子）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/b/b9/Champions_0745_s_Sprite.png",
+      "source_filename": "Champions_0745_s_Sprite.png",
+      "sha256": "dba9051220e38b250ffee2764e2e192ba3de0a9fdb8a2d72051aee846da1e1e5",
+      "width": 128,
+      "height": 128,
+      "bytes": 13126
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/lycanroc?format=double&season=M-5",
+    "raw_path": "_sources/details/lycanroc.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

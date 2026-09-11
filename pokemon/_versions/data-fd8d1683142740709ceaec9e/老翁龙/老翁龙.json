@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "老翁龙"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 485,
+  "base_stats": {
+    "attack": 60,
+    "defense": 85,
+    "hp": 78,
+    "special_attack": 135,
+    "special_defense": 91,
+    "speed": 36
+  },
+  "data_ready": true,
+  "dex_number": 780,
+  "directory": "老翁龙",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14823,
+      "file": "老翁龙.png",
+      "height": 128,
+      "sha256": "23c7d9dec45403dd5f91e01c06069330be84b7c608c71fcaed87e58bb247aefe",
+      "source_filename": "Champions_0780_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b7/Champions_0780_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14861,
+      "file": "老翁龙_闪光.png",
+      "height": 128,
+      "sha256": "60604ccf1b818df2b3db45ec6c1eddb877723820b2e2ea33d95b4bd1cb8aa8d2",
+      "source_filename": "Champions_0780_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/83/Champions_0780_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:780:超级老翁龙"
+  ],
+  "mega_item": null,
+  "name": "老翁龙",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 780,
+  "opgg_key": "drampa",
+  "recognition_ready": true,
+  "record_id": "legacy:780:老翁龙",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "drampa",
+  "species_name": "老翁龙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/drampa"
+  },
+  "type_names": [
+    "一般",
+    "龙"
+  ],
+  "types": [
+    "normal",
+    "dragon"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/drampa"
+  },
+  "wiki_name": "老翁龙"
+}

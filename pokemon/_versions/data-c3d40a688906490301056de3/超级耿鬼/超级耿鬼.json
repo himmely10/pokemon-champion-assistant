@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 600,
+  "base_stats": {
+    "attack": 65,
+    "defense": 80,
+    "hp": 60,
+    "special_attack": 170,
+    "special_defense": 95,
+    "speed": 130
+  },
+  "dex_number": 94,
+  "directory": "超级耿鬼",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级耿鬼",
+  "images": {
+    "normal": {
+      "bytes": 15063,
+      "file": "超级耿鬼.png",
+      "height": 128,
+      "sha256": "d5fb6639661d827d276592684ef90bc30d1b4c1b6246c9c4a87ccfb9df638bec",
+      "source_filename": "Champions_0094M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/46/Champions_0094M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14872,
+      "file": "超级耿鬼_闪光.png",
+      "height": 128,
+      "sha256": "3a4c0dce8925f498b9c45548192d039aaf20df502d3021d6510280478c28646e",
+      "source_filename": "Champions_0094M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/e3/Champions_0094M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超级耿鬼",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "gengar-mega",
+  "species_name": "耿鬼",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "megaForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/gengar.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gengar?format=double&season=M-5"
+  },
+  "wiki_name": "超级耿鬼"
+}

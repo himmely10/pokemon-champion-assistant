@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 571,
+  "name": "索罗亚克（洗翠）",
+  "species_name": "索罗亚克",
+  "form_name": "洗翠的样子",
+  "wiki_name": "索罗亚克（洗翠的样子）",
+  "directory": "索罗亚克（洗翠）",
+  "source_slug": "zoroark-hisui",
+  "base_stats": {
+    "hp": 55,
+    "attack": 100,
+    "defense": 60,
+    "special_attack": 125,
+    "special_defense": 60,
+    "speed": 110
+  },
+  "base_stat_total": 510,
+  "images": {
+    "normal": {
+      "file": "索罗亚克（洗翠）.png",
+      "source_url": "https://media.52poke.com/wiki/7/7b/Champions_0571H_Sprite.png",
+      "source_filename": "Champions_0571H_Sprite.png",
+      "sha256": "a3d32faea4e9189153daed462457e05d9514a45b7208897cb09ed3d47211096c",
+      "width": 128,
+      "height": 128,
+      "bytes": 18376
+    },
+    "shiny": {
+      "file": "索罗亚克（洗翠）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/2/25/Champions_0571H_s_Sprite.png",
+      "source_filename": "Champions_0571H_s_Sprite.png",
+      "sha256": "06e9c8fe4d2a85e1bd6dbc929cad505111310e991c69db9d9fcd01cc80ea76da",
+      "width": 128,
+      "height": 128,
+      "bytes": 18689
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/zoroark-hisui?format=double&season=M-5",
+    "raw_path": "_sources/details/zoroark-hisui.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

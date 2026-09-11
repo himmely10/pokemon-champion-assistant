@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 472,
+  "name": "天蝎王",
+  "species_name": "天蝎王",
+  "form_name": null,
+  "wiki_name": "天蝎王",
+  "directory": "天蝎王",
+  "source_slug": "gliscor",
+  "base_stats": {
+    "hp": 75,
+    "attack": 95,
+    "defense": 125,
+    "special_attack": 45,
+    "special_defense": 75,
+    "speed": 95
+  },
+  "base_stat_total": 510,
+  "images": {
+    "normal": {
+      "file": "天蝎王.png",
+      "source_url": "https://media.52poke.com/wiki/a/a3/Champions_0472_Sprite.png",
+      "source_filename": "Champions_0472_Sprite.png",
+      "sha256": "c2aaa72f109f51d33005f7a718cd400c75e4cf13f6b21cc889b9ca1fa83548c5",
+      "width": 128,
+      "height": 128,
+      "bytes": 15812
+    },
+    "shiny": {
+      "file": "天蝎王_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/9/96/Champions_0472_s_Sprite.png",
+      "source_filename": "Champions_0472_s_Sprite.png",
+      "sha256": "80960b2f177ff23d70eeaee0ea717c3c32a0f4b19090e322b2ec3742e2978bef",
+      "width": 128,
+      "height": 128,
+      "bytes": 15896
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gliscor?format=double&season=M-5",
+    "raw_path": "_sources/details/gliscor.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

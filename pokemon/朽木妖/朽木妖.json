@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 709,
+  "name": "朽木妖",
+  "species_name": "朽木妖",
+  "form_name": null,
+  "wiki_name": "朽木妖",
+  "directory": "朽木妖",
+  "source_slug": "trevenant",
+  "base_stats": {
+    "hp": 85,
+    "attack": 110,
+    "defense": 76,
+    "special_attack": 65,
+    "special_defense": 82,
+    "speed": 56
+  },
+  "base_stat_total": 474,
+  "images": {
+    "normal": {
+      "file": "朽木妖.png",
+      "source_url": "https://media.52poke.com/wiki/0/01/Champions_0709_Sprite.png",
+      "source_filename": "Champions_0709_Sprite.png",
+      "sha256": "ac0980f7ca3ca1c1afc4316edf30218af406cde43ccc7240d1fa7369deee05ba",
+      "width": 128,
+      "height": 128,
+      "bytes": 15951
+    },
+    "shiny": {
+      "file": "朽木妖_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/d/d9/Champions_0709_s_Sprite.png",
+      "source_filename": "Champions_0709_s_Sprite.png",
+      "sha256": "ed187d2fc2c8836ab17e6be2cdac3cfd4de827a7c8ce50bea8924c81d960257c",
+      "width": 128,
+      "height": 128,
+      "bytes": 16264
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/trevenant?format=double&season=M-5",
+    "raw_path": "_sources/details/trevenant.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 707,
+  "name": "钥圈儿",
+  "species_name": "钥圈儿",
+  "form_name": null,
+  "wiki_name": "钥圈儿",
+  "directory": "钥圈儿",
+  "source_slug": "klefki",
+  "base_stats": {
+    "hp": 57,
+    "attack": 80,
+    "defense": 91,
+    "special_attack": 80,
+    "special_defense": 87,
+    "speed": 75
+  },
+  "base_stat_total": 470,
+  "images": {
+    "normal": {
+      "file": "钥圈儿.png",
+      "source_url": "https://media.52poke.com/wiki/9/91/Champions_0707_Sprite.png",
+      "source_filename": "Champions_0707_Sprite.png",
+      "sha256": "6b871ad091c5d879d02c1d97c9c9d44941ea9f43ce56e251aea55973dfb7a947",
+      "width": 128,
+      "height": 128,
+      "bytes": 8925
+    },
+    "shiny": {
+      "file": "钥圈儿_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/0/03/Champions_0707_s_Sprite.png",
+      "source_filename": "Champions_0707_s_Sprite.png",
+      "sha256": "2aa37c9562e60c8e133715c6289beb2acd0151429e44c276719df50ada47d21c",
+      "width": 128,
+      "height": 128,
+      "bytes": 8896
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/klefki?format=double&season=M-5",
+    "raw_path": "_sources/details/klefki.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,73 @@
+{
+  "aliases": [
+    "喵头目"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 440,
+  "base_stats": {
+    "attack": 110,
+    "defense": 100,
+    "hp": 70,
+    "special_attack": 50,
+    "special_defense": 60,
+    "speed": 50
+  },
+  "data_ready": true,
+  "dex_number": 863,
+  "directory": "喵头目",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 13461,
+      "file": "喵头目.png",
+      "height": 128,
+      "sha256": "8a4ae3918866c78aa6ce36b86bfbf883e468bc305d75933c2c90a5942c2e6fff",
+      "source_filename": "Champions_0863_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/fa/Champions_0863_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13885,
+      "file": "喵头目_闪光.png",
+      "height": 128,
+      "sha256": "ba2b0abc21189404e5d40b6787ce94221417af37ab53e5033135f676887d9043",
+      "source_filename": "Champions_0863_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/7c/Champions_0863_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "喵头目",
+  "name_source": "opgg_zh_cn",
+  "opgg_id": 863,
+  "opgg_key": "perrserker",
+  "recognition_ready": true,
+  "record_id": "opgg:perrserker",
+  "schema_version": 2,
+  "source_base_key": null,
+  "source_is_new": true,
+  "source_presence": "present",
+  "source_regulation": "M-C",
+  "source_slug": "perrserker",
+  "species_name": "喵头目",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/perrserker"
+  },
+  "type_names": [
+    "钢"
+  ],
+  "types": [
+    "steel"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/perrserker"
+  }
+}

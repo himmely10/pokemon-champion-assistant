@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 530,
+  "base_stats": {
+    "attack": 120,
+    "defense": 70,
+    "hp": 80,
+    "special_attack": 110,
+    "special_defense": 70,
+    "speed": 80
+  },
+  "dex_number": 257,
+  "directory": "火焰鸡",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 17312,
+      "file": "火焰鸡.png",
+      "height": 128,
+      "sha256": "dfb95b91d9bd9ea3c32af4f28e16f53ee1613c0d2f9be0632cc570483cebbcb1",
+      "source_filename": "Champions_0257_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/1e/Champions_0257_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 17124,
+      "file": "火焰鸡_闪光.png",
+      "height": 128,
+      "sha256": "1d497fcfa24aa9f5a849f26aea7de1d659ab47e0b6d19a10dded18c0b0278bc1",
+      "source_filename": "Champions_0257_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/26/Champions_0257_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "火焰鸡",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "blaziken",
+  "species_name": "火焰鸡",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/blaziken.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/blaziken?format=double&season=M-5"
+  },
+  "wiki_name": "火焰鸡"
+}

@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 480,
+  "base_stats": {
+    "attack": 105,
+    "defense": 125,
+    "hp": 50,
+    "special_attack": 55,
+    "special_defense": 95,
+    "speed": 50
+  },
+  "dex_number": 303,
+  "directory": "超级大嘴娃",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级大嘴娃",
+  "images": {
+    "normal": {
+      "bytes": 14870,
+      "file": "超级大嘴娃.png",
+      "height": 128,
+      "sha256": "5afdf2b81d87f857c67b6438fecc698dc6f9c81ffe3e594970320ee9aa5a977b",
+      "source_filename": "Champions_0303M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/80/Champions_0303M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 16219,
+      "file": "超级大嘴娃_闪光.png",
+      "height": 128,
+      "sha256": "f93563ba39f55993a6f4b06c943489a34f20790f5dd8aa18b3dcbfa4955f5b73",
+      "source_filename": "Champions_0303M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/92/Champions_0303M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超级大嘴娃",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "mawile-mega",
+  "species_name": "大嘴娃",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "megaForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/mawile.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/mawile?format=double&season=M-5"
+  },
+  "wiki_name": "超级大嘴娃"
+}

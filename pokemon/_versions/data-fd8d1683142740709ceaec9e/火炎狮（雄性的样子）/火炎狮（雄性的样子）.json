@@ -1,0 +1,80 @@
+{
+  "aliases": [
+    "火炎狮"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 507,
+  "base_stats": {
+    "attack": 68,
+    "defense": 72,
+    "hp": 86,
+    "special_attack": 109,
+    "special_defense": 66,
+    "speed": 106
+  },
+  "data_ready": true,
+  "dex_number": 668,
+  "directory": "火炎狮（雄性的样子）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "雄性的样子",
+  "images": {
+    "normal": {
+      "bytes": 15017,
+      "file": "火炎狮（雄性的样子）.png",
+      "height": 128,
+      "sha256": "9ca913bb8be0224e76e70f80d7eb87d7a6d7d64fa6a9dfc42b52dc8e39beb687",
+      "source_filename": "Champions_0668_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/ca/Champions_0668_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15636,
+      "file": "火炎狮（雄性的样子）_闪光.png",
+      "height": 128,
+      "sha256": "2d2f6d390624daf8c32b374899c30956f21eb307b419ddfb5f372634ca55a8ca",
+      "source_filename": "Champions_0668_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/e7/Champions_0668_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。",
+  "mega_form_ids": [
+    "legacy:668:超级火炎狮"
+  ],
+  "mega_item": null,
+  "name": "火炎狮（雄性的样子）",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 668,
+  "opgg_key": "pyroar",
+  "recognition_ready": true,
+  "record_id": "legacy:668:火炎狮（雄性的样子）",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "pyroar",
+  "species_name": "火炎狮",
+  "stats_mapping": "shared_species_profile",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/pyroar"
+  },
+  "type_names": [
+    "火",
+    "一般"
+  ],
+  "types": [
+    "fire",
+    "normal"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/pyroar"
+  },
+  "wiki_name": "火炎狮（（雄性的样子））"
+}

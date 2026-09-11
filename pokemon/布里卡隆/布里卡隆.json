@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 652,
+  "name": "布里卡隆",
+  "species_name": "布里卡隆",
+  "form_name": null,
+  "wiki_name": "布里卡隆",
+  "directory": "布里卡隆",
+  "source_slug": "chesnaught",
+  "base_stats": {
+    "hp": 88,
+    "attack": 107,
+    "defense": 122,
+    "special_attack": 74,
+    "special_defense": 75,
+    "speed": 64
+  },
+  "base_stat_total": 530,
+  "images": {
+    "normal": {
+      "file": "布里卡隆.png",
+      "source_url": "https://media.52poke.com/wiki/d/d8/Champions_0652_Sprite.png",
+      "source_filename": "Champions_0652_Sprite.png",
+      "sha256": "e6decda39a06ab6150fea5b45ec28754ab2e8a2b6447a438022bf718e9424a4d",
+      "width": 128,
+      "height": 128,
+      "bytes": 18899
+    },
+    "shiny": {
+      "file": "布里卡隆_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/6/6c/Champions_0652_s_Sprite.png",
+      "source_filename": "Champions_0652_s_Sprite.png",
+      "sha256": "6a4d5ba95162baea8ab0b63a684a4437d2128318097b99565f255f1d92ec1c7d",
+      "width": 128,
+      "height": 128,
+      "bytes": 18004
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/chesnaught?format=double&season=M-5",
+    "raw_path": "_sources/details/chesnaught.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

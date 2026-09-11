@@ -1,0 +1,9 @@
+{
+  "name": "pokemon-champion-assistant-damage",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Local JSON bridge to the Champions rules in Smogon's damage calculator",
+  "scripts": { "build": "tsc -p vendor/smogon-calc/tsconfig.json" },
+  "dependencies": { "@smogon/calc": "file:vendor/smogon-calc" },
+  "devDependencies": { "typescript": "5.9.3", "@types/node": "22.18.6" }
+}

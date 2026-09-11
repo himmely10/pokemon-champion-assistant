@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 547,
+  "name": "风妖精",
+  "species_name": "风妖精",
+  "form_name": null,
+  "wiki_name": "风妖精",
+  "directory": "风妖精",
+  "source_slug": "whimsicott",
+  "base_stats": {
+    "hp": 60,
+    "attack": 67,
+    "defense": 85,
+    "special_attack": 77,
+    "special_defense": 75,
+    "speed": 116
+  },
+  "base_stat_total": 480,
+  "images": {
+    "normal": {
+      "file": "风妖精.png",
+      "source_url": "https://media.52poke.com/wiki/c/c4/Champions_0547_Sprite.png",
+      "source_filename": "Champions_0547_Sprite.png",
+      "sha256": "a031ba4d3724ca30423eae6c352c417d34070474680d62633e617c979c17979c",
+      "width": 128,
+      "height": 128,
+      "bytes": 12856
+    },
+    "shiny": {
+      "file": "风妖精_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/0/04/Champions_0547_s_Sprite.png",
+      "source_filename": "Champions_0547_s_Sprite.png",
+      "sha256": "12edb0f75caa97ec212035e8c039432980df3c04de10c44bc56c9ce5535b9806",
+      "width": 128,
+      "height": 128,
+      "bytes": 12718
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/whimsicott?format=double&season=M-5",
+    "raw_path": "_sources/details/whimsicott.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

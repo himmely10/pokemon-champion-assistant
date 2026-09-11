@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 448,
+  "name": "路卡利欧",
+  "species_name": "路卡利欧",
+  "form_name": null,
+  "wiki_name": "路卡利欧",
+  "directory": "路卡利欧",
+  "source_slug": "lucario",
+  "base_stats": {
+    "hp": 70,
+    "attack": 110,
+    "defense": 70,
+    "special_attack": 115,
+    "special_defense": 70,
+    "speed": 90
+  },
+  "base_stat_total": 525,
+  "images": {
+    "normal": {
+      "file": "路卡利欧.png",
+      "source_url": "https://media.52poke.com/wiki/1/10/Champions_0448_Sprite.png",
+      "source_filename": "Champions_0448_Sprite.png",
+      "sha256": "16c349e5d50bcf23380912b724478af46bfcb77db058bceda7e1267673bf295e",
+      "width": 128,
+      "height": 128,
+      "bytes": 11176
+    },
+    "shiny": {
+      "file": "路卡利欧_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/e/ed/Champions_0448_s_Sprite.png",
+      "source_filename": "Champions_0448_s_Sprite.png",
+      "sha256": "c82eb77bf552c41f8d0c2f029b2280beaa8e76afe2e1e89a30d67bc7656c1afb",
+      "width": 128,
+      "height": 128,
+      "bytes": 11671
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/lucario?format=double&season=M-5",
+    "raw_path": "_sources/details/lucario.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

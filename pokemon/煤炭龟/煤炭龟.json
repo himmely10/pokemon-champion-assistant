@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 324,
+  "name": "煤炭龟",
+  "species_name": "煤炭龟",
+  "form_name": null,
+  "wiki_name": "煤炭龟",
+  "directory": "煤炭龟",
+  "source_slug": "torkoal",
+  "base_stats": {
+    "hp": 70,
+    "attack": 85,
+    "defense": 140,
+    "special_attack": 85,
+    "special_defense": 70,
+    "speed": 20
+  },
+  "base_stat_total": 470,
+  "images": {
+    "normal": {
+      "file": "煤炭龟.png",
+      "source_url": "https://media.52poke.com/wiki/5/5a/Champions_0324_Sprite.png",
+      "source_filename": "Champions_0324_Sprite.png",
+      "sha256": "55eca238185a20812d2591497104ac54025dc365b8608eebf65b27cb488138b1",
+      "width": 128,
+      "height": 128,
+      "bytes": 12601
+    },
+    "shiny": {
+      "file": "煤炭龟_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/b/b8/Champions_0324_s_Sprite.png",
+      "source_filename": "Champions_0324_s_Sprite.png",
+      "sha256": "5640cfbe9fa5406ba99a67ad7f0f9cf073e0370cdaaa84468ea495930f55419e",
+      "width": 128,
+      "height": 128,
+      "bytes": 13118
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/torkoal?format=double&season=M-5",
+    "raw_path": "_sources/details/torkoal.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

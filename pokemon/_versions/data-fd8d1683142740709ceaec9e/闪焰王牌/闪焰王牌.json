@@ -1,0 +1,73 @@
+{
+  "aliases": [
+    "闪焰王牌"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 530,
+  "base_stats": {
+    "attack": 116,
+    "defense": 75,
+    "hp": 80,
+    "special_attack": 65,
+    "special_defense": 75,
+    "speed": 119
+  },
+  "data_ready": true,
+  "dex_number": 815,
+  "directory": "闪焰王牌",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 11554,
+      "file": "闪焰王牌.png",
+      "height": 128,
+      "sha256": "84e90908352fa25088e58fbeeb6728b8552f4569df6ba6b53031abfdf657bf79",
+      "source_filename": "Champions_0815_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/68/Champions_0815_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11905,
+      "file": "闪焰王牌_闪光.png",
+      "height": 128,
+      "sha256": "8eda11818f7dc586ace07c5bfc6244353b9d65551fbcacf7923028e7372c3045",
+      "source_filename": "Champions_0815_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/a9/Champions_0815_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "闪焰王牌",
+  "name_source": "opgg_zh_cn",
+  "opgg_id": 815,
+  "opgg_key": "cinderace",
+  "recognition_ready": true,
+  "record_id": "opgg:cinderace",
+  "schema_version": 2,
+  "source_base_key": null,
+  "source_is_new": true,
+  "source_presence": "present",
+  "source_regulation": "M-C",
+  "source_slug": "cinderace",
+  "species_name": "闪焰王牌",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/cinderace"
+  },
+  "type_names": [
+    "火"
+  ],
+  "types": [
+    "fire"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/cinderace"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "赛富豪"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 550,
+  "base_stats": {
+    "attack": 60,
+    "defense": 95,
+    "hp": 87,
+    "special_attack": 133,
+    "special_defense": 91,
+    "speed": 84
+  },
+  "data_ready": true,
+  "dex_number": 1000,
+  "directory": "赛富豪",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 12844,
+      "file": "赛富豪.png",
+      "height": 128,
+      "sha256": "f29202716aff6d6221cdf1cdc4d53598297a52cb09e37862fe13c1f4260a1ea3",
+      "source_filename": "Champions_1000_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/fb/Champions_1000_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12967,
+      "file": "赛富豪_闪光.png",
+      "height": 128,
+      "sha256": "3b3595d73e404b9e52c778c71f1514c04bb777bfe2a9d0594bf247dd2cd8c1cc",
+      "source_filename": "Champions_1000_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/a4/Champions_1000_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "赛富豪",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 1000,
+  "opgg_key": "gholdengo",
+  "recognition_ready": true,
+  "record_id": "legacy:1000:赛富豪",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "gholdengo",
+  "species_name": "赛富豪",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/gholdengo"
+  },
+  "type_names": [
+    "钢",
+    "幽灵"
+  ],
+  "types": [
+    "steel",
+    "ghost"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/gholdengo"
+  },
+  "wiki_name": "赛富豪"
+}

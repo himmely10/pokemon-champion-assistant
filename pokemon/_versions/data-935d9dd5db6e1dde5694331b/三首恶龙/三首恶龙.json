@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "三首恶龙"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 600,
+  "base_stats": {
+    "attack": 105,
+    "defense": 90,
+    "hp": 92,
+    "special_attack": 125,
+    "special_defense": 90,
+    "speed": 98
+  },
+  "data_ready": true,
+  "dex_number": 635,
+  "directory": "三首恶龙",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 17097,
+      "file": "三首恶龙.png",
+      "height": 128,
+      "sha256": "e33f6d925e27251dd4ec4531f70bd698ca103523445ee235408e38df7d2e612c",
+      "source_filename": "Champions_0635_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/fd/Champions_0635_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 17410,
+      "file": "三首恶龙_闪光.png",
+      "height": 128,
+      "sha256": "74a8657b8c4349014c6b65542fe329e642a5e9cde22c9ad3726179ce29a2ff1b",
+      "source_filename": "Champions_0635_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/92/Champions_0635_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "三首恶龙",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 635,
+  "opgg_key": "hydreigon",
+  "recognition_ready": true,
+  "record_id": "legacy:635:三首恶龙",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "hydreigon",
+  "species_name": "三首恶龙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/hydreigon"
+  },
+  "type_names": [
+    "恶",
+    "龙"
+  ],
+  "types": [
+    "dark",
+    "dragon"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/hydreigon"
+  },
+  "wiki_name": "三首恶龙"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 904,
+  "name": "万针鱼",
+  "species_name": "万针鱼",
+  "form_name": null,
+  "wiki_name": "万针鱼",
+  "directory": "万针鱼",
+  "source_slug": "overqwil",
+  "base_stats": {
+    "hp": 85,
+    "attack": 115,
+    "defense": 95,
+    "special_attack": 65,
+    "special_defense": 65,
+    "speed": 85
+  },
+  "base_stat_total": 510,
+  "images": {
+    "normal": {
+      "file": "万针鱼.png",
+      "source_url": "https://media.52poke.com/wiki/b/bb/Champions_0904_Sprite.png",
+      "source_filename": "Champions_0904_Sprite.png",
+      "sha256": "c99c32204cbf65c36b5351419224d44d56b1feaef58224a0a2afef11e23e84af",
+      "width": 128,
+      "height": 128,
+      "bytes": 12654
+    },
+    "shiny": {
+      "file": "万针鱼_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/f/f4/Champions_0904_s_Sprite.png",
+      "source_filename": "Champions_0904_s_Sprite.png",
+      "sha256": "8c26af885dbf9b53f6d7c4c32161ed5ac81f2777da88867a6054e6f222d19d78",
+      "width": 128,
+      "height": 128,
+      "bytes": 12438
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/overqwil?format=double&season=M-5",
+    "raw_path": "_sources/details/overqwil.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

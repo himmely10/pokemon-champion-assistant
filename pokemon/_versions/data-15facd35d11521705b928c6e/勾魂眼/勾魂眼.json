@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "勾魂眼"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 380,
+  "base_stats": {
+    "attack": 75,
+    "defense": 75,
+    "hp": 50,
+    "special_attack": 65,
+    "special_defense": 65,
+    "speed": 50
+  },
+  "data_ready": true,
+  "dex_number": 302,
+  "directory": "勾魂眼",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 10098,
+      "file": "勾魂眼.png",
+      "height": 128,
+      "sha256": "cd84fae80969dd4c67795b08d4dfbdf17ac145096b058ff2d1bcf87f099169ba",
+      "source_filename": "Champions_0302_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/ea/Champions_0302_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 10225,
+      "file": "勾魂眼_闪光.png",
+      "height": 128,
+      "sha256": "1a806b8b95589fe7f52dd1a928b14fce1977721106d8208e29d6908ee5e132ea",
+      "source_filename": "Champions_0302_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/a9/Champions_0302_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:302:超级勾魂眼"
+  ],
+  "mega_item": null,
+  "name": "勾魂眼",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 302,
+  "opgg_key": "sableye",
+  "recognition_ready": true,
+  "record_id": "legacy:302:勾魂眼",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "sableye",
+  "species_name": "勾魂眼",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/sableye"
+  },
+  "type_names": [
+    "恶",
+    "幽灵"
+  ],
+  "types": [
+    "dark",
+    "ghost"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/sableye"
+  },
+  "wiki_name": "勾魂眼"
+}

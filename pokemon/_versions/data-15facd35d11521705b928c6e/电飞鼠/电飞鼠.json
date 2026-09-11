@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "电飞鼠"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 428,
+  "base_stats": {
+    "attack": 75,
+    "defense": 60,
+    "hp": 55,
+    "special_attack": 75,
+    "special_defense": 60,
+    "speed": 103
+  },
+  "data_ready": true,
+  "dex_number": 587,
+  "directory": "电飞鼠",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 10327,
+      "file": "电飞鼠.png",
+      "height": 128,
+      "sha256": "fead49b692a03258afde4c6a58f1a702e0d343fbe49da50d52d597c71d2acd2e",
+      "source_filename": "Champions_0587_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/ac/Champions_0587_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 10948,
+      "file": "电飞鼠_闪光.png",
+      "height": 128,
+      "sha256": "89ecf4e405257295c35b357f87c03c5b555915e502e2a3c5fdf418772e820621",
+      "source_filename": "Champions_0587_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/d7/Champions_0587_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "电飞鼠",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 587,
+  "opgg_key": "emolga",
+  "recognition_ready": true,
+  "record_id": "legacy:587:电飞鼠",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "emolga",
+  "species_name": "电飞鼠",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/emolga"
+  },
+  "type_names": [
+    "电",
+    "飞行"
+  ],
+  "types": [
+    "electric",
+    "flying"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/emolga"
+  },
+  "wiki_name": "电飞鼠"
+}

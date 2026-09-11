@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 745,
+  "name": "鬃岩狼人（黑夜的样子）",
+  "species_name": "鬃岩狼人",
+  "form_name": "黑夜的样子",
+  "wiki_name": "鬃岩狼人（黑夜的样子）",
+  "directory": "鬃岩狼人（黑夜的样子）",
+  "source_slug": "lycanroc-midnight",
+  "base_stats": {
+    "hp": 85,
+    "attack": 115,
+    "defense": 75,
+    "special_attack": 55,
+    "special_defense": 75,
+    "speed": 82
+  },
+  "base_stat_total": 487,
+  "images": {
+    "normal": {
+      "file": "鬃岩狼人（黑夜的样子）.png",
+      "source_url": "https://media.52poke.com/wiki/9/9f/Champions_0745Mn_Sprite.png",
+      "source_filename": "Champions_0745Mn_Sprite.png",
+      "sha256": "359fd53e4e43b5400c098e75b167752bb7f39ef6c4deda9faa32d5908fe9642c",
+      "width": 128,
+      "height": 128,
+      "bytes": 12423
+    },
+    "shiny": {
+      "file": "鬃岩狼人（黑夜的样子）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/6/6b/Champions_0745Mn_s_Sprite.png",
+      "source_filename": "Champions_0745Mn_s_Sprite.png",
+      "sha256": "897865591670ed0b3a6edaec0effb02b19769bf3a95202b2e4a50646f36a3b2f",
+      "width": 128,
+      "height": 128,
+      "bytes": 12620
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/lycanroc-midnight?format=double&season=M-5",
+    "raw_path": "_sources/details/lycanroc-midnight.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

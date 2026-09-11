@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "烈焰猴"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 534,
+  "base_stats": {
+    "attack": 104,
+    "defense": 71,
+    "hp": 76,
+    "special_attack": 104,
+    "special_defense": 71,
+    "speed": 108
+  },
+  "data_ready": true,
+  "dex_number": 392,
+  "directory": "烈焰猴",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 19023,
+      "file": "烈焰猴.png",
+      "height": 128,
+      "sha256": "1464c6470bd613b981239d00c20e4d92e63cf9eb3f9e6ecc68b32e12fd536eb4",
+      "source_filename": "Champions_0392_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/3e/Champions_0392_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 19290,
+      "file": "烈焰猴_闪光.png",
+      "height": 128,
+      "sha256": "1b4f9c34a8c7fa191bbd60d04ec85cba7c505643c00e647a27e3f97402e4ec71",
+      "source_filename": "Champions_0392_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/40/Champions_0392_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "烈焰猴",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 392,
+  "opgg_key": "infernape",
+  "recognition_ready": true,
+  "record_id": "legacy:392:烈焰猴",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "infernape",
+  "species_name": "烈焰猴",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/infernape"
+  },
+  "type_names": [
+    "火",
+    "格斗"
+  ],
+  "types": [
+    "fire",
+    "fighting"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/infernape"
+  },
+  "wiki_name": "烈焰猴"
+}

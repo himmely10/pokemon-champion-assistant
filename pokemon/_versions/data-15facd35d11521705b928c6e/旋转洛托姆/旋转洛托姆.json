@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "旋转洛托姆"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 520,
+  "base_stats": {
+    "attack": 65,
+    "defense": 107,
+    "hp": 50,
+    "special_attack": 105,
+    "special_defense": 107,
+    "speed": 86
+  },
+  "data_ready": true,
+  "dex_number": 479,
+  "directory": "旋转洛托姆",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "旋转洛托姆",
+  "images": {
+    "normal": {
+      "bytes": 11022,
+      "file": "旋转洛托姆.png",
+      "height": 128,
+      "sha256": "3a9e404b425cf939dcc4820f3f2dd8c1d297deb3c85adf02d6cb3efc1d75bd8f",
+      "source_filename": "Champions_0479Fa_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/f1/Champions_0479Fa_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11118,
+      "file": "旋转洛托姆_闪光.png",
+      "height": 128,
+      "sha256": "fbfe6dbc9e62601b6c35b6a753abd98c44b7d203b83af754e3ca610e21a0f471",
+      "source_filename": "Champions_0479Fa_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/d1/Champions_0479Fa_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "旋转洛托姆",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10011,
+  "opgg_key": "rotom-fan",
+  "recognition_ready": true,
+  "record_id": "legacy:479:旋转洛托姆",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "rotom-fan",
+  "species_name": "洛托姆",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/rotom-fan"
+  },
+  "type_names": [
+    "电",
+    "飞行"
+  ],
+  "types": [
+    "electric",
+    "flying"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/rotom-fan"
+  },
+  "wiki_name": "洛托姆（旋转洛托姆）"
+}

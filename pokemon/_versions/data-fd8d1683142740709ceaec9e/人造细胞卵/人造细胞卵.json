@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "人造细胞卵"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 490,
+  "base_stats": {
+    "attack": 65,
+    "defense": 75,
+    "hp": 110,
+    "special_attack": 125,
+    "special_defense": 85,
+    "speed": 30
+  },
+  "data_ready": true,
+  "dex_number": 579,
+  "directory": "人造细胞卵",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 13176,
+      "file": "人造细胞卵.png",
+      "height": 128,
+      "sha256": "fc3bfddffe2930e4ecf06979653e0511960dc15264777c60b9e2084a9559c73f",
+      "source_filename": "Champions_0579_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/65/Champions_0579_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12742,
+      "file": "人造细胞卵_闪光.png",
+      "height": 128,
+      "sha256": "3e42eb0e501d64a9c5caa2a2d77d7f9abd447d7c80a70bbbc3a5d698576eb7cd",
+      "source_filename": "Champions_0579_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/00/Champions_0579_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "人造细胞卵",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 579,
+  "opgg_key": "reuniclus",
+  "recognition_ready": true,
+  "record_id": "legacy:579:人造细胞卵",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "reuniclus",
+  "species_name": "人造细胞卵",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/reuniclus"
+  },
+  "type_names": [
+    "超能力"
+  ],
+  "types": [
+    "psychic"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/reuniclus"
+  },
+  "wiki_name": "人造细胞卵"
+}

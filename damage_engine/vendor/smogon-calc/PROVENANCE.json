@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/smogon/damage-calc",
+  "commit": "e7fd7e59f3eef7ea42fba3c8b83261cb4a14109d",
+  "source": "calc/src",
+  "license": "MIT",
+  "local_modifications": ["state.ts / field.ts: preserve explicit isSingleTarget in doubles", "mechanics/champions.ts: bypass spread modifier only when isSingleTarget"],
+  "build": "TypeScript 5.9.3; see ../../package-lock.json"
+}

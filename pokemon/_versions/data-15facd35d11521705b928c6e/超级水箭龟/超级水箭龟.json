@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "超级水箭龟"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 630,
+  "base_stats": {
+    "attack": 103,
+    "defense": 120,
+    "hp": 79,
+    "special_attack": 135,
+    "special_defense": 115,
+    "speed": 78
+  },
+  "data_ready": true,
+  "dex_number": 9,
+  "directory": "超级水箭龟",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级水箭龟",
+  "images": {
+    "normal": {
+      "bytes": 16965,
+      "file": "超级水箭龟.png",
+      "height": 128,
+      "sha256": "d7a79b8be7dc226d7f5f9150da7e3967417a2aac101f90f00e8c59ef07bd3179",
+      "source_filename": "Champions_0009M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/05/Champions_0009M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 17069,
+      "file": "超级水箭龟_闪光.png",
+      "height": 128,
+      "sha256": "ff9ad188ae7f7d114dba5456c5eb321035e2b63b4714efcb08e127e1e857f280",
+      "source_filename": "Champions_0009M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/19/Champions_0009M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "blastoisinite",
+  "name": "超级水箭龟",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10036,
+  "opgg_key": "mega-blastoise",
+  "recognition_ready": true,
+  "record_id": "legacy:9:超级水箭龟",
+  "schema_version": 1,
+  "source_base_key": "blastoise",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "blastoise-mega",
+  "species_name": "水箭龟",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-blastoise"
+  },
+  "type_names": [
+    "水"
+  ],
+  "types": [
+    "water"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-blastoise"
+  },
+  "wiki_name": "超级水箭龟"
+}

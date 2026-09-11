@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 479,
+  "name": "结冰洛托姆",
+  "species_name": "洛托姆",
+  "form_name": "结霜洛托姆",
+  "wiki_name": "洛托姆（结霜洛托姆）",
+  "directory": "结冰洛托姆",
+  "source_slug": "rotom-frost",
+  "base_stats": {
+    "hp": 50,
+    "attack": 65,
+    "defense": 107,
+    "special_attack": 105,
+    "special_defense": 107,
+    "speed": 86
+  },
+  "base_stat_total": 520,
+  "images": {
+    "normal": {
+      "file": "结冰洛托姆.png",
+      "source_url": "https://media.52poke.com/wiki/b/bd/Champions_0479F_Sprite.png",
+      "source_filename": "Champions_0479F_Sprite.png",
+      "sha256": "68d0916ada3e295689332caefe4c1df66f975b83cb4a207c7335e013ca74f927",
+      "width": 128,
+      "height": 128,
+      "bytes": 10041
+    },
+    "shiny": {
+      "file": "结冰洛托姆_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/d/d6/Champions_0479F_s_Sprite.png",
+      "source_filename": "Champions_0479F_s_Sprite.png",
+      "sha256": "a05e635b9bcb469a425e665159b191e3a000681d2451d4bfbd6365e7d272b089",
+      "width": 128,
+      "height": 128,
+      "bytes": 10206
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rotom-frost?format=double&season=M-5",
+    "raw_path": "_sources/details/rotom-frost.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

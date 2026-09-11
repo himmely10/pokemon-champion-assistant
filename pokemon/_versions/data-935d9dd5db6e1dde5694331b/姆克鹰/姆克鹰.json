@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "姆克鹰"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 485,
+  "base_stats": {
+    "attack": 120,
+    "defense": 70,
+    "hp": 85,
+    "special_attack": 50,
+    "special_defense": 60,
+    "speed": 100
+  },
+  "data_ready": true,
+  "dex_number": 398,
+  "directory": "姆克鹰",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14310,
+      "file": "姆克鹰.png",
+      "height": 128,
+      "sha256": "1468ac1c016fd392d8ead7c16a005bce90bbad0be76331e3fe61cdda0980a572",
+      "source_filename": "Champions_0398_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/64/Champions_0398_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14602,
+      "file": "姆克鹰_闪光.png",
+      "height": 128,
+      "sha256": "d164290fdb34f4394e06789ce72458ba6225df5e55c772571292406579f16bc2",
+      "source_filename": "Champions_0398_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/3c/Champions_0398_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:398:超级姆克鹰"
+  ],
+  "mega_item": null,
+  "name": "姆克鹰",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 398,
+  "opgg_key": "staraptor",
+  "recognition_ready": true,
+  "record_id": "legacy:398:姆克鹰",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "staraptor",
+  "species_name": "姆克鹰",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/staraptor"
+  },
+  "type_names": [
+    "一般",
+    "飞行"
+  ],
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/staraptor"
+  },
+  "wiki_name": "姆克鹰"
+}

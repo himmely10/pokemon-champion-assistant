@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 635,
+  "name": "三首恶龙",
+  "species_name": "三首恶龙",
+  "form_name": null,
+  "wiki_name": "三首恶龙",
+  "directory": "三首恶龙",
+  "source_slug": "hydreigon",
+  "base_stats": {
+    "hp": 92,
+    "attack": 105,
+    "defense": 90,
+    "special_attack": 125,
+    "special_defense": 90,
+    "speed": 98
+  },
+  "base_stat_total": 600,
+  "images": {
+    "normal": {
+      "file": "三首恶龙.png",
+      "source_url": "https://media.52poke.com/wiki/f/fd/Champions_0635_Sprite.png",
+      "source_filename": "Champions_0635_Sprite.png",
+      "sha256": "e33f6d925e27251dd4ec4531f70bd698ca103523445ee235408e38df7d2e612c",
+      "width": 128,
+      "height": 128,
+      "bytes": 17097
+    },
+    "shiny": {
+      "file": "三首恶龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/9/92/Champions_0635_s_Sprite.png",
+      "source_filename": "Champions_0635_s_Sprite.png",
+      "sha256": "74a8657b8c4349014c6b65542fe329e642a5e9cde22c9ad3726179ce29a2ff1b",
+      "width": 128,
+      "height": 128,
+      "bytes": 17410
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/hydreigon?format=double&season=M-5",
+    "raw_path": "_sources/details/hydreigon.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

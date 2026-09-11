@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 308,
+  "name": "恰雷姆",
+  "species_name": "恰雷姆",
+  "form_name": null,
+  "wiki_name": "恰雷姆",
+  "directory": "恰雷姆",
+  "source_slug": "medicham",
+  "base_stats": {
+    "hp": 60,
+    "attack": 60,
+    "defense": 75,
+    "special_attack": 60,
+    "special_defense": 75,
+    "speed": 80
+  },
+  "base_stat_total": 410,
+  "images": {
+    "normal": {
+      "file": "恰雷姆.png",
+      "source_url": "https://media.52poke.com/wiki/4/42/Champions_0308_Sprite.png",
+      "source_filename": "Champions_0308_Sprite.png",
+      "sha256": "33bd55ddc05808a968cc2d1ff4e3da1ee7a8e7cee4b91b65be411c26309fd5a7",
+      "width": 128,
+      "height": 128,
+      "bytes": 10995
+    },
+    "shiny": {
+      "file": "恰雷姆_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/d/d5/Champions_0308_s_Sprite.png",
+      "source_filename": "Champions_0308_s_Sprite.png",
+      "sha256": "2e87a0c4e0f7a02efd058483dc063d2d66aa241bf696bd9eec9128b0e6580181",
+      "width": 128,
+      "height": 128,
+      "bytes": 11275
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/medicham?format=double&season=M-5",
+    "raw_path": "_sources/details/medicham.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

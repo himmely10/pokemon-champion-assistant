@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 530,
+  "base_stats": {
+    "attack": 110,
+    "defense": 180,
+    "hp": 70,
+    "special_attack": 60,
+    "special_defense": 60,
+    "speed": 50
+  },
+  "dex_number": 306,
+  "directory": "波士可多拉",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 18101,
+      "file": "波士可多拉.png",
+      "height": 128,
+      "sha256": "c80ba5ce02182f294421972b71effa0bab1df9ab91572d1ee6fb14de235f3256",
+      "source_filename": "Champions_0306_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/0b/Champions_0306_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 19670,
+      "file": "波士可多拉_闪光.png",
+      "height": 128,
+      "sha256": "b1a08f4be21536c4dafc7e9dde39982ad800ab78735ef34cf55a3e36d25e9b76",
+      "source_filename": "Champions_0306_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/f4/Champions_0306_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "波士可多拉",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "aggron",
+  "species_name": "波士可多拉",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/aggron.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/aggron?format=double&season=M-5"
+  },
+  "wiki_name": "波士可多拉"
+}

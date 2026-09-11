@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 130,
+  "name": "暴鲤龙",
+  "species_name": "暴鲤龙",
+  "form_name": null,
+  "wiki_name": "暴鲤龙",
+  "directory": "暴鲤龙",
+  "source_slug": "gyarados",
+  "base_stats": {
+    "hp": 95,
+    "attack": 125,
+    "defense": 79,
+    "special_attack": 60,
+    "special_defense": 100,
+    "speed": 81
+  },
+  "base_stat_total": 540,
+  "images": {
+    "normal": {
+      "file": "暴鲤龙.png",
+      "source_url": "https://media.52poke.com/wiki/d/d2/Champions_0130_Sprite.png",
+      "source_filename": "Champions_0130_Sprite.png",
+      "sha256": "ae4104ec3c8af289f2f6d722e76eab7527778b7af3c7543729c915a97a637ce2",
+      "width": 128,
+      "height": 128,
+      "bytes": 20328
+    },
+    "shiny": {
+      "file": "暴鲤龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/86/Champions_0130_s_Sprite.png",
+      "source_filename": "Champions_0130_s_Sprite.png",
+      "sha256": "74531120de724e06930c93856e88a34c42efbb8b64976f0cefae534c8acf8d76",
+      "width": 128,
+      "height": 128,
+      "bytes": 20070
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gyarados?format=double&season=M-5",
+    "raw_path": "_sources/details/gyarados.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

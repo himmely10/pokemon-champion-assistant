@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "颤弦蝾螈 (高调的样子)"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 502,
+  "base_stats": {
+    "attack": 98,
+    "defense": 70,
+    "hp": 75,
+    "special_attack": 114,
+    "special_defense": 70,
+    "speed": 75
+  },
+  "data_ready": true,
+  "dex_number": 849,
+  "directory": "颤弦蝾螈（高调的样子）",
+  "form_name": "颤弦蝾螈（高调的样子）",
+  "images": {
+    "normal": {
+      "bytes": 12220,
+      "file": "颤弦蝾螈（高调的样子）.png",
+      "height": 128,
+      "sha256": "395695f0817af85025f826450b9610cd8d98c57a53592874663d1bffad90a608",
+      "source_filename": "Champions_0849_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/93/Champions_0849_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12167,
+      "file": "颤弦蝾螈（高调的样子）_闪光.png",
+      "height": 128,
+      "sha256": "566a4f3bd725f315aa28671e0fa6b715ad9207912f551078c3f4b563ab9d83d5",
+      "source_filename": "Champions_0849_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/92/Champions_0849_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "颤弦蝾螈（高调的样子）",
+  "name_source": "opgg_zh_cn",
+  "opgg_id": 849,
+  "opgg_key": "toxtricity-amped",
+  "recognition_ready": true,
+  "record_id": "opgg:toxtricity-amped",
+  "schema_version": 2,
+  "source_base_key": null,
+  "source_is_new": true,
+  "source_presence": "present",
+  "source_regulation": "M-C",
+  "source_slug": "toxtricity-amped",
+  "species_name": "颤弦蝾螈",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/toxtricity-amped"
+  },
+  "type_names": [
+    "电",
+    "毒"
+  ],
+  "types": [
+    "electric",
+    "poison"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/toxtricity-amped"
+  }
+}

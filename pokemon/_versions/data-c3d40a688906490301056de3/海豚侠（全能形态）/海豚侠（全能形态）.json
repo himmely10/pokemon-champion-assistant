@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 650,
+  "base_stats": {
+    "attack": 160,
+    "defense": 97,
+    "hp": 100,
+    "special_attack": 106,
+    "special_defense": 87,
+    "speed": 100
+  },
+  "dex_number": 964,
+  "directory": "海豚侠（全能形态）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "全能形态",
+  "images": {
+    "normal": {
+      "bytes": 14858,
+      "file": "海豚侠（全能形态）.png",
+      "height": 128,
+      "sha256": "7207aa7cd455bf97ad21c9986ef0dcc3990e3281d862be2e09a4b8c9119b609a",
+      "source_filename": "Champions_0964H_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/2d/Champions_0964H_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14654,
+      "file": "海豚侠（全能形态）_闪光.png",
+      "height": 128,
+      "sha256": "cbfefec70591f470b36b68caae1e9a4f9ef474b459d95b2ad6130d1cb752840f",
+      "source_filename": "Champions_0964H_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/89/Champions_0964H_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "海豚侠（全能形态）",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "palafin-hero",
+  "species_name": "海豚侠",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "alternateForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/palafin.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/palafin?format=double&season=M-5"
+  },
+  "wiki_name": "海豚侠（全能形态）"
+}

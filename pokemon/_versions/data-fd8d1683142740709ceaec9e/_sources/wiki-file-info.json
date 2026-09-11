@@ -1,0 +1,74 @@
+[
+  {
+    "response": {
+      "batchcomplete": "",
+      "query": {
+        "normalized": [
+          {
+            "from": "File:Champions_0045F_Sprite.png",
+            "to": "File:Champions 0045F Sprite.png"
+          },
+          {
+            "from": "File:Champions_0045F_s_Sprite.png",
+            "to": "File:Champions 0045F s Sprite.png"
+          },
+          {
+            "from": "File:Champions_0257F_Sprite.png",
+            "to": "File:Champions 0257F Sprite.png"
+          },
+          {
+            "from": "File:Champions_0257F_s_Sprite.png",
+            "to": "File:Champions 0257F s Sprite.png"
+          },
+          {
+            "from": "File:Champions_0398F_Sprite.png",
+            "to": "File:Champions 0398F Sprite.png"
+          },
+          {
+            "from": "File:Champions_0398F_s_Sprite.png",
+            "to": "File:Champions 0398F s Sprite.png"
+          }
+        ],
+        "pages": {
+          "-1": {
+            "imagerepository": "",
+            "missing": "",
+            "ns": 6,
+            "title": "File:Champions 0045F Sprite.png"
+          },
+          "-2": {
+            "imagerepository": "",
+            "missing": "",
+            "ns": 6,
+            "title": "File:Champions 0045F s Sprite.png"
+          },
+          "-3": {
+            "imagerepository": "",
+            "missing": "",
+            "ns": 6,
+            "title": "File:Champions 0257F Sprite.png"
+          },
+          "-4": {
+            "imagerepository": "",
+            "missing": "",
+            "ns": 6,
+            "title": "File:Champions 0257F s Sprite.png"
+          },
+          "-5": {
+            "imagerepository": "",
+            "missing": "",
+            "ns": 6,
+            "title": "File:Champions 0398F Sprite.png"
+          },
+          "-6": {
+            "imagerepository": "",
+            "missing": "",
+            "ns": 6,
+            "title": "File:Champions 0398F s Sprite.png"
+          }
+        }
+      }
+    },
+    "url": "https://wiki.52poke.com/api.php?action=query&format=json&titles=File%3AChampions_0045F_Sprite.png%7CFile%3AChampions_0045F_s_Sprite.png%7CFile%3AChampions_0257F_Sprite.png%7CFile%3AChampions_0257F_s_Sprite.png%7CFile%3AChampions_0398F_Sprite.png%7CFile%3AChampions_0398F_s_Sprite.png&prop=imageinfo&iiprop=url%7Csize"
+  }
+]

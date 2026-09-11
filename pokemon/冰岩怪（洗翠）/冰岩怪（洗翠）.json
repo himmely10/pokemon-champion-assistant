@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 713,
+  "name": "冰岩怪（洗翠）",
+  "species_name": "冰岩怪",
+  "form_name": "洗翠的样子",
+  "wiki_name": "冰岩怪（洗翠的样子）",
+  "directory": "冰岩怪（洗翠）",
+  "source_slug": "avalugg-hisui",
+  "base_stats": {
+    "hp": 95,
+    "attack": 127,
+    "defense": 184,
+    "special_attack": 34,
+    "special_defense": 36,
+    "speed": 38
+  },
+  "base_stat_total": 514,
+  "images": {
+    "normal": {
+      "file": "冰岩怪（洗翠）.png",
+      "source_url": "https://media.52poke.com/wiki/8/81/Champions_0713H_Sprite.png",
+      "source_filename": "Champions_0713H_Sprite.png",
+      "sha256": "25a6cd23a1981a05b8b9a571427acf3941d3d079411e960f326015f8515c8852",
+      "width": 128,
+      "height": 128,
+      "bytes": 13770
+    },
+    "shiny": {
+      "file": "冰岩怪（洗翠）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/6/67/Champions_0713H_s_Sprite.png",
+      "source_filename": "Champions_0713H_s_Sprite.png",
+      "sha256": "07aa8b5acc5a5e2367e7edc21e344a4b764abf61faa30fe210665c3a252822f0",
+      "width": 128,
+      "height": 128,
+      "bytes": 13757
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/avalugg-hisui?format=double&season=M-5",
+    "raw_path": "_sources/details/avalugg-hisui.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

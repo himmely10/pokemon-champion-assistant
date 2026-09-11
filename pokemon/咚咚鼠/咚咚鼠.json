@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 702,
+  "name": "咚咚鼠",
+  "species_name": "咚咚鼠",
+  "form_name": null,
+  "wiki_name": "咚咚鼠",
+  "directory": "咚咚鼠",
+  "source_slug": "dedenne",
+  "base_stats": {
+    "hp": 67,
+    "attack": 58,
+    "defense": 57,
+    "special_attack": 81,
+    "special_defense": 67,
+    "speed": 101
+  },
+  "base_stat_total": 431,
+  "images": {
+    "normal": {
+      "file": "咚咚鼠.png",
+      "source_url": "https://media.52poke.com/wiki/f/f1/Champions_0702_Sprite.png",
+      "source_filename": "Champions_0702_Sprite.png",
+      "sha256": "f9d8745c0d9c0877ee3f12d00f0569539a5bdd39b06c1a48d2fd67a06b04f043",
+      "width": 128,
+      "height": 128,
+      "bytes": 10132
+    },
+    "shiny": {
+      "file": "咚咚鼠_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/0/0a/Champions_0702_s_Sprite.png",
+      "source_filename": "Champions_0702_s_Sprite.png",
+      "sha256": "79ff8645fa024237642670d945244ebae4016bcf09767fd40cfc62f3b4b33274",
+      "width": 128,
+      "height": 128,
+      "bytes": 10104
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/dedenne?format=double&season=M-5",
+    "raw_path": "_sources/details/dedenne.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

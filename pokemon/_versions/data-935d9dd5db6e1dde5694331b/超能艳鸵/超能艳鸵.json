@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "超能艳鸵"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 481,
+  "base_stats": {
+    "attack": 60,
+    "defense": 60,
+    "hp": 95,
+    "special_attack": 101,
+    "special_defense": 60,
+    "speed": 105
+  },
+  "data_ready": true,
+  "dex_number": 956,
+  "directory": "超能艳鸵",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14917,
+      "file": "超能艳鸵.png",
+      "height": 128,
+      "sha256": "4e1810b5fa5075aa54d881bf7c6374f19dcf2fcb377fb515ee45e4f5b5bcccee",
+      "source_filename": "Champions_0956_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/3b/Champions_0956_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14718,
+      "file": "超能艳鸵_闪光.png",
+      "height": 128,
+      "sha256": "73665a747daf01ef42bf951b2dd4dac7c67fc27a46dc97c42f099f717968fd56",
+      "source_filename": "Champions_0956_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/9d/Champions_0956_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "超能艳鸵",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 956,
+  "opgg_key": "espathra",
+  "recognition_ready": true,
+  "record_id": "legacy:956:超能艳鸵",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "espathra",
+  "species_name": "超能艳鸵",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/espathra"
+  },
+  "type_names": [
+    "超能力"
+  ],
+  "types": [
+    "psychic"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/espathra"
+  },
+  "wiki_name": "超能艳鸵"
+}

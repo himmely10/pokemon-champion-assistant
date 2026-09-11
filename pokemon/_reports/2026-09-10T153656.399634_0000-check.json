@@ -1,0 +1,5036 @@
+{
+  "active_bundle": "legacy",
+  "added": [
+    {
+      "dex_number": 40,
+      "name": "胖可丁",
+      "opgg_key": "wigglytuff"
+    },
+    {
+      "dex_number": 45,
+      "name": "霸王花（雌性）",
+      "opgg_key": "vileplume-female"
+    },
+    {
+      "dex_number": 53,
+      "name": "猫老大",
+      "opgg_key": "persian"
+    },
+    {
+      "dex_number": 53,
+      "name": "猫老大（阿罗拉）",
+      "opgg_key": "persian-alolan"
+    },
+    {
+      "dex_number": 83,
+      "name": "大葱鸭",
+      "opgg_key": "farfetchd"
+    },
+    {
+      "dex_number": 122,
+      "name": "魔墙人偶",
+      "opgg_key": "mr-mime"
+    },
+    {
+      "dex_number": 257,
+      "name": "火焰鸡（雌性）",
+      "opgg_key": "blaziken-female"
+    },
+    {
+      "dex_number": 317,
+      "name": "吞食兽",
+      "opgg_key": "swalot"
+    },
+    {
+      "dex_number": 359,
+      "name": "超级阿勃梭鲁Z",
+      "opgg_key": "mega-absol-z"
+    },
+    {
+      "dex_number": 373,
+      "name": "暴飞龙",
+      "opgg_key": "salamence"
+    },
+    {
+      "dex_number": 373,
+      "name": "超级暴飞龙",
+      "opgg_key": "mega-salamence"
+    },
+    {
+      "dex_number": 398,
+      "name": "姆克鹰（雌性）",
+      "opgg_key": "staraptor-female"
+    },
+    {
+      "dex_number": 445,
+      "name": "超级烈咬陆鲨Z",
+      "opgg_key": "mega-garchomp-z"
+    },
+    {
+      "dex_number": 448,
+      "name": "超级路卡利欧Z",
+      "opgg_key": "mega-lucario-z"
+    },
+    {
+      "dex_number": 673,
+      "name": "坐骑山羊",
+      "opgg_key": "gogoat"
+    },
+    {
+      "dex_number": 768,
+      "name": "具甲武者",
+      "opgg_key": "golisopod"
+    },
+    {
+      "dex_number": 768,
+      "name": "超级具甲武者",
+      "opgg_key": "mega-golisopod"
+    },
+    {
+      "dex_number": 812,
+      "name": "轰擂金刚猩",
+      "opgg_key": "rillaboom"
+    },
+    {
+      "dex_number": 815,
+      "name": "闪焰王牌",
+      "opgg_key": "cinderace"
+    },
+    {
+      "dex_number": 818,
+      "name": "千面避役",
+      "opgg_key": "inteleon"
+    },
+    {
+      "dex_number": 828,
+      "name": "猾大狐",
+      "opgg_key": "thievul"
+    },
+    {
+      "dex_number": 849,
+      "name": "颤弦蝾螈（高调的样子）",
+      "opgg_key": "toxtricity-amped"
+    },
+    {
+      "dex_number": 849,
+      "name": "颤弦蝾螈（低调的样子）",
+      "opgg_key": "toxtricity-low-key"
+    },
+    {
+      "dex_number": 853,
+      "name": "八爪武师",
+      "opgg_key": "grapploct"
+    },
+    {
+      "dex_number": 863,
+      "name": "喵头目",
+      "opgg_key": "perrserker"
+    },
+    {
+      "dex_number": 865,
+      "name": "葱游兵",
+      "opgg_key": "sirfetchd"
+    },
+    {
+      "dex_number": 871,
+      "name": "啪嚓海胆",
+      "opgg_key": "pincurchin"
+    },
+    {
+      "dex_number": 876,
+      "name": "爱管侍（雄性的样子）",
+      "opgg_key": "indeedee-male"
+    },
+    {
+      "dex_number": 876,
+      "name": "爱管侍（雌性的样子）",
+      "opgg_key": "indeedee-female"
+    },
+    {
+      "dex_number": 930,
+      "name": "奥利瓦",
+      "opgg_key": "arboliva"
+    },
+    {
+      "dex_number": 931,
+      "name": "怒鹦哥（绿羽毛）",
+      "opgg_key": "squawkabilly-green-plumage"
+    },
+    {
+      "dex_number": 931,
+      "name": "怒鹦哥（蓝羽毛）",
+      "opgg_key": "squawkabilly-blue-plumage"
+    },
+    {
+      "dex_number": 931,
+      "name": "怒鹦哥（黄羽毛）",
+      "opgg_key": "squawkabilly-yellow-plumage"
+    },
+    {
+      "dex_number": 931,
+      "name": "怒鹦哥（白羽毛）",
+      "opgg_key": "squawkabilly-white-plumage"
+    },
+    {
+      "dex_number": 943,
+      "name": "獒教父",
+      "opgg_key": "mabosstiff"
+    },
+    {
+      "dex_number": 998,
+      "name": "戟脊龙",
+      "opgg_key": "baxcalibur"
+    },
+    {
+      "dex_number": 998,
+      "name": "超级戟脊龙",
+      "opgg_key": "mega-baxcalibur"
+    }
+  ],
+  "changed": [
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "妙蛙花"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级妙蛙花"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "喷火龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级喷火龙X"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级喷火龙Y"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "水箭龟"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级水箭龟"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "大针蜂"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级大针蜂"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "大比鸟"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级大比鸟"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "阿柏怪"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "皮卡丘"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "雷丘"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "雷丘（阿罗拉）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "皮可西"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级皮可西"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "九尾"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "九尾（阿罗拉）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "风速狗"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "风速狗（洗翠）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "胡地"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级胡地"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "怪力"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "大食花"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级大食花"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "呆壳兽"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "呆壳兽（伽勒尔）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级呆壳兽"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "耿鬼"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级耿鬼"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "袋兽"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级袋兽"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "宝石海星"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级宝石海星"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "凯罗斯"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级凯罗斯"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "肯泰罗"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "肯泰罗（水澜种）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "肯泰罗（火炽种）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "肯泰罗（斗战种）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "暴鲤龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级暴鲤龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "百变怪"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "水伊布"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "雷伊布"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "火伊布"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "化石翼龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级化石翼龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "卡比兽"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "快龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级快龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "大竺葵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级大竺葵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "火暴兽"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "火暴兽（洗翠）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "大力鳄"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级大力鳄"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "阿利多斯"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "电龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级电龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "玛力露丽"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "蚊香蛙皇"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "太阳伊布"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "月亮伊布"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "呆呆王"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "呆呆王（伽勒尔）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "佛烈托斯"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "大钢蛇"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级大钢蛇"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "巨钳螳螂"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级巨钳螳螂"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "赫拉克罗斯"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级赫拉克罗斯"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "盔甲鸟"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级盔甲鸟"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "黑鲁加"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级黑鲁加"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "班基拉斯"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级班基拉斯"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "大嘴鸥"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "沙奈朵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级沙奈朵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "勾魂眼"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级勾魂眼"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "波士可多拉"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级波士可多拉"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "恰雷姆"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级恰雷姆"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "雷电兽"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级雷电兽"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "巨牙鲨"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级巨牙鲨"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "喷火驼"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级喷火驼"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "煤炭龟"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "七夕青鸟"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级七夕青鸟"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "美纳斯"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "飘浮泡泡（飘浮泡泡的样子）"
+    },
+    {
+      "fields": [
+        "mega_form_ids",
+        "recognition_ready",
+        "source_presence",
+        "types_ready"
+      ],
+      "name": "飘浮泡泡（雨水的样子）"
+    },
+    {
+      "fields": [
+        "mega_form_ids",
+        "recognition_ready",
+        "source_presence",
+        "types_ready"
+      ],
+      "name": "飘浮泡泡（太阳的样子）"
+    },
+    {
+      "fields": [
+        "mega_form_ids",
+        "recognition_ready",
+        "source_presence",
+        "types_ready"
+      ],
+      "name": "飘浮泡泡（雪云的样子）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "诅咒娃娃"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级诅咒娃娃"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "风铃铃"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级风铃铃"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "阿勃梭鲁"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级阿勃梭鲁"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "冰鬼护"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级冰鬼护"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "土台龟"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "烈焰猴"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "帝王拿波"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "伦琴猫"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "罗丝雷朵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "战槌龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "护城龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "长耳兔"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级长耳兔"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "花岩怪"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "烈咬陆鲨"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级烈咬陆鲨"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "路卡利欧"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级路卡利欧"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "河马兽"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "毒骷蛙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "暴雪王"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级暴雪王"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "玛狃拉"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超甲狂犀"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "叶伊布"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "冰伊布"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "天蝎王"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "象牙猪"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "艾路雷朵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级艾路雷朵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "雪妖女"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级雪妖女"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "洛托姆（洛托姆的样子）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "结冰洛托姆"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "旋转洛托姆"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "加热洛托姆"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "切割洛托姆"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "清洗洛托姆"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "君主蛇"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "炎武王"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级炎武王"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "大剑鬼"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "大剑鬼（洗翠）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "步哨鼠"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "酷豹"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "花椰猿"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "爆香猿"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "冷水猿"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "龙头地鼠"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级龙头地鼠"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "差不多娃娃"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级差不多娃娃"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "修建老匠"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "风妖精"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "流氓鳄"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "死神棺"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "灰尘山"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "索罗亚克"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "索罗亚克（洗翠）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "人造细胞卵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "双倍多多冰"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "电飞鼠"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "水晶灯火灵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级水晶灯火灵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "冻原熊"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "泥巴鱼"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "泥巴鱼（伽勒尔）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "泥偶巨人"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级泥偶巨人"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "三首恶龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "火神蛾"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "布里卡隆"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级布里卡隆"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "妖火红狐"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级妖火红狐"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "甲贺忍蛙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级甲贺忍蛙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "掘地兔"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "烈箭鹰"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（花园花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（群岛花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（大陆花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（高雅花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（幻彩花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（庭园花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（荒野花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（冰雪花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（热带雨林花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（大海花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（摩登花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（骤雨花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（大洋花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（球球花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（雪国花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（大河花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（沙尘花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（热带草原花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（太阳花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "彩粉蝶（雪原花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "花叶蒂（永恒之花）"
+    },
+    {
+      "fields": [
+        "mega_form_ids",
+        "recognition_ready",
+        "source_presence",
+        "types_ready"
+      ],
+      "name": "超级花叶蒂"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "花洁夫人（红花）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "花洁夫人（蓝花）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "花洁夫人（橙花）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "花洁夫人（白花）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "花洁夫人（黄花）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "流氓熊猫"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "多丽米亚（野生的样子）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "多丽米亚（绅士造型）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "多丽米亚（淑女造型）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "多丽米亚（菱形造型）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "多丽米亚（心形造型）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "多丽米亚（歌舞伎造型）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "多丽米亚（女王造型）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "多丽米亚（贵妇造型）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "多丽米亚（国王造型）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "多丽米亚（星形造型）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超能妙喵（雄性的样子）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超能妙喵（雌性）"
+    },
+    {
+      "fields": [
+        "mega_form_ids",
+        "recognition_ready",
+        "source_presence",
+        "types_ready"
+      ],
+      "name": "超级超能妙喵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "坚盾剑怪（盾牌形态）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "坚盾剑怪（刀剑形态）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "芳香精"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "胖甜妮"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "钢炮臂虾"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "光电伞蜥"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "怪颚龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "冰雪巨龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "仙子伊布"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "摔角鹰人"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级摔角鹰人"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "咚咚鼠"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "黏美龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "黏美龙（洗翠）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "钥圈儿"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "朽木妖"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "南瓜怪人（中颗种）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "南瓜怪人（特大尺寸）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "南瓜怪人（大尺寸）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "南瓜怪人（小尺寸）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "冰岩怪"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "冰岩怪（洗翠）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "音波龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "狙射树枭"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "狙射树枭（洗翠）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "炽焰咆哮虎"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "西狮海壬"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "铳嘴大鸟"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "好胜毛蟹"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级好胜毛蟹"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "鬃岩狼人（白昼的样子）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "鬃岩狼人（黑夜的样子）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "鬃岩狼人（黄昏的样子）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超坏星"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "重泥挽马"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "滴蛛霸"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "焰后蜥"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "甜冷美后"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "智挥猩"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "投掷猴"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "谜拟Ｑ（化形的样子）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "老翁龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级老翁龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "杖尾鳞甲龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "钢铠鸦"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "苹裹龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "丰蜜龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "沙螺蟒"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "怖思壶（赝品形态）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "怖思壶（真品形态）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "布莉姆温"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "踏冰人偶"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "死神板"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "霜奶仙（奶香香草）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "霜奶仙（焦糖综合）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "霜奶仙（奶香柠檬）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "霜奶仙（奶香抹茶）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "霜奶仙（奶香薄荷）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "霜奶仙（三色综合）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "霜奶仙（奶香红钻）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "霜奶仙（红钻综合）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "霜奶仙（奶香雪盐）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "莫鲁贝可（满腹花纹）"
+    },
+    {
+      "fields": [
+        "mega_form_ids",
+        "recognition_ready",
+        "source_presence",
+        "types_ready"
+      ],
+      "name": "莫鲁贝可（空腹花纹）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "多龙巴鲁托"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "诡角鹿"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "劈斧螳螂"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "幽尾玄鱼（雄性的样子）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "幽尾玄鱼（雌性）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "大狃拉"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "魔幻假面喵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "骨纹巨声鳄"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "狂欢浪舞鸭"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "巴布土拨"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "一家鼠（四只家庭）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "一家鼠（三只家庭）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "盐石巨灵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "红莲铠骑"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "苍炎刃鬼"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "电肚蛙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "狠辣椒"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级狠辣椒"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超能艳鸵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "巨锻匠"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "海豚侠（平凡形态）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "海豚侠（全能形态）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "拖拖蚓"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "晶光花"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级晶光花"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "奇麒麟"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "仆斩将军"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "来悲粗茶（凡作的样子）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "来悲粗茶（杰作的样子）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "铝钢桥龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "蜜集大蛇"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级雷丘X"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级雷丘Y"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "霸王花"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "千针鱼"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "蜥蜴王"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级蜥蜴王"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "火焰鸡"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级火焰鸡"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "巨沼怪"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级巨沼怪"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "大嘴娃"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级大嘴娃"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "巨金怪"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级巨金怪"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "姆克鹰"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级姆克鹰"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "梦梦蚀"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "蜈蚣王"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级蜈蚣王"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "头巾混混"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级头巾混混"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "麻麻鳗鱼王"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级麻麻鳗鱼王"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "火炎狮（雄性的样子）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "火炎狮（雌性的样子）"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级火炎狮"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "乌贼王"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级乌贼王"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "龟足巨铠"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级龟足巨铠"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "毒藻龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级毒藻龙"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "长毛巨魔"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "列阵兵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "超级列阵兵"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "万针鱼"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "墓扬犬"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "弃世猴"
+    },
+    {
+      "fields": [
+        "aliases",
+        "mega_form_ids",
+        "opgg_key",
+        "recognition_ready",
+        "source_presence",
+        "source_regulation",
+        "types",
+        "types_ready"
+      ],
+      "name": "赛富豪"
+    }
+  ],
+  "checked_at": "2026-09-10T15:36:56.399634+00:00",
+  "conflicts": [],
+  "download_available": [],
+  "has_changes": true,
+  "http": [],
+  "image_source_changes": [],
+  "large_removal": false,
+  "missing_source": [
+    "飘浮泡泡（雨水的样子）",
+    "飘浮泡泡（太阳的样子）",
+    "飘浮泡泡（雪云的样子）",
+    "超级花叶蒂",
+    "超级超能妙喵",
+    "莫鲁贝可（空腹花纹）"
+  ],
+  "new_species": [
+    {
+      "dex_number": 40,
+      "name": "胖可丁"
+    },
+    {
+      "dex_number": 53,
+      "name": "猫老大"
+    },
+    {
+      "dex_number": 83,
+      "name": "大葱鸭"
+    },
+    {
+      "dex_number": 122,
+      "name": "魔墙人偶"
+    },
+    {
+      "dex_number": 317,
+      "name": "吞食兽"
+    },
+    {
+      "dex_number": 373,
+      "name": "暴飞龙"
+    },
+    {
+      "dex_number": 673,
+      "name": "坐骑山羊"
+    },
+    {
+      "dex_number": 768,
+      "name": "具甲武者"
+    },
+    {
+      "dex_number": 812,
+      "name": "轰擂金刚猩"
+    },
+    {
+      "dex_number": 815,
+      "name": "闪焰王牌"
+    },
+    {
+      "dex_number": 818,
+      "name": "千面避役"
+    },
+    {
+      "dex_number": 828,
+      "name": "猾大狐"
+    },
+    {
+      "dex_number": 849,
+      "name": "颤弦蝾螈"
+    },
+    {
+      "dex_number": 853,
+      "name": "八爪武师"
+    },
+    {
+      "dex_number": 863,
+      "name": "喵头目"
+    },
+    {
+      "dex_number": 865,
+      "name": "葱游兵"
+    },
+    {
+      "dex_number": 871,
+      "name": "啪嚓海胆"
+    },
+    {
+      "dex_number": 876,
+      "name": "爱管侍"
+    },
+    {
+      "dex_number": 930,
+      "name": "奥利瓦"
+    },
+    {
+      "dex_number": 931,
+      "name": "怒鹦哥"
+    },
+    {
+      "dex_number": 943,
+      "name": "獒教父"
+    },
+    {
+      "dex_number": 998,
+      "name": "戟脊龙"
+    }
+  ],
+  "note": "来源规则标签不等于当前赛季合法性；未列出的历史条目保留，不自动退签或删除。",
+  "operation": "check",
+  "pending_assets": [
+    "胖可丁",
+    "霸王花（雌性）",
+    "猫老大",
+    "猫老大（阿罗拉）",
+    "大葱鸭",
+    "魔墙人偶",
+    "火焰鸡（雌性）",
+    "吞食兽",
+    "超级阿勃梭鲁Z",
+    "暴飞龙",
+    "超级暴飞龙",
+    "姆克鹰（雌性）",
+    "超级烈咬陆鲨Z",
+    "超级路卡利欧Z",
+    "坐骑山羊",
+    "具甲武者",
+    "超级具甲武者",
+    "轰擂金刚猩",
+    "闪焰王牌",
+    "千面避役",
+    "猾大狐",
+    "颤弦蝾螈（高调的样子）",
+    "颤弦蝾螈（低调的样子）",
+    "八爪武师",
+    "喵头目",
+    "葱游兵",
+    "啪嚓海胆",
+    "爱管侍（雄性的样子）",
+    "爱管侍（雌性的样子）",
+    "奥利瓦",
+    "怒鹦哥（绿羽毛）",
+    "怒鹦哥（蓝羽毛）",
+    "怒鹦哥（黄羽毛）",
+    "怒鹦哥（白羽毛）",
+    "獒教父",
+    "戟脊龙",
+    "超级戟脊龙"
+  ],
+  "removed_candidate": [],
+  "requested_battle_format": "double",
+  "source_count": 352,
+  "source_is_new_count": 35,
+  "source_mode": "offline_snapshot",
+  "source_regulations": [
+    "M-A",
+    "M-B",
+    "M-C"
+  ],
+  "source_urls": [
+    "https://op.gg/zh-cn/pokemon-champions/pokedex",
+    "https://wiki.52poke.com/zh-hans/宝可梦列表（Champions）"
+  ],
+  "source_version": "9557d7a1ef56451a9936a2f97ef8ab89b92bf647e618af7fba203122dffd42fb",
+  "statistics_included": false,
+  "status": "changes_available",
+  "unmapped": [
+    {
+      "key": "mega-floette",
+      "name": "超级花叶蒂",
+      "reason": "unknown_species_or_form_mapping"
+    },
+    {
+      "key": "mega-meowstic",
+      "name": "超级超能妙喵",
+      "reason": "unknown_species_or_form_mapping"
+    }
+  ]
+}

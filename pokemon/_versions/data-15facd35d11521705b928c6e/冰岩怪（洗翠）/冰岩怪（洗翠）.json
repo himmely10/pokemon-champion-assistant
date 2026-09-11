@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "冰岩怪"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 514,
+  "base_stats": {
+    "attack": 127,
+    "defense": 184,
+    "hp": 95,
+    "special_attack": 34,
+    "special_defense": 36,
+    "speed": 38
+  },
+  "data_ready": true,
+  "dex_number": 713,
+  "directory": "冰岩怪（洗翠）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "洗翠的样子",
+  "images": {
+    "normal": {
+      "bytes": 13770,
+      "file": "冰岩怪（洗翠）.png",
+      "height": 128,
+      "sha256": "25a6cd23a1981a05b8b9a571427acf3941d3d079411e960f326015f8515c8852",
+      "source_filename": "Champions_0713H_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/81/Champions_0713H_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13757,
+      "file": "冰岩怪（洗翠）_闪光.png",
+      "height": 128,
+      "sha256": "07aa8b5acc5a5e2367e7edc21e344a4b764abf61faa30fe210665c3a252822f0",
+      "source_filename": "Champions_0713H_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/67/Champions_0713H_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "冰岩怪（洗翠）",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10243,
+  "opgg_key": "avalugg-hisui",
+  "recognition_ready": true,
+  "record_id": "legacy:713:冰岩怪（洗翠）",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "avalugg-hisui",
+  "species_name": "冰岩怪",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/avalugg-hisui"
+  },
+  "type_names": [
+    "冰",
+    "岩石"
+  ],
+  "types": [
+    "ice",
+    "rock"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/avalugg-hisui"
+  },
+  "wiki_name": "冰岩怪（洗翠的样子）"
+}

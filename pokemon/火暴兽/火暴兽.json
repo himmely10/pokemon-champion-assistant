@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 157,
+  "name": "火暴兽",
+  "species_name": "火暴兽",
+  "form_name": null,
+  "wiki_name": "火暴兽",
+  "directory": "火暴兽",
+  "source_slug": "typhlosion",
+  "base_stats": {
+    "hp": 78,
+    "attack": 84,
+    "defense": 78,
+    "special_attack": 109,
+    "special_defense": 85,
+    "speed": 100
+  },
+  "base_stat_total": 534,
+  "images": {
+    "normal": {
+      "file": "火暴兽.png",
+      "source_url": "https://media.52poke.com/wiki/d/d1/Champions_0157_Sprite.png",
+      "source_filename": "Champions_0157_Sprite.png",
+      "sha256": "0614acec33c547f01cb77085c24f3825716cd636055519746a7320450c12a926",
+      "width": 128,
+      "height": 128,
+      "bytes": 15582
+    },
+    "shiny": {
+      "file": "火暴兽_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/e/ed/Champions_0157_s_Sprite.png",
+      "source_filename": "Champions_0157_s_Sprite.png",
+      "sha256": "a27ecc9c704ef20c75b96e8f75c1d8e0f0aaf1303a7601e23ccc883f60a2860e",
+      "width": 128,
+      "height": 128,
+      "bytes": 15636
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/typhlosion?format=double&season=M-5",
+    "raw_path": "_sources/details/typhlosion.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 600,
+  "base_stats": {
+    "attack": 100,
+    "defense": 100,
+    "hp": 80,
+    "special_attack": 110,
+    "special_defense": 150,
+    "speed": 60
+  },
+  "dex_number": 706,
+  "directory": "黏美龙（洗翠）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "洗翠的样子",
+  "images": {
+    "normal": {
+      "bytes": 12161,
+      "file": "黏美龙（洗翠）.png",
+      "height": 128,
+      "sha256": "a573f4dc5746dbd7294b90707313170a2da46e1b531f7ec35b5c9974505ac6e8",
+      "source_filename": "Champions_0706H_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/56/Champions_0706H_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12310,
+      "file": "黏美龙（洗翠）_闪光.png",
+      "height": 128,
+      "sha256": "fc548a1cb5be0b2001aee603976723e672dd3455eeb2a0098bfc555f91f4c9f9",
+      "source_filename": "Champions_0706H_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/04/Champions_0706H_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "黏美龙（洗翠）",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "goodra-hisui",
+  "species_name": "黏美龙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/goodra-hisui.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/goodra-hisui?format=double&season=M-5"
+  },
+  "wiki_name": "黏美龙（洗翠的样子）"
+}

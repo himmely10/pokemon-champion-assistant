@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 154,
+  "name": "超级大竺葵",
+  "species_name": "大竺葵",
+  "form_name": "超级大竺葵",
+  "wiki_name": "超级大竺葵",
+  "directory": "超级大竺葵",
+  "source_slug": "meganium-mega",
+  "base_stats": {
+    "hp": 80,
+    "attack": 92,
+    "defense": 115,
+    "special_attack": 143,
+    "special_defense": 115,
+    "speed": 80
+  },
+  "base_stat_total": 625,
+  "images": {
+    "normal": {
+      "file": "超级大竺葵.png",
+      "source_url": "https://media.52poke.com/wiki/b/b6/Champions_0154M_Sprite.png",
+      "source_filename": "Champions_0154M_Sprite.png",
+      "sha256": "ae0fb4e27636d21df6880d5ba376ac374318bc8dec1505c74da7f8efb4da7cbe",
+      "width": 128,
+      "height": 128,
+      "bytes": 18218
+    },
+    "shiny": {
+      "file": "超级大竺葵_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/c/c0/Champions_0154M_s_Sprite.png",
+      "source_filename": "Champions_0154M_s_Sprite.png",
+      "sha256": "bf412b534f93cd117733e6d848ead43c5eb7b60e8f893edee10b3903943f4457",
+      "width": 128,
+      "height": 128,
+      "bytes": 18154
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/meganium?format=double&season=M-5",
+    "raw_path": "_sources/details/meganium.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

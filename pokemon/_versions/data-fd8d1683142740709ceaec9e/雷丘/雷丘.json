@@ -1,0 +1,78 @@
+{
+  "aliases": [
+    "雷丘"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 485,
+  "base_stats": {
+    "attack": 90,
+    "defense": 55,
+    "hp": 60,
+    "special_attack": 90,
+    "special_defense": 80,
+    "speed": 110
+  },
+  "data_ready": true,
+  "dex_number": 26,
+  "directory": "雷丘",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14296,
+      "file": "雷丘.png",
+      "height": 128,
+      "sha256": "878e098a1d6d83dc07dc356a155f66f4cd5a4dfbd39865f3dd16dee45db4bac9",
+      "source_filename": "Champions_0026_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/78/Champions_0026_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14616,
+      "file": "雷丘_闪光.png",
+      "height": 128,
+      "sha256": "4c2011aa41336e9627bae8680af8ee9ace93916fe9f69072840dbbe2fa0d5bb0",
+      "source_filename": "Champions_0026_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b8/Champions_0026_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:26:超级雷丘X",
+    "legacy:26:超级雷丘Y"
+  ],
+  "mega_item": null,
+  "name": "雷丘",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 26,
+  "opgg_key": "raichu",
+  "recognition_ready": true,
+  "record_id": "legacy:26:雷丘",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "raichu",
+  "species_name": "雷丘",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/raichu"
+  },
+  "type_names": [
+    "电"
+  ],
+  "types": [
+    "electric"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/raichu"
+  },
+  "wiki_name": "雷丘"
+}

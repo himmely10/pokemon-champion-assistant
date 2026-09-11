@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 461,
+  "name": "玛狃拉",
+  "species_name": "玛狃拉",
+  "form_name": null,
+  "wiki_name": "玛狃拉",
+  "directory": "玛狃拉",
+  "source_slug": "weavile",
+  "base_stats": {
+    "hp": 70,
+    "attack": 120,
+    "defense": 65,
+    "special_attack": 45,
+    "special_defense": 85,
+    "speed": 125
+  },
+  "base_stat_total": 510,
+  "images": {
+    "normal": {
+      "file": "玛狃拉.png",
+      "source_url": "https://media.52poke.com/wiki/2/29/Champions_0461_Sprite.png",
+      "source_filename": "Champions_0461_Sprite.png",
+      "sha256": "b61933ad30af89f926d800aef4bd9e81fb7556b26d852b6fe1cbd1d217f0a10d",
+      "width": 128,
+      "height": 128,
+      "bytes": 15071
+    },
+    "shiny": {
+      "file": "玛狃拉_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/3/30/Champions_0461_s_Sprite.png",
+      "source_filename": "Champions_0461_s_Sprite.png",
+      "sha256": "e014f2499fd65163fa19b34cd985ba9dfef1d6562fa4e47c021219f2c49e987c",
+      "width": 128,
+      "height": 128,
+      "bytes": 15628
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/weavile?format=double&season=M-5",
+    "raw_path": "_sources/details/weavile.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

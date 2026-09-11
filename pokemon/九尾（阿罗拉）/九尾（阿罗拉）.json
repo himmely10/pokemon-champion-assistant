@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 38,
+  "name": "九尾（阿罗拉）",
+  "species_name": "九尾",
+  "form_name": "阿罗拉的样子",
+  "wiki_name": "九尾（阿罗拉的样子）",
+  "directory": "九尾（阿罗拉）",
+  "source_slug": "ninetales-alola",
+  "base_stats": {
+    "hp": 73,
+    "attack": 67,
+    "defense": 75,
+    "special_attack": 81,
+    "special_defense": 100,
+    "speed": 109
+  },
+  "base_stat_total": 505,
+  "images": {
+    "normal": {
+      "file": "九尾（阿罗拉）.png",
+      "source_url": "https://media.52poke.com/wiki/0/01/Champions_0038A_Sprite.png",
+      "source_filename": "Champions_0038A_Sprite.png",
+      "sha256": "7ae19bee837c1f7659fa6f23896032b5dd266cde4b077857a175ddabc26942d8",
+      "width": 128,
+      "height": 128,
+      "bytes": 14600
+    },
+    "shiny": {
+      "file": "九尾（阿罗拉）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/c/c2/Champions_0038A_s_Sprite.png",
+      "source_filename": "Champions_0038A_s_Sprite.png",
+      "sha256": "65194105718a6f0e9516f399c25e903c872e13704f2550f0d68e04659a6154b8",
+      "width": 128,
+      "height": 128,
+      "bytes": 14666
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/ninetales-alola?format=double&season=M-5",
+    "raw_path": "_sources/details/ninetales-alola.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

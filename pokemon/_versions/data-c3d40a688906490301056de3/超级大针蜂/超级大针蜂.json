@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 495,
+  "base_stats": {
+    "attack": 150,
+    "defense": 40,
+    "hp": 65,
+    "special_attack": 15,
+    "special_defense": 80,
+    "speed": 145
+  },
+  "dex_number": 15,
+  "directory": "超级大针蜂",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级大针蜂",
+  "images": {
+    "normal": {
+      "bytes": 18162,
+      "file": "超级大针蜂.png",
+      "height": 128,
+      "sha256": "9533d1ff2ebc39c668838959c1c8fab87c729507a2c90d5fcadada6f76a3066f",
+      "source_filename": "Champions_0015M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/2b/Champions_0015M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 18296,
+      "file": "超级大针蜂_闪光.png",
+      "height": 128,
+      "sha256": "0ce66510d5901ef99e1ee0a3de6e4c2555919710db8a021653f9f11a7ee64014",
+      "source_filename": "Champions_0015M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/5a/Champions_0015M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超级大针蜂",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "beedrill-mega",
+  "species_name": "大针蜂",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "megaForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/beedrill.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/beedrill?format=double&season=M-5"
+  },
+  "wiki_name": "超级大针蜂"
+}

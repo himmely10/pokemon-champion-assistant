@@ -1,0 +1,80 @@
+{
+  "aliases": [
+    "烈咬陆鲨"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 600,
+  "base_stats": {
+    "attack": 130,
+    "defense": 95,
+    "hp": 108,
+    "special_attack": 80,
+    "special_defense": 85,
+    "speed": 102
+  },
+  "data_ready": true,
+  "dex_number": 445,
+  "directory": "烈咬陆鲨",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 19758,
+      "file": "烈咬陆鲨.png",
+      "height": 128,
+      "sha256": "498cc49476340e461e2e4122fdc7b33495b271c63ac436209146f82e07f7f7fb",
+      "source_filename": "Champions_0445_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/cb/Champions_0445_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 18679,
+      "file": "烈咬陆鲨_闪光.png",
+      "height": 128,
+      "sha256": "d965e846735498d1d60e5f9b187972063d06926fbee7f2b4e7c75b31c0642789",
+      "source_filename": "Champions_0445_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/e5/Champions_0445_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:445:超级烈咬陆鲨",
+    "opgg:mega-garchomp-z"
+  ],
+  "mega_item": null,
+  "name": "烈咬陆鲨",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 445,
+  "opgg_key": "garchomp",
+  "recognition_ready": true,
+  "record_id": "legacy:445:烈咬陆鲨",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "garchomp",
+  "species_name": "烈咬陆鲨",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/garchomp"
+  },
+  "type_names": [
+    "龙",
+    "地面"
+  ],
+  "types": [
+    "dragon",
+    "ground"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/garchomp"
+  },
+  "wiki_name": "烈咬陆鲨"
+}

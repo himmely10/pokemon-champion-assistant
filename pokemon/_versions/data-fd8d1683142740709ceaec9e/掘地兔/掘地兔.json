@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "掘地兔"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 423,
+  "base_stats": {
+    "attack": 56,
+    "defense": 77,
+    "hp": 85,
+    "special_attack": 50,
+    "special_defense": 77,
+    "speed": 78
+  },
+  "data_ready": true,
+  "dex_number": 660,
+  "directory": "掘地兔",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 13912,
+      "file": "掘地兔.png",
+      "height": 128,
+      "sha256": "e183e7933011e12dc40a24edffbbaacdf7be05b8839374c089ea3480393d4fad",
+      "source_filename": "Champions_0660_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/e1/Champions_0660_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13844,
+      "file": "掘地兔_闪光.png",
+      "height": 128,
+      "sha256": "58ac7a0fd473909a88c7086dc6428f44cf5d3f9174d728c3c33a7e26a4699be0",
+      "source_filename": "Champions_0660_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/ce/Champions_0660_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "掘地兔",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 660,
+  "opgg_key": "diggersby",
+  "recognition_ready": true,
+  "record_id": "legacy:660:掘地兔",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "diggersby",
+  "species_name": "掘地兔",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/diggersby"
+  },
+  "type_names": [
+    "一般",
+    "地面"
+  ],
+  "types": [
+    "normal",
+    "ground"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/diggersby"
+  },
+  "wiki_name": "掘地兔"
+}

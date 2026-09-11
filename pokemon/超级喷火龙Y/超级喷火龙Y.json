@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 6,
+  "name": "超级喷火龙Y",
+  "species_name": "喷火龙",
+  "form_name": "超级喷火龙Y",
+  "wiki_name": "超级喷火龙Y",
+  "directory": "超级喷火龙Y",
+  "source_slug": "charizard-mega-y",
+  "base_stats": {
+    "hp": 78,
+    "attack": 104,
+    "defense": 78,
+    "special_attack": 159,
+    "special_defense": 115,
+    "speed": 100
+  },
+  "base_stat_total": 634,
+  "images": {
+    "normal": {
+      "file": "超级喷火龙Y.png",
+      "source_url": "https://media.52poke.com/wiki/8/87/Champions_0006MY_Sprite.png",
+      "source_filename": "Champions_0006MY_Sprite.png",
+      "sha256": "ad10a58f04504ff6da76e885b71fc742b5270c43889e289db2879071c600612f",
+      "width": 128,
+      "height": 128,
+      "bytes": 17034
+    },
+    "shiny": {
+      "file": "超级喷火龙Y_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/3/37/Champions_0006MY_s_Sprite.png",
+      "source_filename": "Champions_0006MY_s_Sprite.png",
+      "sha256": "36bd550192a3ed320285dc77cfad22e19c9db6918e5e7969a983fff8434a8b31",
+      "width": 128,
+      "height": 128,
+      "bytes": 16991
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/charizard?format=double&season=M-5",
+    "raw_path": "_sources/details/charizard.html",
+    "field": "megaForms[1].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

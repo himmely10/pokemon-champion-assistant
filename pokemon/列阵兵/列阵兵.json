@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 870,
+  "name": "列阵兵",
+  "species_name": "列阵兵",
+  "form_name": null,
+  "wiki_name": "列阵兵",
+  "directory": "列阵兵",
+  "source_slug": "falinks",
+  "base_stats": {
+    "hp": 65,
+    "attack": 100,
+    "defense": 100,
+    "special_attack": 70,
+    "special_defense": 60,
+    "speed": 75
+  },
+  "base_stat_total": 470,
+  "images": {
+    "normal": {
+      "file": "列阵兵.png",
+      "source_url": "https://media.52poke.com/wiki/0/0c/Champions_0870_Sprite.png",
+      "source_filename": "Champions_0870_Sprite.png",
+      "sha256": "51263f3848cac11c741d9ddf1ce8c93246da72bf306402c6609734b38f71e16a",
+      "width": 128,
+      "height": 128,
+      "bytes": 13607
+    },
+    "shiny": {
+      "file": "列阵兵_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/2/2b/Champions_0870_s_Sprite.png",
+      "source_filename": "Champions_0870_s_Sprite.png",
+      "sha256": "e0e3032a4894f3f60f9cab2de770f1238017f3f1f2cb015574f904248931711d",
+      "width": 128,
+      "height": 128,
+      "bytes": 13635
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/falinks?format=double&season=M-5",
+    "raw_path": "_sources/details/falinks.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

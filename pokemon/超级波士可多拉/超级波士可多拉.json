@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 306,
+  "name": "超级波士可多拉",
+  "species_name": "波士可多拉",
+  "form_name": "超级波士可多拉",
+  "wiki_name": "超级波士可多拉",
+  "directory": "超级波士可多拉",
+  "source_slug": "aggron-mega",
+  "base_stats": {
+    "hp": 70,
+    "attack": 140,
+    "defense": 230,
+    "special_attack": 60,
+    "special_defense": 80,
+    "speed": 50
+  },
+  "base_stat_total": 630,
+  "images": {
+    "normal": {
+      "file": "超级波士可多拉.png",
+      "source_url": "https://media.52poke.com/wiki/d/d3/Champions_0306M_Sprite.png",
+      "source_filename": "Champions_0306M_Sprite.png",
+      "sha256": "32aa99a8d3214190a1aaa0c20d6c7f99a8ea6102117660ac132ecf00071f8271",
+      "width": 128,
+      "height": 128,
+      "bytes": 18762
+    },
+    "shiny": {
+      "file": "超级波士可多拉_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/c/c7/Champions_0306M_s_Sprite.png",
+      "source_filename": "Champions_0306M_s_Sprite.png",
+      "sha256": "ba9a101c9e718dda81b3f857ff4ce2973414a9cc23732ea8921c7df8bce32b8c",
+      "width": 128,
+      "height": 128,
+      "bytes": 20295
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/aggron?format=double&season=M-5",
+    "raw_path": "_sources/details/aggron.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

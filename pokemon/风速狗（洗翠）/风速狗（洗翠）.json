@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 59,
+  "name": "风速狗（洗翠）",
+  "species_name": "风速狗",
+  "form_name": "洗翠的样子",
+  "wiki_name": "风速狗（洗翠的样子）",
+  "directory": "风速狗（洗翠）",
+  "source_slug": "arcanine-hisui",
+  "base_stats": {
+    "hp": 95,
+    "attack": 115,
+    "defense": 80,
+    "special_attack": 95,
+    "special_defense": 80,
+    "speed": 90
+  },
+  "base_stat_total": 555,
+  "images": {
+    "normal": {
+      "file": "风速狗（洗翠）.png",
+      "source_url": "https://media.52poke.com/wiki/b/b7/Champions_0059H_Sprite.png",
+      "source_filename": "Champions_0059H_Sprite.png",
+      "sha256": "a786c6cb0294f3bc5ea4690bfba637fd17527de897ffc09a170be45bfd779c5a",
+      "width": 128,
+      "height": 128,
+      "bytes": 16862
+    },
+    "shiny": {
+      "file": "风速狗（洗翠）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/c/cf/Champions_0059H_s_Sprite.png",
+      "source_filename": "Champions_0059H_s_Sprite.png",
+      "sha256": "9b4485aa8e7ae8044ef7d165ee801c75122b6d6a7e9751255647da286e0c5685",
+      "width": 128,
+      "height": 128,
+      "bytes": 18153
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/arcanine-hisui?format=double&season=M-5",
+    "raw_path": "_sources/details/arcanine-hisui.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "超级诅咒娃娃"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 555,
+  "base_stats": {
+    "attack": 165,
+    "defense": 75,
+    "hp": 64,
+    "special_attack": 93,
+    "special_defense": 83,
+    "speed": 75
+  },
+  "data_ready": true,
+  "dex_number": 354,
+  "directory": "超级诅咒娃娃",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级诅咒娃娃",
+  "images": {
+    "normal": {
+      "bytes": 14357,
+      "file": "超级诅咒娃娃.png",
+      "height": 128,
+      "sha256": "c2a50d8460d60f73a0e186b8672873cc9399c3611b4a8c7f2648ffc7a35ab20b",
+      "source_filename": "Champions_0354M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/9c/Champions_0354M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14740,
+      "file": "超级诅咒娃娃_闪光.png",
+      "height": 128,
+      "sha256": "7b9ba1776e8bfb2b6f4f489d950579d72936c5508d6799643f3e360eb1f8b6a5",
+      "source_filename": "Champions_0354M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/3b/Champions_0354M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "banettite",
+  "name": "超级诅咒娃娃",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10056,
+  "opgg_key": "mega-banette",
+  "recognition_ready": true,
+  "record_id": "legacy:354:超级诅咒娃娃",
+  "schema_version": 1,
+  "source_base_key": "banette",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "banette-mega",
+  "species_name": "诅咒娃娃",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-banette"
+  },
+  "type_names": [
+    "幽灵"
+  ],
+  "types": [
+    "ghost"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-banette"
+  },
+  "wiki_name": "超级诅咒娃娃"
+}

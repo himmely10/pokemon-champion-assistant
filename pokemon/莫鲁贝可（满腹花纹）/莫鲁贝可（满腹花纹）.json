@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dex_number": 877,
+  "name": "莫鲁贝可（满腹花纹）",
+  "species_name": "莫鲁贝可",
+  "form_name": "满腹花纹",
+  "wiki_name": "莫鲁贝可（满腹花纹）",
+  "directory": "莫鲁贝可（满腹花纹）",
+  "source_slug": "morpeko",
+  "base_stats": {
+    "hp": 58,
+    "attack": 95,
+    "defense": 58,
+    "special_attack": 70,
+    "special_defense": 58,
+    "speed": 97
+  },
+  "base_stat_total": 436,
+  "images": {
+    "normal": {
+      "file": "莫鲁贝可（满腹花纹）.png",
+      "source_url": "https://media.52poke.com/wiki/a/a9/Champions_0877_Sprite.png",
+      "source_filename": "Champions_0877_Sprite.png",
+      "sha256": "b7e5b76da97cdf730641d2ef84b6a661ac101691f46193ae2ffbb175040305c1",
+      "width": 128,
+      "height": 128,
+      "bytes": 8840
+    },
+    "shiny": {
+      "file": "莫鲁贝可（满腹花纹）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/88/Champions_0877_s_Sprite.png",
+      "source_filename": "Champions_0877_s_Sprite.png",
+      "sha256": "3cdd4b24a0eab239760363ecc06b62b72cdd8d1d21e93ff358154d6d8ba0e013",
+      "width": 128,
+      "height": 128,
+      "bytes": 8545
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/morpeko?format=double&season=M-5",
+    "raw_path": "_sources/details/morpeko.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "shared_species_profile",
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。"
+}

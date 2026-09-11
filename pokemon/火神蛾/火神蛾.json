@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 637,
+  "name": "火神蛾",
+  "species_name": "火神蛾",
+  "form_name": null,
+  "wiki_name": "火神蛾",
+  "directory": "火神蛾",
+  "source_slug": "volcarona",
+  "base_stats": {
+    "hp": 85,
+    "attack": 60,
+    "defense": 65,
+    "special_attack": 135,
+    "special_defense": 105,
+    "speed": 100
+  },
+  "base_stat_total": 550,
+  "images": {
+    "normal": {
+      "file": "火神蛾.png",
+      "source_url": "https://media.52poke.com/wiki/f/fe/Champions_0637_Sprite.png",
+      "source_filename": "Champions_0637_Sprite.png",
+      "sha256": "d88e2725e7e31a97350e68f03b47c14a3adc8a50953332dd9482f6524e42e4c3",
+      "width": 128,
+      "height": 128,
+      "bytes": 15280
+    },
+    "shiny": {
+      "file": "火神蛾_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/1/1e/Champions_0637_s_Sprite.png",
+      "source_filename": "Champions_0637_s_Sprite.png",
+      "sha256": "4ee421e927be17d08efc344b2bd5ed658d6ba5220eded7f8d201d327f0332484",
+      "width": 128,
+      "height": 128,
+      "bytes": 15612
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/volcarona?format=double&season=M-5",
+    "raw_path": "_sources/details/volcarona.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 428,
+  "name": "超级长耳兔",
+  "species_name": "长耳兔",
+  "form_name": "超级长耳兔",
+  "wiki_name": "超级长耳兔",
+  "directory": "超级长耳兔",
+  "source_slug": "lopunny-mega",
+  "base_stats": {
+    "hp": 65,
+    "attack": 136,
+    "defense": 94,
+    "special_attack": 54,
+    "special_defense": 96,
+    "speed": 135
+  },
+  "base_stat_total": 580,
+  "images": {
+    "normal": {
+      "file": "超级长耳兔.png",
+      "source_url": "https://media.52poke.com/wiki/3/30/Champions_0428M_Sprite.png",
+      "source_filename": "Champions_0428M_Sprite.png",
+      "sha256": "f815c1c767baf7c8638d932b102509d9ae1307ee96897ecbb7242b15f5b14c11",
+      "width": 128,
+      "height": 128,
+      "bytes": 17055
+    },
+    "shiny": {
+      "file": "超级长耳兔_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/a/a7/Champions_0428M_s_Sprite.png",
+      "source_filename": "Champions_0428M_s_Sprite.png",
+      "sha256": "2dba595cbd5961dcc9620e29d27407293c5d7c0ae4ce4849c6f896d20de57df8",
+      "width": 128,
+      "height": 128,
+      "bytes": 17415
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/lopunny?format=double&season=M-5",
+    "raw_path": "_sources/details/lopunny.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

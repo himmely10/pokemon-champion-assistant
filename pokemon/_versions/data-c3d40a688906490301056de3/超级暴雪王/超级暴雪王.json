@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 594,
+  "base_stats": {
+    "attack": 132,
+    "defense": 105,
+    "hp": 90,
+    "special_attack": 132,
+    "special_defense": 105,
+    "speed": 30
+  },
+  "dex_number": 460,
+  "directory": "超级暴雪王",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级暴雪王",
+  "images": {
+    "normal": {
+      "bytes": 18716,
+      "file": "超级暴雪王.png",
+      "height": 128,
+      "sha256": "e9b5785c42ecc18c124d02be56ca62ad26feb0b37aa496b8da0d796ea54239f9",
+      "source_filename": "Champions_0460M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b7/Champions_0460M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 18788,
+      "file": "超级暴雪王_闪光.png",
+      "height": 128,
+      "sha256": "917444191e09e033c6a217931b5236e23ccdfc4c351aa3474a6df5f28e1d86bb",
+      "source_filename": "Champions_0460M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/50/Champions_0460M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超级暴雪王",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "abomasnow-mega",
+  "species_name": "暴雪王",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "megaForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/abomasnow.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/abomasnow?format=double&season=M-5"
+  },
+  "wiki_name": "超级暴雪王"
+}

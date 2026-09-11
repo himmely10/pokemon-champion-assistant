@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "巨钳螳螂"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 500,
+  "base_stats": {
+    "attack": 130,
+    "defense": 100,
+    "hp": 70,
+    "special_attack": 55,
+    "special_defense": 80,
+    "speed": 65
+  },
+  "data_ready": true,
+  "dex_number": 212,
+  "directory": "巨钳螳螂",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 17159,
+      "file": "巨钳螳螂.png",
+      "height": 128,
+      "sha256": "eeb2293ee0483dca6d3c342cd7c7b902d4496954574c5050a602b68c094161a0",
+      "source_filename": "Champions_0212_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/71/Champions_0212_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 17844,
+      "file": "巨钳螳螂_闪光.png",
+      "height": 128,
+      "sha256": "18d8029ac2eaf518f6546fa3191efe2dac8aa4c2f94c6f111a737d084b7a6155",
+      "source_filename": "Champions_0212_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/26/Champions_0212_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:212:超级巨钳螳螂"
+  ],
+  "mega_item": null,
+  "name": "巨钳螳螂",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 212,
+  "opgg_key": "scizor",
+  "recognition_ready": true,
+  "record_id": "legacy:212:巨钳螳螂",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "scizor",
+  "species_name": "巨钳螳螂",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/scizor"
+  },
+  "type_names": [
+    "虫",
+    "钢"
+  ],
+  "types": [
+    "bug",
+    "steel"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/scizor"
+  },
+  "wiki_name": "巨钳螳螂"
+}

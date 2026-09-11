@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 500,
+  "name": "炎武王",
+  "species_name": "炎武王",
+  "form_name": null,
+  "wiki_name": "炎武王",
+  "directory": "炎武王",
+  "source_slug": "emboar",
+  "base_stats": {
+    "hp": 110,
+    "attack": 123,
+    "defense": 65,
+    "special_attack": 100,
+    "special_defense": 65,
+    "speed": 65
+  },
+  "base_stat_total": 528,
+  "images": {
+    "normal": {
+      "file": "炎武王.png",
+      "source_url": "https://media.52poke.com/wiki/1/10/Champions_0500_Sprite.png",
+      "source_filename": "Champions_0500_Sprite.png",
+      "sha256": "5e821d0d4b585d3bcab3f19493fd3eee62cd60d2ed26889b6846e9c2ede168f1",
+      "width": 128,
+      "height": 128,
+      "bytes": 19974
+    },
+    "shiny": {
+      "file": "炎武王_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/8f/Champions_0500_s_Sprite.png",
+      "source_filename": "Champions_0500_s_Sprite.png",
+      "sha256": "67bef61ee7273e631462a4fa26abb31dd1c7e3118414576f72ad9edcd0fee5e5",
+      "width": 128,
+      "height": 128,
+      "bytes": 20530
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/emboar?format=double&season=M-5",
+    "raw_path": "_sources/details/emboar.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

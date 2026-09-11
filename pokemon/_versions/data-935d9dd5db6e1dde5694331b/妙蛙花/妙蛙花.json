@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "妙蛙花"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 525,
+  "base_stats": {
+    "attack": 82,
+    "defense": 83,
+    "hp": 80,
+    "special_attack": 100,
+    "special_defense": 100,
+    "speed": 80
+  },
+  "data_ready": true,
+  "dex_number": 3,
+  "directory": "妙蛙花",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 19549,
+      "file": "妙蛙花.png",
+      "height": 128,
+      "sha256": "5c167508bd14db56358e42e1b2cd6a673a40aaf90d9f71e5279a57160c100629",
+      "source_filename": "Champions_0003_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/7d/Champions_0003_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 19926,
+      "file": "妙蛙花_闪光.png",
+      "height": 128,
+      "sha256": "66fcb349eee0f46dce7ed3b5fee169232d2c171c5d9f25e318b4478b058c3d8d",
+      "source_filename": "Champions_0003_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/78/Champions_0003_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:3:超级妙蛙花"
+  ],
+  "mega_item": null,
+  "name": "妙蛙花",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 3,
+  "opgg_key": "venusaur",
+  "recognition_ready": true,
+  "record_id": "legacy:3:妙蛙花",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "venusaur",
+  "species_name": "妙蛙花",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/venusaur"
+  },
+  "type_names": [
+    "草",
+    "毒"
+  ],
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/venusaur"
+  },
+  "wiki_name": "妙蛙花"
+}

@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 480,
+  "base_stats": {
+    "attack": 80,
+    "defense": 80,
+    "hp": 80,
+    "special_attack": 80,
+    "special_defense": 80,
+    "speed": 80
+  },
+  "dex_number": 362,
+  "directory": "冰鬼护",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 16324,
+      "file": "冰鬼护.png",
+      "height": 128,
+      "sha256": "0edf86758d20a5de7450da8f738e506588668e6bfb8349d1362985c3075079e5",
+      "source_filename": "Champions_0362_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/bf/Champions_0362_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 16571,
+      "file": "冰鬼护_闪光.png",
+      "height": 128,
+      "sha256": "42f1929c3e9ca2f7fc15455db83f5343fa9bb1925911ae2ce14bc0ddf944af3c",
+      "source_filename": "Champions_0362_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/3e/Champions_0362_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "冰鬼护",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "glalie",
+  "species_name": "冰鬼护",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/glalie.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/glalie?format=double&season=M-5"
+  },
+  "wiki_name": "冰鬼护"
+}

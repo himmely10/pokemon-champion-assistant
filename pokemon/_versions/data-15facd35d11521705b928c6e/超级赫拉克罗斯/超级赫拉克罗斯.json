@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "超级赫拉克罗斯"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 600,
+  "base_stats": {
+    "attack": 185,
+    "defense": 115,
+    "hp": 80,
+    "special_attack": 40,
+    "special_defense": 105,
+    "speed": 75
+  },
+  "data_ready": true,
+  "dex_number": 214,
+  "directory": "超级赫拉克罗斯",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级赫拉克罗斯",
+  "images": {
+    "normal": {
+      "bytes": 14270,
+      "file": "超级赫拉克罗斯.png",
+      "height": 128,
+      "sha256": "ead2c309b9b87881cb7e2c76cccdeac062e7c9ccf76c18ed9ccf580b1bf8c317",
+      "source_filename": "Champions_0214M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/13/Champions_0214M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15071,
+      "file": "超级赫拉克罗斯_闪光.png",
+      "height": 128,
+      "sha256": "b1a8817a6ec09eddb395d036070170350853b6ba10496610696cf1dded91653b",
+      "source_filename": "Champions_0214M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/60/Champions_0214M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "heracronite",
+  "name": "超级赫拉克罗斯",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10047,
+  "opgg_key": "mega-heracross",
+  "recognition_ready": true,
+  "record_id": "legacy:214:超级赫拉克罗斯",
+  "schema_version": 1,
+  "source_base_key": "heracross",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "heracross-mega",
+  "species_name": "赫拉克罗斯",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-heracross"
+  },
+  "type_names": [
+    "虫",
+    "格斗"
+  ],
+  "types": [
+    "bug",
+    "fighting"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-heracross"
+  },
+  "wiki_name": "超级赫拉克罗斯"
+}

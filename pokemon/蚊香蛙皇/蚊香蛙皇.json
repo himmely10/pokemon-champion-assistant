@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 186,
+  "name": "蚊香蛙皇",
+  "species_name": "蚊香蛙皇",
+  "form_name": null,
+  "wiki_name": "蚊香蛙皇",
+  "directory": "蚊香蛙皇",
+  "source_slug": "politoed",
+  "base_stats": {
+    "hp": 90,
+    "attack": 75,
+    "defense": 75,
+    "special_attack": 90,
+    "special_defense": 100,
+    "speed": 70
+  },
+  "base_stat_total": 500,
+  "images": {
+    "normal": {
+      "file": "蚊香蛙皇.png",
+      "source_url": "https://media.52poke.com/wiki/f/f6/Champions_0186_Sprite.png",
+      "source_filename": "Champions_0186_Sprite.png",
+      "sha256": "5f716605195285569a657ad4bbe3022741ef947dfc1f29ae8d9d66a73da54cbb",
+      "width": 128,
+      "height": 128,
+      "bytes": 13983
+    },
+    "shiny": {
+      "file": "蚊香蛙皇_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/7/72/Champions_0186_s_Sprite.png",
+      "source_filename": "Champions_0186_s_Sprite.png",
+      "sha256": "93d0a55701b2ad8b4a790fb98b4aa1f4f9839d1fa090573c956c7389ff9a18aa",
+      "width": 128,
+      "height": 128,
+      "bytes": 14172
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/politoed?format=double&season=M-5",
+    "raw_path": "_sources/details/politoed.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

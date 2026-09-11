@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "赫拉克罗斯"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 500,
+  "base_stats": {
+    "attack": 125,
+    "defense": 75,
+    "hp": 80,
+    "special_attack": 40,
+    "special_defense": 95,
+    "speed": 85
+  },
+  "data_ready": true,
+  "dex_number": 214,
+  "directory": "赫拉克罗斯",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14286,
+      "file": "赫拉克罗斯.png",
+      "height": 128,
+      "sha256": "8442fd90d56093bbed1a3180393b99b6cfab3a1524e4bfec589547c09ea1c300",
+      "source_filename": "Champions_0214_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/ee/Champions_0214_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15073,
+      "file": "赫拉克罗斯_闪光.png",
+      "height": 128,
+      "sha256": "9b8c7e2528af8d02372c7b4acecd1f0c94ca0629aa480f270e9d95d55068c6e5",
+      "source_filename": "Champions_0214_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/8b/Champions_0214_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:214:超级赫拉克罗斯"
+  ],
+  "mega_item": null,
+  "name": "赫拉克罗斯",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 214,
+  "opgg_key": "heracross",
+  "recognition_ready": true,
+  "record_id": "legacy:214:赫拉克罗斯",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "heracross",
+  "species_name": "赫拉克罗斯",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/heracross"
+  },
+  "type_names": [
+    "虫",
+    "格斗"
+  ],
+  "types": [
+    "bug",
+    "fighting"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/heracross"
+  },
+  "wiki_name": "赫拉克罗斯"
+}

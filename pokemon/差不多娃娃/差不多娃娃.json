@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 531,
+  "name": "差不多娃娃",
+  "species_name": "差不多娃娃",
+  "form_name": null,
+  "wiki_name": "差不多娃娃",
+  "directory": "差不多娃娃",
+  "source_slug": "audino",
+  "base_stats": {
+    "hp": 103,
+    "attack": 60,
+    "defense": 86,
+    "special_attack": 60,
+    "special_defense": 86,
+    "speed": 50
+  },
+  "base_stat_total": 445,
+  "images": {
+    "normal": {
+      "file": "差不多娃娃.png",
+      "source_url": "https://media.52poke.com/wiki/7/70/Champions_0531_Sprite.png",
+      "source_filename": "Champions_0531_Sprite.png",
+      "sha256": "524175fcbc7cdddb646dcb4afaccd43dfaee04504d45e94f71affbee685d43c2",
+      "width": 128,
+      "height": 128,
+      "bytes": 12069
+    },
+    "shiny": {
+      "file": "差不多娃娃_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/85/Champions_0531_s_Sprite.png",
+      "source_filename": "Champions_0531_s_Sprite.png",
+      "sha256": "773ab289ab6180162c58cb9b5cc922a5d3bbdb6b5fcfbd0c3b7418ba3dfbc9bc",
+      "width": 128,
+      "height": 128,
+      "bytes": 12008
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/audino?format=double&season=M-5",
+    "raw_path": "_sources/details/audino.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

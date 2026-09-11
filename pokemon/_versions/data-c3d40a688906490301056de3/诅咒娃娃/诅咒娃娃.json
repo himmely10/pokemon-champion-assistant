@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 455,
+  "base_stats": {
+    "attack": 115,
+    "defense": 65,
+    "hp": 64,
+    "special_attack": 83,
+    "special_defense": 63,
+    "speed": 65
+  },
+  "dex_number": 354,
+  "directory": "诅咒娃娃",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 12175,
+      "file": "诅咒娃娃.png",
+      "height": 128,
+      "sha256": "6020ccbfd9e255b218c19fba39a1f34720f29c9e1368775a5b4b81f774cdd08e",
+      "source_filename": "Champions_0354_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/d2/Champions_0354_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12701,
+      "file": "诅咒娃娃_闪光.png",
+      "height": 128,
+      "sha256": "0ef2782febc613d98462795e568260e6a5939475eb90629f3b108bd3a9ad436a",
+      "source_filename": "Champions_0354_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/ef/Champions_0354_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "诅咒娃娃",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "banette",
+  "species_name": "诅咒娃娃",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/banette.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/banette?format=double&season=M-5"
+  },
+  "wiki_name": "诅咒娃娃"
+}

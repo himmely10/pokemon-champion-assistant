@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 658,
+  "name": "超级甲贺忍蛙",
+  "species_name": "甲贺忍蛙",
+  "form_name": "超级甲贺忍蛙",
+  "wiki_name": "超级甲贺忍蛙",
+  "directory": "超级甲贺忍蛙",
+  "source_slug": "greninja-mega",
+  "base_stats": {
+    "hp": 72,
+    "attack": 125,
+    "defense": 77,
+    "special_attack": 133,
+    "special_defense": 81,
+    "speed": 142
+  },
+  "base_stat_total": 630,
+  "images": {
+    "normal": {
+      "file": "超级甲贺忍蛙.png",
+      "source_url": "https://media.52poke.com/wiki/0/01/Champions_0658M_Sprite.png",
+      "source_filename": "Champions_0658M_Sprite.png",
+      "sha256": "79120806192bb90e15f184f0f4c1f07de5deb95bac111f9e0032d2ff3319ac84",
+      "width": 128,
+      "height": 128,
+      "bytes": 12213
+    },
+    "shiny": {
+      "file": "超级甲贺忍蛙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/6/67/Champions_0658M_s_Sprite.png",
+      "source_filename": "Champions_0658M_s_Sprite.png",
+      "sha256": "9091f6fd3dcb202093f4f1f95d85f9abd1625174f5f366791e536965a271101d",
+      "width": 128,
+      "height": 128,
+      "bytes": 11824
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/greninja?format=double&season=M-5",
+    "raw_path": "_sources/details/greninja.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "超级阿勃梭鲁Z"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 565,
+  "base_stats": {
+    "attack": 154,
+    "defense": 60,
+    "hp": 65,
+    "special_attack": 75,
+    "special_defense": 60,
+    "speed": 151
+  },
+  "data_ready": true,
+  "dex_number": 359,
+  "directory": "超级阿勃梭鲁Z",
+  "form_name": "超级阿勃梭鲁Z",
+  "images": {
+    "normal": {
+      "bytes": 18244,
+      "file": "超级阿勃梭鲁Z.png",
+      "height": 128,
+      "sha256": "bec0ef9b0b55f55970a65e72c07d327e800db6884e939e29681b39ca1a63952f",
+      "source_filename": "Champions_0359MZ_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/3c/Champions_0359MZ_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 18476,
+      "file": "超级阿勃梭鲁Z_闪光.png",
+      "height": 128,
+      "sha256": "a047fcb56631351e8045e7f4ebe43020c74fdd06fd007a07ef2125d3935e72d4",
+      "source_filename": "Champions_0359MZ_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/89/Champions_0359MZ_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "absolite-z",
+  "name": "超级阿勃梭鲁Z",
+  "name_source": "opgg_zh_cn",
+  "opgg_id": 10307,
+  "opgg_key": "mega-absol-z",
+  "recognition_ready": true,
+  "record_id": "opgg:mega-absol-z",
+  "schema_version": 2,
+  "source_base_key": "absol",
+  "source_is_new": true,
+  "source_presence": "present",
+  "source_regulation": "M-C",
+  "source_slug": "absol-mega-z",
+  "species_name": "阿勃梭鲁",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-absol-z"
+  },
+  "type_names": [
+    "恶",
+    "幽灵"
+  ],
+  "types": [
+    "dark",
+    "ghost"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-absol-z"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 571,
+  "name": "索罗亚克",
+  "species_name": "索罗亚克",
+  "form_name": null,
+  "wiki_name": "索罗亚克",
+  "directory": "索罗亚克",
+  "source_slug": "zoroark",
+  "base_stats": {
+    "hp": 60,
+    "attack": 105,
+    "defense": 60,
+    "special_attack": 120,
+    "special_defense": 60,
+    "speed": 105
+  },
+  "base_stat_total": 510,
+  "images": {
+    "normal": {
+      "file": "索罗亚克.png",
+      "source_url": "https://media.52poke.com/wiki/e/e8/Champions_0571_Sprite.png",
+      "source_filename": "Champions_0571_Sprite.png",
+      "sha256": "e9c8380129fe3f5a6dda60cf51cb39aeea1b4c8a667fd3a9814b377e9cd4e5e8",
+      "width": 128,
+      "height": 128,
+      "bytes": 15432
+    },
+    "shiny": {
+      "file": "索罗亚克_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/9/9b/Champions_0571_s_Sprite.png",
+      "source_filename": "Champions_0571_s_Sprite.png",
+      "sha256": "a959b340ea61738f356b87a82efbd6a212a0bd92178792804014b4130bf0f38e",
+      "width": 128,
+      "height": 128,
+      "bytes": 15830
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/zoroark?format=double&season=M-5",
+    "raw_path": "_sources/details/zoroark.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

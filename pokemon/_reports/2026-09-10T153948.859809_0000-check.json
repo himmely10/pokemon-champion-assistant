@@ -1,0 +1,6 @@
+{
+  "checked_at": "2026-09-10T15:39:48.859809+00:00",
+  "error": "HTTPSConnectionPool(host='op.gg', port=443): Max retries exceeded with url: /zh-cn/pokemon-champions/pokedex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000014CD3EE0F50>: Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。'))",
+  "operation": "check",
+  "status": "failed"
+}

@@ -1,0 +1,49 @@
+{
+  "base_stat_total": 500,
+  "base_stats": {
+    "attack": 140,
+    "defense": 50,
+    "hp": 60,
+    "special_attack": 140,
+    "special_defense": 50,
+    "speed": 60
+  },
+  "dex_number": 681,
+  "directory": "坚盾剑怪（刀剑形态）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "刀剑形态",
+  "images": {
+    "normal": {
+      "bytes": 13877,
+      "file": "坚盾剑怪（刀剑形态）.png",
+      "height": 128,
+      "sha256": "85a9078b09a87f44f5d9cc171ccd46226a8031a6b14ecf41a2aa9ddc77416543",
+      "source_filename": "Champions_0681B_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b4/Champions_0681B_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13484,
+      "file": "坚盾剑怪（刀剑形态）_闪光.png",
+      "height": 128,
+      "sha256": "69deb221062cb6821d687cecd722b098e046b666bd2b81d66078c169165d013a",
+      "source_filename": "Champions_0681B_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/6e/Champions_0681B_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mapping_note": "PokéChamp DB 未提供该条目；经用户允许，使用百科种族值补齐。",
+  "name": "坚盾剑怪（刀剑形态）",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "aegislash-blade",
+  "species_name": "坚盾剑怪",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "种族值 / 刀剑形态（第八世代起）",
+    "provider": "52poke",
+    "raw_path": "_sources/wiki-681-main.html",
+    "url": "https://wiki.52poke.com/zh-hans/坚盾剑怪#种族值"
+  },
+  "wiki_name": "坚盾剑怪（刀剑形态）"
+}

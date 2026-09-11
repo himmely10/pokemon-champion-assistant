@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 115,
+  "name": "超级袋兽",
+  "species_name": "袋兽",
+  "form_name": "超级袋兽",
+  "wiki_name": "超级袋兽",
+  "directory": "超级袋兽",
+  "source_slug": "kangaskhan-mega",
+  "base_stats": {
+    "hp": 105,
+    "attack": 125,
+    "defense": 100,
+    "special_attack": 60,
+    "special_defense": 100,
+    "speed": 100
+  },
+  "base_stat_total": 590,
+  "images": {
+    "normal": {
+      "file": "超级袋兽.png",
+      "source_url": "https://media.52poke.com/wiki/1/1e/Champions_0115M_Sprite.png",
+      "source_filename": "Champions_0115M_Sprite.png",
+      "sha256": "d6b2c21a6f7ae9bdd9dc4d157efa6e8f3762d5eaa0ed119f9aaac65c7ee1a2b3",
+      "width": 128,
+      "height": 128,
+      "bytes": 18563
+    },
+    "shiny": {
+      "file": "超级袋兽_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/4/4c/Champions_0115M_s_Sprite.png",
+      "source_filename": "Champions_0115M_s_Sprite.png",
+      "sha256": "8f337193c49d600a5f961f7b08a6fda403d53e3765109afda511659a69a769da",
+      "width": 128,
+      "height": 128,
+      "bytes": 18619
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/kangaskhan?format=double&season=M-5",
+    "raw_path": "_sources/details/kangaskhan.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

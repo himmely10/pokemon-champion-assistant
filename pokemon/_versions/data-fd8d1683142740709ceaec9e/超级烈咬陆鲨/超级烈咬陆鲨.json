@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "超级烈咬陆鲨"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 700,
+  "base_stats": {
+    "attack": 170,
+    "defense": 115,
+    "hp": 108,
+    "special_attack": 120,
+    "special_defense": 95,
+    "speed": 92
+  },
+  "data_ready": true,
+  "dex_number": 445,
+  "directory": "超级烈咬陆鲨",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级烈咬陆鲨",
+  "images": {
+    "normal": {
+      "bytes": 19548,
+      "file": "超级烈咬陆鲨.png",
+      "height": 128,
+      "sha256": "dda20e7d34368fc4fedd5cb4ec099ec70a694c182657d1ba25aa874b8c6f4a79",
+      "source_filename": "Champions_0445M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/7f/Champions_0445M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 20358,
+      "file": "超级烈咬陆鲨_闪光.png",
+      "height": 128,
+      "sha256": "8dddeef8d5964f85033f9670074fd09a1bf921c8809cc85b2468bd102f19923d",
+      "source_filename": "Champions_0445M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/4d/Champions_0445M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "garchompite",
+  "name": "超级烈咬陆鲨",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10058,
+  "opgg_key": "mega-garchomp",
+  "recognition_ready": true,
+  "record_id": "legacy:445:超级烈咬陆鲨",
+  "schema_version": 1,
+  "source_base_key": "garchomp",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "garchomp-mega",
+  "species_name": "烈咬陆鲨",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-garchomp"
+  },
+  "type_names": [
+    "龙",
+    "地面"
+  ],
+  "types": [
+    "dragon",
+    "ground"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-garchomp"
+  },
+  "wiki_name": "超级烈咬陆鲨"
+}

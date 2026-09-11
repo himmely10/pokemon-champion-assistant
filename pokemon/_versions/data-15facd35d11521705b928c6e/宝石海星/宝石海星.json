@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "宝石海星"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 520,
+  "base_stats": {
+    "attack": 75,
+    "defense": 85,
+    "hp": 60,
+    "special_attack": 100,
+    "special_defense": 85,
+    "speed": 115
+  },
+  "data_ready": true,
+  "dex_number": 121,
+  "directory": "宝石海星",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 16145,
+      "file": "宝石海星.png",
+      "height": 128,
+      "sha256": "b86550b33bf0cec8184b897919462defeccb8ea746dc93413e54af995c69ec25",
+      "source_filename": "Champions_0121_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/2f/Champions_0121_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15996,
+      "file": "宝石海星_闪光.png",
+      "height": 128,
+      "sha256": "db6d166ddabfce1659096145e93f6ea297e18f8959a57ea525a73347c5e1c5ee",
+      "source_filename": "Champions_0121_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/7d/Champions_0121_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:121:超级宝石海星"
+  ],
+  "mega_item": null,
+  "name": "宝石海星",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 121,
+  "opgg_key": "starmie",
+  "recognition_ready": true,
+  "record_id": "legacy:121:宝石海星",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "starmie",
+  "species_name": "宝石海星",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/starmie"
+  },
+  "type_names": [
+    "水",
+    "超能力"
+  ],
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/starmie"
+  },
+  "wiki_name": "宝石海星"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 956,
+  "name": "超能艳鸵",
+  "species_name": "超能艳鸵",
+  "form_name": null,
+  "wiki_name": "超能艳鸵",
+  "directory": "超能艳鸵",
+  "source_slug": "espathra",
+  "base_stats": {
+    "hp": 95,
+    "attack": 60,
+    "defense": 60,
+    "special_attack": 101,
+    "special_defense": 60,
+    "speed": 105
+  },
+  "base_stat_total": 481,
+  "images": {
+    "normal": {
+      "file": "超能艳鸵.png",
+      "source_url": "https://media.52poke.com/wiki/3/3b/Champions_0956_Sprite.png",
+      "source_filename": "Champions_0956_Sprite.png",
+      "sha256": "4e1810b5fa5075aa54d881bf7c6374f19dcf2fcb377fb515ee45e4f5b5bcccee",
+      "width": 128,
+      "height": 128,
+      "bytes": 14917
+    },
+    "shiny": {
+      "file": "超能艳鸵_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/9/9d/Champions_0956_s_Sprite.png",
+      "source_filename": "Champions_0956_s_Sprite.png",
+      "sha256": "73665a747daf01ef42bf951b2dd4dac7c67fc27a46dc97c42f099f717968fd56",
+      "width": 128,
+      "height": 128,
+      "bytes": 14718
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/espathra?format=double&season=M-5",
+    "raw_path": "_sources/details/espathra.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "南瓜怪人 (小尺寸)"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 494,
+  "base_stats": {
+    "attack": 85,
+    "defense": 122,
+    "hp": 55,
+    "special_attack": 58,
+    "special_defense": 75,
+    "speed": 99
+  },
+  "data_ready": true,
+  "dex_number": 711,
+  "directory": "南瓜怪人（小尺寸）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "小颗种",
+  "images": {
+    "normal": {
+      "bytes": 10632,
+      "file": "南瓜怪人（小尺寸）.png",
+      "height": 128,
+      "sha256": "7f977d2a1b4694d669d2d316d08eaa9a873b0d82a25d2d8e09b5920fe2920824",
+      "source_filename": "Champions_0711S_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/a9/Champions_0711S_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 10237,
+      "file": "南瓜怪人（小尺寸）_闪光.png",
+      "height": 128,
+      "sha256": "b46c8c2c065771b9c7bbf8f7e0949ca8e3aff2d94768024cbc5418b2040db335",
+      "source_filename": "Champions_0711S_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/a8/Champions_0711S_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "南瓜怪人（小尺寸）",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10030,
+  "opgg_key": "gourgeist-small",
+  "recognition_ready": true,
+  "record_id": "legacy:711:南瓜怪人（小尺寸）",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "gourgeist-small",
+  "species_name": "南瓜怪人",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/gourgeist-small"
+  },
+  "type_names": [
+    "幽灵",
+    "草"
+  ],
+  "types": [
+    "ghost",
+    "grass"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/gourgeist-small"
+  },
+  "wiki_name": "南瓜怪人（小颗种）"
+}

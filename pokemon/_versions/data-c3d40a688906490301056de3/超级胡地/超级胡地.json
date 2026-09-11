@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 600,
+  "base_stats": {
+    "attack": 50,
+    "defense": 65,
+    "hp": 55,
+    "special_attack": 175,
+    "special_defense": 105,
+    "speed": 150
+  },
+  "dex_number": 65,
+  "directory": "超级胡地",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级胡地",
+  "images": {
+    "normal": {
+      "bytes": 18138,
+      "file": "超级胡地.png",
+      "height": 128,
+      "sha256": "b1f3a042a5ab069836b990099693f7e236183d85440c03b4d4eabcc083273383",
+      "source_filename": "Champions_0065M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b3/Champions_0065M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 17971,
+      "file": "超级胡地_闪光.png",
+      "height": 128,
+      "sha256": "79ad476b2ec2b5faf09591f67699787947432ac8611343a76e281b1b1f42ca90",
+      "source_filename": "Champions_0065M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/77/Champions_0065M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超级胡地",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "alakazam-mega",
+  "species_name": "胡地",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "megaForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/alakazam.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/alakazam?format=double&season=M-5"
+  },
+  "wiki_name": "超级胡地"
+}

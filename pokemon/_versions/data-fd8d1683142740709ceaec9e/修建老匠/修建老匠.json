@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "修建老匠"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 505,
+  "base_stats": {
+    "attack": 140,
+    "defense": 95,
+    "hp": 105,
+    "special_attack": 55,
+    "special_defense": 65,
+    "speed": 45
+  },
+  "data_ready": true,
+  "dex_number": 534,
+  "directory": "修建老匠",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 15750,
+      "file": "修建老匠.png",
+      "height": 128,
+      "sha256": "19636e165bb95721e4447e86c8c01652e0af1de12a0016fe14cd10268d473bcb",
+      "source_filename": "Champions_0534_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/34/Champions_0534_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15608,
+      "file": "修建老匠_闪光.png",
+      "height": 128,
+      "sha256": "bca2b09c795c93d9e691ddb58535fb12c5a7b3927da09e47de12a6144daed939",
+      "source_filename": "Champions_0534_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/88/Champions_0534_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "修建老匠",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 534,
+  "opgg_key": "conkeldurr",
+  "recognition_ready": true,
+  "record_id": "legacy:534:修建老匠",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "conkeldurr",
+  "species_name": "修建老匠",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/conkeldurr"
+  },
+  "type_names": [
+    "格斗"
+  ],
+  "types": [
+    "fighting"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/conkeldurr"
+  },
+  "wiki_name": "修建老匠"
+}

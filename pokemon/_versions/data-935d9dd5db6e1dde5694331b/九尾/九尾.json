@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "九尾"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 505,
+  "base_stats": {
+    "attack": 76,
+    "defense": 75,
+    "hp": 73,
+    "special_attack": 81,
+    "special_defense": 100,
+    "speed": 100
+  },
+  "data_ready": true,
+  "dex_number": 38,
+  "directory": "九尾",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 18088,
+      "file": "九尾.png",
+      "height": 128,
+      "sha256": "add6733a0be8e7343931cfa84310f31e9af7bb491a7cf06d035d05ad0bda22ef",
+      "source_filename": "Champions_0038_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/fe/Champions_0038_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 17477,
+      "file": "九尾_闪光.png",
+      "height": 128,
+      "sha256": "4aa1c2cf2460291c2f982dacb77a62bfb0d59b93b9be0ed334b7e3ee4efe1be2",
+      "source_filename": "Champions_0038_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/ff/Champions_0038_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "九尾",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 38,
+  "opgg_key": "ninetales",
+  "recognition_ready": true,
+  "record_id": "legacy:38:九尾",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "ninetales",
+  "species_name": "九尾",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/ninetales"
+  },
+  "type_names": [
+    "火"
+  ],
+  "types": [
+    "fire"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/ninetales"
+  },
+  "wiki_name": "九尾"
+}

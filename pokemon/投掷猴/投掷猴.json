@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 766,
+  "name": "投掷猴",
+  "species_name": "投掷猴",
+  "form_name": null,
+  "wiki_name": "投掷猴",
+  "directory": "投掷猴",
+  "source_slug": "passimian",
+  "base_stats": {
+    "hp": 100,
+    "attack": 120,
+    "defense": 90,
+    "special_attack": 40,
+    "special_defense": 60,
+    "speed": 80
+  },
+  "base_stat_total": 490,
+  "images": {
+    "normal": {
+      "file": "投掷猴.png",
+      "source_url": "https://media.52poke.com/wiki/9/9e/Champions_0766_Sprite.png",
+      "source_filename": "Champions_0766_Sprite.png",
+      "sha256": "58a0a238af90fe17462bfd514b2deb8b9839f2635e3c06a8d2517980c354b6c4",
+      "width": 128,
+      "height": 128,
+      "bytes": 15044
+    },
+    "shiny": {
+      "file": "投掷猴_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/b/bb/Champions_0766_s_Sprite.png",
+      "source_filename": "Champions_0766_s_Sprite.png",
+      "sha256": "6b130832dbc2459c277b6ea4f79446ede1ff5b6038ee3741b393675f00ea5289",
+      "width": 128,
+      "height": 128,
+      "bytes": 15502
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/passimian?format=double&season=M-5",
+    "raw_path": "_sources/details/passimian.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

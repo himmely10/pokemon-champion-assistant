@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 500,
+  "base_stats": {
+    "attack": 73,
+    "defense": 88,
+    "hp": 71,
+    "special_attack": 120,
+    "special_defense": 89,
+    "speed": 59
+  },
+  "dex_number": 693,
+  "directory": "钢炮臂虾",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 13327,
+      "file": "钢炮臂虾.png",
+      "height": 128,
+      "sha256": "209087d0ec89476680eedc0fb0cd860b6536d9c7175acda1cdd895c7fcc25912",
+      "source_filename": "Champions_0693_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/5e/Champions_0693_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13679,
+      "file": "钢炮臂虾_闪光.png",
+      "height": 128,
+      "sha256": "61f8d8d7afed0495eeb36f189df8d88bc2e973bd2e14bb0379c800ef3983fb23",
+      "source_filename": "Champions_0693_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/72/Champions_0693_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "钢炮臂虾",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "clawitzer",
+  "species_name": "钢炮臂虾",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/clawitzer.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/clawitzer?format=double&season=M-5"
+  },
+  "wiki_name": "钢炮臂虾"
+}

@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "伽勒尔呆呆王"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 490,
+  "base_stats": {
+    "attack": 65,
+    "defense": 80,
+    "hp": 95,
+    "special_attack": 110,
+    "special_defense": 110,
+    "speed": 30
+  },
+  "data_ready": true,
+  "dex_number": 199,
+  "directory": "呆呆王（伽勒尔）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "伽勒尔的样子",
+  "images": {
+    "normal": {
+      "bytes": 12633,
+      "file": "呆呆王（伽勒尔）.png",
+      "height": 128,
+      "sha256": "1cd0a9bcdfa7a833df4c9c2279f11ba39a8299b6692e4bb4548616eeb4f439eb",
+      "source_filename": "Champions_0199G_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/fd/Champions_0199G_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12645,
+      "file": "呆呆王（伽勒尔）_闪光.png",
+      "height": 128,
+      "sha256": "be6f044953703540c55c864492625c138f7a19675cf0df5e667fdea79d1abc5a",
+      "source_filename": "Champions_0199G_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/cb/Champions_0199G_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "呆呆王（伽勒尔）",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10172,
+  "opgg_key": "slowking-galarian",
+  "recognition_ready": true,
+  "record_id": "legacy:199:呆呆王（伽勒尔）",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "slowking-galar",
+  "species_name": "呆呆王",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/slowking-galarian"
+  },
+  "type_names": [
+    "毒",
+    "超能力"
+  ],
+  "types": [
+    "poison",
+    "psychic"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/slowking-galarian"
+  },
+  "wiki_name": "呆呆王（伽勒尔的样子）"
+}

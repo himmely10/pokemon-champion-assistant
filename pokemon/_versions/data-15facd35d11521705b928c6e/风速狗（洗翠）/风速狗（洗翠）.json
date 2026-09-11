@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "风速狗"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 555,
+  "base_stats": {
+    "attack": 115,
+    "defense": 80,
+    "hp": 95,
+    "special_attack": 95,
+    "special_defense": 80,
+    "speed": 90
+  },
+  "data_ready": true,
+  "dex_number": 59,
+  "directory": "风速狗（洗翠）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "洗翠的样子",
+  "images": {
+    "normal": {
+      "bytes": 16862,
+      "file": "风速狗（洗翠）.png",
+      "height": 128,
+      "sha256": "a786c6cb0294f3bc5ea4690bfba637fd17527de897ffc09a170be45bfd779c5a",
+      "source_filename": "Champions_0059H_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b7/Champions_0059H_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 18153,
+      "file": "风速狗（洗翠）_闪光.png",
+      "height": 128,
+      "sha256": "9b4485aa8e7ae8044ef7d165ee801c75122b6d6a7e9751255647da286e0c5685",
+      "source_filename": "Champions_0059H_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/cf/Champions_0059H_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "风速狗（洗翠）",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10230,
+  "opgg_key": "arcanine-hisui",
+  "recognition_ready": true,
+  "record_id": "legacy:59:风速狗（洗翠）",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "arcanine-hisui",
+  "species_name": "风速狗",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/arcanine-hisui"
+  },
+  "type_names": [
+    "火",
+    "岩石"
+  ],
+  "types": [
+    "fire",
+    "rock"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/arcanine-hisui"
+  },
+  "wiki_name": "风速狗（洗翠的样子）"
+}

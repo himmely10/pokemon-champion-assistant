@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 350,
+  "name": "美纳斯",
+  "species_name": "美纳斯",
+  "form_name": null,
+  "wiki_name": "美纳斯",
+  "directory": "美纳斯",
+  "source_slug": "milotic",
+  "base_stats": {
+    "hp": 95,
+    "attack": 60,
+    "defense": 79,
+    "special_attack": 100,
+    "special_defense": 125,
+    "speed": 81
+  },
+  "base_stat_total": 540,
+  "images": {
+    "normal": {
+      "file": "美纳斯.png",
+      "source_url": "https://media.52poke.com/wiki/5/5d/Champions_0350_Sprite.png",
+      "source_filename": "Champions_0350_Sprite.png",
+      "sha256": "da02c20842a0c9da846911a39aad5bbb227e6bccec3d7c512b6227f54ed8192a",
+      "width": 128,
+      "height": 128,
+      "bytes": 18883
+    },
+    "shiny": {
+      "file": "美纳斯_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/2/2f/Champions_0350_s_Sprite.png",
+      "source_filename": "Champions_0350_s_Sprite.png",
+      "sha256": "62f4d4035a74b3a3198b2bea3d3a342c67e9bf6a4760da997be47cead9004601",
+      "width": 128,
+      "height": 128,
+      "bytes": 19428
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/milotic?format=double&season=M-5",
+    "raw_path": "_sources/details/milotic.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

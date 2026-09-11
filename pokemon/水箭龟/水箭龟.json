@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 9,
+  "name": "水箭龟",
+  "species_name": "水箭龟",
+  "form_name": null,
+  "wiki_name": "水箭龟",
+  "directory": "水箭龟",
+  "source_slug": "blastoise",
+  "base_stats": {
+    "hp": 79,
+    "attack": 83,
+    "defense": 100,
+    "special_attack": 85,
+    "special_defense": 105,
+    "speed": 78
+  },
+  "base_stat_total": 530,
+  "images": {
+    "normal": {
+      "file": "水箭龟.png",
+      "source_url": "https://media.52poke.com/wiki/d/df/Champions_0009_Sprite.png",
+      "source_filename": "Champions_0009_Sprite.png",
+      "sha256": "b99ed9329850b3f04b1bcde1784aa36b5ff4e60f0c91be26246d33beccec5447",
+      "width": 128,
+      "height": 128,
+      "bytes": 17940
+    },
+    "shiny": {
+      "file": "水箭龟_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/85/Champions_0009_s_Sprite.png",
+      "source_filename": "Champions_0009_s_Sprite.png",
+      "sha256": "404b3aecc532066ae8b88bc70e1316606404f8a73de99b8e443a5a2fa236c241",
+      "width": 128,
+      "height": 128,
+      "bytes": 17995
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/blastoise?format=double&season=M-5",
+    "raw_path": "_sources/details/blastoise.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

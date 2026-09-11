@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "超级麻麻鳗鱼王"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 615,
+  "base_stats": {
+    "attack": 145,
+    "defense": 80,
+    "hp": 85,
+    "special_attack": 135,
+    "special_defense": 90,
+    "speed": 80
+  },
+  "data_ready": true,
+  "dex_number": 604,
+  "directory": "超级麻麻鳗鱼王",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级麻麻鳗鱼王",
+  "images": {
+    "normal": {
+      "bytes": 17363,
+      "file": "超级麻麻鳗鱼王.png",
+      "height": 128,
+      "sha256": "d468c73703bea8b6a962aeac93f6b75081c7a575acd9060f102f543d72d7f1c5",
+      "source_filename": "Champions_0604M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/d2/Champions_0604M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 17433,
+      "file": "超级麻麻鳗鱼王_闪光.png",
+      "height": 128,
+      "sha256": "ccfdfc31398e5e5f93b93849254f04c0a3aa4f9eaaca0fe5bd3ee4b932f727e7",
+      "source_filename": "Champions_0604M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/81/Champions_0604M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "eelektrossite",
+  "name": "超级麻麻鳗鱼王",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10290,
+  "opgg_key": "mega-eelektross",
+  "recognition_ready": true,
+  "record_id": "legacy:604:超级麻麻鳗鱼王",
+  "schema_version": 1,
+  "source_base_key": "eelektross",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "eelektross-mega",
+  "species_name": "麻麻鳗鱼王",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-eelektross"
+  },
+  "type_names": [
+    "电"
+  ],
+  "types": [
+    "electric"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-eelektross"
+  },
+  "wiki_name": "超级麻麻鳗鱼王"
+}

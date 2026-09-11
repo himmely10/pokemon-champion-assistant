@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 715,
+  "name": "音波龙",
+  "species_name": "音波龙",
+  "form_name": null,
+  "wiki_name": "音波龙",
+  "directory": "音波龙",
+  "source_slug": "noivern",
+  "base_stats": {
+    "hp": 85,
+    "attack": 70,
+    "defense": 80,
+    "special_attack": 97,
+    "special_defense": 80,
+    "speed": 123
+  },
+  "base_stat_total": 535,
+  "images": {
+    "normal": {
+      "file": "音波龙.png",
+      "source_url": "https://media.52poke.com/wiki/7/76/Champions_0715_Sprite.png",
+      "source_filename": "Champions_0715_Sprite.png",
+      "sha256": "7339c5b57a3c65548053132b0ec9349046bc1b36fe4bf4e15298350e2a362870",
+      "width": 128,
+      "height": 128,
+      "bytes": 12620
+    },
+    "shiny": {
+      "file": "音波龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/2/25/Champions_0715_s_Sprite.png",
+      "source_filename": "Champions_0715_s_Sprite.png",
+      "sha256": "c06419a20b36593875a7277e72f52088496e13a337eefa860ca5e8905d32c11e",
+      "width": 128,
+      "height": 128,
+      "bytes": 13432
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/noivern?format=double&season=M-5",
+    "raw_path": "_sources/details/noivern.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

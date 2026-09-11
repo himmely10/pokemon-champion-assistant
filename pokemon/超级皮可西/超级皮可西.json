@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 36,
+  "name": "超级皮可西",
+  "species_name": "皮可西",
+  "form_name": "超级皮可西",
+  "wiki_name": "超级皮可西",
+  "directory": "超级皮可西",
+  "source_slug": "clefable-mega",
+  "base_stats": {
+    "hp": 95,
+    "attack": 80,
+    "defense": 93,
+    "special_attack": 135,
+    "special_defense": 110,
+    "speed": 70
+  },
+  "base_stat_total": 583,
+  "images": {
+    "normal": {
+      "file": "超级皮可西.png",
+      "source_url": "https://media.52poke.com/wiki/2/2b/Champions_0036M_Sprite.png",
+      "source_filename": "Champions_0036M_Sprite.png",
+      "sha256": "2503d8e0917973b0fd2f08ff40918d3672a8720c5290b04eb94b9b5bb7c7661b",
+      "width": 128,
+      "height": 128,
+      "bytes": 12074
+    },
+    "shiny": {
+      "file": "超级皮可西_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/9/96/Champions_0036M_s_Sprite.png",
+      "source_filename": "Champions_0036M_s_Sprite.png",
+      "sha256": "6a8ba1a7f064235885f613e983006382068fe25fa688516f02be5c166d427678",
+      "width": 128,
+      "height": 128,
+      "bytes": 12110
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/clefable?format=double&season=M-5",
+    "raw_path": "_sources/details/clefable.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

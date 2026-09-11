@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "超级艾路雷朵"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 618,
+  "base_stats": {
+    "attack": 165,
+    "defense": 95,
+    "hp": 68,
+    "special_attack": 65,
+    "special_defense": 115,
+    "speed": 110
+  },
+  "data_ready": true,
+  "dex_number": 475,
+  "directory": "超级艾路雷朵",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级艾路雷朵",
+  "images": {
+    "normal": {
+      "bytes": 14446,
+      "file": "超级艾路雷朵.png",
+      "height": 128,
+      "sha256": "0a8a6c90d2923fabb7184ed067805a20896fda5ab99caefa2ca57dc57d929d11",
+      "source_filename": "Champions_0475M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/2d/Champions_0475M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14388,
+      "file": "超级艾路雷朵_闪光.png",
+      "height": 128,
+      "sha256": "ff9e89347a5bdcfd0852fdc781a051fcbd6eb9f54665018b5a7899e77c93fbf1",
+      "source_filename": "Champions_0475M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/c2/Champions_0475M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "galladite",
+  "name": "超级艾路雷朵",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10068,
+  "opgg_key": "mega-gallade",
+  "recognition_ready": true,
+  "record_id": "legacy:475:超级艾路雷朵",
+  "schema_version": 1,
+  "source_base_key": "gallade",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "gallade-mega",
+  "species_name": "艾路雷朵",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-gallade"
+  },
+  "type_names": [
+    "超能力",
+    "格斗"
+  ],
+  "types": [
+    "psychic",
+    "fighting"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-gallade"
+  },
+  "wiki_name": "超级艾路雷朵"
+}

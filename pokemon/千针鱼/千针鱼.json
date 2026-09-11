@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 211,
+  "name": "千针鱼",
+  "species_name": "千针鱼",
+  "form_name": null,
+  "wiki_name": "千针鱼",
+  "directory": "千针鱼",
+  "source_slug": "qwilfish",
+  "base_stats": {
+    "hp": 65,
+    "attack": 95,
+    "defense": 85,
+    "special_attack": 55,
+    "special_defense": 55,
+    "speed": 85
+  },
+  "base_stat_total": 440,
+  "images": {
+    "normal": {
+      "file": "千针鱼.png",
+      "source_url": "https://media.52poke.com/wiki/6/69/Champions_0211_Sprite.png",
+      "source_filename": "Champions_0211_Sprite.png",
+      "sha256": "74ccbf2fe06646373a7df70130d6666044e8e1235f2f44847ab83af950e55926",
+      "width": 128,
+      "height": 128,
+      "bytes": 11200
+    },
+    "shiny": {
+      "file": "千针鱼_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/2/24/Champions_0211_s_Sprite.png",
+      "source_filename": "Champions_0211_s_Sprite.png",
+      "sha256": "dedb456379fd86d3d3389dd8982922febe9ed63797c6df0fb66c618fb4a5d7e8",
+      "width": 128,
+      "height": 128,
+      "bytes": 11632
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/qwilfish?format=double&season=M-5",
+    "raw_path": "_sources/details/qwilfish.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

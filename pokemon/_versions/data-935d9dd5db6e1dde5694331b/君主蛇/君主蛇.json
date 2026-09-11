@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "君主蛇"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 528,
+  "base_stats": {
+    "attack": 75,
+    "defense": 95,
+    "hp": 75,
+    "special_attack": 75,
+    "special_defense": 95,
+    "speed": 113
+  },
+  "data_ready": true,
+  "dex_number": 497,
+  "directory": "君主蛇",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 15189,
+      "file": "君主蛇.png",
+      "height": 128,
+      "sha256": "7313d0eae50b36e30cb02af3b281da15ae9e33f84de31b75177c86db10baaf7f",
+      "source_filename": "Champions_0497_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/f7/Champions_0497_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15502,
+      "file": "君主蛇_闪光.png",
+      "height": 128,
+      "sha256": "cd736e2b77b1d43ebf8bf852c1f56390c9c08cc63270c0db2f47b016b735eb9c",
+      "source_filename": "Champions_0497_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/5b/Champions_0497_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "君主蛇",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 497,
+  "opgg_key": "serperior",
+  "recognition_ready": true,
+  "record_id": "legacy:497:君主蛇",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "serperior",
+  "species_name": "君主蛇",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/serperior"
+  },
+  "type_names": [
+    "草"
+  ],
+  "types": [
+    "grass"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/serperior"
+  },
+  "wiki_name": "君主蛇"
+}

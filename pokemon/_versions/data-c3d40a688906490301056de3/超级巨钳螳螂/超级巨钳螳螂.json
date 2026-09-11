@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 600,
+  "base_stats": {
+    "attack": 150,
+    "defense": 140,
+    "hp": 70,
+    "special_attack": 65,
+    "special_defense": 100,
+    "speed": 75
+  },
+  "dex_number": 212,
+  "directory": "超级巨钳螳螂",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级巨钳螳螂",
+  "images": {
+    "normal": {
+      "bytes": 15460,
+      "file": "超级巨钳螳螂.png",
+      "height": 128,
+      "sha256": "88fd9abeafbdc5a152db6e7b2201dd88c3155882ea81204c10a82b2885c226b5",
+      "source_filename": "Champions_0212M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/ea/Champions_0212M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 16326,
+      "file": "超级巨钳螳螂_闪光.png",
+      "height": 128,
+      "sha256": "73d23806fb3bd52e2fe471b3e154f2bb598b4753bedfb1f7c3fb94ed8ec115a6",
+      "source_filename": "Champions_0212M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/35/Champions_0212M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超级巨钳螳螂",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "scizor-mega",
+  "species_name": "巨钳螳螂",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "megaForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/scizor.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/scizor?format=double&season=M-5"
+  },
+  "wiki_name": "超级巨钳螳螂"
+}

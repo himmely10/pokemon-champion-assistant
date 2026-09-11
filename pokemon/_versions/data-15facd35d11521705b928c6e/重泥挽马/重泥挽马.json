@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "重泥挽马"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 500,
+  "base_stats": {
+    "attack": 125,
+    "defense": 100,
+    "hp": 100,
+    "special_attack": 55,
+    "special_defense": 85,
+    "speed": 35
+  },
+  "data_ready": true,
+  "dex_number": 750,
+  "directory": "重泥挽马",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 15427,
+      "file": "重泥挽马.png",
+      "height": 128,
+      "sha256": "d351fcd420e4fc66c5f30e24b952beb290d9dd86dc39649bd03c36e41c124146",
+      "source_filename": "Champions_0750_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/7e/Champions_0750_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15864,
+      "file": "重泥挽马_闪光.png",
+      "height": 128,
+      "sha256": "2fe76a6bbfa6254af7bbce0efa9634a027f000184013a7e236ab5dce819174a9",
+      "source_filename": "Champions_0750_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/43/Champions_0750_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "重泥挽马",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 750,
+  "opgg_key": "mudsdale",
+  "recognition_ready": true,
+  "record_id": "legacy:750:重泥挽马",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "mudsdale",
+  "species_name": "重泥挽马",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mudsdale"
+  },
+  "type_names": [
+    "地面"
+  ],
+  "types": [
+    "ground"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mudsdale"
+  },
+  "wiki_name": "重泥挽马"
+}

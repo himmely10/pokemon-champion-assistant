@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 911,
+  "name": "骨纹巨声鳄",
+  "species_name": "骨纹巨声鳄",
+  "form_name": null,
+  "wiki_name": "骨纹巨声鳄",
+  "directory": "骨纹巨声鳄",
+  "source_slug": "skeledirge",
+  "base_stats": {
+    "hp": 104,
+    "attack": 75,
+    "defense": 100,
+    "special_attack": 110,
+    "special_defense": 75,
+    "speed": 66
+  },
+  "base_stat_total": 530,
+  "images": {
+    "normal": {
+      "file": "骨纹巨声鳄.png",
+      "source_url": "https://media.52poke.com/wiki/3/3a/Champions_0911_Sprite.png",
+      "source_filename": "Champions_0911_Sprite.png",
+      "sha256": "7474b52c7c6808889736a36ae449b83240238ac64c99ca052086e056c96ab1fd",
+      "width": 128,
+      "height": 128,
+      "bytes": 15916
+    },
+    "shiny": {
+      "file": "骨纹巨声鳄_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/5/56/Champions_0911_s_Sprite.png",
+      "source_filename": "Champions_0911_s_Sprite.png",
+      "sha256": "1b6168374aa83a24f3eeb8a17dfc8ad0b1b1bd86595dc5542f5cf6615e054371",
+      "width": 128,
+      "height": 128,
+      "bytes": 16497
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/skeledirge?format=double&season=M-5",
+    "raw_path": "_sources/details/skeledirge.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

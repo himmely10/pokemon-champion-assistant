@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 483,
+  "base_stats": {
+    "attack": 50,
+    "defense": 145,
+    "hp": 58,
+    "special_attack": 95,
+    "special_defense": 105,
+    "speed": 30
+  },
+  "dex_number": 563,
+  "directory": "死神棺",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 15179,
+      "file": "死神棺.png",
+      "height": 128,
+      "sha256": "48c2e95aa345b42210781dbed4172c4f2f84c4e3be2405606d263e6c0346b434",
+      "source_filename": "Champions_0563_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/42/Champions_0563_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15996,
+      "file": "死神棺_闪光.png",
+      "height": 128,
+      "sha256": "ecbdf270089256f38f64cb5c09445b868c73e0a8148e1686853e25c47ab33e27",
+      "source_filename": "Champions_0563_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/36/Champions_0563_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "死神棺",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "cofagrigus",
+  "species_name": "死神棺",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/cofagrigus.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/cofagrigus?format=double&season=M-5"
+  },
+  "wiki_name": "迭失棺"
+}

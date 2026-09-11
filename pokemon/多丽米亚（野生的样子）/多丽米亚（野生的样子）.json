@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dex_number": 676,
+  "name": "多丽米亚（野生的样子）",
+  "species_name": "多丽米亚",
+  "form_name": "野生的样子",
+  "wiki_name": "多丽米亚（野生的样子）",
+  "directory": "多丽米亚（野生的样子）",
+  "source_slug": "furfrou",
+  "base_stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 60,
+    "special_attack": 65,
+    "special_defense": 90,
+    "speed": 102
+  },
+  "base_stat_total": 472,
+  "images": {
+    "normal": {
+      "file": "多丽米亚（野生的样子）.png",
+      "source_url": "https://media.52poke.com/wiki/d/d7/Champions_0676_Sprite.png",
+      "source_filename": "Champions_0676_Sprite.png",
+      "sha256": "29cb99689454cfd65506d6dcfe0611d28b1236b9ed730cb849f4967994b02f03",
+      "width": 128,
+      "height": 128,
+      "bytes": 10590
+    },
+    "shiny": {
+      "file": "多丽米亚（野生的样子）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/f/f2/Champions_0676_s_Sprite.png",
+      "source_filename": "Champions_0676_s_Sprite.png",
+      "sha256": "b2624ef57deb78e5b13d147f7f756cae671f8ded8b31e58b91f233e4f4ae63b3",
+      "width": 128,
+      "height": 128,
+      "bytes": 9855
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/furfrou?format=double&season=M-5",
+    "raw_path": "_sources/details/furfrou.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "shared_species_profile",
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。"
+}

@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 530,
+  "base_stats": {
+    "attack": 110,
+    "defense": 70,
+    "hp": 76,
+    "special_attack": 81,
+    "special_defense": 70,
+    "speed": 123
+  },
+  "dex_number": 908,
+  "directory": "魔幻假面喵",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 13730,
+      "file": "魔幻假面喵.png",
+      "height": 128,
+      "sha256": "f6db8163fc18434b73a28bc4587c417ee18a676300a2c24d29f6580ce3a7ba0c",
+      "source_filename": "Champions_0908_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/7f/Champions_0908_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13852,
+      "file": "魔幻假面喵_闪光.png",
+      "height": 128,
+      "sha256": "3f67f71efd0ecfbc3939ef0a3bff7a4dde9b4b1dea43d10858217eed991f71f0",
+      "source_filename": "Champions_0908_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/62/Champions_0908_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "魔幻假面喵",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "meowscarada",
+  "species_name": "魔幻假面喵",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/meowscarada.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/meowscarada?format=double&season=M-5"
+  },
+  "wiki_name": "魔幻假面喵"
+}

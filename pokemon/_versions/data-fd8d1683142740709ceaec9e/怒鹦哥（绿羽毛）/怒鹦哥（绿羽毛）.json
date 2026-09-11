@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "怒鹦哥 (绿羽毛)"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 417,
+  "base_stats": {
+    "attack": 96,
+    "defense": 51,
+    "hp": 82,
+    "special_attack": 45,
+    "special_defense": 51,
+    "speed": 92
+  },
+  "data_ready": true,
+  "dex_number": 931,
+  "directory": "怒鹦哥（绿羽毛）",
+  "form_name": "怒鹦哥（绿羽毛）",
+  "images": {
+    "normal": {
+      "bytes": 9453,
+      "file": "怒鹦哥（绿羽毛）.png",
+      "height": 128,
+      "sha256": "dc851315e4e3cd2767c730aa2644a6d63c0e6dd0fcfa9038e0b4ead5e30772d5",
+      "source_filename": "Champions_0931_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/53/Champions_0931_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 9771,
+      "file": "怒鹦哥（绿羽毛）_闪光.png",
+      "height": 128,
+      "sha256": "6dbdc995a6064ebf466367f8719c30b049be20f909238adb0d936bace231bdf7",
+      "source_filename": "Champions_0931_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/7c/Champions_0931_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "怒鹦哥（绿羽毛）",
+  "name_source": "opgg_zh_cn",
+  "opgg_id": 931,
+  "opgg_key": "squawkabilly-green-plumage",
+  "recognition_ready": true,
+  "record_id": "opgg:squawkabilly-green-plumage",
+  "schema_version": 2,
+  "source_base_key": null,
+  "source_is_new": true,
+  "source_presence": "present",
+  "source_regulation": "M-C",
+  "source_slug": "squawkabilly-green-plumage",
+  "species_name": "怒鹦哥",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/squawkabilly-green-plumage"
+  },
+  "type_names": [
+    "一般",
+    "飞行"
+  ],
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/squawkabilly-green-plumage"
+  }
+}

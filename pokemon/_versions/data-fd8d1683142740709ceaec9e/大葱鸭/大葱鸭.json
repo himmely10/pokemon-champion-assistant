@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "大葱鸭"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 377,
+  "base_stats": {
+    "attack": 90,
+    "defense": 55,
+    "hp": 52,
+    "special_attack": 58,
+    "special_defense": 62,
+    "speed": 60
+  },
+  "data_ready": true,
+  "dex_number": 83,
+  "directory": "大葱鸭",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 11726,
+      "file": "大葱鸭.png",
+      "height": 128,
+      "sha256": "6416ffc8fe33758a06c1c635c33314cd4f9af37537fa5e7d76276727bac98e76",
+      "source_filename": "Champions_0083_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/fd/Champions_0083_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11797,
+      "file": "大葱鸭_闪光.png",
+      "height": 128,
+      "sha256": "579e034406315314f3b3695aa006766013806fe410d90de2f1c9b37dee02b6ed",
+      "source_filename": "Champions_0083_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/5a/Champions_0083_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "大葱鸭",
+  "name_source": "opgg_zh_cn",
+  "opgg_id": 83,
+  "opgg_key": "farfetchd",
+  "recognition_ready": true,
+  "record_id": "opgg:farfetchd",
+  "schema_version": 2,
+  "source_base_key": null,
+  "source_is_new": true,
+  "source_presence": "present",
+  "source_regulation": "M-C",
+  "source_slug": "farfetchd",
+  "species_name": "大葱鸭",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/farfetchd"
+  },
+  "type_names": [
+    "一般",
+    "飞行"
+  ],
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/farfetchd"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "超级袋兽"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 590,
+  "base_stats": {
+    "attack": 125,
+    "defense": 100,
+    "hp": 105,
+    "special_attack": 60,
+    "special_defense": 100,
+    "speed": 100
+  },
+  "data_ready": true,
+  "dex_number": 115,
+  "directory": "超级袋兽",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级袋兽",
+  "images": {
+    "normal": {
+      "bytes": 18563,
+      "file": "超级袋兽.png",
+      "height": 128,
+      "sha256": "d6b2c21a6f7ae9bdd9dc4d157efa6e8f3762d5eaa0ed119f9aaac65c7ee1a2b3",
+      "source_filename": "Champions_0115M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/1e/Champions_0115M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 18619,
+      "file": "超级袋兽_闪光.png",
+      "height": 128,
+      "sha256": "8f337193c49d600a5f961f7b08a6fda403d53e3765109afda511659a69a769da",
+      "source_filename": "Champions_0115M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/4c/Champions_0115M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "kangaskhanite",
+  "name": "超级袋兽",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10039,
+  "opgg_key": "mega-kangaskhan",
+  "recognition_ready": true,
+  "record_id": "legacy:115:超级袋兽",
+  "schema_version": 1,
+  "source_base_key": "kangaskhan",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "kangaskhan-mega",
+  "species_name": "袋兽",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-kangaskhan"
+  },
+  "type_names": [
+    "一般"
+  ],
+  "types": [
+    "normal"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-kangaskhan"
+  },
+  "wiki_name": "超级袋兽"
+}

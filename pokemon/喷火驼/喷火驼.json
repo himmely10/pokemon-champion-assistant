@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 323,
+  "name": "喷火驼",
+  "species_name": "喷火驼",
+  "form_name": null,
+  "wiki_name": "喷火驼",
+  "directory": "喷火驼",
+  "source_slug": "camerupt",
+  "base_stats": {
+    "hp": 70,
+    "attack": 100,
+    "defense": 70,
+    "special_attack": 105,
+    "special_defense": 75,
+    "speed": 40
+  },
+  "base_stat_total": 460,
+  "images": {
+    "normal": {
+      "file": "喷火驼.png",
+      "source_url": "https://media.52poke.com/wiki/a/ac/Champions_0323_Sprite.png",
+      "source_filename": "Champions_0323_Sprite.png",
+      "sha256": "59e5eef0f9814c8c55a5fc89c56d27a30a85babf8a257436af1ba81b0ea5fa1e",
+      "width": 128,
+      "height": 128,
+      "bytes": 18154
+    },
+    "shiny": {
+      "file": "喷火驼_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/0/02/Champions_0323_s_Sprite.png",
+      "source_filename": "Champions_0323_s_Sprite.png",
+      "sha256": "0ba15a4619ffb03eae4d89c9da71bdda584b1556e4a2137f6584e9dd745802b8",
+      "width": 128,
+      "height": 128,
+      "bytes": 17717
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/camerupt?format=double&season=M-5",
+    "raw_path": "_sources/details/camerupt.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

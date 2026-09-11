@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "超级阿勃梭鲁"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 565,
+  "base_stats": {
+    "attack": 150,
+    "defense": 60,
+    "hp": 65,
+    "special_attack": 115,
+    "special_defense": 60,
+    "speed": 115
+  },
+  "data_ready": true,
+  "dex_number": 359,
+  "directory": "超级阿勃梭鲁",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级阿勃梭鲁",
+  "images": {
+    "normal": {
+      "bytes": 16668,
+      "file": "超级阿勃梭鲁.png",
+      "height": 128,
+      "sha256": "f04d971349f4d792a6f1b19541dbfbac5cd5210cbb00e302050724af0b0edad8",
+      "source_filename": "Champions_0359M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/88/Champions_0359M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 16629,
+      "file": "超级阿勃梭鲁_闪光.png",
+      "height": 128,
+      "sha256": "fd5b133e48665d265ea994fbaecf65071f207b7d2e0062e2e37ab74fabb4a8db",
+      "source_filename": "Champions_0359M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/14/Champions_0359M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "absolite",
+  "name": "超级阿勃梭鲁",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10057,
+  "opgg_key": "mega-absol",
+  "recognition_ready": true,
+  "record_id": "legacy:359:超级阿勃梭鲁",
+  "schema_version": 1,
+  "source_base_key": "absol",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "absol-mega",
+  "species_name": "阿勃梭鲁",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-absol"
+  },
+  "type_names": [
+    "恶"
+  ],
+  "types": [
+    "dark"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-absol"
+  },
+  "wiki_name": "超级阿勃梭鲁"
+}

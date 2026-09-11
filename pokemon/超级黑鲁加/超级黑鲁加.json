@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 229,
+  "name": "超级黑鲁加",
+  "species_name": "黑鲁加",
+  "form_name": "超级黑鲁加",
+  "wiki_name": "超级黑鲁加",
+  "directory": "超级黑鲁加",
+  "source_slug": "houndoom-mega",
+  "base_stats": {
+    "hp": 75,
+    "attack": 90,
+    "defense": 90,
+    "special_attack": 140,
+    "special_defense": 90,
+    "speed": 115
+  },
+  "base_stat_total": 600,
+  "images": {
+    "normal": {
+      "file": "超级黑鲁加.png",
+      "source_url": "https://media.52poke.com/wiki/6/6d/Champions_0229M_Sprite.png",
+      "source_filename": "Champions_0229M_Sprite.png",
+      "sha256": "2f730e812d1a02828d82a30de7c5c865b822ae35e442a544d185a6e6dce103b8",
+      "width": 128,
+      "height": 128,
+      "bytes": 12955
+    },
+    "shiny": {
+      "file": "超级黑鲁加_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/80/Champions_0229M_s_Sprite.png",
+      "source_filename": "Champions_0229M_s_Sprite.png",
+      "sha256": "1c600be154f37570ee9a22e0e035ef3877e966881b7289b933f3ae20645bbcf7",
+      "width": 128,
+      "height": 128,
+      "bytes": 13581
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/houndoom?format=double&season=M-5",
+    "raw_path": "_sources/details/houndoom.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

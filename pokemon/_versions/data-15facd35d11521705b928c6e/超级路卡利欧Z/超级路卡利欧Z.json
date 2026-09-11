@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "超级路卡利欧Z"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 625,
+  "base_stats": {
+    "attack": 100,
+    "defense": 70,
+    "hp": 70,
+    "special_attack": 164,
+    "special_defense": 70,
+    "speed": 151
+  },
+  "data_ready": true,
+  "dex_number": 448,
+  "directory": "超级路卡利欧Z",
+  "form_name": "超级路卡利欧Z",
+  "images": {
+    "normal": {
+      "bytes": 18167,
+      "file": "超级路卡利欧Z.png",
+      "height": 128,
+      "sha256": "587400dd6f13d8836128eefbacfb22100b9e283119acbfb0415b0ae8c150506b",
+      "source_filename": "Champions_0448MZ_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/f9/Champions_0448MZ_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 18499,
+      "file": "超级路卡利欧Z_闪光.png",
+      "height": 128,
+      "sha256": "55c865b6d9b3060a2b2b173b5a6887c79b661076cbb2463ef075da5379c8eb1b",
+      "source_filename": "Champions_0448MZ_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/92/Champions_0448MZ_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "lucarionite-z",
+  "name": "超级路卡利欧Z",
+  "name_source": "opgg_zh_cn",
+  "opgg_id": 10310,
+  "opgg_key": "mega-lucario-z",
+  "recognition_ready": true,
+  "record_id": "opgg:mega-lucario-z",
+  "schema_version": 2,
+  "source_base_key": "lucario",
+  "source_is_new": true,
+  "source_presence": "present",
+  "source_regulation": "M-C",
+  "source_slug": "lucario-mega-z",
+  "species_name": "路卡利欧",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-lucario-z"
+  },
+  "type_names": [
+    "格斗",
+    "钢"
+  ],
+  "types": [
+    "fighting",
+    "steel"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-lucario-z"
+  }
+}

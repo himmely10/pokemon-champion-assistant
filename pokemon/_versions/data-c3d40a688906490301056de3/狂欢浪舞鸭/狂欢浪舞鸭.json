@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 530,
+  "base_stats": {
+    "attack": 120,
+    "defense": 80,
+    "hp": 85,
+    "special_attack": 85,
+    "special_defense": 75,
+    "speed": 85
+  },
+  "dex_number": 914,
+  "directory": "狂欢浪舞鸭",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 15887,
+      "file": "狂欢浪舞鸭.png",
+      "height": 128,
+      "sha256": "9ff961c2d4c0150e2bac0cc012c7c2b745807e5d362be3512f95b39bcd918766",
+      "source_filename": "Champions_0914_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/84/Champions_0914_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 16258,
+      "file": "狂欢浪舞鸭_闪光.png",
+      "height": 128,
+      "sha256": "adbf4dc053225791e8191574a17bb1fa7e8353a7978731889075b3eb7e221cbf",
+      "source_filename": "Champions_0914_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/8a/Champions_0914_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "狂欢浪舞鸭",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "quaquaval",
+  "species_name": "狂欢浪舞鸭",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/quaquaval.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/quaquaval?format=double&season=M-5"
+  },
+  "wiki_name": "狂欢浪舞鸭"
+}

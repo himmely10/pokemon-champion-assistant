@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "超级狠辣椒"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 586,
+  "base_stats": {
+    "attack": 138,
+    "defense": 85,
+    "hp": 65,
+    "special_attack": 138,
+    "special_defense": 85,
+    "speed": 75
+  },
+  "data_ready": true,
+  "dex_number": 952,
+  "directory": "超级狠辣椒",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级狠辣椒",
+  "images": {
+    "normal": {
+      "bytes": 19107,
+      "file": "超级狠辣椒.png",
+      "height": 128,
+      "sha256": "4bb2c21dd0bc09c0d9c1c6d550dd1c0575858b026a36988a9fa1a79ac35a6658",
+      "source_filename": "Champions_0952M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/d7/Champions_0952M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 19776,
+      "file": "超级狠辣椒_闪光.png",
+      "height": 128,
+      "sha256": "54d09a04e3645ac5f6a9c4bfc4cf0c90dc4e3968d2722fef7a2f0b3ded4f5ee1",
+      "source_filename": "Champions_0952M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/5a/Champions_0952M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "scovillainite",
+  "name": "超级狠辣椒",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10320,
+  "opgg_key": "mega-scovillain",
+  "recognition_ready": true,
+  "record_id": "legacy:952:超级狠辣椒",
+  "schema_version": 1,
+  "source_base_key": "scovillain",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "scovillain-mega",
+  "species_name": "狠辣椒",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-scovillain"
+  },
+  "type_names": [
+    "草",
+    "火"
+  ],
+  "types": [
+    "grass",
+    "fire"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-scovillain"
+  },
+  "wiki_name": "超级狠辣椒"
+}

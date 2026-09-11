@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 490,
+  "base_stats": {
+    "attack": 60,
+    "defense": 80,
+    "hp": 90,
+    "special_attack": 90,
+    "special_defense": 110,
+    "speed": 60
+  },
+  "dex_number": 765,
+  "directory": "智挥猩",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 15648,
+      "file": "智挥猩.png",
+      "height": 128,
+      "sha256": "5c44e13e493f4348212dad71758c17b5e175805e65ae0757b06f2b889b6e83f3",
+      "source_filename": "Champions_0765_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b3/Champions_0765_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15829,
+      "file": "智挥猩_闪光.png",
+      "height": 128,
+      "sha256": "5cbba3fda35eb32b02e617eedaa4f8bf527a7b19afee12591331b82311392dcf",
+      "source_filename": "Champions_0765_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/85/Champions_0765_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "智挥猩",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "oranguru",
+  "species_name": "智挥猩",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/oranguru.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/oranguru?format=double&season=M-5"
+  },
+  "wiki_name": "智挥猩"
+}

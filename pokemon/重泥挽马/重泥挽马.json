@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 750,
+  "name": "重泥挽马",
+  "species_name": "重泥挽马",
+  "form_name": null,
+  "wiki_name": "重泥挽马",
+  "directory": "重泥挽马",
+  "source_slug": "mudsdale",
+  "base_stats": {
+    "hp": 100,
+    "attack": 125,
+    "defense": 100,
+    "special_attack": 55,
+    "special_defense": 85,
+    "speed": 35
+  },
+  "base_stat_total": 500,
+  "images": {
+    "normal": {
+      "file": "重泥挽马.png",
+      "source_url": "https://media.52poke.com/wiki/7/7e/Champions_0750_Sprite.png",
+      "source_filename": "Champions_0750_Sprite.png",
+      "sha256": "d351fcd420e4fc66c5f30e24b952beb290d9dd86dc39649bd03c36e41c124146",
+      "width": 128,
+      "height": 128,
+      "bytes": 15427
+    },
+    "shiny": {
+      "file": "重泥挽马_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/4/43/Champions_0750_s_Sprite.png",
+      "source_filename": "Champions_0750_s_Sprite.png",
+      "sha256": "2fe76a6bbfa6254af7bbce0efa9634a027f000184013a7e236ab5dce819174a9",
+      "width": 128,
+      "height": 128,
+      "bytes": 15864
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/mudsdale?format=double&season=M-5",
+    "raw_path": "_sources/details/mudsdale.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

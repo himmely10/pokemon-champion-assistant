@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "玛力露丽"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 420,
+  "base_stats": {
+    "attack": 50,
+    "defense": 80,
+    "hp": 100,
+    "special_attack": 60,
+    "special_defense": 80,
+    "speed": 50
+  },
+  "data_ready": true,
+  "dex_number": 184,
+  "directory": "玛力露丽",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 12824,
+      "file": "玛力露丽.png",
+      "height": 128,
+      "sha256": "f0ddb85e8c592f07706d91b544a83241ab5fe8f5f516c75f9883ddf49fbdccb1",
+      "source_filename": "Champions_0184_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/df/Champions_0184_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12928,
+      "file": "玛力露丽_闪光.png",
+      "height": 128,
+      "sha256": "f0cfbd96c5e6f8e40499c0c41e6be92746cf02b8fcec18153e4d6c7113be2afa",
+      "source_filename": "Champions_0184_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/81/Champions_0184_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "玛力露丽",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 184,
+  "opgg_key": "azumarill",
+  "recognition_ready": true,
+  "record_id": "legacy:184:玛力露丽",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "azumarill",
+  "species_name": "玛力露丽",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/azumarill"
+  },
+  "type_names": [
+    "水",
+    "妖精"
+  ],
+  "types": [
+    "water",
+    "fairy"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/azumarill"
+  },
+  "wiki_name": "玛力露丽"
+}

@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 480,
+  "base_stats": {
+    "attack": 64,
+    "defense": 60,
+    "hp": 68,
+    "special_attack": 111,
+    "special_defense": 60,
+    "speed": 117
+  },
+  "dex_number": 758,
+  "directory": "焰后蜥",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 11947,
+      "file": "焰后蜥.png",
+      "height": 128,
+      "sha256": "abb7652136df78470c2c4910c265e324cc006e0dc29b5fbed75d1c6787cf3a5b",
+      "source_filename": "Champions_0758_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/0d/Champions_0758_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12536,
+      "file": "焰后蜥_闪光.png",
+      "height": 128,
+      "sha256": "e1a2aceb91b61a69213d188bf1216a501d42d8d13f3e34ef860babfa1c83a5a1",
+      "source_filename": "Champions_0758_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/68/Champions_0758_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "焰后蜥",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "salazzle",
+  "species_name": "焰后蜥",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/salazzle.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/salazzle?format=double&season=M-5"
+  },
+  "wiki_name": "焰后蜥"
+}

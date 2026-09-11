@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 691,
+  "name": "毒藻龙",
+  "species_name": "毒藻龙",
+  "form_name": null,
+  "wiki_name": "毒藻龙",
+  "directory": "毒藻龙",
+  "source_slug": "dragalge",
+  "base_stats": {
+    "hp": 65,
+    "attack": 75,
+    "defense": 90,
+    "special_attack": 97,
+    "special_defense": 123,
+    "speed": 44
+  },
+  "base_stat_total": 494,
+  "images": {
+    "normal": {
+      "file": "毒藻龙.png",
+      "source_url": "https://media.52poke.com/wiki/4/4d/Champions_0691_Sprite.png",
+      "source_filename": "Champions_0691_Sprite.png",
+      "sha256": "451a33d96067db28c3e3ccf9a622dac32c8f3166ec03884d400da4c5874deab1",
+      "width": 128,
+      "height": 128,
+      "bytes": 11464
+    },
+    "shiny": {
+      "file": "毒藻龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/0/03/Champions_0691_s_Sprite.png",
+      "source_filename": "Champions_0691_s_Sprite.png",
+      "sha256": "0806679874ceeb85215efe019ea93bfd567121d200dd389dcb882439abccdd96",
+      "width": 128,
+      "height": 128,
+      "bytes": 11756
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/dragalge?format=double&season=M-5",
+    "raw_path": "_sources/details/dragalge.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

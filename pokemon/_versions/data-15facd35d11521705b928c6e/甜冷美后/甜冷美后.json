@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "甜冷美后"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 510,
+  "base_stats": {
+    "attack": 120,
+    "defense": 98,
+    "hp": 72,
+    "special_attack": 50,
+    "special_defense": 98,
+    "speed": 72
+  },
+  "data_ready": true,
+  "dex_number": 763,
+  "directory": "甜冷美后",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 13560,
+      "file": "甜冷美后.png",
+      "height": 128,
+      "sha256": "e941802343af25a9bf8faabfa4f933dc4700287282170c104e47091c5b2700ab",
+      "source_filename": "Champions_0763_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b6/Champions_0763_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13633,
+      "file": "甜冷美后_闪光.png",
+      "height": 128,
+      "sha256": "d27e53098d19006b5d4683c4b8bd385ff5416928ddc76db163536db6fc6a7e2c",
+      "source_filename": "Champions_0763_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/7e/Champions_0763_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "甜冷美后",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 763,
+  "opgg_key": "tsareena",
+  "recognition_ready": true,
+  "record_id": "legacy:763:甜冷美后",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "tsareena",
+  "species_name": "甜冷美后",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/tsareena"
+  },
+  "type_names": [
+    "草"
+  ],
+  "types": [
+    "grass"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/tsareena"
+  },
+  "wiki_name": "甜冷美后"
+}

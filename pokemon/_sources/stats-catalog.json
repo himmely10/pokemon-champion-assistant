@@ -1,0 +1,5058 @@
+{
+  "abomasnow": {
+    "dex_number": 460,
+    "stats": {
+      "hp": 90,
+      "atk": 92,
+      "def": 75,
+      "spAtk": 92,
+      "spDef": 85,
+      "speed": 60
+    },
+    "provider": "pokechamdb",
+    "page_slug": "abomasnow",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/abomasnow?format=double&season=M-5",
+    "raw_path": "_sources/details/abomasnow.html"
+  },
+  "abomasnow-mega": {
+    "dex_number": 460,
+    "stats": {
+      "hp": 90,
+      "atk": 132,
+      "def": 105,
+      "spAtk": 132,
+      "spDef": 105,
+      "speed": 30
+    },
+    "provider": "pokechamdb",
+    "page_slug": "abomasnow",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/abomasnow?format=double&season=M-5",
+    "raw_path": "_sources/details/abomasnow.html"
+  },
+  "absol": {
+    "dex_number": 359,
+    "stats": {
+      "hp": 65,
+      "atk": 130,
+      "def": 60,
+      "spAtk": 75,
+      "spDef": 60,
+      "speed": 75
+    },
+    "provider": "pokechamdb",
+    "page_slug": "absol",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/absol?format=double&season=M-5",
+    "raw_path": "_sources/details/absol.html"
+  },
+  "absol-mega": {
+    "dex_number": 359,
+    "stats": {
+      "hp": 65,
+      "atk": 150,
+      "def": 60,
+      "spAtk": 115,
+      "spDef": 60,
+      "speed": 115
+    },
+    "provider": "pokechamdb",
+    "page_slug": "absol",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/absol?format=double&season=M-5",
+    "raw_path": "_sources/details/absol.html"
+  },
+  "absol-mega-z": {
+    "dex_number": 359,
+    "stats": {
+      "hp": 65,
+      "atk": 154,
+      "def": 60,
+      "spAtk": 75,
+      "spDef": 60,
+      "speed": 151
+    },
+    "provider": "pokechamdb",
+    "page_slug": "absol",
+    "field": "megaForms[1].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/absol?format=double&season=M-5",
+    "raw_path": "_sources/details/absol.html"
+  },
+  "aegislash": {
+    "dex_number": 681,
+    "stats": {
+      "hp": 60,
+      "atk": 50,
+      "def": 140,
+      "spAtk": 50,
+      "spDef": 140,
+      "speed": 60
+    },
+    "provider": "pokechamdb",
+    "page_slug": "aegislash",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/aegislash?format=double&season=M-5",
+    "raw_path": "_sources/details/aegislash.html"
+  },
+  "aerodactyl": {
+    "dex_number": 142,
+    "stats": {
+      "hp": 80,
+      "atk": 105,
+      "def": 65,
+      "spAtk": 60,
+      "spDef": 75,
+      "speed": 130
+    },
+    "provider": "pokechamdb",
+    "page_slug": "aerodactyl",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/aerodactyl?format=double&season=M-5",
+    "raw_path": "_sources/details/aerodactyl.html"
+  },
+  "aerodactyl-mega": {
+    "dex_number": 142,
+    "stats": {
+      "hp": 80,
+      "atk": 135,
+      "def": 85,
+      "spAtk": 70,
+      "spDef": 95,
+      "speed": 150
+    },
+    "provider": "pokechamdb",
+    "page_slug": "aerodactyl",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/aerodactyl?format=double&season=M-5",
+    "raw_path": "_sources/details/aerodactyl.html"
+  },
+  "aggron": {
+    "dex_number": 306,
+    "stats": {
+      "hp": 70,
+      "atk": 110,
+      "def": 180,
+      "spAtk": 60,
+      "spDef": 60,
+      "speed": 50
+    },
+    "provider": "pokechamdb",
+    "page_slug": "aggron",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/aggron?format=double&season=M-5",
+    "raw_path": "_sources/details/aggron.html"
+  },
+  "aggron-mega": {
+    "dex_number": 306,
+    "stats": {
+      "hp": 70,
+      "atk": 140,
+      "def": 230,
+      "spAtk": 60,
+      "spDef": 80,
+      "speed": 50
+    },
+    "provider": "pokechamdb",
+    "page_slug": "aggron",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/aggron?format=double&season=M-5",
+    "raw_path": "_sources/details/aggron.html"
+  },
+  "alakazam": {
+    "dex_number": 65,
+    "stats": {
+      "hp": 55,
+      "atk": 50,
+      "def": 45,
+      "spAtk": 135,
+      "spDef": 95,
+      "speed": 120
+    },
+    "provider": "pokechamdb",
+    "page_slug": "alakazam",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/alakazam?format=double&season=M-5",
+    "raw_path": "_sources/details/alakazam.html"
+  },
+  "alakazam-mega": {
+    "dex_number": 65,
+    "stats": {
+      "hp": 55,
+      "atk": 50,
+      "def": 65,
+      "spAtk": 175,
+      "spDef": 105,
+      "speed": 150
+    },
+    "provider": "pokechamdb",
+    "page_slug": "alakazam",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/alakazam?format=double&season=M-5",
+    "raw_path": "_sources/details/alakazam.html"
+  },
+  "alcremie": {
+    "dex_number": 869,
+    "stats": {
+      "hp": 65,
+      "atk": 60,
+      "def": 75,
+      "spAtk": 110,
+      "spDef": 121,
+      "speed": 64
+    },
+    "provider": "pokechamdb",
+    "page_slug": "alcremie",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/alcremie?format=double&season=M-5",
+    "raw_path": "_sources/details/alcremie.html"
+  },
+  "altaria": {
+    "dex_number": 334,
+    "stats": {
+      "hp": 75,
+      "atk": 70,
+      "def": 90,
+      "spAtk": 70,
+      "spDef": 105,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "altaria",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/altaria?format=double&season=M-5",
+    "raw_path": "_sources/details/altaria.html"
+  },
+  "altaria-mega": {
+    "dex_number": 334,
+    "stats": {
+      "hp": 75,
+      "atk": 110,
+      "def": 110,
+      "spAtk": 110,
+      "spDef": 105,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "altaria",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/altaria?format=double&season=M-5",
+    "raw_path": "_sources/details/altaria.html"
+  },
+  "ampharos": {
+    "dex_number": 181,
+    "stats": {
+      "hp": 90,
+      "atk": 75,
+      "def": 85,
+      "spAtk": 115,
+      "spDef": 90,
+      "speed": 55
+    },
+    "provider": "pokechamdb",
+    "page_slug": "ampharos",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/ampharos?format=double&season=M-5",
+    "raw_path": "_sources/details/ampharos.html"
+  },
+  "ampharos-mega": {
+    "dex_number": 181,
+    "stats": {
+      "hp": 90,
+      "atk": 95,
+      "def": 105,
+      "spAtk": 165,
+      "spDef": 110,
+      "speed": 45
+    },
+    "provider": "pokechamdb",
+    "page_slug": "ampharos",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/ampharos?format=double&season=M-5",
+    "raw_path": "_sources/details/ampharos.html"
+  },
+  "annihilape": {
+    "dex_number": 979,
+    "stats": {
+      "hp": 110,
+      "atk": 115,
+      "def": 80,
+      "spAtk": 50,
+      "spDef": 90,
+      "speed": 90
+    },
+    "provider": "pokechamdb",
+    "page_slug": "annihilape",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/annihilape?format=double&season=M-5",
+    "raw_path": "_sources/details/annihilape.html"
+  },
+  "appletun": {
+    "dex_number": 842,
+    "stats": {
+      "hp": 110,
+      "atk": 85,
+      "def": 80,
+      "spAtk": 100,
+      "spDef": 80,
+      "speed": 30
+    },
+    "provider": "pokechamdb",
+    "page_slug": "appletun",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/appletun?format=double&season=M-5",
+    "raw_path": "_sources/details/appletun.html"
+  },
+  "araquanid": {
+    "dex_number": 752,
+    "stats": {
+      "hp": 68,
+      "atk": 70,
+      "def": 92,
+      "spAtk": 50,
+      "spDef": 132,
+      "speed": 42
+    },
+    "provider": "pokechamdb",
+    "page_slug": "araquanid",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/araquanid?format=double&season=M-5",
+    "raw_path": "_sources/details/araquanid.html"
+  },
+  "arbok": {
+    "dex_number": 24,
+    "stats": {
+      "hp": 60,
+      "atk": 95,
+      "def": 69,
+      "spAtk": 65,
+      "spDef": 79,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "arbok",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/arbok?format=double&season=M-5",
+    "raw_path": "_sources/details/arbok.html"
+  },
+  "arcanine-hisui": {
+    "dex_number": 59,
+    "stats": {
+      "hp": 95,
+      "atk": 115,
+      "def": 80,
+      "spAtk": 95,
+      "spDef": 80,
+      "speed": 90
+    },
+    "provider": "pokechamdb",
+    "page_slug": "arcanine-hisui",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/arcanine-hisui?format=double&season=M-5",
+    "raw_path": "_sources/details/arcanine-hisui.html"
+  },
+  "arcanine": {
+    "dex_number": 59,
+    "stats": {
+      "hp": 90,
+      "atk": 110,
+      "def": 80,
+      "spAtk": 100,
+      "spDef": 80,
+      "speed": 95
+    },
+    "provider": "pokechamdb",
+    "page_slug": "arcanine",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/arcanine?format=double&season=M-5",
+    "raw_path": "_sources/details/arcanine.html"
+  },
+  "archaludon": {
+    "dex_number": 1018,
+    "stats": {
+      "hp": 90,
+      "atk": 105,
+      "def": 130,
+      "spAtk": 125,
+      "spDef": 65,
+      "speed": 85
+    },
+    "provider": "pokechamdb",
+    "page_slug": "archaludon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/archaludon?format=double&season=M-5",
+    "raw_path": "_sources/details/archaludon.html"
+  },
+  "ariados": {
+    "dex_number": 168,
+    "stats": {
+      "hp": 70,
+      "atk": 90,
+      "def": 70,
+      "spAtk": 60,
+      "spDef": 70,
+      "speed": 40
+    },
+    "provider": "pokechamdb",
+    "page_slug": "ariados",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/ariados?format=double&season=M-5",
+    "raw_path": "_sources/details/ariados.html"
+  },
+  "armarouge": {
+    "dex_number": 936,
+    "stats": {
+      "hp": 85,
+      "atk": 60,
+      "def": 100,
+      "spAtk": 125,
+      "spDef": 80,
+      "speed": 75
+    },
+    "provider": "pokechamdb",
+    "page_slug": "armarouge",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/armarouge?format=double&season=M-5",
+    "raw_path": "_sources/details/armarouge.html"
+  },
+  "aromatisse": {
+    "dex_number": 683,
+    "stats": {
+      "hp": 101,
+      "atk": 72,
+      "def": 72,
+      "spAtk": 99,
+      "spDef": 89,
+      "speed": 29
+    },
+    "provider": "pokechamdb",
+    "page_slug": "aromatisse",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/aromatisse?format=double&season=M-5",
+    "raw_path": "_sources/details/aromatisse.html"
+  },
+  "audino": {
+    "dex_number": 531,
+    "stats": {
+      "hp": 103,
+      "atk": 60,
+      "def": 86,
+      "spAtk": 60,
+      "spDef": 86,
+      "speed": 50
+    },
+    "provider": "pokechamdb",
+    "page_slug": "audino",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/audino?format=double&season=M-5",
+    "raw_path": "_sources/details/audino.html"
+  },
+  "audino-mega": {
+    "dex_number": 531,
+    "stats": {
+      "hp": 103,
+      "atk": 60,
+      "def": 126,
+      "spAtk": 80,
+      "spDef": 126,
+      "speed": 50
+    },
+    "provider": "pokechamdb",
+    "page_slug": "audino",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/audino?format=double&season=M-5",
+    "raw_path": "_sources/details/audino.html"
+  },
+  "aurorus": {
+    "dex_number": 699,
+    "stats": {
+      "hp": 123,
+      "atk": 77,
+      "def": 72,
+      "spAtk": 99,
+      "spDef": 92,
+      "speed": 58
+    },
+    "provider": "pokechamdb",
+    "page_slug": "aurorus",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/aurorus?format=double&season=M-5",
+    "raw_path": "_sources/details/aurorus.html"
+  },
+  "avalugg-hisui": {
+    "dex_number": 713,
+    "stats": {
+      "hp": 95,
+      "atk": 127,
+      "def": 184,
+      "spAtk": 34,
+      "spDef": 36,
+      "speed": 38
+    },
+    "provider": "pokechamdb",
+    "page_slug": "avalugg-hisui",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/avalugg-hisui?format=double&season=M-5",
+    "raw_path": "_sources/details/avalugg-hisui.html"
+  },
+  "avalugg": {
+    "dex_number": 713,
+    "stats": {
+      "hp": 95,
+      "atk": 117,
+      "def": 184,
+      "spAtk": 44,
+      "spDef": 46,
+      "speed": 28
+    },
+    "provider": "pokechamdb",
+    "page_slug": "avalugg",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/avalugg?format=double&season=M-5",
+    "raw_path": "_sources/details/avalugg.html"
+  },
+  "azumarill": {
+    "dex_number": 184,
+    "stats": {
+      "hp": 100,
+      "atk": 50,
+      "def": 80,
+      "spAtk": 60,
+      "spDef": 80,
+      "speed": 50
+    },
+    "provider": "pokechamdb",
+    "page_slug": "azumarill",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/azumarill?format=double&season=M-5",
+    "raw_path": "_sources/details/azumarill.html"
+  },
+  "banette": {
+    "dex_number": 354,
+    "stats": {
+      "hp": 64,
+      "atk": 115,
+      "def": 65,
+      "spAtk": 83,
+      "spDef": 63,
+      "speed": 65
+    },
+    "provider": "pokechamdb",
+    "page_slug": "banette",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/banette?format=double&season=M-5",
+    "raw_path": "_sources/details/banette.html"
+  },
+  "banette-mega": {
+    "dex_number": 354,
+    "stats": {
+      "hp": 64,
+      "atk": 165,
+      "def": 75,
+      "spAtk": 93,
+      "spDef": 83,
+      "speed": 75
+    },
+    "provider": "pokechamdb",
+    "page_slug": "banette",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/banette?format=double&season=M-5",
+    "raw_path": "_sources/details/banette.html"
+  },
+  "barbaracle": {
+    "dex_number": 689,
+    "stats": {
+      "hp": 72,
+      "atk": 105,
+      "def": 115,
+      "spAtk": 54,
+      "spDef": 86,
+      "speed": 68
+    },
+    "provider": "pokechamdb",
+    "page_slug": "barbaracle",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/barbaracle?format=double&season=M-5",
+    "raw_path": "_sources/details/barbaracle.html"
+  },
+  "barbaracle-mega": {
+    "dex_number": 689,
+    "stats": {
+      "hp": 72,
+      "atk": 140,
+      "def": 130,
+      "spAtk": 64,
+      "spDef": 106,
+      "speed": 88
+    },
+    "provider": "pokechamdb",
+    "page_slug": "barbaracle",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/barbaracle?format=double&season=M-5",
+    "raw_path": "_sources/details/barbaracle.html"
+  },
+  "basculegion-female": {
+    "dex_number": 902,
+    "stats": {
+      "hp": 120,
+      "atk": 92,
+      "def": 65,
+      "spAtk": 100,
+      "spDef": 75,
+      "speed": 78
+    },
+    "provider": "pokechamdb",
+    "page_slug": "basculegion-female",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/basculegion-female?format=double&season=M-5",
+    "raw_path": "_sources/details/basculegion-female.html"
+  },
+  "basculegion": {
+    "dex_number": 902,
+    "stats": {
+      "hp": 120,
+      "atk": 112,
+      "def": 65,
+      "spAtk": 80,
+      "spDef": 75,
+      "speed": 78
+    },
+    "provider": "pokechamdb",
+    "page_slug": "basculegion",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/basculegion?format=double&season=M-5",
+    "raw_path": "_sources/details/basculegion.html"
+  },
+  "bastiodon": {
+    "dex_number": 411,
+    "stats": {
+      "hp": 60,
+      "atk": 52,
+      "def": 168,
+      "spAtk": 47,
+      "spDef": 138,
+      "speed": 30
+    },
+    "provider": "pokechamdb",
+    "page_slug": "bastiodon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/bastiodon?format=double&season=M-5",
+    "raw_path": "_sources/details/bastiodon.html"
+  },
+  "beartic": {
+    "dex_number": 614,
+    "stats": {
+      "hp": 95,
+      "atk": 130,
+      "def": 80,
+      "spAtk": 70,
+      "spDef": 80,
+      "speed": 50
+    },
+    "provider": "pokechamdb",
+    "page_slug": "beartic",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/beartic?format=double&season=M-5",
+    "raw_path": "_sources/details/beartic.html"
+  },
+  "beedrill": {
+    "dex_number": 15,
+    "stats": {
+      "hp": 65,
+      "atk": 90,
+      "def": 40,
+      "spAtk": 45,
+      "spDef": 80,
+      "speed": 75
+    },
+    "provider": "pokechamdb",
+    "page_slug": "beedrill",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/beedrill?format=double&season=M-5",
+    "raw_path": "_sources/details/beedrill.html"
+  },
+  "beedrill-mega": {
+    "dex_number": 15,
+    "stats": {
+      "hp": 65,
+      "atk": 150,
+      "def": 40,
+      "spAtk": 15,
+      "spDef": 80,
+      "speed": 145
+    },
+    "provider": "pokechamdb",
+    "page_slug": "beedrill",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/beedrill?format=double&season=M-5",
+    "raw_path": "_sources/details/beedrill.html"
+  },
+  "bellibolt": {
+    "dex_number": 939,
+    "stats": {
+      "hp": 109,
+      "atk": 64,
+      "def": 91,
+      "spAtk": 103,
+      "spDef": 83,
+      "speed": 45
+    },
+    "provider": "pokechamdb",
+    "page_slug": "bellibolt",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/bellibolt?format=double&season=M-5",
+    "raw_path": "_sources/details/bellibolt.html"
+  },
+  "blastoise": {
+    "dex_number": 9,
+    "stats": {
+      "hp": 79,
+      "atk": 83,
+      "def": 100,
+      "spAtk": 85,
+      "spDef": 105,
+      "speed": 78
+    },
+    "provider": "pokechamdb",
+    "page_slug": "blastoise",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/blastoise?format=double&season=M-5",
+    "raw_path": "_sources/details/blastoise.html"
+  },
+  "blastoise-mega": {
+    "dex_number": 9,
+    "stats": {
+      "hp": 79,
+      "atk": 103,
+      "def": 120,
+      "spAtk": 135,
+      "spDef": 115,
+      "speed": 78
+    },
+    "provider": "pokechamdb",
+    "page_slug": "blastoise",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/blastoise?format=double&season=M-5",
+    "raw_path": "_sources/details/blastoise.html"
+  },
+  "blaziken": {
+    "dex_number": 257,
+    "stats": {
+      "hp": 80,
+      "atk": 120,
+      "def": 70,
+      "spAtk": 110,
+      "spDef": 70,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "blaziken",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/blaziken?format=double&season=M-5",
+    "raw_path": "_sources/details/blaziken.html"
+  },
+  "blaziken-mega": {
+    "dex_number": 257,
+    "stats": {
+      "hp": 80,
+      "atk": 160,
+      "def": 80,
+      "spAtk": 130,
+      "spDef": 80,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "blaziken",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/blaziken?format=double&season=M-5",
+    "raw_path": "_sources/details/blaziken.html"
+  },
+  "camerupt": {
+    "dex_number": 323,
+    "stats": {
+      "hp": 70,
+      "atk": 100,
+      "def": 70,
+      "spAtk": 105,
+      "spDef": 75,
+      "speed": 40
+    },
+    "provider": "pokechamdb",
+    "page_slug": "camerupt",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/camerupt?format=double&season=M-5",
+    "raw_path": "_sources/details/camerupt.html"
+  },
+  "camerupt-mega": {
+    "dex_number": 323,
+    "stats": {
+      "hp": 70,
+      "atk": 120,
+      "def": 100,
+      "spAtk": 145,
+      "spDef": 105,
+      "speed": 20
+    },
+    "provider": "pokechamdb",
+    "page_slug": "camerupt",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/camerupt?format=double&season=M-5",
+    "raw_path": "_sources/details/camerupt.html"
+  },
+  "castform": {
+    "dex_number": 351,
+    "stats": {
+      "hp": 70,
+      "atk": 70,
+      "def": 70,
+      "spAtk": 70,
+      "spDef": 70,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "castform",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/castform?format=double&season=M-5",
+    "raw_path": "_sources/details/castform.html"
+  },
+  "ceruledge": {
+    "dex_number": 937,
+    "stats": {
+      "hp": 75,
+      "atk": 125,
+      "def": 80,
+      "spAtk": 60,
+      "spDef": 100,
+      "speed": 85
+    },
+    "provider": "pokechamdb",
+    "page_slug": "ceruledge",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/ceruledge?format=double&season=M-5",
+    "raw_path": "_sources/details/ceruledge.html"
+  },
+  "chandelure": {
+    "dex_number": 609,
+    "stats": {
+      "hp": 60,
+      "atk": 55,
+      "def": 90,
+      "spAtk": 145,
+      "spDef": 90,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "chandelure",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/chandelure?format=double&season=M-5",
+    "raw_path": "_sources/details/chandelure.html"
+  },
+  "chandelure-mega": {
+    "dex_number": 609,
+    "stats": {
+      "hp": 60,
+      "atk": 75,
+      "def": 110,
+      "spAtk": 175,
+      "spDef": 110,
+      "speed": 90
+    },
+    "provider": "pokechamdb",
+    "page_slug": "chandelure",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/chandelure?format=double&season=M-5",
+    "raw_path": "_sources/details/chandelure.html"
+  },
+  "charizard": {
+    "dex_number": 6,
+    "stats": {
+      "hp": 78,
+      "atk": 84,
+      "def": 78,
+      "spAtk": 109,
+      "spDef": 85,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "charizard",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/charizard?format=double&season=M-5",
+    "raw_path": "_sources/details/charizard.html"
+  },
+  "charizard-mega-x": {
+    "dex_number": 6,
+    "stats": {
+      "hp": 78,
+      "atk": 130,
+      "def": 111,
+      "spAtk": 130,
+      "spDef": 85,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "charizard",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/charizard?format=double&season=M-5",
+    "raw_path": "_sources/details/charizard.html"
+  },
+  "charizard-mega-y": {
+    "dex_number": 6,
+    "stats": {
+      "hp": 78,
+      "atk": 104,
+      "def": 78,
+      "spAtk": 159,
+      "spDef": 115,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "charizard",
+    "field": "megaForms[1].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/charizard?format=double&season=M-5",
+    "raw_path": "_sources/details/charizard.html"
+  },
+  "chesnaught": {
+    "dex_number": 652,
+    "stats": {
+      "hp": 88,
+      "atk": 107,
+      "def": 122,
+      "spAtk": 74,
+      "spDef": 75,
+      "speed": 64
+    },
+    "provider": "pokechamdb",
+    "page_slug": "chesnaught",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/chesnaught?format=double&season=M-5",
+    "raw_path": "_sources/details/chesnaught.html"
+  },
+  "chesnaught-mega": {
+    "dex_number": 652,
+    "stats": {
+      "hp": 88,
+      "atk": 137,
+      "def": 172,
+      "spAtk": 74,
+      "spDef": 115,
+      "speed": 44
+    },
+    "provider": "pokechamdb",
+    "page_slug": "chesnaught",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/chesnaught?format=double&season=M-5",
+    "raw_path": "_sources/details/chesnaught.html"
+  },
+  "chimecho": {
+    "dex_number": 358,
+    "stats": {
+      "hp": 75,
+      "atk": 50,
+      "def": 80,
+      "spAtk": 95,
+      "spDef": 90,
+      "speed": 65
+    },
+    "provider": "pokechamdb",
+    "page_slug": "chimecho",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/chimecho?format=double&season=M-5",
+    "raw_path": "_sources/details/chimecho.html"
+  },
+  "chimecho-mega": {
+    "dex_number": 358,
+    "stats": {
+      "hp": 75,
+      "atk": 50,
+      "def": 110,
+      "spAtk": 135,
+      "spDef": 120,
+      "speed": 65
+    },
+    "provider": "pokechamdb",
+    "page_slug": "chimecho",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/chimecho?format=double&season=M-5",
+    "raw_path": "_sources/details/chimecho.html"
+  },
+  "clawitzer": {
+    "dex_number": 693,
+    "stats": {
+      "hp": 71,
+      "atk": 73,
+      "def": 88,
+      "spAtk": 120,
+      "spDef": 89,
+      "speed": 59
+    },
+    "provider": "pokechamdb",
+    "page_slug": "clawitzer",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/clawitzer?format=double&season=M-5",
+    "raw_path": "_sources/details/clawitzer.html"
+  },
+  "clefable": {
+    "dex_number": 36,
+    "stats": {
+      "hp": 95,
+      "atk": 70,
+      "def": 73,
+      "spAtk": 95,
+      "spDef": 90,
+      "speed": 60
+    },
+    "provider": "pokechamdb",
+    "page_slug": "clefable",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/clefable?format=double&season=M-5",
+    "raw_path": "_sources/details/clefable.html"
+  },
+  "clefable-mega": {
+    "dex_number": 36,
+    "stats": {
+      "hp": 95,
+      "atk": 80,
+      "def": 93,
+      "spAtk": 135,
+      "spDef": 110,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "clefable",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/clefable?format=double&season=M-5",
+    "raw_path": "_sources/details/clefable.html"
+  },
+  "cofagrigus": {
+    "dex_number": 563,
+    "stats": {
+      "hp": 58,
+      "atk": 50,
+      "def": 145,
+      "spAtk": 95,
+      "spDef": 105,
+      "speed": 30
+    },
+    "provider": "pokechamdb",
+    "page_slug": "cofagrigus",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/cofagrigus?format=double&season=M-5",
+    "raw_path": "_sources/details/cofagrigus.html"
+  },
+  "conkeldurr": {
+    "dex_number": 534,
+    "stats": {
+      "hp": 105,
+      "atk": 140,
+      "def": 95,
+      "spAtk": 55,
+      "spDef": 65,
+      "speed": 45
+    },
+    "provider": "pokechamdb",
+    "page_slug": "conkeldurr",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/conkeldurr?format=double&season=M-5",
+    "raw_path": "_sources/details/conkeldurr.html"
+  },
+  "corviknight": {
+    "dex_number": 823,
+    "stats": {
+      "hp": 98,
+      "atk": 87,
+      "def": 105,
+      "spAtk": 53,
+      "spDef": 85,
+      "speed": 67
+    },
+    "provider": "pokechamdb",
+    "page_slug": "corviknight",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/corviknight?format=double&season=M-5",
+    "raw_path": "_sources/details/corviknight.html"
+  },
+  "crabominable": {
+    "dex_number": 740,
+    "stats": {
+      "hp": 97,
+      "atk": 132,
+      "def": 77,
+      "spAtk": 62,
+      "spDef": 67,
+      "speed": 43
+    },
+    "provider": "pokechamdb",
+    "page_slug": "crabominable",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/crabominable?format=double&season=M-5",
+    "raw_path": "_sources/details/crabominable.html"
+  },
+  "crabominable-mega": {
+    "dex_number": 740,
+    "stats": {
+      "hp": 97,
+      "atk": 157,
+      "def": 122,
+      "spAtk": 62,
+      "spDef": 107,
+      "speed": 33
+    },
+    "provider": "pokechamdb",
+    "page_slug": "crabominable",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/crabominable?format=double&season=M-5",
+    "raw_path": "_sources/details/crabominable.html"
+  },
+  "decidueye-hisui": {
+    "dex_number": 724,
+    "stats": {
+      "hp": 88,
+      "atk": 112,
+      "def": 80,
+      "spAtk": 95,
+      "spDef": 95,
+      "speed": 60
+    },
+    "provider": "pokechamdb",
+    "page_slug": "decidueye-hisui",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/decidueye-hisui?format=double&season=M-5",
+    "raw_path": "_sources/details/decidueye-hisui.html"
+  },
+  "decidueye": {
+    "dex_number": 724,
+    "stats": {
+      "hp": 78,
+      "atk": 107,
+      "def": 75,
+      "spAtk": 100,
+      "spDef": 100,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "decidueye",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/decidueye?format=double&season=M-5",
+    "raw_path": "_sources/details/decidueye.html"
+  },
+  "dedenne": {
+    "dex_number": 702,
+    "stats": {
+      "hp": 67,
+      "atk": 58,
+      "def": 57,
+      "spAtk": 81,
+      "spDef": 67,
+      "speed": 101
+    },
+    "provider": "pokechamdb",
+    "page_slug": "dedenne",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/dedenne?format=double&season=M-5",
+    "raw_path": "_sources/details/dedenne.html"
+  },
+  "delphox": {
+    "dex_number": 655,
+    "stats": {
+      "hp": 75,
+      "atk": 69,
+      "def": 72,
+      "spAtk": 114,
+      "spDef": 100,
+      "speed": 104
+    },
+    "provider": "pokechamdb",
+    "page_slug": "delphox",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/delphox?format=double&season=M-5",
+    "raw_path": "_sources/details/delphox.html"
+  },
+  "delphox-mega": {
+    "dex_number": 655,
+    "stats": {
+      "hp": 75,
+      "atk": 69,
+      "def": 72,
+      "spAtk": 159,
+      "spDef": 125,
+      "speed": 134
+    },
+    "provider": "pokechamdb",
+    "page_slug": "delphox",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/delphox?format=double&season=M-5",
+    "raw_path": "_sources/details/delphox.html"
+  },
+  "diggersby": {
+    "dex_number": 660,
+    "stats": {
+      "hp": 85,
+      "atk": 56,
+      "def": 77,
+      "spAtk": 50,
+      "spDef": 77,
+      "speed": 78
+    },
+    "provider": "pokechamdb",
+    "page_slug": "diggersby",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/diggersby?format=double&season=M-5",
+    "raw_path": "_sources/details/diggersby.html"
+  },
+  "ditto": {
+    "dex_number": 132,
+    "stats": {
+      "hp": 48,
+      "atk": 48,
+      "def": 48,
+      "spAtk": 48,
+      "spDef": 48,
+      "speed": 48
+    },
+    "provider": "pokechamdb",
+    "page_slug": "ditto",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/ditto?format=double&season=M-5",
+    "raw_path": "_sources/details/ditto.html"
+  },
+  "dragalge": {
+    "dex_number": 691,
+    "stats": {
+      "hp": 65,
+      "atk": 75,
+      "def": 90,
+      "spAtk": 97,
+      "spDef": 123,
+      "speed": 44
+    },
+    "provider": "pokechamdb",
+    "page_slug": "dragalge",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/dragalge?format=double&season=M-5",
+    "raw_path": "_sources/details/dragalge.html"
+  },
+  "dragalge-mega": {
+    "dex_number": 691,
+    "stats": {
+      "hp": 65,
+      "atk": 85,
+      "def": 105,
+      "spAtk": 132,
+      "spDef": 163,
+      "speed": 44
+    },
+    "provider": "pokechamdb",
+    "page_slug": "dragalge",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/dragalge?format=double&season=M-5",
+    "raw_path": "_sources/details/dragalge.html"
+  },
+  "dragapult": {
+    "dex_number": 887,
+    "stats": {
+      "hp": 88,
+      "atk": 120,
+      "def": 75,
+      "spAtk": 100,
+      "spDef": 75,
+      "speed": 142
+    },
+    "provider": "pokechamdb",
+    "page_slug": "dragapult",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/dragapult?format=double&season=M-5",
+    "raw_path": "_sources/details/dragapult.html"
+  },
+  "dragonite": {
+    "dex_number": 149,
+    "stats": {
+      "hp": 91,
+      "atk": 134,
+      "def": 95,
+      "spAtk": 100,
+      "spDef": 100,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "dragonite",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/dragonite?format=double&season=M-5",
+    "raw_path": "_sources/details/dragonite.html"
+  },
+  "dragonite-mega": {
+    "dex_number": 149,
+    "stats": {
+      "hp": 91,
+      "atk": 124,
+      "def": 115,
+      "spAtk": 145,
+      "spDef": 125,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "dragonite",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/dragonite?format=double&season=M-5",
+    "raw_path": "_sources/details/dragonite.html"
+  },
+  "drampa": {
+    "dex_number": 780,
+    "stats": {
+      "hp": 78,
+      "atk": 60,
+      "def": 85,
+      "spAtk": 135,
+      "spDef": 91,
+      "speed": 36
+    },
+    "provider": "pokechamdb",
+    "page_slug": "drampa",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/drampa?format=double&season=M-5",
+    "raw_path": "_sources/details/drampa.html"
+  },
+  "drampa-mega": {
+    "dex_number": 780,
+    "stats": {
+      "hp": 78,
+      "atk": 85,
+      "def": 110,
+      "spAtk": 160,
+      "spDef": 116,
+      "speed": 36
+    },
+    "provider": "pokechamdb",
+    "page_slug": "drampa",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/drampa?format=double&season=M-5",
+    "raw_path": "_sources/details/drampa.html"
+  },
+  "eelektross": {
+    "dex_number": 604,
+    "stats": {
+      "hp": 85,
+      "atk": 115,
+      "def": 80,
+      "spAtk": 105,
+      "spDef": 80,
+      "speed": 50
+    },
+    "provider": "pokechamdb",
+    "page_slug": "eelektross",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/eelektross?format=double&season=M-5",
+    "raw_path": "_sources/details/eelektross.html"
+  },
+  "eelektross-mega": {
+    "dex_number": 604,
+    "stats": {
+      "hp": 85,
+      "atk": 145,
+      "def": 80,
+      "spAtk": 135,
+      "spDef": 90,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "eelektross",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/eelektross?format=double&season=M-5",
+    "raw_path": "_sources/details/eelektross.html"
+  },
+  "emboar": {
+    "dex_number": 500,
+    "stats": {
+      "hp": 110,
+      "atk": 123,
+      "def": 65,
+      "spAtk": 100,
+      "spDef": 65,
+      "speed": 65
+    },
+    "provider": "pokechamdb",
+    "page_slug": "emboar",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/emboar?format=double&season=M-5",
+    "raw_path": "_sources/details/emboar.html"
+  },
+  "emboar-mega": {
+    "dex_number": 500,
+    "stats": {
+      "hp": 110,
+      "atk": 148,
+      "def": 75,
+      "spAtk": 110,
+      "spDef": 110,
+      "speed": 75
+    },
+    "provider": "pokechamdb",
+    "page_slug": "emboar",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/emboar?format=double&season=M-5",
+    "raw_path": "_sources/details/emboar.html"
+  },
+  "emolga": {
+    "dex_number": 587,
+    "stats": {
+      "hp": 55,
+      "atk": 75,
+      "def": 60,
+      "spAtk": 75,
+      "spDef": 60,
+      "speed": 103
+    },
+    "provider": "pokechamdb",
+    "page_slug": "emolga",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/emolga?format=double&season=M-5",
+    "raw_path": "_sources/details/emolga.html"
+  },
+  "empoleon": {
+    "dex_number": 395,
+    "stats": {
+      "hp": 84,
+      "atk": 86,
+      "def": 88,
+      "spAtk": 111,
+      "spDef": 101,
+      "speed": 60
+    },
+    "provider": "pokechamdb",
+    "page_slug": "empoleon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/empoleon?format=double&season=M-5",
+    "raw_path": "_sources/details/empoleon.html"
+  },
+  "espathra": {
+    "dex_number": 956,
+    "stats": {
+      "hp": 95,
+      "atk": 60,
+      "def": 60,
+      "spAtk": 101,
+      "spDef": 60,
+      "speed": 105
+    },
+    "provider": "pokechamdb",
+    "page_slug": "espathra",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/espathra?format=double&season=M-5",
+    "raw_path": "_sources/details/espathra.html"
+  },
+  "espeon": {
+    "dex_number": 196,
+    "stats": {
+      "hp": 65,
+      "atk": 65,
+      "def": 60,
+      "spAtk": 130,
+      "spDef": 95,
+      "speed": 110
+    },
+    "provider": "pokechamdb",
+    "page_slug": "espeon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/espeon?format=double&season=M-5",
+    "raw_path": "_sources/details/espeon.html"
+  },
+  "excadrill": {
+    "dex_number": 530,
+    "stats": {
+      "hp": 110,
+      "atk": 135,
+      "def": 60,
+      "spAtk": 50,
+      "spDef": 65,
+      "speed": 88
+    },
+    "provider": "pokechamdb",
+    "page_slug": "excadrill",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/excadrill?format=double&season=M-5",
+    "raw_path": "_sources/details/excadrill.html"
+  },
+  "excadrill-mega": {
+    "dex_number": 530,
+    "stats": {
+      "hp": 110,
+      "atk": 165,
+      "def": 100,
+      "spAtk": 65,
+      "spDef": 65,
+      "speed": 103
+    },
+    "provider": "pokechamdb",
+    "page_slug": "excadrill",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/excadrill?format=double&season=M-5",
+    "raw_path": "_sources/details/excadrill.html"
+  },
+  "falinks": {
+    "dex_number": 870,
+    "stats": {
+      "hp": 65,
+      "atk": 100,
+      "def": 100,
+      "spAtk": 70,
+      "spDef": 60,
+      "speed": 75
+    },
+    "provider": "pokechamdb",
+    "page_slug": "falinks",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/falinks?format=double&season=M-5",
+    "raw_path": "_sources/details/falinks.html"
+  },
+  "falinks-mega": {
+    "dex_number": 870,
+    "stats": {
+      "hp": 65,
+      "atk": 135,
+      "def": 135,
+      "spAtk": 70,
+      "spDef": 65,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "falinks",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/falinks?format=double&season=M-5",
+    "raw_path": "_sources/details/falinks.html"
+  },
+  "farigiraf": {
+    "dex_number": 981,
+    "stats": {
+      "hp": 120,
+      "atk": 90,
+      "def": 70,
+      "spAtk": 110,
+      "spDef": 70,
+      "speed": 60
+    },
+    "provider": "pokechamdb",
+    "page_slug": "farigiraf",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/farigiraf?format=double&season=M-5",
+    "raw_path": "_sources/details/farigiraf.html"
+  },
+  "feraligatr": {
+    "dex_number": 160,
+    "stats": {
+      "hp": 85,
+      "atk": 105,
+      "def": 100,
+      "spAtk": 79,
+      "spDef": 83,
+      "speed": 78
+    },
+    "provider": "pokechamdb",
+    "page_slug": "feraligatr",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/feraligatr?format=double&season=M-5",
+    "raw_path": "_sources/details/feraligatr.html"
+  },
+  "feraligatr-mega": {
+    "dex_number": 160,
+    "stats": {
+      "hp": 85,
+      "atk": 160,
+      "def": 125,
+      "spAtk": 89,
+      "spDef": 93,
+      "speed": 78
+    },
+    "provider": "pokechamdb",
+    "page_slug": "feraligatr",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/feraligatr?format=double&season=M-5",
+    "raw_path": "_sources/details/feraligatr.html"
+  },
+  "flapple": {
+    "dex_number": 841,
+    "stats": {
+      "hp": 70,
+      "atk": 110,
+      "def": 80,
+      "spAtk": 95,
+      "spDef": 60,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "flapple",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/flapple?format=double&season=M-5",
+    "raw_path": "_sources/details/flapple.html"
+  },
+  "flareon": {
+    "dex_number": 136,
+    "stats": {
+      "hp": 65,
+      "atk": 130,
+      "def": 60,
+      "spAtk": 95,
+      "spDef": 110,
+      "speed": 65
+    },
+    "provider": "pokechamdb",
+    "page_slug": "flareon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/flareon?format=double&season=M-5",
+    "raw_path": "_sources/details/flareon.html"
+  },
+  "floette": {
+    "dex_number": 670,
+    "stats": {
+      "hp": 74,
+      "atk": 65,
+      "def": 67,
+      "spAtk": 125,
+      "spDef": 128,
+      "speed": 92
+    },
+    "provider": "pokechamdb",
+    "page_slug": "floette",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/floette?format=double&season=M-5",
+    "raw_path": "_sources/details/floette.html"
+  },
+  "floette-mega": {
+    "dex_number": 670,
+    "stats": {
+      "hp": 74,
+      "atk": 85,
+      "def": 87,
+      "spAtk": 155,
+      "spDef": 148,
+      "speed": 102
+    },
+    "provider": "pokechamdb",
+    "page_slug": "floette",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/floette?format=double&season=M-5",
+    "raw_path": "_sources/details/floette.html"
+  },
+  "florges": {
+    "dex_number": 671,
+    "stats": {
+      "hp": 78,
+      "atk": 65,
+      "def": 68,
+      "spAtk": 112,
+      "spDef": 154,
+      "speed": 75
+    },
+    "provider": "pokechamdb",
+    "page_slug": "florges",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/florges?format=double&season=M-5",
+    "raw_path": "_sources/details/florges.html"
+  },
+  "forretress": {
+    "dex_number": 205,
+    "stats": {
+      "hp": 75,
+      "atk": 90,
+      "def": 140,
+      "spAtk": 60,
+      "spDef": 60,
+      "speed": 40
+    },
+    "provider": "pokechamdb",
+    "page_slug": "forretress",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/forretress?format=double&season=M-5",
+    "raw_path": "_sources/details/forretress.html"
+  },
+  "froslass": {
+    "dex_number": 478,
+    "stats": {
+      "hp": 70,
+      "atk": 80,
+      "def": 70,
+      "spAtk": 80,
+      "spDef": 70,
+      "speed": 110
+    },
+    "provider": "pokechamdb",
+    "page_slug": "froslass",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/froslass?format=double&season=M-5",
+    "raw_path": "_sources/details/froslass.html"
+  },
+  "froslass-mega": {
+    "dex_number": 478,
+    "stats": {
+      "hp": 70,
+      "atk": 80,
+      "def": 70,
+      "spAtk": 140,
+      "spDef": 100,
+      "speed": 120
+    },
+    "provider": "pokechamdb",
+    "page_slug": "froslass",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/froslass?format=double&season=M-5",
+    "raw_path": "_sources/details/froslass.html"
+  },
+  "furfrou": {
+    "dex_number": 676,
+    "stats": {
+      "hp": 75,
+      "atk": 80,
+      "def": 60,
+      "spAtk": 65,
+      "spDef": 90,
+      "speed": 102
+    },
+    "provider": "pokechamdb",
+    "page_slug": "furfrou",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/furfrou?format=double&season=M-5",
+    "raw_path": "_sources/details/furfrou.html"
+  },
+  "gallade": {
+    "dex_number": 475,
+    "stats": {
+      "hp": 68,
+      "atk": 125,
+      "def": 65,
+      "spAtk": 65,
+      "spDef": 115,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "gallade",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gallade?format=double&season=M-5",
+    "raw_path": "_sources/details/gallade.html"
+  },
+  "gallade-mega": {
+    "dex_number": 475,
+    "stats": {
+      "hp": 68,
+      "atk": 165,
+      "def": 95,
+      "spAtk": 65,
+      "spDef": 115,
+      "speed": 110
+    },
+    "provider": "pokechamdb",
+    "page_slug": "gallade",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gallade?format=double&season=M-5",
+    "raw_path": "_sources/details/gallade.html"
+  },
+  "garbodor": {
+    "dex_number": 569,
+    "stats": {
+      "hp": 80,
+      "atk": 95,
+      "def": 82,
+      "spAtk": 60,
+      "spDef": 82,
+      "speed": 75
+    },
+    "provider": "pokechamdb",
+    "page_slug": "garbodor",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/garbodor?format=double&season=M-5",
+    "raw_path": "_sources/details/garbodor.html"
+  },
+  "garchomp": {
+    "dex_number": 445,
+    "stats": {
+      "hp": 108,
+      "atk": 130,
+      "def": 95,
+      "spAtk": 80,
+      "spDef": 85,
+      "speed": 102
+    },
+    "provider": "pokechamdb",
+    "page_slug": "garchomp",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/garchomp?format=double&season=M-5",
+    "raw_path": "_sources/details/garchomp.html"
+  },
+  "garchomp-mega": {
+    "dex_number": 445,
+    "stats": {
+      "hp": 108,
+      "atk": 170,
+      "def": 115,
+      "spAtk": 120,
+      "spDef": 95,
+      "speed": 92
+    },
+    "provider": "pokechamdb",
+    "page_slug": "garchomp",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/garchomp?format=double&season=M-5",
+    "raw_path": "_sources/details/garchomp.html"
+  },
+  "garchomp-mega-z": {
+    "dex_number": 445,
+    "stats": {
+      "hp": 108,
+      "atk": 130,
+      "def": 85,
+      "spAtk": 141,
+      "spDef": 85,
+      "speed": 151
+    },
+    "provider": "pokechamdb",
+    "page_slug": "garchomp",
+    "field": "megaForms[1].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/garchomp?format=double&season=M-5",
+    "raw_path": "_sources/details/garchomp.html"
+  },
+  "gardevoir": {
+    "dex_number": 282,
+    "stats": {
+      "hp": 68,
+      "atk": 65,
+      "def": 65,
+      "spAtk": 125,
+      "spDef": 115,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "gardevoir",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gardevoir?format=double&season=M-5",
+    "raw_path": "_sources/details/gardevoir.html"
+  },
+  "gardevoir-mega": {
+    "dex_number": 282,
+    "stats": {
+      "hp": 68,
+      "atk": 85,
+      "def": 65,
+      "spAtk": 165,
+      "spDef": 135,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "gardevoir",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gardevoir?format=double&season=M-5",
+    "raw_path": "_sources/details/gardevoir.html"
+  },
+  "garganacl": {
+    "dex_number": 934,
+    "stats": {
+      "hp": 100,
+      "atk": 100,
+      "def": 130,
+      "spAtk": 45,
+      "spDef": 90,
+      "speed": 35
+    },
+    "provider": "pokechamdb",
+    "page_slug": "garganacl",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/garganacl?format=double&season=M-5",
+    "raw_path": "_sources/details/garganacl.html"
+  },
+  "gengar": {
+    "dex_number": 94,
+    "stats": {
+      "hp": 60,
+      "atk": 65,
+      "def": 60,
+      "spAtk": 130,
+      "spDef": 75,
+      "speed": 110
+    },
+    "provider": "pokechamdb",
+    "page_slug": "gengar",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gengar?format=double&season=M-5",
+    "raw_path": "_sources/details/gengar.html"
+  },
+  "gengar-mega": {
+    "dex_number": 94,
+    "stats": {
+      "hp": 60,
+      "atk": 65,
+      "def": 80,
+      "spAtk": 170,
+      "spDef": 95,
+      "speed": 130
+    },
+    "provider": "pokechamdb",
+    "page_slug": "gengar",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gengar?format=double&season=M-5",
+    "raw_path": "_sources/details/gengar.html"
+  },
+  "gholdengo": {
+    "dex_number": 1000,
+    "stats": {
+      "hp": 87,
+      "atk": 60,
+      "def": 95,
+      "spAtk": 133,
+      "spDef": 91,
+      "speed": 84
+    },
+    "provider": "pokechamdb",
+    "page_slug": "gholdengo",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gholdengo?format=double&season=M-5",
+    "raw_path": "_sources/details/gholdengo.html"
+  },
+  "glaceon": {
+    "dex_number": 471,
+    "stats": {
+      "hp": 65,
+      "atk": 60,
+      "def": 110,
+      "spAtk": 130,
+      "spDef": 95,
+      "speed": 65
+    },
+    "provider": "pokechamdb",
+    "page_slug": "glaceon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/glaceon?format=double&season=M-5",
+    "raw_path": "_sources/details/glaceon.html"
+  },
+  "glalie": {
+    "dex_number": 362,
+    "stats": {
+      "hp": 80,
+      "atk": 80,
+      "def": 80,
+      "spAtk": 80,
+      "spDef": 80,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "glalie",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/glalie?format=double&season=M-5",
+    "raw_path": "_sources/details/glalie.html"
+  },
+  "glalie-mega": {
+    "dex_number": 362,
+    "stats": {
+      "hp": 80,
+      "atk": 120,
+      "def": 80,
+      "spAtk": 120,
+      "spDef": 80,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "glalie",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/glalie?format=double&season=M-5",
+    "raw_path": "_sources/details/glalie.html"
+  },
+  "glimmora": {
+    "dex_number": 970,
+    "stats": {
+      "hp": 83,
+      "atk": 55,
+      "def": 90,
+      "spAtk": 130,
+      "spDef": 81,
+      "speed": 86
+    },
+    "provider": "pokechamdb",
+    "page_slug": "glimmora",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/glimmora?format=double&season=M-5",
+    "raw_path": "_sources/details/glimmora.html"
+  },
+  "glimmora-mega": {
+    "dex_number": 970,
+    "stats": {
+      "hp": 83,
+      "atk": 90,
+      "def": 105,
+      "spAtk": 150,
+      "spDef": 96,
+      "speed": 101
+    },
+    "provider": "pokechamdb",
+    "page_slug": "glimmora",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/glimmora?format=double&season=M-5",
+    "raw_path": "_sources/details/glimmora.html"
+  },
+  "gliscor": {
+    "dex_number": 472,
+    "stats": {
+      "hp": 75,
+      "atk": 95,
+      "def": 125,
+      "spAtk": 45,
+      "spDef": 75,
+      "speed": 95
+    },
+    "provider": "pokechamdb",
+    "page_slug": "gliscor",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gliscor?format=double&season=M-5",
+    "raw_path": "_sources/details/gliscor.html"
+  },
+  "golurk": {
+    "dex_number": 623,
+    "stats": {
+      "hp": 89,
+      "atk": 124,
+      "def": 80,
+      "spAtk": 55,
+      "spDef": 80,
+      "speed": 55
+    },
+    "provider": "pokechamdb",
+    "page_slug": "golurk",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/golurk?format=double&season=M-5",
+    "raw_path": "_sources/details/golurk.html"
+  },
+  "golurk-mega": {
+    "dex_number": 623,
+    "stats": {
+      "hp": 89,
+      "atk": 159,
+      "def": 105,
+      "spAtk": 70,
+      "spDef": 105,
+      "speed": 55
+    },
+    "provider": "pokechamdb",
+    "page_slug": "golurk",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/golurk?format=double&season=M-5",
+    "raw_path": "_sources/details/golurk.html"
+  },
+  "goodra-hisui": {
+    "dex_number": 706,
+    "stats": {
+      "hp": 80,
+      "atk": 100,
+      "def": 100,
+      "spAtk": 110,
+      "spDef": 150,
+      "speed": 60
+    },
+    "provider": "pokechamdb",
+    "page_slug": "goodra-hisui",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/goodra-hisui?format=double&season=M-5",
+    "raw_path": "_sources/details/goodra-hisui.html"
+  },
+  "goodra": {
+    "dex_number": 706,
+    "stats": {
+      "hp": 90,
+      "atk": 100,
+      "def": 70,
+      "spAtk": 110,
+      "spDef": 150,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "goodra",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/goodra?format=double&season=M-5",
+    "raw_path": "_sources/details/goodra.html"
+  },
+  "gourgeist-large": {
+    "dex_number": 711,
+    "stats": {
+      "hp": 75,
+      "atk": 95,
+      "def": 122,
+      "spAtk": 58,
+      "spDef": 75,
+      "speed": 69
+    },
+    "provider": "pokechamdb",
+    "page_slug": "gourgeist-large",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gourgeist-large?format=double&season=M-5",
+    "raw_path": "_sources/details/gourgeist-large.html"
+  },
+  "gourgeist-small": {
+    "dex_number": 711,
+    "stats": {
+      "hp": 55,
+      "atk": 85,
+      "def": 122,
+      "spAtk": 58,
+      "spDef": 75,
+      "speed": 99
+    },
+    "provider": "pokechamdb",
+    "page_slug": "gourgeist-small",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gourgeist-small?format=double&season=M-5",
+    "raw_path": "_sources/details/gourgeist-small.html"
+  },
+  "gourgeist-super": {
+    "dex_number": 711,
+    "stats": {
+      "hp": 85,
+      "atk": 100,
+      "def": 122,
+      "spAtk": 58,
+      "spDef": 75,
+      "speed": 54
+    },
+    "provider": "pokechamdb",
+    "page_slug": "gourgeist-super",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gourgeist-super?format=double&season=M-5",
+    "raw_path": "_sources/details/gourgeist-super.html"
+  },
+  "gourgeist": {
+    "dex_number": 711,
+    "stats": {
+      "hp": 65,
+      "atk": 90,
+      "def": 122,
+      "spAtk": 58,
+      "spDef": 75,
+      "speed": 84
+    },
+    "provider": "pokechamdb",
+    "page_slug": "gourgeist",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gourgeist?format=double&season=M-5",
+    "raw_path": "_sources/details/gourgeist.html"
+  },
+  "greninja": {
+    "dex_number": 658,
+    "stats": {
+      "hp": 72,
+      "atk": 95,
+      "def": 67,
+      "spAtk": 103,
+      "spDef": 71,
+      "speed": 122
+    },
+    "provider": "pokechamdb",
+    "page_slug": "greninja",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/greninja?format=double&season=M-5",
+    "raw_path": "_sources/details/greninja.html"
+  },
+  "greninja-mega": {
+    "dex_number": 658,
+    "stats": {
+      "hp": 72,
+      "atk": 125,
+      "def": 77,
+      "spAtk": 133,
+      "spDef": 81,
+      "speed": 142
+    },
+    "provider": "pokechamdb",
+    "page_slug": "greninja",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/greninja?format=double&season=M-5",
+    "raw_path": "_sources/details/greninja.html"
+  },
+  "grimmsnarl": {
+    "dex_number": 861,
+    "stats": {
+      "hp": 95,
+      "atk": 120,
+      "def": 65,
+      "spAtk": 95,
+      "spDef": 75,
+      "speed": 60
+    },
+    "provider": "pokechamdb",
+    "page_slug": "grimmsnarl",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/grimmsnarl?format=double&season=M-5",
+    "raw_path": "_sources/details/grimmsnarl.html"
+  },
+  "gyarados": {
+    "dex_number": 130,
+    "stats": {
+      "hp": 95,
+      "atk": 125,
+      "def": 79,
+      "spAtk": 60,
+      "spDef": 100,
+      "speed": 81
+    },
+    "provider": "pokechamdb",
+    "page_slug": "gyarados",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gyarados?format=double&season=M-5",
+    "raw_path": "_sources/details/gyarados.html"
+  },
+  "gyarados-mega": {
+    "dex_number": 130,
+    "stats": {
+      "hp": 95,
+      "atk": 155,
+      "def": 109,
+      "spAtk": 70,
+      "spDef": 130,
+      "speed": 81
+    },
+    "provider": "pokechamdb",
+    "page_slug": "gyarados",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gyarados?format=double&season=M-5",
+    "raw_path": "_sources/details/gyarados.html"
+  },
+  "hatterene": {
+    "dex_number": 858,
+    "stats": {
+      "hp": 57,
+      "atk": 90,
+      "def": 95,
+      "spAtk": 136,
+      "spDef": 103,
+      "speed": 29
+    },
+    "provider": "pokechamdb",
+    "page_slug": "hatterene",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/hatterene?format=double&season=M-5",
+    "raw_path": "_sources/details/hatterene.html"
+  },
+  "hawlucha": {
+    "dex_number": 701,
+    "stats": {
+      "hp": 78,
+      "atk": 92,
+      "def": 75,
+      "spAtk": 74,
+      "spDef": 63,
+      "speed": 118
+    },
+    "provider": "pokechamdb",
+    "page_slug": "hawlucha",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/hawlucha?format=double&season=M-5",
+    "raw_path": "_sources/details/hawlucha.html"
+  },
+  "hawlucha-mega": {
+    "dex_number": 701,
+    "stats": {
+      "hp": 78,
+      "atk": 137,
+      "def": 100,
+      "spAtk": 74,
+      "spDef": 93,
+      "speed": 118
+    },
+    "provider": "pokechamdb",
+    "page_slug": "hawlucha",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/hawlucha?format=double&season=M-5",
+    "raw_path": "_sources/details/hawlucha.html"
+  },
+  "heliolisk": {
+    "dex_number": 695,
+    "stats": {
+      "hp": 62,
+      "atk": 55,
+      "def": 52,
+      "spAtk": 109,
+      "spDef": 94,
+      "speed": 109
+    },
+    "provider": "pokechamdb",
+    "page_slug": "heliolisk",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/heliolisk?format=double&season=M-5",
+    "raw_path": "_sources/details/heliolisk.html"
+  },
+  "heracross": {
+    "dex_number": 214,
+    "stats": {
+      "hp": 80,
+      "atk": 125,
+      "def": 75,
+      "spAtk": 40,
+      "spDef": 95,
+      "speed": 85
+    },
+    "provider": "pokechamdb",
+    "page_slug": "heracross",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/heracross?format=double&season=M-5",
+    "raw_path": "_sources/details/heracross.html"
+  },
+  "heracross-mega": {
+    "dex_number": 214,
+    "stats": {
+      "hp": 80,
+      "atk": 185,
+      "def": 115,
+      "spAtk": 40,
+      "spDef": 105,
+      "speed": 75
+    },
+    "provider": "pokechamdb",
+    "page_slug": "heracross",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/heracross?format=double&season=M-5",
+    "raw_path": "_sources/details/heracross.html"
+  },
+  "hippowdon": {
+    "dex_number": 450,
+    "stats": {
+      "hp": 108,
+      "atk": 112,
+      "def": 118,
+      "spAtk": 68,
+      "spDef": 72,
+      "speed": 47
+    },
+    "provider": "pokechamdb",
+    "page_slug": "hippowdon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/hippowdon?format=double&season=M-5",
+    "raw_path": "_sources/details/hippowdon.html"
+  },
+  "houndoom": {
+    "dex_number": 229,
+    "stats": {
+      "hp": 75,
+      "atk": 90,
+      "def": 50,
+      "spAtk": 110,
+      "spDef": 80,
+      "speed": 95
+    },
+    "provider": "pokechamdb",
+    "page_slug": "houndoom",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/houndoom?format=double&season=M-5",
+    "raw_path": "_sources/details/houndoom.html"
+  },
+  "houndoom-mega": {
+    "dex_number": 229,
+    "stats": {
+      "hp": 75,
+      "atk": 90,
+      "def": 90,
+      "spAtk": 140,
+      "spDef": 90,
+      "speed": 115
+    },
+    "provider": "pokechamdb",
+    "page_slug": "houndoom",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/houndoom?format=double&season=M-5",
+    "raw_path": "_sources/details/houndoom.html"
+  },
+  "houndstone": {
+    "dex_number": 972,
+    "stats": {
+      "hp": 72,
+      "atk": 101,
+      "def": 100,
+      "spAtk": 50,
+      "spDef": 97,
+      "speed": 68
+    },
+    "provider": "pokechamdb",
+    "page_slug": "houndstone",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/houndstone?format=double&season=M-5",
+    "raw_path": "_sources/details/houndstone.html"
+  },
+  "hydrapple": {
+    "dex_number": 1019,
+    "stats": {
+      "hp": 106,
+      "atk": 80,
+      "def": 110,
+      "spAtk": 120,
+      "spDef": 80,
+      "speed": 44
+    },
+    "provider": "pokechamdb",
+    "page_slug": "hydrapple",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/hydrapple?format=double&season=M-5",
+    "raw_path": "_sources/details/hydrapple.html"
+  },
+  "hydreigon": {
+    "dex_number": 635,
+    "stats": {
+      "hp": 92,
+      "atk": 105,
+      "def": 90,
+      "spAtk": 125,
+      "spDef": 90,
+      "speed": 98
+    },
+    "provider": "pokechamdb",
+    "page_slug": "hydreigon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/hydreigon?format=double&season=M-5",
+    "raw_path": "_sources/details/hydreigon.html"
+  },
+  "incineroar": {
+    "dex_number": 727,
+    "stats": {
+      "hp": 95,
+      "atk": 115,
+      "def": 90,
+      "spAtk": 80,
+      "spDef": 90,
+      "speed": 60
+    },
+    "provider": "pokechamdb",
+    "page_slug": "incineroar",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/incineroar?format=double&season=M-5",
+    "raw_path": "_sources/details/incineroar.html"
+  },
+  "infernape": {
+    "dex_number": 392,
+    "stats": {
+      "hp": 76,
+      "atk": 104,
+      "def": 71,
+      "spAtk": 104,
+      "spDef": 71,
+      "speed": 108
+    },
+    "provider": "pokechamdb",
+    "page_slug": "infernape",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/infernape?format=double&season=M-5",
+    "raw_path": "_sources/details/infernape.html"
+  },
+  "jolteon": {
+    "dex_number": 135,
+    "stats": {
+      "hp": 65,
+      "atk": 65,
+      "def": 60,
+      "spAtk": 110,
+      "spDef": 95,
+      "speed": 130
+    },
+    "provider": "pokechamdb",
+    "page_slug": "jolteon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/jolteon?format=double&season=M-5",
+    "raw_path": "_sources/details/jolteon.html"
+  },
+  "kangaskhan": {
+    "dex_number": 115,
+    "stats": {
+      "hp": 105,
+      "atk": 95,
+      "def": 80,
+      "spAtk": 40,
+      "spDef": 80,
+      "speed": 90
+    },
+    "provider": "pokechamdb",
+    "page_slug": "kangaskhan",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/kangaskhan?format=double&season=M-5",
+    "raw_path": "_sources/details/kangaskhan.html"
+  },
+  "kangaskhan-mega": {
+    "dex_number": 115,
+    "stats": {
+      "hp": 105,
+      "atk": 125,
+      "def": 100,
+      "spAtk": 60,
+      "spDef": 100,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "kangaskhan",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/kangaskhan?format=double&season=M-5",
+    "raw_path": "_sources/details/kangaskhan.html"
+  },
+  "kingambit": {
+    "dex_number": 983,
+    "stats": {
+      "hp": 100,
+      "atk": 135,
+      "def": 120,
+      "spAtk": 60,
+      "spDef": 85,
+      "speed": 50
+    },
+    "provider": "pokechamdb",
+    "page_slug": "kingambit",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/kingambit?format=double&season=M-5",
+    "raw_path": "_sources/details/kingambit.html"
+  },
+  "kleavor": {
+    "dex_number": 900,
+    "stats": {
+      "hp": 70,
+      "atk": 135,
+      "def": 95,
+      "spAtk": 45,
+      "spDef": 70,
+      "speed": 85
+    },
+    "provider": "pokechamdb",
+    "page_slug": "kleavor",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/kleavor?format=double&season=M-5",
+    "raw_path": "_sources/details/kleavor.html"
+  },
+  "klefki": {
+    "dex_number": 707,
+    "stats": {
+      "hp": 57,
+      "atk": 80,
+      "def": 91,
+      "spAtk": 80,
+      "spDef": 87,
+      "speed": 75
+    },
+    "provider": "pokechamdb",
+    "page_slug": "klefki",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/klefki?format=double&season=M-5",
+    "raw_path": "_sources/details/klefki.html"
+  },
+  "kommo-o": {
+    "dex_number": 784,
+    "stats": {
+      "hp": 75,
+      "atk": 110,
+      "def": 125,
+      "spAtk": 100,
+      "spDef": 105,
+      "speed": 85
+    },
+    "provider": "pokechamdb",
+    "page_slug": "kommo-o",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/kommo-o?format=double&season=M-5",
+    "raw_path": "_sources/details/kommo-o.html"
+  },
+  "krookodile": {
+    "dex_number": 553,
+    "stats": {
+      "hp": 95,
+      "atk": 117,
+      "def": 80,
+      "spAtk": 65,
+      "spDef": 70,
+      "speed": 92
+    },
+    "provider": "pokechamdb",
+    "page_slug": "krookodile",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/krookodile?format=double&season=M-5",
+    "raw_path": "_sources/details/krookodile.html"
+  },
+  "leafeon": {
+    "dex_number": 470,
+    "stats": {
+      "hp": 65,
+      "atk": 110,
+      "def": 130,
+      "spAtk": 60,
+      "spDef": 65,
+      "speed": 95
+    },
+    "provider": "pokechamdb",
+    "page_slug": "leafeon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/leafeon?format=double&season=M-5",
+    "raw_path": "_sources/details/leafeon.html"
+  },
+  "liepard": {
+    "dex_number": 510,
+    "stats": {
+      "hp": 64,
+      "atk": 88,
+      "def": 50,
+      "spAtk": 88,
+      "spDef": 50,
+      "speed": 106
+    },
+    "provider": "pokechamdb",
+    "page_slug": "liepard",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/liepard?format=double&season=M-5",
+    "raw_path": "_sources/details/liepard.html"
+  },
+  "lopunny": {
+    "dex_number": 428,
+    "stats": {
+      "hp": 65,
+      "atk": 76,
+      "def": 84,
+      "spAtk": 54,
+      "spDef": 96,
+      "speed": 105
+    },
+    "provider": "pokechamdb",
+    "page_slug": "lopunny",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/lopunny?format=double&season=M-5",
+    "raw_path": "_sources/details/lopunny.html"
+  },
+  "lopunny-mega": {
+    "dex_number": 428,
+    "stats": {
+      "hp": 65,
+      "atk": 136,
+      "def": 94,
+      "spAtk": 54,
+      "spDef": 96,
+      "speed": 135
+    },
+    "provider": "pokechamdb",
+    "page_slug": "lopunny",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/lopunny?format=double&season=M-5",
+    "raw_path": "_sources/details/lopunny.html"
+  },
+  "lucario": {
+    "dex_number": 448,
+    "stats": {
+      "hp": 70,
+      "atk": 110,
+      "def": 70,
+      "spAtk": 115,
+      "spDef": 70,
+      "speed": 90
+    },
+    "provider": "pokechamdb",
+    "page_slug": "lucario",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/lucario?format=double&season=M-5",
+    "raw_path": "_sources/details/lucario.html"
+  },
+  "lucario-mega": {
+    "dex_number": 448,
+    "stats": {
+      "hp": 70,
+      "atk": 145,
+      "def": 88,
+      "spAtk": 140,
+      "spDef": 70,
+      "speed": 112
+    },
+    "provider": "pokechamdb",
+    "page_slug": "lucario",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/lucario?format=double&season=M-5",
+    "raw_path": "_sources/details/lucario.html"
+  },
+  "lucario-mega-z": {
+    "dex_number": 448,
+    "stats": {
+      "hp": 70,
+      "atk": 100,
+      "def": 70,
+      "spAtk": 164,
+      "spDef": 70,
+      "speed": 151
+    },
+    "provider": "pokechamdb",
+    "page_slug": "lucario",
+    "field": "megaForms[1].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/lucario?format=double&season=M-5",
+    "raw_path": "_sources/details/lucario.html"
+  },
+  "luxray": {
+    "dex_number": 405,
+    "stats": {
+      "hp": 80,
+      "atk": 120,
+      "def": 79,
+      "spAtk": 95,
+      "spDef": 79,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "luxray",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/luxray?format=double&season=M-5",
+    "raw_path": "_sources/details/luxray.html"
+  },
+  "lycanroc-dusk": {
+    "dex_number": 745,
+    "stats": {
+      "hp": 75,
+      "atk": 117,
+      "def": 65,
+      "spAtk": 55,
+      "spDef": 65,
+      "speed": 110
+    },
+    "provider": "pokechamdb",
+    "page_slug": "lycanroc-dusk",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/lycanroc-dusk?format=double&season=M-5",
+    "raw_path": "_sources/details/lycanroc-dusk.html"
+  },
+  "lycanroc-midnight": {
+    "dex_number": 745,
+    "stats": {
+      "hp": 85,
+      "atk": 115,
+      "def": 75,
+      "spAtk": 55,
+      "spDef": 75,
+      "speed": 82
+    },
+    "provider": "pokechamdb",
+    "page_slug": "lycanroc-midnight",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/lycanroc-midnight?format=double&season=M-5",
+    "raw_path": "_sources/details/lycanroc-midnight.html"
+  },
+  "lycanroc": {
+    "dex_number": 745,
+    "stats": {
+      "hp": 75,
+      "atk": 115,
+      "def": 65,
+      "spAtk": 55,
+      "spDef": 65,
+      "speed": 112
+    },
+    "provider": "pokechamdb",
+    "page_slug": "lycanroc",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/lycanroc?format=double&season=M-5",
+    "raw_path": "_sources/details/lycanroc.html"
+  },
+  "machamp": {
+    "dex_number": 68,
+    "stats": {
+      "hp": 90,
+      "atk": 130,
+      "def": 80,
+      "spAtk": 65,
+      "spDef": 85,
+      "speed": 55
+    },
+    "provider": "pokechamdb",
+    "page_slug": "machamp",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/machamp?format=double&season=M-5",
+    "raw_path": "_sources/details/machamp.html"
+  },
+  "malamar": {
+    "dex_number": 687,
+    "stats": {
+      "hp": 86,
+      "atk": 92,
+      "def": 88,
+      "spAtk": 68,
+      "spDef": 75,
+      "speed": 73
+    },
+    "provider": "pokechamdb",
+    "page_slug": "malamar",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/malamar?format=double&season=M-5",
+    "raw_path": "_sources/details/malamar.html"
+  },
+  "malamar-mega": {
+    "dex_number": 687,
+    "stats": {
+      "hp": 86,
+      "atk": 102,
+      "def": 88,
+      "spAtk": 98,
+      "spDef": 120,
+      "speed": 88
+    },
+    "provider": "pokechamdb",
+    "page_slug": "malamar",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/malamar?format=double&season=M-5",
+    "raw_path": "_sources/details/malamar.html"
+  },
+  "mamoswine": {
+    "dex_number": 473,
+    "stats": {
+      "hp": 110,
+      "atk": 130,
+      "def": 80,
+      "spAtk": 70,
+      "spDef": 60,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "mamoswine",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/mamoswine?format=double&season=M-5",
+    "raw_path": "_sources/details/mamoswine.html"
+  },
+  "manectric": {
+    "dex_number": 310,
+    "stats": {
+      "hp": 70,
+      "atk": 75,
+      "def": 60,
+      "spAtk": 105,
+      "spDef": 60,
+      "speed": 105
+    },
+    "provider": "pokechamdb",
+    "page_slug": "manectric",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/manectric?format=double&season=M-5",
+    "raw_path": "_sources/details/manectric.html"
+  },
+  "manectric-mega": {
+    "dex_number": 310,
+    "stats": {
+      "hp": 70,
+      "atk": 75,
+      "def": 80,
+      "spAtk": 135,
+      "spDef": 80,
+      "speed": 135
+    },
+    "provider": "pokechamdb",
+    "page_slug": "manectric",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/manectric?format=double&season=M-5",
+    "raw_path": "_sources/details/manectric.html"
+  },
+  "maushold": {
+    "dex_number": 925,
+    "stats": {
+      "hp": 74,
+      "atk": 75,
+      "def": 70,
+      "spAtk": 65,
+      "spDef": 75,
+      "speed": 111
+    },
+    "provider": "pokechamdb",
+    "page_slug": "maushold",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/maushold?format=double&season=M-5",
+    "raw_path": "_sources/details/maushold.html"
+  },
+  "mawile": {
+    "dex_number": 303,
+    "stats": {
+      "hp": 50,
+      "atk": 85,
+      "def": 85,
+      "spAtk": 55,
+      "spDef": 55,
+      "speed": 50
+    },
+    "provider": "pokechamdb",
+    "page_slug": "mawile",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/mawile?format=double&season=M-5",
+    "raw_path": "_sources/details/mawile.html"
+  },
+  "mawile-mega": {
+    "dex_number": 303,
+    "stats": {
+      "hp": 50,
+      "atk": 105,
+      "def": 125,
+      "spAtk": 55,
+      "spDef": 95,
+      "speed": 50
+    },
+    "provider": "pokechamdb",
+    "page_slug": "mawile",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/mawile?format=double&season=M-5",
+    "raw_path": "_sources/details/mawile.html"
+  },
+  "medicham": {
+    "dex_number": 308,
+    "stats": {
+      "hp": 60,
+      "atk": 60,
+      "def": 75,
+      "spAtk": 60,
+      "spDef": 75,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "medicham",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/medicham?format=double&season=M-5",
+    "raw_path": "_sources/details/medicham.html"
+  },
+  "medicham-mega": {
+    "dex_number": 308,
+    "stats": {
+      "hp": 60,
+      "atk": 100,
+      "def": 85,
+      "spAtk": 80,
+      "spDef": 85,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "medicham",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/medicham?format=double&season=M-5",
+    "raw_path": "_sources/details/medicham.html"
+  },
+  "meganium": {
+    "dex_number": 154,
+    "stats": {
+      "hp": 80,
+      "atk": 82,
+      "def": 100,
+      "spAtk": 83,
+      "spDef": 100,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "meganium",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/meganium?format=double&season=M-5",
+    "raw_path": "_sources/details/meganium.html"
+  },
+  "meganium-mega": {
+    "dex_number": 154,
+    "stats": {
+      "hp": 80,
+      "atk": 92,
+      "def": 115,
+      "spAtk": 143,
+      "spDef": 115,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "meganium",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/meganium?format=double&season=M-5",
+    "raw_path": "_sources/details/meganium.html"
+  },
+  "meowscarada": {
+    "dex_number": 908,
+    "stats": {
+      "hp": 76,
+      "atk": 110,
+      "def": 70,
+      "spAtk": 81,
+      "spDef": 70,
+      "speed": 123
+    },
+    "provider": "pokechamdb",
+    "page_slug": "meowscarada",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/meowscarada?format=double&season=M-5",
+    "raw_path": "_sources/details/meowscarada.html"
+  },
+  "meowstic-female": {
+    "dex_number": 678,
+    "stats": {
+      "hp": 74,
+      "atk": 48,
+      "def": 76,
+      "spAtk": 83,
+      "spDef": 81,
+      "speed": 104
+    },
+    "provider": "pokechamdb",
+    "page_slug": "meowstic-female",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/meowstic-female?format=double&season=M-5",
+    "raw_path": "_sources/details/meowstic-female.html"
+  },
+  "meowstic-mega": {
+    "dex_number": 678,
+    "stats": {
+      "hp": 74,
+      "atk": 48,
+      "def": 76,
+      "spAtk": 143,
+      "spDef": 101,
+      "speed": 124
+    },
+    "provider": "pokechamdb",
+    "page_slug": "meowstic",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/meowstic?format=double&season=M-5",
+    "raw_path": "_sources/details/meowstic.html"
+  },
+  "meowstic": {
+    "dex_number": 678,
+    "stats": {
+      "hp": 74,
+      "atk": 48,
+      "def": 76,
+      "spAtk": 83,
+      "spDef": 81,
+      "speed": 104
+    },
+    "provider": "pokechamdb",
+    "page_slug": "meowstic",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/meowstic?format=double&season=M-5",
+    "raw_path": "_sources/details/meowstic.html"
+  },
+  "metagross": {
+    "dex_number": 376,
+    "stats": {
+      "hp": 80,
+      "atk": 135,
+      "def": 130,
+      "spAtk": 95,
+      "spDef": 90,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "metagross",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/metagross?format=double&season=M-5",
+    "raw_path": "_sources/details/metagross.html"
+  },
+  "metagross-mega": {
+    "dex_number": 376,
+    "stats": {
+      "hp": 80,
+      "atk": 145,
+      "def": 150,
+      "spAtk": 105,
+      "spDef": 110,
+      "speed": 110
+    },
+    "provider": "pokechamdb",
+    "page_slug": "metagross",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/metagross?format=double&season=M-5",
+    "raw_path": "_sources/details/metagross.html"
+  },
+  "milotic": {
+    "dex_number": 350,
+    "stats": {
+      "hp": 95,
+      "atk": 60,
+      "def": 79,
+      "spAtk": 100,
+      "spDef": 125,
+      "speed": 81
+    },
+    "provider": "pokechamdb",
+    "page_slug": "milotic",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/milotic?format=double&season=M-5",
+    "raw_path": "_sources/details/milotic.html"
+  },
+  "mimikyu": {
+    "dex_number": 778,
+    "stats": {
+      "hp": 55,
+      "atk": 90,
+      "def": 80,
+      "spAtk": 50,
+      "spDef": 105,
+      "speed": 96
+    },
+    "provider": "pokechamdb",
+    "page_slug": "mimikyu",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/mimikyu?format=double&season=M-5",
+    "raw_path": "_sources/details/mimikyu.html"
+  },
+  "morpeko": {
+    "dex_number": 877,
+    "stats": {
+      "hp": 58,
+      "atk": 95,
+      "def": 58,
+      "spAtk": 70,
+      "spDef": 58,
+      "speed": 97
+    },
+    "provider": "pokechamdb",
+    "page_slug": "morpeko",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/morpeko?format=double&season=M-5",
+    "raw_path": "_sources/details/morpeko.html"
+  },
+  "mr-rime": {
+    "dex_number": 866,
+    "stats": {
+      "hp": 80,
+      "atk": 85,
+      "def": 75,
+      "spAtk": 110,
+      "spDef": 100,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "mr-rime",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/mr-rime?format=double&season=M-5",
+    "raw_path": "_sources/details/mr-rime.html"
+  },
+  "mudsdale": {
+    "dex_number": 750,
+    "stats": {
+      "hp": 100,
+      "atk": 125,
+      "def": 100,
+      "spAtk": 55,
+      "spDef": 85,
+      "speed": 35
+    },
+    "provider": "pokechamdb",
+    "page_slug": "mudsdale",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/mudsdale?format=double&season=M-5",
+    "raw_path": "_sources/details/mudsdale.html"
+  },
+  "musharna": {
+    "dex_number": 518,
+    "stats": {
+      "hp": 116,
+      "atk": 55,
+      "def": 85,
+      "spAtk": 107,
+      "spDef": 95,
+      "speed": 29
+    },
+    "provider": "pokechamdb",
+    "page_slug": "musharna",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/musharna?format=double&season=M-5",
+    "raw_path": "_sources/details/musharna.html"
+  },
+  "ninetales-alola": {
+    "dex_number": 38,
+    "stats": {
+      "hp": 73,
+      "atk": 67,
+      "def": 75,
+      "spAtk": 81,
+      "spDef": 100,
+      "speed": 109
+    },
+    "provider": "pokechamdb",
+    "page_slug": "ninetales-alola",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/ninetales-alola?format=double&season=M-5",
+    "raw_path": "_sources/details/ninetales-alola.html"
+  },
+  "ninetales": {
+    "dex_number": 38,
+    "stats": {
+      "hp": 73,
+      "atk": 76,
+      "def": 75,
+      "spAtk": 81,
+      "spDef": 100,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "ninetales",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/ninetales?format=double&season=M-5",
+    "raw_path": "_sources/details/ninetales.html"
+  },
+  "noivern": {
+    "dex_number": 715,
+    "stats": {
+      "hp": 85,
+      "atk": 70,
+      "def": 80,
+      "spAtk": 97,
+      "spDef": 80,
+      "speed": 123
+    },
+    "provider": "pokechamdb",
+    "page_slug": "noivern",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/noivern?format=double&season=M-5",
+    "raw_path": "_sources/details/noivern.html"
+  },
+  "oranguru": {
+    "dex_number": 765,
+    "stats": {
+      "hp": 90,
+      "atk": 60,
+      "def": 80,
+      "spAtk": 90,
+      "spDef": 110,
+      "speed": 60
+    },
+    "provider": "pokechamdb",
+    "page_slug": "oranguru",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/oranguru?format=double&season=M-5",
+    "raw_path": "_sources/details/oranguru.html"
+  },
+  "orthworm": {
+    "dex_number": 968,
+    "stats": {
+      "hp": 70,
+      "atk": 85,
+      "def": 145,
+      "spAtk": 60,
+      "spDef": 55,
+      "speed": 65
+    },
+    "provider": "pokechamdb",
+    "page_slug": "orthworm",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/orthworm?format=double&season=M-5",
+    "raw_path": "_sources/details/orthworm.html"
+  },
+  "overqwil": {
+    "dex_number": 904,
+    "stats": {
+      "hp": 85,
+      "atk": 115,
+      "def": 95,
+      "spAtk": 65,
+      "spDef": 65,
+      "speed": 85
+    },
+    "provider": "pokechamdb",
+    "page_slug": "overqwil",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/overqwil?format=double&season=M-5",
+    "raw_path": "_sources/details/overqwil.html"
+  },
+  "palafin": {
+    "dex_number": 964,
+    "stats": {
+      "hp": 100,
+      "atk": 70,
+      "def": 72,
+      "spAtk": 53,
+      "spDef": 62,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "palafin",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/palafin?format=double&season=M-5",
+    "raw_path": "_sources/details/palafin.html"
+  },
+  "palafin-hero": {
+    "dex_number": 964,
+    "stats": {
+      "hp": 100,
+      "atk": 160,
+      "def": 97,
+      "spAtk": 106,
+      "spDef": 87,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "palafin",
+    "field": "alternateForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/palafin?format=double&season=M-5",
+    "raw_path": "_sources/details/palafin.html"
+  },
+  "pangoro": {
+    "dex_number": 675,
+    "stats": {
+      "hp": 95,
+      "atk": 124,
+      "def": 78,
+      "spAtk": 69,
+      "spDef": 71,
+      "speed": 58
+    },
+    "provider": "pokechamdb",
+    "page_slug": "pangoro",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pangoro?format=double&season=M-5",
+    "raw_path": "_sources/details/pangoro.html"
+  },
+  "passimian": {
+    "dex_number": 766,
+    "stats": {
+      "hp": 100,
+      "atk": 120,
+      "def": 90,
+      "spAtk": 40,
+      "spDef": 60,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "passimian",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/passimian?format=double&season=M-5",
+    "raw_path": "_sources/details/passimian.html"
+  },
+  "pelipper": {
+    "dex_number": 279,
+    "stats": {
+      "hp": 60,
+      "atk": 50,
+      "def": 100,
+      "spAtk": 95,
+      "spDef": 70,
+      "speed": 65
+    },
+    "provider": "pokechamdb",
+    "page_slug": "pelipper",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pelipper?format=double&season=M-5",
+    "raw_path": "_sources/details/pelipper.html"
+  },
+  "pidgeot": {
+    "dex_number": 18,
+    "stats": {
+      "hp": 83,
+      "atk": 80,
+      "def": 75,
+      "spAtk": 70,
+      "spDef": 70,
+      "speed": 101
+    },
+    "provider": "pokechamdb",
+    "page_slug": "pidgeot",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pidgeot?format=double&season=M-5",
+    "raw_path": "_sources/details/pidgeot.html"
+  },
+  "pidgeot-mega": {
+    "dex_number": 18,
+    "stats": {
+      "hp": 83,
+      "atk": 80,
+      "def": 80,
+      "spAtk": 135,
+      "spDef": 80,
+      "speed": 121
+    },
+    "provider": "pokechamdb",
+    "page_slug": "pidgeot",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pidgeot?format=double&season=M-5",
+    "raw_path": "_sources/details/pidgeot.html"
+  },
+  "pikachu": {
+    "dex_number": 25,
+    "stats": {
+      "hp": 35,
+      "atk": 55,
+      "def": 40,
+      "spAtk": 50,
+      "spDef": 50,
+      "speed": 90
+    },
+    "provider": "pokechamdb",
+    "page_slug": "pikachu",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pikachu?format=double&season=M-5",
+    "raw_path": "_sources/details/pikachu.html"
+  },
+  "pinsir": {
+    "dex_number": 127,
+    "stats": {
+      "hp": 65,
+      "atk": 125,
+      "def": 100,
+      "spAtk": 55,
+      "spDef": 70,
+      "speed": 85
+    },
+    "provider": "pokechamdb",
+    "page_slug": "pinsir",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pinsir?format=double&season=M-5",
+    "raw_path": "_sources/details/pinsir.html"
+  },
+  "pinsir-mega": {
+    "dex_number": 127,
+    "stats": {
+      "hp": 65,
+      "atk": 155,
+      "def": 120,
+      "spAtk": 65,
+      "spDef": 90,
+      "speed": 105
+    },
+    "provider": "pokechamdb",
+    "page_slug": "pinsir",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pinsir?format=double&season=M-5",
+    "raw_path": "_sources/details/pinsir.html"
+  },
+  "politoed": {
+    "dex_number": 186,
+    "stats": {
+      "hp": 90,
+      "atk": 75,
+      "def": 75,
+      "spAtk": 90,
+      "spDef": 100,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "politoed",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/politoed?format=double&season=M-5",
+    "raw_path": "_sources/details/politoed.html"
+  },
+  "polteageist": {
+    "dex_number": 855,
+    "stats": {
+      "hp": 60,
+      "atk": 65,
+      "def": 65,
+      "spAtk": 134,
+      "spDef": 114,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "polteageist",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/polteageist?format=double&season=M-5",
+    "raw_path": "_sources/details/polteageist.html"
+  },
+  "primarina": {
+    "dex_number": 730,
+    "stats": {
+      "hp": 80,
+      "atk": 74,
+      "def": 74,
+      "spAtk": 126,
+      "spDef": 116,
+      "speed": 60
+    },
+    "provider": "pokechamdb",
+    "page_slug": "primarina",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/primarina?format=double&season=M-5",
+    "raw_path": "_sources/details/primarina.html"
+  },
+  "pyroar": {
+    "dex_number": 668,
+    "stats": {
+      "hp": 86,
+      "atk": 68,
+      "def": 72,
+      "spAtk": 109,
+      "spDef": 66,
+      "speed": 106
+    },
+    "provider": "pokechamdb",
+    "page_slug": "pyroar",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pyroar?format=double&season=M-5",
+    "raw_path": "_sources/details/pyroar.html"
+  },
+  "pyroar-mega": {
+    "dex_number": 668,
+    "stats": {
+      "hp": 86,
+      "atk": 88,
+      "def": 92,
+      "spAtk": 129,
+      "spDef": 86,
+      "speed": 126
+    },
+    "provider": "pokechamdb",
+    "page_slug": "pyroar",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pyroar?format=double&season=M-5",
+    "raw_path": "_sources/details/pyroar.html"
+  },
+  "quaquaval": {
+    "dex_number": 914,
+    "stats": {
+      "hp": 85,
+      "atk": 120,
+      "def": 80,
+      "spAtk": 85,
+      "spDef": 75,
+      "speed": 85
+    },
+    "provider": "pokechamdb",
+    "page_slug": "quaquaval",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/quaquaval?format=double&season=M-5",
+    "raw_path": "_sources/details/quaquaval.html"
+  },
+  "qwilfish": {
+    "dex_number": 211,
+    "stats": {
+      "hp": 65,
+      "atk": 95,
+      "def": 85,
+      "spAtk": 55,
+      "spDef": 55,
+      "speed": 85
+    },
+    "provider": "pokechamdb",
+    "page_slug": "qwilfish",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/qwilfish?format=double&season=M-5",
+    "raw_path": "_sources/details/qwilfish.html"
+  },
+  "raichu-alola": {
+    "dex_number": 26,
+    "stats": {
+      "hp": 60,
+      "atk": 85,
+      "def": 50,
+      "spAtk": 95,
+      "spDef": 85,
+      "speed": 110
+    },
+    "provider": "pokechamdb",
+    "page_slug": "raichu-alola",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/raichu-alola?format=double&season=M-5",
+    "raw_path": "_sources/details/raichu-alola.html"
+  },
+  "raichu": {
+    "dex_number": 26,
+    "stats": {
+      "hp": 60,
+      "atk": 90,
+      "def": 55,
+      "spAtk": 90,
+      "spDef": 80,
+      "speed": 110
+    },
+    "provider": "pokechamdb",
+    "page_slug": "raichu",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/raichu?format=double&season=M-5",
+    "raw_path": "_sources/details/raichu.html"
+  },
+  "raichu-mega-x": {
+    "dex_number": 26,
+    "stats": {
+      "hp": 60,
+      "atk": 135,
+      "def": 95,
+      "spAtk": 90,
+      "spDef": 95,
+      "speed": 110
+    },
+    "provider": "pokechamdb",
+    "page_slug": "raichu",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/raichu?format=double&season=M-5",
+    "raw_path": "_sources/details/raichu.html"
+  },
+  "raichu-mega-y": {
+    "dex_number": 26,
+    "stats": {
+      "hp": 60,
+      "atk": 100,
+      "def": 55,
+      "spAtk": 160,
+      "spDef": 80,
+      "speed": 130
+    },
+    "provider": "pokechamdb",
+    "page_slug": "raichu",
+    "field": "megaForms[1].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/raichu?format=double&season=M-5",
+    "raw_path": "_sources/details/raichu.html"
+  },
+  "rampardos": {
+    "dex_number": 409,
+    "stats": {
+      "hp": 97,
+      "atk": 165,
+      "def": 60,
+      "spAtk": 65,
+      "spDef": 50,
+      "speed": 58
+    },
+    "provider": "pokechamdb",
+    "page_slug": "rampardos",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rampardos?format=double&season=M-5",
+    "raw_path": "_sources/details/rampardos.html"
+  },
+  "reuniclus": {
+    "dex_number": 579,
+    "stats": {
+      "hp": 110,
+      "atk": 65,
+      "def": 75,
+      "spAtk": 125,
+      "spDef": 85,
+      "speed": 30
+    },
+    "provider": "pokechamdb",
+    "page_slug": "reuniclus",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/reuniclus?format=double&season=M-5",
+    "raw_path": "_sources/details/reuniclus.html"
+  },
+  "rhyperior": {
+    "dex_number": 464,
+    "stats": {
+      "hp": 115,
+      "atk": 140,
+      "def": 130,
+      "spAtk": 55,
+      "spDef": 55,
+      "speed": 40
+    },
+    "provider": "pokechamdb",
+    "page_slug": "rhyperior",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rhyperior?format=double&season=M-5",
+    "raw_path": "_sources/details/rhyperior.html"
+  },
+  "roserade": {
+    "dex_number": 407,
+    "stats": {
+      "hp": 60,
+      "atk": 70,
+      "def": 65,
+      "spAtk": 125,
+      "spDef": 105,
+      "speed": 90
+    },
+    "provider": "pokechamdb",
+    "page_slug": "roserade",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/roserade?format=double&season=M-5",
+    "raw_path": "_sources/details/roserade.html"
+  },
+  "rotom-fan": {
+    "dex_number": 479,
+    "stats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spAtk": 105,
+      "spDef": 107,
+      "speed": 86
+    },
+    "provider": "pokechamdb",
+    "page_slug": "rotom-fan",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rotom-fan?format=double&season=M-5",
+    "raw_path": "_sources/details/rotom-fan.html"
+  },
+  "rotom-frost": {
+    "dex_number": 479,
+    "stats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spAtk": 105,
+      "spDef": 107,
+      "speed": 86
+    },
+    "provider": "pokechamdb",
+    "page_slug": "rotom-frost",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rotom-frost?format=double&season=M-5",
+    "raw_path": "_sources/details/rotom-frost.html"
+  },
+  "rotom-heat": {
+    "dex_number": 479,
+    "stats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spAtk": 105,
+      "spDef": 107,
+      "speed": 86
+    },
+    "provider": "pokechamdb",
+    "page_slug": "rotom-heat",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rotom-heat?format=double&season=M-5",
+    "raw_path": "_sources/details/rotom-heat.html"
+  },
+  "rotom-mow": {
+    "dex_number": 479,
+    "stats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spAtk": 105,
+      "spDef": 107,
+      "speed": 86
+    },
+    "provider": "pokechamdb",
+    "page_slug": "rotom-mow",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rotom-mow?format=double&season=M-5",
+    "raw_path": "_sources/details/rotom-mow.html"
+  },
+  "rotom-wash": {
+    "dex_number": 479,
+    "stats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spAtk": 105,
+      "spDef": 107,
+      "speed": 86
+    },
+    "provider": "pokechamdb",
+    "page_slug": "rotom-wash",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rotom-wash?format=double&season=M-5",
+    "raw_path": "_sources/details/rotom-wash.html"
+  },
+  "rotom": {
+    "dex_number": 479,
+    "stats": {
+      "hp": 50,
+      "atk": 50,
+      "def": 77,
+      "spAtk": 95,
+      "spDef": 77,
+      "speed": 91
+    },
+    "provider": "pokechamdb",
+    "page_slug": "rotom",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rotom?format=double&season=M-5",
+    "raw_path": "_sources/details/rotom.html"
+  },
+  "runerigus": {
+    "dex_number": 867,
+    "stats": {
+      "hp": 58,
+      "atk": 95,
+      "def": 145,
+      "spAtk": 50,
+      "spDef": 105,
+      "speed": 30
+    },
+    "provider": "pokechamdb",
+    "page_slug": "runerigus",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/runerigus?format=double&season=M-5",
+    "raw_path": "_sources/details/runerigus.html"
+  },
+  "sableye": {
+    "dex_number": 302,
+    "stats": {
+      "hp": 50,
+      "atk": 75,
+      "def": 75,
+      "spAtk": 65,
+      "spDef": 65,
+      "speed": 50
+    },
+    "provider": "pokechamdb",
+    "page_slug": "sableye",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sableye?format=double&season=M-5",
+    "raw_path": "_sources/details/sableye.html"
+  },
+  "sableye-mega": {
+    "dex_number": 302,
+    "stats": {
+      "hp": 50,
+      "atk": 85,
+      "def": 125,
+      "spAtk": 85,
+      "spDef": 115,
+      "speed": 20
+    },
+    "provider": "pokechamdb",
+    "page_slug": "sableye",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sableye?format=double&season=M-5",
+    "raw_path": "_sources/details/sableye.html"
+  },
+  "salazzle": {
+    "dex_number": 758,
+    "stats": {
+      "hp": 68,
+      "atk": 64,
+      "def": 60,
+      "spAtk": 111,
+      "spDef": 60,
+      "speed": 117
+    },
+    "provider": "pokechamdb",
+    "page_slug": "salazzle",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/salazzle?format=double&season=M-5",
+    "raw_path": "_sources/details/salazzle.html"
+  },
+  "samurott-hisui": {
+    "dex_number": 503,
+    "stats": {
+      "hp": 90,
+      "atk": 108,
+      "def": 80,
+      "spAtk": 100,
+      "spDef": 65,
+      "speed": 85
+    },
+    "provider": "pokechamdb",
+    "page_slug": "samurott-hisui",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/samurott-hisui?format=double&season=M-5",
+    "raw_path": "_sources/details/samurott-hisui.html"
+  },
+  "samurott": {
+    "dex_number": 503,
+    "stats": {
+      "hp": 95,
+      "atk": 100,
+      "def": 85,
+      "spAtk": 108,
+      "spDef": 70,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "samurott",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/samurott?format=double&season=M-5",
+    "raw_path": "_sources/details/samurott.html"
+  },
+  "sandaconda": {
+    "dex_number": 844,
+    "stats": {
+      "hp": 72,
+      "atk": 107,
+      "def": 125,
+      "spAtk": 65,
+      "spDef": 70,
+      "speed": 71
+    },
+    "provider": "pokechamdb",
+    "page_slug": "sandaconda",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sandaconda?format=double&season=M-5",
+    "raw_path": "_sources/details/sandaconda.html"
+  },
+  "sceptile": {
+    "dex_number": 254,
+    "stats": {
+      "hp": 70,
+      "atk": 85,
+      "def": 65,
+      "spAtk": 105,
+      "spDef": 85,
+      "speed": 120
+    },
+    "provider": "pokechamdb",
+    "page_slug": "sceptile",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sceptile?format=double&season=M-5",
+    "raw_path": "_sources/details/sceptile.html"
+  },
+  "sceptile-mega": {
+    "dex_number": 254,
+    "stats": {
+      "hp": 70,
+      "atk": 110,
+      "def": 75,
+      "spAtk": 145,
+      "spDef": 85,
+      "speed": 145
+    },
+    "provider": "pokechamdb",
+    "page_slug": "sceptile",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sceptile?format=double&season=M-5",
+    "raw_path": "_sources/details/sceptile.html"
+  },
+  "scizor": {
+    "dex_number": 212,
+    "stats": {
+      "hp": 70,
+      "atk": 130,
+      "def": 100,
+      "spAtk": 55,
+      "spDef": 80,
+      "speed": 65
+    },
+    "provider": "pokechamdb",
+    "page_slug": "scizor",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/scizor?format=double&season=M-5",
+    "raw_path": "_sources/details/scizor.html"
+  },
+  "scizor-mega": {
+    "dex_number": 212,
+    "stats": {
+      "hp": 70,
+      "atk": 150,
+      "def": 140,
+      "spAtk": 65,
+      "spDef": 100,
+      "speed": 75
+    },
+    "provider": "pokechamdb",
+    "page_slug": "scizor",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/scizor?format=double&season=M-5",
+    "raw_path": "_sources/details/scizor.html"
+  },
+  "scolipede": {
+    "dex_number": 545,
+    "stats": {
+      "hp": 60,
+      "atk": 100,
+      "def": 89,
+      "spAtk": 55,
+      "spDef": 69,
+      "speed": 112
+    },
+    "provider": "pokechamdb",
+    "page_slug": "scolipede",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/scolipede?format=double&season=M-5",
+    "raw_path": "_sources/details/scolipede.html"
+  },
+  "scolipede-mega": {
+    "dex_number": 545,
+    "stats": {
+      "hp": 60,
+      "atk": 140,
+      "def": 149,
+      "spAtk": 75,
+      "spDef": 99,
+      "speed": 62
+    },
+    "provider": "pokechamdb",
+    "page_slug": "scolipede",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/scolipede?format=double&season=M-5",
+    "raw_path": "_sources/details/scolipede.html"
+  },
+  "scovillain": {
+    "dex_number": 952,
+    "stats": {
+      "hp": 65,
+      "atk": 108,
+      "def": 65,
+      "spAtk": 108,
+      "spDef": 65,
+      "speed": 75
+    },
+    "provider": "pokechamdb",
+    "page_slug": "scovillain",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/scovillain?format=double&season=M-5",
+    "raw_path": "_sources/details/scovillain.html"
+  },
+  "scovillain-mega": {
+    "dex_number": 952,
+    "stats": {
+      "hp": 65,
+      "atk": 138,
+      "def": 85,
+      "spAtk": 138,
+      "spDef": 85,
+      "speed": 75
+    },
+    "provider": "pokechamdb",
+    "page_slug": "scovillain",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/scovillain?format=double&season=M-5",
+    "raw_path": "_sources/details/scovillain.html"
+  },
+  "scrafty": {
+    "dex_number": 560,
+    "stats": {
+      "hp": 65,
+      "atk": 90,
+      "def": 115,
+      "spAtk": 45,
+      "spDef": 115,
+      "speed": 58
+    },
+    "provider": "pokechamdb",
+    "page_slug": "scrafty",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/scrafty?format=double&season=M-5",
+    "raw_path": "_sources/details/scrafty.html"
+  },
+  "scrafty-mega": {
+    "dex_number": 560,
+    "stats": {
+      "hp": 65,
+      "atk": 130,
+      "def": 135,
+      "spAtk": 55,
+      "spDef": 135,
+      "speed": 68
+    },
+    "provider": "pokechamdb",
+    "page_slug": "scrafty",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/scrafty?format=double&season=M-5",
+    "raw_path": "_sources/details/scrafty.html"
+  },
+  "serperior": {
+    "dex_number": 497,
+    "stats": {
+      "hp": 75,
+      "atk": 75,
+      "def": 95,
+      "spAtk": 75,
+      "spDef": 95,
+      "speed": 113
+    },
+    "provider": "pokechamdb",
+    "page_slug": "serperior",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/serperior?format=double&season=M-5",
+    "raw_path": "_sources/details/serperior.html"
+  },
+  "sharpedo": {
+    "dex_number": 319,
+    "stats": {
+      "hp": 70,
+      "atk": 120,
+      "def": 40,
+      "spAtk": 95,
+      "spDef": 40,
+      "speed": 95
+    },
+    "provider": "pokechamdb",
+    "page_slug": "sharpedo",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sharpedo?format=double&season=M-5",
+    "raw_path": "_sources/details/sharpedo.html"
+  },
+  "sharpedo-mega": {
+    "dex_number": 319,
+    "stats": {
+      "hp": 70,
+      "atk": 140,
+      "def": 70,
+      "spAtk": 110,
+      "spDef": 65,
+      "speed": 105
+    },
+    "provider": "pokechamdb",
+    "page_slug": "sharpedo",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sharpedo?format=double&season=M-5",
+    "raw_path": "_sources/details/sharpedo.html"
+  },
+  "simipour": {
+    "dex_number": 516,
+    "stats": {
+      "hp": 75,
+      "atk": 98,
+      "def": 63,
+      "spAtk": 98,
+      "spDef": 63,
+      "speed": 101
+    },
+    "provider": "pokechamdb",
+    "page_slug": "simipour",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/simipour?format=double&season=M-5",
+    "raw_path": "_sources/details/simipour.html"
+  },
+  "simisage": {
+    "dex_number": 512,
+    "stats": {
+      "hp": 75,
+      "atk": 98,
+      "def": 63,
+      "spAtk": 98,
+      "spDef": 63,
+      "speed": 101
+    },
+    "provider": "pokechamdb",
+    "page_slug": "simisage",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/simisage?format=double&season=M-5",
+    "raw_path": "_sources/details/simisage.html"
+  },
+  "simisear": {
+    "dex_number": 514,
+    "stats": {
+      "hp": 75,
+      "atk": 98,
+      "def": 63,
+      "spAtk": 98,
+      "spDef": 63,
+      "speed": 101
+    },
+    "provider": "pokechamdb",
+    "page_slug": "simisear",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/simisear?format=double&season=M-5",
+    "raw_path": "_sources/details/simisear.html"
+  },
+  "sinistcha": {
+    "dex_number": 1013,
+    "stats": {
+      "hp": 71,
+      "atk": 60,
+      "def": 106,
+      "spAtk": 121,
+      "spDef": 80,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "sinistcha",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sinistcha?format=double&season=M-5",
+    "raw_path": "_sources/details/sinistcha.html"
+  },
+  "skarmory": {
+    "dex_number": 227,
+    "stats": {
+      "hp": 65,
+      "atk": 80,
+      "def": 140,
+      "spAtk": 40,
+      "spDef": 70,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "skarmory",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/skarmory?format=double&season=M-5",
+    "raw_path": "_sources/details/skarmory.html"
+  },
+  "skarmory-mega": {
+    "dex_number": 227,
+    "stats": {
+      "hp": 65,
+      "atk": 140,
+      "def": 110,
+      "spAtk": 40,
+      "spDef": 100,
+      "speed": 110
+    },
+    "provider": "pokechamdb",
+    "page_slug": "skarmory",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/skarmory?format=double&season=M-5",
+    "raw_path": "_sources/details/skarmory.html"
+  },
+  "skeledirge": {
+    "dex_number": 911,
+    "stats": {
+      "hp": 104,
+      "atk": 75,
+      "def": 100,
+      "spAtk": 110,
+      "spDef": 75,
+      "speed": 66
+    },
+    "provider": "pokechamdb",
+    "page_slug": "skeledirge",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/skeledirge?format=double&season=M-5",
+    "raw_path": "_sources/details/skeledirge.html"
+  },
+  "slowbro-galar": {
+    "dex_number": 80,
+    "stats": {
+      "hp": 95,
+      "atk": 100,
+      "def": 95,
+      "spAtk": 100,
+      "spDef": 70,
+      "speed": 30
+    },
+    "provider": "pokechamdb",
+    "page_slug": "slowbro-galar",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/slowbro-galar?format=double&season=M-5",
+    "raw_path": "_sources/details/slowbro-galar.html"
+  },
+  "slowbro": {
+    "dex_number": 80,
+    "stats": {
+      "hp": 95,
+      "atk": 75,
+      "def": 110,
+      "spAtk": 100,
+      "spDef": 80,
+      "speed": 30
+    },
+    "provider": "pokechamdb",
+    "page_slug": "slowbro",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/slowbro?format=double&season=M-5",
+    "raw_path": "_sources/details/slowbro.html"
+  },
+  "slowbro-mega": {
+    "dex_number": 80,
+    "stats": {
+      "hp": 95,
+      "atk": 75,
+      "def": 180,
+      "spAtk": 130,
+      "spDef": 80,
+      "speed": 30
+    },
+    "provider": "pokechamdb",
+    "page_slug": "slowbro",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/slowbro?format=double&season=M-5",
+    "raw_path": "_sources/details/slowbro.html"
+  },
+  "slowking-galar": {
+    "dex_number": 199,
+    "stats": {
+      "hp": 95,
+      "atk": 65,
+      "def": 80,
+      "spAtk": 110,
+      "spDef": 110,
+      "speed": 30
+    },
+    "provider": "pokechamdb",
+    "page_slug": "slowking-galar",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/slowking-galar?format=double&season=M-5",
+    "raw_path": "_sources/details/slowking-galar.html"
+  },
+  "slowking": {
+    "dex_number": 199,
+    "stats": {
+      "hp": 95,
+      "atk": 75,
+      "def": 80,
+      "spAtk": 100,
+      "spDef": 110,
+      "speed": 30
+    },
+    "provider": "pokechamdb",
+    "page_slug": "slowking",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/slowking?format=double&season=M-5",
+    "raw_path": "_sources/details/slowking.html"
+  },
+  "slurpuff": {
+    "dex_number": 685,
+    "stats": {
+      "hp": 82,
+      "atk": 80,
+      "def": 86,
+      "spAtk": 85,
+      "spDef": 75,
+      "speed": 72
+    },
+    "provider": "pokechamdb",
+    "page_slug": "slurpuff",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/slurpuff?format=double&season=M-5",
+    "raw_path": "_sources/details/slurpuff.html"
+  },
+  "sneasler": {
+    "dex_number": 903,
+    "stats": {
+      "hp": 80,
+      "atk": 130,
+      "def": 60,
+      "spAtk": 40,
+      "spDef": 80,
+      "speed": 120
+    },
+    "provider": "pokechamdb",
+    "page_slug": "sneasler",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sneasler?format=double&season=M-5",
+    "raw_path": "_sources/details/sneasler.html"
+  },
+  "snorlax": {
+    "dex_number": 143,
+    "stats": {
+      "hp": 160,
+      "atk": 110,
+      "def": 65,
+      "spAtk": 65,
+      "spDef": 110,
+      "speed": 30
+    },
+    "provider": "pokechamdb",
+    "page_slug": "snorlax",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/snorlax?format=double&season=M-5",
+    "raw_path": "_sources/details/snorlax.html"
+  },
+  "spiritomb": {
+    "dex_number": 442,
+    "stats": {
+      "hp": 50,
+      "atk": 92,
+      "def": 108,
+      "spAtk": 92,
+      "spDef": 108,
+      "speed": 35
+    },
+    "provider": "pokechamdb",
+    "page_slug": "spiritomb",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/spiritomb?format=double&season=M-5",
+    "raw_path": "_sources/details/spiritomb.html"
+  },
+  "staraptor": {
+    "dex_number": 398,
+    "stats": {
+      "hp": 85,
+      "atk": 120,
+      "def": 70,
+      "spAtk": 50,
+      "spDef": 60,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "staraptor",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/staraptor?format=double&season=M-5",
+    "raw_path": "_sources/details/staraptor.html"
+  },
+  "staraptor-mega": {
+    "dex_number": 398,
+    "stats": {
+      "hp": 85,
+      "atk": 140,
+      "def": 100,
+      "spAtk": 60,
+      "spDef": 90,
+      "speed": 110
+    },
+    "provider": "pokechamdb",
+    "page_slug": "staraptor",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/staraptor?format=double&season=M-5",
+    "raw_path": "_sources/details/staraptor.html"
+  },
+  "starmie": {
+    "dex_number": 121,
+    "stats": {
+      "hp": 60,
+      "atk": 75,
+      "def": 85,
+      "spAtk": 100,
+      "spDef": 85,
+      "speed": 115
+    },
+    "provider": "pokechamdb",
+    "page_slug": "starmie",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/starmie?format=double&season=M-5",
+    "raw_path": "_sources/details/starmie.html"
+  },
+  "starmie-mega": {
+    "dex_number": 121,
+    "stats": {
+      "hp": 60,
+      "atk": 100,
+      "def": 105,
+      "spAtk": 130,
+      "spDef": 105,
+      "speed": 120
+    },
+    "provider": "pokechamdb",
+    "page_slug": "starmie",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/starmie?format=double&season=M-5",
+    "raw_path": "_sources/details/starmie.html"
+  },
+  "steelix": {
+    "dex_number": 208,
+    "stats": {
+      "hp": 75,
+      "atk": 85,
+      "def": 200,
+      "spAtk": 55,
+      "spDef": 65,
+      "speed": 30
+    },
+    "provider": "pokechamdb",
+    "page_slug": "steelix",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/steelix?format=double&season=M-5",
+    "raw_path": "_sources/details/steelix.html"
+  },
+  "steelix-mega": {
+    "dex_number": 208,
+    "stats": {
+      "hp": 75,
+      "atk": 125,
+      "def": 230,
+      "spAtk": 55,
+      "spDef": 95,
+      "speed": 30
+    },
+    "provider": "pokechamdb",
+    "page_slug": "steelix",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/steelix?format=double&season=M-5",
+    "raw_path": "_sources/details/steelix.html"
+  },
+  "stunfisk-galar": {
+    "dex_number": 618,
+    "stats": {
+      "hp": 109,
+      "atk": 81,
+      "def": 99,
+      "spAtk": 66,
+      "spDef": 84,
+      "speed": 32
+    },
+    "provider": "pokechamdb",
+    "page_slug": "stunfisk-galar",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/stunfisk-galar?format=double&season=M-5",
+    "raw_path": "_sources/details/stunfisk-galar.html"
+  },
+  "stunfisk": {
+    "dex_number": 618,
+    "stats": {
+      "hp": 109,
+      "atk": 66,
+      "def": 84,
+      "spAtk": 81,
+      "spDef": 99,
+      "speed": 32
+    },
+    "provider": "pokechamdb",
+    "page_slug": "stunfisk",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/stunfisk?format=double&season=M-5",
+    "raw_path": "_sources/details/stunfisk.html"
+  },
+  "swampert": {
+    "dex_number": 260,
+    "stats": {
+      "hp": 100,
+      "atk": 110,
+      "def": 90,
+      "spAtk": 85,
+      "spDef": 90,
+      "speed": 60
+    },
+    "provider": "pokechamdb",
+    "page_slug": "swampert",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/swampert?format=double&season=M-5",
+    "raw_path": "_sources/details/swampert.html"
+  },
+  "swampert-mega": {
+    "dex_number": 260,
+    "stats": {
+      "hp": 100,
+      "atk": 150,
+      "def": 110,
+      "spAtk": 95,
+      "spDef": 110,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "swampert",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/swampert?format=double&season=M-5",
+    "raw_path": "_sources/details/swampert.html"
+  },
+  "sylveon": {
+    "dex_number": 700,
+    "stats": {
+      "hp": 95,
+      "atk": 65,
+      "def": 65,
+      "spAtk": 110,
+      "spDef": 130,
+      "speed": 60
+    },
+    "provider": "pokechamdb",
+    "page_slug": "sylveon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sylveon?format=double&season=M-5",
+    "raw_path": "_sources/details/sylveon.html"
+  },
+  "talonflame": {
+    "dex_number": 663,
+    "stats": {
+      "hp": 78,
+      "atk": 81,
+      "def": 71,
+      "spAtk": 74,
+      "spDef": 69,
+      "speed": 126
+    },
+    "provider": "pokechamdb",
+    "page_slug": "talonflame",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/talonflame?format=double&season=M-5",
+    "raw_path": "_sources/details/talonflame.html"
+  },
+  "tauros-paldea-aqua": {
+    "dex_number": 128,
+    "stats": {
+      "hp": 75,
+      "atk": 110,
+      "def": 105,
+      "spAtk": 30,
+      "spDef": 70,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "tauros-paldea-aqua",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tauros-paldea-aqua?format=double&season=M-5",
+    "raw_path": "_sources/details/tauros-paldea-aqua.html"
+  },
+  "tauros-paldea-blaze": {
+    "dex_number": 128,
+    "stats": {
+      "hp": 75,
+      "atk": 110,
+      "def": 105,
+      "spAtk": 30,
+      "spDef": 70,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "tauros-paldea-blaze",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tauros-paldea-blaze?format=double&season=M-5",
+    "raw_path": "_sources/details/tauros-paldea-blaze.html"
+  },
+  "tauros-paldea-combat": {
+    "dex_number": 128,
+    "stats": {
+      "hp": 75,
+      "atk": 110,
+      "def": 105,
+      "spAtk": 30,
+      "spDef": 70,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "tauros-paldea-combat",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tauros-paldea-combat?format=double&season=M-5",
+    "raw_path": "_sources/details/tauros-paldea-combat.html"
+  },
+  "tauros": {
+    "dex_number": 128,
+    "stats": {
+      "hp": 75,
+      "atk": 100,
+      "def": 95,
+      "spAtk": 40,
+      "spDef": 70,
+      "speed": 110
+    },
+    "provider": "pokechamdb",
+    "page_slug": "tauros",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tauros?format=double&season=M-5",
+    "raw_path": "_sources/details/tauros.html"
+  },
+  "tinkaton": {
+    "dex_number": 959,
+    "stats": {
+      "hp": 85,
+      "atk": 75,
+      "def": 77,
+      "spAtk": 70,
+      "spDef": 105,
+      "speed": 94
+    },
+    "provider": "pokechamdb",
+    "page_slug": "tinkaton",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tinkaton?format=double&season=M-5",
+    "raw_path": "_sources/details/tinkaton.html"
+  },
+  "torkoal": {
+    "dex_number": 324,
+    "stats": {
+      "hp": 70,
+      "atk": 85,
+      "def": 140,
+      "spAtk": 85,
+      "spDef": 70,
+      "speed": 20
+    },
+    "provider": "pokechamdb",
+    "page_slug": "torkoal",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/torkoal?format=double&season=M-5",
+    "raw_path": "_sources/details/torkoal.html"
+  },
+  "torterra": {
+    "dex_number": 389,
+    "stats": {
+      "hp": 95,
+      "atk": 109,
+      "def": 105,
+      "spAtk": 75,
+      "spDef": 85,
+      "speed": 56
+    },
+    "provider": "pokechamdb",
+    "page_slug": "torterra",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/torterra?format=double&season=M-5",
+    "raw_path": "_sources/details/torterra.html"
+  },
+  "toucannon": {
+    "dex_number": 733,
+    "stats": {
+      "hp": 80,
+      "atk": 120,
+      "def": 75,
+      "spAtk": 75,
+      "spDef": 75,
+      "speed": 60
+    },
+    "provider": "pokechamdb",
+    "page_slug": "toucannon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/toucannon?format=double&season=M-5",
+    "raw_path": "_sources/details/toucannon.html"
+  },
+  "toxapex": {
+    "dex_number": 748,
+    "stats": {
+      "hp": 50,
+      "atk": 63,
+      "def": 152,
+      "spAtk": 53,
+      "spDef": 142,
+      "speed": 35
+    },
+    "provider": "pokechamdb",
+    "page_slug": "toxapex",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/toxapex?format=double&season=M-5",
+    "raw_path": "_sources/details/toxapex.html"
+  },
+  "toxicroak": {
+    "dex_number": 454,
+    "stats": {
+      "hp": 83,
+      "atk": 106,
+      "def": 65,
+      "spAtk": 86,
+      "spDef": 65,
+      "speed": 85
+    },
+    "provider": "pokechamdb",
+    "page_slug": "toxicroak",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/toxicroak?format=double&season=M-5",
+    "raw_path": "_sources/details/toxicroak.html"
+  },
+  "trevenant": {
+    "dex_number": 709,
+    "stats": {
+      "hp": 85,
+      "atk": 110,
+      "def": 76,
+      "spAtk": 65,
+      "spDef": 82,
+      "speed": 56
+    },
+    "provider": "pokechamdb",
+    "page_slug": "trevenant",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/trevenant?format=double&season=M-5",
+    "raw_path": "_sources/details/trevenant.html"
+  },
+  "tsareena": {
+    "dex_number": 763,
+    "stats": {
+      "hp": 72,
+      "atk": 120,
+      "def": 98,
+      "spAtk": 50,
+      "spDef": 98,
+      "speed": 72
+    },
+    "provider": "pokechamdb",
+    "page_slug": "tsareena",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tsareena?format=double&season=M-5",
+    "raw_path": "_sources/details/tsareena.html"
+  },
+  "typhlosion-hisui": {
+    "dex_number": 157,
+    "stats": {
+      "hp": 73,
+      "atk": 84,
+      "def": 78,
+      "spAtk": 119,
+      "spDef": 85,
+      "speed": 95
+    },
+    "provider": "pokechamdb",
+    "page_slug": "typhlosion-hisui",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/typhlosion-hisui?format=double&season=M-5",
+    "raw_path": "_sources/details/typhlosion-hisui.html"
+  },
+  "typhlosion": {
+    "dex_number": 157,
+    "stats": {
+      "hp": 78,
+      "atk": 84,
+      "def": 78,
+      "spAtk": 109,
+      "spDef": 85,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "typhlosion",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/typhlosion?format=double&season=M-5",
+    "raw_path": "_sources/details/typhlosion.html"
+  },
+  "tyranitar": {
+    "dex_number": 248,
+    "stats": {
+      "hp": 100,
+      "atk": 134,
+      "def": 110,
+      "spAtk": 95,
+      "spDef": 100,
+      "speed": 61
+    },
+    "provider": "pokechamdb",
+    "page_slug": "tyranitar",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tyranitar?format=double&season=M-5",
+    "raw_path": "_sources/details/tyranitar.html"
+  },
+  "tyranitar-mega": {
+    "dex_number": 248,
+    "stats": {
+      "hp": 100,
+      "atk": 164,
+      "def": 150,
+      "spAtk": 95,
+      "spDef": 120,
+      "speed": 71
+    },
+    "provider": "pokechamdb",
+    "page_slug": "tyranitar",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tyranitar?format=double&season=M-5",
+    "raw_path": "_sources/details/tyranitar.html"
+  },
+  "tyrantrum": {
+    "dex_number": 697,
+    "stats": {
+      "hp": 82,
+      "atk": 121,
+      "def": 119,
+      "spAtk": 69,
+      "spDef": 59,
+      "speed": 71
+    },
+    "provider": "pokechamdb",
+    "page_slug": "tyrantrum",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tyrantrum?format=double&season=M-5",
+    "raw_path": "_sources/details/tyrantrum.html"
+  },
+  "umbreon": {
+    "dex_number": 197,
+    "stats": {
+      "hp": 95,
+      "atk": 65,
+      "def": 110,
+      "spAtk": 60,
+      "spDef": 130,
+      "speed": 65
+    },
+    "provider": "pokechamdb",
+    "page_slug": "umbreon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/umbreon?format=double&season=M-5",
+    "raw_path": "_sources/details/umbreon.html"
+  },
+  "vanilluxe": {
+    "dex_number": 584,
+    "stats": {
+      "hp": 71,
+      "atk": 95,
+      "def": 85,
+      "spAtk": 110,
+      "spDef": 95,
+      "speed": 79
+    },
+    "provider": "pokechamdb",
+    "page_slug": "vanilluxe",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/vanilluxe?format=double&season=M-5",
+    "raw_path": "_sources/details/vanilluxe.html"
+  },
+  "vaporeon": {
+    "dex_number": 134,
+    "stats": {
+      "hp": 130,
+      "atk": 65,
+      "def": 60,
+      "spAtk": 110,
+      "spDef": 95,
+      "speed": 65
+    },
+    "provider": "pokechamdb",
+    "page_slug": "vaporeon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/vaporeon?format=double&season=M-5",
+    "raw_path": "_sources/details/vaporeon.html"
+  },
+  "venusaur": {
+    "dex_number": 3,
+    "stats": {
+      "hp": 80,
+      "atk": 82,
+      "def": 83,
+      "spAtk": 100,
+      "spDef": 100,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "venusaur",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/venusaur?format=double&season=M-5",
+    "raw_path": "_sources/details/venusaur.html"
+  },
+  "venusaur-mega": {
+    "dex_number": 3,
+    "stats": {
+      "hp": 80,
+      "atk": 100,
+      "def": 123,
+      "spAtk": 122,
+      "spDef": 120,
+      "speed": 80
+    },
+    "provider": "pokechamdb",
+    "page_slug": "venusaur",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/venusaur?format=double&season=M-5",
+    "raw_path": "_sources/details/venusaur.html"
+  },
+  "victreebel": {
+    "dex_number": 71,
+    "stats": {
+      "hp": 80,
+      "atk": 105,
+      "def": 65,
+      "spAtk": 100,
+      "spDef": 70,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "victreebel",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/victreebel?format=double&season=M-5",
+    "raw_path": "_sources/details/victreebel.html"
+  },
+  "victreebel-mega": {
+    "dex_number": 71,
+    "stats": {
+      "hp": 80,
+      "atk": 125,
+      "def": 85,
+      "spAtk": 135,
+      "spDef": 95,
+      "speed": 70
+    },
+    "provider": "pokechamdb",
+    "page_slug": "victreebel",
+    "field": "megaForms[0].baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/victreebel?format=double&season=M-5",
+    "raw_path": "_sources/details/victreebel.html"
+  },
+  "vileplume": {
+    "dex_number": 45,
+    "stats": {
+      "hp": 75,
+      "atk": 80,
+      "def": 85,
+      "spAtk": 110,
+      "spDef": 90,
+      "speed": 50
+    },
+    "provider": "pokechamdb",
+    "page_slug": "vileplume",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/vileplume?format=double&season=M-5",
+    "raw_path": "_sources/details/vileplume.html"
+  },
+  "vivillon": {
+    "dex_number": 666,
+    "stats": {
+      "hp": 80,
+      "atk": 52,
+      "def": 50,
+      "spAtk": 90,
+      "spDef": 50,
+      "speed": 89
+    },
+    "provider": "pokechamdb",
+    "page_slug": "vivillon",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/vivillon?format=double&season=M-5",
+    "raw_path": "_sources/details/vivillon.html"
+  },
+  "volcarona": {
+    "dex_number": 637,
+    "stats": {
+      "hp": 85,
+      "atk": 60,
+      "def": 65,
+      "spAtk": 135,
+      "spDef": 105,
+      "speed": 100
+    },
+    "provider": "pokechamdb",
+    "page_slug": "volcarona",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/volcarona?format=double&season=M-5",
+    "raw_path": "_sources/details/volcarona.html"
+  },
+  "watchog": {
+    "dex_number": 505,
+    "stats": {
+      "hp": 60,
+      "atk": 85,
+      "def": 69,
+      "spAtk": 60,
+      "spDef": 69,
+      "speed": 77
+    },
+    "provider": "pokechamdb",
+    "page_slug": "watchog",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/watchog?format=double&season=M-5",
+    "raw_path": "_sources/details/watchog.html"
+  },
+  "weavile": {
+    "dex_number": 461,
+    "stats": {
+      "hp": 70,
+      "atk": 120,
+      "def": 65,
+      "spAtk": 45,
+      "spDef": 85,
+      "speed": 125
+    },
+    "provider": "pokechamdb",
+    "page_slug": "weavile",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/weavile?format=double&season=M-5",
+    "raw_path": "_sources/details/weavile.html"
+  },
+  "whimsicott": {
+    "dex_number": 547,
+    "stats": {
+      "hp": 60,
+      "atk": 67,
+      "def": 85,
+      "spAtk": 77,
+      "spDef": 75,
+      "speed": 116
+    },
+    "provider": "pokechamdb",
+    "page_slug": "whimsicott",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/whimsicott?format=double&season=M-5",
+    "raw_path": "_sources/details/whimsicott.html"
+  },
+  "wyrdeer": {
+    "dex_number": 899,
+    "stats": {
+      "hp": 103,
+      "atk": 105,
+      "def": 72,
+      "spAtk": 105,
+      "spDef": 75,
+      "speed": 65
+    },
+    "provider": "pokechamdb",
+    "page_slug": "wyrdeer",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/wyrdeer?format=double&season=M-5",
+    "raw_path": "_sources/details/wyrdeer.html"
+  },
+  "zoroark-hisui": {
+    "dex_number": 571,
+    "stats": {
+      "hp": 55,
+      "atk": 100,
+      "def": 60,
+      "spAtk": 125,
+      "spDef": 60,
+      "speed": 110
+    },
+    "provider": "pokechamdb",
+    "page_slug": "zoroark-hisui",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/zoroark-hisui?format=double&season=M-5",
+    "raw_path": "_sources/details/zoroark-hisui.html"
+  },
+  "zoroark": {
+    "dex_number": 571,
+    "stats": {
+      "hp": 60,
+      "atk": 105,
+      "def": 60,
+      "spAtk": 120,
+      "spDef": 60,
+      "speed": 105
+    },
+    "provider": "pokechamdb",
+    "page_slug": "zoroark",
+    "field": "profile.baseStats",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/zoroark?format=double&season=M-5",
+    "raw_path": "_sources/details/zoroark.html"
+  },
+  "aegislash-blade": {
+    "dex_number": 681,
+    "stats": {
+      "hp": 60,
+      "atk": 140,
+      "def": 50,
+      "spAtk": 140,
+      "spDef": 50,
+      "speed": 60
+    },
+    "provider": "52poke",
+    "page_slug": "aegislash-blade",
+    "field": "种族值 / 刀剑形态（第八世代起）",
+    "url": "https://wiki.52poke.com/zh-hans/坚盾剑怪#种族值",
+    "raw_path": "_sources/wiki-681-main.html"
+  },
+  "pawmot": {
+    "dex_number": 923,
+    "stats": {
+      "hp": 70,
+      "atk": 115,
+      "def": 70,
+      "spAtk": 70,
+      "spDef": 60,
+      "speed": 105
+    },
+    "provider": "52poke",
+    "page_slug": "pawmot",
+    "field": "种族值",
+    "url": "https://wiki.52poke.com/zh-hans/巴布土拨#种族值",
+    "raw_path": "_sources/wiki-923-main.html"
+  }
+}

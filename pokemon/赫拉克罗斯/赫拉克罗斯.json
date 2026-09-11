@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 214,
+  "name": "赫拉克罗斯",
+  "species_name": "赫拉克罗斯",
+  "form_name": null,
+  "wiki_name": "赫拉克罗斯",
+  "directory": "赫拉克罗斯",
+  "source_slug": "heracross",
+  "base_stats": {
+    "hp": 80,
+    "attack": 125,
+    "defense": 75,
+    "special_attack": 40,
+    "special_defense": 95,
+    "speed": 85
+  },
+  "base_stat_total": 500,
+  "images": {
+    "normal": {
+      "file": "赫拉克罗斯.png",
+      "source_url": "https://media.52poke.com/wiki/e/ee/Champions_0214_Sprite.png",
+      "source_filename": "Champions_0214_Sprite.png",
+      "sha256": "8442fd90d56093bbed1a3180393b99b6cfab3a1524e4bfec589547c09ea1c300",
+      "width": 128,
+      "height": 128,
+      "bytes": 14286
+    },
+    "shiny": {
+      "file": "赫拉克罗斯_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/8b/Champions_0214_s_Sprite.png",
+      "source_filename": "Champions_0214_s_Sprite.png",
+      "sha256": "9b8c7e2528af8d02372c7b4acecd1f0c94ca0629aa480f270e9d95d55068c6e5",
+      "width": 128,
+      "height": 128,
+      "bytes": 15073
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/heracross?format=double&season=M-5",
+    "raw_path": "_sources/details/heracross.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

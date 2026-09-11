@@ -1,0 +1,73 @@
+{
+  "aliases": [
+    "轰擂金刚猩"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 530,
+  "base_stats": {
+    "attack": 125,
+    "defense": 90,
+    "hp": 100,
+    "special_attack": 60,
+    "special_defense": 70,
+    "speed": 85
+  },
+  "data_ready": true,
+  "dex_number": 812,
+  "directory": "轰擂金刚猩",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 17550,
+      "file": "轰擂金刚猩.png",
+      "height": 128,
+      "sha256": "ae9914dfdb94509a733a9e850b69c50c0be08b9f376f89ab0c8b4e70ec6fd1b1",
+      "source_filename": "Champions_0812_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/f0/Champions_0812_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 18561,
+      "file": "轰擂金刚猩_闪光.png",
+      "height": 128,
+      "sha256": "6460f16f7fb86a2427f958925eb6938d48b9b9edc6d486502db21a81b9050506",
+      "source_filename": "Champions_0812_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/80/Champions_0812_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "轰擂金刚猩",
+  "name_source": "opgg_zh_cn",
+  "opgg_id": 812,
+  "opgg_key": "rillaboom",
+  "recognition_ready": true,
+  "record_id": "opgg:rillaboom",
+  "schema_version": 2,
+  "source_base_key": null,
+  "source_is_new": true,
+  "source_presence": "present",
+  "source_regulation": "M-C",
+  "source_slug": "rillaboom",
+  "species_name": "轰擂金刚猩",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/rillaboom"
+  },
+  "type_names": [
+    "草"
+  ],
+  "types": [
+    "grass"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/rillaboom"
+  }
+}

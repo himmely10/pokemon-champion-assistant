@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 701,
+  "name": "摔角鹰人",
+  "species_name": "摔角鹰人",
+  "form_name": null,
+  "wiki_name": "摔角鹰人",
+  "directory": "摔角鹰人",
+  "source_slug": "hawlucha",
+  "base_stats": {
+    "hp": 78,
+    "attack": 92,
+    "defense": 75,
+    "special_attack": 74,
+    "special_defense": 63,
+    "speed": 118
+  },
+  "base_stat_total": 500,
+  "images": {
+    "normal": {
+      "file": "摔角鹰人.png",
+      "source_url": "https://media.52poke.com/wiki/0/0d/Champions_0701_Sprite.png",
+      "source_filename": "Champions_0701_Sprite.png",
+      "sha256": "9c072bc06dc1bc859dd3c9383179fff2e0f348af0437956c498ea088398170db",
+      "width": 128,
+      "height": 128,
+      "bytes": 11324
+    },
+    "shiny": {
+      "file": "摔角鹰人_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/4/48/Champions_0701_s_Sprite.png",
+      "source_filename": "Champions_0701_s_Sprite.png",
+      "sha256": "aafa60a3faed6533f9bdc94de05493d5d9ca05ccbacc8126feb12e0553d21aa3",
+      "width": 128,
+      "height": 128,
+      "bytes": 10960
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/hawlucha?format=double&season=M-5",
+    "raw_path": "_sources/details/hawlucha.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

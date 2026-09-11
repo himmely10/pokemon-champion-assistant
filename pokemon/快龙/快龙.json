@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 149,
+  "name": "快龙",
+  "species_name": "快龙",
+  "form_name": null,
+  "wiki_name": "快龙",
+  "directory": "快龙",
+  "source_slug": "dragonite",
+  "base_stats": {
+    "hp": 91,
+    "attack": 134,
+    "defense": 95,
+    "special_attack": 100,
+    "special_defense": 100,
+    "speed": 80
+  },
+  "base_stat_total": 600,
+  "images": {
+    "normal": {
+      "file": "快龙.png",
+      "source_url": "https://media.52poke.com/wiki/4/40/Champions_0149_Sprite.png",
+      "source_filename": "Champions_0149_Sprite.png",
+      "sha256": "31e58f7dc8842d1c33fe98d12516571b59b9dbe748f5ebf8055f4b32f2a40add",
+      "width": 128,
+      "height": 128,
+      "bytes": 17368
+    },
+    "shiny": {
+      "file": "快龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/81/Champions_0149_s_Sprite.png",
+      "source_filename": "Champions_0149_s_Sprite.png",
+      "sha256": "7d96edc791280eab8b6bb1a46c8e8b2b92a10e4020b5d20e7123fc76cc35de73",
+      "width": 128,
+      "height": 128,
+      "bytes": 17532
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/dragonite?format=double&season=M-5",
+    "raw_path": "_sources/details/dragonite.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 535,
+  "base_stats": {
+    "attack": 115,
+    "defense": 80,
+    "hp": 110,
+    "special_attack": 50,
+    "special_defense": 90,
+    "speed": 90
+  },
+  "dex_number": 979,
+  "directory": "弃世猴",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 17811,
+      "file": "弃世猴.png",
+      "height": 128,
+      "sha256": "db2163a117f068bc8990ee3dd37ebe3835d04509b8bd246efb9ba42b36c22601",
+      "source_filename": "Champions_0979_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/ec/Champions_0979_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 18603,
+      "file": "弃世猴_闪光.png",
+      "height": 128,
+      "sha256": "16afc9dc1e353cfe91ee8e4ddc1bea378aeab95238338acd04b45e6562277c2b",
+      "source_filename": "Champions_0979_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/1c/Champions_0979_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "弃世猴",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "annihilape",
+  "species_name": "弃世猴",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/annihilape.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/annihilape?format=double&season=M-5"
+  },
+  "wiki_name": "弃世猴"
+}

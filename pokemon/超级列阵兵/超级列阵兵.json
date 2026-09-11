@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 870,
+  "name": "超级列阵兵",
+  "species_name": "列阵兵",
+  "form_name": "超级列阵兵",
+  "wiki_name": "超级列阵兵",
+  "directory": "超级列阵兵",
+  "source_slug": "falinks-mega",
+  "base_stats": {
+    "hp": 65,
+    "attack": 135,
+    "defense": 135,
+    "special_attack": 70,
+    "special_defense": 65,
+    "speed": 100
+  },
+  "base_stat_total": 570,
+  "images": {
+    "normal": {
+      "file": "超级列阵兵.png",
+      "source_url": "https://media.52poke.com/wiki/b/bd/Champions_0870M_Sprite.png",
+      "source_filename": "Champions_0870M_Sprite.png",
+      "sha256": "21d2e549b93177e2c56eab4deb63c54be421d6a346e1fd313f6032d7bc4886c8",
+      "width": 128,
+      "height": 128,
+      "bytes": 14747
+    },
+    "shiny": {
+      "file": "超级列阵兵_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/5/55/Champions_0870M_s_Sprite.png",
+      "source_filename": "Champions_0870M_s_Sprite.png",
+      "sha256": "cf9165dddfa5eae96dfd19bb1015e8d2b05a4e3e19aa8ec78ad09f41a99ca6c7",
+      "width": 128,
+      "height": 128,
+      "bytes": 14783
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/falinks?format=double&season=M-5",
+    "raw_path": "_sources/details/falinks.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "超级雷丘Ｘ"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 585,
+  "base_stats": {
+    "attack": 135,
+    "defense": 95,
+    "hp": 60,
+    "special_attack": 90,
+    "special_defense": 95,
+    "speed": 110
+  },
+  "data_ready": true,
+  "dex_number": 26,
+  "directory": "超级雷丘X",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级雷丘X",
+  "images": {
+    "normal": {
+      "bytes": 14370,
+      "file": "超级雷丘X.png",
+      "height": 128,
+      "sha256": "2b61a0b03759d5639d9fcbcb61ea2810dac95b6384d7ced967a1b7b2a8bc9f24",
+      "source_filename": "Champions_0026MX_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/a0/Champions_0026MX_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14345,
+      "file": "超级雷丘X_闪光.png",
+      "height": 128,
+      "sha256": "033d585af11688b26f66fe7616f8b99884640ada3a89e77381f25ebdbff28947",
+      "source_filename": "Champions_0026MX_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/5c/Champions_0026MX_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "raichunite-x",
+  "name": "超级雷丘X",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10304,
+  "opgg_key": "mega-raichu-x",
+  "recognition_ready": true,
+  "record_id": "legacy:26:超级雷丘X",
+  "schema_version": 1,
+  "source_base_key": "raichu",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "raichu-mega-x",
+  "species_name": "雷丘",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-raichu-x"
+  },
+  "type_names": [
+    "电"
+  ],
+  "types": [
+    "electric"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-raichu-x"
+  },
+  "wiki_name": "超级雷丘X"
+}

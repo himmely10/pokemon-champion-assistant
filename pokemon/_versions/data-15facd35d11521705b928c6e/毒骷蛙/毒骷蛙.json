@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "毒骷蛙"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 490,
+  "base_stats": {
+    "attack": 106,
+    "defense": 65,
+    "hp": 83,
+    "special_attack": 86,
+    "special_defense": 65,
+    "speed": 85
+  },
+  "data_ready": true,
+  "dex_number": 454,
+  "directory": "毒骷蛙",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14889,
+      "file": "毒骷蛙.png",
+      "height": 128,
+      "sha256": "e06fa1f389d660e0d27b3a476fab1b7c538cf1d9be8a92fa209f7b62242cdbce",
+      "source_filename": "Champions_0454_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/c5/Champions_0454_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15205,
+      "file": "毒骷蛙_闪光.png",
+      "height": 128,
+      "sha256": "123bcf55fcb3d424729edcaab9935a2821f392f6763e5eabf29090930989f099",
+      "source_filename": "Champions_0454_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/00/Champions_0454_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "毒骷蛙",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 454,
+  "opgg_key": "toxicroak",
+  "recognition_ready": true,
+  "record_id": "legacy:454:毒骷蛙",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "toxicroak",
+  "species_name": "毒骷蛙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/toxicroak"
+  },
+  "type_names": [
+    "毒",
+    "格斗"
+  ],
+  "types": [
+    "poison",
+    "fighting"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/toxicroak"
+  },
+  "wiki_name": "毒骷蛙"
+}

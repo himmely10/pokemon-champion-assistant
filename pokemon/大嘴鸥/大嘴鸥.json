@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 279,
+  "name": "大嘴鸥",
+  "species_name": "大嘴鸥",
+  "form_name": null,
+  "wiki_name": "大嘴鸥",
+  "directory": "大嘴鸥",
+  "source_slug": "pelipper",
+  "base_stats": {
+    "hp": 60,
+    "attack": 50,
+    "defense": 100,
+    "special_attack": 95,
+    "special_defense": 70,
+    "speed": 65
+  },
+  "base_stat_total": 440,
+  "images": {
+    "normal": {
+      "file": "大嘴鸥.png",
+      "source_url": "https://media.52poke.com/wiki/c/c0/Champions_0279_Sprite.png",
+      "source_filename": "Champions_0279_Sprite.png",
+      "sha256": "e7c87bdf2991ccaf8028ab58d98bc5dd19b05e2e670e2efde375c27e604e1681",
+      "width": 128,
+      "height": 128,
+      "bytes": 11348
+    },
+    "shiny": {
+      "file": "大嘴鸥_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/9/96/Champions_0279_s_Sprite.png",
+      "source_filename": "Champions_0279_s_Sprite.png",
+      "sha256": "925553d7cfeafa37a359f9d07939a2895a0d4aebc788f844d3320cf81009324d",
+      "width": 128,
+      "height": 128,
+      "bytes": 11497
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pelipper?format=double&season=M-5",
+    "raw_path": "_sources/details/pelipper.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

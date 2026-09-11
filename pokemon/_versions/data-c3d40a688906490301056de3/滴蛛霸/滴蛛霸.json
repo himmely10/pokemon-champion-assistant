@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 454,
+  "base_stats": {
+    "attack": 70,
+    "defense": 92,
+    "hp": 68,
+    "special_attack": 50,
+    "special_defense": 132,
+    "speed": 42
+  },
+  "dex_number": 752,
+  "directory": "滴蛛霸",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 15563,
+      "file": "滴蛛霸.png",
+      "height": 128,
+      "sha256": "121ddca09474b0e4d0ff32664ce8a11c5c1f7789c165128bc2d47db194edb325",
+      "source_filename": "Champions_0752_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/fc/Champions_0752_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15340,
+      "file": "滴蛛霸_闪光.png",
+      "height": 128,
+      "sha256": "b106d7a6c9889b7353436e4759268beacf93ca339c612ec645ae11a505554a5b",
+      "source_filename": "Champions_0752_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/35/Champions_0752_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "滴蛛霸",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "araquanid",
+  "species_name": "滴蛛霸",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/araquanid.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/araquanid?format=double&season=M-5"
+  },
+  "wiki_name": "滴蛛霸"
+}

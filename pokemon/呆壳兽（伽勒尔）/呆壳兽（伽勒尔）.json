@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 80,
+  "name": "呆壳兽（伽勒尔）",
+  "species_name": "呆壳兽",
+  "form_name": "伽勒尔的样子",
+  "wiki_name": "呆壳兽（伽勒尔的样子）",
+  "directory": "呆壳兽（伽勒尔）",
+  "source_slug": "slowbro-galar",
+  "base_stats": {
+    "hp": 95,
+    "attack": 100,
+    "defense": 95,
+    "special_attack": 100,
+    "special_defense": 70,
+    "speed": 30
+  },
+  "base_stat_total": 490,
+  "images": {
+    "normal": {
+      "file": "呆壳兽（伽勒尔）.png",
+      "source_url": "https://media.52poke.com/wiki/6/62/Champions_0080G_Sprite.png",
+      "source_filename": "Champions_0080G_Sprite.png",
+      "sha256": "81b8f12eb74cabbb23dd498245851a7b6657125057fe15a4057357e01a20cdcd",
+      "width": 128,
+      "height": 128,
+      "bytes": 15838
+    },
+    "shiny": {
+      "file": "呆壳兽（伽勒尔）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/4/46/Champions_0080G_s_Sprite.png",
+      "source_filename": "Champions_0080G_s_Sprite.png",
+      "sha256": "73c2981725658098cba12b2fa7ca41a9b7a22282857e0da9016505f89fe4bc74",
+      "width": 128,
+      "height": 128,
+      "bytes": 15706
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/slowbro-galar?format=double&season=M-5",
+    "raw_path": "_sources/details/slowbro-galar.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

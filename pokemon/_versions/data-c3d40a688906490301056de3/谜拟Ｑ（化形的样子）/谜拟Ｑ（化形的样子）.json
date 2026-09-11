@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 476,
+  "base_stats": {
+    "attack": 90,
+    "defense": 80,
+    "hp": 55,
+    "special_attack": 50,
+    "special_defense": 105,
+    "speed": 96
+  },
+  "dex_number": 778,
+  "directory": "谜拟Ｑ（化形的样子）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "化形的样子",
+  "images": {
+    "normal": {
+      "bytes": 8480,
+      "file": "谜拟Ｑ（化形的样子）.png",
+      "height": 128,
+      "sha256": "06c923c53b3b2d6725821f6728f4a0ada39cbfa4a2069abf029347b032d9fa21",
+      "source_filename": "Champions_0778_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/86/Champions_0778_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 8335,
+      "file": "谜拟Ｑ（化形的样子）_闪光.png",
+      "height": 128,
+      "sha256": "4b6cf18ac9a0f54e83d2d90f7f3a356dea7739fe2a33596c0f5b15a349ef7735",
+      "source_filename": "Champions_0778_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/0d/Champions_0778_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "谜拟Ｑ（化形的样子）",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "mimikyu",
+  "species_name": "谜拟Ｑ",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/mimikyu.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/mimikyu?format=double&season=M-5"
+  },
+  "wiki_name": "谜拟丘（化形的样子）"
+}

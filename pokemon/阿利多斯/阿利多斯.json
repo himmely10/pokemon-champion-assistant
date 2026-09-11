@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 168,
+  "name": "阿利多斯",
+  "species_name": "阿利多斯",
+  "form_name": null,
+  "wiki_name": "阿利多斯",
+  "directory": "阿利多斯",
+  "source_slug": "ariados",
+  "base_stats": {
+    "hp": 70,
+    "attack": 90,
+    "defense": 70,
+    "special_attack": 60,
+    "special_defense": 70,
+    "speed": 40
+  },
+  "base_stat_total": 400,
+  "images": {
+    "normal": {
+      "file": "阿利多斯.png",
+      "source_url": "https://media.52poke.com/wiki/6/66/Champions_0168_Sprite.png",
+      "source_filename": "Champions_0168_Sprite.png",
+      "sha256": "5dc639d284adb800f1044bd6b7eec90f7080cdb05b4e56e712455489d978897e",
+      "width": 128,
+      "height": 128,
+      "bytes": 11074
+    },
+    "shiny": {
+      "file": "阿利多斯_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/b/b1/Champions_0168_s_Sprite.png",
+      "source_filename": "Champions_0168_s_Sprite.png",
+      "sha256": "fc5182dcf5e8bb542fbc77f747d5434a3dbf2fb54e823826c29ba5caa0bde1ac",
+      "width": 128,
+      "height": 128,
+      "bytes": 11328
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/ariados?format=double&season=M-5",
+    "raw_path": "_sources/details/ariados.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

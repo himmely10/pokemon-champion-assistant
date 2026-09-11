@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 730,
+  "name": "西狮海壬",
+  "species_name": "西狮海壬",
+  "form_name": null,
+  "wiki_name": "西狮海壬",
+  "directory": "西狮海壬",
+  "source_slug": "primarina",
+  "base_stats": {
+    "hp": 80,
+    "attack": 74,
+    "defense": 74,
+    "special_attack": 126,
+    "special_defense": 116,
+    "speed": 60
+  },
+  "base_stat_total": 530,
+  "images": {
+    "normal": {
+      "file": "西狮海壬.png",
+      "source_url": "https://media.52poke.com/wiki/2/26/Champions_0730_Sprite.png",
+      "source_filename": "Champions_0730_Sprite.png",
+      "sha256": "d1c908ab4be7c855a5b30c359d4a96e0979ab51b2cba365fcdb5a07f2cb21134",
+      "width": 128,
+      "height": 128,
+      "bytes": 15785
+    },
+    "shiny": {
+      "file": "西狮海壬_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/b/b6/Champions_0730_s_Sprite.png",
+      "source_filename": "Champions_0730_s_Sprite.png",
+      "sha256": "f78157ef7aa3d738b16182a7ca0b87b0e0d625d1a0e46835e2667d2b10722b08",
+      "width": 128,
+      "height": 128,
+      "bytes": 15911
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/primarina?format=double&season=M-5",
+    "raw_path": "_sources/details/primarina.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

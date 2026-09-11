@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 724,
+  "name": "狙射树枭",
+  "species_name": "狙射树枭",
+  "form_name": null,
+  "wiki_name": "狙射树枭",
+  "directory": "狙射树枭",
+  "source_slug": "decidueye",
+  "base_stats": {
+    "hp": 78,
+    "attack": 107,
+    "defense": 75,
+    "special_attack": 100,
+    "special_defense": 100,
+    "speed": 70
+  },
+  "base_stat_total": 530,
+  "images": {
+    "normal": {
+      "file": "狙射树枭.png",
+      "source_url": "https://media.52poke.com/wiki/5/5d/Champions_0724_Sprite.png",
+      "source_filename": "Champions_0724_Sprite.png",
+      "sha256": "d3a4a67440e9510a2e24b00a86a7dc44f011c7a4784d531b0d6e2ac033714891",
+      "width": 128,
+      "height": 128,
+      "bytes": 13594
+    },
+    "shiny": {
+      "file": "狙射树枭_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/85/Champions_0724_s_Sprite.png",
+      "source_filename": "Champions_0724_s_Sprite.png",
+      "sha256": "6a5729bd13e1ee960947dca70b92fd50107b849d7253d3885a56439c52cf0acb",
+      "width": 128,
+      "height": 128,
+      "bytes": 13011
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/decidueye?format=double&season=M-5",
+    "raw_path": "_sources/details/decidueye.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

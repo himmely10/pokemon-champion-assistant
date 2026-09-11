@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "超甲狂犀"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 535,
+  "base_stats": {
+    "attack": 140,
+    "defense": 130,
+    "hp": 115,
+    "special_attack": 55,
+    "special_defense": 55,
+    "speed": 40
+  },
+  "data_ready": true,
+  "dex_number": 464,
+  "directory": "超甲狂犀",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 20617,
+      "file": "超甲狂犀.png",
+      "height": 128,
+      "sha256": "1ace99da8224ba6c32595a7afdf73a7bb7831b43084c37d1e2f220e95fa35c20",
+      "source_filename": "Champions_0464_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/75/Champions_0464_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 21291,
+      "file": "超甲狂犀_闪光.png",
+      "height": 128,
+      "sha256": "149ea4567ff5185faf225860cad858bec5db243d82fc82b871d496049cd13808",
+      "source_filename": "Champions_0464_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/4f/Champions_0464_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "超甲狂犀",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 464,
+  "opgg_key": "rhyperior",
+  "recognition_ready": true,
+  "record_id": "legacy:464:超甲狂犀",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "rhyperior",
+  "species_name": "超甲狂犀",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/rhyperior"
+  },
+  "type_names": [
+    "地面",
+    "岩石"
+  ],
+  "types": [
+    "ground",
+    "rock"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/rhyperior"
+  },
+  "wiki_name": "超甲狂犀"
+}

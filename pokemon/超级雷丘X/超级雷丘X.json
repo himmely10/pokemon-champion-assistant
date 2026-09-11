@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 26,
+  "name": "超级雷丘X",
+  "species_name": "雷丘",
+  "form_name": "超级雷丘X",
+  "wiki_name": "超级雷丘X",
+  "directory": "超级雷丘X",
+  "source_slug": "raichu-mega-x",
+  "base_stats": {
+    "hp": 60,
+    "attack": 135,
+    "defense": 95,
+    "special_attack": 90,
+    "special_defense": 95,
+    "speed": 110
+  },
+  "base_stat_total": 585,
+  "images": {
+    "normal": {
+      "file": "超级雷丘X.png",
+      "source_url": "https://media.52poke.com/wiki/a/a0/Champions_0026MX_Sprite.png",
+      "source_filename": "Champions_0026MX_Sprite.png",
+      "sha256": "2b61a0b03759d5639d9fcbcb61ea2810dac95b6384d7ced967a1b7b2a8bc9f24",
+      "width": 128,
+      "height": 128,
+      "bytes": 14370
+    },
+    "shiny": {
+      "file": "超级雷丘X_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/5/5c/Champions_0026MX_s_Sprite.png",
+      "source_filename": "Champions_0026MX_s_Sprite.png",
+      "sha256": "033d585af11688b26f66fe7616f8b99884640ada3a89e77381f25ebdbff28947",
+      "width": 128,
+      "height": 128,
+      "bytes": 14345
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/raichu?format=double&season=M-5",
+    "raw_path": "_sources/details/raichu.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

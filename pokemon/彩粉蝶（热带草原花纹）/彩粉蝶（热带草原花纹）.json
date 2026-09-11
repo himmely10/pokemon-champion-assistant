@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dex_number": 666,
+  "name": "彩粉蝶（热带草原花纹）",
+  "species_name": "彩粉蝶",
+  "form_name": "热带草原花纹",
+  "wiki_name": "彩粉蝶（热带草原花纹）",
+  "directory": "彩粉蝶（热带草原花纹）",
+  "source_slug": "vivillon",
+  "base_stats": {
+    "hp": 80,
+    "attack": 52,
+    "defense": 50,
+    "special_attack": 90,
+    "special_defense": 50,
+    "speed": 89
+  },
+  "base_stat_total": 411,
+  "images": {
+    "normal": {
+      "file": "彩粉蝶（热带草原花纹）.png",
+      "source_url": "https://media.52poke.com/wiki/c/c7/Champions_0666Sav_Sprite.png",
+      "source_filename": "Champions_0666Sav_Sprite.png",
+      "sha256": "75185b2b6c03a642db7648e3d69200c58aaf4a27ee95d7ba151617db7a45655e",
+      "width": 128,
+      "height": 128,
+      "bytes": 19483
+    },
+    "shiny": {
+      "file": "彩粉蝶（热带草原花纹）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/b/b0/Champions_0666Sav_s_Sprite.png",
+      "source_filename": "Champions_0666Sav_s_Sprite.png",
+      "sha256": "8fd49335de28ee1590f374d96ff4f1aa630ef718c6e7223b0a6db084d871c2ff",
+      "width": 128,
+      "height": 128,
+      "bytes": 19586
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/vivillon?format=double&season=M-5",
+    "raw_path": "_sources/details/vivillon.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "shared_species_profile",
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。"
+}

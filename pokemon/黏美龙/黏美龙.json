@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 706,
+  "name": "黏美龙",
+  "species_name": "黏美龙",
+  "form_name": null,
+  "wiki_name": "黏美龙",
+  "directory": "黏美龙",
+  "source_slug": "goodra",
+  "base_stats": {
+    "hp": 90,
+    "attack": 100,
+    "defense": 70,
+    "special_attack": 110,
+    "special_defense": 150,
+    "speed": 80
+  },
+  "base_stat_total": 600,
+  "images": {
+    "normal": {
+      "file": "黏美龙.png",
+      "source_url": "https://media.52poke.com/wiki/c/c2/Champions_0706_Sprite.png",
+      "source_filename": "Champions_0706_Sprite.png",
+      "sha256": "100720845f691585857304fe0c67ee4f00d2a64c538992d51646de5f1b404abc",
+      "width": 128,
+      "height": 128,
+      "bytes": 12230
+    },
+    "shiny": {
+      "file": "黏美龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/1/14/Champions_0706_s_Sprite.png",
+      "source_filename": "Champions_0706_s_Sprite.png",
+      "sha256": "53cce65f14c5734c7f557847b907c5bd8a12a53ace598d5e80a4a146198f48d8",
+      "width": 128,
+      "height": 128,
+      "bytes": 12255
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/goodra?format=double&season=M-5",
+    "raw_path": "_sources/details/goodra.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

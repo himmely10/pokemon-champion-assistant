@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 510,
+  "name": "酷豹",
+  "species_name": "酷豹",
+  "form_name": null,
+  "wiki_name": "酷豹",
+  "directory": "酷豹",
+  "source_slug": "liepard",
+  "base_stats": {
+    "hp": 64,
+    "attack": 88,
+    "defense": 50,
+    "special_attack": 88,
+    "special_defense": 50,
+    "speed": 106
+  },
+  "base_stat_total": 446,
+  "images": {
+    "normal": {
+      "file": "酷豹.png",
+      "source_url": "https://media.52poke.com/wiki/f/fd/Champions_0510_Sprite.png",
+      "source_filename": "Champions_0510_Sprite.png",
+      "sha256": "274793853013871c004a635c9c14b26dd4e708aa0295354ad9d43f205e87e073",
+      "width": 128,
+      "height": 128,
+      "bytes": 11693
+    },
+    "shiny": {
+      "file": "酷豹_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/7/76/Champions_0510_s_Sprite.png",
+      "source_filename": "Champions_0510_s_Sprite.png",
+      "sha256": "dca0ee6aeb745c5d07b7e44e3390d54882c1bf4349dddafe0b7e98a42bf87b12",
+      "width": 128,
+      "height": 128,
+      "bytes": 11321
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/liepard?format=double&season=M-5",
+    "raw_path": "_sources/details/liepard.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

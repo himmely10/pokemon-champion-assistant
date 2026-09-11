@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 858,
+  "name": "布莉姆温",
+  "species_name": "布莉姆温",
+  "form_name": null,
+  "wiki_name": "布莉姆温",
+  "directory": "布莉姆温",
+  "source_slug": "hatterene",
+  "base_stats": {
+    "hp": 57,
+    "attack": 90,
+    "defense": 95,
+    "special_attack": 136,
+    "special_defense": 103,
+    "speed": 29
+  },
+  "base_stat_total": 510,
+  "images": {
+    "normal": {
+      "file": "布莉姆温.png",
+      "source_url": "https://media.52poke.com/wiki/1/16/Champions_0858_Sprite.png",
+      "source_filename": "Champions_0858_Sprite.png",
+      "sha256": "3d16a0992a3f281b2d120513ac05776bbd09eb9a50687a48a4a1f3c5272458c0",
+      "width": 128,
+      "height": 128,
+      "bytes": 11331
+    },
+    "shiny": {
+      "file": "布莉姆温_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/83/Champions_0858_s_Sprite.png",
+      "source_filename": "Champions_0858_s_Sprite.png",
+      "sha256": "87bfdd217d5f7c03db01413edbb1212056de245d6d4bd20e08f35f920842c510",
+      "width": 128,
+      "height": 128,
+      "bytes": 11215
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/hatterene?format=double&season=M-5",
+    "raw_path": "_sources/details/hatterene.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

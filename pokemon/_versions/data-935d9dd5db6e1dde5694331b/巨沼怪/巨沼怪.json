@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "巨沼怪"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 535,
+  "base_stats": {
+    "attack": 110,
+    "defense": 90,
+    "hp": 100,
+    "special_attack": 85,
+    "special_defense": 90,
+    "speed": 60
+  },
+  "data_ready": true,
+  "dex_number": 260,
+  "directory": "巨沼怪",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 16030,
+      "file": "巨沼怪.png",
+      "height": 128,
+      "sha256": "90ac490ce766279d07ac30c76c42bdd11ba1153769bd4db077944cb075acf70e",
+      "source_filename": "Champions_0260_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/6f/Champions_0260_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 16204,
+      "file": "巨沼怪_闪光.png",
+      "height": 128,
+      "sha256": "bd23b8fcf4256b23bfa1a10281e8b0b01639c7efbc64d7d6e386409154a7b1ad",
+      "source_filename": "Champions_0260_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/7a/Champions_0260_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:260:超级巨沼怪"
+  ],
+  "mega_item": null,
+  "name": "巨沼怪",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 260,
+  "opgg_key": "swampert",
+  "recognition_ready": true,
+  "record_id": "legacy:260:巨沼怪",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "swampert",
+  "species_name": "巨沼怪",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/swampert"
+  },
+  "type_names": [
+    "水",
+    "地面"
+  ],
+  "types": [
+    "water",
+    "ground"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/swampert"
+  },
+  "wiki_name": "巨沼怪"
+}

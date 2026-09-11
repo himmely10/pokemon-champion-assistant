@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 763,
+  "name": "甜冷美后",
+  "species_name": "甜冷美后",
+  "form_name": null,
+  "wiki_name": "甜冷美后",
+  "directory": "甜冷美后",
+  "source_slug": "tsareena",
+  "base_stats": {
+    "hp": 72,
+    "attack": 120,
+    "defense": 98,
+    "special_attack": 50,
+    "special_defense": 98,
+    "speed": 72
+  },
+  "base_stat_total": 510,
+  "images": {
+    "normal": {
+      "file": "甜冷美后.png",
+      "source_url": "https://media.52poke.com/wiki/b/b6/Champions_0763_Sprite.png",
+      "source_filename": "Champions_0763_Sprite.png",
+      "sha256": "e941802343af25a9bf8faabfa4f933dc4700287282170c104e47091c5b2700ab",
+      "width": 128,
+      "height": 128,
+      "bytes": 13560
+    },
+    "shiny": {
+      "file": "甜冷美后_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/7/7e/Champions_0763_s_Sprite.png",
+      "source_filename": "Champions_0763_s_Sprite.png",
+      "sha256": "d27e53098d19006b5d4683c4b8bd385ff5416928ddc76db163536db6fc6a7e2c",
+      "width": 128,
+      "height": 128,
+      "bytes": 13633
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tsareena?format=double&season=M-5",
+    "raw_path": "_sources/details/tsareena.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

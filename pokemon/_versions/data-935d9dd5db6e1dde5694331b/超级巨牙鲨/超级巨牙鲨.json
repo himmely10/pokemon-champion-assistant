@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "超级巨牙鲨"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 560,
+  "base_stats": {
+    "attack": 140,
+    "defense": 70,
+    "hp": 70,
+    "special_attack": 110,
+    "special_defense": 65,
+    "speed": 105
+  },
+  "data_ready": true,
+  "dex_number": 319,
+  "directory": "超级巨牙鲨",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级巨牙鲨",
+  "images": {
+    "normal": {
+      "bytes": 12504,
+      "file": "超级巨牙鲨.png",
+      "height": 128,
+      "sha256": "e4f4958bc16d9def869123bc05520f5a2f8e6dcd90f71198ad798e40e78aa160",
+      "source_filename": "Champions_0319M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/be/Champions_0319M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12746,
+      "file": "超级巨牙鲨_闪光.png",
+      "height": 128,
+      "sha256": "f2aad9b91fff7bf3f603d42c05c07acfecb83717948c1d718486764117951047",
+      "source_filename": "Champions_0319M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/9c/Champions_0319M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "sharpedonite",
+  "name": "超级巨牙鲨",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10070,
+  "opgg_key": "mega-sharpedo",
+  "recognition_ready": true,
+  "record_id": "legacy:319:超级巨牙鲨",
+  "schema_version": 1,
+  "source_base_key": "sharpedo",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "sharpedo-mega",
+  "species_name": "巨牙鲨",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-sharpedo"
+  },
+  "type_names": [
+    "水",
+    "恶"
+  ],
+  "types": [
+    "water",
+    "dark"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-sharpedo"
+  },
+  "wiki_name": "超级巨牙鲨"
+}

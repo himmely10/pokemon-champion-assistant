@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 475,
+  "name": "艾路雷朵",
+  "species_name": "艾路雷朵",
+  "form_name": null,
+  "wiki_name": "艾路雷朵",
+  "directory": "艾路雷朵",
+  "source_slug": "gallade",
+  "base_stats": {
+    "hp": 68,
+    "attack": 125,
+    "defense": 65,
+    "special_attack": 65,
+    "special_defense": 115,
+    "speed": 80
+  },
+  "base_stat_total": 518,
+  "images": {
+    "normal": {
+      "file": "艾路雷朵.png",
+      "source_url": "https://media.52poke.com/wiki/f/f7/Champions_0475_Sprite.png",
+      "source_filename": "Champions_0475_Sprite.png",
+      "sha256": "7ff224b9980abac405b180bf7b9ce1e9ccf3176cd4fabec4042f7d0ba18c2c85",
+      "width": 128,
+      "height": 128,
+      "bytes": 9449
+    },
+    "shiny": {
+      "file": "艾路雷朵_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/c/c8/Champions_0475_s_Sprite.png",
+      "source_filename": "Champions_0475_s_Sprite.png",
+      "sha256": "f3bd148ae4f53e1762af6e1aa4d0e38ea05baf50357c1307900cd7d5d0d43dfd",
+      "width": 128,
+      "height": 128,
+      "bytes": 9595
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gallade?format=double&season=M-5",
+    "raw_path": "_sources/details/gallade.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

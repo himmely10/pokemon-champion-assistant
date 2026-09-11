@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "胖可丁"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 435,
+  "base_stats": {
+    "attack": 70,
+    "defense": 45,
+    "hp": 140,
+    "special_attack": 85,
+    "special_defense": 50,
+    "speed": 45
+  },
+  "data_ready": true,
+  "dex_number": 40,
+  "directory": "胖可丁",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14082,
+      "file": "胖可丁.png",
+      "height": 128,
+      "sha256": "d2ac592b404f938c6ceb6308ce622b69e373c061e3037eac059f15f81aeb4e02",
+      "source_filename": "Champions_0040_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/2d/Champions_0040_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14041,
+      "file": "胖可丁_闪光.png",
+      "height": 128,
+      "sha256": "710bee3feb2335fc33c080d937263afa3cec4a555b19b525687ecf08fd7b4f7a",
+      "source_filename": "Champions_0040_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/2c/Champions_0040_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "胖可丁",
+  "name_source": "opgg_zh_cn",
+  "opgg_id": 40,
+  "opgg_key": "wigglytuff",
+  "recognition_ready": true,
+  "record_id": "opgg:wigglytuff",
+  "schema_version": 2,
+  "source_base_key": null,
+  "source_is_new": true,
+  "source_presence": "present",
+  "source_regulation": "M-C",
+  "source_slug": "wigglytuff",
+  "species_name": "胖可丁",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/wigglytuff"
+  },
+  "type_names": [
+    "一般",
+    "妖精"
+  ],
+  "types": [
+    "normal",
+    "fairy"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/wigglytuff"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dex_number": 676,
+  "name": "多丽米亚（贵妇造型）",
+  "species_name": "多丽米亚",
+  "form_name": "贵妇造型",
+  "wiki_name": "多丽米亚（贵妇造型）",
+  "directory": "多丽米亚（贵妇造型）",
+  "source_slug": "furfrou",
+  "base_stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 60,
+    "special_attack": 65,
+    "special_defense": 90,
+    "speed": 102
+  },
+  "base_stat_total": 472,
+  "images": {
+    "normal": {
+      "file": "多丽米亚（贵妇造型）.png",
+      "source_url": "https://media.52poke.com/wiki/5/5d/Champions_0676Ma_Sprite.png",
+      "source_filename": "Champions_0676Ma_Sprite.png",
+      "sha256": "617a3d5b1cac8e4109798905f6de85c853ed04610bb26f4e07e8b7d7f8178bcc",
+      "width": 128,
+      "height": 128,
+      "bytes": 13023
+    },
+    "shiny": {
+      "file": "多丽米亚（贵妇造型）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/5/59/Champions_0676Ma_s_Sprite.png",
+      "source_filename": "Champions_0676Ma_s_Sprite.png",
+      "sha256": "13b0f499e34dd174a6bb002f5860a0360f826841a0833712f780d2427236d0f8",
+      "width": 128,
+      "height": 128,
+      "bytes": 12905
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/furfrou?format=double&season=M-5",
+    "raw_path": "_sources/details/furfrou.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "shared_species_profile",
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。"
+}

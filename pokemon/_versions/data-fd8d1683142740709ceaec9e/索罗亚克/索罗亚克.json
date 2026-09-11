@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "索罗亚克"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 510,
+  "base_stats": {
+    "attack": 105,
+    "defense": 60,
+    "hp": 60,
+    "special_attack": 120,
+    "special_defense": 60,
+    "speed": 105
+  },
+  "data_ready": true,
+  "dex_number": 571,
+  "directory": "索罗亚克",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 15432,
+      "file": "索罗亚克.png",
+      "height": 128,
+      "sha256": "e9c8380129fe3f5a6dda60cf51cb39aeea1b4c8a667fd3a9814b377e9cd4e5e8",
+      "source_filename": "Champions_0571_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/e8/Champions_0571_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15830,
+      "file": "索罗亚克_闪光.png",
+      "height": 128,
+      "sha256": "a959b340ea61738f356b87a82efbd6a212a0bd92178792804014b4130bf0f38e",
+      "source_filename": "Champions_0571_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/9b/Champions_0571_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "索罗亚克",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 571,
+  "opgg_key": "zoroark",
+  "recognition_ready": true,
+  "record_id": "legacy:571:索罗亚克",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "zoroark",
+  "species_name": "索罗亚克",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/zoroark"
+  },
+  "type_names": [
+    "恶"
+  ],
+  "types": [
+    "dark"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/zoroark"
+  },
+  "wiki_name": "索罗亚克"
+}

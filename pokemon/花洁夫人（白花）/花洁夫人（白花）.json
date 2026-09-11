@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dex_number": 671,
+  "name": "花洁夫人（白花）",
+  "species_name": "花洁夫人",
+  "form_name": "白花",
+  "wiki_name": "花洁夫人（白花）",
+  "directory": "花洁夫人（白花）",
+  "source_slug": "florges",
+  "base_stats": {
+    "hp": 78,
+    "attack": 65,
+    "defense": 68,
+    "special_attack": 112,
+    "special_defense": 154,
+    "speed": 75
+  },
+  "base_stat_total": 552,
+  "images": {
+    "normal": {
+      "file": "花洁夫人（白花）.png",
+      "source_url": "https://media.52poke.com/wiki/e/e2/Champions_0671W_Sprite.png",
+      "source_filename": "Champions_0671W_Sprite.png",
+      "sha256": "aa8d14bf595a273d9c965613cafb8a7046732365e030c7cacf1746a03325bc46",
+      "width": 128,
+      "height": 128,
+      "bytes": 15293
+    },
+    "shiny": {
+      "file": "花洁夫人（白花）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/7/78/Champions_0671W_s_Sprite.png",
+      "source_filename": "Champions_0671W_s_Sprite.png",
+      "sha256": "e447e0d0b684b7354223311ec55d61b9d7a92dac461b1022af28d5598b841127",
+      "width": 128,
+      "height": 128,
+      "bytes": 15321
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/florges?format=double&season=M-5",
+    "raw_path": "_sources/details/florges.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "shared_species_profile",
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。"
+}

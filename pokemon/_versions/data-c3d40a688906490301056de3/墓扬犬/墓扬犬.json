@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 488,
+  "base_stats": {
+    "attack": 101,
+    "defense": 100,
+    "hp": 72,
+    "special_attack": 50,
+    "special_defense": 97,
+    "speed": 68
+  },
+  "dex_number": 972,
+  "directory": "墓扬犬",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 16134,
+      "file": "墓扬犬.png",
+      "height": 128,
+      "sha256": "0c978116c0e71ef9a5f2fc956a3a4a76bcd60029dd8b9ca664530c511f5065fe",
+      "source_filename": "Champions_0972_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/45/Champions_0972_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 16834,
+      "file": "墓扬犬_闪光.png",
+      "height": 128,
+      "sha256": "0614518b60ff855a5d674934d4b4d401e61043f2d090cc5234b0e8c3d56ce04b",
+      "source_filename": "Champions_0972_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/e7/Champions_0972_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "墓扬犬",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "houndstone",
+  "species_name": "墓扬犬",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/houndstone.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/houndstone?format=double&season=M-5"
+  },
+  "wiki_name": "墓扬犬"
+}

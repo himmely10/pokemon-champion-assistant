@@ -1,0 +1,80 @@
+{
+  "aliases": [
+    "喷火龙"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 534,
+  "base_stats": {
+    "attack": 84,
+    "defense": 78,
+    "hp": 78,
+    "special_attack": 109,
+    "special_defense": 85,
+    "speed": 100
+  },
+  "data_ready": true,
+  "dex_number": 6,
+  "directory": "喷火龙",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 15765,
+      "file": "喷火龙.png",
+      "height": 128,
+      "sha256": "0469fe60c9f9af7f60576b4d34aabfbdee30b1624d984cf8902be8cac0c4aa18",
+      "source_filename": "Champions_0006_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/60/Champions_0006_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14407,
+      "file": "喷火龙_闪光.png",
+      "height": 128,
+      "sha256": "7de1b5b2b14ab01a629dd6e2cca278069fb62e34ed7daccfbdbf85b05aa6ffdc",
+      "source_filename": "Champions_0006_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/c2/Champions_0006_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:6:超级喷火龙X",
+    "legacy:6:超级喷火龙Y"
+  ],
+  "mega_item": null,
+  "name": "喷火龙",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 6,
+  "opgg_key": "charizard",
+  "recognition_ready": true,
+  "record_id": "legacy:6:喷火龙",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "charizard",
+  "species_name": "喷火龙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/charizard"
+  },
+  "type_names": [
+    "火",
+    "飞行"
+  ],
+  "types": [
+    "fire",
+    "flying"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/charizard"
+  },
+  "wiki_name": "喷火龙"
+}

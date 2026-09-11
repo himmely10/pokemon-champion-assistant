@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 229,
+  "name": "黑鲁加",
+  "species_name": "黑鲁加",
+  "form_name": null,
+  "wiki_name": "黑鲁加",
+  "directory": "黑鲁加",
+  "source_slug": "houndoom",
+  "base_stats": {
+    "hp": 75,
+    "attack": 90,
+    "defense": 50,
+    "special_attack": 110,
+    "special_defense": 80,
+    "speed": 95
+  },
+  "base_stat_total": 500,
+  "images": {
+    "normal": {
+      "file": "黑鲁加.png",
+      "source_url": "https://media.52poke.com/wiki/f/fb/Champions_0229_Sprite.png",
+      "source_filename": "Champions_0229_Sprite.png",
+      "sha256": "b89bcdc512624b8fc91825cd4901802bc553b3886ba9f9cf8884255f1d109c21",
+      "width": 128,
+      "height": 128,
+      "bytes": 13786
+    },
+    "shiny": {
+      "file": "黑鲁加_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/b/b6/Champions_0229_s_Sprite.png",
+      "source_filename": "Champions_0229_s_Sprite.png",
+      "sha256": "0ad47bd8a58df5ec1fa0b86fab852ea68b2d3aa8323cfd124ec3c36881fa6bd2",
+      "width": 128,
+      "height": 128,
+      "bytes": 14367
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/houndoom?format=double&season=M-5",
+    "raw_path": "_sources/details/houndoom.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

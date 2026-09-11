@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 697,
+  "name": "怪颚龙",
+  "species_name": "怪颚龙",
+  "form_name": null,
+  "wiki_name": "怪颚龙",
+  "directory": "怪颚龙",
+  "source_slug": "tyrantrum",
+  "base_stats": {
+    "hp": 82,
+    "attack": 121,
+    "defense": 119,
+    "special_attack": 69,
+    "special_defense": 59,
+    "speed": 71
+  },
+  "base_stat_total": 521,
+  "images": {
+    "normal": {
+      "file": "怪颚龙.png",
+      "source_url": "https://media.52poke.com/wiki/0/06/Champions_0697_Sprite.png",
+      "source_filename": "Champions_0697_Sprite.png",
+      "sha256": "646ac8d4c9db4719c824f214895bd23366444b894fd4c24260139303c0629ff7",
+      "width": 128,
+      "height": 128,
+      "bytes": 19117
+    },
+    "shiny": {
+      "file": "怪颚龙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/0/09/Champions_0697_s_Sprite.png",
+      "source_filename": "Champions_0697_s_Sprite.png",
+      "sha256": "c4afef82b8b408b5c68bcb49b8e53682e40705b4134711018a437768b8463b5f",
+      "width": 128,
+      "height": 128,
+      "bytes": 18846
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tyrantrum?format=double&season=M-5",
+    "raw_path": "_sources/details/tyrantrum.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

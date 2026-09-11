@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dex_number": 351,
+  "name": "飘浮泡泡（雨水的样子）",
+  "species_name": "飘浮泡泡",
+  "form_name": "雨水的样子",
+  "wiki_name": "飘浮泡泡（雨水的样子）",
+  "directory": "飘浮泡泡（雨水的样子）",
+  "source_slug": "castform",
+  "base_stats": {
+    "hp": 70,
+    "attack": 70,
+    "defense": 70,
+    "special_attack": 70,
+    "special_defense": 70,
+    "speed": 70
+  },
+  "base_stat_total": 420,
+  "images": {
+    "normal": {
+      "file": "飘浮泡泡（雨水的样子）.png",
+      "source_url": "https://media.52poke.com/wiki/b/b0/Champions_0351R_Sprite.png",
+      "source_filename": "Champions_0351R_Sprite.png",
+      "sha256": "00bf21be81129dbc49cdcded1d48d39523b14ac6f94eb3135f1b9b2437b378e6",
+      "width": 128,
+      "height": 128,
+      "bytes": 8511
+    },
+    "shiny": {
+      "file": "飘浮泡泡（雨水的样子）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/89/Champions_0351R_s_Sprite.png",
+      "source_filename": "Champions_0351R_s_Sprite.png",
+      "sha256": "316b4dca296ae0bde21155f691b11cff65f07af8c7a291f3ddf5d5e02ab4b024",
+      "width": 128,
+      "height": 128,
+      "bytes": 8407
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/castform?format=double&season=M-5",
+    "raw_path": "_sources/details/castform.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "shared_species_profile",
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。"
+}

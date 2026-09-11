@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 465,
+  "base_stats": {
+    "attack": 90,
+    "defense": 140,
+    "hp": 75,
+    "special_attack": 60,
+    "special_defense": 60,
+    "speed": 40
+  },
+  "dex_number": 205,
+  "directory": "佛烈托斯",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14914,
+      "file": "佛烈托斯.png",
+      "height": 128,
+      "sha256": "ed2112106772183c16630980434b5cbd111ebfb08ab887afaa0edfac918e3f5e",
+      "source_filename": "Champions_0205_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b9/Champions_0205_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15186,
+      "file": "佛烈托斯_闪光.png",
+      "height": 128,
+      "sha256": "5b360b7d729c79ad2ce007d36b8c32d6d80708c367989a991ba8c47f7b454019",
+      "source_filename": "Champions_0205_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/5c/Champions_0205_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "佛烈托斯",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "forretress",
+  "species_name": "佛烈托斯",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/forretress.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/forretress?format=double&season=M-5"
+  },
+  "wiki_name": "佛烈托斯"
+}

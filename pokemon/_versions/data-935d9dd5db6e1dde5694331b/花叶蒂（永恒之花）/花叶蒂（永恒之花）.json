@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "花叶蒂"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 551,
+  "base_stats": {
+    "attack": 65,
+    "defense": 67,
+    "hp": 74,
+    "special_attack": 125,
+    "special_defense": 128,
+    "speed": 92
+  },
+  "data_ready": true,
+  "dex_number": 670,
+  "directory": "花叶蒂（永恒之花）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "永恒之花",
+  "images": {
+    "normal": {
+      "bytes": 9367,
+      "file": "花叶蒂（永恒之花）.png",
+      "height": 128,
+      "sha256": "69e010716277a2a0049e90c745b62719b928130bc3f23a74d519c571e6b82645",
+      "source_filename": "Champions_0670E_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/9b/Champions_0670E_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 9341,
+      "file": "花叶蒂（永恒之花）_闪光.png",
+      "height": 128,
+      "sha256": "693bfbe462c5377ee54b6c60f31036b4756d1cf70f28f30037e99feab51c04f3",
+      "source_filename": "Champions_0670E_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b5/Champions_0670E_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:670:超级花叶蒂"
+  ],
+  "mega_item": null,
+  "name": "花叶蒂（永恒之花）",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 670,
+  "opgg_key": "floette-eternal-flower",
+  "recognition_ready": true,
+  "record_id": "legacy:670:花叶蒂（永恒之花）",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "floette",
+  "species_name": "花叶蒂",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/floette-eternal-flower"
+  },
+  "type_names": [
+    "妖精"
+  ],
+  "types": [
+    "fairy"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/floette-eternal-flower"
+  },
+  "wiki_name": "花叶蒂（永恒之花）"
+}

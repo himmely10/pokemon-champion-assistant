@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 132,
+  "name": "百变怪",
+  "species_name": "百变怪",
+  "form_name": null,
+  "wiki_name": "百变怪",
+  "directory": "百变怪",
+  "source_slug": "ditto",
+  "base_stats": {
+    "hp": 48,
+    "attack": 48,
+    "defense": 48,
+    "special_attack": 48,
+    "special_defense": 48,
+    "speed": 48
+  },
+  "base_stat_total": 288,
+  "images": {
+    "normal": {
+      "file": "百变怪.png",
+      "source_url": "https://media.52poke.com/wiki/a/a3/Champions_0132_Sprite.png",
+      "source_filename": "Champions_0132_Sprite.png",
+      "sha256": "8d0ddf2a89c8e101bb72dd1461f7bff0aa19df226048ae87765cf26dd110ae36",
+      "width": 128,
+      "height": 128,
+      "bytes": 6602
+    },
+    "shiny": {
+      "file": "百变怪_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/d/d6/Champions_0132_s_Sprite.png",
+      "source_filename": "Champions_0132_s_Sprite.png",
+      "sha256": "775c32903e2fa52b9d8abe4df0bbe104da9432581dc3b4cb03d374120903f043",
+      "width": 128,
+      "height": 128,
+      "bytes": 6600
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/ditto?format=double&season=M-5",
+    "raw_path": "_sources/details/ditto.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

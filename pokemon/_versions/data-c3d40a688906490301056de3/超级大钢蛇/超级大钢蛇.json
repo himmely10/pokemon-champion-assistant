@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 610,
+  "base_stats": {
+    "attack": 125,
+    "defense": 230,
+    "hp": 75,
+    "special_attack": 55,
+    "special_defense": 95,
+    "speed": 30
+  },
+  "dex_number": 208,
+  "directory": "超级大钢蛇",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级大钢蛇",
+  "images": {
+    "normal": {
+      "bytes": 21085,
+      "file": "超级大钢蛇.png",
+      "height": 128,
+      "sha256": "f382c9beeba99975916dfe4f10a12810978742fcf7c8cec68e1af9f8b3cf68fb",
+      "source_filename": "Champions_0208M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/a2/Champions_0208M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 21993,
+      "file": "超级大钢蛇_闪光.png",
+      "height": 128,
+      "sha256": "d2f28882c08ec9630efcc37df891deaf7cc855dfdab9cac0db853227b3f84183",
+      "source_filename": "Champions_0208M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/3e/Champions_0208M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "超级大钢蛇",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "steelix-mega",
+  "species_name": "大钢蛇",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "megaForms[0].baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/steelix.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/steelix?format=double&season=M-5"
+  },
+  "wiki_name": "超级大钢蛇"
+}

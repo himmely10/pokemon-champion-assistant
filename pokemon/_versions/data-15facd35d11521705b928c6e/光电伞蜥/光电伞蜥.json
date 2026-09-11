@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "光电伞蜥"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 481,
+  "base_stats": {
+    "attack": 55,
+    "defense": 52,
+    "hp": 62,
+    "special_attack": 109,
+    "special_defense": 94,
+    "speed": 109
+  },
+  "data_ready": true,
+  "dex_number": 695,
+  "directory": "光电伞蜥",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 10031,
+      "file": "光电伞蜥.png",
+      "height": 128,
+      "sha256": "1fa60c8b634e0ba3aee0b01896111598f2fc8a1570c01d84d67cf9603bfaca92",
+      "source_filename": "Champions_0695_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/2d/Champions_0695_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 10222,
+      "file": "光电伞蜥_闪光.png",
+      "height": 128,
+      "sha256": "e9efb8f028adace708deef77c45ca951667c736ae980ef9b6043c9fd1684716d",
+      "source_filename": "Champions_0695_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/3b/Champions_0695_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "光电伞蜥",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 695,
+  "opgg_key": "heliolisk",
+  "recognition_ready": true,
+  "record_id": "legacy:695:光电伞蜥",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "heliolisk",
+  "species_name": "光电伞蜥",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/heliolisk"
+  },
+  "type_names": [
+    "电",
+    "一般"
+  ],
+  "types": [
+    "electric",
+    "normal"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/heliolisk"
+  },
+  "wiki_name": "光电伞蜥"
+}

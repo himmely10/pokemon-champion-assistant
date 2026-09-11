@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 407,
+  "name": "罗丝雷朵",
+  "species_name": "罗丝雷朵",
+  "form_name": null,
+  "wiki_name": "罗丝雷朵",
+  "directory": "罗丝雷朵",
+  "source_slug": "roserade",
+  "base_stats": {
+    "hp": 60,
+    "attack": 70,
+    "defense": 65,
+    "special_attack": 125,
+    "special_defense": 105,
+    "speed": 90
+  },
+  "base_stat_total": 515,
+  "images": {
+    "normal": {
+      "file": "罗丝雷朵.png",
+      "source_url": "https://media.52poke.com/wiki/4/40/Champions_0407_Sprite.png",
+      "source_filename": "Champions_0407_Sprite.png",
+      "sha256": "dcb84abb89fab55925af9945fcb654698374fd0da919451f0777a765dc00a14e",
+      "width": 128,
+      "height": 128,
+      "bytes": 14119
+    },
+    "shiny": {
+      "file": "罗丝雷朵_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/2/23/Champions_0407_s_Sprite.png",
+      "source_filename": "Champions_0407_s_Sprite.png",
+      "sha256": "aa9ee58f2c0bba69cb369dac1a090a7a94f96acaef081e2a92e62f2f9d69ef08",
+      "width": 128,
+      "height": 128,
+      "bytes": 14364
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/roserade?format=double&season=M-5",
+    "raw_path": "_sources/details/roserade.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+# Dataset manifests verify file bytes; preserve snapshots exactly on every OS.
+pokemon/** -text
+docs/research/** -text
+damage_engine/vendor/** -text

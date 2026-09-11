@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 395,
+  "name": "帝王拿波",
+  "species_name": "帝王拿波",
+  "form_name": null,
+  "wiki_name": "帝王拿波",
+  "directory": "帝王拿波",
+  "source_slug": "empoleon",
+  "base_stats": {
+    "hp": 84,
+    "attack": 86,
+    "defense": 88,
+    "special_attack": 111,
+    "special_defense": 101,
+    "speed": 60
+  },
+  "base_stat_total": 530,
+  "images": {
+    "normal": {
+      "file": "帝王拿波.png",
+      "source_url": "https://media.52poke.com/wiki/1/19/Champions_0395_Sprite.png",
+      "source_filename": "Champions_0395_Sprite.png",
+      "sha256": "133f1d07e1634970e4f10f726782220bf9f8dd2028008e5c61e23379d9dab96a",
+      "width": 128,
+      "height": 128,
+      "bytes": 14161
+    },
+    "shiny": {
+      "file": "帝王拿波_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/d/d1/Champions_0395_s_Sprite.png",
+      "source_filename": "Champions_0395_s_Sprite.png",
+      "sha256": "83ea78d8ecb83361b5829e60689a2020cf537ef8f7a0e5174fa3fa4417778e4f",
+      "width": 128,
+      "height": 128,
+      "bytes": 14718
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/empoleon?format=double&season=M-5",
+    "raw_path": "_sources/details/empoleon.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 823,
+  "name": "钢铠鸦",
+  "species_name": "钢铠鸦",
+  "form_name": null,
+  "wiki_name": "钢铠鸦",
+  "directory": "钢铠鸦",
+  "source_slug": "corviknight",
+  "base_stats": {
+    "hp": 98,
+    "attack": 87,
+    "defense": 105,
+    "special_attack": 53,
+    "special_defense": 85,
+    "speed": 67
+  },
+  "base_stat_total": 495,
+  "images": {
+    "normal": {
+      "file": "钢铠鸦.png",
+      "source_url": "https://media.52poke.com/wiki/4/4f/Champions_0823_Sprite.png",
+      "source_filename": "Champions_0823_Sprite.png",
+      "sha256": "d0f36f62fb21b87742bef209e92499a47813882ad70996b6731bff082101c84d",
+      "width": 128,
+      "height": 128,
+      "bytes": 13977
+    },
+    "shiny": {
+      "file": "钢铠鸦_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/0/09/Champions_0823_s_Sprite.png",
+      "source_filename": "Champions_0823_s_Sprite.png",
+      "sha256": "f6d60b84a38de20357ac0745ed7d0d8c9fda1bb2800247aea29c6d308ff9ff04",
+      "width": 128,
+      "height": 128,
+      "bytes": 14778
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/corviknight?format=double&season=M-5",
+    "raw_path": "_sources/details/corviknight.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

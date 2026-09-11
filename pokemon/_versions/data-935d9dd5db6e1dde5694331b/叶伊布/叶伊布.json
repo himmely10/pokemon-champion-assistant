@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "叶伊布"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 525,
+  "base_stats": {
+    "attack": 110,
+    "defense": 130,
+    "hp": 65,
+    "special_attack": 60,
+    "special_defense": 65,
+    "speed": 95
+  },
+  "data_ready": true,
+  "dex_number": 470,
+  "directory": "叶伊布",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 14616,
+      "file": "叶伊布.png",
+      "height": 128,
+      "sha256": "671d5e5785bac8429ef61a0c64f66a70fc2eeb3d3fc713b6cb10eea22eedbbd1",
+      "source_filename": "Champions_0470_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/45/Champions_0470_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14366,
+      "file": "叶伊布_闪光.png",
+      "height": 128,
+      "sha256": "eee9b6f951b9579d52d19320212506572db6d49ae867fa271cfedd875f54e86a",
+      "source_filename": "Champions_0470_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/10/Champions_0470_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "叶伊布",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 470,
+  "opgg_key": "leafeon",
+  "recognition_ready": true,
+  "record_id": "legacy:470:叶伊布",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "leafeon",
+  "species_name": "叶伊布",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/leafeon"
+  },
+  "type_names": [
+    "草"
+  ],
+  "types": [
+    "grass"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/leafeon"
+  },
+  "wiki_name": "叶伊布"
+}

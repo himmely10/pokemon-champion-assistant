@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 711,
+  "name": "南瓜怪人（大尺寸）",
+  "species_name": "南瓜怪人",
+  "form_name": "大颗种",
+  "wiki_name": "南瓜怪人（大颗种）",
+  "directory": "南瓜怪人（大尺寸）",
+  "source_slug": "gourgeist-large",
+  "base_stats": {
+    "hp": 75,
+    "attack": 95,
+    "defense": 122,
+    "special_attack": 58,
+    "special_defense": 75,
+    "speed": 69
+  },
+  "base_stat_total": 494,
+  "images": {
+    "normal": {
+      "file": "南瓜怪人（大尺寸）.png",
+      "source_url": "https://media.52poke.com/wiki/0/09/Champions_0711L_Sprite.png",
+      "source_filename": "Champions_0711L_Sprite.png",
+      "sha256": "0edf057b44b1c5fbb193e850fb17930338bea87014c74b4d658b53619d336e64",
+      "width": 128,
+      "height": 128,
+      "bytes": 12562
+    },
+    "shiny": {
+      "file": "南瓜怪人（大尺寸）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/d/d9/Champions_0711L_s_Sprite.png",
+      "source_filename": "Champions_0711L_s_Sprite.png",
+      "sha256": "eac05afd3ea2cf47e9d484fe3eebac177fc15c319a1a08dae65e28edd0439ad7",
+      "width": 128,
+      "height": 128,
+      "bytes": 11923
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/gourgeist-large?format=double&season=M-5",
+    "raw_path": "_sources/details/gourgeist-large.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

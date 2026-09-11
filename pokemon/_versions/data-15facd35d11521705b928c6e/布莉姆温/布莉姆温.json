@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "布莉姆温"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 510,
+  "base_stats": {
+    "attack": 90,
+    "defense": 95,
+    "hp": 57,
+    "special_attack": 136,
+    "special_defense": 103,
+    "speed": 29
+  },
+  "data_ready": true,
+  "dex_number": 858,
+  "directory": "布莉姆温",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 11331,
+      "file": "布莉姆温.png",
+      "height": 128,
+      "sha256": "3d16a0992a3f281b2d120513ac05776bbd09eb9a50687a48a4a1f3c5272458c0",
+      "source_filename": "Champions_0858_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/16/Champions_0858_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11215,
+      "file": "布莉姆温_闪光.png",
+      "height": 128,
+      "sha256": "87bfdd217d5f7c03db01413edbb1212056de245d6d4bd20e08f35f920842c510",
+      "source_filename": "Champions_0858_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/83/Champions_0858_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "布莉姆温",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 858,
+  "opgg_key": "hatterene",
+  "recognition_ready": true,
+  "record_id": "legacy:858:布莉姆温",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "hatterene",
+  "species_name": "布莉姆温",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/hatterene"
+  },
+  "type_names": [
+    "超能力",
+    "妖精"
+  ],
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/hatterene"
+  },
+  "wiki_name": "布莉姆温"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 623,
+  "name": "泥偶巨人",
+  "species_name": "泥偶巨人",
+  "form_name": null,
+  "wiki_name": "泥偶巨人",
+  "directory": "泥偶巨人",
+  "source_slug": "golurk",
+  "base_stats": {
+    "hp": 89,
+    "attack": 124,
+    "defense": 80,
+    "special_attack": 55,
+    "special_defense": 80,
+    "speed": 55
+  },
+  "base_stat_total": 483,
+  "images": {
+    "normal": {
+      "file": "泥偶巨人.png",
+      "source_url": "https://media.52poke.com/wiki/8/83/Champions_0623_Sprite.png",
+      "source_filename": "Champions_0623_Sprite.png",
+      "sha256": "d17fcd3ea9d8aecdfa2bce4124dfb7f78f6ed8d00fb3c94f52a373a3dcdbd2c4",
+      "width": 128,
+      "height": 128,
+      "bytes": 21882
+    },
+    "shiny": {
+      "file": "泥偶巨人_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/a/aa/Champions_0623_s_Sprite.png",
+      "source_filename": "Champions_0623_s_Sprite.png",
+      "sha256": "331a86f8bdf5c359682652c7c374c473275058c217669596712dfc676b18cec2",
+      "width": 128,
+      "height": 128,
+      "bytes": 21249
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/golurk?format=double&season=M-5",
+    "raw_path": "_sources/details/golurk.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

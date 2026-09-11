@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "丰蜜龙"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 485,
+  "base_stats": {
+    "attack": 85,
+    "defense": 80,
+    "hp": 110,
+    "special_attack": 100,
+    "special_defense": 80,
+    "speed": 30
+  },
+  "data_ready": true,
+  "dex_number": 842,
+  "directory": "丰蜜龙",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 10733,
+      "file": "丰蜜龙.png",
+      "height": 128,
+      "sha256": "93070a96943188cdc7c6d8304554443b3b22d1d3d7e759efe2ddd72f56463f73",
+      "source_filename": "Champions_0842_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/05/Champions_0842_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 10714,
+      "file": "丰蜜龙_闪光.png",
+      "height": 128,
+      "sha256": "2f32eb0efa8acdba2204cb2095b4e7c0b80306ef9a91bcbb798d0bc3f80f871f",
+      "source_filename": "Champions_0842_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/45/Champions_0842_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "丰蜜龙",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 842,
+  "opgg_key": "appletun",
+  "recognition_ready": true,
+  "record_id": "legacy:842:丰蜜龙",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "appletun",
+  "species_name": "丰蜜龙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/appletun"
+  },
+  "type_names": [
+    "草",
+    "龙"
+  ],
+  "types": [
+    "grass",
+    "dragon"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/appletun"
+  },
+  "wiki_name": "丰蜜龙"
+}

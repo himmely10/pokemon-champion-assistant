@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dex_number": 925,
+  "name": "一家鼠（四只家庭）",
+  "species_name": "一家鼠",
+  "form_name": "四只家庭",
+  "wiki_name": "一家鼠（四只家庭）",
+  "directory": "一家鼠（四只家庭）",
+  "source_slug": "maushold",
+  "base_stats": {
+    "hp": 74,
+    "attack": 75,
+    "defense": 70,
+    "special_attack": 65,
+    "special_defense": 75,
+    "speed": 111
+  },
+  "base_stat_total": 470,
+  "images": {
+    "normal": {
+      "file": "一家鼠（四只家庭）.png",
+      "source_url": "https://media.52poke.com/wiki/6/6b/Champions_0925_Sprite.png",
+      "source_filename": "Champions_0925_Sprite.png",
+      "sha256": "31cbb9b010dfde1f62d4606325ff07b8daac2b01b371beff2dfb8378041e40b3",
+      "width": 128,
+      "height": 128,
+      "bytes": 7636
+    },
+    "shiny": {
+      "file": "一家鼠（四只家庭）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/f/fc/Champions_0925_s_Sprite.png",
+      "source_filename": "Champions_0925_s_Sprite.png",
+      "sha256": "0b82a90b3a91ac0f8ad1f0f8b208f2f40ac7b9853dfe207365799f3700249322",
+      "width": 128,
+      "height": 128,
+      "bytes": 7607
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/maushold?format=double&season=M-5",
+    "raw_path": "_sources/details/maushold.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "shared_species_profile",
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。"
+}

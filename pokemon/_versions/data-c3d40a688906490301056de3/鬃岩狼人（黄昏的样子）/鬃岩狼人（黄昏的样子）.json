@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 487,
+  "base_stats": {
+    "attack": 117,
+    "defense": 65,
+    "hp": 75,
+    "special_attack": 55,
+    "special_defense": 65,
+    "speed": 110
+  },
+  "dex_number": 745,
+  "directory": "鬃岩狼人（黄昏的样子）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "黄昏的样子",
+  "images": {
+    "normal": {
+      "bytes": 12394,
+      "file": "鬃岩狼人（黄昏的样子）.png",
+      "height": 128,
+      "sha256": "d4301cb1b9c652249ec6ba35f866d5243f002df3884becfbf080025b7f9e3f47",
+      "source_filename": "Champions_0745D_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/82/Champions_0745D_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12724,
+      "file": "鬃岩狼人（黄昏的样子）_闪光.png",
+      "height": 128,
+      "sha256": "1ec2b07688a75282dd58d6f9466b0178b4330b24a568511b8d45178d68d454fe",
+      "source_filename": "Champions_0745D_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/c6/Champions_0745D_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "鬃岩狼人（黄昏的样子）",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "lycanroc-dusk",
+  "species_name": "鬃岩狼人",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/lycanroc-dusk.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/lycanroc-dusk?format=double&season=M-5"
+  },
+  "wiki_name": "鬃岩狼人（黄昏的样子）"
+}

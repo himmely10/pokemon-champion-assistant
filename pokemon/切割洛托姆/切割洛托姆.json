@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 479,
+  "name": "切割洛托姆",
+  "species_name": "洛托姆",
+  "form_name": "切割洛托姆",
+  "wiki_name": "洛托姆（切割洛托姆）",
+  "directory": "切割洛托姆",
+  "source_slug": "rotom-mow",
+  "base_stats": {
+    "hp": 50,
+    "attack": 65,
+    "defense": 107,
+    "special_attack": 105,
+    "special_defense": 107,
+    "speed": 86
+  },
+  "base_stat_total": 520,
+  "images": {
+    "normal": {
+      "file": "切割洛托姆.png",
+      "source_url": "https://media.52poke.com/wiki/9/90/Champions_0479M_Sprite.png",
+      "source_filename": "Champions_0479M_Sprite.png",
+      "sha256": "31abccd102d2529eee48291b529ee4ad491afdbb5c4833e25931c85d163cd2d5",
+      "width": 128,
+      "height": 128,
+      "bytes": 10729
+    },
+    "shiny": {
+      "file": "切割洛托姆_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/2/2a/Champions_0479M_s_Sprite.png",
+      "source_filename": "Champions_0479M_s_Sprite.png",
+      "sha256": "fe8f0ff553e3680cef5ad3c884a6b3ee1d15645bfa80bf26b01ea64fcf235012",
+      "width": 128,
+      "height": 128,
+      "bytes": 10775
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rotom-mow?format=double&season=M-5",
+    "raw_path": "_sources/details/rotom-mow.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

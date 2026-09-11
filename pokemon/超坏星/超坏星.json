@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 748,
+  "name": "超坏星",
+  "species_name": "超坏星",
+  "form_name": null,
+  "wiki_name": "超坏星",
+  "directory": "超坏星",
+  "source_slug": "toxapex",
+  "base_stats": {
+    "hp": 50,
+    "attack": 63,
+    "defense": 152,
+    "special_attack": 53,
+    "special_defense": 142,
+    "speed": 35
+  },
+  "base_stat_total": 495,
+  "images": {
+    "normal": {
+      "file": "超坏星.png",
+      "source_url": "https://media.52poke.com/wiki/8/83/Champions_0748_Sprite.png",
+      "source_filename": "Champions_0748_Sprite.png",
+      "sha256": "8102c35bd5953fd75915ac57d8aa357edbae34fdd1cc330afdcccf380801d9d9",
+      "width": 128,
+      "height": 128,
+      "bytes": 14585
+    },
+    "shiny": {
+      "file": "超坏星_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/9/91/Champions_0748_s_Sprite.png",
+      "source_filename": "Champions_0748_s_Sprite.png",
+      "sha256": "29e43fc39ae34c4c3e87d4cd683c928620def41a8e5e15c232c02d31907fd2a3",
+      "width": 128,
+      "height": 128,
+      "bytes": 14198
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/toxapex?format=double&season=M-5",
+    "raw_path": "_sources/details/toxapex.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dex_number": 855,
+  "name": "怖思壶（赝品形态）",
+  "species_name": "怖思壶",
+  "form_name": "赝品形态",
+  "wiki_name": "怖思壶（赝品形态）",
+  "directory": "怖思壶（赝品形态）",
+  "source_slug": "polteageist",
+  "base_stats": {
+    "hp": 60,
+    "attack": 65,
+    "defense": 65,
+    "special_attack": 134,
+    "special_defense": 114,
+    "speed": 70
+  },
+  "base_stat_total": 508,
+  "images": {
+    "normal": {
+      "file": "怖思壶（赝品形态）.png",
+      "source_url": "https://media.52poke.com/wiki/b/b2/Champions_0855_Sprite.png",
+      "source_filename": "Champions_0855_Sprite.png",
+      "sha256": "033098c760a1430f0fdd805456cc9b1e9477e4bfe36d584eb69ba766a2cf0efd",
+      "width": 128,
+      "height": 128,
+      "bytes": 13057
+    },
+    "shiny": {
+      "file": "怖思壶（赝品形态）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/8e/Champions_0855_s_Sprite.png",
+      "source_filename": "Champions_0855_s_Sprite.png",
+      "sha256": "53a598b26e9dc0d0505f7434ec0bc4112d7fa32e5e619af74cec8b9ef448a98b",
+      "width": 128,
+      "height": 128,
+      "bytes": 12948
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/polteageist?format=double&season=M-5",
+    "raw_path": "_sources/details/polteageist.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "shared_species_profile",
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。"
+}

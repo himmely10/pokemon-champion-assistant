@@ -1,0 +1,78 @@
+{
+  "aliases": [
+    "坚盾剑怪 (刀剑形态)"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 500,
+  "base_stats": {
+    "attack": 140,
+    "defense": 50,
+    "hp": 60,
+    "special_attack": 140,
+    "special_defense": 50,
+    "speed": 60
+  },
+  "data_ready": true,
+  "dex_number": 681,
+  "directory": "坚盾剑怪（刀剑形态）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "刀剑形态",
+  "images": {
+    "normal": {
+      "bytes": 13877,
+      "file": "坚盾剑怪（刀剑形态）.png",
+      "height": 128,
+      "sha256": "85a9078b09a87f44f5d9cc171ccd46226a8031a6b14ecf41a2aa9ddc77416543",
+      "source_filename": "Champions_0681B_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b4/Champions_0681B_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13484,
+      "file": "坚盾剑怪（刀剑形态）_闪光.png",
+      "height": 128,
+      "sha256": "69deb221062cb6821d687cecd722b098e046b666bd2b81d66078c169165d013a",
+      "source_filename": "Champions_0681B_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/6/6e/Champions_0681B_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "legacy_mapping_note": "PokéChamp DB 未提供该条目；经用户允许，使用百科种族值补齐。",
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "坚盾剑怪（刀剑形态）",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10026,
+  "opgg_key": "aegislash-blade",
+  "recognition_ready": true,
+  "record_id": "legacy:681:坚盾剑怪（刀剑形态）",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "aegislash-blade",
+  "species_name": "坚盾剑怪",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/aegislash-blade"
+  },
+  "type_names": [
+    "钢",
+    "幽灵"
+  ],
+  "types": [
+    "steel",
+    "ghost"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/aegislash-blade"
+  },
+  "wiki_name": "坚盾剑怪（刀剑形态）"
+}

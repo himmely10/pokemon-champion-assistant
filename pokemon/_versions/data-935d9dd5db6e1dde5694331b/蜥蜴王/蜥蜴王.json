@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "蜥蜴王"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 530,
+  "base_stats": {
+    "attack": 85,
+    "defense": 65,
+    "hp": 70,
+    "special_attack": 105,
+    "special_defense": 85,
+    "speed": 120
+  },
+  "data_ready": true,
+  "dex_number": 254,
+  "directory": "蜥蜴王",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 16450,
+      "file": "蜥蜴王.png",
+      "height": 128,
+      "sha256": "02923fb7940923a994b485c4339f76e9e956770581e5208ccee0118ed5f130c9",
+      "source_filename": "Champions_0254_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/f7/Champions_0254_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 17379,
+      "file": "蜥蜴王_闪光.png",
+      "height": 128,
+      "sha256": "7d52374f14f00308e720286f6bc299ef2264d6b27d72e96aeb997e84d3b8ccd6",
+      "source_filename": "Champions_0254_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b1/Champions_0254_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:254:超级蜥蜴王"
+  ],
+  "mega_item": null,
+  "name": "蜥蜴王",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 254,
+  "opgg_key": "sceptile",
+  "recognition_ready": true,
+  "record_id": "legacy:254:蜥蜴王",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "sceptile",
+  "species_name": "蜥蜴王",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/sceptile"
+  },
+  "type_names": [
+    "草"
+  ],
+  "types": [
+    "grass"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/sceptile"
+  },
+  "wiki_name": "蜥蜴王"
+}

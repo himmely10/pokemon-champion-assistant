@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "超级暴飞龙"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 700,
+  "base_stats": {
+    "attack": 145,
+    "defense": 130,
+    "hp": 95,
+    "special_attack": 120,
+    "special_defense": 90,
+    "speed": 120
+  },
+  "data_ready": true,
+  "dex_number": 373,
+  "directory": "超级暴飞龙",
+  "form_name": "超级暴飞龙",
+  "images": {
+    "normal": {
+      "bytes": 15148,
+      "file": "超级暴飞龙.png",
+      "height": 128,
+      "sha256": "933c60b7005241d9b9d045f5c01c784f48df4c1e7755bc6bf1df966bb7aa582f",
+      "source_filename": "Champions_0373M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/50/Champions_0373M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15095,
+      "file": "超级暴飞龙_闪光.png",
+      "height": 128,
+      "sha256": "b87ce96104bd73c43d07d1287e75e2b04566e195a19abd371f129026b09a1d14",
+      "source_filename": "Champions_0373M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/9/9e/Champions_0373M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "salamencite",
+  "name": "超级暴飞龙",
+  "name_source": "opgg_zh_cn",
+  "opgg_id": 10089,
+  "opgg_key": "mega-salamence",
+  "recognition_ready": true,
+  "record_id": "opgg:mega-salamence",
+  "schema_version": 2,
+  "source_base_key": "salamence",
+  "source_is_new": true,
+  "source_presence": "present",
+  "source_regulation": "M-C",
+  "source_slug": "salamence-mega",
+  "species_name": "暴飞龙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-salamence"
+  },
+  "type_names": [
+    "龙",
+    "飞行"
+  ],
+  "types": [
+    "dragon",
+    "flying"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-salamence"
+  }
+}

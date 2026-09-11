@@ -1,0 +1,49 @@
+{
+  "base_stat_total": 472,
+  "base_stats": {
+    "attack": 80,
+    "defense": 60,
+    "hp": 75,
+    "special_attack": 65,
+    "special_defense": 90,
+    "speed": 102
+  },
+  "dex_number": 676,
+  "directory": "多丽米亚（菱形造型）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "菱形造型",
+  "images": {
+    "normal": {
+      "bytes": 11085,
+      "file": "多丽米亚（菱形造型）.png",
+      "height": 128,
+      "sha256": "849b8302ea28bc9cb0ea3861c57fdba2500c4aafd500a795a50efe802ad7d439",
+      "source_filename": "Champions_0676Di_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/18/Champions_0676Di_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11137,
+      "file": "多丽米亚（菱形造型）_闪光.png",
+      "height": 128,
+      "sha256": "bc5fbd63dafccf5e46769a6c747a787edbd45defaad69bf9d7251beaac2906c0",
+      "source_filename": "Champions_0676Di_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/18/Champions_0676Di_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mapping_note": "此形态与同种其他外观/花纹形态共用种族值；数据站仅提供种级配置，未逐外观独立列值。",
+  "name": "多丽米亚（菱形造型）",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "furfrou",
+  "species_name": "多丽米亚",
+  "stats_mapping": "shared_species_profile",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/furfrou.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/furfrou?format=double&season=M-5"
+  },
+  "wiki_name": "多丽米亚（菱形造型）"
+}

@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "超级具甲武者"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 630,
+  "base_stats": {
+    "attack": 150,
+    "defense": 175,
+    "hp": 75,
+    "special_attack": 70,
+    "special_defense": 120,
+    "speed": 40
+  },
+  "data_ready": true,
+  "dex_number": 768,
+  "directory": "超级具甲武者",
+  "form_name": "超级具甲武者",
+  "images": {
+    "normal": {
+      "bytes": 22686,
+      "file": "超级具甲武者.png",
+      "height": 128,
+      "sha256": "f2bb8ee8eae7664d3bbfca328a535946166f88d3198add6d6873c903eebdace9",
+      "source_filename": "Champions_0768M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/e/e9/Champions_0768M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 23484,
+      "file": "超级具甲武者_闪光.png",
+      "height": 128,
+      "sha256": "e6870953b0cd5f1ebaf400bc341b2d363187dbdfbbd6cc82448663fa78e41d77",
+      "source_filename": "Champions_0768M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/04/Champions_0768M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "golisopite",
+  "name": "超级具甲武者",
+  "name_source": "opgg_zh_cn",
+  "opgg_id": 10311,
+  "opgg_key": "mega-golisopod",
+  "recognition_ready": true,
+  "record_id": "opgg:mega-golisopod",
+  "schema_version": 2,
+  "source_base_key": "golisopod",
+  "source_is_new": true,
+  "source_presence": "present",
+  "source_regulation": "M-C",
+  "source_slug": "golisopod-mega",
+  "species_name": "具甲武者",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-golisopod"
+  },
+  "type_names": [
+    "虫",
+    "钢"
+  ],
+  "types": [
+    "bug",
+    "steel"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-golisopod"
+  }
+}

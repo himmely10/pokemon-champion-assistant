@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 319,
+  "name": "超级巨牙鲨",
+  "species_name": "巨牙鲨",
+  "form_name": "超级巨牙鲨",
+  "wiki_name": "超级巨牙鲨",
+  "directory": "超级巨牙鲨",
+  "source_slug": "sharpedo-mega",
+  "base_stats": {
+    "hp": 70,
+    "attack": 140,
+    "defense": 70,
+    "special_attack": 110,
+    "special_defense": 65,
+    "speed": 105
+  },
+  "base_stat_total": 560,
+  "images": {
+    "normal": {
+      "file": "超级巨牙鲨.png",
+      "source_url": "https://media.52poke.com/wiki/b/be/Champions_0319M_Sprite.png",
+      "source_filename": "Champions_0319M_Sprite.png",
+      "sha256": "e4f4958bc16d9def869123bc05520f5a2f8e6dcd90f71198ad798e40e78aa160",
+      "width": 128,
+      "height": 128,
+      "bytes": 12504
+    },
+    "shiny": {
+      "file": "超级巨牙鲨_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/9/9c/Champions_0319M_s_Sprite.png",
+      "source_filename": "Champions_0319M_s_Sprite.png",
+      "sha256": "f2aad9b91fff7bf3f603d42c05c07acfecb83717948c1d718486764117951047",
+      "width": 128,
+      "height": 128,
+      "bytes": 12746
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/sharpedo?format=double&season=M-5",
+    "raw_path": "_sources/details/sharpedo.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

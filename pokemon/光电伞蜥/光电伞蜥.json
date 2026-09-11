@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 695,
+  "name": "光电伞蜥",
+  "species_name": "光电伞蜥",
+  "form_name": null,
+  "wiki_name": "光电伞蜥",
+  "directory": "光电伞蜥",
+  "source_slug": "heliolisk",
+  "base_stats": {
+    "hp": 62,
+    "attack": 55,
+    "defense": 52,
+    "special_attack": 109,
+    "special_defense": 94,
+    "speed": 109
+  },
+  "base_stat_total": 481,
+  "images": {
+    "normal": {
+      "file": "光电伞蜥.png",
+      "source_url": "https://media.52poke.com/wiki/2/2d/Champions_0695_Sprite.png",
+      "source_filename": "Champions_0695_Sprite.png",
+      "sha256": "1fa60c8b634e0ba3aee0b01896111598f2fc8a1570c01d84d67cf9603bfaca92",
+      "width": 128,
+      "height": 128,
+      "bytes": 10031
+    },
+    "shiny": {
+      "file": "光电伞蜥_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/3/3b/Champions_0695_s_Sprite.png",
+      "source_filename": "Champions_0695_s_Sprite.png",
+      "sha256": "e9efb8f028adace708deef77c45ca951667c736ae980ef9b6043c9fd1684716d",
+      "width": 128,
+      "height": 128,
+      "bytes": 10222
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/heliolisk?format=double&season=M-5",
+    "raw_path": "_sources/details/heliolisk.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

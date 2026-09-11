@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 212,
+  "name": "巨钳螳螂",
+  "species_name": "巨钳螳螂",
+  "form_name": null,
+  "wiki_name": "巨钳螳螂",
+  "directory": "巨钳螳螂",
+  "source_slug": "scizor",
+  "base_stats": {
+    "hp": 70,
+    "attack": 130,
+    "defense": 100,
+    "special_attack": 55,
+    "special_defense": 80,
+    "speed": 65
+  },
+  "base_stat_total": 500,
+  "images": {
+    "normal": {
+      "file": "巨钳螳螂.png",
+      "source_url": "https://media.52poke.com/wiki/7/71/Champions_0212_Sprite.png",
+      "source_filename": "Champions_0212_Sprite.png",
+      "sha256": "eeb2293ee0483dca6d3c342cd7c7b902d4496954574c5050a602b68c094161a0",
+      "width": 128,
+      "height": 128,
+      "bytes": 17159
+    },
+    "shiny": {
+      "file": "巨钳螳螂_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/2/26/Champions_0212_s_Sprite.png",
+      "source_filename": "Champions_0212_s_Sprite.png",
+      "sha256": "18d8029ac2eaf518f6546fa3191efe2dac8aa4c2f94c6f111a737d084b7a6155",
+      "width": 128,
+      "height": 128,
+      "bytes": 17844
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/scizor?format=double&season=M-5",
+    "raw_path": "_sources/details/scizor.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

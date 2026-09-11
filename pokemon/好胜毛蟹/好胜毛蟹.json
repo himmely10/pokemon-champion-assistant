@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 740,
+  "name": "好胜毛蟹",
+  "species_name": "好胜毛蟹",
+  "form_name": null,
+  "wiki_name": "好胜毛蟹",
+  "directory": "好胜毛蟹",
+  "source_slug": "crabominable",
+  "base_stats": {
+    "hp": 97,
+    "attack": 132,
+    "defense": 77,
+    "special_attack": 62,
+    "special_defense": 67,
+    "speed": 43
+  },
+  "base_stat_total": 478,
+  "images": {
+    "normal": {
+      "file": "好胜毛蟹.png",
+      "source_url": "https://media.52poke.com/wiki/8/8d/Champions_0740_Sprite.png",
+      "source_filename": "Champions_0740_Sprite.png",
+      "sha256": "7517d3e47f9d977d9d5697f9ed64e2ed699e826a3390d0c4957a4986d16d6f5d",
+      "width": 128,
+      "height": 128,
+      "bytes": 13492
+    },
+    "shiny": {
+      "file": "好胜毛蟹_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/d/d4/Champions_0740_s_Sprite.png",
+      "source_filename": "Champions_0740_s_Sprite.png",
+      "sha256": "ff8022e89ab82824b6494bcaa929436e1b39da86a084214ca5caaee2b7199e18",
+      "width": 128,
+      "height": 128,
+      "bytes": 13829
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/crabominable?format=double&season=M-5",
+    "raw_path": "_sources/details/crabominable.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

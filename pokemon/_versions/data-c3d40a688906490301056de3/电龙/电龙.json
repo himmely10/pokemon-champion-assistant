@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 510,
+  "base_stats": {
+    "attack": 75,
+    "defense": 85,
+    "hp": 90,
+    "special_attack": 115,
+    "special_defense": 90,
+    "speed": 55
+  },
+  "dex_number": 181,
+  "directory": "电龙",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 12631,
+      "file": "电龙.png",
+      "height": 128,
+      "sha256": "2bb413d1ff01b0d03453b880ca306a0cc6510027e1d46321ce3a6c268703a6b1",
+      "source_filename": "Champions_0181_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/3d/Champions_0181_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12725,
+      "file": "电龙_闪光.png",
+      "height": 128,
+      "sha256": "0457708ccfa2e91873c7059b8deb74e0ac3eeed0e1d52c7ea3375867078dfd84",
+      "source_filename": "Champions_0181_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/cc/Champions_0181_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "电龙",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "ampharos",
+  "species_name": "电龙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/ampharos.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/ampharos?format=double&season=M-5"
+  },
+  "wiki_name": "电龙"
+}

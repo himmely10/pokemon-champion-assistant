@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 143,
+  "name": "卡比兽",
+  "species_name": "卡比兽",
+  "form_name": null,
+  "wiki_name": "卡比兽",
+  "directory": "卡比兽",
+  "source_slug": "snorlax",
+  "base_stats": {
+    "hp": 160,
+    "attack": 110,
+    "defense": 65,
+    "special_attack": 65,
+    "special_defense": 110,
+    "speed": 30
+  },
+  "base_stat_total": 540,
+  "images": {
+    "normal": {
+      "file": "卡比兽.png",
+      "source_url": "https://media.52poke.com/wiki/f/fa/Champions_0143_Sprite.png",
+      "source_filename": "Champions_0143_Sprite.png",
+      "sha256": "a281c72b59474d88ca947401662aef8782de15c0dead9ba8e775f98bc7e12ed6",
+      "width": 128,
+      "height": 128,
+      "bytes": 13282
+    },
+    "shiny": {
+      "file": "卡比兽_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/f/f6/Champions_0143_s_Sprite.png",
+      "source_filename": "Champions_0143_s_Sprite.png",
+      "sha256": "32a7f691d6cc2c09bf20b054de30ecdc0d1dee9da84869052c0aa4901734d537",
+      "width": 128,
+      "height": 128,
+      "bytes": 12762
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/snorlax?format=double&season=M-5",
+    "raw_path": "_sources/details/snorlax.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

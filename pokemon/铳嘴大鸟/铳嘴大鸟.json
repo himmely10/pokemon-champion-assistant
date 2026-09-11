@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 733,
+  "name": "铳嘴大鸟",
+  "species_name": "铳嘴大鸟",
+  "form_name": null,
+  "wiki_name": "铳嘴大鸟",
+  "directory": "铳嘴大鸟",
+  "source_slug": "toucannon",
+  "base_stats": {
+    "hp": 80,
+    "attack": 120,
+    "defense": 75,
+    "special_attack": 75,
+    "special_defense": 75,
+    "speed": 60
+  },
+  "base_stat_total": 485,
+  "images": {
+    "normal": {
+      "file": "铳嘴大鸟.png",
+      "source_url": "https://media.52poke.com/wiki/2/26/Champions_0733_Sprite.png",
+      "source_filename": "Champions_0733_Sprite.png",
+      "sha256": "68238a041276d9b31089838f958e5763bb7e918cea595c10190e487d16f0d189",
+      "width": 128,
+      "height": 128,
+      "bytes": 11819
+    },
+    "shiny": {
+      "file": "铳嘴大鸟_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/3/3a/Champions_0733_s_Sprite.png",
+      "source_filename": "Champions_0733_s_Sprite.png",
+      "sha256": "cccf98f6858dc9712db6c8cfce05175fd089033d9467af1b06b642338516a855",
+      "width": 128,
+      "height": 128,
+      "bytes": 12293
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/toucannon?format=double&season=M-5",
+    "raw_path": "_sources/details/toucannon.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

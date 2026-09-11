@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 473,
+  "name": "象牙猪",
+  "species_name": "象牙猪",
+  "form_name": null,
+  "wiki_name": "象牙猪",
+  "directory": "象牙猪",
+  "source_slug": "mamoswine",
+  "base_stats": {
+    "hp": 110,
+    "attack": 130,
+    "defense": 80,
+    "special_attack": 70,
+    "special_defense": 60,
+    "speed": 80
+  },
+  "base_stat_total": 530,
+  "images": {
+    "normal": {
+      "file": "象牙猪.png",
+      "source_url": "https://media.52poke.com/wiki/8/8c/Champions_0473_Sprite.png",
+      "source_filename": "Champions_0473_Sprite.png",
+      "sha256": "c3a9db44053e499b9ed7881e35fd83813ab161fb1179dcca8490bf576d9b12b1",
+      "width": 128,
+      "height": 128,
+      "bytes": 15837
+    },
+    "shiny": {
+      "file": "象牙猪_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/1/17/Champions_0473_s_Sprite.png",
+      "source_filename": "Champions_0473_s_Sprite.png",
+      "sha256": "c84124e7cc52b57c77b81b7a628bacd687b763af7b2a0a6d7c52865be434dae6",
+      "width": 128,
+      "height": 128,
+      "bytes": 15864
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/mamoswine?format=double&season=M-5",
+    "raw_path": "_sources/details/mamoswine.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

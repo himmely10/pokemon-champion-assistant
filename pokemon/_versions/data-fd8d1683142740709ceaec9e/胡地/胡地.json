@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "胡地"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 500,
+  "base_stats": {
+    "attack": 50,
+    "defense": 45,
+    "hp": 55,
+    "special_attack": 135,
+    "special_defense": 95,
+    "speed": 120
+  },
+  "data_ready": true,
+  "dex_number": 65,
+  "directory": "胡地",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 20462,
+      "file": "胡地.png",
+      "height": 128,
+      "sha256": "88276b486a15462e23b5f728669f26ac5ce0200d5779f481132343ca6eac94f2",
+      "source_filename": "Champions_0065_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/2c/Champions_0065_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 20845,
+      "file": "胡地_闪光.png",
+      "height": 128,
+      "sha256": "fd1833618681655338f999a4acf741fb0938998218cab7acc8b565e83676c536",
+      "source_filename": "Champions_0065_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b0/Champions_0065_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:65:超级胡地"
+  ],
+  "mega_item": null,
+  "name": "胡地",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 65,
+  "opgg_key": "alakazam",
+  "recognition_ready": true,
+  "record_id": "legacy:65:胡地",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "alakazam",
+  "species_name": "胡地",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/alakazam"
+  },
+  "type_names": [
+    "超能力"
+  ],
+  "types": [
+    "psychic"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/alakazam"
+  },
+  "wiki_name": "胡地"
+}

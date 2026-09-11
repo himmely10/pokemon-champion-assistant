@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 670,
+  "name": "花叶蒂（永恒之花）",
+  "species_name": "花叶蒂",
+  "form_name": "永恒之花",
+  "wiki_name": "花叶蒂（永恒之花）",
+  "directory": "花叶蒂（永恒之花）",
+  "source_slug": "floette",
+  "base_stats": {
+    "hp": 74,
+    "attack": 65,
+    "defense": 67,
+    "special_attack": 125,
+    "special_defense": 128,
+    "speed": 92
+  },
+  "base_stat_total": 551,
+  "images": {
+    "normal": {
+      "file": "花叶蒂（永恒之花）.png",
+      "source_url": "https://media.52poke.com/wiki/9/9b/Champions_0670E_Sprite.png",
+      "source_filename": "Champions_0670E_Sprite.png",
+      "sha256": "69e010716277a2a0049e90c745b62719b928130bc3f23a74d519c571e6b82645",
+      "width": 128,
+      "height": 128,
+      "bytes": 9367
+    },
+    "shiny": {
+      "file": "花叶蒂（永恒之花）_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/b/b5/Champions_0670E_s_Sprite.png",
+      "source_filename": "Champions_0670E_s_Sprite.png",
+      "sha256": "693bfbe462c5377ee54b6c60f31036b4756d1cf70f28f30037e99feab51c04f3",
+      "width": 128,
+      "height": 128,
+      "bytes": 9341
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/floette?format=double&season=M-5",
+    "raw_path": "_sources/details/floette.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

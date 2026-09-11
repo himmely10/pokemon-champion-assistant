@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 981,
+  "name": "奇麒麟",
+  "species_name": "奇麒麟",
+  "form_name": null,
+  "wiki_name": "奇麒麟",
+  "directory": "奇麒麟",
+  "source_slug": "farigiraf",
+  "base_stats": {
+    "hp": 120,
+    "attack": 90,
+    "defense": 70,
+    "special_attack": 110,
+    "special_defense": 70,
+    "speed": 60
+  },
+  "base_stat_total": 520,
+  "images": {
+    "normal": {
+      "file": "奇麒麟.png",
+      "source_url": "https://media.52poke.com/wiki/6/63/Champions_0981_Sprite.png",
+      "source_filename": "Champions_0981_Sprite.png",
+      "sha256": "1a2ab6fd398bd251dd7fd01c91539ce44bda32df29360a21bfe5d022b2c4f197",
+      "width": 128,
+      "height": 128,
+      "bytes": 11062
+    },
+    "shiny": {
+      "file": "奇麒麟_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/d/de/Champions_0981_s_Sprite.png",
+      "source_filename": "Champions_0981_s_Sprite.png",
+      "sha256": "dbfcbaddbcb2e808ce55f569f4655fa8490e7fa455689800c6eb2d5845d8bd0e",
+      "width": 128,
+      "height": 128,
+      "bytes": 10995
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/farigiraf?format=double&season=M-5",
+    "raw_path": "_sources/details/farigiraf.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

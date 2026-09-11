@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "超级巨沼怪"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 635,
+  "base_stats": {
+    "attack": 150,
+    "defense": 110,
+    "hp": 100,
+    "special_attack": 95,
+    "special_defense": 110,
+    "speed": 70
+  },
+  "data_ready": true,
+  "dex_number": 260,
+  "directory": "超级巨沼怪",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "超级巨沼怪",
+  "images": {
+    "normal": {
+      "bytes": 15267,
+      "file": "超级巨沼怪.png",
+      "height": 128,
+      "sha256": "96933962507c5c6c0196ea05659582e98118225b3b43cd93570ef5c40eaf3ec0",
+      "source_filename": "Champions_0260M_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/5/5e/Champions_0260M_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 15173,
+      "file": "超级巨沼怪_闪光.png",
+      "height": 128,
+      "sha256": "a87bf7947a3ef5b772218afb5669a23b11e037d77cddcef97ebe369832b98609",
+      "source_filename": "Champions_0260M_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/c8/Champions_0260M_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": "swampertite",
+  "name": "超级巨沼怪",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 10064,
+  "opgg_key": "mega-swampert",
+  "recognition_ready": true,
+  "record_id": "legacy:260:超级巨沼怪",
+  "schema_version": 1,
+  "source_base_key": "swampert",
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-B",
+  "source_slug": "swampert-mega",
+  "species_name": "巨沼怪",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-swampert"
+  },
+  "type_names": [
+    "水",
+    "地面"
+  ],
+  "types": [
+    "water",
+    "ground"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/mega-swampert"
+  },
+  "wiki_name": "超级巨沼怪"
+}

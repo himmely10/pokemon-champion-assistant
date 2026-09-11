@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "大狃拉"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 510,
+  "base_stats": {
+    "attack": 130,
+    "defense": 60,
+    "hp": 80,
+    "special_attack": 40,
+    "special_defense": 80,
+    "speed": 120
+  },
+  "data_ready": true,
+  "dex_number": 903,
+  "directory": "大狃拉",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 11497,
+      "file": "大狃拉.png",
+      "height": 128,
+      "sha256": "ea6c8ec017c5ac1ab448ba17785866f3574abbfceb2921b7e9259d87ae69d742",
+      "source_filename": "Champions_0903_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/d1/Champions_0903_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11395,
+      "file": "大狃拉_闪光.png",
+      "height": 128,
+      "sha256": "d865ad4748221b8f167112c0552ba7d70d629fc829afdd953a31f82bd53a49e1",
+      "source_filename": "Champions_0903_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/2e/Champions_0903_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "大狃拉",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 903,
+  "opgg_key": "sneasler",
+  "recognition_ready": true,
+  "record_id": "legacy:903:大狃拉",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "sneasler",
+  "species_name": "大狃拉",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/sneasler"
+  },
+  "type_names": [
+    "格斗",
+    "毒"
+  ],
+  "types": [
+    "fighting",
+    "poison"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/sneasler"
+  },
+  "wiki_name": "大狃拉"
+}

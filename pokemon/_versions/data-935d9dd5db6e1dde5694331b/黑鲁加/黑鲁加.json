@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "黑鲁加"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 500,
+  "base_stats": {
+    "attack": 90,
+    "defense": 50,
+    "hp": 75,
+    "special_attack": 110,
+    "special_defense": 80,
+    "speed": 95
+  },
+  "data_ready": true,
+  "dex_number": 229,
+  "directory": "黑鲁加",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 13786,
+      "file": "黑鲁加.png",
+      "height": 128,
+      "sha256": "b89bcdc512624b8fc91825cd4901802bc553b3886ba9f9cf8884255f1d109c21",
+      "source_filename": "Champions_0229_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/fb/Champions_0229_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 14367,
+      "file": "黑鲁加_闪光.png",
+      "height": 128,
+      "sha256": "0ad47bd8a58df5ec1fa0b86fab852ea68b2d3aa8323cfd124ec3c36881fa6bd2",
+      "source_filename": "Champions_0229_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b6/Champions_0229_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:229:超级黑鲁加"
+  ],
+  "mega_item": null,
+  "name": "黑鲁加",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 229,
+  "opgg_key": "houndoom",
+  "recognition_ready": true,
+  "record_id": "legacy:229:黑鲁加",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "houndoom",
+  "species_name": "黑鲁加",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/houndoom"
+  },
+  "type_names": [
+    "恶",
+    "火"
+  ],
+  "types": [
+    "dark",
+    "fire"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/houndoom"
+  },
+  "wiki_name": "黑鲁加"
+}

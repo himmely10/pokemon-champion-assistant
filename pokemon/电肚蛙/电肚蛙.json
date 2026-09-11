@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 939,
+  "name": "电肚蛙",
+  "species_name": "电肚蛙",
+  "form_name": null,
+  "wiki_name": "电肚蛙",
+  "directory": "电肚蛙",
+  "source_slug": "bellibolt",
+  "base_stats": {
+    "hp": 109,
+    "attack": 64,
+    "defense": 91,
+    "special_attack": 103,
+    "special_defense": 83,
+    "speed": 45
+  },
+  "base_stat_total": 495,
+  "images": {
+    "normal": {
+      "file": "电肚蛙.png",
+      "source_url": "https://media.52poke.com/wiki/3/3b/Champions_0939_Sprite.png",
+      "source_filename": "Champions_0939_Sprite.png",
+      "sha256": "b89d5ea0242e09404dc8f56dba6833e1e79d1f4fe2101cf8d6cf02655b8ac0dc",
+      "width": 128,
+      "height": 128,
+      "bytes": 12480
+    },
+    "shiny": {
+      "file": "电肚蛙_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/9/9a/Champions_0939_s_Sprite.png",
+      "source_filename": "Champions_0939_s_Sprite.png",
+      "sha256": "99a7ada22abefb997b6a0764fb9f2f6bb48b196b31732964516d739e3332b200",
+      "width": 128,
+      "height": 128,
+      "bytes": 12330
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/bellibolt?format=double&season=M-5",
+    "raw_path": "_sources/details/bellibolt.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

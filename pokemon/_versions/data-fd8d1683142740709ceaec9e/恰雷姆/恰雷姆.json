@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "恰雷姆"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 410,
+  "base_stats": {
+    "attack": 60,
+    "defense": 75,
+    "hp": 60,
+    "special_attack": 60,
+    "special_defense": 75,
+    "speed": 80
+  },
+  "data_ready": true,
+  "dex_number": 308,
+  "directory": "恰雷姆",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 10995,
+      "file": "恰雷姆.png",
+      "height": 128,
+      "sha256": "33bd55ddc05808a968cc2d1ff4e3da1ee7a8e7cee4b91b65be411c26309fd5a7",
+      "source_filename": "Champions_0308_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/42/Champions_0308_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 11275,
+      "file": "恰雷姆_闪光.png",
+      "height": 128,
+      "sha256": "2e87a0c4e0f7a02efd058483dc063d2d66aa241bf696bd9eec9128b0e6580181",
+      "source_filename": "Champions_0308_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/d/d5/Champions_0308_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [
+    "legacy:308:超级恰雷姆"
+  ],
+  "mega_item": null,
+  "name": "恰雷姆",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 308,
+  "opgg_key": "medicham",
+  "recognition_ready": true,
+  "record_id": "legacy:308:恰雷姆",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "medicham",
+  "species_name": "恰雷姆",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/medicham"
+  },
+  "type_names": [
+    "格斗",
+    "超能力"
+  ],
+  "types": [
+    "fighting",
+    "psychic"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/medicham"
+  },
+  "wiki_name": "恰雷姆"
+}

@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "黏美龙"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 600,
+  "base_stats": {
+    "attack": 100,
+    "defense": 70,
+    "hp": 90,
+    "special_attack": 110,
+    "special_defense": 150,
+    "speed": 80
+  },
+  "data_ready": true,
+  "dex_number": 706,
+  "directory": "黏美龙",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 12230,
+      "file": "黏美龙.png",
+      "height": 128,
+      "sha256": "100720845f691585857304fe0c67ee4f00d2a64c538992d51646de5f1b404abc",
+      "source_filename": "Champions_0706_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/c/c2/Champions_0706_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12255,
+      "file": "黏美龙_闪光.png",
+      "height": 128,
+      "sha256": "53cce65f14c5734c7f557847b907c5bd8a12a53ace598d5e80a4a146198f48d8",
+      "source_filename": "Champions_0706_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/1/14/Champions_0706_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "黏美龙",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 706,
+  "opgg_key": "goodra",
+  "recognition_ready": true,
+  "record_id": "legacy:706:黏美龙",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "goodra",
+  "species_name": "黏美龙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/goodra"
+  },
+  "type_names": [
+    "龙"
+  ],
+  "types": [
+    "dragon"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/goodra"
+  },
+  "wiki_name": "黏美龙"
+}

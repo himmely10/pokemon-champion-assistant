@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 534,
+  "name": "修建老匠",
+  "species_name": "修建老匠",
+  "form_name": null,
+  "wiki_name": "修建老匠",
+  "directory": "修建老匠",
+  "source_slug": "conkeldurr",
+  "base_stats": {
+    "hp": 105,
+    "attack": 140,
+    "defense": 95,
+    "special_attack": 55,
+    "special_defense": 65,
+    "speed": 45
+  },
+  "base_stat_total": 505,
+  "images": {
+    "normal": {
+      "file": "修建老匠.png",
+      "source_url": "https://media.52poke.com/wiki/3/34/Champions_0534_Sprite.png",
+      "source_filename": "Champions_0534_Sprite.png",
+      "sha256": "19636e165bb95721e4447e86c8c01652e0af1de12a0016fe14cd10268d473bcb",
+      "width": 128,
+      "height": 128,
+      "bytes": 15750
+    },
+    "shiny": {
+      "file": "修建老匠_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/8/88/Champions_0534_s_Sprite.png",
+      "source_filename": "Champions_0534_s_Sprite.png",
+      "sha256": "bca2b09c795c93d9e691ddb58535fb12c5a7b3927da09e47de12a6144daed939",
+      "width": 128,
+      "height": 128,
+      "bytes": 15608
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/conkeldurr?format=double&season=M-5",
+    "raw_path": "_sources/details/conkeldurr.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

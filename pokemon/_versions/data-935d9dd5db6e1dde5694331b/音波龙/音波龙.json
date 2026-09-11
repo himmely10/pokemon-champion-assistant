@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "音波龙"
+  ],
+  "availability": "source_listed_unverified_rules",
+  "base_stat_total": 535,
+  "base_stats": {
+    "attack": 70,
+    "defense": 80,
+    "hp": 85,
+    "special_attack": 97,
+    "special_defense": 80,
+    "speed": 123
+  },
+  "data_ready": true,
+  "dex_number": 715,
+  "directory": "音波龙",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 12620,
+      "file": "音波龙.png",
+      "height": 128,
+      "sha256": "7339c5b57a3c65548053132b0ec9349046bc1b36fe4bf4e15298350e2a362870",
+      "source_filename": "Champions_0715_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/7/76/Champions_0715_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13432,
+      "file": "音波龙_闪光.png",
+      "height": 128,
+      "sha256": "c06419a20b36593875a7277e72f52088496e13a337eefa860ca5e8905d32c11e",
+      "source_filename": "Champions_0715_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/25/Champions_0715_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mega_form_ids": [],
+  "mega_item": null,
+  "name": "音波龙",
+  "name_source": "pokechamdb_zh_hans",
+  "opgg_id": 715,
+  "opgg_key": "noivern",
+  "recognition_ready": true,
+  "record_id": "legacy:715:音波龙",
+  "schema_version": 1,
+  "source_base_key": null,
+  "source_is_new": false,
+  "source_presence": "present",
+  "source_regulation": "M-A",
+  "source_slug": "noivern",
+  "species_name": "音波龙",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "pokemon.stats",
+    "provider": "opgg",
+    "raw_path": "_sources/opgg.html",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/noivern"
+  },
+  "type_names": [
+    "飞行",
+    "龙"
+  ],
+  "types": [
+    "flying",
+    "dragon"
+  ],
+  "types_ready": true,
+  "types_source": {
+    "field": "pokemon.types",
+    "provider": "opgg",
+    "url": "https://op.gg/zh-cn/pokemon-champions/pokedex/noivern"
+  },
+  "wiki_name": "音波龙"
+}

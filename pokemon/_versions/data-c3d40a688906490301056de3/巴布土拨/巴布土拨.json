@@ -1,0 +1,49 @@
+{
+  "base_stat_total": 490,
+  "base_stats": {
+    "attack": 115,
+    "defense": 70,
+    "hp": 70,
+    "special_attack": 70,
+    "special_defense": 60,
+    "speed": 105
+  },
+  "dex_number": 923,
+  "directory": "巴布土拨",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 12551,
+      "file": "巴布土拨.png",
+      "height": 128,
+      "sha256": "a20af4b45be046dfe310449a0ecc13b5ebbce2a3cb674e2d7e358df815f34910",
+      "source_filename": "Champions_0923_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/8/80/Champions_0923_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 12518,
+      "file": "巴布土拨_闪光.png",
+      "height": 128,
+      "sha256": "93963246621732362c531c5f3a5607c1faa4aef0c3d9e4bda08f3cc03a43e51c",
+      "source_filename": "Champions_0923_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/3/3d/Champions_0923_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "mapping_note": "PokéChamp DB 未提供该条目；经用户允许，使用百科种族值补齐。",
+  "name": "巴布土拨",
+  "name_source": "52poke_zh_hans",
+  "schema_version": 1,
+  "source_slug": "pawmot",
+  "species_name": "巴布土拨",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "种族值",
+    "provider": "52poke",
+    "raw_path": "_sources/wiki-923-main.html",
+    "url": "https://wiki.52poke.com/zh-hans/巴布土拨#种族值"
+  },
+  "wiki_name": "巴布土拨"
+}

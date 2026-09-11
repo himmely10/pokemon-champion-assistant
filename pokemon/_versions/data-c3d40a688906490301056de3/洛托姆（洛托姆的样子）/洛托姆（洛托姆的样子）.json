@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 440,
+  "base_stats": {
+    "attack": 50,
+    "defense": 77,
+    "hp": 50,
+    "special_attack": 95,
+    "special_defense": 77,
+    "speed": 91
+  },
+  "dex_number": 479,
+  "directory": "洛托姆（洛托姆的样子）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "洛托姆的样子",
+  "images": {
+    "normal": {
+      "bytes": 8153,
+      "file": "洛托姆（洛托姆的样子）.png",
+      "height": 128,
+      "sha256": "907eecb68d7c271c847646edaaae3345b06aca3959a2c67102d9cfb7fb83bbb9",
+      "source_filename": "Champions_0479_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/f/f1/Champions_0479_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 8079,
+      "file": "洛托姆（洛托姆的样子）_闪光.png",
+      "height": 128,
+      "sha256": "b7d85f8b1b538d97c1cea5fba08cbb7b64facf5b7ac599a1f44a3cafb1aacb7b",
+      "source_filename": "Champions_0479_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/a/a9/Champions_0479_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "洛托姆（洛托姆的样子）",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "rotom",
+  "species_name": "洛托姆",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/rotom.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/rotom?format=double&season=M-5"
+  },
+  "wiki_name": "洛托姆（洛托姆的样子）"
+}

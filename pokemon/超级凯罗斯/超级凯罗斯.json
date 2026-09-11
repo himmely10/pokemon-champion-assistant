@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 127,
+  "name": "超级凯罗斯",
+  "species_name": "凯罗斯",
+  "form_name": "超级凯罗斯",
+  "wiki_name": "超级凯罗斯",
+  "directory": "超级凯罗斯",
+  "source_slug": "pinsir-mega",
+  "base_stats": {
+    "hp": 65,
+    "attack": 155,
+    "defense": 120,
+    "special_attack": 65,
+    "special_defense": 90,
+    "speed": 105
+  },
+  "base_stat_total": 600,
+  "images": {
+    "normal": {
+      "file": "超级凯罗斯.png",
+      "source_url": "https://media.52poke.com/wiki/4/4a/Champions_0127M_Sprite.png",
+      "source_filename": "Champions_0127M_Sprite.png",
+      "sha256": "8b9e330eafa0c6e4010b0beede0cbd715b50a4efe51cee98fb48ed295a8cb093",
+      "width": 128,
+      "height": 128,
+      "bytes": 17349
+    },
+    "shiny": {
+      "file": "超级凯罗斯_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/7/7c/Champions_0127M_s_Sprite.png",
+      "source_filename": "Champions_0127M_s_Sprite.png",
+      "sha256": "ed1699ac583ce99bc0493b5c06820a0dc7ae3e6fbc9ad1506fd0eac5a20cb54c",
+      "width": 128,
+      "height": 128,
+      "bytes": 18479
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/pinsir?format=double&season=M-5",
+    "raw_path": "_sources/details/pinsir.html",
+    "field": "megaForms[0].baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

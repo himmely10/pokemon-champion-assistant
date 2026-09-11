@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 475,
+  "base_stats": {
+    "attack": 75,
+    "defense": 60,
+    "hp": 70,
+    "special_attack": 105,
+    "special_defense": 60,
+    "speed": 105
+  },
+  "dex_number": 310,
+  "directory": "雷电兽",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": null,
+  "images": {
+    "normal": {
+      "bytes": 13343,
+      "file": "雷电兽.png",
+      "height": 128,
+      "sha256": "48a6dde64cd1e3eda80b9c84fe64df78c11f41fc49dbb1563bd33b49815df29a",
+      "source_filename": "Champions_0310_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/0/01/Champions_0310_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 13110,
+      "file": "雷电兽_闪光.png",
+      "height": 128,
+      "sha256": "29e2ff451e0e6566c67637f1f2b290c22b143be660a0daca9d9655233424bbea",
+      "source_filename": "Champions_0310_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/2/2d/Champions_0310_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "雷电兽",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "manectric",
+  "species_name": "雷电兽",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/manectric.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/manectric?format=double&season=M-5"
+  },
+  "wiki_name": "雷电兽"
+}

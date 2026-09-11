@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 199,
+  "name": "呆呆王",
+  "species_name": "呆呆王",
+  "form_name": null,
+  "wiki_name": "呆呆王",
+  "directory": "呆呆王",
+  "source_slug": "slowking",
+  "base_stats": {
+    "hp": 95,
+    "attack": 75,
+    "defense": 80,
+    "special_attack": 100,
+    "special_defense": 110,
+    "speed": 30
+  },
+  "base_stat_total": 490,
+  "images": {
+    "normal": {
+      "file": "呆呆王.png",
+      "source_url": "https://media.52poke.com/wiki/e/ea/Champions_0199_Sprite.png",
+      "source_filename": "Champions_0199_Sprite.png",
+      "sha256": "8717d0be6b7faa97a3148cbb6e903c83b375899ab5a99e8b196287bb977301ca",
+      "width": 128,
+      "height": 128,
+      "bytes": 14953
+    },
+    "shiny": {
+      "file": "呆呆王_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/7/76/Champions_0199_s_Sprite.png",
+      "source_filename": "Champions_0199_s_Sprite.png",
+      "sha256": "8d571bb09d420d3585d9491e2f751e658b529d59741106c21baa003612844982",
+      "width": 128,
+      "height": 128,
+      "bytes": 14855
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/slowking?format=double&season=M-5",
+    "raw_path": "_sources/details/slowking.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}

@@ -1,0 +1,48 @@
+{
+  "base_stat_total": 530,
+  "base_stats": {
+    "attack": 92,
+    "defense": 65,
+    "hp": 120,
+    "special_attack": 100,
+    "special_defense": 75,
+    "speed": 78
+  },
+  "dex_number": 902,
+  "directory": "幽尾玄鱼（雌性）",
+  "form_label_source": "52poke_zh_hans",
+  "form_name": "雌性的样子",
+  "images": {
+    "normal": {
+      "bytes": 17364,
+      "file": "幽尾玄鱼（雌性）.png",
+      "height": 128,
+      "sha256": "26de5a0ed9843f7c4313779e40c34116bacbb9991833a3b6820ebed43ffcf838",
+      "source_filename": "Champions_0902F_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/b/b1/Champions_0902F_Sprite.png",
+      "width": 128
+    },
+    "shiny": {
+      "bytes": 17503,
+      "file": "幽尾玄鱼（雌性）_闪光.png",
+      "height": 128,
+      "sha256": "d4b0cef6af10e3b98a6651b87c35344f686e335b0ac8cc4004c2f0c66a3c2a10",
+      "source_filename": "Champions_0902F_s_Sprite.png",
+      "source_url": "https://media.52poke.com/wiki/4/46/Champions_0902F_s_Sprite.png",
+      "width": 128
+    }
+  },
+  "name": "幽尾玄鱼（雌性）",
+  "name_source": "pokechamdb_zh_hans",
+  "schema_version": 1,
+  "source_slug": "basculegion-female",
+  "species_name": "幽尾玄鱼",
+  "stats_mapping": "exact_form",
+  "stats_source": {
+    "field": "profile.baseStats",
+    "provider": "pokechamdb",
+    "raw_path": "_sources/details/basculegion-female.html",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/basculegion-female?format=double&season=M-5"
+  },
+  "wiki_name": "幽尾玄鱼（雌性的样子）"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dex_number": 128,
+  "name": "肯泰罗",
+  "species_name": "肯泰罗",
+  "form_name": null,
+  "wiki_name": "肯泰罗",
+  "directory": "肯泰罗",
+  "source_slug": "tauros",
+  "base_stats": {
+    "hp": 75,
+    "attack": 100,
+    "defense": 95,
+    "special_attack": 40,
+    "special_defense": 70,
+    "speed": 110
+  },
+  "base_stat_total": 490,
+  "images": {
+    "normal": {
+      "file": "肯泰罗.png",
+      "source_url": "https://media.52poke.com/wiki/a/a4/Champions_0128_Sprite.png",
+      "source_filename": "Champions_0128_Sprite.png",
+      "sha256": "36ab6b75b8625117603b2e6854d6df0471d8ea2a7f569eb4454b5a6585c9b2b4",
+      "width": 128,
+      "height": 128,
+      "bytes": 14010
+    },
+    "shiny": {
+      "file": "肯泰罗_闪光.png",
+      "source_url": "https://media.52poke.com/wiki/e/ef/Champions_0128_s_Sprite.png",
+      "source_filename": "Champions_0128_s_Sprite.png",
+      "sha256": "5262f754a19a29605e7ea3e83b51127872dec6c4765e72df325f4340aa885405",
+      "width": 128,
+      "height": 128,
+      "bytes": 14396
+    }
+  },
+  "stats_source": {
+    "provider": "pokechamdb",
+    "url": "https://pokechamdb.com/zh-Hans/pokemon/tauros?format=double&season=M-5",
+    "raw_path": "_sources/details/tauros.html",
+    "field": "profile.baseStats"
+  },
+  "name_source": "pokechamdb_zh_hans",
+  "form_label_source": "52poke_zh_hans",
+  "stats_mapping": "exact_form"
+}
