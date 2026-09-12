@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "description": "Two local real screenshots; generated perturbations are synthetic, not independent battle samples.",
+  "screenshots": [
+    {"path": "例子.png", "names": ["苍炎刃鬼", "风妖精", "巨金怪", "来悲粗茶", "烈咬陆鲨", "姆克鹰"]},
+    {"path": "例子2.png", "names": ["暴飞龙", "仙子伊布", "风速狗（洗翠）", "大狃拉", "奇麒麟", "巨钳螳螂"]}
+  ]
+}

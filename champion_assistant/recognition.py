@@ -86,6 +86,30 @@ class OpponentRecognizer:
             raise ValueError("模板尺寸必须为不小于 8 的整数。")
         if not 0 <= self.layout["min_score"] <= 1 or not 0 <= self.layout["min_margin"] <= 1:
             raise ValueError("识别阈值必须在 0 到 1 之间。")
+        padding = self.layout.get("slot_padding_y", 0)
+        if type(padding) is not int or not 0 <= padding <= 16:
+            raise ValueError("槽位垂直扩展必须为 0 到 16 的整数参考像素。")
+
+    def crop_boxes(self) -> list[list[int]]:
+        """Expand search space within the gap midpoint, never into another slot.
+
+        Missing padding retains the original layout behavior. Geometry is computed
+        per call so diagnostics and recognition share exactly the same boxes.
+        """
+        _, height = self.layout["reference_size"]
+        padding = self.layout.get("slot_padding_y", 0)
+        boxes = []
+        for x1, y1, x2, y2 in self.layout["slots"]:
+            top, bottom = max(0, y1 - padding), min(height, y2 + padding)
+            for ox1, oy1, ox2, oy2 in self.layout["slots"]:
+                if min(x2, ox2) <= max(x1, ox1):
+                    continue
+                if oy2 <= y1:
+                    top = max(top, (oy2 + y1 + 1) // 2)
+                elif oy1 >= y2:
+                    bottom = min(bottom, (y2 + oy1) // 2)
+            boxes.append([x1, top, x2, bottom])
+        return boxes
 
     def prepare_image(self, image: Image.Image) -> tuple[Image.Image, list[Image.Image]]:
         width, height = self.layout["reference_size"]
@@ -93,7 +117,7 @@ class OpponentRecognizer:
         if aspect_error > 0.02:
             raise ValueError("截图比例与布局不符；默认需要完整 16:9 游戏画面，请裁掉窗口边框或使用自定义布局。")
         normalized = image.convert("RGB").resize((width, height), Image.Resampling.LANCZOS)
-        return normalized, [normalized.crop(box) for box in self.layout["slots"]]
+        return normalized, [normalized.crop(box) for box in self.crop_boxes()]
 
     def match_slot(self, crop: Image.Image, slot: int = 1) -> dict:
         roi = np.array(crop.convert("RGB"))
@@ -157,10 +181,19 @@ class OpponentRecognizer:
         with ThreadPoolExecutor(max_workers=3) as executor:
             results = list(executor.map(lambda args: self.match_slot(*args), zip(crops, range(1, 7))))
         width, height = self.layout["reference_size"]
-        for result, box in zip(results, self.layout["slots"]):
+        def input_box(box):
+            return [round(box[0] * image.width / width), round(box[1] * image.height / height),
+                    round(box[2] * image.width / width), round(box[3] * image.height / height)]
+
+        for result, box in zip(results, self.crop_boxes()):
             result["crop_box_reference"] = box
-            result["crop_box_input"] = [round(box[0] * image.width / width), round(box[1] * image.height / height),
-                                         round(box[2] * image.width / width), round(box[3] * image.height / height)]
+            result["crop_box_input"] = input_box(box)
+            for candidate in result["candidates"]:
+                match = candidate["match_box"]
+                x, y = box[0] + match["x"], box[1] + match["y"]
+                reference = [x, y, x + match["size"], y + match["size"]]
+                candidate["match_box_reference"] = reference
+                candidate["match_box_input"] = input_box(reference)
         report = {"schema_version": 1, "dataset_id": self.dataset_id, "layout": self.layout["name"], "input_size": list(image.size),
                   "reference_size": [width, height], "unique_templates": len(self.templates),
                   "thresholds": {k: self.layout[k] for k in ("min_score", "min_margin")},
