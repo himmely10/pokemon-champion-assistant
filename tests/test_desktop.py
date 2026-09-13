@@ -133,9 +133,9 @@ def test_ui_mega_preview_move_click_search_and_tooltip(window, qtbot):
     assert window.move_effect.text() == item.data(Qt.ItemDataRole.UserRole)["description"]
 
 
-def test_drag_image_recognition_and_new_input_clears_previous(window, qtbot):
+def test_drag_image_recognition_and_failed_input_keeps_previous(window, qtbot):
     mime = QMimeData()
-    mime.setUrls([QUrl.fromLocalFile(str(ROOT / "例子.png"))])
+    mime.setUrls([QUrl.fromLocalFile(str(ROOT / "图片/例子.png"))])
     drop = QDropEvent(QPointF(20, 20), Qt.DropAction.CopyAction, mime,
                       Qt.MouseButton.LeftButton, Qt.KeyboardModifier.NoModifier)
     window.preview.dropEvent(drop)
@@ -149,9 +149,11 @@ def test_drag_image_recognition_and_new_input_clears_previous(window, qtbot):
     window.correct_slot()
     assert window.opponents[4]["name"] == "喷火龙" and window.opponents[4]["manual"]
     window.open_image(str(ROOT / "不存在.png"))
-    assert window.opponents == [] and window.preview.image is None
+    previous = window.last_result
+    assert window.opponents and window.preview.image is not None
+    assert '上次分析' in window.input_label.text()
     qtbot.waitUntil(lambda: not window.busy, timeout=5000)
-    assert window.last_result is None and "无法打开" in window.status_label.text()
+    assert window.last_result is previous and "无法打开" in window.status_label.text()
 
 
 def test_cancel_discards_late_result(qtbot, tmp_path):

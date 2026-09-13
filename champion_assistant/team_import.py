@@ -6,12 +6,14 @@ from hashlib import sha256
 from pathlib import Path
 import re
 import unicodedata
+from threading import Lock
 
 import cv2
 import numpy as np
 from PIL import Image, ImageOps
 
 from .teams import STATS, blank_member
+from .paths import app_paths
 
 
 def normalize(text):
@@ -26,6 +28,13 @@ def cards(image):
     mask = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, np.ones((kernel, kernel), np.uint8))
     contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     boxes = [cv2.boundingRect(c) for c in contours]
+    if sum(.30 < w / image.width < .45 and .20 < h / w < .31 for x, y, w, h in boxes) != 6:
+        # Sprites can bridge adjacent cards. Remove narrow vertical connections
+        # only when ordinary contour detection cannot recover the six cards.
+        mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN,
+                               np.ones((1, max(3, round(image.width * .039))), np.uint8))
+        contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        boxes = [cv2.boundingRect(c) for c in contours]
     boxes = [(x, y + h - round(w * .257), w, round(w * .257)) for x, y, w, h in boxes
              if .30 < w / image.width < .45 and .20 < h / w < .31]
     if len(boxes) != 6:
@@ -64,14 +73,47 @@ class LocalOCR:
             from rapidocr import RapidOCR
         except ImportError as exc:
             raise ValueError('请先安装 requirements-ocr.txt 中的本地 OCR 依赖。') from exc
-        self.engine = RapidOCR(params={'Global.log_level': 'error', 'EngineConfig.onnxruntime.intra_op_num_threads': 2})
+        params = {'Global.log_level': 'error', 'EngineConfig.onnxruntime.intra_op_num_threads': 2}
+        paths = app_paths()
+        if paths.installed:
+            for task, filename in [('Det', 'PP-OCRv6_det_small.onnx'), ('Rec', 'PP-OCRv6_rec_small.onnx'),
+                                   ('Cls', 'ch_ppocr_mobile_v2.0_cls_mobile.onnx')]:
+                model = paths.resource('models/' + filename)
+                if not model.is_file():
+                    raise ValueError('缺少内置 OCR 模型，请重新安装完整版本。')
+                params[task + '.model_path'] = str(model)
+        self.engine = RapidOCR(params=params)
+        # RapidOCR keeps mutable inference/output state. Sharing its models is safe
+        # only when each call and extraction of its result are serialized.
+        self._lock = Lock()
 
     def read(self, image, *, detect=False):
         # PIL RGB must be passed as PIL, not an ndarray that the OCR loader treats as BGR.
-        result = self.engine(image, use_det=detect, use_cls=False)
-        if result.txts is None:
-            return '', 0.0
-        return ' '.join(result.txts), min(float(v) for v in result.scores)
+        with self._lock:
+            result = self.engine(image, use_det=detect, use_cls=False)
+            if result.txts is None:
+                return '', 0.0
+            return ' '.join(result.txts), min(float(v) for v in result.scores)
+
+
+_ocr_lock = Lock()
+_ocr_cached = None
+
+
+def shared_local_ocr():
+    """One lazy model instance per resource bundle, never cache team/rules/results.
+
+    Keeping only the latest bundle bounds retained model memory. Failed model
+    initialization leaves the previous entry intact and a later import can retry.
+    """
+    global _ocr_cached
+    paths = app_paths()
+    key = (str(paths.resources.resolve()), paths.installed)
+    with _ocr_lock:
+        if _ocr_cached is None or _ocr_cached[0] != key:
+            instance = LocalOCR()
+            _ocr_cached = (key, instance)
+        return _ocr_cached[1]
 
 
 def color_mark(image, kind):
@@ -95,7 +137,7 @@ def color_mark(image, kind):
 class ScreenshotImporter:
     def __init__(self, rules, ocr=None):
         self.rules = rules
-        self.ocr = ocr if ocr is not None else LocalOCR()
+        self.ocr = ocr if ocr is not None else shared_local_ocr()
 
     def field(self, image, box, rect, *, retry=False):
         crop = region(image, box, rect)
@@ -160,6 +202,10 @@ class ScreenshotImporter:
         boxes = cards(image)
         code = self.field(image, (0, 0, image.width, image.height), (.33, .10, .55, .153))
         code_match = re.search(r'(?:ID|1D)\s*[：:]?\s*([A-Z0-9]{10})(?![A-Z0-9])', code['text'].upper())
+        if not code_match:
+            # Confirmation screens place the ID farther left than video layouts.
+            code = self.field(image, (0, 0, image.width, image.height), (.23, .085, .55, .16))
+            code_match = re.search(r'(?:ID|1D)\s*[：:]?\s*([A-Z0-9]{10})(?![A-Z0-9])', code['text'].upper())
         team_code = code_match.group(1) if code_match and code['score'] >= .90 else None
         # Verify page content, not just purple-card geometry.
         probe = self.field(image, boxes[0], (.10, .28, .28, .48))
@@ -187,7 +233,7 @@ class ScreenshotImporter:
             evidence = {'name': name, 'gender': gender}
             if mode == 'ability':
                 ability = self.field(image, box, (.115, .28, .59, .50), retry=True)
-                item = self.field(image, box, (.115, .52, .59, .76))
+                item = self.field(image, box, (.115, .52, .59, .76), retry=True)
                 member['ability'] = self.resolve(ability, [(self.rules.options['abilities'].get(k, {}).get('name', k), k)
                                                          for k in self.rules.ability_keys(identity)])
                 member['item'] = self.resolve(item, [(v['name'], k) for k, v in self.rules.options['items'].items()])

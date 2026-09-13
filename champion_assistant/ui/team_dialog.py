@@ -57,7 +57,7 @@ class MemberEditor(QWidget):
         for i, (key, name) in enumerate(STATS.items()):
             box = QSpinBox()
             box.setRange(-1, rules.options['point_rules']['per_stat'])
-            box.setSpecialValueText('未知')
+            box.setSpecialValueText(name+'未填写')
             box.setValue(-1)
             self.points[key] = box
             layout.addWidget(QLabel(name), 1 + i // 2, (i % 2) * 2)
@@ -65,14 +65,14 @@ class MemberEditor(QWidget):
             box.valueChanged.connect(self.edited)
         self.total = QLabel()
         layout.addWidget(self.total, 4, 0, 1, 4)
-        self.nature = combo([(self.nature_label(n), k) for k, n in rules.options['natures'].items()])
-        self.ability = combo([])
-        self.item = combo([('无道具（已确认）', 'none')] + [(v['name'], k) for k, v in rules.options['items'].items()])
+        self.nature = combo([(self.nature_label(n), k) for k, n in rules.options['natures'].items()], '性格未填写')
+        self.ability = combo([], '特性未填写')
+        self.item = combo([('无道具（已确认）', 'none')] + [(v['name'], k) for k, v in rules.options['items'].items()], '道具未填写')
         for row, (name, box) in enumerate([('性格', self.nature), ('特性', self.ability), ('道具', self.item)], 5):
             layout.addWidget(QLabel(name), row, 0)
             layout.addWidget(box, row, 1, 1, 3)
             box.currentTextChanged.connect(self.edited)
-        self.moves = [combo([]) for _ in range(4)]
+        self.moves = [combo([], f'招式 {i+1} 未填写') for i in range(4)]
         for i, box in enumerate(self.moves):
             layout.addWidget(QLabel(f'招式 {i + 1}'), 8 + i, 0)
             layout.addWidget(box, 8 + i, 1, 1, 3)
@@ -98,12 +98,12 @@ class MemberEditor(QWidget):
         self.nature.setCurrentIndex(0)
         self.item.setCurrentIndex(0)
         self.ability.clear()
-        self.ability.addItem('未知 / 未填写', None)
+        self.ability.addItem('特性未填写', None)
         for key in self.rules.ability_keys(identity):
             self.ability.addItem(self.rules.options['abilities'].get(key, {}).get('name', key), key)
-        for box in self.moves:
+        for i, box in enumerate(self.moves):
             box.clear()
-            box.addItem('未知 / 未填写', None)
+            box.addItem(f'招式 {i+1} 未填写', None)
             for key in self.rules.move_keys(identity):
                 m = self.rules.catalog.moves[key]
                 box.addItem(f"{m['name']} · {TYPE_NAMES[m['type']]} · {power_label(m)} / {accuracy_label(m)}", key)
@@ -299,7 +299,7 @@ class TeamDialog(QDialog):
         if not self.may_discard():
             return
         from .team_import_dialog import TeamImportDialog
-        dialog = TeamImportDialog(self.rules, self)
+        dialog = TeamImportDialog(self.rules, self, obs_settings=lambda: getattr(self.parent(), 'obs_settings', {}))
         if dialog.exec() == QDialog.DialogCode.Accepted:
             result = dialog.result_draft
             self.refresh_list()

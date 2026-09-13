@@ -120,13 +120,14 @@ def validate_index(index, folder):
     records = index.get("pokemon")
     if not isinstance(records, list) or not records:
         raise ValueError("资料索引为空")
-    names, identities = set(), set()
+    record_ids, identities = set(), set()
     images = ready = 0
     for record in records:
         name, directory = record["name"], record["directory"]
-        if name in names or directory.casefold() in identities:
-            raise ValueError(f"重复名称／目录：{name}")
-        names.add(name)
+        identifier = record.get('record_id', directory)
+        if identifier in record_ids or directory.casefold() in identities:
+            raise ValueError(f"重复身份／目录：{name}")
+        record_ids.add(identifier)
         identities.add(directory.casefold())
         confined(folder, directory)
         stats = record["base_stats"]
@@ -184,10 +185,22 @@ def validate_bundle(folder):
             raise ValueError("索引引用了清单外的文件")
         if read_json(confined(folder, required[0])) != record:
             raise ValueError(f"单体资料与索引不一致：{record['name']}")
-    return {**validate_index(index, folder), "bundle_id": manifest["bundle_id"]}
+    result = {**validate_index(index, folder), "bundle_id": manifest["bundle_id"]}
+    if 'catalog.sqlite' in manifest['files']:
+        from .sqlite_catalog import read_catalog_database
+        facts = read_catalog_database(folder / 'catalog.sqlite')
+        if (facts['index'] != index
+                or facts['source'] != read_json(folder / 'source_catalog.json')
+                or facts['moves'] != read_json(folder / 'moves.json')
+                or facts['policy'] != read_json(folder / 'recognition_identity_groups.json')):
+            raise ValueError('SQLite 与采集输入领域数据不一致')
+        result['reference_schema'] = 1
+    elif manifest.get('reference_schema') is not None:
+        raise ValueError('资料包缺少 catalog.sqlite')
+    return result
 
 
-def make_bundle(root, index, assets_root, identity_policy, extra_files=None):
+def make_bundle(root, index, assets_root, identity_policy, extra_files=None, *, reference_database=None):
     """Write every file before publishing anything. Unpublished stages are harmless."""
     stage = confined(root, f"_staging/{uuid.uuid4().hex}")
     stage.mkdir(parents=True)
@@ -202,9 +215,20 @@ def make_bundle(root, index, assets_root, identity_policy, extra_files=None):
     save_json(stage / "recognition_identity_groups.json", identity_policy)
     for relative, content in (extra_files or {}).items():
         atomic_bytes(confined(stage, relative), content)
+    # Old static-only snapshots remain valid for rollback. Complete new snapshots
+    # get SQLite by default; a failed domain conversion never silently downgrades.
+    if reference_database is None:
+        reference_database = ((stage / 'source_catalog.json').exists() and (stage / 'moves.json').exists()
+                              and bool(read_json(stage / 'moves.json')))
+    if reference_database:
+        from .sqlite_catalog import build_catalog_database
+        build_catalog_database(stage / 'catalog.sqlite', index, read_json(stage / 'source_catalog.json'),
+                               read_json(stage / 'moves.json'), identity_policy)
     files = {p.relative_to(stage).as_posix(): digest(p.read_bytes()) for p in sorted(stage.rglob("*")) if p.is_file()}
     bundle_id = "data-" + digest(json_bytes(files))[:24]
-    save_json(stage / "manifest.json", {"schema_version": 1, "bundle_id": bundle_id, "created_at": now(), "files": files})
+    manifest = {"schema_version": 1, "bundle_id": bundle_id, "created_at": now(), "files": files}
+    if reference_database: manifest['reference_schema'] = 1
+    save_json(stage / "manifest.json", manifest)
     validate_bundle(stage)
     target = confined(root, f"_versions/{bundle_id}")
     target.parent.mkdir(parents=True, exist_ok=True)

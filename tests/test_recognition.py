@@ -21,7 +21,7 @@ def recognizer():
 
 @pytest.fixture(scope="module")
 def screenshot():
-    with Image.open(PROJECT_ROOT / "例子.png") as image:
+    with Image.open(PROJECT_ROOT / "图片/例子.png") as image:
         return image.convert("RGB")
 
 
@@ -62,7 +62,7 @@ def test_synthetic_small_translation(recognizer, sample, offset):
     # Difficult perturbations may abstain; accepted names must never change identity.
     for row, expected in zip(result["opponent"], sample["names"]):
         assert row["name"] in (None, expected)
-    expected_count = 5 if sample["path"] == "例子2.png" and offset == (-4, -4) else 6
+    expected_count = 5 if sample["path"] == "图片/例子2.png" and offset == (-4, -4) else 6
     assert result["recognized_count"] == expected_count
 
 

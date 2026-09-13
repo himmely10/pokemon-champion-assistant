@@ -158,6 +158,15 @@ class UsageClient:
         return parse_detail(self.call("getPokemonTierRankedBattleDetail", args), key, season, fallback)
 
 
+def load_usage_snapshot(path):
+    """Read a fixed snapshot path without consulting a mutable current pointer."""
+    path = Path(path)
+    if path.suffix == '.sqlite':
+        from .sqlite_catalog import read_usage_database
+        return read_usage_database(path)
+    return read_json(path)
+
+
 def load_usage(root):
     root = Path(root)
     if not (root / "current.json").exists():
@@ -169,7 +178,42 @@ def load_usage(root):
     result = json.loads(data)
     if result.get("format") != "double" or result.get("schema_version") != 1:
         raise ValueError("采用率快照模式不匹配")
+    if pointer.get('database_file'):
+        path = confined(root, pointer['database_file'])
+        if digest(path.read_bytes()) != pointer.get('database_sha256'):
+            raise ValueError('采用率数据库校验失败')
+        sql_result = load_usage_snapshot(path)
+        if sql_result != result:
+            raise ValueError('采用率数据库与来源证据不一致')
+        result = sql_result
+    elif pointer.get('reference_schema'):
+        raise ValueError('采用率快照缺少数据库')
     return result
+
+
+def write_usage_snapshot(root, snapshot):
+    """Publish immutable JSON evidence and authoritative SQL before the pointer."""
+    from .sqlite_catalog import build_usage_database, read_usage_database
+    root = Path(root)
+    data = json_bytes(snapshot)
+    checksum = digest(data)
+    relative = f'snapshots/usage-{checksum[:24]}.json'
+    sql_relative = f'snapshots/usage-{checksum[:24]}/usage.sqlite'
+    path = root / sql_relative
+    if path.exists():
+        if read_usage_database(path) != snapshot:
+            raise ValueError('已有采用率数据库内容不符')
+    else:
+        build_usage_database(path, snapshot)
+    # Never modify an existing evidence file, even on a repeated identical update.
+    if (root/relative).exists():
+        if (root/relative).read_bytes() != data: raise ValueError('已有采用率证据校验失败')
+    else:
+        atomic_bytes(root / relative, data)
+    save_json(root / 'current.json', {'file': relative, 'sha256': checksum,
+                                    'database_file': sql_relative, 'database_sha256': digest(path.read_bytes()),
+                                    'reference_schema': 1})
+    return relative
 
 
 def update_usage(root, *, due_hours=None, client=None, progress=lambda message: None):
@@ -208,11 +252,7 @@ def update_usage(root, *, due_hours=None, client=None, progress=lambda message: 
         snapshot = {"schema_version": 1, "features_version": 2, "format": "double", "season": season, "fetched_at": now(),
                     "ranking_updated_at": ranking.get("createdAt"), "source_url": TIER_URL,
                     "pokemon": entries, "errors": errors}
-        data = json_bytes(snapshot)
-        checksum = digest(data)
-        relative = f"snapshots/usage-{checksum[:24]}.json"
-        atomic_bytes(root / relative, data)
-        save_json(root / "current.json", {"file": relative, "sha256": checksum})
+        relative = write_usage_snapshot(root, snapshot)
         return {"status": "partial" if errors else "updated", "season": season,
                 "entries": len(entries), "errors": len(errors), "snapshot": relative}
 
@@ -241,8 +281,5 @@ def reparse_usage_cache(root):
                 if parsed['source_updated_at']!=entry['source_updated_at'] or parsed['moves']!=entry['moves']:continue
                 entry.update(training=parsed.get('training',[]),natures=parsed.get('natures',[]))
                 count+=1;break
-        data=json_bytes(snapshot);checksum=digest(data)
-        relative=f'snapshots/usage-{checksum[:24]}.json'
-        atomic_bytes(root/relative,data)
-        save_json(root/'current.json',{'file':relative,'sha256':checksum})
+        relative=write_usage_snapshot(root,snapshot)
         return {'status':'cache_reparsed','entries':count,'snapshot':relative}

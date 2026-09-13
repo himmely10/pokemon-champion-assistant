@@ -8,8 +8,11 @@ import subprocess
 
 from .teams import STATS, TeamRules, blank_member
 from .data.storage import read_json
+from .battle_effects import engine_side
 
-ROOT = Path(__file__).resolve().parents[1]
+from .paths import app_paths, node_executable
+
+ROOT = app_paths().resources
 ENGINE = ROOT/'damage_engine'
 STAT_IDS = dict(zip(STATS, ('hp', 'atk', 'def', 'spa', 'spd', 'spe')))
 RULE_VERSION = 'champions-e7fd7e5-single-target-v1'
@@ -22,7 +25,8 @@ def identifier(text):
 def battle_defaults():
     return {'hp': 0, 'status': '', 'boosts': dict.fromkeys(list(STATS)[1:], 0),
             'ability_on': False, 'allies_fainted': 0, 'reflect': False, 'light_screen': False,
-            'protected': False, 'helping_hand': False, 'friend_guard': False, 'tailwind': False}
+            'protected': False, 'helping_hand': False, 'friend_guard': False, 'tailwind': False,
+            'aurora_veil': False}
 
 
 class DamageService:
@@ -30,6 +34,17 @@ class DamageService:
         self.catalog, self.rules = catalog, TeamRules(catalog)
         self.meta = read_json(ENGINE/'catalog.json')
         self.lookups = {k: {v['id']: v for v in values} for k, values in self.meta.items()}
+
+    def speed(self, member, battle, environment):
+        """Exact vendored speed calculation; incomplete builds remain unavailable."""
+        try:
+            job = {'kind':'speed', 'attacker':self.prepare(member,battle),
+                   'field':{'weather':environment.get('weather') or None,
+                            'terrain':environment.get('terrain') or None,
+                            'attackerSide':engine_side(battle)}}
+            return self.execute([job])[0]
+        except (ValueError,KeyError,TypeError) as exc:
+            return {'status':'unavailable','reason':str(exc)}
 
     def species(self, record):
         key = record.get('opgg_key') or record['source_slug']
@@ -161,8 +176,7 @@ class DamageService:
             raise ValueError('天气或场地无效')
         rows, jobs = [], []
         def side(b):
-            return {'isReflect':b['reflect'], 'isLightScreen':b['light_screen'], 'isProtected':b['protected'],
-                    'isHelpingHand':b['helping_hand'], 'isFriendGuard':b['friend_guard'], 'isTailwind':b['tailwind']}
+            return engine_side(b)
         for scenario_index,scenario in enumerate(scenarios):
             enemy, enemy_battle = scenario['member'], scenario['battle']
             record = self.rules.record(enemy['identity'])
@@ -184,6 +198,7 @@ class DamageService:
                             or (move.get('power') is not None and move['power'] > 0 and move['power'] != engine_move.get('basePower'))):
                             raise ValueError('招式资料与规则快照不同，需核对更新后再计算')
                         job = {'attacker':self.prepare(attacker, ab), 'defender':self.prepare(defender, db), 'move':key,
+                               'charge_boost_included':ab.get('charge_boost_included'),
                                'critical':environment['critical'], 'field':{'gameType':'Doubles',
                                'weather':environment['weather'] or None, 'terrain':environment['terrain'] or None,
                                'isSingleTarget':environment['targets'] == 1, 'attackerSide':side(ab), 'defenderSide':side(db)}}
@@ -232,7 +247,7 @@ class DamageService:
         return result
 
     def execute(self, jobs):
-        node = shutil.which('node') or str(Path('C:/Program Files/nodejs/node.exe'))
+        node = node_executable()
         try:
             result = subprocess.run([node, str(ENGINE/'bridge.cjs')], input=json.dumps(jobs, ensure_ascii=False),
                 encoding='utf-8', capture_output=True, timeout=25, cwd=ENGINE,

@@ -9,10 +9,11 @@ from PySide6.QtGui import QColor, QDesktopServices, QFont, QIcon, QPixmap
 from PySide6.QtWidgets import (QAbstractItemView, QComboBox, QCompleter, QFileDialog, QFrame,
     QGridLayout, QGroupBox, QHBoxLayout, QHeaderView, QLabel, QLineEdit, QListWidget,
     QListWidgetItem, QMainWindow, QProgressBar, QPushButton, QScrollArea, QSplitter,
-    QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QSizePolicy, QTabWidget)
+    QCheckBox, QSpinBox, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QSizePolicy, QTabWidget)
 
 from ..data.moves import CATEGORIES, TARGETS, accuracy_label, move_tooltip, power_label
 from ..data.references import ReferenceCatalog
+from ..data.snapshot import SnapshotManager
 from ..data.storage import TYPE_NAMES, read_json, save_json
 from .obs_dialog import ObsDialog
 from .widgets import DropPreview, PanelScrollArea, TYPE_COLORS, label, type_badge
@@ -20,50 +21,14 @@ from .worker import AnalysisWorker
 from .matchups import MatchupLabel
 from ..speed import SPEED_TIERS, speed_lines
 
-ROOT = Path(__file__).resolve().parents[2]
-SETTINGS_PATH = ROOT / "config/local_ui.json"
+from ..paths import app_paths
+from ..version import __version__
 
-STYLE = """
-QWidget { font-family: 'Microsoft YaHei UI', 'Segoe UI'; font-size: 13px; color: #26374a; }
-QMainWindow { background: #eef2f5; }
-QFrame#Header { background: #172b3d; border-radius: 12px; }
-QLabel#Brand { color: white; font-size: 24px; font-weight: 700; }
-QLabel#HeaderNote { color: #b8cbd5; font-size: 12px; }
-QLabel#ModeBadge { background: #29475b; color: #93e0c7; border-radius: 11px; padding: 7px 16px; font-weight: 600; }
-QFrame#Sidebar, QFrame#Workspace { background: white; border-radius: 12px; }
-QLabel#SectionTitle { color: #253c4e; font-size: 15px; font-weight: 700; }
-QLabel#Muted { color: #718091; font-size: 12px; }
-QLabel#PokemonName { font-size: 27px; font-weight: 700; color: #172b3d; }
-QLabel#DropHint { color: #788896; font-size: 14px; }
-QFrame#DropPreview { border: 1px dashed #adc2cd; border-radius: 10px; background: #f6f9fb; }
-QPushButton { background: #edf3f6; border: 1px solid #d8e2e7; border-radius: 7px; padding: 8px 13px; font-weight: 600; }
-QPushButton:hover { background: #dfeef0; border-color: #96bebc; }
-QPushButton:pressed { background: #cee5df; }
-QPushButton:disabled { color: #a7b2bd; background: #f4f6f8; border-color: #e7ebef; }
-QPushButton#Primary { background: #147e6e; border: 1px solid #147e6e; color: white; }
-QPushButton#Primary:hover { background: #096b5d; }
-QPushButton#Primary:disabled { background: #a0bdb6; border-color: #a0bdb6; }
-QPushButton#Cancel { color: #a34b4f; }
-QLineEdit, QComboBox, QSpinBox { background: white; border: 1px solid #d6e0e6; border-radius: 6px; padding: 7px; min-height: 21px; }
-QLineEdit:focus, QComboBox:focus { border-color: #147e6e; }
-QListWidget { border: none; background: transparent; outline: none; }
-QListWidget::item { border: 1px solid #e6ecf0; border-radius: 8px; padding: 6px; margin-bottom: 5px; background: #fbfcfd; }
-QListWidget::item:selected { background: #e2f3ed; border-color: #76b5a2; color: #154d40; }
-QTableWidget { border: 1px solid #e4eaee; border-radius: 6px; gridline-color: #edf1f4; background: white; selection-background-color: #ddf1e9; selection-color: #173c30; outline: none; }
-QTableWidget::item { padding-left: 9px; padding-right: 9px; }
-QHeaderView::section { background: #f0f5f7; color: #617482; border: none; border-bottom: 1px solid #dce5eb; padding: 8px; font-size: 12px; font-weight: 600; }
-QGroupBox { border: none; margin-top: 23px; font-size: 14px; font-weight: 700; }
-QGroupBox::title { subcontrol-origin: margin; subcontrol-position: top left; padding: 0 2px; }
-QFrame#MoveDetails { background: #f5f8fa; border: 1px solid #e0e8ed; border-radius: 10px; }
-QLabel#MoveTitle { font-size: 22px; font-weight: 700; color: #1c3545; }
-QLabel#MetricValue { font-family: 'Consolas'; font-size: 21px; font-weight: 600; color: #234d4b; min-height: 28px; }
-QLabel#Effect { color: #354c5d; font-size: 14px; line-height: 1.6; }
-QToolTip { background: #193446; color: #f0f8fa; border: 1px solid #29475b; padding: 10px; }
-QProgressBar { border: none; background: #edf2f5; border-radius: 2px; }
-QProgressBar::chunk { background: #36a48b; }
-QScrollArea { border: none; background: transparent; }
-QSplitter::handle { background: transparent; width: 8px; }
-"""
+ROOT = app_paths().resources
+SETTINGS_PATH = app_paths().settings
+
+from .theme import STYLE
+
 
 
 def clear_layout(layout):
@@ -76,30 +41,43 @@ def clear_layout(layout):
 
 class MainWindow(QMainWindow):
     requested = Signal(int, str, object)
+    updateRequested = Signal()
 
-    def __init__(self, data_dir=ROOT / "pokemon", layout_path=None, settings_path=SETTINGS_PATH, worker_factory=AnalysisWorker, report_path=None):
+    def __init__(self, data_dir=None, layout_path=None, settings_path=SETTINGS_PATH, worker_factory=AnalysisWorker, report_path=None):
+        data_dir = data_dir or app_paths().data
         super().__init__()
-        self.setWindowTitle("Pokemon Champion Assistant · 对战资料台")
+        self.setWindowTitle(f"Champion 对战工作台 · v{__version__}")
+        self.setWindowIcon(QIcon(str(ROOT / 'assets/branding/app.ico')))
         self.resize(1480, 980)
-        self.setMinimumSize(1100, 790)
+        self.setMinimumSize(600, 300)
         self.setStyleSheet(STYLE)
-        self.catalog = ReferenceCatalog(data_dir)
+        self.snapshots = SnapshotManager(data_dir, layout_path)
+        self.snapshot = self.snapshots.initial()
+        self.snapshots.current = self.snapshot
+        self.catalog = self.snapshot.catalog
         self.data_dir, self.layout_path = Path(data_dir), layout_path
         self.settings_path = Path(settings_path)
         self.report_path = Path(report_path) if report_path else None
+        self.selected_team_id = None
         self.obs_settings = {"host": "localhost", "port": 4455, "password": "", "source": ""}
         if self.settings_path.exists():
             try:
                 saved = read_json(self.settings_path)
+                self.selected_team_id = saved.get("selected_team_id")
                 self.obs_settings.update({k: saved[k] for k in ("host", "port", "source") if k in saved})
             except (OSError, ValueError):
                 pass
         self.busy = False
         self.revision = 0
+        self._inflight_revision = None
+        self._pending_request = None
         self.closing = False
         self.obs_dialog = None
+        self.onboarding_dialog = None
         self.team_dialog = None
         self.damage_dialog = None
+        self._team_dialogs = {}
+        self._damage_dialogs = {}
         self.opponents = []
         self.selected_record = None
         self.current_move = None
@@ -107,7 +85,9 @@ class MainWindow(QMainWindow):
         self.family = []
         self._build_ui()
         self.thread = QThread(self)
-        self.worker = worker_factory(self.catalog.root, layout_path)
+        self.worker = worker_factory(self.data_dir, layout_path)
+        if isinstance(self.worker, AnalysisWorker):
+            self.worker.snapshots = self.snapshots
         self.worker.moveToThread(self.thread)
         self.requested.connect(self.worker.run)
         self.worker.finished.connect(self._finished)
@@ -115,10 +95,14 @@ class MainWindow(QMainWindow):
         self.thread.start()
         self._empty_team()
         self._show_empty_reference()
+        self.refresh_saved_team_selection()
 
     def _build_ui(self):
         body = QWidget()
-        self.setCentralWidget(body)
+        self.page_scroll = QScrollArea()
+        self.page_scroll.setWidgetResizable(True)
+        self.page_scroll.setWidget(body)
+        self.setCentralWidget(self.page_scroll)
         page = QVBoxLayout(body)
         page.setContentsMargins(20, 16, 20, 16)
         page.setSpacing(14)
@@ -127,20 +111,48 @@ class MainWindow(QMainWindow):
         header_layout = QHBoxLayout(header)
         header_layout.setContentsMargins(22, 10, 22, 10)
         headings = QVBoxLayout()
-        headings.addWidget(label("对战资料台", "Brand"))
-        subtitle = label("POKÉMON CHAMPION ASSISTANT  /  识别 · 查阅 · 对照", "HeaderNote")
+        brand = label("CHAMPION  /  对战工作台", "Brand")
+        brand.setWordWrap(False)
+        headings.addWidget(brand)
+        subtitle = label("双打 · 截图识别 · 速度与伤害参考", "HeaderNote")
         subtitle.setWordWrap(False)
         headings.addWidget(subtitle)
-        header_layout.addLayout(headings)
-        header_layout.addStretch()
-        self.own_team_button = QPushButton("我方队伍配置")
-        self.own_team_button.clicked.connect(self.open_team_editor)
-        header_layout.addWidget(self.own_team_button)
-        damage_button = QPushButton('双向伤害计算')
-        damage_button.clicked.connect(self.open_damage)
-        header_layout.addWidget(damage_button)
-        header_layout.addWidget(label("双打 · 选队界面", "ModeBadge"))
+        header_layout.addLayout(headings, 1)
+        mode = label("双打 · 选队界面", "ModeBadge")
+        mode.setFixedHeight(36)
+        header_layout.addWidget(mode)
         page.addWidget(header)
+        navigation = QHBoxLayout()
+        self.home_button = QPushButton('对战资料')
+        self.home_button.setObjectName('Primary')
+        self.home_button.clicked.connect(lambda: self.preview.setFocus())
+        navigation.addWidget(self.home_button)
+        self.own_team_button = QPushButton("我方队伍配置")
+        self.own_team_button.setObjectName('Navigation')
+        self.own_team_button.clicked.connect(self.open_team_editor)
+        navigation.addWidget(self.own_team_button)
+        damage_button = QPushButton('双向伤害计算')
+        damage_button.setObjectName('Navigation')
+        damage_button.clicked.connect(self.open_damage)
+        navigation.addWidget(damage_button)
+        self.update_button = QPushButton('资料更新')
+        self.update_button.setObjectName('Navigation')
+        self.update_button.clicked.connect(self.updateRequested.emit)
+        navigation.addWidget(self.update_button)
+        navigation.addStretch()
+        self.guide_button = QPushButton('使用引导')
+        self.guide_button.clicked.connect(self.open_onboarding)
+        navigation.addWidget(self.guide_button)
+        page.addLayout(navigation)
+        team_bar = QHBoxLayout()
+        team_bar.addWidget(QLabel('本局我方预存队伍'))
+        self.saved_team_selector = QComboBox()
+        self.saved_team_selector.currentIndexChanged.connect(self.saved_team_selected)
+        team_bar.addWidget(self.saved_team_selector, 1)
+        self.saved_own_slot = QComboBox()
+        self.saved_own_slot.currentIndexChanged.connect(self.render_saved_speed)
+        team_bar.addWidget(self.saved_own_slot, 1)
+        page.addLayout(team_bar)
         self.splitter = QSplitter(Qt.Orientation.Horizontal)
         page.addWidget(self.splitter, 1)
 
@@ -149,8 +161,9 @@ class MainWindow(QMainWindow):
         side.setMinimumWidth(295)
         side.setMaximumWidth(390)
         left = QVBoxLayout(side)
-        left.setContentsMargins(17, 17, 17, 16)
-        left.setSpacing(9)
+        left.setContentsMargins(14, 12, 14, 12)
+        left.setSpacing(6)
+        left.setAlignment(Qt.AlignmentFlag.AlignTop)
         left.addWidget(label("01  采集游戏画面", "SectionTitle"))
         self.preview = DropPreview()
         self.preview.fileDropped.connect(self.open_image)
@@ -177,8 +190,9 @@ class MainWindow(QMainWindow):
         left.addSpacing(7)
         left.addWidget(label("02  对手队伍", "SectionTitle"))
         self.team_list = QListWidget()
-        self.team_list.setIconSize(QSize(36, 36))
-        self.team_list.setMinimumHeight(300)
+        self.team_list.setIconSize(QSize(26, 26))
+        self.team_list.setFixedHeight(228)
+        self.team_list.setStyleSheet('QListWidget::item { padding: 3px 6px; margin-bottom: 2px; }')
         self.team_list.currentRowChanged.connect(self.select_slot)
         left.addWidget(self.team_list, 1)
         left.addWidget(label("手动查阅 / 修正当前槽位", "Muted"))
@@ -202,7 +216,7 @@ class MainWindow(QMainWindow):
         lookup_actions.addWidget(self.lookup_button)
         lookup_actions.addWidget(self.correct_button)
         left.addLayout(lookup_actions)
-        side.setMinimumHeight(780)
+        side.setMinimumHeight(660)
         side.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Ignored)
         side_scroll = PanelScrollArea()
         side_scroll.setMinimumWidth(310)
@@ -262,6 +276,26 @@ class MainWindow(QMainWindow):
         self.speed_compare.currentTextChanged.connect(self._render_speed)
         speed_controls.addWidget(self.speed_compare, 1)
         speed_layout.addLayout(speed_controls)
+        self.saved_speed_label = QLabel('我方实配速度：请选择预存队伍和成员')
+        self.saved_speed_label.setWordWrap(True)
+        speed_layout.addWidget(self.saved_speed_label)
+        conditions = QHBoxLayout()
+        self.own_speed_stage = QSpinBox();self.own_speed_stage.setRange(-6,6)
+        self.enemy_speed_stage = QSpinBox();self.enemy_speed_stage.setRange(-6,6)
+        self.own_speed_wind = QCheckBox('我方顺风');self.enemy_speed_wind = QCheckBox('对手顺风')
+        self.own_speed_ability = QCheckBox('我方条件特性生效')
+        self.enemy_speed_ability = QComboBox();self.enemy_speed_ability.addItem('对手特性：无效果假设','__none__')
+        from ..teams import TeamRules
+        for key, entry in TeamRules(self.catalog).options['abilities'].items():self.enemy_speed_ability.addItem(entry['name'],key)
+        self.enemy_speed_ability_on = QCheckBox('对手条件特性生效')
+        for title, widget in [('我方速度等级',self.own_speed_stage),('对手速度等级',self.enemy_speed_stage)]:
+            conditions.addWidget(QLabel(title));conditions.addWidget(widget)
+            widget.valueChanged.connect(self.render_saved_speed);widget.valueChanged.connect(self._render_speed)
+        for widget in (self.own_speed_wind,self.enemy_speed_wind,self.own_speed_ability,self.enemy_speed_ability_on):
+            conditions.addWidget(widget);widget.toggled.connect(self.render_saved_speed);widget.toggled.connect(self._render_speed)
+        conditions.addWidget(self.enemy_speed_ability)
+        self.enemy_speed_ability.currentIndexChanged.connect(self._render_speed)
+        speed_layout.addLayout(conditions)
         self.speed_table = QTableWidget()
         self.speed_table.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
         self.speed_table.setSelectionMode(QAbstractItemView.SelectionMode.NoSelection)
@@ -278,7 +312,7 @@ class MainWindow(QMainWindow):
         move_heading = QHBoxLayout()
         move_heading.addWidget(label("招式资料", "SectionTitle"))
         move_heading.addStretch()
-        self.reload_usage_button = QPushButton("载入最新采用率")
+        self.reload_usage_button = QPushButton("检查本地资料更新")
         self.reload_usage_button.clicked.connect(self.reload_usage)
         move_heading.addWidget(self.reload_usage_button)
         self.move_search = QLineEdit()
@@ -348,7 +382,7 @@ class MainWindow(QMainWindow):
         center.addWidget(self.moves_splitter, 1)
         self.moves_notice = label("招式数据离线读取，与当前图标库使用同一版本。", "Muted")
         center.addWidget(self.moves_notice)
-        self.usage_update_label = label("采用率：启动时自动检查，每 24 小时后台更新一次。", "Muted")
+        self.usage_update_label = label("资料更新：可在更新中心选择渠道、检查间隔或导入离线包。", "Muted")
         center.addWidget(self.usage_update_label)
         workspace.setMinimumHeight(780)
         workspace.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Ignored)
@@ -359,7 +393,7 @@ class MainWindow(QMainWindow):
         self.splitter.setCollapsible(0, False)
         self.splitter.setCollapsible(1, False)
         footer = QHBoxLayout()
-        self.status_label = label("准备就绪 · 拖入截图，或连接 OBS 开始。", "Muted")
+        self.status_label = label("准备就绪 · 拖入截图，或连接 OBS 开始。", "StatusMessage")
         footer.addWidget(self.status_label, 1)
         self.cancel_button = QPushButton("取消当前操作")
         self.cancel_button.setObjectName("Cancel")
@@ -400,7 +434,7 @@ class MainWindow(QMainWindow):
         self.team_list.clear()
         for i in range(6):
             item = QListWidgetItem(f"{i + 1:02d}   等待识别")
-            item.setSizeHint(QSize(250, 48))
+            item.setSizeHint(QSize(250, 36))
             self.team_list.addItem(item)
         self.correct_button.setEnabled(False)
 
@@ -431,57 +465,152 @@ class MainWindow(QMainWindow):
     def open_image(self, path):
         self._request("file", str(path))
 
-    def open_team_editor(self):
+    def open_onboarding(self):
+        from .onboarding import OnboardingDialog
+        if self.onboarding_dialog is None:
+            dialog = OnboardingDialog(self.settings_path, self)
+            self.onboarding_dialog = dialog
+            dialog.imageRequested.connect(self.choose_image)
+            dialog.obsRequested.connect(self.configure_obs)
+        self.onboarding_dialog.show()
+        self.onboarding_dialog.raise_()
+
+    def open_team_editor(self, snapshot=None):
         from .team_dialog import TeamDialog
+        snapshot = snapshot or self.snapshot
         try:
-            if self.team_dialog is None:
-                self.team_dialog = TeamDialog(self.catalog, ROOT / 'user_data/teams.sqlite3', self)
-                self.team_dialog.savedTeamsChanged.connect(self.team_context_changed)
-            self.team_dialog.recompute()
-            self.team_dialog.show()
-            self.team_dialog.raise_()
+            dialog = self._team_dialogs.get(id(snapshot))
+            if dialog is None:
+                dialog = TeamDialog(snapshot.catalog, app_paths().teams, self)
+                dialog.analysis_snapshot = snapshot
+                dialog.savedTeamsChanged.connect(self.team_context_changed)
+                self._team_dialogs[id(snapshot)] = dialog
+                dialog.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
+                dialog.destroyed.connect(lambda: self._forget_dialog('team', id(snapshot)))
+            if snapshot is self.snapshot:
+                self.team_dialog = dialog
+            dialog.recompute()
+            dialog.show()
+            dialog.raise_()
         except (OSError, ValueError, sqlite3.Error) as exc:
             self.set_status(f'队伍配置载入失败，原数据已保留：{exc}')
 
+    def refresh_saved_team_selection(self):
+        self.saved_team_selector.blockSignals(True)
+        self.saved_team_selector.clear()
+        self.saved_team_selector.addItem('请选择预存队伍', None)
+        try:
+            for team in self.damage_teams():self.saved_team_selector.addItem(team['name'], team['id'])
+        except (ValueError, OSError, sqlite3.Error):pass
+        self.saved_team_selector.setCurrentIndex(max(0, self.saved_team_selector.findData(self.selected_team_id)))
+        self.saved_team_selector.blockSignals(False)
+        self.saved_team_selected()
+
+    def saved_team_selected(self):
+        self.selected_team_id = self.saved_team_selector.currentData()
+        try:
+            saved = read_json(self.settings_path) if self.settings_path.exists() else {}
+            if self.selected_team_id is not None:saved['selected_team_id'] = self.selected_team_id
+            else:saved.pop('selected_team_id', None)
+            saved.pop('password', None)
+            if saved or self.settings_path.exists():save_json(self.settings_path, saved)
+        except (OSError, ValueError):pass
+        self.saved_own_slot.clear()
+        try:
+            from ..teams import TeamRules
+            rules = TeamRules(self.catalog)
+            team = next((t for t in self.damage_teams() if t['id'] == self.selected_team_id), None)
+            for i, member in enumerate(team['members'] if team else []):
+                self.saved_own_slot.addItem(f"第 {i+1} 槽 · {rules.name(member['identity'])}", i)
+        except (ValueError, OSError, sqlite3.Error):pass
+        self.render_saved_speed()
+
+    def render_saved_speed(self):
+        if not hasattr(self, 'saved_speed_label'):return
+        try:
+            from ..damage import DamageService, battle_defaults
+            team = next((t for t in self.damage_teams() if t['id'] == self.selected_team_id), None)
+            slot = self.saved_own_slot.currentData()
+            if not team or slot is None:raise ValueError('请选择预存队伍和成员')
+            battle = battle_defaults()
+            battle['boosts']['speed'] = self.own_speed_stage.value()
+            battle['tailwind'] = self.own_speed_wind.isChecked()
+            battle['ability_on'] = self.own_speed_ability.isChecked()
+            result = DamageService(self.catalog).speed(team['members'][slot], battle, {})
+            self.saved_speed_label.setText('我方实配速度：'+str(result.get('speed', result.get('reason', '配置待确认')))+' · 50级，按此页等级、顺风与特性条件；天气/场地默认为无')
+        except (ValueError, KeyError, OSError, sqlite3.Error) as exc:self.saved_speed_label.setText('我方实配速度待确认：'+str(exc))
+
+    def damage_opponents(self):
+        return [self.catalog.record_for_name(item.get('name')) for item in self.opponents]
+
+    def correct_damage_slot(self, slot):
+        self.team_list.setCurrentRow(slot)
+        self.show();self.raise_();self.activateWindow()
+        self.pokemon_search.setFocus()
+        self.set_status(f'请在主界面搜索正确宝可梦，再点“修正槽位”更新第 {slot+1} 槽。')
+
     def team_context_changed(self):
+        self.refresh_saved_team_selection()
         if self.damage_dialog is not None:
             self.damage_dialog.refresh_teams()
 
-    def damage_teams(self):
+    def _forget_dialog(self, kind, key):
+        dialogs = self._team_dialogs if kind == 'team' else self._damage_dialogs
+        dialog = dialogs.pop(key, None)
+        if kind == 'team' and self.team_dialog is dialog:
+            self.team_dialog = None
+        if kind == 'damage' and self.damage_dialog is dialog:
+            self.damage_dialog = None
+
+    def damage_teams(self, catalog=None):
         from ..teams import TeamRules, TeamStore
-        store = self.team_dialog.store if self.team_dialog else TeamStore(ROOT / 'user_data/teams.sqlite3', TeamRules(self.catalog))
+        store = TeamStore(app_paths().teams, TeamRules(catalog or self.catalog))
         return store.list()
 
     def open_damage(self):
         from .damage_dialog import DamageDialog
-        if self.damage_dialog is None:
-            self.damage_dialog = DamageDialog(self.catalog, self.damage_teams, self.open_team_editor, self)
+        snapshot = self.snapshot
+        if id(snapshot) not in self._damage_dialogs:
+            self.damage_dialog = DamageDialog(snapshot.catalog, lambda: self.damage_teams(snapshot.catalog),
+                                             lambda: self.open_team_editor(snapshot), self,
+                                             team_id=self.selected_team_id, opponents=self.damage_opponents())
+            self.damage_dialog.correctionRequested.connect(self.correct_damage_slot)
+            self.damage_dialog.analysis_snapshot = snapshot
+            self._damage_dialogs[id(snapshot)] = self.damage_dialog
+            self.damage_dialog.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
+            self.damage_dialog.destroyed.connect(lambda: self._forget_dialog('damage', id(snapshot)))
             if self.selected_record:
                 self.damage_dialog.set_target(self.selected_record)
+        else:
+            self.damage_dialog = self._damage_dialogs[id(snapshot)]
         self.damage_dialog.closing = False
+        self.damage_dialog.initial_team_id = self.selected_team_id
+        self.damage_dialog.saved_team.setCurrentIndex(max(0,self.damage_dialog.saved_team.findData(self.selected_team_id)))
         self.damage_dialog.refresh_teams()
+        self.damage_dialog.set_opponents(self.damage_opponents(), max(0,self.team_list.currentRow()))
+        self.damage_dialog.own_slot.setCurrentIndex(max(0,self.damage_dialog.own_slot.findData(self.saved_own_slot.currentData())))
         self.damage_dialog.show()
         self.damage_dialog.raise_()
 
     def _request(self, operation, payload):
         if self.busy:
+            if operation != 'sources':
+                self._pending_request = (operation, payload)
+                self.revision += 1
+                self.worker.cancelled.set()
+                self.set_status('已收到更新的截图，正在结束旧请求；随后分析最新截图。')
+                return
             self.set_status("正在处理上一项操作；请等待完成，或先取消。")
             if operation == "sources" and self.obs_dialog:
                 self.obs_dialog.set_busy(False)
             return
         self.revision += 1
+        self._inflight_revision = self.revision
         self.worker.cancelled.clear()
         if operation != "sources":
-            if self.damage_dialog is not None:
-                self.damage_dialog.clear_session()
             if self.team_dialog is not None:
                 self.team_dialog.reset_observed()
-            self.opponents = []
-            self.last_result = None
-            self._empty_team()
-            self._show_empty_reference()
-            self.preview.clear_image()
-            self.input_label.setText("正在读取新截图，旧识别结果已撤下。")
+            self.input_label.setText("正在识别新截图；当前仍显示上次分析，成功后整体替换。")
         self.set_busy(True)
         self.set_status("正在连接 OBS…" if operation == "sources" else "正在采集并识别右侧对手，请稍候…")
         self.requested.emit(self.revision, operation, payload)
@@ -499,17 +628,26 @@ class MainWindow(QMainWindow):
 
     def cancel(self):
         self.revision += 1
+        self._pending_request = None
         self.worker.cancelled.set()
         self.cancel_button.setEnabled(False)
         self.set_status("正在取消；当前请求结束后即可继续，迟到结果不会覆盖界面。")
 
     @Slot(int, str, object, str)
     def _finished(self, revision, operation, result, error):
+        if self._inflight_revision is not None and revision != self._inflight_revision:
+            return
+        self._inflight_revision = None
         self.set_busy(False)
         if self.closing:
             self.close()
             return
         if revision != self.revision:
+            if self._pending_request is not None:
+                operation, payload = self._pending_request
+                self._pending_request = None
+                self._request(operation, payload)
+                return
             self.set_status("操作已取消。")
             if self.obs_dialog:
                 self.obs_dialog.set_busy(False)
@@ -520,9 +658,33 @@ class MainWindow(QMainWindow):
             self.set_status(error or "OBS 连接已验证，请在连接窗口选择采集源。")
             return
         if error or not result:
-            self.input_label.setText("本次截图未完成，请检查输入后重试。")
-            self.set_status(error or "本次操作没有返回结果。")
+            self.input_label.setText("本次截图未完成，保留上次分析；请检查输入后重试。")
+            self.set_status((error or "本次操作没有返回结果。") + " 上次分析已保留。")
             return
+        snapshot = result.get('snapshot', self.snapshot)
+        if result['recognition'].get('snapshot_token', snapshot.token) != snapshot.token:
+            self.set_status('识别结果与资料版本不符，上次分析已保留。')
+            return
+        changed = snapshot.token != self.snapshot.token
+        self.snapshot = snapshot
+        self.snapshots.current = snapshot
+        self.team_dialog = None
+        self.damage_dialog = None
+        if changed:
+            self.catalog = snapshot.catalog
+            self.pokemon_search.blockSignals(True)
+            self.pokemon_search.clear()
+            for name, record in self.catalog.search_records():
+                self.pokemon_search.addItem(name, record.get('record_id', record['directory']))
+            self.pokemon_search.setCurrentIndex(-1)
+            self.pokemon_search.blockSignals(False)
+            self.speed_compare.blockSignals(True)
+            self.speed_compare.clear()
+            self.speed_compare.addItem('不添加对比')
+            for name, _ in self.catalog.search_records():
+                self.speed_compare.addItem(name)
+            self.speed_compare.blockSignals(False)
+            self.source_note.setText('资料版本 ' + self.catalog.bundle_id + '\n' + snapshot.token[:12])
         self.last_result = result["recognition"]
         if self.report_path:
             try:
@@ -557,7 +719,7 @@ class MainWindow(QMainWindow):
             if result.get("manual"):
                 types += " · 手动修正"
             item = QListWidgetItem(f"{index + 1:02d}  {name}" + (" · 已修正" if result.get("manual") else ""))
-            item.setSizeHint(QSize(250, 48))
+            item.setSizeHint(QSize(250, 36))
             if record and self.catalog.sprite(record):
                 item.setIcon(QIcon(str(self.catalog.sprite(record))))
             item.setToolTip(types + "\n" + (f"相似度 {result.get('similarity', 0):.3f}（不是正确率）" if not result.get("manual") else "本局手动修正，不改写图标标签或来源资料。"))
@@ -590,6 +752,7 @@ class MainWindow(QMainWindow):
             self.opponents[row] = {**self.opponents[row], "name": self.catalog.display_name(record),
                                    "species_name": record["species_name"], "manual": True, "status": "confirmed"}
             self._render_team()
+            if self.damage_dialog is not None:self.damage_dialog.set_opponents(self.damage_opponents(), row)
             self.team_list.setCurrentRow(row)
             self.set_status(f"已手动修正槽位 {row + 1}，仅作用于当前截图。")
         else:
@@ -664,7 +827,7 @@ class MainWindow(QMainWindow):
         table.setColumnCount(len(records) + 1)
         table.setRowCount(len(SPEED_TIERS))
         table.setHorizontalHeaderLabels(["速度档位"] + [self.catalog.display_name(r) for r in records])
-        values = [speed_lines(r["base_stats"]["speed"]) for r in records]
+        values = [speed_lines(r["base_stats"]["speed"], stage=self.enemy_speed_stage.value(), tailwind=self.enemy_speed_wind.isChecked(), ability=self.enemy_speed_ability.currentData(), ability_on=self.enemy_speed_ability_on.isChecked()) for r in records]
         for row, (name, _, _, _, condition) in enumerate(SPEED_TIERS):
             table.setRowHeight(row, 30)
             item = QTableWidgetItem(name)
@@ -680,17 +843,13 @@ class MainWindow(QMainWindow):
 
     def reload_usage(self):
         error = self.refresh_usage_view()
-        self.set_status(error or "已载入本地最新采用率快照。联网更新可运行 update_usage_data.bat。")
+        self.set_status(error or "本地资料更新将在下次分析使用；当前分析及已打开窗口保持原版本。")
 
     def refresh_usage_view(self):
-        error = self.catalog.reload_usage()
-        if self.damage_dialog is not None:
-            self.damage_dialog.refresh_statistics()
-        if self.selected_record:
-            self.damage_moves, self.status_moves, notice = self.catalog.learnset(self.selected_record)
-            self.moves_notice.setText(notice)
-            self.filter_moves()
-        return error
+        # Download notification is not an analysis boundary. Never mutate a catalog
+        # already used by the main view, team import, or damage detail window.
+        self.reload_usage_button.setToolTip('更新已就绪；下次截图分析完整切换资料版本。')
+        return ''
 
     def select_form_column(self, column):
         if 1 <= column <= len(self.family):
@@ -776,8 +935,11 @@ class MainWindow(QMainWindow):
     def apply_obs_settings(self):
         self.obs_settings = self.obs_dialog.settings()
         try:
-            save_json(self.settings_path, {k: v for k, v in self.obs_settings.items() if k != "password"})
-        except OSError:
+            saved = read_json(self.settings_path) if self.settings_path.exists() else {}
+            saved.update({k: v for k, v in self.obs_settings.items() if k != "password"})
+            saved.pop('password', None)
+            save_json(self.settings_path, saved)
+        except (OSError, ValueError, AttributeError):
             self.set_status("连接信息已在本次运行生效，但设置文件保存失败。")
         self.obs_label.setText("已选择 · " + self.obs_settings["source"])
         self.capture_button.setEnabled(not self.busy and bool(self.obs_settings["source"]))
@@ -791,16 +953,17 @@ class MainWindow(QMainWindow):
         self._request("obs", dict(self.obs_settings))
 
     def closeEvent(self, event):
-        if self.damage_dialog is not None and self.damage_dialog.worker is not None:
-            self.damage_dialog.worker.finished.connect(self.close)
-            self.damage_dialog.close()
-            event.ignore()
-            return
-        if self.damage_dialog is not None:
-            self.damage_dialog.close()
-        if self.team_dialog is not None and not self.team_dialog.close():
-            event.ignore()
-            return
+        for dialog in list(self._damage_dialogs.values()):
+            if dialog.worker is not None:
+                dialog.worker.finished.connect(self.close)
+                dialog.close()
+                event.ignore()
+                return
+            dialog.close()
+        for dialog in list(self._team_dialogs.values()):
+            if not dialog.close():
+                event.ignore()
+                return
         if hasattr(self, "usage_updater"):
             self.usage_updater.stop()
         if self.busy:

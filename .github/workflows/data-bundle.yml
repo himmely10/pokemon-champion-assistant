@@ -1,0 +1,112 @@
+name: Build reference data bundle
+
+on:
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: Refresh public sources before building
+        type: boolean
+        default: true
+      base_url:
+        description: Optional HTTPS package directory; does not publish to it
+        type: string
+        default: ''
+  schedule:
+    - cron: '23 1 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: maintainer-reference-data
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 60
+    env:
+      PYTHONUTF8: '1'
+      PCA_PACKAGE_BASE_URL: ${{ inputs.base_url || vars.DATA_PACKAGE_BASE_URL }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-data.txt
+      - name: Install data and verification dependencies
+        run: python -m pip install -r requirements-data.txt pytest
+      - name: Restore last validated maintainer data and output
+        uses: actions/cache/restore@v6
+        with:
+          path: |
+            artifacts/maintainer
+            artifacts/data-dist
+          key: reference-data-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: reference-data-v1-
+      - name: Initialize isolated maintainer input
+        shell: python
+        run: |
+          from pathlib import Path
+          import shutil
+          target = Path('artifacts/maintainer/pokemon')
+          if not target.exists():
+              shutil.copytree('pokemon', target)
+      - name: Verify package contracts
+        run: python -m pytest tests/test_data_bundle.py -q
+      - name: Refresh public sources
+        if: github.event_name == 'schedule' || inputs.refresh
+        shell: python
+        run: |
+          import subprocess
+          import sys
+          root = 'artifacts/maintainer/pokemon'
+          subprocess.run([sys.executable, '-X', 'utf8', 'scripts/update_pokemon_data.py', 'sync', '--data-dir', root], check=True)
+          result = subprocess.run([sys.executable, '-X', 'utf8', 'scripts/update_usage_data.py', '--data-dir', root + '/_usage', '--json'])
+          if result.returncode not in (0, 2):
+              raise SystemExit(result.returncode)
+          if result.returncode == 2:
+              print('::warning::Some usage entries retained old same-season data; see package stale_entries.')
+      - name: Build and validate through client import
+        id: build
+        shell: python
+        run: |
+          import json
+          import os
+          import subprocess
+          import sys
+          command = [sys.executable, '-X', 'utf8', 'scripts/build_data_bundle.py', '--data-dir', 'artifacts/maintainer/pokemon', '--output-dir', 'artifacts/data-dist']
+          if os.environ.get('PCA_PACKAGE_BASE_URL'):
+              command += ['--base-url', os.environ['PCA_PACKAGE_BASE_URL']]
+          result = subprocess.run(command, check=True, capture_output=True, text=True, encoding='utf-8')
+          print(result.stdout)
+          data = json.loads(result.stdout)
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as stream:
+              stream.write('status=' + data['status'] + '\n')
+              stream.write('archive=' + data['archive_path'] + '\n')
+              stream.write('channel=' + (data.get('channel_path') or '') + '\n')
+              stream.write('version=' + data['version'] + '\n')
+      - name: Upload verified package candidate
+        if: steps.build.outputs.status == 'built' || github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v7
+        with:
+          name: reference-data-${{ steps.build.outputs.version }}
+          path: |
+            ${{ steps.build.outputs.archive }}
+            ${{ steps.build.outputs.channel }}
+            artifacts/data-dist/latest-build.json
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
+      - name: Preserve successful baseline for content-only change detection
+        uses: actions/cache/save@v6
+        with:
+          path: |
+            artifacts/maintainer
+            artifacts/data-dist
+          key: reference-data-v1-${{ github.run_id }}-${{ github.run_attempt }}
+      # No remote stable-channel mutation: upload the ZIP to the chosen host,
+      # verify its public download hash, then publish channel.json as the last step.

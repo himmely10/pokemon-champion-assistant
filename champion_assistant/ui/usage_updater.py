@@ -10,6 +10,9 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 def updater_command(usage_dir):
+    if getattr(sys, 'frozen', False):
+        return str(Path(sys.executable).with_name('ChampionWorker.exe')), ['--update-worker',
+            '--data-dir', str(usage_dir), '--if-due', '--json']
     # Windows venv launchers create another process. Start the actual interpreter
     # with this environment's packages, so killing QProcess stops the updater itself.
     executable = getattr(sys, "_base_executable", sys.executable)

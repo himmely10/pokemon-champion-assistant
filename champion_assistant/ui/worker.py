@@ -3,7 +3,9 @@ from threading import Event
 from PySide6.QtCore import QObject, Signal, Slot
 
 from ..capture.obs import ObsCapture, load_image
-from ..recognition import OpponentRecognizer
+from ..recognition import OpponentRecognizer, ALGORITHM_VERSION
+from ..data.snapshot import SnapshotManager
+from ..data.storage import digest
 
 
 class AnalysisWorker(QObject):
@@ -14,6 +16,8 @@ class AnalysisWorker(QObject):
         self.data_dir, self.layout_path = data_dir, layout_path
         self.obs = obs or ObsCapture()
         self.recognizer = None
+        self.snapshots = SnapshotManager(data_dir, layout_path)
+        self.recognizer_token = None
         self.cancelled = Event()
 
     @Slot(int, str, object)
@@ -23,13 +27,23 @@ class AnalysisWorker(QObject):
             if operation == "sources":
                 result = self.obs.sources(payload)
             else:
+                snapshot = self.snapshots.candidate()
                 image = self.obs.screenshot(payload) if operation == "obs" else load_image(payload)
                 if not self.cancelled.is_set():
-                    if self.recognizer is None:
-                        self.recognizer = OpponentRecognizer(self.data_dir, self.layout_path)
+                    recognition_key = (str(snapshot.data_dir), snapshot.layout_hash, ALGORITHM_VERSION)
+                    recognizer = self.recognizer
+                    if recognizer is None or self.recognizer_token != recognition_key:
+                        recognizer = OpponentRecognizer(snapshot.data_dir, snapshot.layout_path)
+                    if digest(snapshot.layout_path.read_bytes()) != snapshot.layout_hash:
+                        raise ValueError('识别布局在加载期间变化，请重新分析。')
                     if not self.cancelled.is_set():
-                        recognition, normalized, crops = self.recognizer.recognize(image)
-                        result = {"recognition": recognition, "image": image, "crops": crops}
+                        recognition, normalized, crops = recognizer.recognize(image)
+                        if not self.cancelled.is_set():
+                            self.recognizer, self.recognizer_token = recognizer, recognition_key
+                            self.snapshots.current = snapshot
+                            recognition['snapshot_token'] = snapshot.token
+                            result = {"recognition": recognition, "image": image, "crops": crops,
+                                      "snapshot": snapshot}
         except Exception as exc:
             error = str(exc)
         self.finished.emit(revision, operation, result, error)

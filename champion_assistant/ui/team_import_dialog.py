@@ -2,6 +2,7 @@
 from copy import deepcopy
 import json
 from pathlib import Path
+from tempfile import TemporaryDirectory
 
 from PySide6.QtCore import Qt, QThread, Signal
 from PySide6.QtGui import QPixmap
@@ -13,6 +14,23 @@ from ..team_import import ScreenshotImporter
 from ..teams import STATS
 from .team_dialog import combo, select, value
 from .dialog_layout import fit_dialog
+from .obs_dialog import ObsDialog
+from ..capture.obs import ObsCapture, local_obs_settings
+
+
+class ObsImportWorker(QThread):
+    def __init__(self, settings, operation, parent=None):
+        super().__init__(parent)
+        self.settings, self.operation = dict(settings), operation
+        self.result, self.error = None, ''
+
+    def run(self):
+        try:
+            self.result = getattr(ObsCapture(), self.operation)(self.settings)
+        except Exception:
+            self.error = 'OBS 读取失败，请核对服务器开关、地址、端口、密码及采集源。'
+        finally:
+            self.settings.clear()
 
 
 class ImportWorker(QThread):
@@ -25,23 +43,33 @@ class ImportWorker(QThread):
 
     def run(self):
         try:
-            importer = ScreenshotImporter(self.rules)
             def progress(text):
                 if self.isInterruptionRequested():
                     raise ValueError('已取消截图导入。')
                 self.progress.emit(text)
+            progress('正在准备本地 OCR（重复导入会复用模型）…')
+            importer = ScreenshotImporter(self.rules)
+            progress('OCR 已就绪，正在读取截图…')
             self.pages = [importer.read_page(self.paths[mode], mode, progress) for mode in ('ability', 'status')]
+            if self.isInterruptionRequested():
+                self.pages = None
+                raise ValueError('已取消截图导入。')
         except Exception as exc:
             self.error = str(exc)
 
 
 class TeamImportDialog(QDialog):
-    def __init__(self, rules, parent=None):
+    def __init__(self, rules, parent=None, obs_settings=None):
         super().__init__(parent)
         self.rules = rules
         self.paths = {}
         self.pages = None
         self.worker = None
+        self.obs_worker = None
+        self.obs_settings_provider = obs_settings
+        self.selected_obs_settings = None
+        self.obs_dialog = None
+        self.capture_files = TemporaryDirectory(prefix='champion-team-')
         self.closing = False
         self.result_draft = None
         self.setWindowTitle('从队伍详情截图导入 · 本地 OCR')
@@ -62,6 +90,11 @@ class TeamImportDialog(QDialog):
             self.path_edits[mode] = edit
             row.addWidget(button)
             row.addWidget(edit, 1)
+            obs_button = QPushButton('从 OBS 截图')
+            obs_button.setObjectName('obs_' + mode)
+            obs_button.clicked.connect(lambda _, m=mode: self.capture_obs(m))
+            self.file_buttons.append(obs_button)
+            row.addWidget(obs_button)
             layout.addLayout(row)
         self.previews = QTabWidget()
         self.preview_labels = {}
@@ -113,6 +146,72 @@ class TeamImportDialog(QDialog):
         if path:
             self.set_path(mode, path)
 
+    def current_obs_settings(self):
+        if self.selected_obs_settings is not None:
+            return dict(self.selected_obs_settings)
+        provided = self.obs_settings_provider
+        if provided is not None:
+            settings = provided() if callable(provided) else provided
+            if settings:
+                return dict(settings)
+        ancestor = self.parent()
+        while ancestor is not None:
+            settings = getattr(ancestor, 'obs_settings', None)
+            if isinstance(settings, dict):
+                return dict(settings)
+            ancestor = ancestor.parent()
+        return local_obs_settings(include_password=True) or {}
+
+    def capture_obs(self, mode):
+        if self.worker or self.obs_worker:
+            return
+        settings = self.current_obs_settings()
+        if settings.get('source'):
+            self.start_obs(settings, 'screenshot', mode)
+            return
+        dialog = ObsDialog(settings, self)
+        self.obs_dialog = dialog
+        dialog.connectRequested.connect(lambda s: self.start_obs(s, 'sources', mode))
+        def accepted():
+            self.selected_obs_settings = dialog.settings()
+            self.start_obs(self.selected_obs_settings, 'screenshot', mode)
+        dialog.accepted.connect(accepted)
+        dialog.open()
+
+    def start_obs(self, settings, operation, mode):
+        if self.worker or self.obs_worker:
+            return
+        self.pages = None
+        self.review.setChecked(False)
+        self.use_button.setEnabled(False)
+        for button in self.file_buttons + [self.run_button]:
+            button.setEnabled(False)
+        self.status.setText('正在读取 OBS 采集源…' if operation == 'sources' else '正在从 OBS 获取截图…')
+        worker = ObsImportWorker(settings, operation, self)
+        self.obs_worker = worker
+        def finished():
+            self.obs_worker = None
+            for button in self.file_buttons + [self.run_button]:
+                button.setEnabled(True)
+            if self.closing:
+                worker.deleteLater()
+                self.capture_files.cleanup()
+                super(TeamImportDialog, self).reject()
+                return
+            if operation == 'sources':
+                self.obs_dialog.show_sources(worker.result, worker.error)
+            elif worker.error:
+                self.status.setText(worker.error)
+            else:
+                path = Path(self.capture_files.name) / (mode + '.png')
+                worker.result.save(path)
+                self.set_path(mode, path)
+                self.previews.setCurrentIndex(0 if mode == 'ability' else 1)
+                self.status.setText('OBS 截图已显示，请核对页面。两页准备好后点击“识别两张截图”。')
+            worker.deleteLater()
+        worker.finished.connect(finished)
+        worker.start()
+
     def set_path(self, mode, path):
         self.paths[mode] = path
         self.path_edits[mode].setText(str(path))
@@ -149,6 +248,8 @@ class TeamImportDialog(QDialog):
         dialog.exec()
 
     def start(self):
+        if self.obs_worker:
+            return
         if self.worker and self.worker.isRunning():
             return
         if len(self.paths) != 2:
@@ -243,16 +344,22 @@ class TeamImportDialog(QDialog):
         self.accept()
 
     def closeEvent(self, event):
+        if self.obs_worker and self.obs_worker.isRunning():
+            self.closing = True
+            self.status.setText('等待当前 OBS 请求结束…')
+            event.ignore()
+            return
         if self.worker and self.worker.isRunning():
             self.closing = True
             self.worker.requestInterruption()
             self.status.setText('正在取消，等待当前文字识别结束…')
             event.ignore()
         else:
+            self.capture_files.cleanup()
             event.accept()
 
     def reject(self):
-        if self.worker and self.worker.isRunning():
+        if (self.worker and self.worker.isRunning()) or (self.obs_worker and self.obs_worker.isRunning()):
             self.close()
         else:
             super().reject()
