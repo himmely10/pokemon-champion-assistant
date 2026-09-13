@@ -2,29 +2,51 @@
 from __future__ import annotations
 
 from pathlib import Path
+from copy import deepcopy
 
 from .moves import parse_moves
-from .storage import confined, digest, read_json, resolve_dataset
+from .storage import confined, digest, read_json, resolve_dataset, validate_bundle
 from .usage import load_usage, move_order
 from datetime import datetime, timezone
 
 
 class ReferenceCatalog:
-    def __init__(self, data_dir, usage_dir=None):
+    def __init__(self, data_dir, usage_dir=None, *, usage_snapshot=None):
         self.root = resolve_dataset(Path(data_dir))
         data_root = self.root.parents[1] if self.root.parent.name == "_versions" else self.root
         self.usage_dir = Path(usage_dir) if usage_dir else data_root / "_usage"
+        self._fixed_usage = deepcopy(usage_snapshot)
         self.usage, self.usage_error = None, ""
         self.reload_usage()
         self.bundle_id = self.root.name if (self.root / "manifest.json").exists() else "legacy"
-        self.index = read_json(self.root / "index.json")
+        self._verified_files = set()
+        sql_facts = None
+        if (self.root / 'catalog.sqlite').exists():
+            from .sqlite_catalog import read_catalog_database
+            if self.bundle_id != 'legacy':
+                validate_bundle(self.root)
+                self._verified_files = set(read_json(self.root / 'manifest.json')['files'])
+                if 'catalog.sqlite' not in self._verified_files:
+                    raise ValueError('SQLite 不在资料清单内')
+            sql_facts = read_catalog_database(self.root / 'catalog.sqlite')
+        elif self.bundle_id != 'legacy' and read_json(self.root/'manifest.json').get('reference_schema'):
+            raise ValueError('资料包缺少 catalog.sqlite')
+        self.index = sql_facts['index'] if sql_facts else read_json(self.root / "index.json")
         self.records = self.index["pokemon"]
         self.by_id = {r.get("record_id", r["directory"]): r for r in self.records}
-        self.by_name = {r["name"]: r for r in self.records}
+        self.by_name = {}
+        for r in self.records:
+            self.by_name.setdefault(r['name'], []).append(r)
+        self.ambiguous_names = {name for name, values in self.by_name.items() if len(values) > 1}
+        self.by_name = {name: values[0] for name, values in self.by_name.items() if len(values) == 1}
         self.source = {}
-        if (self.root / "source_catalog.json").exists():
+        if sql_facts:
+            self.source = {r['key']: r for r in sql_facts['source']}
+        elif (self.root / "source_catalog.json").exists():
             self.source = {r["key"]: r for r in read_json(self.verified_file("source_catalog.json"))}
-        if (self.root / "moves.json").exists():
+        if sql_facts:
+            self.moves = sql_facts['moves']
+        elif (self.root / "moves.json").exists():
             self.moves = read_json(self.verified_file("moves.json"))
         elif (self.root / "_sources/opgg.html").exists():
             self.moves = parse_moves(self.verified_file("_sources/opgg.html").read_bytes())
@@ -32,14 +54,15 @@ class ReferenceCatalog:
             self.moves = {}
         policy_path = self.root / "recognition_identity_groups.json"
         self.cosmetic_names = {}
-        if policy_path.exists():
-            for group in read_json(self.verified_file("recognition_identity_groups.json"))["groups"]:
+        if sql_facts or policy_path.exists():
+            policy = sql_facts['policy'] if sql_facts else read_json(self.verified_file('recognition_identity_groups.json'))
+            for group in policy['groups']:
                 for slug in group["source_slugs"]:
                     self.cosmetic_names[slug] = group["name"]
 
     def reload_usage(self):
         try:
-            self.usage = load_usage(self.usage_dir)
+            self.usage = deepcopy(self._fixed_usage) if self._fixed_usage is not None else load_usage(self.usage_dir)
             self.usage_error = ""
         except (OSError, ValueError, KeyError) as exc:
             self.usage_error = "采用率快照读取失败，保留已加载的数据。"
@@ -47,16 +70,19 @@ class ReferenceCatalog:
 
     def verified_file(self, relative):
         path = confined(self.root, relative)
-        if self.bundle_id != "legacy":
+        if self.bundle_id != "legacy" and relative not in self._verified_files:
             manifest = read_json(self.root / "manifest.json")
             if relative not in manifest["files"] or digest(path.read_bytes()) != manifest["files"][relative]:
                 raise ValueError(f"资料文件校验失败：{relative}")
+            self._verified_files.add(relative)
         return path
 
     def display_name(self, record):
         return self.cosmetic_names.get(record["source_slug"], record["name"])
 
     def record_for_name(self, name):
+        if name in self.ambiguous_names:
+            return None
         if name in self.by_name:
             return self.by_name[name]
         return next((r for r in self.records if self.display_name(r) == name), None)
@@ -89,13 +115,39 @@ class ReferenceCatalog:
                 family.append(self.by_id[identifier])
         return family
 
+    def usage_for(self, record):
+        """Return usage statistics, falling back from a Mega form to its base form."""
+        if not self.usage:
+            return None, None
+        entries = self.usage.get("pokemon", {})
+        direct = entries.get(record.get("opgg_key"))
+        if direct:
+            return direct, None
+        if record.get("opgg_key", "").startswith("mega-"):
+            base_key = record.get("source_base_key")
+            inherited = entries.get(base_key)
+            if inherited:
+                base = next((r for r in self.records if r.get("opgg_key") == base_key), None)
+                return inherited, base
+        return None, None
+
+    def move_usage(self, record):
+        """Return move rates, falling back from a Mega form to its base form.
+
+        OP.GG currently publishes a separate learnset for Mega forms, but some
+        Mega pages do not have an independent usage sample.  Move usage is safe
+        to inherit from the declared base form while keeping the Mega form's own
+        availability filter.
+        """
+        usage, inherited_from = self.usage_for(record)
+        return (usage or {}).get("moves", {}), usage, inherited_from
+
     def learnset(self, record):
         raw = self.source.get(record.get("opgg_key"))
         if raw is None:
             return [], [], "当前来源没有这个形态的独立招式池。"
         banned = set(raw.get("bannedMoves", []))
-        usage = self.usage["pokemon"].get(record.get("opgg_key")) if self.usage else None
-        rates = usage["moves"] if usage else {}
+        rates, usage, inherited_from = self.move_usage(record)
         damage, status, missing = [], [], []
         for key in dict.fromkeys(raw.get("moves", [])):
             if key in banned:
@@ -106,13 +158,18 @@ class ReferenceCatalog:
             elif move.get("isAvailable") is True:
                 (status if move["category"] == "status" else damage).append({**move, "usage_percent": rates.get(key)})
         if usage:
-            notice = f"OP.GG · {usage['season'].upper()} 双打 · 来源更新 {usage['source_updated_at'] or '未标明'}。"
-            if usage["statistics_key"] != usage["pokemon_key"]:
+            notice = f"OP.GG · {usage.get('season', '未知赛季').upper()} 双打 · 来源更新 {usage.get('source_updated_at') or '未标明'}。"
+            if inherited_from:
+                notice += f" 该 Mega 形态暂无独立统计；招式采用率、常用分配和性格继承普通形态「{self.display_name(inherited_from)}」的双打统计。"
+            elif usage.get("statistics_key") != usage.get("pokemon_key"):
                 notice += f" 采用来源的合并统计（{usage['statistics_key']}），非本形态独立统计。"
-            if record.get("opgg_key") in self.usage.get("errors", {}):
+            error_key = inherited_from.get('opgg_key') if inherited_from else record.get("opgg_key")
+            if error_key in self.usage.get("errors", {}):
                 notice += " 本项更新失败，显示旧缓存。"
-            age = (datetime.now(timezone.utc) - datetime.fromisoformat(usage["fetched_at"])).total_seconds()
-            if age > 48 * 3600:
+            fetched_at = usage.get("fetched_at")
+            age = ((datetime.now(timezone.utc) - datetime.fromisoformat(fetched_at)).total_seconds()
+                   if fetched_at else 0)
+            if fetched_at and age > 48 * 3600:
                 notice += " 缓存超过 48 小时，请更新。"
         else:
             notice = "该形态暂无双打采用率；未借用其他形态或单打数据。"

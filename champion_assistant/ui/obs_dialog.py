@@ -1,9 +1,10 @@
-from PySide6.QtCore import Signal
+from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import (QComboBox, QDialog, QDialogButtonBox, QFormLayout, QLineEdit,
-                              QPushButton, QSpinBox, QVBoxLayout)
+                              QMessageBox, QPushButton, QSpinBox, QVBoxLayout)
 
 from .widgets import label
 from ..capture.obs import local_obs_settings
+from .dialog_layout import fit_dialog
 
 
 class ObsDialog(QDialog):
@@ -13,6 +14,7 @@ class ObsDialog(QDialog):
         super().__init__(parent)
         self.setWindowTitle("连接 OBS · 选择 Switch 画面")
         self.setMinimumWidth(510)
+        fit_dialog(self, 590, 580)
         layout = QVBoxLayout(self)
         layout.setSpacing(15)
         layout.addWidget(label("在 OBS 中打开「工具 → WebSocket 服务器设置」，启用服务器。选择 Switch 视频采集源可避免场景边框影响识别。"))
@@ -86,5 +88,15 @@ class ObsDialog(QDialog):
                 self.sources.addItem(f"{source['kind']} · {source['name']}", source["name"])
             if self.sources.findData(previous) >= 0:
                 self.sources.setCurrentIndex(self.sources.findData(previous))
-            self.status.setText(f"OBS {result['version']} 连接已验证，请选择包含完整游戏画面的源。")
+            self.status.setText(f"OBS {result['version']} 连接已验证，请选择包含完整游戏画面的源。" if result['sources'] else
+                                '连接已验证，但没有采集源。请在 OBS「来源」添加视频采集设备，然后重新连接读取。')
+            if result['sources']:
+                previous_notice = getattr(self, 'notice_box', None)
+                if previous_notice is not None:
+                    previous_notice.close()
+                self.notice_box = QMessageBox(QMessageBox.Icon.Information, 'OBS 连接成功',
+                    f"已连接 OBS {result['version']}，读取到 {len(result['sources'])} 个可用来源。请选择 Switch 画面后确认。",
+                    QMessageBox.StandardButton.Ok, self)
+                self.notice_box.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
+                self.notice_box.open()
         self.set_busy(False)

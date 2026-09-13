@@ -8,11 +8,43 @@ import subprocess
 
 from .teams import STATS, TeamRules, blank_member
 from .data.storage import read_json
+from .battle_effects import engine_side
 
-ROOT = Path(__file__).resolve().parents[1]
+from .paths import app_paths, node_executable
+
+ROOT = app_paths().resources
 ENGINE = ROOT/'damage_engine'
 STAT_IDS = dict(zip(STATS, ('hp', 'atk', 'def', 'spa', 'spd', 'spe')))
 RULE_VERSION = 'champions-e7fd7e5-single-target-v1'
+
+# OP.GG and the calculation engine use different slugs for several regional,
+# cosmetic and battle forms.  Keep this translation explicit and audit it in
+# tests so a recognizable catalog entry never degrades into a generic failure.
+SPECIES_ALIASES = {
+    'raichu-alolan': 'raichu-alola',
+    'ninetales-alolan': 'ninetales-alola',
+    'slowbro-galarian': 'slowbro-galar',
+    'tauros-paldean-aqua': 'tauros-paldea-aqua',
+    'tauros-paldean-blaze': 'tauros-paldea-blaze',
+    'tauros-paldean-combat': 'tauros-paldea-combat',
+    'slowking-galarian': 'slowking-galar',
+    'stunfisk-galarian': 'stunfisk-galar',
+    'floette-eternal-flower': 'floette-eternal',
+    'mega-meowstic': 'meowstic-f-mega',
+    'aegislash': 'aegislash-shield',
+    'maushold-family-of-four': 'maushold-four',
+    'maushold-family-of-three': 'maushold',
+    'pyroar-female': 'pyroar',
+    'vileplume-female': 'vileplume',
+    'persian-alolan': 'persian-alola',
+    'blaziken-female': 'blaziken',
+    'staraptor-female': 'staraptor',
+    'toxtricity-amped': 'toxtricity',
+    'squawkabilly-green-plumage': 'squawkabilly',
+    'squawkabilly-blue-plumage': 'squawkabilly-blue',
+    'squawkabilly-yellow-plumage': 'squawkabilly-yellow',
+    'squawkabilly-white-plumage': 'squawkabilly-white',
+}
 
 
 def identifier(text):
@@ -22,7 +54,8 @@ def identifier(text):
 def battle_defaults():
     return {'hp': 0, 'status': '', 'boosts': dict.fromkeys(list(STATS)[1:], 0),
             'ability_on': False, 'allies_fainted': 0, 'reflect': False, 'light_screen': False,
-            'protected': False, 'helping_hand': False, 'friend_guard': False, 'tailwind': False}
+            'protected': False, 'helping_hand': False, 'friend_guard': False, 'tailwind': False,
+            'aurora_veil': False}
 
 
 class DamageService:
@@ -31,12 +64,24 @@ class DamageService:
         self.meta = read_json(ENGINE/'catalog.json')
         self.lookups = {k: {v['id']: v for v in values} for k, values in self.meta.items()}
 
+    def speed(self, member, battle, environment):
+        """Exact vendored speed calculation; incomplete builds remain unavailable."""
+        try:
+            job = {'kind':'speed', 'attacker':self.prepare(member,battle),
+                   'field':{'weather':environment.get('weather') or None,
+                            'terrain':environment.get('terrain') or None,
+                            'attackerSide':engine_side(battle)}}
+            return self.execute([job])[0]
+        except (ValueError,KeyError,TypeError) as exc:
+            return {'status':'unavailable','reason':str(exc)}
+
     def species(self, record):
         key = record.get('opgg_key') or record['source_slug']
         aliases = {'indeedee-male': 'indeedee', 'indeedee-female': 'indeedeef',
                    'basculegion-male': 'basculegion', 'basculegion-female': 'basculegionf',
                    'meowstic-male': 'meowstic', 'meowstic-female': 'meowsticf',
-                   'aegislash-shield': 'aegislash', 'gourgeist-average': 'gourgeist'}
+                   'gourgeist-average': 'gourgeist'}
+        key = SPECIES_ALIASES.get(key, key)
         if key.startswith('mega-'):
             parts = key[5:].split('-')
             key = parts[0] + '-mega' + (('-' + '-'.join(parts[1:])) if len(parts) > 1 else '')
@@ -118,10 +163,15 @@ class DamageService:
         """Run the same bounded local calculation path to expose save-time limitations."""
         record = self.rules.record(member['identity'])
         scene = self.comparison_presets(record)[0]
-        rows, jobs = self.jobs(member, battle_defaults(), [scene],
+        # Saving a team happens before battle-only state is known.  Use explicit,
+        # neutral preview choices here so valid Trace and Electro Shot builds are
+        # not reported as incomplete team configurations.
+        preview_battle = battle_defaults()
+        preview_battle.update(copied_ability='__none__', charge_boost_included=False)
+        rows, jobs = self.jobs(member, preview_battle, [scene],
             {'weather':'', 'terrain':'', 'targets':2, 'critical':False}, common=False)
         warnings = []
-        try:self.prepare(member, battle_defaults())
+        try:self.prepare(member, preview_battle)
         except (ValueError, KeyError) as exc:warnings.append(str(exc))
         try:results = self.execute(jobs)
         except ValueError as exc:return [str(exc)]
@@ -161,8 +211,7 @@ class DamageService:
             raise ValueError('天气或场地无效')
         rows, jobs = [], []
         def side(b):
-            return {'isReflect':b['reflect'], 'isLightScreen':b['light_screen'], 'isProtected':b['protected'],
-                    'isHelpingHand':b['helping_hand'], 'isFriendGuard':b['friend_guard'], 'isTailwind':b['tailwind']}
+            return engine_side(b)
         for scenario_index,scenario in enumerate(scenarios):
             enemy, enemy_battle = scenario['member'], scenario['battle']
             record = self.rules.record(enemy['identity'])
@@ -184,6 +233,7 @@ class DamageService:
                             or (move.get('power') is not None and move['power'] > 0 and move['power'] != engine_move.get('basePower'))):
                             raise ValueError('招式资料与规则快照不同，需核对更新后再计算')
                         job = {'attacker':self.prepare(attacker, ab), 'defender':self.prepare(defender, db), 'move':key,
+                               'charge_boost_included':ab.get('charge_boost_included'),
                                'critical':environment['critical'], 'field':{'gameType':'Doubles',
                                'weather':environment['weather'] or None, 'terrain':environment['terrain'] or None,
                                'isSingleTarget':environment['targets'] == 1, 'attackerSide':side(ab), 'defenderSide':side(db)}}
@@ -199,7 +249,8 @@ class DamageService:
 
     def comparison_presets(self,record):
         """Separate durability and offense benchmarks; observed spreads do not imply joint builds."""
-        usage=(self.catalog.usage or {}).get('pokemon',{}).get(record.get('opgg_key'),{})
+        usage,_=self.catalog.usage_for(record)
+        usage=usage or {}
         nature='hardy'
         for observed in sorted(usage.get('natures',[]),key=lambda n:-n['usage_percent']):
             found=next((key for key,n in self.rules.options['natures'].items()
@@ -232,7 +283,7 @@ class DamageService:
         return result
 
     def execute(self, jobs):
-        node = shutil.which('node') or str(Path('C:/Program Files/nodejs/node.exe'))
+        node = node_executable()
         try:
             result = subprocess.run([node, str(ENGINE/'bridge.cjs')], input=json.dumps(jobs, ensure_ascii=False),
                 encoding='utf-8', capture_output=True, timeout=25, cwd=ENGINE,

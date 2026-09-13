@@ -71,7 +71,7 @@ def test_immunity_status_unsupported_and_reverse_direction(service):
     assert result[2]['status']=='status_move'
     _,_,jobs=pair(service)
     jobs[0]['move']='bullet-seed'
-    assert service.execute(jobs)[0]['status']=='unavailable'
+    assert service.execute(jobs)[0]['multi_hit']['scenarios'][-1]['hits']==5
 
 
 @pytest.mark.parametrize('field', ['points','ability','nature','item'])
@@ -122,6 +122,16 @@ def test_stats_against_user_status_screenshot(service):
         assert [r['attacker_stats'][k] for k in STAT_IDS.values()]==expected
 
 
+def test_every_current_catalog_form_maps_to_damage_engine(service):
+    failures=[]
+    for record in service.catalog.records:
+        try:
+            service.species(record)
+        except ValueError:
+            failures.append((service.catalog.display_name(record),record.get('opgg_key')))
+    assert failures == []
+
+
 def test_mega_types_are_not_borrowed_from_base(service):
     a=member(service,points={'attack':32})
     record=next(r for r in service.catalog.records if r.get('opgg_key')=='mega-charizard-x')
@@ -161,3 +171,98 @@ def test_special_move_guards_and_fixed_damage(service):
     # Choice Band is absent from the pinned Champions item roster; never ignore it.
     jobs[0]['attacker']['options']['item']='Choice Band'
     assert service.execute(jobs[:1])[0]['status']=='unavailable'
+
+
+def test_support_effects_aurora_mapping_and_no_screen_stacking(service):
+    a=member(service,points={'attack':32},moves=['earthquake',None,None,None])
+    d=member(service,'巨金怪',{'hp':32},moves=['meteor-mash',None,None,None])
+    ab,db=battle_defaults(),battle_defaults()
+    db['aurora_veil']=True
+    env={'weather':'','terrain':'','critical':False,'targets':2}
+    _,jobs=service.jobs(a,ab,[{'name':'幕','member':d,'battle':db}],env,common=False)
+    assert jobs[0]['field']['defenderSide']['isAuroraVeil'] is True
+    result=service.execute(jobs[:1])[0]
+    assert (result['minimum'],result['maximum'])==(68,81)
+    jobs[0]['field']['defenderSide'].update(isReflect=True,isLightScreen=True)
+    combined=service.execute(jobs[:1])[0]
+    assert (combined['minimum'],combined['maximum'])==(68,81)
+    effect={e['key']:e for e in combined['support_effects']}
+    assert effect['isAuroraVeil']['state']=='applied'
+    assert effect['isReflect']['state']=='ignored'
+    assert '不叠加' in effect['isReflect']['reason']
+    jobs[0]['critical']=True
+    critical=service.execute(jobs[:1])[0]
+    assert (critical['minimum'],critical['maximum'])==(152,182)
+    assert all(e['state']=='ignored' for e in critical['support_effects'])
+
+
+def test_support_effects_help_is_directional_and_fixed_damage_ignores_it(service):
+    a=member(service,points={'attack':32},moves=['earthquake',None,None,None])
+    d=member(service,'巨金怪',{'hp':32},moves=['meteor-mash',None,None,None])
+    ab,db=battle_defaults(),battle_defaults();ab['helping_hand']=True
+    env={'weather':'','terrain':'','critical':False,'targets':2}
+    _,jobs=service.jobs(a,ab,[{'name':'双方作用','member':d,'battle':db}],env,common=False)
+    results=service.execute(jobs)
+    assert (results[0]['minimum'],results[0]['maximum'])==(152,182)
+    assert (results[4]['minimum'],results[4]['maximum'])==(69,82)
+    assert results[4]['support_effects'][0]['state']=='ignored'
+    assert '防守方' in results[4]['support_effects'][0]['reason']
+    jobs[0]['move']='seismic-toss'
+    fixed=service.execute(jobs[:1])[0]
+    assert fixed['minimum']==fixed['maximum']==50
+    assert fixed['support_effects'][0]['state']=='ignored'
+    assert '固定' in fixed['support_effects'][0]['reason']
+    db['helping_hand']=True;ab['helping_hand']=False
+    _,jobs=service.jobs(a,ab,[{'name':'反向帮助','member':d,'battle':db}],env,common=False)
+    result=service.execute(jobs)
+    assert (result[0]['minimum'],result[0]['maximum'])==(102,122)
+    assert result[4]['minimum']>69
+    assert result[4]['support_effects'][0]['state']=='applied'
+
+
+def test_support_effects_special_veil_and_screen_ignoring(service):
+    a=member(service,'喷火龙',moves=['flamethrower',None,None,None])
+    d=member(service,'妙蛙花',moves=[None]*4)
+    db=battle_defaults();db.update(aurora_veil=True,light_screen=True,reflect=True)
+    _,jobs=service.jobs(a,battle_defaults(),[{'name':'特殊幕','member':d,'battle':db}],
+        {'weather':'','terrain':'','critical':False,'targets':2},common=False)
+    result=service.execute(jobs[:1])[0]
+    assert (result['minimum'],result['maximum'])==(73,88)
+    # Ignore conditions are tested at the pinned engine boundary, independent of learnsets.
+    jobs[0]['attacker']['options']['ability']='Infiltrator'
+    bypass=service.execute(jobs[:1])[0]
+    assert (bypass['minimum'],bypass['maximum'])==(110,132)
+    assert all(e['state']=='ignored' and '穿透' in e['reason'] for e in bypass['support_effects'] if e['key']!='isReflect')
+    _,_,jobs=pair(service)
+    jobs[0]['move']='brick-break';jobs[0]['field']['defenderSide']['isAuroraVeil']=True
+    broken=service.execute(jobs[:1])[0]
+    assert '拆除' in broken['support_effects'][0]['reason']
+
+
+def test_support_effects_guard_tailwind_and_legacy_defaults(service):
+    from champion_assistant.battle_effects import engine_side
+    legacy=battle_defaults();legacy.pop('aurora_veil')
+    assert engine_side(legacy)['isAuroraVeil'] is False
+    _,_,jobs=pair(service)
+    jobs[0]['field']['defenderSide']['isFriendGuard']=True
+    jobs[0]['field']['attackerSide']['isTailwind']=True
+    jobs[0]['field']['defenderSide']['isTailwind']=True
+    result=service.execute(jobs[:1])[0]
+    assert (result['minimum'],result['maximum'])==(76,91)
+    assert [e['state'] for e in result['support_effects'] if e['key']=='isTailwind']==['context','context']
+    assert next(e for e in result['support_effects'] if e['key']=='isFriendGuard')['state']=='applied'
+
+
+def test_support_effects_protect_bypass_and_screen_critical(service):
+    _,_,jobs=pair(service)
+    jobs[0]['field']['defenderSide']['isProtected']=True
+    jobs[0]['move']='feint'
+    result=service.execute(jobs[:1])[0]
+    assert result['status']=='ok' and result['maximum']>0
+    assert '穿透守住' in result['support_effects'][0]['reason']
+    _,_,jobs=pair(service)
+    jobs[0]['field']['defenderSide'].update(isReflect=True,isLightScreen=True)
+    jobs[0]['critical']=True
+    result=service.execute(jobs[:1])[0]
+    assert (result['minimum'],result['maximum'])==(152,182)
+    assert all(e['state']=='ignored' for e in result['support_effects'])

@@ -31,6 +31,33 @@ def configure(dialog,service):
     dialog.set_target(service.catalog.record_for_name('巨金怪'))
 
 
+def test_support_effects_auto_calculate_grouping_and_details(qtbot,service,store):
+    from PySide6.QtWidgets import QGroupBox
+    d=DamageDialog(service.catalog,store.list,lambda:None);qtbot.addWidget(d)
+    configure(d,service);d.show()
+    qtbot.waitUntil(lambda:bool(d.rows) and d.worker is None,timeout=15000)
+    base=d.rows[0]['maximum']
+    assert not d.own_battle.flags['helping_hand'].isChecked()
+    assert {'进攻辅助 · 此方','防守保护 · 此方','速度条件 · 此方'} <= {
+        box.title() for box in d.own_battle.findChildren(QGroupBox)}
+    d.own_battle.flags['helping_hand'].setChecked(True)
+    qtbot.waitUntil(lambda:bool(d.rows) and d.worker is None,timeout=15000)
+    assert d.rows[0]['maximum']>base
+    d.show_detail(0)
+    assert '本次受到帮助 · 已启用 / 本招适用' in d.detail.toPlainText()
+    incoming=next(i for i,row in enumerate(d.rows) if row['direction']=='对手 → 我方')
+    d.show_detail(incoming)
+    assert '本招忽略' in d.detail.toPlainText() and '帮助只作用于攻击方' in d.detail.toPlainText()
+    d.own_battle.flags['helping_hand'].setChecked(False)
+    qtbot.waitUntil(lambda:bool(d.rows) and d.worker is None,timeout=15000)
+    assert d.rows[0]['maximum']==base
+    d.pages[0].battle.flags['aurora_veil'].setChecked(True)
+    qtbot.waitUntil(lambda:bool(d.rows) and d.worker is None,timeout=15000)
+    assert d.rows[0]['maximum']<base
+    d.show_detail(0);assert '极光幕 · 已启用 / 本招适用' in d.detail.toPlainText()
+    assert all(row['move']['category']!='status' for row in d.rows if row['direction']=='对手 → 我方' and row['move'])
+
+
 def test_real_bidirectional_results_and_input_revoke(qtbot,service,store):
     d=DamageDialog(service.catalog,store.list,lambda:None)
     qtbot.addWidget(d)
@@ -156,6 +183,17 @@ def test_missing_scenario_nature_is_visible_without_render_error(qtbot,service,s
     d.calculate();qtbot.waitUntil(lambda:d.worker is None,timeout=15000)
     assert '未知性格' in d.table.horizontalHeaderItem(1).text()
     assert '暂不可计算' in d.table.item(0,1).text()
+    assert '性格尚未确认' in d.table.item(0,1).text()
+    assert '性格尚未确认' in d.status.text()
+
+
+def test_alolan_persian_manual_correction_calculates(qtbot,service,store):
+    d=DamageDialog(service.catalog,store.list,lambda:None);qtbot.addWidget(d)
+    select(d.saved_team,store.list()[0]['id'])
+    d.set_target(service.catalog.record_for_name('猫老大（阿罗拉）'))
+    d.calculate();qtbot.waitUntil(lambda:d.worker is None,timeout=15000)
+    assert any(r['status']=='ok' for r in d.rows)
+    assert all('该形态尚未映射' not in r.get('reason','') for r in d.rows)
 
 
 def test_main_window_target_and_new_capture_preserve_saved_team(qtbot,service,store,tmp_path,monkeypatch):
@@ -169,21 +207,111 @@ def test_main_window_target_and_new_capture_preserve_saved_team(qtbot,service,st
         def run(self,revision,operation,payload):
             self.finished.emit(revision,operation,None,'测试结束')
     w=MainWindow(settings_path=tmp_path/'ui.json',worker_factory=Worker)
-    qtbot.addWidget(w);monkeypatch.setattr(w,'damage_teams',store.list)
+    qtbot.addWidget(w);monkeypatch.setattr(w,'damage_teams',lambda catalog=None:store.list())
     try:
-        w.show_record(w.catalog.record_for_name('巨金怪'))
+        w.opponents=[{'name':'巨金怪'}, {'name':'大狃拉'}]
+        w._render_team();w.team_list.setCurrentRow(0)
+        w.refresh_saved_team_selection()
+        select(w.saved_team_selector,store.list()[0]['id'])
+        assert '我方实配速度：' in w.saved_speed_label.text()
+        assert '待确认' not in w.saved_speed_label.text()
         w.open_damage();d=w.damage_dialog
         assert len(d.pages)==12
         w.show_record(w.catalog.record_for_name('大狃拉'))
         assert '超能力 4×' in w.matchups.text()
         configure(d,service)
         w._show_empty_reference()
+        # Reference clearing selects the unknown sixth slot; recognized roster remains available.
         assert not d.pages
         w.show_record(w.catalog.record_for_name('巨金怪'))
         assert len(d.pages)==12
         d.own_battle.hp.setValue(12)
         w.open_image('new.png')
-        assert not d.pages and d.own.read()==store.list()[0]['members'][0]
-        assert d.own_battle.hp.value()==0
+        assert d.pages and d.own.read()==store.list()[0]['members'][0]
+        assert d.own_battle.hp.value()==12
         qtbot.waitUntil(lambda:not w.busy)
     finally:w.close()
+
+def test_battle_context_restricts_slots_and_defaults_saved_id(qtbot,service,store):
+    team=store.list()[0]
+    d=DamageDialog(service.catalog,store.list,lambda:None,team_id=team['id'],opponents=[service.catalog.record_for_name('巨金怪'),None])
+    qtbot.addWidget(d)
+    assert d.saved_team.currentData()==team['id']
+    assert d.target.count()==6 and not d.target.isEditable()
+    assert '未确认' in d.target.itemText(1)
+    d.target.setCurrentIndex(1)
+    assert not d.pages
+    d.set_target(service.catalog.record_for_name('皮卡丘'))
+    assert d.target.count()==6 and d.target.currentData() is None
+
+
+def test_quick_enemy_stages_apply_to_every_scenario(qtbot,service,store):
+    d=DamageDialog(service.catalog,store.list,lambda:None);qtbot.addWidget(d);configure(d,service)
+    d.enemy_boosts['defense'].setValue(2)
+    d.enemy_tailwind.setChecked(True)
+    request=d.snapshot()
+    assert all(p['battle']['boosts']['defense']==2 and p['battle']['tailwind'] for p in request['scenarios'])
+    assert d.own.isHidden()
+
+
+def test_enemy_ability_choice_and_fixed_mega_ability(qtbot,service,store):
+    d=DamageDialog(service.catalog,store.list,lambda:None);qtbot.addWidget(d)
+    select(d.saved_team,store.list()[0]['id'])
+    d.set_target(service.catalog.record_for_name('猫老大（阿罗拉）'))
+    assert d.enemy_ability_choice.isEnabled()
+    assert d.enemy_ability_choice.findData('fur-coat')>=0
+    select(d.enemy_ability_choice,'fur-coat')
+    assert all(scene['member']['ability']=='fur-coat' for scene in d.snapshot()['scenarios'])
+    assert '物理招式' in d.enemy_ability_note.text()
+    assert d.enemy_ability.isHidden()  # 毛皮大衣始终生效，不需要第二个开关。
+
+    d.set_target(service.catalog.record_for_name('大狃拉'))
+    select(d.enemy_ability_choice,'unburden')
+    assert not d.enemy_ability.isHidden() and '轻装已触发' in d.enemy_ability.text()
+    assert all(not p.battle.flags['ability_on'].isHidden() for p in d.pages)
+
+    d.set_target(service.catalog.record_for_name('超级路卡利欧Z'))
+    assert not d.enemy_ability_choice.isEnabled()
+    assert d.enemy_ability_choice.currentData()=='aura-guard'
+    assert d.enemy_ability_choice.currentText()=='固定特性 · 波导防护'
+    assert all(scene['member']['ability']=='aura-guard' for scene in d.snapshot()['scenarios'])
+    assert '接触类物理招式' in d.enemy_ability_note.text()
+    assert d.enemy_ability.isHidden()  # 波导防护固定生效。
+
+    d.set_target(service.catalog.record_for_name('喷火龙'))
+    assert not d.enemy_ability.isHidden()
+    assert not d.enemy_ability.isEnabled()
+    assert '选择猛火' in d.enemy_ability.text()
+    select(d.enemy_ability_choice,'blaze')
+    assert d.enemy_ability.isEnabled() and '猛火已触发' in d.enemy_ability.text()
+
+
+def test_saved_blaze_build_shows_real_trigger_control(qtbot,service,store):
+    member=service.presets(service.catalog.record_for_name('喷火龙'))[0]['member']
+    member.update(ability='blaze',item='charizardite-y',
+                  moves=['heat-wave','weather-ball','ancient-power','protect'])
+    team=store.save({'name':'猛火队','registration':'partial','members':[member]})
+    d=DamageDialog(service.catalog,store.list,lambda:None,team_id=team['id']);qtbot.addWidget(d)
+    select(d.saved_team,team['id'])
+    d.set_target(service.catalog.record_for_name('暴飞龙'))
+    assert not d.own_battle.flags['ability_on'].isHidden()
+    assert '猛火已触发' in d.own_battle.flags['ability_on'].text()
+    d.own_battle.flags['ability_on'].setChecked(True)
+    assert d.snapshot()['own_battle']['ability_on'] is True
+
+
+@pytest.mark.parametrize(('saved_item','form_name','expected_item'), [
+    ('charizardite-y','超级喷火龙X','charizardite-x'),
+    ('charizardite-x','超级喷火龙Y','charizardite-y'),
+])
+def test_mega_form_uses_temporary_matching_stone(qtbot,service,store,saved_item,form_name,expected_item):
+    member=service.presets(service.catalog.record_for_name('喷火龙'))[0]['member']
+    member['item']=saved_item
+    member['ability']='blaze'
+    team=store.save({'name':'Mega选择','registration':'partial','members':[member]})
+    team=next(t for t in store.list() if t['name']=='Mega选择')
+    d=DamageDialog(service.catalog,store.list,lambda:None,team_id=team['id']);qtbot.addWidget(d)
+    select(d.own_form,service.rules.identity(service.catalog.record_for_name(form_name)))
+    assert '自动采用' in d.form_warning.text()
+    assert d.own_combat_member(member)['item']==expected_item
+    assert next(t for t in store.list() if t['id']==team['id'])['members'][0]['item']==saved_item

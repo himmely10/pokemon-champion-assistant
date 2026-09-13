@@ -2,11 +2,12 @@
 from functools import lru_cache
 from pathlib import Path
 import json
+from .paths import app_paths
 
 
 @lru_cache(maxsize=1)
 def chart():
-    return json.loads((Path(__file__).resolve().parents[1]/'config/type_chart.json').read_text(encoding='utf-8'))
+    return json.loads(app_paths().resource('config/type_chart.json').read_text(encoding='utf-8'))
 
 
 def type_matchups(types):

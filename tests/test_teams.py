@@ -131,6 +131,8 @@ def test_editor_save_reopen_and_revoke(qtbot, rules, full, tmp_path):
     for editor, member in zip(dialog.editors, full['members']): editor.load(member)
     dialog.save_team()
     assert dialog.active and dialog.active['revision'] == 1
+    notice = getattr(dialog, 'success_box', None) or dialog.warning_box
+    assert '保存' in notice.windowTitle()
     # Choosing a saved team never populates the independent observations.
     assert not dialog.result['builds']
     for (pokemon, item), member in zip(dialog.observed, reversed(full['members'])):

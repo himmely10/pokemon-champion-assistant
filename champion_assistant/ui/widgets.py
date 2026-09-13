@@ -56,7 +56,9 @@ class DropPreview(QFrame):
         super().__init__()
         self.setObjectName("DropPreview")
         self.setAcceptDrops(True)
-        self.setFixedHeight(125)
+        self.setFocusPolicy(Qt.FocusPolicy.StrongFocus)
+        self.setAccessibleName('游戏截图输入区；按回车选择图片')
+        self.setFixedHeight(68)
         self.image = None
         self.layout = QVBoxLayout(self)
         self.display = label("拖入完整游戏截图\n或双击选择图片", "DropHint")
@@ -84,6 +86,13 @@ class DropPreview(QFrame):
 
     def mouseDoubleClickEvent(self, event):
         self.openRequested.emit()
+
+    def keyPressEvent(self, event):
+        if event.key() in (Qt.Key.Key_Return, Qt.Key.Key_Enter, Qt.Key.Key_Space):
+            self.openRequested.emit()
+            event.accept()
+        else:
+            super().keyPressEvent(event)
 
     def set_image(self, image):
         self.image = QPixmap.fromImage(ImageQt(image))

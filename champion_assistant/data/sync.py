@@ -11,9 +11,11 @@ from .storage import (atomic_bytes, confined, digest, discard_stage, export_comp
                       make_bundle, now, publish, read_json, resolve_dataset, save_json,
                       validate_bundle, validate_index)
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+from ..paths import app_paths
+
+PROJECT_ROOT = app_paths().resources
 CONFIG = PROJECT_ROOT / "config"
-CATALOG_REVISION = 2
+CATALOG_REVISION = 3
 
 
 def inputs(root, client, source_dir=None, minimum=200, aliases=None):

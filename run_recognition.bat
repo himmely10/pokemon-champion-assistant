@@ -8,7 +8,7 @@ if not exist ".venv\Scripts\python.exe" (
   exit /b 1
 )
 if "%~1"=="" (
-  ".venv\Scripts\python.exe" -X utf8 recognize_opponent.py "例子.png"
+  ".venv\Scripts\python.exe" -X utf8 recognize_opponent.py "图片/例子.png"
 ) else (
   ".venv\Scripts\python.exe" -X utf8 recognize_opponent.py "%~1"
 )

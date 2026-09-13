@@ -19,7 +19,7 @@ ALIASES = read_json(PROJECT_ROOT / "config/source_aliases.json")
 
 def html_for(rows):
     frame = "0:" + json.dumps(["$", "catalog", None, {"pokemon": rows}], ensure_ascii=False) + "\n"
-    return ("<script>self.__next_f.push(" + json.dumps([1, frame], ensure_ascii=False) + ")</script>").encode()
+    return ('<meta charset="utf-8"><script>self.__next_f.push(' + json.dumps([1, frame], ensure_ascii=False) + ")</script>").encode()
 
 
 def test_move_only_update_and_missing_list_preserve_old_bundle(fixture_data):
@@ -27,8 +27,10 @@ def test_move_only_update_and_missing_list_preserve_old_bundle(fixture_data):
     move = {"key": "tackle", "name": "撞击", "category": "physical", "type": "normal",
             "power": 40, "accuracy": 100, "effect": "攻击目标。", "isAvailable": True}
     def write_moves():
+        for row in rows:
+            row['moves'], row['bannedMoves'] = ['tackle'], []
         frame = "0:" + json.dumps(["$", "catalog", None, {"pokemon": rows, "moveList": [move]}], ensure_ascii=False) + "\n"
-        (folder / "pokedex.html").write_bytes(("<script>self.__next_f.push(" + json.dumps([1, frame], ensure_ascii=False) + ")</script>").encode())
+        (folder / "pokedex.html").write_bytes(('<meta charset="utf-8"><script>self.__next_f.push(' + json.dumps([1, frame], ensure_ascii=False) + ")</script>").encode())
     write_moves()
     run_update(root, "sync", folder, minimum=1, client=OfflineImages(image))
     old = resolve_dataset(root)
@@ -38,6 +40,7 @@ def test_move_only_update_and_missing_list_preserve_old_bundle(fixture_data):
     assert report["moves_changed"] and report["status"] == "published"
     assert resolve_dataset(root) != old
     assert read_json(resolve_dataset(root) / "moves.json")["tackle"]["description"] == "新的效果说明。"
+    assert 'catalog.sqlite' in read_json(resolve_dataset(root)/'manifest.json')['files']
     pointer = (root / "current.json").read_bytes()
     (folder / "pokedex.html").write_bytes(html_for(rows))
     with pytest.raises(ValueError, match="招式清单丢失"):

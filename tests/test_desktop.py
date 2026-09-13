@@ -133,15 +133,16 @@ def test_ui_mega_preview_move_click_search_and_tooltip(window, qtbot):
     assert window.move_effect.text() == item.data(Qt.ItemDataRole.UserRole)["description"]
 
 
-def test_drag_image_recognition_and_new_input_clears_previous(window, qtbot):
+def test_drag_image_recognition_and_failed_input_keeps_previous(window, qtbot):
     mime = QMimeData()
-    mime.setUrls([QUrl.fromLocalFile(str(ROOT / "例子.png"))])
+    mime.setUrls([QUrl.fromLocalFile(str(ROOT / "图片/例子.png"))])
     drop = QDropEvent(QPointF(20, 20), Qt.DropAction.CopyAction, mime,
                       Qt.MouseButton.LeftButton, Qt.KeyboardModifier.NoModifier)
     window.preview.dropEvent(drop)
     assert drop.isAccepted() and window.busy
     qtbot.waitUntil(lambda: not window.busy, timeout=45000)
     assert window.last_result is not None, window.status_label.text()
+    assert window.notice_box.windowTitle() == '识别完成'
     assert [r["name"] for r in window.opponents] == ["苍炎刃鬼", "风妖精", "巨金怪", "来悲粗茶", "烈咬陆鲨", "姆克鹰"]
     window.team_list.setCurrentRow(4)
     assert window.stats_table.columnCount() == 4
@@ -149,9 +150,11 @@ def test_drag_image_recognition_and_new_input_clears_previous(window, qtbot):
     window.correct_slot()
     assert window.opponents[4]["name"] == "喷火龙" and window.opponents[4]["manual"]
     window.open_image(str(ROOT / "不存在.png"))
-    assert window.opponents == [] and window.preview.image is None
+    previous = window.last_result
+    assert window.opponents and window.preview.image is not None
+    assert '上次分析' in window.input_label.text()
     qtbot.waitUntil(lambda: not window.busy, timeout=5000)
-    assert window.last_result is None and "无法打开" in window.status_label.text()
+    assert window.last_result is previous and "无法打开" in window.status_label.text()
 
 
 def test_cancel_discards_late_result(qtbot, tmp_path):
@@ -196,11 +199,25 @@ def test_small_window_uses_scroll_and_keeps_stats_separate(window, qtbot):
 
 def test_speed_table_matches_user_reference_and_comparison(window):
     window.show_record(window.catalog.record_for_name("大狃拉"))
+    from champion_assistant.teams import TeamRules
+    rules = TeamRules(window.catalog)
+    shown = {window.enemy_speed_ability.itemData(i) for i in range(1, window.enemy_speed_ability.count())}
+    assert shown == set(rules.ability_keys(rules.identity(window.selected_record)))
     assert [window.speed_table.item(r, 1).text() for r in range(6)] == ["283", "189", "258", "172", "140", "126"]
     window.speed_compare.setCurrentText("烈咬陆鲨")
     assert window.speed_table.columnCount() == 3
     assert window.speed_table.item(1, 2).text() == "169"
     assert window.opponents == []
+
+
+def test_main_speed_ability_choices_follow_selected_species(window):
+    from champion_assistant.teams import TeamRules
+    rules=TeamRules(window.catalog)
+    record=window.catalog.record_for_name('猫老大（阿罗拉）')
+    window.show_record(record)
+    shown={window.enemy_speed_ability.itemData(i) for i in range(1,window.enemy_speed_ability.count())}
+    assert shown==set(rules.ability_keys(rules.identity(record)))
+    assert {'fur-coat','technician'} <= shown
 
 
 def test_local_obs_import_does_not_persist_password(window, monkeypatch):
