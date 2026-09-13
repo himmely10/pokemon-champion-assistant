@@ -335,8 +335,20 @@ class TeamDialog(QDialog):
         if problems:
             self.message.setText(f"⚠ 已保存「{team['name']}」，部分配置需要补充或选择战斗条件才能计算。")
             self.show_warning('已保存 · 伤害计算需要注意', '\n\n'.join(problems))
+        else:
+            previous = getattr(self, 'success_box', None)
+            if previous is not None:
+                previous.close()
+            self.success_box = QMessageBox(QMessageBox.Icon.Information, '队伍保存成功',
+                f"已保存「{team['name']}」· 版本 {team['revision']}。伤害页面会自动读取最新配置。",
+                QMessageBox.StandardButton.Ok, self)
+            self.success_box.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
+            self.success_box.open()
 
     def show_warning(self, title, text):
+        previous = getattr(self, 'warning_box', None)
+        if previous is not None:
+            previous.close()
         self.warning_box = QMessageBox(QMessageBox.Icon.Warning, title, text,
             QMessageBox.StandardButton.Ok, self)
         self.warning_box.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)

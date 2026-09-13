@@ -907,7 +907,7 @@ export function calculateAtModsChampions(
     desc.weather = field.weather;
   } else if (
     (attacker.hasAbility('Guts') && attacker.status && move.category === 'Physical') ||
-    (attacker.curHP() <= attacker.maxHP() / 3 &&
+    ((attacker.curHP() <= attacker.maxHP() / 3 || attacker.abilityOn) &&
       ((attacker.hasAbility('Overgrow') && move.hasType('Grass')) ||
        (attacker.hasAbility('Blaze') && move.hasType('Fire')) ||
        (attacker.hasAbility('Torrent') && move.hasType('Water')) ||
@@ -1134,7 +1134,8 @@ export function calculateFinalModsChampions(
     desc.defenderAbility = defender.ability;
   }
 
-  const halveContactMoveDmg = defender.hasAbility('Fluffy') || defender.hasAbility('Aura Guard');
+  const halveContactMoveDmg = defender.hasAbility('Fluffy') ||
+    (defender.hasAbility('Aura Guard') && move.category === 'Physical');
   if (halveContactMoveDmg && move.flags.contact && !attacker.hasAbility('Long Reach')) {
     finalMods.push(2048);
     desc.defenderAbility = defender.ability;

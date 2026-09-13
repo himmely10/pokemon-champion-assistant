@@ -142,6 +142,7 @@ def test_drag_image_recognition_and_failed_input_keeps_previous(window, qtbot):
     assert drop.isAccepted() and window.busy
     qtbot.waitUntil(lambda: not window.busy, timeout=45000)
     assert window.last_result is not None, window.status_label.text()
+    assert window.notice_box.windowTitle() == '识别完成'
     assert [r["name"] for r in window.opponents] == ["苍炎刃鬼", "风妖精", "巨金怪", "来悲粗茶", "烈咬陆鲨", "姆克鹰"]
     window.team_list.setCurrentRow(4)
     assert window.stats_table.columnCount() == 4
@@ -198,11 +199,25 @@ def test_small_window_uses_scroll_and_keeps_stats_separate(window, qtbot):
 
 def test_speed_table_matches_user_reference_and_comparison(window):
     window.show_record(window.catalog.record_for_name("大狃拉"))
+    from champion_assistant.teams import TeamRules
+    rules = TeamRules(window.catalog)
+    shown = {window.enemy_speed_ability.itemData(i) for i in range(1, window.enemy_speed_ability.count())}
+    assert shown == set(rules.ability_keys(rules.identity(window.selected_record)))
     assert [window.speed_table.item(r, 1).text() for r in range(6)] == ["283", "189", "258", "172", "140", "126"]
     window.speed_compare.setCurrentText("烈咬陆鲨")
     assert window.speed_table.columnCount() == 3
     assert window.speed_table.item(1, 2).text() == "169"
     assert window.opponents == []
+
+
+def test_main_speed_ability_choices_follow_selected_species(window):
+    from champion_assistant.teams import TeamRules
+    rules=TeamRules(window.catalog)
+    record=window.catalog.record_for_name('猫老大（阿罗拉）')
+    window.show_record(record)
+    shown={window.enemy_speed_ability.itemData(i) for i in range(1,window.enemy_speed_ability.count())}
+    assert shown==set(rules.ability_keys(rules.identity(record)))
+    assert {'fur-coat','technician'} <= shown
 
 
 def test_local_obs_import_does_not_persist_password(window, monkeypatch):

@@ -7,7 +7,7 @@ from PySide6.QtCore import QThread, Signal, Qt, QTimer
 from PySide6.QtGui import QKeySequence, QShortcut
 from PySide6.QtWidgets import (QCheckBox, QComboBox, QDialog, QGridLayout, QHBoxLayout,
     QLabel, QLineEdit, QPushButton, QScrollArea, QSpinBox, QTabWidget, QTableWidget,
-    QTableWidgetItem, QTextEdit, QVBoxLayout, QWidget, QHeaderView, QGroupBox, QSplitter)
+    QTableWidgetItem, QTextEdit, QVBoxLayout, QWidget, QHeaderView, QGroupBox, QSizePolicy)
 
 from ..damage import DamageService, RULE_VERSION, battle_defaults
 from ..battle_effects import SUPPORT_EFFECTS, effect_summary
@@ -17,6 +17,37 @@ from ..data.storage import TYPE_NAMES
 from .team_dialog import MemberEditor, select, value
 from .matchups import MatchupLabel
 from .dialog_layout import fit_dialog
+
+
+ABILITY_TRIGGER_LABELS = {
+    'blaze': '猛火已触发（HP≤1/3时自动生效）',
+    'torrent': '激流已触发（HP≤1/3时自动生效）',
+    'overgrow': '茂盛已触发（HP≤1/3时自动生效）',
+    'swarm': '虫之预感已触发（HP≤1/3时自动生效）',
+    'unburden': '轻装已触发（道具已失去）',
+    'slow-start': '慢启动仍在生效',
+    'electromorphosis': '电力转换已进入充电状态',
+    'analytic': '分析：本次按后手攻击',
+    'plus': '正电：对应特性同伴在场',
+    'minus': '负电：对应特性同伴在场',
+    'flash-fire': '引火已吸收火属性招式',
+    'stakeout': '蹲守：目标本回合刚换入',
+    'intimidate': '本次入场威吓生效',
+    'intrepid-sword': '本次入场触发不挠之剑',
+    'dauntless-shield': '本次入场触发不屈之盾',
+    'teraform-zero': '太晶变形归零已触发',
+}
+
+
+def configure_ability_trigger(box, ability, prefix=''):
+    label=ABILITY_TRIGGER_LABELS.get(ability)
+    box.blockSignals(True)
+    if not label:
+        box.setChecked(False)
+    box.setText((prefix+' · ' if prefix else '')+(label or '当前特性无需手动触发'))
+    box.setVisible(bool(label))
+    box.setEnabled(bool(label))
+    box.blockSignals(False)
 
 
 class ScenarioMember(MemberEditor):
@@ -29,6 +60,9 @@ class BattleEditor(QWidget):
     def __init__(self, changed):
         super().__init__()
         layout = QGridLayout(self)
+        layout.setAlignment(Qt.AlignmentFlag.AlignTop)
+        layout.setVerticalSpacing(6)
+        self.setSizePolicy(QSizePolicy.Policy.Expanding,QSizePolicy.Policy.Maximum)
         self.hp = QSpinBox()
         self.hp.setRange(0, 999)
         self.hp.setSpecialValueText('满 HP（假设）')
@@ -41,10 +75,12 @@ class BattleEditor(QWidget):
             layout.addWidget(QLabel(label), 0, col)
             layout.addWidget(widget, 1, col)
         self.boosts = {}
+        self.boost_labels = {}
         for i, (key, name) in enumerate(list(STATS.items())[1:]):
             box = QSpinBox(); box.setRange(-6,6)
             self.boosts[key] = box
-            layout.addWidget(QLabel(name+'等级'), 2+i//3*2, i%3)
+            label=QLabel(name+'等级');self.boost_labels[key]=label
+            layout.addWidget(label, 2+i//3*2, i%3)
             layout.addWidget(box, 3+i//3*2, i%3)
             box.valueChanged.connect(changed)
         self.flags = {}
@@ -52,8 +88,10 @@ class BattleEditor(QWidget):
         layout.addWidget(charge,11,0,1,3);charge.toggled.connect(changed)
         ability=QCheckBox('条件特性生效／本次威吓');self.flags['ability_on']=ability
         layout.addWidget(ability,6,0,1,3);ability.toggled.connect(changed)
+        self.groups={}
         for row, group in enumerate(('进攻辅助','防守保护','速度条件'),7):
             panel=QGroupBox(group+' · 此方');grid=QGridLayout(panel)
+            self.groups[group]=panel
             for i,(key,_,label,_,tip) in enumerate(e for e in SUPPORT_EFFECTS if e[3]==group):
                 box=QCheckBox(label);box.setToolTip(tip);self.flags[key]=box
                 grid.addWidget(box,i//2,i%2);box.toggled.connect(changed)
@@ -77,6 +115,8 @@ class ScenarioPage(QWidget):
     def __init__(self, rules, changed, title):
         super().__init__()
         layout = QVBoxLayout(self)
+        layout.setAlignment(Qt.AlignmentFlag.AlignTop)
+        self.setSizePolicy(QSizePolicy.Policy.Expanding,QSizePolicy.Policy.Maximum)
         self.name = QLineEdit(title)
         layout.addWidget(self.name)
         self.editor = ScenarioMember(rules, changed)
@@ -84,6 +124,11 @@ class ScenarioPage(QWidget):
         layout.addWidget(self.editor)
         layout.addWidget(self.battle)
         self.name.textChanged.connect(changed)
+        self.editor.ability.currentIndexChanged.connect(self.refresh_ability_trigger)
+        self.refresh_ability_trigger()
+
+    def refresh_ability_trigger(self, *_):
+        configure_ability_trigger(self.battle.flags['ability_on'], self.editor.ability.currentData())
 
 
 class DamageWorker(QThread):
@@ -147,6 +192,8 @@ class DamageDialog(QDialog):
         self.own_summary=QLabel();self.enemy_summary=QLabel()
         self.own_matchups=MatchupLabel();self.enemy_matchups=MatchupLabel()
         self.own_form=QComboBox();self.enemy_form=QComboBox()
+        self.enemy_ability_choice=QComboBox()
+        self.enemy_ability_note=QLabel();self.enemy_ability_note.setWordWrap(True)
         self.copied_ability=combo([
             ('未触发复制／无特性效果（假设）','__none__')]+[
             (v['name'],k) for k,v in self.rules.options['abilities'].items()
@@ -161,17 +208,13 @@ class DamageDialog(QDialog):
             if summary is self.own_summary:
                 box.addWidget(self.copied_ability)
                 self.form_warning=QLabel();self.form_warning.setStyleSheet('color:#b33d14;font-weight:bold');self.form_warning.setWordWrap(True);box.addWidget(self.form_warning)
-                self.assume_stone=QCheckBox('仅本次假设换为对应进化石（不修改预存队伍）');box.addWidget(self.assume_stone)
-                self.assume_stone.toggled.connect(self.form_changed)
                 edit_item=QPushButton('修改预存道具');edit_item.clicked.connect(configure_team);box.addWidget(edit_item)
+            else:
+                box.addWidget(self.enemy_ability_choice)
+                box.addWidget(self.enemy_ability_note)
             box.addWidget(summary);box.addWidget(matchups);summaries.addWidget(group,1)
         layout.addLayout(summaries)
-        self.result_splitter=QSplitter(Qt.Orientation.Vertical)
-        self.result_splitter.setChildrenCollapsible(False)
-        self.result_splitter.setHandleWidth(10)
-        self.result_splitter.setStyleSheet('QSplitter::handle:vertical {background:#c5d4df; margin:2px 0; border-radius:3px;} QSplitter::handle:vertical:hover {background:#148878;}')
-        layout.addWidget(self.result_splitter,1)
-        self.tabs=QTabWidget();self.result_splitter.addWidget(self.tabs)
+        self.tabs=QTabWidget();layout.addWidget(self.tabs,1)
         self.direction_tables={}
         for direction,title,note in [
             ('我方 → 对手','我方打对手 · 四个招式','每行一个我方招式。零耐久不使用减防性格；满物防、满特防分别考虑 HP、对应防御培养点与增益性格。每格保留独立随机范围。'),
@@ -189,33 +232,39 @@ class DamageDialog(QDialog):
             box.addWidget(table,1);self.tabs.addTab(page,title);self.direction_tables[direction]=table
         self.table=self.direction_tables['我方 → 对手'];self.incoming_table=self.direction_tables['对手 → 我方']
         scroll=QScrollArea();scroll.setWidgetResizable(True);body=QWidget();scroll.setWidget(body)
-        config=QVBoxLayout(body);self.tabs.addTab(scroll,'场况与情景设置')
-        self.notice=QLabel('默认无天气／场地、满 HP、能力等级 0、非要害；普通对手默认无特性效果、无道具，Mega 使用对应特性和进化石。比较仅代表这些条件下的单次命中伤害。')
+        config=QVBoxLayout(body);config.setAlignment(Qt.AlignmentFlag.AlignTop);self.tabs.addTab(scroll,'高级情景设置')
+        self.notice=QLabel('默认无天气／场地、满 HP、能力等级 0、非要害；普通对手可统一选择特性假设，默认无特性效果、无道具；Mega 使用固定特性和对应进化石。比较仅代表这些条件下的单次命中伤害。')
         self.notice.setWordWrap(True);config.addWidget(self.notice)
-        env=QHBoxLayout();self.weather=QComboBox();self.terrain=QComboBox();self.targets=QComboBox()
+        self.weather=QComboBox();self.terrain=QComboBox();self.targets=QComboBox()
         for n,k in [('无天气',''),('晴天','Sun'),('下雨','Rain'),('沙暴','Sand'),('下雪','Snow')]:self.weather.addItem(n,k)
         for n,k in [('无场地',''),('电气场地','Electric'),('青草场地','Grassy'),('薄雾场地','Misty'),('精神场地','Psychic')]:self.terrain.addItem(n,k)
         self.targets.addItem('群攻至少两个有效目标',2);self.targets.addItem('群攻只有一个有效目标',1)
         self.critical=QCheckBox('要害')
-        for w in [self.weather,self.terrain,self.targets,self.critical]:env.addWidget(w)
-        config.addLayout(env)
-        self.common=QCheckBox('对手使用双打采用率前八个伤害招式（取消后使用各情景四招中的伤害招式）');self.common.setChecked(True)
-        config.addWidget(self.common)
-        explanation=QLabel('常用分配采用率仅描述六项培养点，不代表性格／特性／道具的联合概率。常用分配默认搭配采用率最高的性格作为假设；可在此修改。天气／场地需要手选；已计入能力等级的威吓不要重复勾选。')
+        self.common=QCheckBox('对手采用率前八招');self.common.setChecked(True)
+        self.common.setToolTip('勾选后使用双打采用率前八个伤害招式；取消后使用各情景四招中的伤害招式。')
+        explanation=QLabel('这里用于调整单个耐久／输出情景的 HP、异常状态、性格、道具和培养点。常用分配采用率仅描述六项培养点，不代表性格／特性／道具的联合概率。')
         explanation.setWordWrap(True);config.addWidget(explanation)
-        columns=QHBoxLayout();config.addLayout(columns)
-        own=QWidget();own_layout=QVBoxLayout(own);own_layout.addWidget(QLabel('我方已保存配置及当前场况'))
+        columns_widget=QWidget();columns_widget.setSizePolicy(QSizePolicy.Policy.Expanding,QSizePolicy.Policy.Maximum)
+        columns=QHBoxLayout(columns_widget);columns.setContentsMargins(0,0,0,0);columns.setAlignment(Qt.AlignmentFlag.AlignTop)
+        config.addWidget(columns_widget,0,Qt.AlignmentFlag.AlignTop)
+        own=QWidget();own.setSizePolicy(QSizePolicy.Policy.Expanding,QSizePolicy.Policy.Maximum)
+        own_layout=QVBoxLayout(own);own_layout.setAlignment(Qt.AlignmentFlag.AlignTop);own_layout.addWidget(QLabel('我方已保存配置及当前场况'))
         self.own=MemberEditor(self.rules,self.invalidate);self.own.setEnabled(False)
         self.own_battle=BattleEditor(self.invalidate)
         self.own.pokemon.currentIndexChanged.connect(self.own_battle.reset)
-        own_layout.addWidget(self.own);self.own.hide();own_layout.addWidget(self.own_battle);columns.addWidget(own,1)
-        enemy=QWidget();enemy_layout=QVBoxLayout(enemy)
-        self.scenarios=QTabWidget();self.scenarios.setUsesScrollButtons(True);enemy_layout.addWidget(self.scenarios)
+        own_layout.addWidget(self.own);self.own.hide();own_layout.addWidget(self.own_battle)
+        columns.addWidget(own,1,Qt.AlignmentFlag.AlignTop)
+        enemy=QWidget();enemy.setSizePolicy(QSizePolicy.Policy.Expanding,QSizePolicy.Policy.Maximum)
+        enemy_layout=QVBoxLayout(enemy);enemy_layout.setAlignment(Qt.AlignmentFlag.AlignTop)
+        self.scenarios=QTabWidget();self.scenarios.setUsesScrollButtons(True)
+        self.scenarios.setSizePolicy(QSizePolicy.Policy.Expanding,QSizePolicy.Policy.Maximum);enemy_layout.addWidget(self.scenarios)
         buttons=QHBoxLayout();reset=QPushButton('恢复默认比较情景');reset.clicked.connect(self.reset_scenarios)
-        buttons.addWidget(reset);enemy_layout.addLayout(buttons);columns.addWidget(enemy,1)
-        detail_panel=QWidget();detail_layout=QVBoxLayout(detail_panel);detail_layout.setContentsMargins(0,0,0,0)
+        buttons.addWidget(reset);enemy_layout.addLayout(buttons)
+        columns.addWidget(enemy,1,Qt.AlignmentFlag.AlignTop)
+        detail_panel=QWidget();self.detail_page=detail_panel
+        detail_layout=QVBoxLayout(detail_panel);detail_layout.setContentsMargins(0,0,0,0)
         detail_tools=QHBoxLayout()
-        detail_tools.addWidget(QLabel('计算详情 · 拖动上方分隔条调整高度'),1)
+        detail_tools.addWidget(QLabel('计算详情 · 在结果表中选择伤害格后到此查看'),1)
         self.zoom=QComboBox()
         for percent in (80,100,125,150,175,200):self.zoom.addItem(f'{percent}%',percent)
         self.zoom.setCurrentIndex(1)
@@ -229,10 +278,7 @@ class DamageDialog(QDialog):
         self.detail.setPlaceholderText('悬浮列标题查看六项培养点；点击列标题或伤害格，查看该情景的完整配置和结果。')
         detail_layout.addWidget(self.detail,1)
         self.results_note=QLabel('');self.results_note.setWordWrap(True);detail_layout.addWidget(self.results_note)
-        self.result_splitter.addWidget(detail_panel)
-        self.result_splitter.setStretchFactor(0,5);self.result_splitter.setStretchFactor(1,1)
-        self.result_splitter.setSizes([540,140])
-        self.result_splitter.handle(1).setToolTip('上下拖动，调整表格与详情的高度')
+        self.tabs.addTab(detail_panel,'计算详情')
         self.zoom.currentIndexChanged.connect(self.apply_view_zoom)
         self.fullscreen_shortcut=QShortcut(QKeySequence('F11'),self)
         self.fullscreen_shortcut.activated.connect(self.toggle_fullscreen)
@@ -242,6 +288,7 @@ class DamageDialog(QDialog):
         self.own_form.currentIndexChanged.connect(self.form_changed)
         self.copied_ability.currentTextChanged.connect(self.form_changed)
         self.enemy_form.currentIndexChanged.connect(self.enemy_form_changed)
+        self.enemy_ability_choice.currentIndexChanged.connect(self.enemy_ability_changed)
         self.saved_team.currentIndexChanged.connect(self.team_changed)
         self.own_slot.currentIndexChanged.connect(self.refresh_own)
         self.target.currentIndexChanged.connect(self.reset_scenarios)
@@ -268,33 +315,61 @@ class DamageDialog(QDialog):
     def own_combat_member(self, member):
         member=deepcopy(member)
         identity=self.own_form.currentData() or member['identity']
-        if self.assume_stone.isChecked() and identity!=member['identity']:
-            from ..damage import identifier
+        if identity!=member['identity']:
             record=self.rules.record(identity)
-            stone=next((key for key in self.rules.options['items'] if self.service.species(record) in self.service.lookups['items'].get(identifier(key),{}).get('megaStone',{}).values()),None)
+            stone=record.get('mega_item')
             if not stone:raise ValueError('当前形态没有对应进化石资料')
             member['item']=stone
         return self.service.battle_form(member,identity)
 
     def build_quick_controls(self, outer):
-        panel=QGroupBox('即时场况 · 能力等级 / 速度对照（50级）')
-        grid=QGridLayout(panel);self.enemy_boosts={}
-        grid.addWidget(QLabel('我方'),1,0);grid.addWidget(QLabel('对手所有情景'),2,0)
+        panel=QGroupBox('即时场况 · 修改后自动重算')
+        self.quick_panel=panel
+        grid=QGridLayout(panel);grid.setVerticalSpacing(5);self.enemy_boosts={}
+        grid.addWidget(QLabel('全局'),0,0)
+        grid.addWidget(self.weather,0,1);grid.addWidget(self.terrain,0,2)
+        grid.addWidget(self.targets,0,3,1,2);grid.addWidget(self.critical,0,5)
+        grid.addWidget(self.common,0,6,1,2)
+        grid.addWidget(QLabel('我方'),2,0);grid.addWidget(QLabel('对手全部情景'),3,0)
         for col,(key,name) in enumerate(list(STATS.items())[1:],1):
-            grid.addWidget(QLabel(name+'等级'),0,col)
+            grid.addWidget(QLabel(name+'等级'),1,col)
             # A single control is moved here, so the saved battle input cannot diverge.
-            grid.addWidget(self.own_battle.boosts[key],1,col)
+            grid.addWidget(self.own_battle.boosts[key],2,col)
+            self.own_battle.boost_labels[key].hide()
             box=QSpinBox();box.setRange(-6,6);self.enemy_boosts[key]=box
-            grid.addWidget(box,2,col);box.valueChanged.connect(self.apply_enemy_quick)
-        grid.addWidget(self.own_battle.flags['tailwind'],1,6)
-        self.enemy_tailwind=QCheckBox('对手顺风');grid.addWidget(self.enemy_tailwind,2,6)
+            grid.addWidget(box,3,col);box.valueChanged.connect(self.apply_enemy_quick)
+        grid.addWidget(self.own_battle.flags['tailwind'],2,6)
+        self.own_battle.groups['速度条件'].hide()
+        self.enemy_tailwind=QCheckBox('对手顺风');grid.addWidget(self.enemy_tailwind,3,6)
         self.enemy_tailwind.toggled.connect(self.apply_enemy_quick)
-        self.enemy_ability=QCheckBox('对手条件特性生效');grid.addWidget(self.enemy_ability,2,7)
+        self.enemy_ability=QCheckBox('对手条件特性生效');grid.addWidget(self.enemy_ability,3,7)
         self.enemy_ability.toggled.connect(self.apply_enemy_quick)
-        grid.addWidget(self.own_battle.flags['ability_on'],1,7)
+        grid.addWidget(self.own_battle.flags['ability_on'],2,7)
         self.speed_summary=QLabel();self.speed_summary.setWordWrap(True);self.speed_summary.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
-        grid.addWidget(self.speed_summary,3,0,1,8)
+        grid.addWidget(self.speed_summary,4,0,1,8)
         outer.insertWidget(3,panel)
+        self.refresh_condition_controls()
+
+    def refresh_condition_controls(self):
+        slot=self.own_slot.currentData()
+        member=self.selected_team['members'][slot] if self.selected_team and slot is not None else None
+        if member:
+            try:member=self.own_combat_member(member)
+            except ValueError:pass
+        configure_ability_trigger(self.own_battle.flags['ability_on'], member.get('ability') if member else None, '我方')
+        key=self.enemy_ability_choice.currentData()
+        if key in ABILITY_TRIGGER_LABELS:
+            configure_ability_trigger(self.enemy_ability,key,'对手')
+            return
+        try:record=self.rules.record(self.enemy_form.currentData() or value(self.target))
+        except ValueError:record=None
+        candidates=[ability for ability in (self.rules.ability_keys(self.rules.identity(record)) if record else [])
+                    if ability in ABILITY_TRIGGER_LABELS]
+        configure_ability_trigger(self.enemy_ability,None,'对手')
+        if candidates:
+            names=[self.rules.options['abilities'].get(ability,{}).get('name',ability) for ability in candidates]
+            self.enemy_ability.setText('对手条件特性：请先在上方选择'+'／'.join(names))
+            self.enemy_ability.setVisible(True)
 
     def apply_enemy_quick(self,*_):
         if self.loading:return
@@ -359,7 +434,13 @@ class DamageDialog(QDialog):
         if member:
             try:
                 member=self.own_combat_member(member)
-                self.form_warning.setText('本次计算假设已换石；预存队伍保持原道具。' if self.assume_stone.isChecked() else '')
+                selected_identity=self.own_form.currentData()
+                saved_item=self.selected_team['members'][slot].get('item')
+                temporary_item=member.get('item')
+                if selected_identity!=self.selected_team['members'][slot]['identity'] and temporary_item!=saved_item:
+                    item_name=self.rules.options['items'].get(temporary_item,{}).get('name',temporary_item)
+                    self.form_warning.setText(f'本次计算自动采用{item_name}；预存队伍仍保留原道具。')
+                else:self.form_warning.clear()
             except ValueError as exc:self.form_warning.setText('⚠ '+str(exc))
         self.copied_ability.setVisible(bool(member and member['ability']=='trace'))
         record=self.rules.record(member['identity']) if member else None
@@ -376,6 +457,7 @@ class DamageDialog(QDialog):
         except ValueError:record=None
         self.enemy_summary.setText(self.service.catalog.display_name(record)+' · '+' / '.join(TYPE_NAMES[t] for t in record['types']) if record else '请选择对手')
         self.enemy_matchups.show_types(record['types'] if record else [])
+        self.refresh_condition_controls()
 
     def fill_forms(self, box, record):
         box.blockSignals(True);box.clear()
@@ -394,6 +476,44 @@ class DamageDialog(QDialog):
     def enemy_form_changed(self,*_):
         if self.loading:return
         self.reset_scenarios(preserve_form=True)
+
+    def configure_enemy_abilities(self, record):
+        self.enemy_ability_choice.blockSignals(True)
+        self.enemy_ability_choice.clear()
+        abilities=self.rules.ability_keys(self.rules.identity(record)) if record else []
+        fixed=bool(record and record.get('opgg_key','').startswith('mega-') and len(abilities)==1)
+        if fixed:
+            key=abilities[0]
+            name=self.rules.options['abilities'].get(key,{}).get('name',key)
+            self.enemy_ability_choice.addItem('固定特性 · '+name,key)
+        else:
+            self.enemy_ability_choice.addItem('特性假设 · 无特性效果','__none__')
+            for key in abilities:
+                name=self.rules.options['abilities'].get(key,{}).get('name',key)
+                self.enemy_ability_choice.addItem('特性假设 · '+name,key)
+        self.enemy_ability_choice.setEnabled(bool(record) and not fixed)
+        self.enemy_ability_choice.blockSignals(False)
+        self.refresh_enemy_ability_note()
+
+    def refresh_enemy_ability_note(self):
+        key=self.enemy_ability_choice.currentData()
+        if not key or key=='__none__':
+            self.enemy_ability_note.setText('当前按无特性减伤／增伤计算。')
+            if hasattr(self,'enemy_ability'):self.refresh_condition_controls()
+            return
+        entry=self.rules.options['abilities'].get(key,{})
+        prefix='固定生效' if not self.enemy_ability_choice.isEnabled() else '当前假设'
+        self.enemy_ability_note.setText(f"{prefix}：{entry.get('name',key)}。{entry.get('description','')}")
+        if hasattr(self,'enemy_ability'):
+            self.refresh_condition_controls()
+
+    def enemy_ability_changed(self,*_):
+        if self.loading:return
+        self.loading=True
+        key=self.enemy_ability_choice.currentData()
+        for page in self.pages:select(page.editor.ability,key)
+        self.loading=False
+        self.refresh_enemy_ability_note();self.invalidate();self.refresh_summaries()
 
     def showEvent(self,event):
         super().showEvent(event)
@@ -414,7 +534,8 @@ class DamageDialog(QDialog):
     def refresh_statistics(self):
         try:record=self.rules.record(self.enemy_form.currentData() or value(self.target))
         except ValueError:record=None
-        usage=(self.service.catalog.usage or {}).get('pokemon',{}).get(record.get('opgg_key'),{}) if record else {}
+        usage=self.service.catalog.usage_for(record)[0] if record else None
+        usage=usage or {}
         version=(usage.get('training',[]),usage.get('natures',[]))
         if record and version!=getattr(self,'training_version',None):
             self.reset_scenarios()
@@ -469,7 +590,6 @@ class DamageDialog(QDialog):
         self.loading=True;self.own.load(member or blank_member())
         self.fill_forms(self.own_form,self.rules.record(member['identity']) if member else None)
         self.copied_ability.setCurrentIndex(0)
-        self.assume_stone.setChecked(False)
         self.loading=False
         self.own_battle.reset();self.refresh_summaries()
 
@@ -490,10 +610,14 @@ class DamageDialog(QDialog):
         self.pages=[];self.scenarios.clear()
         record=self.rules.record(self.enemy_form.currentData() if preserve_form else self.target.currentData())
         if not preserve_form:self.fill_forms(self.enemy_form,record)
-        usage=(self.service.catalog.usage or {}).get('pokemon',{}).get(record.get('opgg_key'),{}) if record else {}
+        self.configure_enemy_abilities(record)
+        usage=self.service.catalog.usage_for(record)[0] if record else None
+        usage=usage or {}
         self.training_version=deepcopy((usage.get('training',[]),usage.get('natures',[])))
         if record:
             for preset in self.service.comparison_presets(record):self._add(preset)
+            ability=self.enemy_ability_choice.currentData()
+            for page in self.pages:select(page.editor.ability,ability)
         self.loading=False;self.apply_enemy_quick();self.refresh_summaries()
 
     def _add(self,preset):
@@ -525,14 +649,15 @@ class DamageDialog(QDialog):
         env={'weather':self.weather.currentData(),'terrain':self.terrain.currentData(),
              'targets':self.targets.currentData(),'critical':self.critical.isChecked()}
         record=self.rules.record(identity)
-        usage=(self.service.catalog.usage or {}).get('pokemon',{}).get(record.get('opgg_key'))
+        usage,_=self.service.catalog.usage_for(record)
+        move_rates,_,_=self.service.catalog.move_usage(record)
         if ((usage or {}).get('training',[]),(usage or {}).get('natures',[]))!=self.training_version:
             raise ValueError('培养点统计已更新，请恢复默认比较情景后重新计算')
         own_battle=self.own_battle.read()
         if own['ability']=='trace':own_battle['copied_ability']=value(self.copied_ability)
         return {'own':own,'own_battle':own_battle,'scenarios':scenarios,'environment':env,
                 'common':self.common.isChecked(),'team':deepcopy(current),'own_slot':slot,'source':'saved',
-                'usage':deepcopy(usage),'usage_notice':self.service.catalog.learnset(record)[2],
+                'usage':{**deepcopy(usage or {}),'moves':deepcopy(move_rates)},'usage_notice':self.service.catalog.learnset(record)[2],
                 'dataset':self.service.catalog.bundle_id,'rules':RULE_VERSION,
                 'snapshot_token':getattr(self.service.catalog,'snapshot_token',None)}
 
@@ -564,12 +689,16 @@ class DamageDialog(QDialog):
         if worker.error:self.status.setText(worker.error);return
         self.rows=[{**row,**result} for row,result in zip(self.pending_rows,worker.output)]
         for direction,table in self.direction_tables.items():self.render_comparison(table,direction)
-        self.results_note.setText(f"预存队伍「{self.last_request['team']['name']}」 · 普通对手默认无特性效果／无道具；Mega 默认对应特性／进化石。每格独立随机范围。\n{self.last_request['usage_notice']}")
-        self.status.setText('计算完成。点击格子查看条件；可到“场况与情景设置”调整。')
+        self.results_note.setText(f"预存队伍「{self.last_request['team']['name']}」 · 普通对手默认无特性效果，可在上方统一选择特性假设；Mega 固定使用对应特性／进化石。每格独立随机范围。\n{self.last_request['usage_notice']}")
+        failures=list(dict.fromkeys(r.get('reason','未知原因') for r in self.rows if r['status']=='unavailable'))
+        if failures:
+            self.status.setText(f"计算完成，其中 {sum(r['status']=='unavailable' for r in self.rows)} 项暂不可计算。原因："+'；'.join(failures))
+        else:
+            self.status.setText('计算完成。点击格子查看条件；可到“高级情景设置”调整。')
         self.direction_changed()
 
     def direction_changed(self,*_):
-        if self.tabs.currentIndex()==2:self.detail.clear();return
+        if self.tabs.currentIndex() not in (0,1):return
         table=self.table if self.tabs.currentIndex()==0 else self.incoming_table
         if table.rowCount() and table.columnCount()>1:
             row=max(0,table.currentRow());col=max(1,table.currentColumn())
@@ -608,7 +737,8 @@ class DamageDialog(QDialog):
                 if not found:table.setItem(row,col,QTableWidgetItem('—'));continue
                 index,r=found
                 text=(f"{r['percent_min']:.1f}–{r['percent_max']:.1f}%\n{r['minimum']}–{r['maximum']} HP" if r['status']=='ok'
-                      else '变化招式\n无直接伤害' if r['status']=='status_move' else '⚠ 暂不可计算')
+                      else '变化招式\n无直接伤害' if r['status']=='status_move'
+                      else '⚠ 暂不可计算\n'+r.get('reason','未知原因'))
                 item=QTableWidgetItem(text);item.setData(Qt.ItemDataRole.UserRole,index)
                 item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
                 scene=self.last_request['scenarios'][scene_id]
@@ -655,6 +785,12 @@ class DamageDialog(QDialog):
         multi_text=''
         if multi:
             multi_text='单段：'+result+'\n'+'\n'.join(f"{part['hits']} 次命中：{part['percent_min']:.1f}–{part['percent_max']:.1f}% · {part['minimum']}–{part['maximum']} HP" for part in multi.get('scenarios',[]) if part.get('status')=='ok')
+        ability_text=''
+        if r.get('details',{}).get('defenderAbility'):
+            defender=self.last_request['own'] if r['direction']=='对手 → 我方' else r['enemy']
+            key=defender.get('ability')
+            name=self.rules.options['abilities'].get(key,{}).get('name',r['details']['defenderAbility'])
+            ability_text=f'防守方特性“{name}”已计入本次伤害。'
         self.detail.setHtml(
             f'<h2 style="margin-top:0">{text(move["name"] if move else "未填写招式")} · {text(r["direction"])}</h2>'
             f'<p style="color:#146e65; font-size:large"><b>{text(result)}</b></p>'
@@ -663,6 +799,7 @@ class DamageDialog(QDialog):
             +section('我方配置',build(self.last_request['own'])+'\n'+battle(self.last_request['own_battle']))
             +section('场况',f"{weather} · {terrain} · 有效目标 {env['targets']} · {'要害' if env['critical'] else '非要害'}\n目标当前／最大 HP：{r.get('current_hp','—')} / {r.get('max_hp','—')}")
             +section('辅助效果 · 本招判定',effect_summary(r) if r['status']=='ok' else '本招无有效直接伤害结果；已启用的辅助条件未判定生效。')
+            +(section('特性修正',ability_text) if ability_text else '')
             +(section('多次命中 · 独立次数情景',multi_text) if multi_text else '')
             +section('独立随机结果',r.get('rolls','未计算'))
             +section('资料版本',f"{self.last_request['dataset']} · {self.last_request['rules']}\n快照 {self.last_request.get('snapshot_token') or '独立资料视图'}")

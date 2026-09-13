@@ -13,6 +13,11 @@ from .paths import app_paths
 STATS = {'hp': 'HP', 'attack': '攻击', 'defense': '防御',
          'special_attack': '特攻', 'special_defense': '特防', 'speed': '速度'}
 OPTIONS_PATH = app_paths().resource('config/team_build_options.json')
+ABILITY_NAME_OVERRIDES = {
+    # OP.GG currently exposes a different Chinese localization for this ability.
+    # Keep the official Simplified Chinese name stable across data refreshes.
+    'aura-guard': '波导防护',
+}
 
 
 def blank_member(identity=None):
@@ -24,6 +29,9 @@ class TeamRules:
     def __init__(self, catalog):
         self.catalog = catalog
         self.options = read_json(OPTIONS_PATH)
+        for key, name in ABILITY_NAME_OVERRIDES.items():
+            if key in self.options['abilities']:
+                self.options['abilities'][key]['name'] = name
 
     def identity(self, record):
         # Only explicitly approved cosmetic aliases collapse. Mega/battle forms stay distinct.

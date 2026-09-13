@@ -5,7 +5,7 @@ import os
 os.environ.setdefault('QT_QPA_PLATFORM','offscreen')
 import pytest
 from PySide6.QtCore import QPoint
-from PySide6.QtWidgets import QInputDialog, QMessageBox, QPushButton
+from PySide6.QtWidgets import QInputDialog, QPushButton
 from champion_assistant.data.references import ReferenceCatalog
 from champion_assistant.damage import DamageService, battle_defaults
 from champion_assistant.teams import TeamStore
@@ -114,7 +114,7 @@ def test_auto_change_during_worker_uses_latest_state(qtbot,service,team):
     d.close()
 
 
-def test_save_warning_rename_and_visible_footer(qtbot,service,team,monkeypatch):
+def test_save_ignores_battle_only_prompts_rename_and_visible_footer(qtbot,service,team,monkeypatch):
     d=TeamDialog(service.catalog,team.path);qtbot.addWidget(d)
     d.load_team(team.list()[0]);d.resize(900,600);d.show();qtbot.wait(30)
     pos=d.save_button.mapTo(d,QPoint(0,0))
@@ -125,9 +125,19 @@ def test_save_warning_rename_and_visible_footer(qtbot,service,team,monkeypatch):
     assert team.list()[0]['name']=='沙奈朵队'
     d.save_team()
     assert team.list()[0]['name']=='我的空间队'
-    assert d.warning_box.icon()==QMessageBox.Icon.Warning
-    assert '沙奈朵' in d.warning_box.text() and '复制' in d.warning_box.text()
-    d.warning_box.accept();d.close()
+    assert not hasattr(d, 'warning_box') or not d.warning_box.isVisible()
+    assert d.success_box.windowTitle()=='队伍保存成功'
+    assert d.message.text().startswith('已保存「我的空间队」')
+    d.close()
+
+
+def test_save_readiness_does_not_require_electro_shot_battle_state(service):
+    record=service.catalog.record_for_name('铝钢桥龙')
+    member=service.presets(record)[0]['member']
+    member.update(points=dict(hp=32,attack=0,defense=0,special_attack=0,special_defense=25,speed=9),
+                  nature='calm',ability='stamina',item='leftovers',
+                  moves=['flash-cannon','dragon-pulse','electro-shot','protect'])
+    assert service.readiness(member)==[]
 
 
 def test_spread_header_hover_and_click_show_actual_points(qtbot,service,team):
@@ -157,13 +167,18 @@ def test_spread_header_hover_and_click_show_actual_points(qtbot,service,team):
     d.toggle_fullscreen();d.close()
 
 
-def test_resizable_detail_and_fullscreen_exit(qtbot,service,team):
+def test_detail_has_separate_tab_and_fullscreen_exit(qtbot,service,team):
     from PySide6.QtCore import Qt
     d=DamageDialog(service.catalog,team.list,lambda:None);qtbot.addWidget(d)
     d.resize(1280,900);d.show();qtbot.wait(30)
-    before=d.result_splitter.sizes()
-    d.result_splitter.moveSplitter(before[0]-70,1)
-    assert d.result_splitter.sizes()[1]>before[1]
+    assert not hasattr(d,'result_splitter')
+    assert d.tabs.indexOf(d.detail_page)==3 and d.tabs.tabText(3)=='计算详情'
+    assert d.quick_panel.isAncestorOf(d.weather) and d.quick_panel.isAncestorOf(d.common)
+    assert d.tabs.tabText(2)=='高级情景设置'
+    d.tabs.setCurrentIndex(2);qtbot.wait(20)
+    assert d.own_battle.height() <= d.own_battle.sizeHint().height()+10
+    d.tabs.setCurrentIndex(3)
+    assert d.detail.isVisible()
     assert d.detail.maximumHeight()>1000
     assert d.windowFlags() & Qt.WindowType.WindowMaximizeButtonHint
     d.showMaximized();qtbot.wait(20)

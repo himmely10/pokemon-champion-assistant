@@ -1,11 +1,11 @@
 # Pokemon Champion Assistant
 
 
-**当前开发版：v0.2.0 候选版。** [首版说明](docs/releases/v0.1.0.md) · [构建与发行](docs/release.md)
+**当前版本：v0.2.1。** [版本说明](docs/releases/v0.2.1.md) · [构建与发行](docs/release.md)
 
-v0.2 安装候选包含 Python、Node、Qt、OCR 模型和离线公共资料。普通用户运行
-`PokemonChampionAssistant-0.2.0-windows-x64-Setup.exe` 后，从开始菜单启动；无需另外安装开发环境。
-安装包与数据包尚未部署公开下载渠道，干净 Windows 系统验证进度见 [打包验收](docs/validation/packaging.md)。
+v0.2.1 安装包包含 Python、Node、Qt、OCR 模型和离线公共资料。普通用户运行
+`PokemonChampionAssistant-0.2.1-windows-x64-Setup.exe` 后，从开始菜单启动；无需另外安装开发环境。
+安装包及 SHA-256 摘要见 GitHub Releases；本地与干净 Windows 系统验证范围见 [打包验收](docs/validation/packaging.md)。
 
 新版从“资料更新”手动更新、导入 ZIP 或回滚；自动检查可选每天／三天／每周／关闭，
 仅软件运行时执行。新资料在下一次截图分析生效，已经打开的伤害对照保留原版本。

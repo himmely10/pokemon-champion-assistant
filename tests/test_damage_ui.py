@@ -183,6 +183,17 @@ def test_missing_scenario_nature_is_visible_without_render_error(qtbot,service,s
     d.calculate();qtbot.waitUntil(lambda:d.worker is None,timeout=15000)
     assert '未知性格' in d.table.horizontalHeaderItem(1).text()
     assert '暂不可计算' in d.table.item(0,1).text()
+    assert '性格尚未确认' in d.table.item(0,1).text()
+    assert '性格尚未确认' in d.status.text()
+
+
+def test_alolan_persian_manual_correction_calculates(qtbot,service,store):
+    d=DamageDialog(service.catalog,store.list,lambda:None);qtbot.addWidget(d)
+    select(d.saved_team,store.list()[0]['id'])
+    d.set_target(service.catalog.record_for_name('猫老大（阿罗拉）'))
+    d.calculate();qtbot.waitUntil(lambda:d.worker is None,timeout=15000)
+    assert any(r['status']=='ok' for r in d.rows)
+    assert all('该形态尚未映射' not in r.get('reason','') for r in d.rows)
 
 
 def test_main_window_target_and_new_capture_preserve_saved_team(qtbot,service,store,tmp_path,monkeypatch):
@@ -243,16 +254,64 @@ def test_quick_enemy_stages_apply_to_every_scenario(qtbot,service,store):
     assert d.own.isHidden()
 
 
-def test_mega_stone_conflict_requires_explicit_session_assumption(qtbot,service,store):
+def test_enemy_ability_choice_and_fixed_mega_ability(qtbot,service,store):
+    d=DamageDialog(service.catalog,store.list,lambda:None);qtbot.addWidget(d)
+    select(d.saved_team,store.list()[0]['id'])
+    d.set_target(service.catalog.record_for_name('猫老大（阿罗拉）'))
+    assert d.enemy_ability_choice.isEnabled()
+    assert d.enemy_ability_choice.findData('fur-coat')>=0
+    select(d.enemy_ability_choice,'fur-coat')
+    assert all(scene['member']['ability']=='fur-coat' for scene in d.snapshot()['scenarios'])
+    assert '物理招式' in d.enemy_ability_note.text()
+    assert d.enemy_ability.isHidden()  # 毛皮大衣始终生效，不需要第二个开关。
+
+    d.set_target(service.catalog.record_for_name('大狃拉'))
+    select(d.enemy_ability_choice,'unburden')
+    assert not d.enemy_ability.isHidden() and '轻装已触发' in d.enemy_ability.text()
+    assert all(not p.battle.flags['ability_on'].isHidden() for p in d.pages)
+
+    d.set_target(service.catalog.record_for_name('超级路卡利欧Z'))
+    assert not d.enemy_ability_choice.isEnabled()
+    assert d.enemy_ability_choice.currentData()=='aura-guard'
+    assert d.enemy_ability_choice.currentText()=='固定特性 · 波导防护'
+    assert all(scene['member']['ability']=='aura-guard' for scene in d.snapshot()['scenarios'])
+    assert '接触类物理招式' in d.enemy_ability_note.text()
+    assert d.enemy_ability.isHidden()  # 波导防护固定生效。
+
+    d.set_target(service.catalog.record_for_name('喷火龙'))
+    assert not d.enemy_ability.isHidden()
+    assert not d.enemy_ability.isEnabled()
+    assert '选择猛火' in d.enemy_ability.text()
+    select(d.enemy_ability_choice,'blaze')
+    assert d.enemy_ability.isEnabled() and '猛火已触发' in d.enemy_ability.text()
+
+
+def test_saved_blaze_build_shows_real_trigger_control(qtbot,service,store):
     member=service.presets(service.catalog.record_for_name('喷火龙'))[0]['member']
-    member['item']='charizardite-x'
+    member.update(ability='blaze',item='charizardite-y',
+                  moves=['heat-wave','weather-ball','ancient-power','protect'])
+    team=store.save({'name':'猛火队','registration':'partial','members':[member]})
+    d=DamageDialog(service.catalog,store.list,lambda:None,team_id=team['id']);qtbot.addWidget(d)
+    select(d.saved_team,team['id'])
+    d.set_target(service.catalog.record_for_name('暴飞龙'))
+    assert not d.own_battle.flags['ability_on'].isHidden()
+    assert '猛火已触发' in d.own_battle.flags['ability_on'].text()
+    d.own_battle.flags['ability_on'].setChecked(True)
+    assert d.snapshot()['own_battle']['ability_on'] is True
+
+
+@pytest.mark.parametrize(('saved_item','form_name','expected_item'), [
+    ('charizardite-y','超级喷火龙X','charizardite-x'),
+    ('charizardite-x','超级喷火龙Y','charizardite-y'),
+])
+def test_mega_form_uses_temporary_matching_stone(qtbot,service,store,saved_item,form_name,expected_item):
+    member=service.presets(service.catalog.record_for_name('喷火龙'))[0]['member']
+    member['item']=saved_item
     member['ability']='blaze'
     team=store.save({'name':'Mega选择','registration':'partial','members':[member]})
     team=next(t for t in store.list() if t['name']=='Mega选择')
     d=DamageDialog(service.catalog,store.list,lambda:None,team_id=team['id']);qtbot.addWidget(d)
-    select(d.own_form,service.rules.identity(service.catalog.record_for_name('超级喷火龙Y')))
-    assert '⚠' in d.form_warning.text()
-    with pytest.raises(ValueError):d.own_combat_member(member)
-    d.assume_stone.setChecked(True)
-    assert d.own_combat_member(member)['item']=='charizardite-y'
-    assert next(t for t in store.list() if t['id']==team['id'])['members'][0]['item']=='charizardite-x'
+    select(d.own_form,service.rules.identity(service.catalog.record_for_name(form_name)))
+    assert '自动采用' in d.form_warning.text()
+    assert d.own_combat_member(member)['item']==expected_item
+    assert next(t for t in store.list() if t['id']==team['id'])['members'][0]['item']==saved_item

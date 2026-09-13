@@ -17,6 +17,35 @@ ENGINE = ROOT/'damage_engine'
 STAT_IDS = dict(zip(STATS, ('hp', 'atk', 'def', 'spa', 'spd', 'spe')))
 RULE_VERSION = 'champions-e7fd7e5-single-target-v1'
 
+# OP.GG and the calculation engine use different slugs for several regional,
+# cosmetic and battle forms.  Keep this translation explicit and audit it in
+# tests so a recognizable catalog entry never degrades into a generic failure.
+SPECIES_ALIASES = {
+    'raichu-alolan': 'raichu-alola',
+    'ninetales-alolan': 'ninetales-alola',
+    'slowbro-galarian': 'slowbro-galar',
+    'tauros-paldean-aqua': 'tauros-paldea-aqua',
+    'tauros-paldean-blaze': 'tauros-paldea-blaze',
+    'tauros-paldean-combat': 'tauros-paldea-combat',
+    'slowking-galarian': 'slowking-galar',
+    'stunfisk-galarian': 'stunfisk-galar',
+    'floette-eternal-flower': 'floette-eternal',
+    'mega-meowstic': 'meowstic-f-mega',
+    'aegislash': 'aegislash-shield',
+    'maushold-family-of-four': 'maushold-four',
+    'maushold-family-of-three': 'maushold',
+    'pyroar-female': 'pyroar',
+    'vileplume-female': 'vileplume',
+    'persian-alolan': 'persian-alola',
+    'blaziken-female': 'blaziken',
+    'staraptor-female': 'staraptor',
+    'toxtricity-amped': 'toxtricity',
+    'squawkabilly-green-plumage': 'squawkabilly',
+    'squawkabilly-blue-plumage': 'squawkabilly-blue',
+    'squawkabilly-yellow-plumage': 'squawkabilly-yellow',
+    'squawkabilly-white-plumage': 'squawkabilly-white',
+}
+
 
 def identifier(text):
     return re.sub('[^a-z0-9]', '', text.lower())
@@ -51,7 +80,8 @@ class DamageService:
         aliases = {'indeedee-male': 'indeedee', 'indeedee-female': 'indeedeef',
                    'basculegion-male': 'basculegion', 'basculegion-female': 'basculegionf',
                    'meowstic-male': 'meowstic', 'meowstic-female': 'meowsticf',
-                   'aegislash-shield': 'aegislash', 'gourgeist-average': 'gourgeist'}
+                   'gourgeist-average': 'gourgeist'}
+        key = SPECIES_ALIASES.get(key, key)
         if key.startswith('mega-'):
             parts = key[5:].split('-')
             key = parts[0] + '-mega' + (('-' + '-'.join(parts[1:])) if len(parts) > 1 else '')
@@ -133,10 +163,15 @@ class DamageService:
         """Run the same bounded local calculation path to expose save-time limitations."""
         record = self.rules.record(member['identity'])
         scene = self.comparison_presets(record)[0]
-        rows, jobs = self.jobs(member, battle_defaults(), [scene],
+        # Saving a team happens before battle-only state is known.  Use explicit,
+        # neutral preview choices here so valid Trace and Electro Shot builds are
+        # not reported as incomplete team configurations.
+        preview_battle = battle_defaults()
+        preview_battle.update(copied_ability='__none__', charge_boost_included=False)
+        rows, jobs = self.jobs(member, preview_battle, [scene],
             {'weather':'', 'terrain':'', 'targets':2, 'critical':False}, common=False)
         warnings = []
-        try:self.prepare(member, battle_defaults())
+        try:self.prepare(member, preview_battle)
         except (ValueError, KeyError) as exc:warnings.append(str(exc))
         try:results = self.execute(jobs)
         except ValueError as exc:return [str(exc)]
@@ -214,7 +249,8 @@ class DamageService:
 
     def comparison_presets(self,record):
         """Separate durability and offense benchmarks; observed spreads do not imply joint builds."""
-        usage=(self.catalog.usage or {}).get('pokemon',{}).get(record.get('opgg_key'),{})
+        usage,_=self.catalog.usage_for(record)
+        usage=usage or {}
         nature='hardy'
         for observed in sorted(usage.get('natures',[]),key=lambda n:-n['usage_percent']):
             found=next((key for key,n in self.rules.options['natures'].items()

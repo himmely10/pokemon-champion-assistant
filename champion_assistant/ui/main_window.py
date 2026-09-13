@@ -9,7 +9,8 @@ from PySide6.QtGui import QColor, QDesktopServices, QFont, QIcon, QPixmap
 from PySide6.QtWidgets import (QAbstractItemView, QComboBox, QCompleter, QFileDialog, QFrame,
     QGridLayout, QGroupBox, QHBoxLayout, QHeaderView, QLabel, QLineEdit, QListWidget,
     QListWidgetItem, QMainWindow, QProgressBar, QPushButton, QScrollArea, QSplitter,
-    QCheckBox, QSpinBox, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QSizePolicy, QTabWidget)
+    QCheckBox, QSpinBox, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QSizePolicy, QTabWidget,
+    QMessageBox)
 
 from ..data.moves import CATEGORIES, TARGETS, accuracy_label, move_tooltip, power_label
 from ..data.references import ReferenceCatalog
@@ -285,8 +286,6 @@ class MainWindow(QMainWindow):
         self.own_speed_wind = QCheckBox('我方顺风');self.enemy_speed_wind = QCheckBox('对手顺风')
         self.own_speed_ability = QCheckBox('我方条件特性生效')
         self.enemy_speed_ability = QComboBox();self.enemy_speed_ability.addItem('对手特性：无效果假设','__none__')
-        from ..teams import TeamRules
-        for key, entry in TeamRules(self.catalog).options['abilities'].items():self.enemy_speed_ability.addItem(entry['name'],key)
         self.enemy_speed_ability_on = QCheckBox('对手条件特性生效')
         for title, widget in [('我方速度等级',self.own_speed_stage),('对手速度等级',self.enemy_speed_stage)]:
             conditions.addWidget(QLabel(title));conditions.addWidget(widget)
@@ -430,6 +429,14 @@ class MainWindow(QMainWindow):
     def set_status(self, text):
         self.status_label.setText(text)
 
+    def show_notice(self, title, text, icon=QMessageBox.Icon.Information):
+        previous = getattr(self, 'notice_box', None)
+        if previous is not None:
+            previous.close()
+        self.notice_box = QMessageBox(icon, title, text, QMessageBox.StandardButton.Ok, self)
+        self.notice_box.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
+        self.notice_box.open()
+
     def _empty_team(self):
         self.team_list.clear()
         for i in range(6):
@@ -455,6 +462,7 @@ class MainWindow(QMainWindow):
         self.damage_moves, self.status_moves = [], []
         self.filter_moves()
         self.show_move(None)
+        self.refresh_enemy_speed_abilities(None)
 
     def choose_image(self):
         path, _ = QFileDialog.getOpenFileName(self, "选择完整的游戏截图", str(ROOT), "游戏截图 (*.png *.jpg *.jpeg *.webp *.bmp)")
@@ -706,8 +714,10 @@ class MainWindow(QMainWindow):
         self.select_slot(first)
         if not self.last_result['recognized_count']:
             self.set_status("已取得画面，但六个位置均未确认。请切换到 Champions 对战选队界面，盒子或 HOME 界面不适用。")
+            self.show_notice('识别完成 · 需要确认', '已取得画面，但六个位置均未确认。请检查画面是否为 Champions 对战选队界面。', QMessageBox.Icon.Warning)
         else:
             self.set_status(f"已识别 {self.last_result['recognized_count']}/6 · {self.last_result['elapsed_seconds']:.2f} 秒 · 点击队伍成员查看资料；待确认位置可手动修正。")
+            self.show_notice('识别完成', f"已识别 {self.last_result['recognized_count']}/6，只在本次画面中生效。待确认或错误位置可以手动修正。")
 
     def _render_team(self):
         self.team_list.blockSignals(True)
@@ -775,12 +785,30 @@ class MainWindow(QMainWindow):
         if not record.get("types"):
             self.types_layout.addWidget(label("该形态属性资料缺失", "Muted"))
         self.family = self.catalog.form_family(record)
+        self.refresh_enemy_speed_abilities(record)
         self._render_stats()
         self.damage_moves, self.status_moves, notice = self.catalog.learnset(record)
         self.moves_notice.setText(notice)
         self.filter_moves()
         moves = self.damage_moves or self.status_moves
         self.show_move(moves[0] if moves else None)
+
+    def refresh_enemy_speed_abilities(self, record):
+        if not hasattr(self, 'enemy_speed_ability'):
+            return
+        from ..teams import TeamRules
+        rules = TeamRules(self.catalog)
+        previous = self.enemy_speed_ability.currentData()
+        self.enemy_speed_ability.blockSignals(True)
+        self.enemy_speed_ability.clear()
+        self.enemy_speed_ability.addItem('对手特性：无效果假设', '__none__')
+        if record:
+            for key in rules.ability_keys(rules.identity(record)):
+                entry = rules.options['abilities'].get(key, {})
+                self.enemy_speed_ability.addItem(entry.get('name', key), key)
+        index = self.enemy_speed_ability.findData(previous)
+        self.enemy_speed_ability.setCurrentIndex(index if index >= 0 else 0)
+        self.enemy_speed_ability.blockSignals(False)
 
     def _render_stats(self):
         self.stats_table.setColumnCount(len(self.family) + 1)

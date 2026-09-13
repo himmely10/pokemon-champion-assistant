@@ -122,6 +122,16 @@ def test_stats_against_user_status_screenshot(service):
         assert [r['attacker_stats'][k] for k in STAT_IDS.values()]==expected
 
 
+def test_every_current_catalog_form_maps_to_damage_engine(service):
+    failures=[]
+    for record in service.catalog.records:
+        try:
+            service.species(record)
+        except ValueError:
+            failures.append((service.catalog.display_name(record),record.get('opgg_key')))
+    assert failures == []
+
+
 def test_mega_types_are_not_borrowed_from_base(service):
     a=member(service,points={'attack':32})
     record=next(r for r in service.catalog.records if r.get('opgg_key')=='mega-charizard-x')

@@ -67,6 +67,7 @@ def test_obs_empty_sources_and_failure_have_next_steps(qtbot):
     assert dialog.connect_button.isEnabled()
     dialog.show_sources({'version': '32', 'sources': [{'kind': '源', 'name': 'Switch'}]}, '')
     assert dialog.buttons.button(QDialogButtonBox.StandardButton.Ok).isEnabled()
+    assert dialog.notice_box.windowTitle() == 'OBS 连接成功'
 
 
 def test_small_onboarding_keeps_action_footer_visible(qtbot, tmp_path):

@@ -8,7 +8,7 @@ from PySide6.QtCore import Qt, QThread, Signal
 from PySide6.QtGui import QPixmap
 from PySide6.QtWidgets import (QCheckBox, QDialog, QFileDialog, QHBoxLayout, QHeaderView,
     QLabel, QLineEdit, QPushButton, QTableWidget, QTableWidgetItem, QTabWidget, QVBoxLayout,
-    QScrollArea, QSlider)
+    QScrollArea, QSlider, QMessageBox)
 
 from ..team_import import ScreenshotImporter
 from ..teams import STATS
@@ -279,6 +279,11 @@ class TeamImportDialog(QDialog):
             self.status.setText('识别未完成：' + worker.error)
         else:
             self.show_pages(worker.pages)
+            self.notice_box = QMessageBox(QMessageBox.Icon.Information, '队伍识别完成',
+                '能力与状态两页已经识别完成。请核对队伍码、宝可梦身份和带问号的字段，再生成队伍草稿。',
+                QMessageBox.StandardButton.Ok, self)
+            self.notice_box.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
+            self.notice_box.open()
         worker.deleteLater()
 
     def show_pages(self, pages):
