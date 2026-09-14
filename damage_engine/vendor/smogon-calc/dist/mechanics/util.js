@@ -106,7 +106,7 @@ function getFinalSpeed(gen, pokemon, field, side) {
         speedMods.push(8192);
     // Pledge swamp would get applied here when implemented
     // speedMods.push(1024);
-    if ((pokemon.hasAbility('Unburden') && pokemon.abilityOn) ||
+    if ((pokemon.hasAbility('Unburden', 'Chlorophyll', 'Sand Rush', 'Swift Swim', 'Slush Rush', 'Surge Surfer') && pokemon.abilityOn) ||
         (pokemon.hasAbility('Chlorophyll') && weather.includes('Sun')) ||
         (pokemon.hasAbility('Sand Rush') && weather === 'Sand') ||
         (pokemon.hasAbility('Swift Swim') && weather.includes('Rain')) ||
@@ -114,7 +114,7 @@ function getFinalSpeed(gen, pokemon, field, side) {
         (pokemon.hasAbility('Surge Surfer') && terrain === 'Electric')) {
         speedMods.push(8192);
     }
-    else if (pokemon.hasAbility('Quick Feet') && pokemon.status) {
+    else if (pokemon.hasAbility('Quick Feet') && (pokemon.status || pokemon.abilityOn)) {
         speedMods.push(6144);
     }
     else if (pokemon.hasAbility('Slow Start') && pokemon.abilityOn) {
@@ -496,9 +496,9 @@ function isQPActive(pokemon, field) {
     const weather = field.weather || '';
     const terrain = field.terrain;
     return ((pokemon.hasAbility('Protosynthesis') &&
-        (weather.includes('Sun') || pokemon.hasItem('Booster Energy'))) ||
+        (pokemon.abilityOn || weather.includes('Sun') || pokemon.hasItem('Booster Energy'))) ||
         (pokemon.hasAbility('Quark Drive') &&
-            (terrain === 'Electric' || pokemon.hasItem('Booster Energy'))) ||
+            (pokemon.abilityOn || terrain === 'Electric' || pokemon.hasItem('Booster Energy'))) ||
         (pokemon.boostedStat !== 'auto'));
 }
 function getFinalDamage(baseAmount, i, effectiveness, isBurned, stabMod, finalMod, protect) {

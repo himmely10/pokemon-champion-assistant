@@ -72,7 +72,7 @@ function calculateChampions(gen, attacker, defender, move, field) {
     // Merciless does not ignore Shell Armor, damage dealt to a poisoned Pokemon with Shell Armor
     // will not be a critical hit (UltiMario)
     const isCritical = !defender.hasAbility('Shell Armor', 'Battle Armor') &&
-        (move.isCrit || (attacker.hasAbility('Merciless') && defender.hasStatus('psn', 'tox'))) &&
+        (move.isCrit || (attacker.hasAbility('Merciless') && (defender.hasStatus('psn', 'tox') || attacker.abilityOn))) &&
         move.timesUsed === 1;
     let type = move.type;
     if (move.originalName === 'Weather Ball') {
@@ -165,6 +165,17 @@ function calculateChampions(gen, attacker, defender, move, field) {
         }
     }
     move.type = type;
+    // Priority changes must be resolved before priority-blocking abilities and
+    // Psychic Terrain are checked below.
+    if (move.named('Grassy Glide') && field.hasTerrain('Grassy') && (0, util_2.isGrounded)(attacker, field)) {
+        move.priority = 1;
+        desc.terrain = field.terrain;
+    }
+    if (attacker.hasAbility('Gale Wings') && move.hasType('Flying') &&
+        (attacker.curHP() === attacker.maxHP() || attacker.abilityOn)) {
+        move.priority += 1;
+        desc.attackerAbility = attacker.ability;
+    }
     const isGhostRevealed = attacker.hasAbility('Scrappy');
     const type1Effectiveness = (0, util_2.getMoveEffectiveness)(gen, move, defender.types[0], isGhostRevealed, field.isGravity, false);
     const type2Effectiveness = defender.types[1]
@@ -241,13 +252,6 @@ function calculateChampions(gen, attacker, defender, move, field) {
     // #endregion
     // #region Damage
     const baseDamage = calculateBaseDamageChampions(gen, attacker, defender, basePower, attack, defense, move, field, desc, isCritical);
-    // FIXME: this is incorrect, should be move.flags.heal, not move.drain
-    if ((attacker.hasAbility('Gale Wings') &&
-        move.hasType('Flying') &&
-        attacker.curHP() === attacker.maxHP())) {
-        move.priority = 1;
-        desc.attackerAbility = attacker.ability;
-    }
     if (hasTerrainSeed(defender) &&
         field.hasTerrain(defender.item.substring(0, defender.item.indexOf(' '))) &&
         items_1.SEED_BOOSTED_STAT[defender.item] === defenseStat) {
@@ -534,7 +538,7 @@ function calculateBPModsChampions(gen, attacker, defender, move, field, desc, ba
     if ((attacker.hasAbility('Sheer Force') &&
         (move.secondaries || move.named('Electro Shot')) ||
         (attacker.hasAbility('Sand Force') &&
-            field.hasWeather('Sand') && move.hasType('Rock', 'Ground', 'Steel')) ||
+            (field.hasWeather('Sand') || attacker.abilityOn) && move.hasType('Rock', 'Ground', 'Steel')) ||
         (attacker.hasAbility('Analytic') &&
             (turnOrder !== 'first' || field.defenderSide.isSwitching === 'out' || attacker.abilityOn)) ||
         (attacker.hasAbility('Tough Claws') && move.flags.contact)) ||
@@ -542,8 +546,8 @@ function calculateBPModsChampions(gen, attacker, defender, move, field, desc, ba
         bpMods.push(5325);
         desc.attackerAbility = attacker.ability;
     }
-    if (attacker.hasAbility('Rivalry') && ![attacker.gender, defender.gender].includes('N')) {
-        if (attacker.gender === defender.gender) {
+    if (attacker.hasAbility('Rivalry') && (attacker.abilityOn || ![attacker.gender, defender.gender].includes('N'))) {
+        if (attacker.abilityOn || attacker.gender === defender.gender) {
             bpMods.push(5120);
             desc.rivalry = 'buffed';
         }
@@ -628,13 +632,13 @@ function calculateAttackChampions(gen, attacker, defender, move, field, desc, is
 function calculateAtModsChampions(gen, attacker, defender, move, field, desc) {
     const atMods = [];
     if ((attacker.hasAbility('Solar Power') &&
-        field.hasWeather('Sun') &&
+        (field.hasWeather('Sun') || attacker.abilityOn) &&
         move.category === 'Special')) {
         atMods.push(6144);
         desc.attackerAbility = attacker.ability;
         desc.weather = field.weather;
     }
-    else if ((attacker.hasAbility('Guts') && attacker.status && move.category === 'Physical') ||
+    else if ((attacker.hasAbility('Guts') && (attacker.status || attacker.abilityOn) && move.category === 'Physical') ||
         ((attacker.curHP() <= attacker.maxHP() / 3 || attacker.abilityOn) &&
             ((attacker.hasAbility('Overgrow') && move.hasType('Grass')) ||
                 (attacker.hasAbility('Blaze') && move.hasType('Fire')) ||
@@ -715,12 +719,12 @@ function calculateDefenseChampions(gen, attacker, defender, move, field, desc, i
 }
 function calculateDfModsChampions(gen, attacker, defender, move, field, desc, isCritical = false, hitsPhysical = false) {
     const dfMods = [];
-    if (defender.hasAbility('Marvel Scale') && defender.status && hitsPhysical) {
+    if (defender.hasAbility('Marvel Scale') && (defender.status || defender.abilityOn) && hitsPhysical) {
         dfMods.push(6144);
         desc.defenderAbility = defender.ability;
     }
     else if (defender.hasAbility('Grass Pelt') &&
-        field.hasTerrain('Grassy') &&
+        (field.hasTerrain('Grassy') || defender.abilityOn) &&
         hitsPhysical) {
         dfMods.push(6144);
         desc.defenderAbility = defender.ability;
@@ -781,7 +785,7 @@ function calculateFinalModsChampions(gen, attacker, defender, move, field, desc,
         desc.attackerAbility = attacker.ability;
     }
     if (defender.hasAbility('Multiscale') &&
-        defender.curHP() === defender.maxHP() &&
+        (defender.curHP() === defender.maxHP() || defender.abilityOn) &&
         hitCount === 0 &&
         (!field.defenderSide.isSR && (!field.defenderSide.spikes || defender.hasType('Flying'))) &&
         !attacker.hasAbility('Parental Bond (Child)')) {

@@ -102,7 +102,7 @@ def test_independent_spreads_and_usage_selection(service):
     outputs=[r for row,r in zip(rows,results) if row['direction']=='我方 → 对手' and row['move']['key']=='earthquake']
     assert len(outputs)==3
     assert len({(r['max_hp'],r['minimum'],r['maximum']) for r in outputs})==3
-    assert all(row['move']['key'] in service.common_moves(record, damage_only=True) for row in rows if row['direction']=='对手 → 我方')
+    assert all(row['move']['key'] in service.common_moves(record) for row in rows if row['direction']=='对手 → 我方')
 
 
 def test_stats_against_user_status_screenshot(service):

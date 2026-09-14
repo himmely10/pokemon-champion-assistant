@@ -9,6 +9,7 @@ import subprocess
 from .teams import STATS, TeamRules, blank_member
 from .data.storage import read_json
 from .battle_effects import engine_side
+from .ability_conditions import effective_accuracy, effective_priority
 
 from .paths import app_paths, node_executable
 
@@ -128,6 +129,11 @@ class DamageService:
             'status': battle['status'], 'abilityOn': battle['ability_on'],
             'alliesFainted': battle['allies_fainted'],
             'boosts': {STAT_IDS[k]: v for k, v in battle['boosts'].items()}}
+        # The engine needs an explicit selector before it can determine which
+        # stat Protosynthesis / Quark Drive boosts. ``auto`` asks it to derive
+        # the highest actual stat from the saved build.
+        if member['ability'] in {'protosynthesis', 'quark-drive'}:
+            options['boostedStat'] = 'auto'
         max_hp = record['base_stats']['hp'] + member['points']['hp'] + 75
         if record['base_stats']['hp'] == 1: max_hp = 1
         if type(battle['hp']) is not int or not 0 <= battle['hp'] <= max_hp:
@@ -212,10 +218,19 @@ class DamageService:
         rows, jobs = [], []
         def side(b):
             return engine_side(b)
+        def grounded(member):
+            record=self.rules.record(member['identity'])
+            return ('flying' not in record['types'] and member.get('ability')!='levitate'
+                    and member.get('item')!='air-balloon')
+        def max_hp(member):
+            record=self.rules.record(member['identity'])
+            points=member.get('points',{}).get('hp')
+            if not isinstance(points,int):return None
+            return 1 if record['base_stats']['hp']==1 else record['base_stats']['hp'] + points + 75
         for scenario_index,scenario in enumerate(scenarios):
             enemy, enemy_battle = scenario['member'], scenario['battle']
             record = self.rules.record(enemy['identity'])
-            incoming = self.common_moves(record, damage_only=True) if common else [
+            incoming = self.common_moves(record) if common else [
                 key for key in enemy['moves'] if self.catalog.moves.get(key, {}).get('category') != 'status']
             for direction, attacker, defender, ab, db, moves in [
                 ('我方 → 对手', own, enemy, own_battle, enemy_battle, own['moves']),
@@ -241,9 +256,21 @@ class DamageService:
                         job = {'error':str(exc)}
                     # Status moves have no direct damage, regardless of missing offensive stats.
                     if move and move['category'] == 'status' and key in self.rules.move_keys(attacker['identity']):
-                        job = {'statusMove':True}
+                        reason='变化招式：没有本次直接伤害范围'
+                        target_types=self.rules.record(defender['identity'])['types']
+                        opponent_target=move.get('target') not in {
+                            'user','users-field','ally','user-and-allies','all-allies','entire-field'}
+                        if (attacker.get('ability')=='prankster' and 'dark' in target_types
+                                and opponent_target):
+                            reason='恶作剧之心发动的变化招式对恶属性目标无效'
+                        job = {'statusMove':True,'statusReason':reason}
+                    maximum=max_hp(attacker);current=ab.get('hp',0)
                     rows.append({'scenario':scenario['name'], 'scenario_index':scenario_index, 'direction':direction, 'move':move,
-                                 'enemy':deepcopy(enemy), 'enemy_battle':deepcopy(enemy_battle)})
+                                 'enemy':deepcopy(enemy), 'enemy_battle':deepcopy(enemy_battle),
+                                 'hit_chance':effective_accuracy(move,attacker,defender,ab,db,environment),
+                                 'priority':effective_priority(move,attacker,ab,environment,
+                                                               grounded=grounded(attacker),
+                                                               full_hp=current==0 or maximum is not None and current==maximum)})
                     jobs.append(job)
         return rows, jobs
 

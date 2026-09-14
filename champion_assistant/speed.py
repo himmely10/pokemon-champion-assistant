@@ -28,11 +28,15 @@ def reference_speed(base, points=0, nature_tenths=10, scarf=False, *, stage=0,
     modifier = 1
     if tailwind: modifier *= 2
     active_unburden = ability == 'unburden' and ability_on
-    if active_unburden or (ability,weather) in {
+    scene_speed_ability = ability in {
+        'chlorophyll','swift-swim','sand-rush','slush-rush','surge-surfer'
+    } and ability_on
+    if active_unburden or scene_speed_ability or (ability,weather) in {
         ('chlorophyll','Sun'),('swift-swim','Rain'),('sand-rush','Sand'),('slush-rush','Snow')
     } or (ability == 'surge-surfer' and terrain == 'Electric'):
         modifier *= 2
-    elif ability == 'quick-feet' and status: modifier *= 1.5
+    elif ability == 'quick-feet' and (status or ability_on): modifier *= 1.5
+    elif ability in {'protosynthesis','quark-drive'} and ability_on: modifier *= 1.5
     elif ability == 'slow-start' and ability_on: modifier *= .5
     if scarf and not active_unburden: modifier *= 1.5
     # Cartridge rounding: exact halves round down; paralysis follows modifiers.

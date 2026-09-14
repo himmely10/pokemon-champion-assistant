@@ -1,13 +1,91 @@
 from copy import deepcopy
 from pathlib import Path
+import pytest
 from test_damage import service, pair, member
 from champion_assistant.damage import battle_defaults, identifier
 from champion_assistant.speed import reference_speed
+from champion_assistant.ability_conditions import (ABILITY_TRIGGER_LABELS, effective_accuracy,
+                                                    effective_priority)
 
 def test_reference_conditions():
     assert reference_speed(120,32,11,True,stage=1,tailwind=True)==849
     assert reference_speed(120,ability='unburden',ability_on=True)==280
     assert reference_speed(120,ability='swift-swim',weather='Rain')==280
+    assert reference_speed(120,ability='chlorophyll')==140
+    assert reference_speed(120,ability='chlorophyll',ability_on=True)==280
+    assert reference_speed(120,ability='quick-feet',ability_on=True)==210
+    assert reference_speed(120,ability='protosynthesis',ability_on=True)==210
+
+
+def test_scene_dependent_abilities_explain_their_trigger():
+    expected={
+        'chlorophyll':'大晴天', 'swift-swim':'下雨', 'sand-rush':'沙暴',
+        'slush-rush':'下雪', 'surge-surfer':'电气场地', 'quick-feet':'异常状态',
+        'protosynthesis':'驱劲能量', 'quark-drive':'电气场地',
+        'solar-power':'大晴天', 'sand-force':'沙暴', 'guts':'异常状态',
+        'marvel-scale':'异常状态', 'grass-pelt':'青草场地',
+        'multiscale':'满 HP', 'merciless':'中毒', 'rivalry':'同性'}
+    for ability,condition in expected.items():
+        assert condition in ABILITY_TRIGGER_LABELS[ability]
+
+
+def test_accuracy_abilities_and_weather_conditions(service):
+    attacker=member(service);defender=member(service)
+    ab,db=battle_defaults(),battle_defaults()
+    sleep=service.catalog.moves['sleep-powder']
+    physical=service.catalog.moves['earthquake']
+    defender['ability']='sand-veil'
+    assert effective_accuracy(sleep,attacker,defender,ab,db,{'weather':'Sand'}) == {
+        'percent':60.0,'notes':['沙隐 ×0.8']}
+    assert effective_accuracy(sleep,attacker,defender,ab,db,{'weather':''})['percent']==75
+    db['ability_on']=True
+    assert effective_accuracy(sleep,attacker,defender,ab,db,{'weather':''})['percent']==60
+    defender['ability']='__none__';db['ability_on']=False
+    attacker['ability']='compound-eyes'
+    assert effective_accuracy(sleep,attacker,defender,ab,db,{})['percent']==97.5
+    attacker['ability']='hustle'
+    assert effective_accuracy(physical,attacker,defender,ab,db,{})['percent']==80
+    defender['ability']='no-guard'
+    assert effective_accuracy(sleep,attacker,defender,ab,db,{})['percent']==100
+
+
+def test_dynamic_priority_conditions(service):
+    grassy=service.catalog.moves['grassy-glide']
+    brave_bird=service.catalog.moves['brave-bird']
+    tailwind=service.catalog.moves['tailwind']
+    state=battle_defaults()
+    rillaboom=member(service,'轰擂金刚猩')
+    talonflame=member(service,'烈箭鹰')
+    whimsicott=member(service,'风妖精')
+    talonflame['ability']='gale-wings';whimsicott['ability']='prankster'
+    assert effective_priority(grassy,rillaboom,state,{'terrain':''})['current']==0
+    boosted=effective_priority(grassy,rillaboom,state,{'terrain':'Grassy'})
+    assert boosted['current']==1 and '青草场地' in boosted['notes'][0]
+    assert effective_priority(brave_bird,talonflame,state,{},full_hp=True)['current']==1
+    assert effective_priority(brave_bird,talonflame,state,{},full_hp=False)['current']==0
+    prankster=effective_priority(tailwind,whimsicott,state,{})
+    assert prankster['current']==1 and '恶作剧之心' in prankster['notes'][0]
+
+
+def test_prankster_status_move_is_ineffective_only_when_targeting_dark(service):
+    attacker=member(service,'风妖精',moves=['taunt','tailwind',None,None])
+    attacker['ability']='prankster'
+    defender=member(service,'长毛巨魔',moves=[None]*4)
+    rows,jobs=service.jobs(attacker,battle_defaults(),[{'name':'恶属性目标','member':defender,'battle':battle_defaults()}],
+        {'weather':'','terrain':'','critical':False,'targets':2},common=False)
+    results=service.execute(jobs)
+    assert results[0]['status']=='status_move' and '对恶属性目标无效' in results[0]['reason']
+    assert results[1]['status']=='status_move' and '对恶属性目标无效' not in results[1]['reason']
+    assert rows[0]['priority']['current']==1
+
+
+def test_grassy_glide_dynamic_priority_is_blocked_by_armor_tail(service):
+    _,_,jobs=pair(service);job=jobs[0];job['move']='grassy-glide'
+    job['field']['terrain']='Grassy'
+    normal=service.execute([deepcopy(job)])[0]
+    job['defender']['options']['ability']='Armor Tail'
+    blocked=service.execute([job])[0]
+    assert normal['maximum']>0 and blocked['maximum']==0
 
 def test_saved_speed(service):
     m=member(service); b=battle_defaults(); b['boosts']['speed']=1;b['tailwind']=True
@@ -98,6 +176,34 @@ def test_low_hp_abilities_can_be_confirmed_or_derived_from_current_hp(service):
     confirmed_result,low_hp_result=service.execute([confirmed,low_hp])
     assert confirmed_result['minimum']>normal['minimum']
     assert low_hp_result['rolls']==confirmed_result['rolls']
+
+
+@pytest.mark.parametrize('ability,move,side',[
+    ('Solar Power','flamethrower','attacker'),
+    ('Sand Force','earthquake','attacker'),
+    ('Guts','close-combat','attacker'),
+    ('Marvel Scale','earthquake','defender'),
+    ('Grass Pelt','earthquake','defender'),
+])
+def test_scene_ability_checkbox_forces_damage_condition(service,ability,move,side):
+    _,_,jobs=pair(service);base=deepcopy(jobs[0]);base['move']=move
+    subject=base[side]['options'];subject.update(ability=ability,abilityOn=False)
+    inactive=service.execute([base])[0]
+    subject['abilityOn']=True
+    active=service.execute([base])[0]
+    assert active['status']==inactive['status']=='ok'
+    if side=='attacker':assert active['minimum']>inactive['minimum']
+    else:assert active['maximum']<inactive['maximum']
+
+
+def test_multiscale_checkbox_can_confirm_full_hp_condition(service):
+    _,_,jobs=pair(service);job=deepcopy(jobs[0])
+    defender=job['defender']['options'];defender.update(
+        ability='Multiscale',curHP=job['defender']['baseStats']['hp'] + 74,abilityOn=False)
+    inactive=service.execute([job])[0]
+    defender['abilityOn']=True
+    active=service.execute([job])[0]
+    assert active['maximum']<inactive['maximum']
 
 def test_current_direct_damage_ability_inventory_is_wired_to_champions_engine(service):
     keys={

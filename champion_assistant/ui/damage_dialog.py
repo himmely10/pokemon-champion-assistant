@@ -7,10 +7,13 @@ from PySide6.QtCore import QThread, Signal, Qt, QTimer
 from PySide6.QtGui import QKeySequence, QShortcut
 from PySide6.QtWidgets import (QCheckBox, QComboBox, QDialog, QGridLayout, QHBoxLayout,
     QLabel, QLineEdit, QPushButton, QScrollArea, QSpinBox, QTabWidget, QTableWidget,
-    QTableWidgetItem, QTextEdit, QVBoxLayout, QWidget, QHeaderView, QGroupBox, QSizePolicy)
+    QTableWidgetItem, QTextEdit, QVBoxLayout, QWidget, QHeaderView, QGroupBox, QSizePolicy,
+    QButtonGroup, QRadioButton)
 
 from ..damage import DamageService, RULE_VERSION, battle_defaults
 from ..battle_effects import SUPPORT_EFFECTS, effect_summary
+from ..ability_conditions import (ABILITY_TRIGGER_LABELS, ABILITY_SCENE_REQUIREMENTS,
+                                  ABILITY_HP_REQUIREMENTS)
 from ..teams import STATS, blank_member
 from ..data.moves import power_label, accuracy_label, move_tooltip
 from ..data.storage import TYPE_NAMES
@@ -19,31 +22,20 @@ from .matchups import MatchupLabel
 from .dialog_layout import fit_dialog
 
 
-ABILITY_TRIGGER_LABELS = {
-    'blaze': '猛火已触发（HP≤1/3时自动生效）',
-    'torrent': '激流已触发（HP≤1/3时自动生效）',
-    'overgrow': '茂盛已触发（HP≤1/3时自动生效）',
-    'swarm': '虫之预感已触发（HP≤1/3时自动生效）',
-    'unburden': '轻装已触发（道具已失去）',
-    'slow-start': '慢启动仍在生效',
-    'electromorphosis': '电力转换已进入充电状态',
-    'analytic': '分析：本次按后手攻击',
-    'plus': '正电：对应特性同伴在场',
-    'minus': '负电：对应特性同伴在场',
-    'flash-fire': '引火已吸收火属性招式',
-    'stakeout': '蹲守：目标本回合刚换入',
-    'intimidate': '本次入场威吓生效',
-    'intrepid-sword': '本次入场触发不挠之剑',
-    'dauntless-shield': '本次入场触发不屈之盾',
-    'teraform-zero': '太晶变形归零已触发',
+PREFERRED_OPPONENT_ABILITIES = {
+    # The current Champions doubles data has no ability usage percentages.
+    # Use the defining competitive ability as the visible default while still
+    # leaving every legal ability available in the selector.
+    'whimsicott': 'prankster',
 }
 
 
 def configure_ability_trigger(box, ability, prefix=''):
     label=ABILITY_TRIGGER_LABELS.get(ability)
     box.blockSignals(True)
-    if not label:
+    if box.property('abilityKey') != ability or not label:
         box.setChecked(False)
+    box.setProperty('abilityKey', ability)
     box.setText((prefix+' · ' if prefix else '')+(label or '当前特性无需手动触发'))
     box.setVisible(bool(label))
     box.setEnabled(bool(label))
@@ -193,6 +185,13 @@ class DamageDialog(QDialog):
         self.own_matchups=MatchupLabel();self.enemy_matchups=MatchupLabel()
         self.own_form=QComboBox();self.enemy_form=QComboBox()
         self.enemy_ability_choice=QComboBox()
+        self.enemy_ability_buttons_widget=QWidget()
+        self.enemy_ability_buttons_layout=QHBoxLayout(self.enemy_ability_buttons_widget)
+        self.enemy_ability_buttons_layout.setContentsMargins(0,0,0,0)
+        self.enemy_ability_buttons_layout.setSpacing(10)
+        self.enemy_ability_button_group=QButtonGroup(self)
+        self.enemy_ability_button_group.setExclusive(True)
+        self.enemy_ability_buttons={}
         self.enemy_ability_note=QLabel();self.enemy_ability_note.setWordWrap(True)
         self.copied_ability=combo([
             ('未触发复制／无特性效果（假设）','__none__')]+[
@@ -211,6 +210,7 @@ class DamageDialog(QDialog):
                 edit_item=QPushButton('修改预存道具');edit_item.clicked.connect(configure_team);box.addWidget(edit_item)
             else:
                 box.addWidget(self.enemy_ability_choice)
+                box.addWidget(self.enemy_ability_buttons_widget)
                 box.addWidget(self.enemy_ability_note)
             box.addWidget(summary);box.addWidget(matchups);summaries.addWidget(group,1)
         layout.addLayout(summaries)
@@ -294,7 +294,9 @@ class DamageDialog(QDialog):
         self.target.currentIndexChanged.connect(self.reset_scenarios)
         self.target.editTextChanged.connect(self.target_edited)
         self.common.toggled.connect(self.invalidate)
-        for w in (self.weather,self.terrain,self.targets):w.currentIndexChanged.connect(self.invalidate)
+        self.weather.currentIndexChanged.connect(self.environment_changed)
+        self.terrain.currentIndexChanged.connect(self.environment_changed)
+        self.targets.currentIndexChanged.connect(self.invalidate)
         self.critical.toggled.connect(self.invalidate)
         self.tabs.currentChanged.connect(self.direction_changed)
         self.build_quick_controls(layout)
@@ -328,25 +330,35 @@ class DamageDialog(QDialog):
         grid=QGridLayout(panel);grid.setVerticalSpacing(5);self.enemy_boosts={}
         grid.addWidget(QLabel('全局'),0,0)
         grid.addWidget(self.weather,0,1);grid.addWidget(self.terrain,0,2)
-        grid.addWidget(self.targets,0,3,1,2);grid.addWidget(self.critical,0,5)
-        grid.addWidget(self.common,0,6,1,2)
+        grid.addWidget(self.targets,0,3,1,3);grid.addWidget(self.critical,0,6)
+        grid.addWidget(self.common,0,7,1,2)
         grid.addWidget(QLabel('我方'),2,0);grid.addWidget(QLabel('对手全部情景'),3,0)
-        for col,(key,name) in enumerate(list(STATS.items())[1:],1):
+        grid.addWidget(QLabel('当前 HP'),1,1)
+        grid.addWidget(self.own_battle.hp,2,1)
+        self.own_battle.hp.setToolTip('0 表示明确按满 HP 计算；疾风之翼、多重鳞片等会据此自动判断。')
+        self.own_battle.hp.valueChanged.connect(self.hp_condition_changed)
+        self.enemy_hp=QSpinBox();self.enemy_hp.setRange(0,999);self.enemy_hp.setSpecialValueText('满 HP（假设）')
+        self.enemy_hp.setToolTip('0 表示各情景均按各自的满 HP 计算。')
+        grid.addWidget(self.enemy_hp,3,1);self.enemy_hp.valueChanged.connect(self.apply_enemy_quick)
+        self.enemy_hp.valueChanged.connect(self.hp_condition_changed)
+        for col,(key,name) in enumerate(list(STATS.items())[1:],2):
             grid.addWidget(QLabel(name+'等级'),1,col)
             # A single control is moved here, so the saved battle input cannot diverge.
             grid.addWidget(self.own_battle.boosts[key],2,col)
             self.own_battle.boost_labels[key].hide()
             box=QSpinBox();box.setRange(-6,6);self.enemy_boosts[key]=box
             grid.addWidget(box,3,col);box.valueChanged.connect(self.apply_enemy_quick)
-        grid.addWidget(self.own_battle.flags['tailwind'],2,6)
+        grid.addWidget(self.own_battle.flags['tailwind'],2,7)
         self.own_battle.groups['速度条件'].hide()
-        self.enemy_tailwind=QCheckBox('对手顺风');grid.addWidget(self.enemy_tailwind,3,6)
+        self.enemy_tailwind=QCheckBox('对手顺风');grid.addWidget(self.enemy_tailwind,3,7)
         self.enemy_tailwind.toggled.connect(self.apply_enemy_quick)
-        self.enemy_ability=QCheckBox('对手条件特性生效');grid.addWidget(self.enemy_ability,3,7)
+        self.enemy_ability=QCheckBox('对手条件特性生效');grid.addWidget(self.enemy_ability,3,8)
         self.enemy_ability.toggled.connect(self.apply_enemy_quick)
-        grid.addWidget(self.own_battle.flags['ability_on'],2,7)
+        self.enemy_ability.toggled.connect(lambda checked:self.condition_trigger_changed('enemy',checked))
+        grid.addWidget(self.own_battle.flags['ability_on'],2,8)
+        self.own_battle.flags['ability_on'].toggled.connect(lambda checked:self.condition_trigger_changed('own',checked))
         self.speed_summary=QLabel();self.speed_summary.setWordWrap(True);self.speed_summary.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
-        grid.addWidget(self.speed_summary,4,0,1,8)
+        grid.addWidget(self.speed_summary,4,0,1,9)
         outer.insertWidget(3,panel)
         self.refresh_condition_controls()
 
@@ -360,21 +372,71 @@ class DamageDialog(QDialog):
         key=self.enemy_ability_choice.currentData()
         if key in ABILITY_TRIGGER_LABELS:
             configure_ability_trigger(self.enemy_ability,key,'对手')
-            return
-        try:record=self.rules.record(self.enemy_form.currentData() or value(self.target))
-        except ValueError:record=None
-        candidates=[ability for ability in (self.rules.ability_keys(self.rules.identity(record)) if record else [])
-                    if ability in ABILITY_TRIGGER_LABELS]
-        configure_ability_trigger(self.enemy_ability,None,'对手')
-        if candidates:
-            names=[self.rules.options['abilities'].get(ability,{}).get('name',ability) for ability in candidates]
-            self.enemy_ability.setText('对手条件特性：请先在上方选择'+'／'.join(names))
-            self.enemy_ability.setVisible(True)
+        else:
+            try:record=self.rules.record(self.enemy_form.currentData() or value(self.target))
+            except ValueError:record=None
+            candidates=[ability for ability in (self.rules.ability_keys(self.rules.identity(record)) if record else [])
+                        if ability in ABILITY_TRIGGER_LABELS]
+            configure_ability_trigger(self.enemy_ability,None,'对手')
+            if candidates:
+                names=[self.rules.options['abilities'].get(ability,{}).get('name',ability) for ability in candidates]
+                self.enemy_ability.setText('对手条件特性：请先在上方选择'+'／'.join(names))
+                self.enemy_ability.setVisible(True)
+        self.sync_condition_controls()
+
+    def condition_ability(self, side):
+        if side=='enemy':return self.enemy_ability_choice.currentData()
+        slot=self.own_slot.currentData()
+        if not self.selected_team or slot is None:return None
+        try:return self.own_combat_member(self.selected_team['members'][slot]).get('ability')
+        except ValueError:return self.selected_team['members'][slot].get('ability')
+
+    def condition_trigger_changed(self, side, checked):
+        if self.loading:return
+        ability=self.condition_ability(side)
+        requirement=ABILITY_SCENE_REQUIREMENTS.get(ability)
+        if requirement:
+            box=self.weather if requirement[0]=='weather' else self.terrain
+            desired=requirement[1] if checked else ''
+            if checked or box.currentData()==requirement[1]:select(box,desired)
+        hp_requirement=ABILITY_HP_REQUIREMENTS.get(ability)
+        hp_box=self.own_battle.hp if side=='own' else self.enemy_hp
+        if checked and hp_requirement=='full':hp_box.setValue(0)
+        self.sync_condition_controls();self.invalidate()
+
+    def environment_changed(self,*_):
+        if self.loading:return
+        self.sync_condition_controls();self.invalidate()
+
+    def hp_condition_changed(self,*_):
+        if self.loading:return
+        self.sync_condition_controls();self.invalidate()
+
+    def sync_condition_controls(self):
+        if not hasattr(self,'enemy_ability'):return
+        for side,box in [('own',self.own_battle.flags['ability_on']),('enemy',self.enemy_ability)]:
+            ability=self.condition_ability(side)
+            requirement=ABILITY_SCENE_REQUIREMENTS.get(ability)
+            hp_requirement=ABILITY_HP_REQUIREMENTS.get(ability)
+            if requirement:
+                selector=self.weather if requirement[0]=='weather' else self.terrain
+                active=selector.currentData()==requirement[1]
+            elif hp_requirement=='full':
+                hp_box=self.own_battle.hp if side=='own' else self.enemy_hp
+                active=hp_box.value()==0
+            else:continue
+            box.blockSignals(True);box.setChecked(active);box.blockSignals(False)
+        checked=self.enemy_ability.isChecked()
+        for page in self.pages:
+            page.battle.flags['ability_on'].blockSignals(True)
+            page.battle.flags['ability_on'].setChecked(checked)
+            page.battle.flags['ability_on'].blockSignals(False)
 
     def apply_enemy_quick(self,*_):
         if self.loading:return
         self.loading=True
         for page in self.pages:
+            page.battle.hp.setValue(self.enemy_hp.value())
             for key,box in self.enemy_boosts.items():page.battle.boosts[key].setValue(box.value())
             page.battle.flags['tailwind'].setChecked(self.enemy_tailwind.isChecked())
             page.battle.flags['ability_on'].setChecked(self.enemy_ability.isChecked())
@@ -419,7 +481,7 @@ class DamageDialog(QDialog):
         for table in self.direction_tables.values():
             table.setStyleSheet(f'QTableWidget {{font-size:{pixels}px; color:#172d43;}} QHeaderView::section {{font-size:{pixels}px; color:#27465b;}}')
             table.horizontalHeader().setMinimumSectionSize(round(150*scale))
-            for row in range(table.rowCount()):table.setRowHeight(row,round(76*scale))
+            for row in range(table.rowCount()):table.setRowHeight(row,round(102*scale))
         self.detail.setStyleSheet(f'QTextEdit {{font-size:{pixels}px; color:#172d43; background:#ffffff; border:1px solid #bacbd7; border-radius:6px;}}')
 
     def select_scenario_column(self,table,col):
@@ -491,9 +553,36 @@ class DamageDialog(QDialog):
             for key in abilities:
                 name=self.rules.options['abilities'].get(key,{}).get('name',key)
                 self.enemy_ability_choice.addItem('特性假设 · '+name,key)
+            preferred=PREFERRED_OPPONENT_ABILITIES.get(record.get('opgg_key') or record.get('source_slug')) if record else None
+            if preferred in abilities:select(self.enemy_ability_choice,preferred)
         self.enemy_ability_choice.setEnabled(bool(record) and not fixed)
         self.enemy_ability_choice.blockSignals(False)
+        self.rebuild_enemy_ability_buttons(abilities,fixed)
         self.refresh_enemy_ability_note()
+
+    def rebuild_enemy_ability_buttons(self, abilities, fixed):
+        while self.enemy_ability_buttons_layout.count():
+            item=self.enemy_ability_buttons_layout.takeAt(0)
+            widget=item.widget()
+            if widget:
+                self.enemy_ability_button_group.removeButton(widget);widget.deleteLater()
+        self.enemy_ability_buttons={}
+        choices=[] if fixed else [('__none__','无特性效果')]+[
+            (key,self.rules.options['abilities'].get(key,{}).get('name',key)) for key in abilities]
+        for key,name in choices:
+            button=QRadioButton(name)
+            entry=self.rules.options['abilities'].get(key,{})
+            if entry.get('description'):button.setToolTip(entry['description'])
+            button.clicked.connect(lambda _checked,k=key:select(self.enemy_ability_choice,k))
+            self.enemy_ability_button_group.addButton(button)
+            self.enemy_ability_buttons_layout.addWidget(button)
+            self.enemy_ability_buttons[key]=button
+        self.enemy_ability_buttons_layout.addStretch(1)
+        show_parallel=len(abilities)>1 and not fixed
+        self.enemy_ability_buttons_widget.setVisible(show_parallel)
+        self.enemy_ability_choice.setVisible(not show_parallel)
+        selected=self.enemy_ability_buttons.get(self.enemy_ability_choice.currentData())
+        if selected:selected.setChecked(True)
 
     def refresh_enemy_ability_note(self):
         key=self.enemy_ability_choice.currentData()
@@ -511,6 +600,8 @@ class DamageDialog(QDialog):
         if self.loading:return
         self.loading=True
         key=self.enemy_ability_choice.currentData()
+        selected=self.enemy_ability_buttons.get(key)
+        if selected:selected.setChecked(True)
         for page in self.pages:select(page.editor.ability,key)
         self.loading=False
         self.refresh_enemy_ability_note();self.invalidate();self.refresh_summaries()
@@ -709,7 +800,7 @@ class DamageDialog(QDialog):
         scene_ids=list(dict.fromkeys(r['scenario_index'] for _,r in selected))
         if direction=='我方 → 对手':keys=self.last_request['own']['moves']
         else:keys=list(dict.fromkeys(r['move']['key'] if r['move'] else None for _,r in selected))
-        labels=['招式 · 原始属性\n威力 / 命中']
+        labels=['招式 · 原始属性\n威力 / 命中 / 先制']
         for index in scene_ids:
             scene=self.last_request['scenarios'][index];rate=scene['spread_usage']
             nature=self.rules.options['natures'].get(scene['member']['nature'],{}).get('name','未知性格')
@@ -725,19 +816,31 @@ class DamageDialog(QDialog):
             table.horizontalHeaderItem(col).setToolTip(tip)
         for row,key in enumerate(keys):
             move=self.service.catalog.moves.get(key)
-            name=f"{move['name']} · {TYPE_NAMES[move['type']]}\n{power_label(move)} / {accuracy_label(move)}" if move else '未填写招式'
+            priority=move.get('priority') if move else None
+            priority_label='未知' if priority is None else f'{priority:+d}'
+            name=f"{move['name']} · {TYPE_NAMES[move['type']]}\n{power_label(move)} / {accuracy_label(move)} / 先制 {priority_label}" if move else '未填写招式'
             if direction=='对手 → 我方' and move:
                 rate=(self.last_request['usage'] or {}).get('moves',{}).get(key)
                 if rate is not None:name+=f' · 采用率 {rate:g}%'
             title=QTableWidgetItem(name)
             if move:title.setToolTip(move_tooltip(move))
-            table.setItem(row,0,title);table.setRowHeight(row,round(76*self.zoom.currentData()/100))
+            table.setItem(row,0,title);table.setRowHeight(row,round(102*self.zoom.currentData()/100))
             for col,scene_id in enumerate(scene_ids,1):
                 found=next(((i,r) for i,r in selected if r['scenario_index']==scene_id and (r['move']['key'] if r['move'] else None)==key),None)
                 if not found:table.setItem(row,col,QTableWidgetItem('—'));continue
                 index,r=found
-                text=(f"{r['percent_min']:.1f}–{r['percent_max']:.1f}%\n{r['minimum']}–{r['maximum']} HP" if r['status']=='ok'
-                      else '变化招式\n无直接伤害' if r['status']=='status_move'
+                chance=r.get('hit_chance',{});hit=chance.get('percent')
+                metadata=[]
+                if hit is not None:metadata.append(f"命中 {hit:g}%"+(' · '+'／'.join(chance['notes']) if chance.get('notes') else ''))
+                priority=r.get('priority',{});current=priority.get('current')
+                if current is not None:
+                    note='／'.join(priority.get('notes',[]))
+                    metadata.append(f"先制 {current:+d}"+(f' · {note}' if note else ''))
+                meta_text=('\n'+' · '.join(metadata)) if metadata else ''
+                status_reason=r.get('reason','变化招式：没有本次直接伤害范围')
+                status_text=('变化招式\n无效：'+status_reason if '无效' in status_reason else '变化招式\n无直接伤害')
+                text=(f"{r['percent_min']:.1f}–{r['percent_max']:.1f}%\n{r['minimum']}–{r['maximum']} HP"+meta_text if r['status']=='ok'
+                      else status_text+meta_text if r['status']=='status_move'
                       else '⚠ 暂不可计算\n'+r.get('reason','未知原因'))
                 item=QTableWidgetItem(text);item.setData(Qt.ItemDataRole.UserRole,index)
                 item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -776,7 +879,15 @@ class DamageDialog(QDialog):
         env=self.last_request['environment']
         weather={'':'无天气','Sun':'晴天','Rain':'下雨','Sand':'沙暴','Snow':'下雪'}[env['weather']]
         terrain={'':'无场地','Psychic':'精神场地','Grassy':'青草场地','Electric':'电气场地','Misty':'薄雾场地'}[env['terrain']]
-        move=r['move'];metrics=f"威力 {power_label(move)} · 命中 {accuracy_label(move)}" if move else ''
+        move=r['move'];metrics=f"威力 {power_label(move)} · 原始命中 {accuracy_label(move)}" if move else ''
+        chance=r.get('hit_chance',{});hit=chance.get('percent')
+        if hit is not None:
+            metrics+=f" · 实际命中 {hit:g}%"
+            if chance.get('notes'):metrics+=' ('+' / '.join(chance['notes'])+')'
+        priority=r.get('priority',{});original=priority.get('original');current=priority.get('current')
+        if original is not None:
+            metrics+=f' · 原始先制 {original:+d} · 当前先制 {current:+d}'
+            if priority.get('notes'):metrics+=' ('+' / '.join(priority['notes'])+')'
         def text(value):return escape(str(value)).replace('\n','<br>')
         result=(f"{r['percent_min']:.1f}–{r['percent_max']:.1f}% · {r['minimum']}–{r['maximum']} HP"
                 if r['status']=='ok' else r.get('reason','无直接伤害'))
@@ -803,7 +914,7 @@ class DamageDialog(QDialog):
             +(section('多次命中 · 独立次数情景',multi_text) if multi_text else '')
             +section('独立随机结果',r.get('rolls','未计算'))
             +section('资料版本',f"{self.last_request['dataset']} · {self.last_request['rules']}\n快照 {self.last_request.get('snapshot_token') or '独立资料视图'}")
-            +'<p>仅表示本次直接伤害，不包含命中率、追加效果、回复、反伤或下一回合。</p>')
+            +'<p>伤害范围以招式命中为前提；实际命中率已计入当前可确定的天气与特性修正，不包含追加效果、回复、反伤或下一回合。</p>')
 
     def clear_session(self):
         self.invalidate();self.set_target(None)

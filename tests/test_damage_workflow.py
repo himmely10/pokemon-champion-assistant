@@ -57,13 +57,15 @@ def test_trace_requires_explicit_state_and_mega_uses_pixilate(service,team):
     with pytest.raises(ValueError,match='同一家族'):service.battle_form(original,mega(service,'mega-charizard-x'))
 
 
-def test_incoming_excludes_status_for_common_and_manual(service,team):
+def test_incoming_shows_common_status_but_manual_mode_keeps_damage_only(service,team):
     own=team.list()[0]['members'][0]
     scenes=service.comparison_presets(service.catalog.record_for_name('巨金怪'))
     env={'weather':'','terrain':'','critical':False,'targets':2}
-    for common in (True,False):
-        rows,_=service.jobs(own,battle_defaults(),scenes,env,common=common)
-        assert all(r['move']['category']!='status' for r in rows if r['direction']=='对手 → 我方' and r['move'])
+    rows,_=service.jobs(own,battle_defaults(),scenes,env,common=True)
+    incoming=[r for r in rows if r['direction']=='对手 → 我方' and r['move']]
+    assert any(r['move']['category']=='status' for r in incoming)
+    rows,_=service.jobs(own,battle_defaults(),scenes,env,common=False)
+    assert all(r['move']['category']!='status' for r in rows if r['direction']=='对手 → 我方' and r['move'])
     only_status=deepcopy(scenes[-1])
     only_status['member']['moves']=['protect']*4
     rows,_=service.jobs(own,battle_defaults(),[only_status],env,common=False)

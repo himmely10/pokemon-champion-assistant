@@ -66,7 +66,7 @@ function supportEffects(job, result) {
 }
 function run(job) {
   try {
-    if (job.statusMove) return {status:'status_move', reason:'变化招式：没有本次直接伤害范围'};
+    if (job.statusMove) return {status:'status_move', reason:job.statusReason || '变化招式：没有本次直接伤害范围'};
     if (job.error) return {status:'unavailable', reason:job.error};
     if (job.kind === 'speed') {
       const p = pokemon(job.attacker), field = new calc.Field(job.field);

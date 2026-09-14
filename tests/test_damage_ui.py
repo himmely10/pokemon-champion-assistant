@@ -55,7 +55,7 @@ def test_support_effects_auto_calculate_grouping_and_details(qtbot,service,store
     qtbot.waitUntil(lambda:bool(d.rows) and d.worker is None,timeout=15000)
     assert d.rows[0]['maximum']<base
     d.show_detail(0);assert '极光幕 · 已启用 / 本招适用' in d.detail.toPlainText()
-    assert all(row['move']['category']!='status' for row in d.rows if row['direction']=='对手 → 我方' and row['move'])
+    assert any(row['move']['category']=='status' for row in d.rows if row['direction']=='对手 → 我方' and row['move'])
 
 
 def test_real_bidirectional_results_and_input_revoke(qtbot,service,store):
@@ -194,6 +194,88 @@ def test_alolan_persian_manual_correction_calculates(qtbot,service,store):
     d.calculate();qtbot.waitUntil(lambda:d.worker is None,timeout=15000)
     assert any(r['status']=='ok' for r in d.rows)
     assert all('该形态尚未映射' not in r.get('reason','') for r in d.rows)
+
+
+def test_enemy_scene_ability_shows_condition_and_checkbox(qtbot,service,store):
+    d=DamageDialog(service.catalog,store.list,lambda:None);qtbot.addWidget(d)
+    d.show()
+    select(d.saved_team,store.list()[0]['id'])
+    d.set_target(service.catalog.record_for_name('妙蛙花'))
+    select(d.enemy_ability_choice,'chlorophyll')
+    assert d.enemy_ability.isVisible()
+    assert d.enemy_ability.isEnabled()
+    assert '叶绿素' in d.enemy_ability.text() and '大晴天' in d.enemy_ability.text()
+    d.enemy_ability.setChecked(True)
+    assert all(page.battle.flags['ability_on'].isChecked() for page in d.pages)
+    assert '极速 290' in d.speed_summary.text()
+
+
+def test_sand_veil_displays_effective_accuracy_for_damage_and_status_moves(qtbot,service,store):
+    venusaur=service.presets(service.catalog.record_for_name('妙蛙花'))[0]['member']
+    venusaur.update(ability='overgrow',item='none',moves=['sludge-bomb','sleep-powder','protect','leaf-storm'])
+    team=store.save({'name':'命中率测试队','registration':'partial','members':[venusaur]})
+    d=DamageDialog(service.catalog,store.list,lambda:None);qtbot.addWidget(d);d.show()
+    select(d.saved_team,team['id'])
+    d.set_target(service.catalog.record_for_name('烈咬陆鲨'))
+    select(d.enemy_ability_choice,'sand-veil')
+    assert '沙暴' in d.enemy_ability.text() and '命中率×0.8' in d.enemy_ability.text()
+    d.enemy_ability.setChecked(True)
+    assert d.weather.currentData()=='Sand'
+    select(d.weather,'Sun');assert not d.enemy_ability.isChecked()
+    select(d.weather,'Sand');assert d.enemy_ability.isChecked()
+    d.calculate();qtbot.waitUntil(lambda:d.worker is None,timeout=15000)
+    assert '命中 80% · 沙隐 ×0.8' in d.table.item(0,1).text()
+
+    # A status move still has no damage range, but its adjusted hit chance remains useful.
+    row=next(i for i in range(d.table.rowCount()) if '催眠粉' in d.table.item(i,0).text())
+    assert '变化招式' in d.table.item(row,1).text()
+    assert '命中 60% · 沙隐 ×0.8' in d.table.item(row,1).text()
+
+
+def test_grassy_glide_priority_is_visible_and_scene_is_bidirectional(qtbot,service,store):
+    own=service.presets(service.catalog.record_for_name('轰擂金刚猩'))[0]['member']
+    own.update(ability='grassy-surge',item='none',moves=['grassy-glide','protect',None,None])
+    team=store.save({'name':'先制度测试队','registration':'partial','members':[own]})
+    d=DamageDialog(service.catalog,store.list,lambda:None);qtbot.addWidget(d);d.show()
+    select(d.saved_team,team['id']);d.set_target(service.catalog.record_for_name('巨金怪'))
+    select(d.terrain,'Grassy')
+    d.calculate();qtbot.waitUntil(lambda:d.worker is None,timeout=15000)
+    assert '先制 +0' in d.table.item(0,0).text()
+    assert '先制 +1' in d.table.item(0,1).text() and '青草场地' in d.table.item(0,1).text()
+
+
+def test_whimsicott_defaults_to_prankster_and_lists_common_status_moves(qtbot,service,store):
+    d=DamageDialog(service.catalog,store.list,lambda:None);qtbot.addWidget(d);d.show()
+    select(d.saved_team,store.list()[0]['id'])
+    d.set_target(service.catalog.record_for_name('风妖精'))
+    assert d.enemy_ability_choice.currentData()=='prankster'
+    assert '恶作剧之心' in d.enemy_ability_choice.currentText()
+    assert {'叶绿素','穿透','恶作剧之心'} <= {button.text() for button in d.enemy_ability_buttons.values()}
+    assert d.enemy_ability_buttons['prankster'].isChecked()
+    assert d.enemy_ability_buttons_widget.isVisible()
+    d.calculate();qtbot.waitUntil(lambda:d.worker is None,timeout=15000)
+    titles=[d.incoming_table.item(row,0).text() for row in range(d.incoming_table.rowCount())]
+    assert any('顺风' in title for title in titles)
+    assert any('再来一次' in title for title in titles)
+    for name in ('顺风','再来一次'):
+        row=next(i for i,title in enumerate(titles) if name in title)
+        assert '先制 +1' in d.incoming_table.item(row,1).text()
+
+
+def test_full_hp_condition_is_prominent_and_tracks_gale_wings(qtbot,service,store):
+    own=service.presets(service.catalog.record_for_name('烈箭鹰'))[0]['member']
+    own.update(ability='gale-wings',item='none',moves=['brave-bird','protect',None,None])
+    team=store.save({'name':'疾风之翼测试队','registration':'partial','members':[own]})
+    d=DamageDialog(service.catalog,store.list,lambda:None);qtbot.addWidget(d);d.show()
+    select(d.saved_team,team['id']);d.set_target(service.catalog.record_for_name('巨金怪'))
+    assert d.own_battle.hp.parentWidget() is d.quick_panel
+    assert d.own_battle.flags['ability_on'].isChecked()
+    d.own_battle.hp.setValue(1)
+    assert not d.own_battle.flags['ability_on'].isChecked()
+    d.calculate();qtbot.waitUntil(lambda:d.worker is None,timeout=15000)
+    assert '先制 +0' in d.table.item(0,1).text()
+    d.own_battle.hp.setValue(0)
+    assert d.own_battle.flags['ability_on'].isChecked()
 
 
 def test_main_window_target_and_new_capture_preserve_saved_team(qtbot,service,store,tmp_path,monkeypatch):
