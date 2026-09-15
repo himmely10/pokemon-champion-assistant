@@ -294,7 +294,7 @@ function BattleStatePanel({ side, pokemon, state, onState, abilities, ability, o
     {selectedAbility?.description && <p className="ability-description"><Zap size={14} />{selectedAbility.name}：{selectedAbility.description}</p>}
     {selectedAbility?.trigger_label && <label className="ability-trigger"><input type="checkbox" checked={state.ability_on} onChange={event => onTrigger(event.target.checked)} /><span>{selectedAbility.trigger_label}</span></label>}
     <div className="support-groups always-visible">{groups.map(group => <fieldset key={group}><legend>{group}</legend>{supportEffects.filter(effect => effect.group === group).map(effect => <label key={effect.id} title={effect.description}><input type="checkbox" checked={Boolean(state[effect.id])} onChange={event => update(effect.id, event.target.checked)} /><span>{effect.label}</span></label>)}</fieldset>)}</div>
-    <details className="battle-state-details">
+    <details className="battle-state-details" open>
       <summary>能力等级与电光束 <span>{Object.values(state.boosts).filter(Boolean).length + Number(state.charge_boost_included)} 项已调整</span></summary>
       <div className="boost-grid">{BOOSTS.map(([key, name]) => <label key={key}><span>{name}等级</span><select value={state.boosts[key]} onChange={event => onState({ ...state, boosts: { ...state.boosts, [key]: Number(event.target.value) } })}>{Array.from({ length: 13 }, (_, index) => index - 6).map(value => <option key={value} value={value}>{value >= 0 ? `+${value}` : value}</option>)}</select></label>)}</div>
       <label className="charge-control"><input type="checkbox" checked={state.charge_boost_included} onChange={event => update('charge_boost_included', event.target.checked)} /><span>电光束：特攻等级已包含本次充能 +1</span></label>
