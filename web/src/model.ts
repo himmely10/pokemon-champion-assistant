@@ -138,6 +138,9 @@ export type DamageDirection = {
   defender: Pokemon
   preset: string
   target_preset: string
+  spread_usage?: number | null
+  scenario_points?: TeamMember['points']
+  scenario_nature?: string
   speed: { status: string; speed?: number; reason?: string }
   moves: Move[]
 }
@@ -145,9 +148,11 @@ export type DamageDirection = {
 export type DamageResponse = {
   own: DamageDirection
   rival: DamageDirection
+  own_scenarios: DamageDirection[]
+  rival_scenarios: DamageDirection[]
   speed_comparison: {
     own: { status: string; speed?: number; raw_speed?: number; reason?: string }
-    tiers: Array<{ name: string; speed: number; description: string; relation: '我方更快' | '同速' | '对手更快' | '待确认' }>
+    tiers: Array<{ name: string; speed: number; description: string; kind: 'reference' | 'common'; usage?: number; relation: '我方更快' | '同速' | '对手更快' | '待确认' }>
     reason?: string
   }
   dataset_id: string

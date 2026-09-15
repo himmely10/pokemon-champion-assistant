@@ -29,8 +29,8 @@ from .data.snapshot import SnapshotManager
 from .data.storage import TYPE_NAMES, read_json, save_json
 from .paths import app_paths
 from .recognition import ALGORITHM_VERSION, OpponentRecognizer
-from .speed import SPEED_TIERS, speed_lines
-from .teams import TeamRules, TeamStore
+from .speed import SPEED_TIERS, reference_speed, speed_lines
+from .teams import STATS, TeamRules, TeamStore
 from .type_matchups import type_matchups
 from .version import __version__
 
@@ -469,8 +469,8 @@ class WebServices:
                 for effect in result.get("support_effects", [])]
 
     def _format_direction(self, attacker_record, defender_record, attacker: dict,
-                          scenario: dict, rows: list[dict], results: list[dict],
-                          environment: dict) -> dict:
+                          scenario: dict, comparison: dict, rows: list[dict],
+                          results: list[dict], environment: dict) -> dict:
         moves = []
         for row, result in zip(rows, results):
             move = row.get("move") or {}
@@ -500,40 +500,67 @@ class WebServices:
             "attacker": self.pokemon_summary(attacker_record),
             "defender": self.pokemon_summary(defender_record),
             "preset": attacker["name"], "target_preset": scenario["name"],
+            "spread_usage": comparison.get("spread_usage"),
+            "scenario_points": deepcopy(comparison["member"]["points"]),
+            "scenario_nature": self.rules.options["natures"].get(
+                comparison["member"]["nature"], {}
+            ).get("name", comparison["member"]["nature"]),
             "speed": self.damage.speed(attacker["member"], attacker["battle"], environment),
             "moves": moves,
         }
 
-    def _configured_direction(self, own_member: dict, own_battle: dict, rival_record,
-                              rival_ability: str, rival_battle: dict, environment: dict,
-                              direction: str) -> dict:
+    def _configured_directions(self, own_member: dict, own_battle: dict, rival_record,
+                               rival_ability: str, rival_battle: dict, environment: dict,
+                               direction: str) -> list[dict]:
         scenarios = [item for item in self.damage.comparison_presets(rival_record)
                      if item["direction"] == direction]
         if not scenarios:
             raise ApiError("没有可用的对位情景。")
-        scenario = deepcopy(scenarios[0])
-        scenario["member"]["ability"] = rival_ability
-        scenario["battle"] = deepcopy(rival_battle)
+        scenarios = deepcopy(scenarios)
+        for scenario in scenarios:
+            scenario["member"]["ability"] = rival_ability
+            scenario["battle"] = deepcopy(rival_battle)
         rows, jobs = self.damage.jobs(
-            own_member, own_battle, [scenario], environment,
+            own_member, own_battle, scenarios, environment,
             common=direction == "对手 → 我方",
         )
         results = self.damage.execute(jobs)
         own_record = self.rules.record(own_member["identity"])
-        if direction == "我方 → 对手":
-            attacker = {"name": "预存队伍配置", "member": own_member, "battle": own_battle}
-            return self._format_direction(
-                own_record, rival_record, attacker, scenario, rows, results, environment,
-            )
-        attacker = {"name": scenario["name"], "member": scenario["member"], "battle": rival_battle}
-        defender = {"name": "预存队伍配置", "member": own_member, "battle": own_battle}
-        return self._format_direction(
-            rival_record, own_record, attacker, defender, rows, results, environment,
-        )
+        formatted = []
+        for index, comparison in enumerate(scenarios):
+            selected = [(row, result) for row, result in zip(rows, results)
+                        if row["scenario_index"] == index]
+            selected_rows = [row for row, _ in selected]
+            selected_results = [result for _, result in selected]
+            if direction == "我方 → 对手":
+                attacker = {"name": "预存队伍配置", "member": own_member,
+                            "battle": own_battle}
+                formatted.append(self._format_direction(
+                    own_record, rival_record, attacker, comparison, comparison,
+                    selected_rows, selected_results, environment,
+                ))
+                continue
+            attacker = {"name": comparison["name"], "member": comparison["member"],
+                        "battle": rival_battle}
+            defender = {"name": "预存队伍配置", "member": own_member,
+                        "battle": own_battle}
+            formatted.append(self._format_direction(
+                rival_record, own_record, attacker, defender, comparison,
+                selected_rows, selected_results, environment,
+            ))
+        return formatted
 
     def _speed_comparison(self, own_member: dict, own_battle: dict, rival_record,
                           rival_ability: str, rival_battle: dict, environment: dict) -> dict:
         own = self.damage.speed(own_member, own_battle, environment)
+        def relation(speed):
+            if own.get("status") != "ok":
+                return "待确认"
+            if own["speed"] > speed:
+                return "我方更快"
+            if own["speed"] == speed:
+                return "同速"
+            return "对手更快"
         try:
             values = speed_lines(
                 rival_record["base_stats"]["speed"],
@@ -546,11 +573,39 @@ class WebServices:
             )
             tiers = [
                 {"name": tier[0], "speed": speed, "description": tier[4],
-                 "relation": ("我方更快" if own.get("status") == "ok" and own["speed"] > speed
-                              else "同速" if own.get("status") == "ok" and own["speed"] == speed
-                              else "对手更快" if own.get("status") == "ok" else "待确认")}
+                 "kind": "reference", "relation": relation(speed)}
                 for tier, speed in zip(SPEED_TIERS, values)
             ]
+            common = [item for item in self.damage.comparison_presets(rival_record)
+                      if item["direction"] == "我方 → 对手"
+                      and item.get("spread_usage") is not None]
+            for scenario in common:
+                member = scenario["member"]
+                nature = self.rules.options["natures"].get(member["nature"], {})
+                nature_tenths = (11 if nature.get("increased") == "speed" else
+                                 9 if nature.get("decreased") == "speed" else 10)
+                speed = reference_speed(
+                    rival_record["base_stats"]["speed"], member["points"]["speed"],
+                    nature_tenths, False,
+                    stage=rival_battle["boosts"]["speed"],
+                    tailwind=rival_battle["tailwind"], ability=rival_ability,
+                    ability_on=rival_battle["ability_on"], status=rival_battle["status"],
+                    weather=environment["weather"], terrain=environment["terrain"],
+                )
+                points = " / ".join(
+                    f"{STATS[key]} {value}" for key, value in member["points"].items()
+                    if value
+                ) or "无培养点"
+                rate = scenario["spread_usage"]
+                tiers.append({
+                    "name": scenario["name"], "speed": speed, "kind": "common",
+                    "usage": rate, "relation": relation(speed),
+                    "description": (
+                        f"常用培养分配（采用率 {rate:g}%）；"
+                        f"{nature.get('name', member['nature'])}；{points}；未假设讲究围巾"
+                    ),
+                })
+            tiers.sort(key=lambda item: -item["speed"])
         except (ValueError, KeyError, TypeError) as exc:
             tiers = []
             return {"own": own, "tiers": tiers, "reason": str(exc)}
@@ -591,16 +646,20 @@ class WebServices:
             "targets": source.get("targets", 2), "critical": bool(source.get("critical", False)),
         }
         try:
+            own_scenarios = self._configured_directions(
+                own_member, own_battle, rival, rival_ability, rival_battle,
+                environment, "我方 → 对手",
+            )
+            rival_scenarios = self._configured_directions(
+                own_member, own_battle, rival, rival_ability, rival_battle,
+                environment, "对手 → 我方",
+            )
             return {
                 "environment": environment,
-                "own": self._configured_direction(
-                    own_member, own_battle, rival, rival_ability, rival_battle,
-                    environment, "我方 → 对手",
-                ),
-                "rival": self._configured_direction(
-                    own_member, own_battle, rival, rival_ability, rival_battle,
-                    environment, "对手 → 我方",
-                ),
+                "own": own_scenarios[0],
+                "rival": rival_scenarios[0],
+                "own_scenarios": own_scenarios,
+                "rival_scenarios": rival_scenarios,
                 "speed_comparison": self._speed_comparison(
                     own_member, own_battle, rival, rival_ability, rival_battle, environment,
                 ),

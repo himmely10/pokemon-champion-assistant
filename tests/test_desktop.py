@@ -236,10 +236,10 @@ def test_speed_table_matches_user_reference_and_comparison(window):
     rules = TeamRules(window.catalog)
     shown = {window.enemy_speed_ability.itemData(i) for i in range(1, window.enemy_speed_ability.count())}
     assert shown == set(rules.ability_keys(rules.identity(window.selected_record)))
-    assert [window.speed_table.item(r, 1).text() for r in range(6)] == ["283", "189", "258", "172", "140", "126"]
+    assert [window.speed_table.item(r, 1).text() for r in range(6)] == ["283", "258", "189", "172", "140", "126"]
     window.speed_compare.setCurrentText("烈咬陆鲨")
     assert window.speed_table.columnCount() == 3
-    assert window.speed_table.item(1, 2).text() == "169"
+    assert window.speed_table.item(1, 2).text() == "231"
     assert window.opponents == []
 
 

@@ -143,8 +143,8 @@ def test_real_mega_forms_inherit_base_training_and_natures(name):
 
 
 def test_speed_user_screenshot_and_integer_floor():
-    assert speed_lines(120) == [283, 189, 258, 172, 140, 126]
-    assert speed_lines(102) == [253, 169, 231, 154, 122, 109]
+    assert speed_lines(120) == [283, 258, 189, 172, 140, 126]
+    assert speed_lines(102) == [253, 231, 169, 154, 122, 109]
     assert reference_speed(120, 32, 11, True) == (189 * 3) // 2
     assert reference_speed(120, 0, 9) == 126
     with pytest.raises(ValueError):

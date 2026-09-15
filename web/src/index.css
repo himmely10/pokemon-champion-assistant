@@ -394,6 +394,9 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
 .speed-tier-head { color: var(--text-muted); background: var(--surface-muted); font-size: 9px; }
 .speed-tier-row { border-top: 1px solid var(--border); font-size: 10px; }
 .speed-tier-row strong { font-size: 10px; }
+.speed-tier-row strong { display: flex; align-items: center; gap: 6px; }
+.speed-tier-row strong small { padding: 2px 5px; color: var(--trainer); background: var(--trainer-soft); border-radius: 999px; font-size: 7px; font-weight: 700; }
+.speed-tier-row.common { background: color-mix(in srgb,var(--trainer-soft) 36%,transparent); }
 .speed-tier-row b { font-family: Bahnschrift,sans-serif; font-size: 12px; }
 .neutral { color: var(--warning); font-weight: 650; }
 .speed-unavailable { padding: 20px; color: var(--text-muted); font-size: 11px; text-align: center; }
@@ -404,6 +407,15 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
 .unavailable-result { font-size: 11px; }
 .calculation-intro { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 18px 10px; }
 .calculation-intro h2 { margin: 2px 0 0; font-size: 18px; }
+.scenario-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 14px 18px 4px; }
+.scenario-group { min-width: 0; padding: 9px; background: var(--surface-muted); border: 1px solid var(--border); border-radius: 8px; }
+.scenario-group > span { display: block; margin: 0 0 7px 2px; color: var(--text-muted); font-size: 9px; font-weight: 700; }
+.scenario-group > div { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 6px; }
+.scenario-group button { min-width: 0; min-height: 46px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 3px; padding: 7px 8px; color: var(--text-secondary); background: var(--surface); border: 1px solid var(--border); border-radius: 6px; text-align: left; }
+.scenario-group button:hover { border-color: color-mix(in srgb,var(--trainer) 55%,var(--border)); }
+.scenario-group button.active { color: var(--trainer); background: var(--trainer-soft); border-color: var(--trainer); box-shadow: inset 3px 0 var(--trainer); }
+.scenario-group button strong { max-width: 100%; overflow: hidden; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.scenario-group button small { color: var(--text-muted); font-size: 8px; }
 .field-settings { display: grid; grid-template-columns: minmax(210px, .7fr) 1.5fr; gap: 24px; align-items: start; min-height: 260px; padding: 28px 24px; }
 .field-settings h2 { margin: 4px 0 8px; font-size: 20px; }
 .field-settings p { margin: 0; color: var(--text-secondary); font-size: 12px; line-height: 1.7; }
@@ -639,6 +651,7 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
   .field-settings-grid { grid-template-columns: 1fr; }
   .more-conditions { position: static; grid-column: 1; }
   .damage-table { overflow-x: auto; }
+  .scenario-groups { grid-template-columns: 1fr; }
   .damage-table-head, .damage-table > button { min-width: 760px; }
   .calculation-detail { grid-template-columns: 1fr; }
   .library-search { align-items: stretch; flex-direction: column; }

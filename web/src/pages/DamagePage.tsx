@@ -50,6 +50,7 @@ type DamagePageProps = {
 export function DamagePage({ teams, selectedTeamId, onTeamChange, own, ownMember, ownTeam, onOwnChange, rival, rivalTeam, onRivalChange }: DamagePageProps) {
   const [direction, setDirection] = useState<'own' | 'rival' | 'field'>('own')
   const [selectedMove, setSelectedMove] = useState(0)
+  const [selectedScenarios, setSelectedScenarios] = useState({ own: 0, rival: 0 })
   const [weather, setWeather] = useState('')
   const [terrain, setTerrain] = useState('')
   const [targets, setTargets] = useState(2)
@@ -130,6 +131,7 @@ export function DamagePage({ teams, selectedTeamId, onTeamChange, own, ownMember
       })
       setResult(value)
       setSelectedMove(0)
+      setSelectedScenarios({ own: 0, rival: 0 })
       setDirty(false)
     } catch (reason) {
       setResult(null)
@@ -141,7 +143,9 @@ export function DamagePage({ teams, selectedTeamId, onTeamChange, own, ownMember
 
   const displayedOwn = ownOptions?.forms.find(item => item.id === ownFormId) ?? own
   const displayedRival = rivalOptions?.forms.find(item => item.id === rivalFormId) ?? rival
-  const active = direction === 'own' ? result?.own : result?.rival
+  const activeScenarios = direction === 'rival' ? result?.rival_scenarios : result?.own_scenarios
+  const activeScenarioIndex = direction === 'rival' ? selectedScenarios.rival : selectedScenarios.own
+  const active = activeScenarios?.[activeScenarioIndex] ?? (direction === 'rival' ? result?.rival : result?.own)
   const displayed = active?.moves ?? []
   const move = displayed[selectedMove]
   const ownAbilityOption = ownOptions?.abilities.find(item => item.id === ownAbility)
@@ -255,6 +259,7 @@ export function DamagePage({ teams, selectedTeamId, onTeamChange, own, ownMember
     <section className="calculation-panel">
       <div className="direction-tabs" role="tablist" aria-label="计算方向"><button type="button" role="tab" aria-selected={direction === 'own'} className={direction === 'own' ? 'active' : ''} onClick={() => { setDirection('own'); setSelectedMove(0) }}>我方打对手</button><button type="button" role="tab" aria-selected={direction === 'rival'} className={direction === 'rival' ? 'active' : ''} onClick={() => { setDirection('rival'); setSelectedMove(0) }}>对手打我方</button><button type="button" role="tab" aria-selected={direction === 'field'} className={direction === 'field' ? 'active' : ''} onClick={() => setDirection('field')}>计算口径</button></div>
       {direction === 'field' ? <CalculationScope result={result} weather={weather} terrain={terrain} ownBattle={ownBattle} rivalBattle={rivalBattle} /> : <>
+        <ScenarioSelector direction={direction} scenarios={activeScenarios ?? []} selected={activeScenarioIndex} onSelect={index => { setSelectedScenarios(value => ({ ...value, [direction]: index })); setSelectedMove(0) }} />
         <div className="calculation-intro"><div><small>即时计算</small><h2>{active?.attacker.name ?? '正在准备'} 的招式</h2></div><div className="active-conditions"><span>{active?.preset ?? '预存配置'}</span><span>{active?.target_preset ?? '对手假设'}</span><span>{active?.speed.status === 'ok' ? `实算速度 ${active.speed.speed}` : '速度不可用'}</span></div></div>
         {loading && <div className="calculation-loading"><span className="spinner" />正在运行本地伤害引擎…</div>}
         {!loading && error && <div className="calculation-error">{error}</div>}
@@ -265,6 +270,29 @@ export function DamagePage({ teams, selectedTeamId, onTeamChange, own, ownMember
         {move && <MoveDetail move={move} dataset={result?.dataset_id} />}
       </>}
     </section>
+  </div>
+}
+
+function ScenarioSelector({ direction, scenarios, selected, onSelect }: {
+  direction: 'own' | 'rival'
+  scenarios: DamageResponse['own_scenarios']
+  selected: number
+  onSelect: (index: number) => void
+}) {
+  const groups = [
+    { label: direction === 'own' ? '基准耐久' : '基准输出', items: scenarios.slice(0, 3), offset: 0 },
+    { label: '常用分配', items: scenarios.slice(3), offset: 3 },
+  ]
+  const points = (scenario: DamageResponse['own_scenarios'][number]) => Object.entries(scenario.scenario_points ?? {})
+    .filter(([, value]) => Boolean(value))
+    .map(([key, value]) => `${{ hp: 'HP', attack: '攻击', defense: '防御', special_attack: '特攻', special_defense: '特防', speed: '速度' }[key as keyof TeamMember['points']]} ${value}`)
+    .join(' / ') || '无培养点'
+  return <div className="scenario-groups" aria-label={direction === 'own' ? '对手耐久情景' : '对手输出情景'}>
+    {groups.map(group => group.items.length > 0 && <div className="scenario-group" key={group.label}><span>{group.label}</span><div role="tablist" aria-label={group.label}>{group.items.map((scenario, index) => {
+      const absolute = group.offset + index
+      const label = direction === 'own' ? scenario.target_preset : scenario.preset
+      return <button type="button" role="tab" aria-selected={selected === absolute} className={selected === absolute ? 'active' : ''} key={`${label}-${absolute}`} title={`${scenario.scenario_nature ?? '未知性格'}；${points(scenario)}`} onClick={() => onSelect(absolute)}><strong>{label}</strong><small>{scenario.spread_usage != null ? `采用率 ${scenario.spread_usage}%` : scenario.scenario_nature}</small></button>
+    })}</div></div>)}
   </div>
 }
 
@@ -306,7 +334,7 @@ function SpeedComparison({ result, ownName, rivalName }: { result: DamageRespons
   const comparison = result?.speed_comparison
   return <section className="speed-comparison" aria-labelledby="speed-comparison-title">
     <div className="fixed-speed"><Gauge size={22} /><div><small>我方实配速度 · 固定比较基准</small><h2 id="speed-comparison-title">{comparison?.own.status === 'ok' ? comparison.own.speed : '—'}</h2><span>{ownName}{comparison?.own.raw_speed ? ` · 原始 ${comparison.own.raw_speed}` : ''}</span></div></div>
-    <div className="speed-tier-table"><div className="speed-tier-head"><span>{rivalName} 的 50 级参考档位</span><span>对手速度</span><span>与我方关系</span></div>{comparison?.tiers.map(tier => <div className="speed-tier-row" key={tier.name} title={tier.description}><strong>{tier.name}</strong><b>{tier.speed}</b><span className={tier.relation === '我方更快' ? 'positive' : tier.relation === '同速' ? 'neutral' : 'negative'}>{tier.relation}</span></div>)}{!comparison?.tiers.length && <div className="speed-unavailable">{comparison?.reason ?? comparison?.own.reason ?? '重新计算后显示速度线'}</div>}</div>
+    <div className="speed-tier-table"><div className="speed-tier-head"><span>{rivalName} 的 50 级参考档位 · 由快到慢</span><span>对手速度</span><span>与我方关系</span></div>{comparison?.tiers.map(tier => <div className={`speed-tier-row ${tier.kind}`} key={`${tier.kind}-${tier.name}`} title={tier.description}><strong>{tier.name}{tier.kind === 'common' && <small>常用{tier.usage != null ? ` ${tier.usage}%` : ''}</small>}</strong><b>{tier.speed}</b><span className={tier.relation === '我方更快' ? 'positive' : tier.relation === '同速' ? 'neutral' : 'negative'}>{tier.relation}</span></div>)}{!comparison?.tiers.length && <div className="speed-unavailable">{comparison?.reason ?? comparison?.own.reason ?? '重新计算后显示速度线'}</div>}</div>
   </section>
 }
 

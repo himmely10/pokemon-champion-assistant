@@ -80,6 +80,14 @@ def test_team_crud_and_quick_damage_use_saved_member(services):
         "own_member": saved["members"][0], "environment": {},
     })
     assert result["own"]["preset"] == "预存队伍配置"
+    assert len(result["own_scenarios"]) == len(result["rival_scenarios"]) == 6
+    assert [item["target_preset"] for item in result["own_scenarios"][:3]] == [
+        "零耐久投入", "满 HP＋物防", "满 HP＋特防",
+    ]
+    assert [item["preset"] for item in result["rival_scenarios"][:3]] == [
+        "零输出投入", "满物攻", "满特攻",
+    ]
+    assert all(item["spread_usage"] is not None for item in result["own_scenarios"][3:])
     assert any(move["status"] == "ok" and move["damage"][1] > 0 for move in result["own"]["moves"])
     assert services.delete_team(saved) == {"deleted": True}
 
@@ -127,7 +135,15 @@ def test_damage_options_and_full_battle_state_reuse_desktop_rules(services):
     })
     assert result["own"]["attacker"]["id"] == mega_id
     assert result["speed_comparison"]["own"]["status"] == "ok"
-    assert len(result["speed_comparison"]["tiers"]) == 6
+    tiers = result["speed_comparison"]["tiers"]
+    assert len(tiers) == 9
+    assert [row["speed"] for row in tiers] == sorted(
+        (row["speed"] for row in tiers), reverse=True,
+    )
+    assert [row["name"] for row in tiers].index("满速围巾") < [
+        row["name"] for row in tiers
+    ].index("极速")
+    assert len([row for row in tiers if row["kind"] == "common"]) == 3
     assert all("relation" in row for row in result["speed_comparison"]["tiers"])
     effects = {effect["label"] for move in result["own"]["moves"] for effect in move["support_effects"]}
     assert "本次受到帮助" in effects
