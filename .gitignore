@@ -9,8 +9,12 @@ pokemon/_update.lock
 pokemon/_usage/cache/
 pokemon/_usage/_update.lock
 config/local_ui.json
+config/obs-password.dpapi
+config/obs-password.dpapi.tmp
 user_data/
 damage_engine/node_modules/
+web/node_modules/
+web/dist/
 .env
 .env.*
 !.env.example

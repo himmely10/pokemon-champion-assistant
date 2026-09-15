@@ -88,8 +88,10 @@ def test_snapshot_stat_mismatch_and_current_hp(service):
     assert service.execute(jobs)[0]['status']=='unavailable'
     a=member(service)
     state=battle_defaults();state['hp']=100
-    assert service.prepare(a,state)['options']['curHP']==100
-    state['hp']=999
+    assert service.prepare(a,state)['options']['curHP']==183
+    state['hp']=50
+    assert service.prepare(a,state)['options']['curHP']==91
+    state['hp']=0
     with pytest.raises(ValueError):service.prepare(a,state)
 
 

@@ -162,6 +162,7 @@ class TeamDialog(QDialog):
         scroll.setWidgetResizable(True)
         outer.addWidget(scroll)
         content = QWidget()
+        content.setObjectName("DialogViewport")
         scroll.setWidget(content)
         layout = QVBoxLayout(content)
         tools = QHBoxLayout()

@@ -53,7 +53,7 @@ def identifier(text):
 
 
 def battle_defaults():
-    return {'hp': 0, 'status': '', 'boosts': dict.fromkeys(list(STATS)[1:], 0),
+    return {'hp': 100, 'status': '', 'boosts': dict.fromkeys(list(STATS)[1:], 0),
             'ability_on': False, 'allies_fainted': 0, 'reflect': False, 'light_screen': False,
             'protected': False, 'helping_hand': False, 'friend_guard': False, 'tailwind': False,
             'aurora_veil': False}
@@ -136,15 +136,15 @@ class DamageService:
             options['boostedStat'] = 'auto'
         max_hp = record['base_stats']['hp'] + member['points']['hp'] + 75
         if record['base_stats']['hp'] == 1: max_hp = 1
-        if type(battle['hp']) is not int or not 0 <= battle['hp'] <= max_hp:
-            raise ValueError(f'当前 HP 须为 1–{max_hp}，0 代表明确的满 HP 情景')
+        if type(battle['hp']) is not int or not 1 <= battle['hp'] <= 100:
+            raise ValueError('当前 HP 百分比须为 1–100，100 代表满 HP')
         if battle['status'] not in ('', 'brn', 'par', 'psn', 'tox', 'slp', 'frz'):
             raise ValueError('异常状态无效')
         if any(type(v) is not int or not -6 <= v <= 6 for v in battle['boosts'].values()):
             raise ValueError('能力等级须为 -6 至 +6')
         if type(battle['allies_fainted']) is not int or not 0 <= battle['allies_fainted'] <= 5:
             raise ValueError('已倒下同伴数须为 0–5')
-        options['curHP'] = battle['hp'] or max_hp
+        options['curHP'] = max(1, max_hp * battle['hp'] // 100)
         return {'name':name, 'options':options, 'baseStats':{STAT_IDS[k]:v for k,v in record['base_stats'].items()},
                 'types':[t.title() for t in record['types']]}
 

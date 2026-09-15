@@ -56,8 +56,9 @@ class BattleEditor(QWidget):
         layout.setVerticalSpacing(6)
         self.setSizePolicy(QSizePolicy.Policy.Expanding,QSizePolicy.Policy.Maximum)
         self.hp = QSpinBox()
-        self.hp.setRange(0, 999)
-        self.hp.setSpecialValueText('满 HP（假设）')
+        self.hp.setRange(1, 100)
+        self.hp.setValue(100)
+        self.hp.setSuffix('%')
         self.status = QComboBox()
         for name, key in [('无异常',''), ('灼伤','brn'), ('麻痹','par'), ('中毒','psn'), ('剧毒','tox'), ('睡眠','slp'), ('冰冻','frz')]:
             self.status.addItem(name, key)
@@ -98,7 +99,7 @@ class BattleEditor(QWidget):
                 'boosts':{k:b.value() for k,b in self.boosts.items()}, **{k:b.isChecked() for k,b in self.flags.items()}}
 
     def reset(self):
-        self.hp.setValue(0);self.status.setCurrentIndex(0);self.fainted.setValue(0)
+        self.hp.setValue(100);self.status.setCurrentIndex(0);self.fainted.setValue(0)
         for box in self.boosts.values():box.setValue(0)
         for box in self.flags.values():box.setChecked(False)
 
@@ -219,7 +220,7 @@ class DamageDialog(QDialog):
         for direction,title,note in [
             ('我方 → 对手','我方打对手 · 四个招式','每行一个我方招式。零耐久不使用减防性格；满物防、满特防分别考虑 HP、对应防御培养点与增益性格。每格保留独立随机范围。'),
             ('对手 → 我方','对手打我方 · 常用招式','按招式采用率查看威胁。比较零输出、满物攻、满特攻和常用分配；我方始终使用预存配置，范围以我方最大 HP 为分母。')]:
-            page=QWidget();box=QVBoxLayout(page)
+            page=QWidget();page.setObjectName('DialogPage');box=QVBoxLayout(page)
             hint=QLabel(note);hint.setWordWrap(True);box.addWidget(hint)
             table=QTableWidget(0,1);table.setHorizontalHeaderLabels(['招式'])
             table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
@@ -231,7 +232,7 @@ class DamageDialog(QDialog):
             table.currentCellChanged.connect(lambda r,c,_r,_c,t=table:self.show_comparison_detail(t,r,c))
             box.addWidget(table,1);self.tabs.addTab(page,title);self.direction_tables[direction]=table
         self.table=self.direction_tables['我方 → 对手'];self.incoming_table=self.direction_tables['对手 → 我方']
-        scroll=QScrollArea();scroll.setWidgetResizable(True);body=QWidget();scroll.setWidget(body)
+        scroll=QScrollArea();scroll.setWidgetResizable(True);body=QWidget();body.setObjectName('DialogViewport');scroll.setWidget(body)
         config=QVBoxLayout(body);config.setAlignment(Qt.AlignmentFlag.AlignTop);self.tabs.addTab(scroll,'高级情景设置')
         self.notice=QLabel('默认无天气／场地、满 HP、能力等级 0、非要害；普通对手可统一选择特性假设，默认无特性效果、无道具；Mega 使用固定特性和对应进化石。比较仅代表这些条件下的单次命中伤害。')
         self.notice.setWordWrap(True);config.addWidget(self.notice)
@@ -261,7 +262,7 @@ class DamageDialog(QDialog):
         buttons=QHBoxLayout();reset=QPushButton('恢复默认比较情景');reset.clicked.connect(self.reset_scenarios)
         buttons.addWidget(reset);enemy_layout.addLayout(buttons)
         columns.addWidget(enemy,1,Qt.AlignmentFlag.AlignTop)
-        detail_panel=QWidget();self.detail_page=detail_panel
+        detail_panel=QWidget();detail_panel.setObjectName('DialogPage');self.detail_page=detail_panel
         detail_layout=QVBoxLayout(detail_panel);detail_layout.setContentsMargins(0,0,0,0)
         detail_tools=QHBoxLayout()
         detail_tools.addWidget(QLabel('计算详情 · 在结果表中选择伤害格后到此查看'),1)
@@ -333,12 +334,12 @@ class DamageDialog(QDialog):
         grid.addWidget(self.targets,0,3,1,3);grid.addWidget(self.critical,0,6)
         grid.addWidget(self.common,0,7,1,2)
         grid.addWidget(QLabel('我方'),2,0);grid.addWidget(QLabel('对手全部情景'),3,0)
-        grid.addWidget(QLabel('当前 HP'),1,1)
+        grid.addWidget(QLabel('当前 HP %'),1,1)
         grid.addWidget(self.own_battle.hp,2,1)
-        self.own_battle.hp.setToolTip('0 表示明确按满 HP 计算；疾风之翼、多重鳞片等会据此自动判断。')
+        self.own_battle.hp.setToolTip('按剩余 HP 百分比计算；100 表示满 HP，疾风之翼、多重鳞片等会据此自动判断。')
         self.own_battle.hp.valueChanged.connect(self.hp_condition_changed)
-        self.enemy_hp=QSpinBox();self.enemy_hp.setRange(0,999);self.enemy_hp.setSpecialValueText('满 HP（假设）')
-        self.enemy_hp.setToolTip('0 表示各情景均按各自的满 HP 计算。')
+        self.enemy_hp=QSpinBox();self.enemy_hp.setRange(1,100);self.enemy_hp.setValue(100);self.enemy_hp.setSuffix('%')
+        self.enemy_hp.setToolTip('按剩余 HP 百分比应用到各情景；100 表示各自的满 HP。')
         grid.addWidget(self.enemy_hp,3,1);self.enemy_hp.valueChanged.connect(self.apply_enemy_quick)
         self.enemy_hp.valueChanged.connect(self.hp_condition_changed)
         for col,(key,name) in enumerate(list(STATS.items())[1:],2):
@@ -401,7 +402,7 @@ class DamageDialog(QDialog):
             if checked or box.currentData()==requirement[1]:select(box,desired)
         hp_requirement=ABILITY_HP_REQUIREMENTS.get(ability)
         hp_box=self.own_battle.hp if side=='own' else self.enemy_hp
-        if checked and hp_requirement=='full':hp_box.setValue(0)
+        if checked and hp_requirement=='full':hp_box.setValue(100)
         self.sync_condition_controls();self.invalidate()
 
     def environment_changed(self,*_):
@@ -423,7 +424,7 @@ class DamageDialog(QDialog):
                 active=selector.currentData()==requirement[1]
             elif hp_requirement=='full':
                 hp_box=self.own_battle.hp if side=='own' else self.enemy_hp
-                active=hp_box.value()==0
+                active=hp_box.value()==100
             else:continue
             box.blockSignals(True);box.setChecked(active);box.blockSignals(False)
         checked=self.enemy_ability.isChecked()
@@ -478,11 +479,16 @@ class DamageDialog(QDialog):
     def apply_view_zoom(self,*_):
         scale=self.zoom.currentData()/100
         pixels=round(15*scale)
+        dark=bool(getattr(self.parent(), 'dark_theme', False))
+        text='#dbe4f0' if dark else '#172d43'
+        header='#9fb0c5' if dark else '#27465b'
+        background='#111d31' if dark else '#ffffff'
+        border='#34465f' if dark else '#bacbd7'
         for table in self.direction_tables.values():
-            table.setStyleSheet(f'QTableWidget {{font-size:{pixels}px; color:#172d43;}} QHeaderView::section {{font-size:{pixels}px; color:#27465b;}}')
+            table.setStyleSheet(f'QTableWidget {{font-size:{pixels}px; color:{text};}} QHeaderView::section {{font-size:{pixels}px; color:{header};}}')
             table.horizontalHeader().setMinimumSectionSize(round(150*scale))
             for row in range(table.rowCount()):table.setRowHeight(row,round(102*scale))
-        self.detail.setStyleSheet(f'QTextEdit {{font-size:{pixels}px; color:#172d43; background:#ffffff; border:1px solid #bacbd7; border-radius:6px;}}')
+        self.detail.setStyleSheet(f'QTextEdit {{font-size:{pixels}px; color:{text}; background:{background}; border:1px solid {border}; border-radius:6px;}}')
 
     def select_scenario_column(self,table,col):
         if col>0 and table.rowCount():
@@ -875,7 +881,7 @@ class DamageDialog(QDialog):
                 active+='；复制：'+('未触发／无效果（假设）' if copied=='__none__' else self.rules.options['abilities'].get(copied,{}).get('name','待确认'))
             boosts=' / '.join(f'{STATS[k]} {v:+d}' for k,v in b['boosts'].items())
             statuses={'':'无异常','brn':'灼伤','par':'麻痹','psn':'中毒','tox':'剧毒','slp':'睡眠','frz':'冰冻'}
-            return f"当前 HP：{b['hp'] or '满 HP（假设）'}；{statuses[b['status']]}；倒下同伴 {b['allies_fainted']}\n能力等级：{boosts}\n{active}"
+            return f"当前 HP：{b['hp']}%；{statuses[b['status']]}；倒下同伴 {b['allies_fainted']}\n能力等级：{boosts}\n{active}"
         env=self.last_request['environment']
         weather={'':'无天气','Sun':'晴天','Rain':'下雨','Sand':'沙暴','Snow':'下雪'}[env['weather']]
         terrain={'':'无场地','Psychic':'精神场地','Grassy':'青草场地','Electric':'电气场地','Misty':'薄雾场地'}[env['terrain']]

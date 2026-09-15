@@ -12,6 +12,7 @@ from PIL import Image
 pytest.importorskip("PySide6")
 from PySide6.QtCore import QObject, Signal, Slot, Qt, QMimeData, QPointF, QUrl
 from PySide6.QtGui import QDropEvent, QFontDatabase
+from PySide6.QtWidgets import QApplication
 
 from champion_assistant.capture.obs import CaptureError, ObsCapture, decode_screenshot
 from champion_assistant.data.moves import accuracy_label, move_tooltip, power_label
@@ -186,6 +187,38 @@ def test_obs_password_is_only_in_memory(window):
     saved = read_json(window.settings_path)
     assert saved == {"host": "localhost", "port": 4455, "source": "Switch"}
     assert window.obs_settings["password"] == "never-write-this"
+
+
+def test_product_shell_navigation_theme_and_settings(window, qtbot):
+    assert window.centralWidget().objectName() == "AppShell"
+    assert window.home_button.isChecked()
+    assert window.top_title.text() == "对战台"
+
+    qtbot.mouseClick(window.library_button, Qt.MouseButton.LeftButton)
+    assert window.library_button.isChecked()
+    assert window.top_title.text() == "资料库"
+    assert window.pokemon_search.hasFocus()
+
+    qtbot.mouseClick(window.theme_button, Qt.MouseButton.LeftButton)
+    assert window.dark_theme
+    assert read_json(window.settings_path)["theme"] == "dark"
+    assert window.theme_button.text() == "亮"
+
+    qtbot.mouseClick(window.settings_button, Qt.MouseButton.LeftButton)
+    assert window.settings_dialog.isVisible()
+    assert window.settings_dialog.dark_toggle.isChecked()
+    qtbot.mouseClick(window.settings_dialog.diagnostics_button, Qt.MouseButton.LeftButton)
+    assert "不包含 OBS 密码" in window.settings_dialog.status.text()
+    assert "Champion Lab" in QApplication.clipboard().text()
+    window.settings_dialog.reject()
+    assert window.home_button.isChecked()
+
+    qtbot.mouseClick(window.own_team_button, Qt.MouseButton.LeftButton)
+    assert window.team_dialog.isVisible()
+    window.team_dialog.close()
+    qtbot.mouseClick(window.damage_button, Qt.MouseButton.LeftButton)
+    assert window.damage_dialog.isVisible()
+    window.damage_dialog.close()
 
 
 def test_small_window_uses_scroll_and_keeps_stats_separate(window, qtbot):

@@ -145,7 +145,7 @@ def test_same_species_in_different_teams_never_share_builds(qtbot,service,store)
     select(d.saved_team,first['id']);assert d.snapshot()['own']['points']['attack']==32
     d.own_battle.hp.setValue(12)
     select(d.saved_team,second['id']);assert d.snapshot()['own']['points']['attack']==0
-    assert d.own_battle.hp.value()==0
+    assert d.own_battle.hp.value()==100
     d.clear_session()
     assert d.selected_team['id']==second['id'] and d.own.read()==second['members'][0]
     assert not d.pages
@@ -270,11 +270,11 @@ def test_full_hp_condition_is_prominent_and_tracks_gale_wings(qtbot,service,stor
     select(d.saved_team,team['id']);d.set_target(service.catalog.record_for_name('巨金怪'))
     assert d.own_battle.hp.parentWidget() is d.quick_panel
     assert d.own_battle.flags['ability_on'].isChecked()
-    d.own_battle.hp.setValue(1)
+    d.own_battle.hp.setValue(99)
     assert not d.own_battle.flags['ability_on'].isChecked()
     d.calculate();qtbot.waitUntil(lambda:d.worker is None,timeout=15000)
     assert '先制 +0' in d.table.item(0,1).text()
-    d.own_battle.hp.setValue(0)
+    d.own_battle.hp.setValue(100)
     assert d.own_battle.flags['ability_on'].isChecked()
 
 

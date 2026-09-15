@@ -1,16 +1,16 @@
 # Pokemon Champion Assistant
 
 
-**当前版本：v0.2.1。** [版本说明](docs/releases/v0.2.1.md) · [构建与发行](docs/release.md)
+**当前开发版本：v0.3.0 Web Preview。** [版本说明](docs/releases/v0.3.0.md) · [构建与发行](docs/release.md)
 
-v0.2.1 安装包包含 Python、Node、Qt、OCR 模型和离线公共资料。普通用户运行
+最新公开安装包仍为 v0.2.1，包含 Python、Node、Qt、OCR 模型和离线公共资料。普通用户运行
 `PokemonChampionAssistant-0.2.1-windows-x64-Setup.exe` 后，从开始菜单启动；无需另外安装开发环境。
 安装包及 SHA-256 摘要见 GitHub Releases；本地与干净 Windows 系统验证范围见 [打包验收](docs/validation/packaging.md)。
 
 新版从“资料更新”手动更新、导入 ZIP 或回滚；自动检查可选每天／三天／每周／关闭，
 仅软件运行时执行。新资料在下一次截图分析生效，已经打开的伤害对照保留原版本。
 未配置公开渠道时使用内置离线资料及本地资料包。预存队伍与 OBS 设置分别保存在个人目录，
-升级／卸载默认保留；初次引导可导入旧项目的队伍与设置，OBS 密码需要重新填写。
+升级／卸载默认保留；网页版验证成功后的 OBS 密码使用 Windows 当前用户凭据加密保存。
 
 ## 从源码运行（开发者）
 
@@ -27,6 +27,27 @@ py -3.13 -m venv .venv-ui
 ```
 
 以后可以双击 `run_assistant.bat` 启动。仓库包含图标、资料快照和已编译的伤害引擎；虚拟环境需要自行创建，无需为了启动程序执行 npm 构建。
+
+### 本地网页版
+
+正式网页源代码位于 `web/`。它不是一份独立的模拟器：队伍、资料、截图识别、OBS 和伤害结果均通过 `127.0.0.1` 上的本地 Python API 调用现有业务模块，服务不会监听局域网地址。OBS 密码不会写入普通设置 JSON 或返回给网页，而是用 Windows DPAPI 加密后单独保存在当前用户目录。
+
+首次构建网页：
+
+```powershell
+cd web
+pnpm install
+pnpm build
+cd ..
+```
+
+之后双击 `run_web.bat`，浏览器会自动打开 [http://127.0.0.1:32145](http://127.0.0.1:32145)。也可以手动运行：
+
+```powershell
+.\.venv-ui\Scripts\python.exe -X utf8 launch_assistant.py --web
+```
+
+前端开发时先用 `--web --no-browser` 启动本地 API，再到 `web/` 运行 `pnpm dev`；Vite 会把 `/api` 代理到 32145 端口。
 
 需要截图导入己方队伍时，再安装本地 OCR：
 

@@ -6,7 +6,7 @@ import sqlite3
 
 from PySide6.QtCore import Qt, QThread, Signal, Slot, QUrl, QSize
 from PySide6.QtGui import QColor, QDesktopServices, QFont, QIcon, QPixmap
-from PySide6.QtWidgets import (QAbstractItemView, QComboBox, QCompleter, QFileDialog, QFrame,
+from PySide6.QtWidgets import (QAbstractItemView, QApplication, QButtonGroup, QComboBox, QCompleter, QFileDialog, QFrame,
     QGridLayout, QGroupBox, QHBoxLayout, QHeaderView, QLabel, QLineEdit, QListWidget,
     QListWidgetItem, QMainWindow, QProgressBar, QPushButton, QScrollArea, QSplitter,
     QCheckBox, QSpinBox, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QSizePolicy, QTabWidget,
@@ -28,7 +28,7 @@ from ..version import __version__
 ROOT = app_paths().resources
 SETTINGS_PATH = app_paths().settings
 
-from .theme import STYLE
+from .theme import style_for
 
 
 
@@ -51,7 +51,6 @@ class MainWindow(QMainWindow):
         self.setWindowIcon(QIcon(str(ROOT / 'assets/branding/app.ico')))
         self.resize(1480, 980)
         self.setMinimumSize(600, 300)
-        self.setStyleSheet(STYLE)
         self.snapshots = SnapshotManager(data_dir, layout_path)
         self.snapshot = self.snapshots.initial()
         self.snapshots.current = self.snapshot
@@ -60,11 +59,13 @@ class MainWindow(QMainWindow):
         self.settings_path = Path(settings_path)
         self.report_path = Path(report_path) if report_path else None
         self.selected_team_id = None
+        self.dark_theme = False
         self.obs_settings = {"host": "localhost", "port": 4455, "password": "", "source": ""}
         if self.settings_path.exists():
             try:
                 saved = read_json(self.settings_path)
                 self.selected_team_id = saved.get("selected_team_id")
+                self.dark_theme = saved.get("theme") == "dark"
                 self.obs_settings.update({k: saved[k] for k in ("host", "port", "source") if k in saved})
             except (OSError, ValueError):
                 pass
@@ -77,6 +78,7 @@ class MainWindow(QMainWindow):
         self.onboarding_dialog = None
         self.team_dialog = None
         self.damage_dialog = None
+        self.settings_dialog = None
         self._team_dialogs = {}
         self._damage_dialogs = {}
         self.opponents = []
@@ -84,6 +86,7 @@ class MainWindow(QMainWindow):
         self.current_move = None
         self.last_result = None
         self.family = []
+        self.apply_theme(self.dark_theme, persist=False)
         self._build_ui()
         self.thread = QThread(self)
         self.worker = worker_factory(self.data_dir, layout_path)
@@ -99,61 +102,117 @@ class MainWindow(QMainWindow):
         self.refresh_saved_team_selection()
 
     def _build_ui(self):
+        shell = QWidget()
+        shell.setObjectName("AppShell")
+        shell_layout = QHBoxLayout(shell)
+        shell_layout.setContentsMargins(0, 0, 0, 0)
+        shell_layout.setSpacing(0)
+
+        rail = QFrame()
+        rail.setObjectName("NavigationRail")
+        rail.setFixedWidth(86)
+        rail_layout = QVBoxLayout(rail)
+        rail_layout.setContentsMargins(8, 16, 8, 12)
+        rail_layout.setSpacing(6)
+        brand = QLabel("CL")
+        brand.setObjectName("NavBrand")
+        brand.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        brand.setFixedSize(42, 42)
+        rail_layout.addWidget(brand, 0, Qt.AlignmentFlag.AlignHCenter)
+        rail_layout.addWidget(label("CHAMPION", "NavCaption"), 0, Qt.AlignmentFlag.AlignHCenter)
+        rail_layout.addSpacing(12)
+        self.nav_group = QButtonGroup(self)
+        self.nav_group.setExclusive(True)
+
+        def nav_button(text, hint, checked=False):
+            button = QPushButton(text)
+            button.setObjectName("NavItem")
+            button.setCheckable(True)
+            button.setChecked(checked)
+            button.setToolTip(hint)
+            button.setAccessibleName(hint)
+            self.nav_group.addButton(button)
+            rail_layout.addWidget(button)
+            return button
+
+        self.home_button = nav_button("VS\n对战台", "打开对战台", True)
+        self.own_team_button = nav_button("TEAM\n队伍", "打开队伍仓库")
+        self.damage_button = nav_button("DMG\n伤害", "打开双向伤害计算")
+        self.library_button = nav_button("DEX\n资料", "打开资料库")
+        self.settings_button = nav_button("SET\n设置", "打开设置中心")
+        self.home_button.clicked.connect(self.show_battle_console)
+        self.own_team_button.clicked.connect(lambda _: self.open_team_editor())
+        self.damage_button.clicked.connect(self.open_damage)
+        self.library_button.clicked.connect(self.open_reference_library)
+        self.settings_button.clicked.connect(self.open_settings)
+        rail_layout.addStretch()
+        safety = label("◇", "NavCaption")
+        safety.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        safety.setToolTip("本地优先 · 密码不落盘")
+        rail_layout.addWidget(safety)
+        shell_layout.addWidget(rail)
+
+        main_column = QWidget()
+        main_column.setObjectName("MainColumn")
+        main_layout = QVBoxLayout(main_column)
+        main_layout.setContentsMargins(0, 0, 0, 0)
+        main_layout.setSpacing(0)
+        topbar = QFrame()
+        topbar.setObjectName("TopBar")
+        topbar.setFixedHeight(72)
+        topbar_layout = QHBoxLayout(topbar)
+        topbar_layout.setContentsMargins(24, 9, 24, 9)
+        title_layout = QVBoxLayout()
+        title_layout.setSpacing(0)
+        title_layout.addWidget(label("训练家对战终端", "TopEyebrow"))
+        self.top_title = label("对战台", "TopTitle")
+        self.top_title.setWordWrap(False)
+        title_layout.addWidget(self.top_title)
+        topbar_layout.addLayout(title_layout, 1)
+        self.obs_status_button = QPushButton("●  OBS 已配置" if self.obs_settings.get("source") else "○  OBS 未连接")
+        self.obs_status_button.setObjectName("StatusPill")
+        self.obs_status_button.clicked.connect(self.configure_obs)
+        topbar_layout.addWidget(self.obs_status_button)
+        self.theme_button = QPushButton("暗" if not self.dark_theme else "亮")
+        self.theme_button.setObjectName("IconButton")
+        self.theme_button.setToolTip("切换深浅主题")
+        self.theme_button.setAccessibleName("切换深浅主题")
+        self.theme_button.clicked.connect(lambda: self.apply_theme(not self.dark_theme))
+        topbar_layout.addWidget(self.theme_button)
+        self.guide_button = QPushButton("?")
+        self.guide_button.setObjectName("IconButton")
+        self.guide_button.setToolTip("打开使用引导")
+        self.guide_button.setAccessibleName("打开使用引导")
+        self.guide_button.clicked.connect(self.open_onboarding)
+        topbar_layout.addWidget(self.guide_button)
+        main_layout.addWidget(topbar)
+
         body = QWidget()
         self.page_scroll = QScrollArea()
         self.page_scroll.setWidgetResizable(True)
         self.page_scroll.setWidget(body)
-        self.setCentralWidget(self.page_scroll)
+        main_layout.addWidget(self.page_scroll, 1)
+        shell_layout.addWidget(main_column, 1)
+        self.setCentralWidget(shell)
         page = QVBoxLayout(body)
-        page.setContentsMargins(20, 16, 20, 16)
+        page.setContentsMargins(24, 18, 24, 18)
         page.setSpacing(14)
-        header = QFrame()
-        header.setObjectName("Header")
-        header_layout = QHBoxLayout(header)
-        header_layout.setContentsMargins(22, 10, 22, 10)
-        headings = QVBoxLayout()
-        brand = label("CHAMPION  /  对战工作台", "Brand")
-        brand.setWordWrap(False)
-        headings.addWidget(brand)
-        subtitle = label("双打 · 截图识别 · 速度与伤害参考", "HeaderNote")
-        subtitle.setWordWrap(False)
-        headings.addWidget(subtitle)
-        header_layout.addLayout(headings, 1)
-        mode = label("双打 · 选队界面", "ModeBadge")
-        mode.setFixedHeight(36)
-        header_layout.addWidget(mode)
-        page.addWidget(header)
-        navigation = QHBoxLayout()
-        self.home_button = QPushButton('对战资料')
-        self.home_button.setObjectName('Primary')
-        self.home_button.clicked.connect(lambda: self.preview.setFocus())
-        navigation.addWidget(self.home_button)
-        self.own_team_button = QPushButton("我方队伍配置")
-        self.own_team_button.setObjectName('Navigation')
-        self.own_team_button.clicked.connect(self.open_team_editor)
-        navigation.addWidget(self.own_team_button)
-        damage_button = QPushButton('双向伤害计算')
-        damage_button.setObjectName('Navigation')
-        damage_button.clicked.connect(self.open_damage)
-        navigation.addWidget(damage_button)
-        self.update_button = QPushButton('资料更新')
-        self.update_button.setObjectName('Navigation')
-        self.update_button.clicked.connect(self.updateRequested.emit)
-        navigation.addWidget(self.update_button)
-        navigation.addStretch()
-        self.guide_button = QPushButton('使用引导')
-        self.guide_button.clicked.connect(self.open_onboarding)
-        navigation.addWidget(self.guide_button)
-        page.addLayout(navigation)
-        team_bar = QHBoxLayout()
+        session_bar = QFrame()
+        session_bar.setObjectName("SessionBar")
+        team_bar = QHBoxLayout(session_bar)
+        team_bar.setContentsMargins(0, 0, 0, 0)
         team_bar.addWidget(QLabel('本局我方预存队伍'))
         self.saved_team_selector = QComboBox()
         self.saved_team_selector.currentIndexChanged.connect(self.saved_team_selected)
         team_bar.addWidget(self.saved_team_selector, 1)
+        team_bar.addWidget(QLabel('当前成员'))
         self.saved_own_slot = QComboBox()
         self.saved_own_slot.currentIndexChanged.connect(self.render_saved_speed)
         team_bar.addWidget(self.saved_own_slot, 1)
-        page.addLayout(team_bar)
+        self.update_button = QPushButton('资料更新')
+        self.update_button.clicked.connect(self.updateRequested.emit)
+        team_bar.addWidget(self.update_button)
+        page.addWidget(session_bar)
         self.splitter = QSplitter(Qt.Orientation.Horizontal)
         page.addWidget(self.splitter, 1)
 
@@ -262,6 +321,7 @@ class MainWindow(QMainWindow):
         self.stats_table.horizontalHeader().sectionClicked.connect(self.select_form_column)
         self.reference_tabs.addTab(self.stats_table, "种族值对照")
         speed_page = QWidget()
+        speed_page.setObjectName("TabPage")
         speed_layout = QVBoxLayout(speed_page)
         speed_layout.setContentsMargins(0, 5, 0, 0)
         speed_controls = QHBoxLayout()
@@ -338,6 +398,7 @@ class MainWindow(QMainWindow):
         details_viewport = QScrollArea()
         details_viewport.setWidgetResizable(True)
         details_body = QWidget()
+        details_body.setObjectName("MoveDetailsBody")
         details_body.setMinimumHeight(420)
         details_viewport.setWidget(details_body)
         details_outer.addWidget(details_viewport)
@@ -362,6 +423,7 @@ class MainWindow(QMainWindow):
         details_scroll.setMinimumHeight(75)
         details_scroll.setWidgetResizable(True)
         details_content = QWidget()
+        details_content.setObjectName("MoveDescription")
         description_layout = QVBoxLayout(details_content)
         description_layout.setContentsMargins(0, 0, 4, 0)
         self.move_effect = label("悬浮可预览说明；点击或用键盘选择可在这里查看完整机制。", "Effect")
@@ -426,6 +488,99 @@ class MainWindow(QMainWindow):
         layout.addWidget(table)
         return group, table
 
+    def _activate_navigation(self, button, title):
+        if button is not None:
+            button.setChecked(True)
+        if hasattr(self, "top_title"):
+            self.top_title.setText(title)
+
+    def show_battle_console(self, checked=False):
+        self._activate_navigation(getattr(self, "home_button", None), "对战台")
+        if hasattr(self, "page_scroll"):
+            self.page_scroll.verticalScrollBar().setValue(0)
+        if hasattr(self, "preview"):
+            self.preview.setFocus()
+
+    def open_reference_library(self):
+        self._activate_navigation(getattr(self, "library_button", None), "资料库")
+        if hasattr(self, "pokemon_search"):
+            self.pokemon_search.setFocus()
+            if self.pokemon_search.lineEdit():
+                self.pokemon_search.lineEdit().selectAll()
+        self.set_status("资料库已就绪 · 输入宝可梦名字后选择“查看资料”。")
+
+    def apply_theme(self, dark, persist=True):
+        self.dark_theme = bool(dark)
+        stylesheet = style_for(self.dark_theme)
+        app = QApplication.instance()
+        if app is not None:
+            app.setStyleSheet(stylesheet)
+        self.setStyleSheet(stylesheet)
+        if hasattr(self, "theme_button"):
+            self.theme_button.setText("亮" if self.dark_theme else "暗")
+            self.theme_button.setToolTip("切换到浅色主题" if self.dark_theme else "切换到深色主题")
+        if self.settings_dialog is not None:
+            self.settings_dialog.set_dark(self.dark_theme)
+        for dialog in self._damage_dialogs.values():
+            dialog.apply_view_zoom()
+        if not persist:
+            return
+        try:
+            saved = read_json(self.settings_path) if self.settings_path.exists() else {}
+            saved["theme"] = "dark" if self.dark_theme else "light"
+            saved.pop("password", None)
+            save_json(self.settings_path, saved)
+            self.set_status("已切换为深色主题。" if self.dark_theme else "已切换为浅色主题。")
+        except (OSError, ValueError, AttributeError):
+            self.set_status("主题已在本次运行生效，但设置文件保存失败。")
+
+    def open_settings(self):
+        from .settings_dialog import SettingsDialog
+        self._activate_navigation(getattr(self, "settings_button", None), "设置")
+        if self.settings_dialog is None:
+            dialog = SettingsDialog(self.dark_theme, self)
+            self.settings_dialog = dialog
+            dialog.themeChanged.connect(self.apply_theme)
+            dialog.obsRequested.connect(self.configure_obs)
+            dialog.updateRequested.connect(self.updateRequested.emit)
+            dialog.guideRequested.connect(self.open_onboarding)
+            dialog.dataDirectoryRequested.connect(self.open_data_directory)
+            dialog.diagnosticsRequested.connect(self.copy_diagnostics)
+            dialog.finished.connect(lambda _: self.show_battle_console())
+        self.settings_dialog.set_dark(self.dark_theme)
+        self.settings_dialog.show()
+        self.settings_dialog.raise_()
+        self.settings_dialog.activateWindow()
+
+    def open_data_directory(self):
+        try:
+            directory = app_paths().user
+            directory.mkdir(parents=True, exist_ok=True)
+            if not QDesktopServices.openUrl(QUrl.fromLocalFile(str(directory))):
+                raise OSError("系统没有可用的文件管理器")
+            message = "已打开本地数据目录。"
+        except OSError as exc:
+            message = f"无法打开本地数据目录：{exc}"
+        if self.settings_dialog is not None:
+            self.settings_dialog.show_status(message)
+        self.set_status(message)
+
+    def copy_diagnostics(self):
+        source = self.obs_settings.get("source") or "未配置"
+        summary = "\n".join((
+            f"Champion Lab v{__version__}",
+            f"资料版本：{self.catalog.bundle_id}",
+            f"资料目录：{self.data_dir}",
+            f"OBS 来源：{source}",
+            f"主题：{'dark' if self.dark_theme else 'light'}",
+        ))
+        clipboard = QApplication.clipboard()
+        clipboard.setText(summary)
+        message = "诊断摘要已复制；其中不包含 OBS 密码或截图原图。"
+        if self.settings_dialog is not None:
+            self.settings_dialog.show_status(message)
+        self.set_status(message)
+
     def set_status(self, text):
         self.status_label.setText(text)
 
@@ -485,6 +640,7 @@ class MainWindow(QMainWindow):
 
     def open_team_editor(self, snapshot=None):
         from .team_dialog import TeamDialog
+        self._activate_navigation(getattr(self, "own_team_button", None), "队伍仓库")
         snapshot = snapshot or self.snapshot
         try:
             dialog = self._team_dialogs.get(id(snapshot))
@@ -495,6 +651,7 @@ class MainWindow(QMainWindow):
                 self._team_dialogs[id(snapshot)] = dialog
                 dialog.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
                 dialog.destroyed.connect(lambda: self._forget_dialog('team', id(snapshot)))
+                dialog.finished.connect(lambda _: self.show_battle_console())
             if snapshot is self.snapshot:
                 self.team_dialog = dialog
             dialog.recompute()
@@ -502,6 +659,7 @@ class MainWindow(QMainWindow):
             dialog.raise_()
         except (OSError, ValueError, sqlite3.Error) as exc:
             self.set_status(f'队伍配置载入失败，原数据已保留：{exc}')
+            self.show_battle_console()
 
     def refresh_saved_team_selection(self):
         self.saved_team_selector.blockSignals(True)
@@ -577,6 +735,7 @@ class MainWindow(QMainWindow):
 
     def open_damage(self):
         from .damage_dialog import DamageDialog
+        self._activate_navigation(getattr(self, "damage_button", None), "伤害计算")
         snapshot = self.snapshot
         if id(snapshot) not in self._damage_dialogs:
             self.damage_dialog = DamageDialog(snapshot.catalog, lambda: self.damage_teams(snapshot.catalog),
@@ -587,6 +746,7 @@ class MainWindow(QMainWindow):
             self._damage_dialogs[id(snapshot)] = self.damage_dialog
             self.damage_dialog.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
             self.damage_dialog.destroyed.connect(lambda: self._forget_dialog('damage', id(snapshot)))
+            self.damage_dialog.finished.connect(lambda _: self.show_battle_console())
             if self.selected_record:
                 self.damage_dialog.set_target(self.selected_record)
         else:
@@ -970,6 +1130,8 @@ class MainWindow(QMainWindow):
         except (OSError, ValueError, AttributeError):
             self.set_status("连接信息已在本次运行生效，但设置文件保存失败。")
         self.obs_label.setText("已选择 · " + self.obs_settings["source"])
+        if hasattr(self, "obs_status_button"):
+            self.obs_status_button.setText("●  OBS 已配置")
         self.capture_button.setEnabled(not self.busy and bool(self.obs_settings["source"]))
 
     def _close_obs_dialog(self, dialog):

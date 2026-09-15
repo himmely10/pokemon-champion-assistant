@@ -3,6 +3,9 @@ import sys
 
 
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] == '--web':
+        from champion_assistant.webapp import main as web_main
+        return web_main(sys.argv[2:])
     if len(sys.argv) > 1 and sys.argv[1] == '--self-check':
         from champion_assistant.diagnostics import main as diagnostic_main
         return diagnostic_main(sys.argv[2:])

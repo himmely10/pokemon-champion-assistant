@@ -7,7 +7,6 @@ from PySide6.QtWidgets import QDialog, QVBoxLayout, QHBoxLayout, QPushButton, QS
 from ..data.storage import read_json, save_json
 from ..paths import app_paths, migrate_legacy
 from .dialog_layout import fit_dialog
-from .theme import STYLE
 from .widgets import label
 
 
@@ -27,7 +26,6 @@ class OnboardingDialog(QDialog):
         self.settings_path = Path(settings_path)
         self.route = None
         self.setWindowTitle('开始使用 · Champion 对战工作台')
-        self.setStyleSheet(STYLE)
         outer = QVBoxLayout(self)
         outer.setContentsMargins(22, 20, 22, 20)
         outer.setSpacing(14)
