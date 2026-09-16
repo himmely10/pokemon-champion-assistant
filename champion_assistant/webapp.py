@@ -7,12 +7,14 @@ from __future__ import annotations
 
 from copy import deepcopy
 from http import HTTPStatus
+from http.client import HTTPConnection, HTTPException
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from io import BytesIO
 import argparse
 import json
 import mimetypes
 from pathlib import Path
+import socket
 from threading import Lock, Timer
 from urllib.parse import parse_qs, unquote, urlsplit
 import webbrowser
@@ -50,6 +52,17 @@ class ApiError(ValueError):
     def __init__(self, message: str, status: int = HTTPStatus.BAD_REQUEST):
         super().__init__(message)
         self.status = int(status)
+
+
+class LocalWebServer(ThreadingHTTPServer):
+    """Own the loopback port exclusively so repeated launches cannot split traffic."""
+
+    allow_reuse_address = False
+
+    def server_bind(self):
+        if hasattr(socket, 'SO_EXCLUSIVEADDRUSE'):
+            self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_EXCLUSIVEADDRUSE, 1)
+        super().server_bind()
 
 
 class WebServices:
@@ -814,10 +827,32 @@ def create_server(*, host="127.0.0.1", port=DEFAULT_PORT, static_root=None,
     if host not in ("127.0.0.1", "localhost", "::1"):
         raise ValueError("为保护本机队伍与 OBS 配置，网页服务只能监听本机回环地址。")
     root = Path(static_root or app_paths().resource("web/dist"))
-    server = ThreadingHTTPServer((host, port), ChampionRequestHandler)
+    server = LocalWebServer((host, port), ChampionRequestHandler)
     server.services = services or WebServices()
     server.static_root = root
     return server
+
+
+def is_champion_lab_running(port=DEFAULT_PORT):
+    """Distinguish an existing Champion Lab instance from an unrelated local service."""
+    connection = HTTPConnection('127.0.0.1', int(port), timeout=0.6)
+    try:
+        connection.request('GET', '/api/health', headers={'Accept': 'application/json'})
+        response = connection.getresponse()
+        response.read()
+        return response.status == HTTPStatus.OK and response.getheader(
+            'Server', '').startswith('ChampionLab/')
+    except (OSError, ValueError, HTTPException):
+        return False
+    finally:
+        connection.close()
+
+
+def reuse_running_instance(url, *, no_browser=False):
+    print(f"Champion Lab 网页版已经运行：{url}")
+    if not no_browser:
+        webbrowser.open(url)
+    return 0
 
 
 def main(argv=None):
@@ -828,8 +863,16 @@ def main(argv=None):
     parser.add_argument("--data-dir", type=Path)
     parser.add_argument("--layout", type=Path)
     args = parser.parse_args(argv)
+    url = f"http://127.0.0.1:{args.port}"
+    if is_champion_lab_running(args.port):
+        return reuse_running_instance(url, no_browser=args.no_browser)
     services = WebServices(data_dir=args.data_dir, layout_path=args.layout)
-    server = create_server(port=args.port, static_root=args.static_root, services=services)
+    try:
+        server = create_server(port=args.port, static_root=args.static_root, services=services)
+    except OSError as exc:
+        if is_champion_lab_running(args.port):
+            return reuse_running_instance(url, no_browser=args.no_browser)
+        raise SystemExit(f"无法启动网页版：本机端口 {args.port} 已被其他程序占用。") from exc
     url = f"http://127.0.0.1:{server.server_port}"
     print(f"Champion Lab 网页版已启动：{url}")
     print("关闭此窗口或按 Ctrl+C 即可停止本地服务。")

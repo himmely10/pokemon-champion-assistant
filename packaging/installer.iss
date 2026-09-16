@@ -30,13 +30,16 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "Create a desktop shortcut"; Flags: unchecked
+Name: "webdesktopicon"; Description: "Create a Champion Lab Web desktop shortcut"; Flags: unchecked
 
 [Files]
 Source: "..\artifacts\dist\PokemonChampionAssistant\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 Name: "{group}\{#AppName}"; Filename: "{app}\PokemonChampionAssistant.exe"
+Name: "{group}\Champion Lab Web"; Filename: "{app}\ChampionLabWeb.exe"
 Name: "{autodesktop}\{#AppName}"; Filename: "{app}\PokemonChampionAssistant.exe"; Tasks: desktopicon
+Name: "{autodesktop}\Champion Lab Web"; Filename: "{app}\ChampionLabWeb.exe"; Tasks: webdesktopicon
 
 [Run]
 Filename: "{app}\PokemonChampionAssistant.exe"; Description: "Launch Pokemon Champion Assistant"; Flags: nowait postinstall skipifsilent

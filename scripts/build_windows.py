@@ -6,6 +6,7 @@ import importlib.metadata
 import json
 import os
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import sys
@@ -17,7 +18,38 @@ from champion_assistant.version import __version__
 
 REQUIRED_RESOURCES = {'runtime/node.exe', 'models/PP-OCRv6_det_small.onnx',
     'models/PP-OCRv6_rec_small.onnx', 'models/ch_ppocr_mobile_v2.0_cls_mobile.onnx',
-    'pokemon/release.json', 'pokemon/baseline.zip', 'damage_engine/bridge.cjs'}
+    'pokemon/release.json', 'pokemon/baseline.zip', 'damage_engine/bridge.cjs',
+    'web/dist/index.html'}
+
+
+def validate_web_dist(dist_dir):
+    """Require the production HTML and every hashed JS/CSS asset it references."""
+    root = Path(dist_dir)
+    index = root / 'index.html'
+    if not index.is_file():
+        raise ValueError('网页生产构建缺少 web/dist/index.html')
+    html = index.read_text(encoding='utf-8')
+    references = set(re.findall(r'''(?:src|href)=["']/((?:assets)/[^"']+)["']''', html))
+    if not references or not any(path.endswith('.js') for path in references) \
+            or not any(path.endswith('.css') for path in references):
+        raise ValueError('网页生产构建没有引用完整的 JavaScript/CSS 静态资源')
+    for relative in references:
+        if not confined(root, relative).is_file():
+            raise ValueError('网页生产构建缺少静态资源：' + relative)
+    return {'index.html', *references}
+
+
+def build_web_dist():
+    """Create reproducible browser assets before freezing application resources."""
+    pnpm = shutil.which('pnpm')
+    if not pnpm:
+        raise ValueError('构建机需要 pnpm；最终用户无需安装。')
+    web = ROOT / 'web'
+    if not (web / 'node_modules').is_dir():
+        raise ValueError('网页依赖尚未安装，请先在 web 目录运行 pnpm install --frozen-lockfile。')
+    subprocess.run([pnpm, 'build'], cwd=web, check=True)
+    validate_web_dist(web / 'dist')
+    return web / 'dist'
 
 
 def validate_build_manifest(resources_dir):
@@ -27,6 +59,9 @@ def validate_build_manifest(resources_dir):
         raise ValueError('构建清单版本无效')
     if not REQUIRED_RESOURCES.issubset(manifest['files']):
         raise ValueError('构建资源不完整')
+    web_files = {'web/dist/' + path for path in validate_web_dist(root / 'web/dist')}
+    if not web_files.issubset(manifest['files']):
+        raise ValueError('构建清单未覆盖网页静态资源')
     for relative, checksum in manifest['files'].items():
         file = confined(root, relative)
         if not file.is_file() or digest(file.read_bytes()) != checksum:
@@ -35,6 +70,7 @@ def validate_build_manifest(resources_dir):
 
 
 def prepare_resources(data_dir=None):
+    web_dist = build_web_dist()
     stage = ROOT / 'artifacts/build-resources'
     if stage.exists():
         if not stage.resolve().is_relative_to((ROOT / 'artifacts').resolve()):
@@ -80,6 +116,7 @@ def prepare_resources(data_dir=None):
     shutil.copy2(package['archive_path'], stage / 'pokemon/baseline.zip')
     shutil.copytree(ROOT / 'damage_engine', stage / 'damage_engine',
                     ignore=shutil.ignore_patterns('node_modules', '__pycache__'))
+    shutil.copytree(web_dist, stage / 'web/dist')
     licenses = stage / 'licenses'
     licenses.mkdir()
     shutil.copy2(ROOT / 'THIRD_PARTY_NOTICES.md', licenses)

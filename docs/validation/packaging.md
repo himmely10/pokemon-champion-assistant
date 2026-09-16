@@ -64,3 +64,13 @@ runner 自带开发工具，因此第 5 步验证依赖隔离，仍不能代替�
 - 编译演练安装器0.1.99（使用当前实现，仅模拟旧安装版本号，不是历史v0.1产品），成功安装到 `artifacts/安装 验收`。独立用户目录完成伤害和队伍保存自检：`artifacts/work/upgrade-before.json`。
 - 随后完成 0.2.0 覆盖安装和升级后冻结自检；`artifacts/work/upgrade-before.json` 与 `artifacts/work/upgrade-after.json` 的个人队伍指纹均为 `2648dcf16e321073a607a31ffb57a386222d2ced6f9e0bea4d0c6ac03a2775b2`，说明该安装演练中队伍数据保持一致。卸载再装仍待验证。
 - 最终源码测试 **289 项全部通过**，包括伤害、速度、主窗口、OBS 队伍截图入口、两组真实 OCR 和打包资源门禁。
+
+## 2026-09-16 v0.3.0 网页安装包候选验证
+
+- 构建器实际运行 Vite 生产构建，并将 `web/dist/index.html`、带哈希的 JavaScript/CSS 与其他静态资源写入冻结资源清单。缺失入口、JS 或 CSS 时构建会失败。
+- 冻结目录包含 `PokemonChampionAssistant.exe`、`ChampionWorker.exe` 和新增的 `ChampionLabWeb.exe`。冻结自检通过：398 形态、内置 Node `v22.20.0`、队伍存储、普通伤害 102–122 与 Mega 伤害 116–140均正常。
+- 实际将 Setup 静默安装到仓库内隔离目录；开始菜单同时生成桌面程序和 **Champion Lab Web** 入口，且两者均指向安装目录。
+- 已安装的 `ChampionLabWeb.exe` 在隔离用户目录下返回 HTTP 200，`/api/bootstrap` 报告 `version=0.3.0`、`api=local`、398 形态；第二次启动复用已有实例并以 0 退出。
+- 安装演练后使用安装包自带卸载器清理，隔离安装目录和开始菜单组均已移除，候选 Setup 保留。
+- 候选包大小 205,747,926 字节（196.22 MiB），SHA-256 为 `AB3DC0F02AD1F803B8743FE2F32359B805E6BD89B1369D09834396DA3EB14112`。
+- 上述均在开发机完成；干净 Windows 11 VM、签名及公开稳定通道门禁仍未完成，因此本产物仍是 candidate。

@@ -55,15 +55,16 @@ CI 顺序：恢复上次有效构建缓存 → 隔离的维护者资料目录 �
 
 ## Windows 候选构建入口
 
-手动运行 `.github/workflows/windows-release.yml` 可启动候选流程。它使用 Python 3.13、Node 22.20.0 和 `requirements-build.txt` 中的 OCR／打包依赖，明确下载并校验三个离线模型，先构建并导入完整资料组合，再打包程序。它实际运行冻结的 `ChampionWorker.exe --self-check`，通过后使用 Inno Setup 生成 Setup.exe，并仅上传候选 artifact。
+手动运行 `.github/workflows/windows-release.yml` 可启动候选流程。它使用 Python 3.13、Node 22.20.0、pnpm 12.4.1 和 `requirements-build.txt` 中的 OCR／打包依赖，先安装并构建 `web/` 生产资源，再下载并校验三个离线模型、构建资料组合和冻结程序。它实际运行 `ChampionWorker.exe --self-check`，通过后使用 Inno Setup 生成 Setup.exe，并仅上传候选 artifact。
 
 本地对应入口如下；其中安装资料组合可在 Python 中调用 `UpdateService.install()`，或通过已有软件更新入口完成：
 
 ```powershell
 .\.venv-ui\Scripts\python.exe -X utf8 scripts/build_windows.py --data-dir artifacts/release-data
 .\artifacts\dist\PokemonChampionAssistant\ChampionWorker.exe --self-check --output artifacts/release/frozen-self-check.json
+.\artifacts\dist\PokemonChampionAssistant\ChampionLabWeb.exe
 ```
 
-`--self-check` 支持 `--image`、成对的 `--ability`／`--status` 参数；对个人队伍库执行诊断时，还需 `--exercise-user-store` 并设置隔离的 `CHAMPION_USER_DIR`。这些诊断不应指向真实用户目录。Setup.exe 使用 `packaging/installer.iss` 编译；安装向导当前为英文，应用界面为简体中文。
+`--self-check` 支持 `--image`、成对的 `--ability`／`--status` 参数；对个人队伍库执行诊断时，还需 `--exercise-user-store` 并设置隔离的 `CHAMPION_USER_DIR`。这些诊断不应指向真实用户目录。`ChampionLabWeb.exe` 会自动打开浏览器，关闭其命令窗口即停止本地服务。Setup.exe 使用 `packaging/installer.iss` 编译；安装向导当前为英文，应用界面为简体中文。
 
 证据产物包括 `release-candidate.json`（安装器摘要与状态）、`build-manifest.json`（资源摘要）、`model-sources.json`（官方模型来源与哈希）、`frozen-self-check.json`（实际冻结运行结果）。当前仍标记候选：**干净 Windows 11 VM 未验证，在线稳定渠道未部署，发行签名未配置**。验证范围和待完成门禁见 [Windows 打包验证记录](validation/packaging.md)。

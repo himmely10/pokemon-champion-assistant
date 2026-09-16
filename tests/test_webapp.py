@@ -1,10 +1,27 @@
 import http.client
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
 from threading import Thread
 
 import pytest
 
-from champion_assistant.webapp import ApiError, WebServices, create_server
+from champion_assistant import webapp
+from champion_assistant.webapp import ApiError, WebServices, create_server, is_champion_lab_running
+
+
+class OtherLocalServiceHandler(BaseHTTPRequestHandler):
+    server_version = "OtherLocalService/1"
+
+    def do_GET(self):
+        content = b'{"status":"ok"}'
+        self.send_response(200)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Length", str(len(content)))
+        self.end_headers()
+        self.wfile.write(content)
+
+    def log_message(self, _format, *args):
+        pass
 
 
 @pytest.fixture(scope="module")
@@ -102,6 +119,41 @@ def test_api_rejects_mismatched_member_and_non_loopback_bind(services):
         })
     with pytest.raises(ValueError, match="回环"):
         create_server(host="0.0.0.0", services=services)
+
+
+def test_web_server_rejects_a_second_listener_on_the_same_port(services):
+    first = create_server(port=0, services=services)
+    try:
+        with pytest.raises(OSError):
+            create_server(port=first.server_port, services=services)
+    finally:
+        first.server_close()
+
+
+def test_running_server_probe_only_accepts_champion_lab(services, monkeypatch):
+    server = create_server(port=0, services=services)
+    thread = Thread(target=server.serve_forever, daemon=True)
+    thread.start()
+    try:
+        assert is_champion_lab_running(server.server_port) is True
+        assert is_champion_lab_running(server.server_port + 1) is False
+    finally:
+        server.shutdown()
+        server.server_close()
+        thread.join(timeout=2)
+
+    foreign = ThreadingHTTPServer(("127.0.0.1", 0), OtherLocalServiceHandler)
+    foreign_thread = Thread(target=foreign.serve_forever, daemon=True)
+    foreign_thread.start()
+    try:
+        assert is_champion_lab_running(foreign.server_port) is False
+        monkeypatch.setattr(webapp, "WebServices", lambda **_kwargs: services)
+        with pytest.raises(SystemExit, match="其他程序占用"):
+            webapp.main(["--port", str(foreign.server_port), "--no-browser"])
+    finally:
+        foreign.shutdown()
+        foreign.server_close()
+        foreign_thread.join(timeout=2)
 
 
 def test_damage_options_and_full_battle_state_reuse_desktop_rules(services):

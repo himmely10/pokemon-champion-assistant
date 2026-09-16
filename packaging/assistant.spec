@@ -4,7 +4,7 @@ from PyInstaller.utils.hooks import collect_data_files, collect_submodules
 
 root = Path(SPECPATH).parent
 staged = root / 'artifacts/build-resources'
-datas = [(str(staged / name), name) for name in ('config', 'pokemon', 'runtime', 'models', 'damage_engine', 'licenses')]
+datas = [(str(staged / name), name) for name in ('config', 'pokemon', 'runtime', 'models', 'damage_engine', 'licenses', 'web')]
 datas += [(str(staged / 'build-manifest.json'), '.')]
 datas += collect_data_files('rapidocr', excludes=['models/*'])
 brand = root / 'assets/branding'
@@ -21,4 +21,6 @@ gui = EXE(pyz, a.scripts, [], exclude_binaries=True, name='PokemonChampionAssist
           console=False, icon=icon, upx=False)
 worker = EXE(pyz, a.scripts, [], exclude_binaries=True, name='ChampionWorker',
              console=True, icon=icon, upx=False)
-coll = COLLECT(gui, worker, a.binaries, a.datas, name='PokemonChampionAssistant', upx=False)
+web = EXE(pyz, a.scripts, [], exclude_binaries=True, name='ChampionLabWeb',
+          console=True, icon=icon, upx=False)
+coll = COLLECT(gui, worker, web, a.binaries, a.datas, name='PokemonChampionAssistant', upx=False)

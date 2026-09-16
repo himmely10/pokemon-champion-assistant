@@ -1,7 +1,7 @@
 # Pokemon Champion Assistant
 
 
-**当前开发版本：v0.3.0 Web Preview。** [版本说明](docs/releases/v0.3.0.md) · [构建与发行](docs/release.md)
+**当前开发版本：v0.3.0 Windows 候选版。** [版本说明](docs/releases/v0.3.0.md) · [构建与发行](docs/release.md)
 
 最新公开安装包仍为 v0.2.1，包含 Python、Node、Qt、OCR 模型和离线公共资料。普通用户运行
 `PokemonChampionAssistant-0.2.1-windows-x64-Setup.exe` 后，从开始菜单启动；无需另外安装开发环境。
@@ -11,6 +11,15 @@
 仅软件运行时执行。新资料在下一次截图分析生效，已经打开的伤害对照保留原版本。
 未配置公开渠道时使用内置离线资料及本地资料包。预存队伍与 OBS 设置分别保存在个人目录，
 升级／卸载默认保留；网页版验证成功后的 OBS 密码使用 Windows 当前用户凭据加密保存。
+
+## Windows 安装包（普通用户）
+
+v0.3.0 安装包同时提供两个开始菜单入口：
+
+- **Champion Lab Web**：启动本机服务并自动打开 `http://127.0.0.1:32145`；运行窗口会保留，关闭该窗口即停止服务。
+- **Pokemon Champion Assistant**：保留原桌面程序入口。
+
+安装后无需另行安装 Python、Node.js 或 pnpm。重复打开 Champion Lab Web 会复用已运行的本机服务，不会再启动一个后台实例。当前仍是未签名的候选包，干净 Windows 11 虚拟机验收状态见 [打包验收](docs/validation/packaging.md)。
 
 ## 从源码运行（开发者）
 
