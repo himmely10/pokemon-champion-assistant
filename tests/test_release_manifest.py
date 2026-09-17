@@ -1,5 +1,6 @@
 """Release resource integrity checks without packaging or image inference."""
 import copy
+from pathlib import Path
 
 import pytest
 
@@ -67,3 +68,17 @@ def test_web_dist_requires_index_and_referenced_assets(tmp_path):
     (dist / 'assets/app.js').write_text('console.log("ok")', encoding='utf-8')
     (dist / 'assets/app.css').write_text('body{}', encoding='utf-8')
     assert validate_web_dist(dist) == {'assets/app.js', 'assets/app.css', 'index.html'}
+
+
+def test_windows_helpers_hide_their_owned_console_windows():
+    spec = (Path(__file__).parents[1] / 'packaging/assistant.spec').read_text(encoding='utf-8')
+    assert "name='ChampionWorker'" in spec
+    assert "name='ChampionLabWeb'" in spec
+    assert spec.count("hide_console='hide-early'") == 2
+
+
+def test_installer_exposes_one_product_entry_point():
+    installer = (Path(__file__).parents[1] / 'packaging/installer.iss').read_text(encoding='utf-8')
+    assert 'Name: "{group}\\{#AppName}"' in installer
+    assert 'Champion Lab Web' not in installer
+    assert 'ChampionWorker.exe' not in installer

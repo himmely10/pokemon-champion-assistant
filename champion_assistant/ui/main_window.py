@@ -188,7 +188,9 @@ class MainWindow(QMainWindow):
         main_layout.addWidget(topbar)
 
         body = QWidget()
+        body.setObjectName("PageBody")
         self.page_scroll = QScrollArea()
+        self.page_scroll.setObjectName("PageScroll")
         self.page_scroll.setWidgetResizable(True)
         self.page_scroll.setWidget(body)
         main_layout.addWidget(self.page_scroll, 1)

@@ -14,12 +14,9 @@
 
 ## Windows 安装包（普通用户）
 
-v0.3.0 安装包同时提供两个开始菜单入口：
+v0.3.0 安装包只提供一个用户入口：**Pokemon Champion Assistant**。它在原生窗口中直接承载 Champion Lab 网页工作台，队伍、伤害、资料百科与设置均在同一窗口切换，不再维护另一套弹窗界面。
 
-- **Champion Lab Web**：启动本机服务并自动打开 `http://127.0.0.1:32145`；运行窗口会保留，关闭该窗口即停止服务。
-- **Pokemon Champion Assistant**：保留原桌面程序入口。
-
-安装后无需另行安装 Python、Node.js 或 pnpm。重复打开 Champion Lab Web 会复用已运行的本机服务，不会再启动一个后台实例。当前仍是未签名的候选包，干净 Windows 11 虚拟机验收状态见 [打包验收](docs/validation/packaging.md)。
+安装后无需另行安装 Python、Node.js 或 pnpm。`ChampionWorker.exe` 是内部更新与自检组件，不是启动入口；即使误双击也会进入同一个工作台，并且不会显示持续存在的 CMD 窗口。当前仍是未签名的候选包，干净 Windows 11 虚拟机验收状态见 [打包验收](docs/validation/packaging.md)。
 
 ## 从源码运行（开发者）
 
@@ -37,7 +34,7 @@ py -3.13 -m venv .venv-ui
 
 以后可以双击 `run_assistant.bat` 启动。仓库包含图标、资料快照和已编译的伤害引擎；虚拟环境需要自行创建，无需为了启动程序执行 npm 构建。
 
-### 本地网页版
+### 本地网页开发模式
 
 正式网页源代码位于 `web/`。它不是一份独立的模拟器：队伍、资料、截图识别、OBS 和伤害结果均通过 `127.0.0.1` 上的本地 Python API 调用现有业务模块，服务不会监听局域网地址。OBS 密码不会写入普通设置 JSON 或返回给网页，而是用 Windows DPAPI 加密后单独保存在当前用户目录。
 

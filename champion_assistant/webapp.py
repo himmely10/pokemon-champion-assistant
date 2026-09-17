@@ -15,6 +15,7 @@ import json
 import mimetypes
 from pathlib import Path
 import socket
+import sys
 from threading import Lock, Timer
 from urllib.parse import parse_qs, unquote, urlsplit
 import webbrowser
@@ -694,7 +695,8 @@ class ChampionRequestHandler(BaseHTTPRequestHandler):
         return self.server.static_root  # type: ignore[attr-defined]
 
     def log_message(self, format, *args):
-        print(f"[web] {self.address_string()} - {format % args}")
+        if sys.stdout is not None:
+            print(f"[web] {self.address_string()} - {format % args}")
 
     def _json(self, payload, status=HTTPStatus.OK):
         content = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
@@ -823,12 +825,16 @@ class ChampionRequestHandler(BaseHTTPRequestHandler):
 
 
 def create_server(*, host="127.0.0.1", port=DEFAULT_PORT, static_root=None,
-                  services: WebServices | None = None):
+                  services: WebServices | None = None, services_factory=None):
     if host not in ("127.0.0.1", "localhost", "::1"):
         raise ValueError("为保护本机队伍与 OBS 配置，网页服务只能监听本机回环地址。")
     root = Path(static_root or app_paths().resource("web/dist"))
     server = LocalWebServer((host, port), ChampionRequestHandler)
-    server.services = services or WebServices()
+    try:
+        server.services = services or (services_factory() if services_factory else WebServices())
+    except Exception:
+        server.server_close()
+        raise
     server.static_root = root
     return server
 

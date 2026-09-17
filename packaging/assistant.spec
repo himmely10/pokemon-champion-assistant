@@ -20,7 +20,7 @@ icon = str(brand / 'app.ico') if (brand / 'app.ico').exists() else None
 gui = EXE(pyz, a.scripts, [], exclude_binaries=True, name='PokemonChampionAssistant',
           console=False, icon=icon, upx=False)
 worker = EXE(pyz, a.scripts, [], exclude_binaries=True, name='ChampionWorker',
-             console=True, icon=icon, upx=False)
+             console=True, hide_console='hide-early', icon=icon, upx=False)
 web = EXE(pyz, a.scripts, [], exclude_binaries=True, name='ChampionLabWeb',
-          console=True, icon=icon, upx=False)
+          console=True, hide_console='hide-early', icon=icon, upx=False)
 coll = COLLECT(gui, worker, web, a.binaries, a.datas, name='PokemonChampionAssistant', upx=False)

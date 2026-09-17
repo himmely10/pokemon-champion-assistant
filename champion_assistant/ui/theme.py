@@ -60,7 +60,8 @@ QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
 """
 
 PRODUCT_SHELL = """
-QWidget#AppShell, QWidget#MainColumn { background: #f3f6fa; }
+QWidget#AppShell, QWidget#MainColumn, QWidget#PageBody,
+QScrollArea#PageScroll, QScrollArea#PageScroll > QWidget > QWidget { background: #f3f6fa; }
 QFrame#NavigationRail { background: #101b2e; border: none; }
 QLabel#NavBrand { color: #f2c94c; border: 2px solid #f2c94c; border-radius: 20px; font-size: 13px; font-weight: 800; }
 QLabel#NavCaption { color: #71839c; font-size: 10px; font-weight: 700; }
@@ -87,7 +88,8 @@ QPushButton#DangerGhost { color: #b33f58; background: #fff5f7; border-color: #f0
 
 DARK_OVERRIDES = """
 QWidget { color: #dbe4f0; }
-QMainWindow, QDialog, QWidget#AppShell, QWidget#MainColumn { background: #0c1525; }
+QMainWindow, QDialog, QWidget#AppShell, QWidget#MainColumn, QWidget#PageBody,
+QScrollArea#PageScroll, QScrollArea#PageScroll > QWidget > QWidget { background: #0c1525; }
 QFrame#TopBar { background: #111d31; border-bottom-color: #27364d; }
 QLabel#TopEyebrow, QLabel#Muted, QLabel#HeaderNote { color: #8392a8; }
 QLabel#TopTitle, QLabel#PokemonName, QLabel#MoveTitle, QLabel#SettingsTitle, QLabel#SettingsSection, QLabel#SectionTitle { color: #f2f6fb; }

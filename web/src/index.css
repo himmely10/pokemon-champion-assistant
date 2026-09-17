@@ -60,7 +60,11 @@
   background: var(--canvas);
 }
 
-* { box-sizing: border-box; }
+* { box-sizing: border-box; scrollbar-color: var(--border-strong) var(--canvas); }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background: var(--canvas); }
+*::-webkit-scrollbar-thumb { background: var(--border-strong); border: 2px solid var(--canvas); border-radius: 999px; }
+*::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
 html { min-width: 360px; background: var(--canvas); }
 body { margin: 0; min-width: 360px; min-height: 100vh; background: var(--canvas); color: var(--text); }
 button, input, select { font: inherit; }
