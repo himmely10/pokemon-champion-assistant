@@ -37,6 +37,19 @@ beforeEach(() => {
 afterEach(cleanup)
 
 describe('TeamPage import integration', () => {
+  it('keeps the editable team name separate from the saved state and actions', async () => {
+    render(<TeamPage teams={[savedTeam()]} featured={[pokemon]} selectedTeamId="old-team" settings={settings} onSelectedTeam={vi.fn()} onRefresh={vi.fn()} onPendingChange={vi.fn()} />)
+    const name = screen.getByRole('textbox', { name: '队伍名称' }) as HTMLInputElement
+    const header = name.parentElement
+    expect(header?.classList.contains('team-editor-head')).toBe(true)
+    expect(header?.children[1]).toBe(name)
+    expect(header?.children[0]?.textContent).toContain('所有更改已保存')
+    expect(header?.children[2]?.classList.contains('team-editor-actions')).toBe(true)
+    await userEvent.type(name, '改')
+    expect(name.value).toBe('已有队伍改')
+    expect(header?.children[0]?.textContent).toContain('有未保存更改')
+  })
+
   it('keeps the import entry visible in an empty repository and never auto-saves a reviewed draft', async () => {
     const onPendingChange = vi.fn()
     render(<TeamPage teams={[]} featured={[pokemon]} selectedTeamId={null} settings={settings} onSelectedTeam={vi.fn()} onRefresh={vi.fn()} onPendingChange={onPendingChange} />)

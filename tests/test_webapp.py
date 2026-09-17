@@ -55,6 +55,18 @@ def test_bootstrap_and_reference_use_real_catalog(services):
     assert mega_blastoise["is_battle_form"] is True
 
 
+def test_pokemon_search_pages_cover_the_entire_local_catalog(services):
+    expected = len(services.catalog.search_records())
+    pages = [services.search_pokemon("", limit=37, offset=offset)
+             for offset in range(0, expected, 37)]
+    found = [pokemon for page in pages for pokemon in page]
+    assert len(found) == expected
+    assert len({pokemon["id"] for pokemon in found}) == expected
+    assert services.search_pokemon("", limit=37, offset=expected) == []
+    with pytest.raises(ApiError, match="搜索起点无效"):
+        services.search_pokemon("", offset=-1)
+
+
 def test_settings_securely_persist_without_returning_obs_password(services):
     result = services.update_settings({
         "host": "127.0.0.1", "port": 4455, "source": "Switch", "password": "secret",

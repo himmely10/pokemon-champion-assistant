@@ -28,7 +28,7 @@ export const api = {
   teams: () => getJson<Team[]>('/api/teams'),
   saveTeam: (team: Team) => postJson<Team>('/api/teams', team),
   deleteTeam: (team: Pick<Team, 'id' | 'revision'>) => postJson<{ deleted: boolean }>('/api/teams/delete', team),
-  searchPokemon: (query: string, limit = 30) => getJson<Pokemon[]>(`/api/pokemon?q=${encodeURIComponent(query)}&limit=${limit}`),
+  searchPokemon: (query: string, limit = 30, offset = 0) => getJson<Pokemon[]>(`/api/pokemon?q=${encodeURIComponent(query)}&limit=${limit}&offset=${offset}`),
   pokemonDetail: (id: string) => getJson<PokemonDetail>(`/api/pokemon/detail?id=${encodeURIComponent(id)}`),
   teamOptions: (id: string) => getJson<TeamOptions>(`/api/pokemon/options?id=${encodeURIComponent(id)}`),
   damageOptions: (id: string) => getJson<DamageOptions>(`/api/damage/options?id=${encodeURIComponent(id)}`),

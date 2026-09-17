@@ -204,18 +204,24 @@ class WebServices:
         result["is_battle_form"] = result["id"] != result["family_base"]["id"]
         return result
 
-    def search_pokemon(self, query: str, *, limit: int = 30) -> list[dict]:
+    def search_pokemon(self, query: str, *, limit: int = 30, offset: int = 0) -> list[dict]:
         if not isinstance(query, str) or len(query) > 100:
             raise ApiError("搜索内容过长。")
         if type(limit) is not int or not 1 <= limit <= 500:
             raise ApiError("搜索数量无效。")
+        if type(offset) is not int or offset < 0:
+            raise ApiError("搜索起点无效。")
         needle = query.strip().casefold()
         results = []
+        matched = 0
         for label, record in self.catalog.search_records():
             type_text = " ".join(TYPE_NAMES.get(value, value) for value in record.get("types", []))
             aliases = " ".join(record.get("aliases", []))
             haystack = f"{label} {record.get('source_slug', '')} {type_text} {aliases}".casefold()
             if needle and needle not in haystack:
+                continue
+            if matched < offset:
+                matched += 1
                 continue
             results.append(self.pokemon_summary(record))
             if len(results) >= limit:
@@ -907,9 +913,10 @@ class ChampionRequestHandler(BaseHTTPRequestHandler):
             if route.path == "/api/pokemon":
                 try:
                     limit = int(query.get("limit", ["30"])[0])
+                    offset = int(query.get("offset", ["0"])[0])
                 except ValueError as exc:
-                    raise ApiError("搜索数量无效。") from exc
-                return self._json(self.services.search_pokemon(query.get("q", [""])[0], limit=limit))
+                    raise ApiError("搜索数量或起点无效。") from exc
+                return self._json(self.services.search_pokemon(query.get("q", [""])[0], limit=limit, offset=offset))
             if route.path == "/api/pokemon/detail":
                 return self._json(self.services.pokemon_detail(query.get("id", [""])[0]))
             if route.path == "/api/pokemon/options":

@@ -10,31 +10,47 @@ export function ReferencePage({ featured, onOpenDamage }: { featured: Pokemon[];
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<Pokemon[]>(featured)
   const [selectedId, setSelectedId] = useState(featured[0]?.id ?? '')
-  const [detail, setDetail] = useState<PokemonDetail | null>(null)
+  const [detailResult, setDetail] = useState<PokemonDetail | null>(null)
   const [tab, setTab] = useState<'overview' | 'moves' | 'forms'>('overview')
   const [error, setError] = useState('')
 
   useEffect(() => {
-    const timer = window.setTimeout(() => api.searchPokemon(query).then(items => {
-      setResults(items)
-      if (items.length && !items.some(item => item.id === selectedId)) setSelectedId(items[0].id)
-      setError('')
-    }).catch(reason => setError(reason instanceof Error ? reason.message : '搜索失败')), 180)
-    return () => window.clearTimeout(timer)
-  }, [query, selectedId])
+    let active = true
+    const timer = window.setTimeout(async () => {
+      try {
+        const items: Pokemon[] = []
+        const pageSize = 500
+        let page: Pokemon[]
+        do {
+          page = await api.searchPokemon(query, pageSize, items.length)
+          items.push(...page)
+        } while (active && page.length === pageSize)
+        if (!active) return
+        setResults(items)
+        setSelectedId(current => items.some(item => item.id === current) ? current : items[0]?.id ?? '')
+        setError('')
+      } catch (reason) {
+        if (active) setError(reason instanceof Error ? reason.message : '搜索失败')
+      }
+    }, 180)
+    return () => { active = false; window.clearTimeout(timer) }
+  }, [query])
 
   useEffect(() => {
+    let active = true
     if (!selectedId) return
-    api.pokemonDetail(selectedId).then(setDetail).catch(reason => setError(reason instanceof Error ? reason.message : '资料读取失败'))
+    api.pokemonDetail(selectedId).then(item => { if (active) setDetail(item) }).catch(reason => { if (active) setError(reason instanceof Error ? reason.message : '资料读取失败') })
+    return () => { active = false }
   }, [selectedId])
 
-  const pokemon = detail ?? results.find(item => item.id === selectedId) ?? results[0]
+  const detail = detailResult?.id === selectedId ? detailResult : null
+  const pokemon = detail ?? results.find(item => item.id === selectedId)
   return <div className="standard-page library-page">
     <section className="library-search"><div><p className="eyebrow">本地资料</p><h2>宝可梦资料库</h2></div><label><Search size={20} /><span className="sr-only">搜索宝可梦</span><input value={query} onChange={event => setQuery(event.target.value)} placeholder="搜索名称、属性或英文键名" /></label></section>
     {error && <div className="inline-error">{error}</div>}
     <section className="library-layout">
-      <aside className="result-list"><div className="result-count">{results.length} 个结果</div>{results.map(item => <button key={item.id} type="button" className={pokemon?.id === item.id ? 'active' : ''} onClick={() => setSelectedId(item.id)}><img src={item.image} alt="" /><span><strong>{item.name}</strong><small>#{item.dex} · {item.types.join(' / ')}</small></span><ChevronRight size={17} /></button>)}</aside>
-      {pokemon ? <article className="dex-entry">
+      <aside className="result-list" aria-label="宝可梦目录"><div className="result-count">{results.length} 个结果</div>{results.map(item => <button key={item.id} type="button" className={selectedId === item.id ? 'active' : ''} onClick={() => setSelectedId(item.id)}><img src={item.image} alt="" loading="lazy" /><span><strong>{item.name}</strong><small>#{item.dex} · {item.types.join(' / ')}</small></span><ChevronRight size={17} /></button>)}</aside>
+      {pokemon ? <article className="dex-entry" aria-label={`${pokemon.name}资料`}>
         <header><img src={pokemon.image} alt={`宝可梦：${pokemon.name}`} /><div><small>全国图鉴 #{pokemon.dex}</small><h2>{pokemon.name}</h2><div className="type-row">{pokemon.types.map(type => <TypeBadge key={type} type={type} />)}</div></div><button className="button primary" type="button" onClick={() => onOpenDamage(pokemon)}>作为对手打开计算</button></header>
         <div className="dex-tabs"><button type="button" className={tab === 'overview' ? 'active' : ''} onClick={() => setTab('overview')}>概览</button><button type="button" className={tab === 'moves' ? 'active' : ''} onClick={() => setTab('moves')}>招式</button><button type="button" className={tab === 'forms' ? 'active' : ''} onClick={() => setTab('forms')}>形态</button></div>
         {tab === 'overview' && <>
