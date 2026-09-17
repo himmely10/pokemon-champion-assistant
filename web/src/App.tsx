@@ -32,6 +32,7 @@ function App() {
   const [ownId, setOwnId] = useState<string | null>(null)
   const [rivalId, setRivalId] = useState<string | null>(null)
   const [startupError, setStartupError] = useState('')
+  const [teamPending, setTeamPending] = useState(false)
 
   useEffect(() => {
     api.bootstrap().then(data => {
@@ -75,13 +76,20 @@ function App() {
     })
   }
 
+  const changePage = (next: PageId) => {
+    if (next === page) return
+    if (page === 'teams' && teamPending && !window.confirm('队伍页面有未保存的导入或编辑内容，确定离开吗？')) return
+    setTeamPending(false)
+    setPage(next)
+  }
+
   return (
     <div className={`${dark ? 'dark' : ''} ${reducedMotion ? 'reduce-motion' : ''}`}>
-      <AppShell page={page} onPageChange={setPage} dark={dark} onThemeToggle={toggleTheme} app={bootstrap?.app} online={Boolean(bootstrap)}>
+      <AppShell page={page} onPageChange={changePage} dark={dark} onThemeToggle={toggleTheme} app={bootstrap?.app} online={Boolean(bootstrap)}>
         {startupError && <div className="app-error"><strong>本地服务未就绪</strong><span>{startupError}</span><button className="button primary" type="button" onClick={() => window.location.reload()}>重新连接</button></div>}
         {!startupError && !bootstrap && <div className="app-loading"><span className="spinner" />正在读取本地资料与队伍…</div>}
         {bootstrap && page === 'battle' && <BattlePage teams={bootstrap.teams} selectedTeamId={selectedTeamId} onTeamChange={selectTeam} ownTeam={ownTeam} rivalTeam={rivalTeam} recognition={recognition} onRecognized={report => { setRecognition(report); const first = report.opponent.find(slot => slot.pokemon)?.pokemon; if (first) setRivalId(first.id) }} ownId={ownId} rivalId={rivalId} onOwnChange={setOwnId} onRivalChange={setRivalId} settings={bootstrap.settings} onOpenDamage={() => setPage('damage')} />}
-        {bootstrap && page === 'teams' && <TeamPage teams={bootstrap.teams} featured={bootstrap.featured} selectedTeamId={selectedTeamId} onSelectedTeam={setSelectedTeamId} onRefresh={refreshTeams} />}
+        {bootstrap && page === 'teams' && <TeamPage teams={bootstrap.teams} featured={bootstrap.featured} selectedTeamId={selectedTeamId} settings={bootstrap.settings} onSelectedTeam={setSelectedTeamId} onRefresh={refreshTeams} onPendingChange={setTeamPending} />}
         {bootstrap && page === 'damage' && ownTeam.length > 0 && rivalTeam.length > 0 && <DamagePage key={`${selectedTeamId}-${ownId}-${rivalId}`} teams={bootstrap.teams} selectedTeamId={selectedTeamId} onTeamChange={selectTeam} own={ownTeam.find(item => item.id === ownId) ?? ownTeam[0]} ownMember={selectedTeam?.members.find(item => item.identity === ownId)} ownTeam={ownTeam} onOwnChange={setOwnId} rival={rivalTeam.find(item => item.id === rivalId) ?? rivalTeam[0]} rivalTeam={rivalTeam} onRivalChange={setRivalId} />}
         {bootstrap && page === 'library' && <ReferencePage featured={bootstrap.featured} onOpenDamage={pokemon => { setRivalId(pokemon.id); setPage('damage') }} />}
         {bootstrap && page === 'settings' && <SettingsPage settings={bootstrap.settings} app={bootstrap.app} dark={dark} onThemeToggle={toggleTheme} reducedMotion={reducedMotion} onReducedMotion={() => setReducedMotion(value => { const next = !value; void api.saveSettings({ reduced_motion: next }).catch(() => undefined); return next })} onSettings={settings => setBootstrap(value => value ? { ...value, settings } : value)} />}

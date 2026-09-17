@@ -1,11 +1,16 @@
+import base64
 import http.client
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from io import BytesIO
 import json
 from threading import Thread
 
 import pytest
+from PIL import Image
 
 from champion_assistant import webapp
+from champion_assistant.capture.obs import ObsCapture
+from champion_assistant.teams import blank_member
 from champion_assistant.webapp import ApiError, WebServices, create_server, is_champion_lab_running
 
 
@@ -107,6 +112,19 @@ def test_team_crud_and_quick_damage_use_saved_member(services):
     assert all(item["spread_usage"] is not None for item in result["own_scenarios"][3:])
     assert any(move["status"] == "ok" and move["damage"][1] > 0 for move in result["own"]["moves"])
     assert services.delete_team(saved) == {"deleted": True}
+
+
+def test_web_save_accepts_legacy_desktop_team_with_null_import_source(tmp_path):
+    services = WebServices(teams_path=tmp_path / 'teams.sqlite3', settings_path=tmp_path / 'settings.json')
+    identity = services.search_pokemon('', limit=1)[0]['id']
+    legacy = services.store.save({
+        'id': '', 'revision': 0, 'name': '旧桌面队伍', 'registration': 'partial',
+        'members': [blank_member(identity)], 'import_source': None,
+    })
+    edited = services.save_team({**legacy, 'name': '网页编辑的旧队伍'})
+    assert edited['id'] == legacy['id']
+    assert edited['revision'] == legacy['revision'] + 1
+    assert edited['name'] == '网页编辑的旧队伍'
 
 
 def test_api_rejects_mismatched_member_and_non_loopback_bind(services):
@@ -226,6 +244,183 @@ def test_http_host_serves_spa_and_blocks_foreign_origin(services, tmp_path):
         response = connection.getresponse()
         assert response.status == 403
         assert "非本机" in json.loads(response.read())["error"]
+        connection.close()
+    finally:
+        server.shutdown()
+        server.server_close()
+        thread.join(timeout=3)
+
+
+def _team_import_test_image():
+    output = BytesIO()
+    Image.new('RGB', (32, 32), 'purple').save(output, format='PNG')
+    return output.getvalue()
+
+
+def _fake_team_import_page(services, mode):
+    ids = [services.rules.identity(record) for record in services.catalog.records[:6]]
+    return {
+        'mode': mode, 'team_code': 'FJR0CNH887', 'code_evidence': {'text': 'ID FJR0CNH887', 'score': .95},
+        'members': [
+            {'slot': slot, 'member': blank_member(identity), 'evidence': {'name': {'text': 'test', 'score': .94}}, 'box': [1, 2, 3, 4]}
+            for slot, identity in enumerate(ids, 1)
+        ],
+        'source': {'filename': 'secret-local-name.png', 'sha256': 'a' * 64, 'size': [32, 32]},
+    }
+
+
+def test_team_import_review_is_isolated_and_sanitized(tmp_path, monkeypatch):
+    services = WebServices(teams_path=tmp_path / 'teams.sqlite3', settings_path=tmp_path / 'settings.json')
+    existing_member = blank_member(services.rules.identity(services.catalog.records[6]))
+    existing = services.save_team({'id': '', 'revision': 0, 'name': '旧队伍',
+                                   'registration': 'partial', 'members': [existing_member]})
+    monkeypatch.setattr('champion_assistant.team_import.shared_local_ocr', lambda: object())
+    monkeypatch.setattr(webapp.ScreenshotImporter, 'read_page',
+                        lambda self, path, mode: _fake_team_import_page(services, mode))
+    image = _team_import_test_image()
+    ability = services.team_import_recognize(image, 'ability')
+    status = services.team_import_recognize(image, 'status')
+    assert 'filename' not in ability['page']['source']
+    assert services.teams() == [existing]
+    ids = [item['member']['identity'] for item in ability['page']['members']]
+    reviews = {'code': 'FJR0CNH887', 'identities': ids}
+    request = {
+        'ability_handle': ability['handle'], 'status_handle': status['handle'],
+        'ability_review': reviews, 'status_review': reviews,
+    }
+    with pytest.raises(ApiError, match='复核'):
+        services.team_import_combine({**request, 'ability_review': {**reviews, 'source': {'password': 'secret'}}})
+    with pytest.raises(ApiError, match='一致'):
+        services.team_import_combine({**request, 'status_review': {**reviews, 'code': 'ABCDEFGHIJ'}})
+    with pytest.raises(ApiError, match='重复'):
+        services.team_import_combine({**request, 'ability_review': {**reviews, 'identities': ids[:5] + [ids[0]]}})
+    assert services.teams() == [existing]
+    result = services.team_import_combine(request)
+    assert result['draft']['id'] == '' and result['draft']['revision'] == 0
+    assert len(result['draft']['members']) == 6
+    assert 'secret-local-name' not in json.dumps(result)
+    assert services.teams() == [existing]
+    poisoned = {**result['draft'], 'screenshot': 'data:image/png;base64,EVIL', 'password': 'top-secret', 'import_source': {
+        **result['draft']['import_source'], 'password': 'never-store', 'data_url': 'data:image/png;base64,AAAA',
+        'ability': {**result['draft']['import_source']['ability'], 'source': {
+            **result['draft']['import_source']['ability']['source'], 'filename': 'hidden.png'}}}}
+    poisoned['members'][0]['screenshot'] = 'data:image/png;base64,MEMBER'
+    saved = services.save_team(poisoned)
+    persisted = json.dumps(saved, ensure_ascii=False)
+    assert all(secret not in persisted for secret in ('never-store', 'top-secret', 'data:image', 'hidden.png'))
+    assert len(services.teams()) == 2
+    assert services.teams()[0] == existing
+
+
+def test_team_import_identity_change_clears_dependent_build(tmp_path, monkeypatch):
+    services = WebServices(teams_path=tmp_path / 'teams.sqlite3', settings_path=tmp_path / 'settings.json')
+    monkeypatch.setattr('champion_assistant.team_import.shared_local_ocr', lambda: object())
+    def read_page(self, path, mode):
+        page = _fake_team_import_page(services, mode)
+        if mode == 'ability':
+            first = page['members'][0]['member']
+            first['ability'] = services.rules.ability_keys(first['identity'])[0] if services.rules.ability_keys(first['identity']) else None
+            first['moves'] = ['old-move'] * 4
+        return page
+    monkeypatch.setattr(webapp.ScreenshotImporter, 'read_page', read_page)
+    ability = services.team_import_recognize(_team_import_test_image(), 'ability')
+    status = services.team_import_recognize(_team_import_test_image(), 'status')
+    ids = [item['member']['identity'] for item in ability['page']['members']]
+    swapped = [ids[-1], *ids[1:-1], ids[0]]
+    result = services.team_import_combine({
+        'ability_handle': ability['handle'], 'status_handle': status['handle'],
+        'ability_review': {'code': 'FJR0CNH887', 'identities': swapped},
+        'status_review': {'code': 'FJR0CNH887', 'identities': swapped},
+    })
+    assert result['draft']['members'][0]['ability'] is None
+    assert result['draft']['members'][0]['moves'] == [None] * 4
+    assert result['draft']['import_source']['ability']['members'][0]['identity_corrected'] is True
+
+
+def test_team_import_rejects_missing_stale_and_oversized_inputs(tmp_path, monkeypatch):
+    services = WebServices(teams_path=tmp_path / 'teams.sqlite3', settings_path=tmp_path / 'settings.json')
+    monkeypatch.setattr('champion_assistant.team_import.shared_local_ocr', lambda: object())
+    monkeypatch.setattr(webapp.ScreenshotImporter, 'read_page',
+                        lambda self, path, mode: _fake_team_import_page(services, mode))
+    with pytest.raises(ApiError, match='25 MB'):
+        services.team_import_recognize(b'', 'ability')
+    with pytest.raises(ApiError, match='无法读取'):
+        services.team_import_recognize(b'not an image', 'ability')
+    oversized = BytesIO()
+    Image.new('RGB', (6000, 6000), 'purple').save(oversized, format='PNG')
+    with pytest.raises(ApiError, match='3000 万'):
+        services.team_import_recognize(oversized.getvalue(), 'ability')
+    ability = services.team_import_recognize(_team_import_test_image(), 'ability')
+    status = services.team_import_recognize(_team_import_test_image(), 'status')
+    ids = [item['member']['identity'] for item in ability['page']['members']]
+    request = {'ability_handle': ability['handle'], 'status_handle': status['handle'],
+               'ability_review': {'code': 'FJR0CNH887', 'identities': ids},
+               'status_review': {'code': 'FJR0CNH887', 'identities': ids}}
+    with services._team_import_lock:
+        old = services._team_import_evidence[status['handle']]
+        services._team_import_evidence[status['handle']] = (old[0] - webapp.TEAM_IMPORT_TTL - 1, old[1], old[2])
+    with pytest.raises(ApiError, match='过期'):
+        services.team_import_combine(request)
+
+
+def test_team_import_obs_capture_reuses_password_without_echo(tmp_path):
+    image = _team_import_test_image()
+    data_url = 'data:image/png;base64,' + base64.b64encode(image).decode('ascii')
+    class Obs:
+        def screenshot_data_url(self, settings):
+            assert settings['password'] == 'obs-private-password'
+            assert settings['source'] == 'Switch'
+            return data_url
+    services = WebServices(teams_path=tmp_path / 'teams.sqlite3', settings_path=tmp_path / 'settings.json', obs=Obs())
+    services.obs_password = 'obs-private-password'
+    result = services.team_import_obs_capture({'source': 'Switch'})
+    assert result == {'data_url': data_url}
+    assert 'obs-private-password' not in json.dumps(result)
+
+
+def test_obs_raw_screenshot_uses_existing_protocol_without_changing_old_capture():
+    image = _team_import_test_image()
+    data_url = 'data:image/png;base64,' + base64.b64encode(image).decode('ascii')
+    calls = []
+    class Client:
+        def __init__(self, **settings):
+            assert settings['password'] == 'private'
+        def send(self, name, payload=None, *, raw=False):
+            calls.append((name, payload))
+            if name == 'GetVersion':
+                return {'availableRequests': ['GetSourceScreenshot']}
+            return {'imageData': data_url}
+        def disconnect(self):
+            pass
+    obs = ObsCapture(factory=Client)
+    settings = {'host': '127.0.0.1', 'port': 4455, 'password': 'private', 'source': 'Switch'}
+    assert obs.screenshot_data_url(settings) == data_url
+    assert obs.screenshot(settings).size == (32, 32)
+    assert calls[1] == ('GetSourceScreenshot', {'sourceName': 'Switch', 'imageFormat': 'png'})
+
+
+def test_team_import_http_route_rejects_foreign_origin_and_returns_no_store(tmp_path, monkeypatch):
+    services = WebServices(teams_path=tmp_path / 'teams.sqlite3', settings_path=tmp_path / 'settings.json')
+    monkeypatch.setattr('champion_assistant.team_import.shared_local_ocr', lambda: object())
+    monkeypatch.setattr(webapp.ScreenshotImporter, 'read_page',
+                        lambda self, path, mode: _fake_team_import_page(services, mode))
+    server = create_server(port=0, static_root=tmp_path, services=services)
+    thread = Thread(target=server.serve_forever, daemon=True)
+    thread.start()
+    try:
+        connection = http.client.HTTPConnection('127.0.0.1', server.server_port, timeout=5)
+        body = _team_import_test_image()
+        path = '/api/team-import/recognize?mode=ability'
+        connection.request('POST', path, body, {'Origin': 'https://example.com'})
+        response = connection.getresponse()
+        assert response.status == 403
+        response.read()
+        connection.request('POST', path, body, {'Origin': f'http://127.0.0.1:{server.server_port}'})
+        response = connection.getresponse()
+        assert response.status == 200
+        assert response.getheader('Cache-Control') == 'no-store'
+        result = json.loads(response.read())
+        assert result['page']['mode'] == 'ability' and len(result['handle']) == 32
         connection.close()
     finally:
         server.shutdown()

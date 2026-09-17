@@ -1,10 +1,13 @@
-import type { AppSettings, Bootstrap, DamageOptions, DamageRequest, DamageResponse, Pokemon, PokemonDetail, RecognitionReport, Team, TeamOptions } from './model'
+import type { AppSettings, Bootstrap, DamageOptions, DamageRequest, DamageResponse, Pokemon, PokemonDetail, RecognitionReport, Team, TeamOptions, TeamImportRecognition, TeamImportCombineRequest, TeamImportCombineResponse } from './model'
 
-export class ApiError extends Error {}
+export class ApiError extends Error {
+  readonly status: number
+  constructor(message: string, status: number) { super(message); this.status = status }
+}
 
 async function responseJson<T>(response: Response): Promise<T> {
   const body = await response.json().catch(() => ({})) as { error?: string }
-  if (!response.ok) throw new ApiError(body.error ?? `本地接口请求失败（${response.status}）`)
+  if (!response.ok) throw new ApiError(body.error ?? `本地接口请求失败（${response.status}）`, response.status)
   return body as T
 }
 
@@ -48,4 +51,9 @@ export const api = {
   recognize: async (file: File) => responseJson<RecognitionReport>(await fetch('/api/recognize', {
     method: 'POST', headers: { 'Content-Type': file.type || 'application/octet-stream', Accept: 'application/json' }, body: file,
   })),
+  teamImportRecognize: async (image: Blob, mode: 'ability' | 'status') => responseJson<TeamImportRecognition>(await fetch(`/api/team-import/recognize?mode=${mode}`, {
+    method: 'POST', headers: { 'Content-Type': image.type || 'application/octet-stream', Accept: 'application/json' }, body: image,
+  })),
+  teamImportObsCapture: (settings: Partial<AppSettings> & { password?: string }) => postJson<{ data_url: string }>('/api/team-import/obs-capture', settings),
+  teamImportCombine: (payload: TeamImportCombineRequest) => postJson<TeamImportCombineResponse>('/api/team-import/combine', payload),
 }

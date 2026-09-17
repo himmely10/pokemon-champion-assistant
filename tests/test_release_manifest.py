@@ -1,11 +1,13 @@
 """Release resource integrity checks without packaging or image inference."""
 import copy
+import json
 from pathlib import Path
 
 import pytest
 
 from scripts.build_windows import validate_build_manifest, validate_web_dist
 from champion_assistant.data.storage import digest, save_json
+from champion_assistant.version import __version__
 
 
 @pytest.fixture
@@ -82,3 +84,12 @@ def test_installer_exposes_one_product_entry_point():
     assert 'Name: "{group}\\{#AppName}"' in installer
     assert 'Champion Lab Web' not in installer
     assert 'ChampionWorker.exe' not in installer
+
+
+def test_candidate_version_matches_frontend_and_installer():
+    root = Path(__file__).parents[1]
+    frontend = json.loads((root / 'web/package.json').read_text(encoding='utf-8'))
+    installer = (root / 'packaging/installer.iss').read_text(encoding='utf-8')
+    assert __version__ == '0.4.0'
+    assert frontend['version'] == __version__
+    assert f'#define AppVersion "{__version__}"' in installer

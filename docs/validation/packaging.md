@@ -55,6 +55,22 @@ runner 自带开发工具，因此第 5 步验证依赖隔离，仍不能代替�
 
 只要上述门禁缺少证据，发行记录继续标 `candidate`、`clean_windows_vm=not_verified`。公开地址与签名没有实际配置前，保留 `stable_channel=not_deployed`、`code_signing=not_configured`。
 
+## v0.4.0 队伍截图导入候选验收
+
+本节记录最终 v0.4.0 候选的本机证据；没有实际完成的门禁仍标待验证，不沿用 v0.3.0 安装器摘要。
+
+| 门禁 | 必须保存的 v0.4.0 证据 | 当前状态 |
+|---|---|---|
+| 源码与前端回归 | `pytest` 356/356、Vitest 16/16、lint、Vite build | 本机通过 |
+| 冻结资源与自检 | 冻结 `_internal/build-manifest.json` 版本 0.4.0；`artifacts/release/v04-frozen-self-check.json` 包含识别、OCR 与伤害 | 本机通过 |
+| 队伍截图导入 | 安装后 HTTP 接口以本地能力／状态图各识别六槽、合并未保存草稿；前后端测试覆盖纠错／冲突／显式保存；真实 OBS 采集未重测 | 部分通过，OBS 待验证 |
+| v0.3.0 覆盖升级 | 从 v0.3.0 隔离样本复制个人队伍库，`PRAGMA integrity_check=ok`，记录和 revision 一致；设置与 DPAPI 凭据样本缺失 | 部分通过，凭据待验证 |
+| 安装／卸载与现有功能 | 隔离安装与卸载成功；安装后的自检包含对手识别、普通／Mega 伤害；单窗口人工操作未重测 | 部分通过 |
+| 候选安装包 | `PokemonChampionAssistant-0.4.0-windows-x64-Setup.exe`，354,834,381 字节，SHA-256 `0338D6C41B272F86AE88E299BA8ECC35989C1A4D00F0C08D682C3FAC898764F2` | 本地已生成，GitHub 上传状态另记 |
+| 独立发布门禁 | 干净 Windows 11 VM、签名、稳定渠道 | 未验证／未配置 |
+
+只有本地可用门禁都通过且无阻断性代码复审发现时，才可上传 v0.4.0 预发布安装包。当前文档没有宣称 v0.4.0 已完成构建、升级或真实 OBS 验收。
+
 
 ## 2026-09-13 本地安装演练进展
 

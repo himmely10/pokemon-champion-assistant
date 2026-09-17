@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from difflib import SequenceMatcher
+from copy import deepcopy
 from hashlib import sha256
 from pathlib import Path
 import re
@@ -297,6 +298,35 @@ class ScreenshotImporter:
         self.rules.validate(draft)
         return {'draft': draft, 'warnings': warnings,
                 'notice': 'OCR 草稿：请核对性别形态、性格、数字与招式后保存。面板数值只保留为来源证据。'}
+
+    def review_page(self, page, review):
+        """Apply only human-reviewed code and identity corrections to OCR evidence."""
+        if not isinstance(review, dict) or set(review) != {'code', 'identities'}:
+            raise ValueError('请只提交队伍码和六个槽位身份的复核结果。')
+        code, identities = review['code'], review['identities']
+        if not isinstance(code, str) or not re.fullmatch(r'[A-Z0-9]{10}', code):
+            raise ValueError('队伍码必须是十位大写字母或数字。')
+        if not isinstance(identities, list) or len(identities) != 6:
+            raise ValueError('请复核六个槽位的宝可梦身份。')
+        members = page.get('members')
+        if not isinstance(members, list) or len(members) != 6 or [m.get('slot') for m in members] != list(range(1, 7)):
+            raise ValueError('截图槽位不完整或顺序不正确。')
+        if any(not isinstance(identity, str) or not identity or self.rules.record(identity) is None
+               for identity in identities) or len(set(identities)) != 6:
+            raise ValueError('宝可梦身份无效或重复，请逐槽核对。')
+        result = deepcopy(page)
+        result['team_code'] = code
+        result['reviewed'] = True
+        result['code_corrected'] = code != page.get('team_code')
+        for item, identity in zip(result['members'], identities):
+            member = item['member']
+            previous = member.get('identity')
+            item['identity_corrected'] = identity != previous
+            member['identity'] = identity
+            if identity != previous and result['mode'] == 'ability':
+                member['ability'] = None
+                member['moves'] = [None] * 4
+        return result
 
     def run(self, ability_path, status_path, progress=lambda text: None):
         return self.combine(self.read_page(ability_path, 'ability', progress), self.read_page(status_path, 'status', progress))

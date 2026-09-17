@@ -6,6 +6,8 @@ work continues to run through the existing Python domain services.
 from __future__ import annotations
 
 from copy import deepcopy
+import base64
+import binascii
 from http import HTTPStatus
 from http.client import HTTPConnection, HTTPException
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -14,10 +16,14 @@ import argparse
 import json
 import mimetypes
 from pathlib import Path
+import re
 import socket
 import sys
+import tempfile
 from threading import Lock, Timer
+from time import monotonic
 from urllib.parse import parse_qs, unquote, urlsplit
+from uuid import uuid4
 import webbrowser
 
 from PIL import Image
@@ -33,6 +39,7 @@ from .data.storage import TYPE_NAMES, read_json, save_json
 from .paths import app_paths
 from .recognition import ALGORITHM_VERSION, OpponentRecognizer
 from .speed import SPEED_TIERS, reference_speed, speed_lines
+from .team_import import ScreenshotImporter
 from .teams import STATS, TeamRules, TeamStore
 from .type_matchups import type_matchups
 from .version import __version__
@@ -40,6 +47,8 @@ from .version import __version__
 DEFAULT_PORT = 32145
 MAX_JSON_BYTES = 2_000_000
 MAX_IMAGE_BYTES = 25_000_000
+TEAM_IMPORT_TTL = 30 * 60
+TEAM_IMPORT_MAX_HANDLES = 64
 CATEGORY_NAMES = {"physical": "物理", "special": "特殊", "status": "变化"}
 STATUS_OPTIONS = (
     ("", "无异常"), ("brn", "灼伤"), ("par", "麻痹"), ("psn", "中毒"),
@@ -88,6 +97,8 @@ class WebServices:
         self._recognizer = None
         self._recognizer_token = None
         self._recognition_lock = Lock()
+        self._team_import_lock = Lock()
+        self._team_import_evidence = {}
 
     def _settings(self) -> dict:
         try:
@@ -312,15 +323,61 @@ class WebServices:
     def save_team(self, payload: dict) -> dict:
         if not isinstance(payload, dict):
             raise ApiError("队伍格式无效。")
-        cleaned = deepcopy(payload)
+        # TeamStore preserves unknown keys verbatim; constrain this API boundary
+        # so a crafted client cannot embed screenshots or credentials elsewhere.
+        cleaned = {key: deepcopy(payload[key]) for key in
+                   ('id', 'revision', 'name', 'registration', 'members', 'import_source')
+                   if key in payload}
+        if cleaned.get('import_source') is None:
+            cleaned.pop('import_source', None)
+        else:
+            cleaned['import_source'] = self._clean_import_source(cleaned['import_source'])
         for member in cleaned.get("members", []):
             if isinstance(member, dict):
-                for key in ("pokemon", "nature_name", "ability_name", "item_name", "move_names"):
-                    member.pop(key, None)
+                for key in tuple(member):
+                    if key not in ('identity', 'points', 'nature', 'ability', 'item', 'moves'):
+                        member.pop(key, None)
         try:
             return self.team_view(self.store.save(cleaned))
         except (ValueError, TypeError, KeyError) as exc:
             raise ApiError(str(exc)) from exc
+
+    @staticmethod
+    def _clean_import_source(source):
+        """Do not persist client-controlled paths, image bytes, or OBS credentials."""
+        if not isinstance(source, dict):
+            raise ApiError('截图来源信息无效。')
+        code = source.get('team_code')
+        if not isinstance(code, str) or not re.fullmatch(r'[A-Z0-9]{10}', code):
+            raise ApiError('截图来源的队伍码无效。')
+        clean = {'method': 'local_ocr', 'team_code': code, 'review_required': True}
+        for mode in ('ability', 'status'):
+            page = source.get(mode)
+            if not isinstance(page, dict) or page.get('mode') != mode:
+                raise ApiError('截图来源页信息无效。')
+            image = page.get('source')
+            if not isinstance(image, dict) or not isinstance(image.get('sha256'), str) or not re.fullmatch(r'[a-f0-9]{64}', image['sha256']):
+                raise ApiError('截图来源校验值无效。')
+            size = image.get('size')
+            if (not isinstance(size, list) or len(size) != 2 or
+                    any(type(n) is not int or n <= 0 or n > 30_000 for n in size) or
+                    size[0] * size[1] > 30_000_000):
+                raise ApiError('截图来源尺寸无效。')
+            members = page.get('members')
+            if not isinstance(members, list) or len(members) != 6:
+                raise ApiError('截图来源槽位无效。')
+            corrections = []
+            for index, item in enumerate(members, 1):
+                if not isinstance(item, dict) or item.get('slot') != index:
+                    raise ApiError('截图来源槽位无效。')
+                corrections.append({'slot': index, 'identity_corrected': item.get('identity_corrected') is True})
+            clean[mode] = {
+                'mode': mode,
+                'source': {'sha256': image['sha256'], 'size': size},
+                'code_corrected': page.get('code_corrected') is True,
+                'members': corrections,
+            }
+        return clean
 
     def delete_team(self, payload: dict) -> dict:
         if not isinstance(payload, dict):
@@ -413,6 +470,100 @@ class WebServices:
             return self.recognize_image(self.obs.screenshot(self._obs_settings(payload)))
         except ValueError as exc:
             raise ApiError(str(exc)) from exc
+
+    @staticmethod
+    def _team_import_image(content: bytes, *, expected_format: str | None = None) -> None:
+        if not content or len(content) > MAX_IMAGE_BYTES:
+            raise ApiError('截图为空或超过 25 MB。', HTTPStatus.REQUEST_ENTITY_TOO_LARGE)
+        try:
+            with Image.open(BytesIO(content)) as image:
+                if image.format not in ('PNG', 'JPEG', 'WEBP', 'BMP'):
+                    raise ApiError('请使用 PNG、JPG、WebP 或 BMP 截图。')
+                if expected_format and image.format != expected_format:
+                    raise ApiError('OBS 未返回有效的 PNG 截图。')
+                if image.width * image.height > 30_000_000:
+                    raise ApiError('截图像素过大，请限制在 3000 万像素以内。')
+                image.verify()
+        except ApiError:
+            raise
+        except (OSError, ValueError) as exc:
+            raise ApiError('无法读取截图，请使用 PNG、JPG、WebP 或 BMP。') from exc
+
+    def team_import_recognize(self, content: bytes, mode: str) -> dict:
+        if mode not in ('ability', 'status'):
+            raise ApiError('截图类型必须为能力或状态。')
+        self._team_import_image(content)
+        token = self.snapshots.candidate().token
+        if token != self.snapshot.token:
+            raise ApiError('资料已更新，请重启工作台后重新识别截图。', HTTPStatus.CONFLICT)
+        with tempfile.TemporaryDirectory(prefix='champion-team-import-') as directory:
+            path = Path(directory) / (uuid4().hex + '.png')
+            path.write_bytes(content)
+            try:
+                page = ScreenshotImporter(self.rules).read_page(path, mode)
+            except ValueError as exc:
+                raise ApiError(str(exc)) from exc
+        page['source'].pop('filename', None)
+        handle = uuid4().hex
+        now = monotonic()
+        with self._team_import_lock:
+            self._team_import_evidence = {
+                key: entry for key, entry in self._team_import_evidence.items()
+                if now - entry[0] < TEAM_IMPORT_TTL
+            }
+            while len(self._team_import_evidence) >= TEAM_IMPORT_MAX_HANDLES:
+                oldest = min(self._team_import_evidence, key=lambda key: self._team_import_evidence[key][0])
+                self._team_import_evidence.pop(oldest)
+            self._team_import_evidence[handle] = (now, token, deepcopy(page))
+        return {'handle': handle, 'page': page}
+
+    def team_import_obs_capture(self, payload: dict) -> dict:
+        try:
+            data_url = self.obs.screenshot_data_url(self._obs_settings(payload))
+            prefix = 'data:image/png;base64,'
+            if not isinstance(data_url, str) or not data_url.startswith(prefix) or len(data_url) > 33_333_400:
+                raise ApiError('OBS 截图为空或超过 25 MB。', HTTPStatus.REQUEST_ENTITY_TOO_LARGE)
+            try:
+                content = base64.b64decode(data_url[len(prefix):], validate=True)
+            except (ValueError, binascii.Error) as exc:
+                raise ApiError('OBS 截图格式无效。') from exc
+            self._team_import_image(content, expected_format='PNG')
+            return {'data_url': data_url}
+        except ValueError as exc:
+            if isinstance(exc, ApiError):
+                raise
+            raise ApiError(str(exc)) from exc
+
+    def team_import_combine(self, payload: dict) -> dict:
+        if not isinstance(payload, dict) or set(payload) != {
+                'ability_handle', 'status_handle', 'ability_review', 'status_review'}:
+            raise ApiError('请提交两页截图及其复核信息。')
+        handles = (payload['ability_handle'], payload['status_handle'])
+        if any(not isinstance(handle, str) or len(handle) != 32 for handle in handles) or handles[0] == handles[1]:
+            raise ApiError('截图复核已过期，请重新识别。')
+        now = monotonic()
+        with self._team_import_lock:
+            entries = [self._team_import_evidence.get(handle) for handle in handles]
+        if any(entry is None or now - entry[0] >= TEAM_IMPORT_TTL for entry in entries):
+            raise ApiError('截图复核已过期，请重新识别。', HTTPStatus.CONFLICT)
+        current = self.snapshots.candidate().token
+        if entries[0][1] != entries[1][1] or entries[0][1] != current:
+            raise ApiError('资料已更新，请重新识别两页截图。', HTTPStatus.CONFLICT)
+        ability, status = deepcopy(entries[0][2]), deepcopy(entries[1][2])
+        if ability.get('mode') != 'ability' or status.get('mode') != 'status':
+            raise ApiError('需要一张能力页和一张状态页。')
+        importer = ScreenshotImporter(self.rules)
+        try:
+            ability = importer.review_page(ability, payload['ability_review'])
+            status = importer.review_page(status, payload['status_review'])
+            result = importer.combine(ability, status)
+        except (ValueError, TypeError, KeyError) as exc:
+            raise ApiError(str(exc)) from exc
+        result['draft']['id'] = ''
+        result['draft']['revision'] = 0
+        result['draft']['import_source'] = self._clean_import_source(result['draft']['import_source'])
+        result['draft'] = self.team_view(result['draft'])
+        return result
 
     @staticmethod
     def _verdict(minimum: float, maximum: float) -> str:
@@ -776,10 +927,16 @@ class ChampionRequestHandler(BaseHTTPRequestHandler):
     def do_POST(self):
         try:
             self._check_origin()
-            route = urlsplit(self.path).path
+            parsed = urlsplit(self.path)
+            route = parsed.path
             if route == "/api/recognize":
                 content = self.rfile.read(self._length(MAX_IMAGE_BYTES))
                 return self._json(self.services.recognize_bytes(content))
+            if route == "/api/team-import/recognize":
+                query = parse_qs(parsed.query)
+                mode = query.get('mode', [''])[0]
+                content = self.rfile.read(self._length(MAX_IMAGE_BYTES))
+                return self._json(self.services.team_import_recognize(content, mode))
             payload = self._json_body()
             if route == "/api/settings":
                 result = self.services.update_settings(payload)
@@ -791,6 +948,10 @@ class ChampionRequestHandler(BaseHTTPRequestHandler):
                 result = self.services.obs_sources(payload)
             elif route == "/api/obs/capture":
                 result = self.services.obs_capture(payload)
+            elif route == "/api/team-import/obs-capture":
+                result = self.services.team_import_obs_capture(payload)
+            elif route == "/api/team-import/combine":
+                result = self.services.team_import_combine(payload)
             elif route == "/api/damage/quick":
                 result = self.services.quick_damage(payload)
             else:

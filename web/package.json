@@ -1,12 +1,13 @@
 {
   "name": "champion-lab-web",
   "private": true,
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "oxlint --no-ignore --react-plugin --jsx-a11y-plugin src/App.tsx src/api.ts src/main.tsx src/model.ts src/components/AppShell.tsx src/components/BattleComponents.tsx src/pages/BattlePage.tsx src/pages/TeamPage.tsx src/pages/DamagePage.tsx src/pages/ReferencePage.tsx src/pages/SettingsPage.tsx",
+    "lint": "oxlint --no-ignore --react-plugin --jsx-a11y-plugin src/App.tsx src/api.ts src/main.tsx src/model.ts src/components/AppShell.tsx src/components/BattleComponents.tsx src/pages/BattlePage.tsx src/pages/TeamPage.tsx src/pages/TeamImportPanel.tsx src/pages/DamagePage.tsx src/pages/ReferencePage.tsx src/pages/SettingsPage.tsx",
+    "test": "vitest run",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,15 +16,19 @@
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
     "autoprefixer": "^10.6.0",
+    "jsdom": "^30.0.1",
     "oxlint": "^1.81.0",
     "postcss": "^8.5.28",
     "tailwindcss": "3.4.1",
     "typescript": "~6.0.2",
-    "vite": "^8.3.0"
+    "vite": "^8.3.0",
+    "vitest": "^5.0.1"
   }
 }

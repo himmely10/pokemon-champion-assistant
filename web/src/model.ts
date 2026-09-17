@@ -84,7 +84,36 @@ export type Team = {
   members: TeamMember[]
   schema_version?: number
   dataset_id?: string
+  import_source?: Record<string, unknown>
 }
+
+export type TeamImportEvidence = {
+  text: string
+  score: number
+  suggestions?: string[]
+  warning?: string
+}
+
+export type TeamImportPage = {
+  mode: 'ability' | 'status'
+  team_code: string | null
+  code_evidence: TeamImportEvidence
+  members: Array<{
+    slot: number
+    member: { identity: string | null }
+    evidence: { name: TeamImportEvidence; warning?: string }
+  }>
+  source: { sha256: string; size: number[] }
+}
+
+export type TeamImportRecognition = { handle: string; page: TeamImportPage }
+export type TeamImportCombineRequest = {
+  ability_handle: string
+  status_handle: string
+  ability_review: { code: string; identities: string[] }
+  status_review: { code: string; identities: string[] }
+}
+export type TeamImportCombineResponse = { draft: Team; warnings: string[]; notice: string }
 
 export type AppSettings = {
   host: string

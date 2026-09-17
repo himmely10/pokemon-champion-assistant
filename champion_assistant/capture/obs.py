@@ -131,3 +131,18 @@ class ObsCapture:
             data = client.send("GetSourceScreenshot", {"sourceName": source, "imageFormat": "png"}, raw=True)
             return decode_screenshot(data.get("imageData"))
         return self._execute(settings, operation)
+
+    def screenshot_data_url(self, settings):
+        """Return the original OBS PNG for the separate team-import preview path."""
+        source = settings.get("source", "").strip()
+        if not source:
+            raise CaptureError("请先连接 OBS 并选择 Switch 采集源。")
+
+        def operation(client, version):
+            data = client.send("GetSourceScreenshot", {"sourceName": source, "imageFormat": "png"}, raw=True)
+            value = data.get("imageData")
+            if not isinstance(value, str) or not value.startswith("data:image/png;base64,"):
+                raise CaptureError("OBS 未返回有效的 PNG 截图。")
+            return value
+
+        return self._execute(settings, operation)

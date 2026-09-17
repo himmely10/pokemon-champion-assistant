@@ -49,7 +49,7 @@ CI 顺序：恢复上次有效构建缓存 → 隔离的维护者资料目录 �
 
 ## 程序安装发行门禁
 
-程序发行与资料 ZIP 分开：安装包包含 Python、Qt、Node 等必要运行依赖；资料包不能更新可执行代码。Setup.exe 的最终构建、签名和干净 Windows 安装／升级验证由 U10 完成。
+程序发行与资料 ZIP 分开：安装包包含 Python、Qt、Node 等必要运行依赖；资料包不能更新可执行代码。v0.4.0 的候选构建与本地安装／升级演练须完成后才能发布候选；代码签名和干净 Windows 11 安装／升级仍是独立门禁。
 
 正式宣布可发布前，需要在无开发环境的 Windows 11 x64 检查：首次启动、图片识别、队伍保存、双向伤害、OBS 引导、离线资料导入，以及升级后队伍／设置仍在。开发机或临时目录中的导入成功不能替代这项验证。安装和暂存路径还需覆盖长路径；本地构建器用较短的系统暂存路径避免不必要的目录嵌套。
 
@@ -65,6 +65,6 @@ CI 顺序：恢复上次有效构建缓存 → 隔离的维护者资料目录 �
 .\artifacts\dist\PokemonChampionAssistant\ChampionLabWeb.exe
 ```
 
-`--self-check` 支持 `--image`、成对的 `--ability`／`--status` 参数；对个人队伍库执行诊断时，还需 `--exercise-user-store` 并设置隔离的 `CHAMPION_USER_DIR`。这些诊断不应指向真实用户目录。`ChampionLabWeb.exe` 会自动打开浏览器，关闭其命令窗口即停止本地服务。Setup.exe 使用 `packaging/installer.iss` 编译；安装向导当前为英文，应用界面为简体中文。
+`--self-check` 支持 `--image`、成对的 `--ability`／`--status` 参数；对个人队伍库执行诊断时，还需 `--exercise-user-store` 并设置隔离的 `CHAMPION_USER_DIR`。这些诊断不应指向真实用户目录。`ChampionLabWeb.exe` 会自动打开浏览器，关闭其命令窗口即停止本地服务。用户应通过 `PokemonChampionAssistant.exe` 打开单窗口桌面程序；`ChampionWorker.exe` 是内部工具，不是产品入口。Setup.exe 使用 `packaging/installer.iss` 编译；安装向导当前为英文，应用界面为简体中文。
 
-证据产物包括 `release-candidate.json`（安装器摘要与状态）、`build-manifest.json`（资源摘要）、`model-sources.json`（官方模型来源与哈希）、`frozen-self-check.json`（实际冻结运行结果）。当前仍标记候选：**干净 Windows 11 VM 未验证，在线稳定渠道未部署，发行签名未配置**。验证范围和待完成门禁见 [Windows 打包验证记录](validation/packaging.md)。
+证据产物包括 `release-candidate.json`（安装器摘要与状态）、`build-manifest.json`（资源摘要）、`model-sources.json`（官方模型来源与哈希）、`frozen-self-check.json`（实际冻结运行结果）。v0.4.0 还须单独记录从 v0.3.0 升级后的队伍、设置和 OBS 凭据完整性，以及安装后的双页队伍截图导入与显式保存；本地构建通过不能代替升级验收。当前仍标记候选：**干净 Windows 11 VM 未验证，在线稳定渠道未部署，发行签名未配置**。验证范围和待完成门禁见 [Windows 打包验证记录](validation/packaging.md)及 [v0.4.0 候选说明](releases/v0.4.0.md)。
