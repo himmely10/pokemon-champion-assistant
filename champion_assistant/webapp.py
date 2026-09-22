@@ -588,6 +588,18 @@ class WebServices:
         return "需要多次攻击"
 
     @staticmethod
+    def _ko_chance(rolls, current_hp) -> float | None:
+        """Return the conditional-on-hit KO chance represented by damage rolls."""
+        if not isinstance(rolls, list) or not rolls:
+            return None
+        if not isinstance(current_hp, (int, float)) or isinstance(current_hp, bool):
+            return None
+        if any(not isinstance(value, (int, float)) or isinstance(value, bool) for value in rolls):
+            return None
+        knockouts = sum(value >= current_hp for value in rolls)
+        return round(knockouts * 100 / len(rolls), 1)
+
+    @staticmethod
     def _clean_member(member: dict | None):
         if not isinstance(member, dict):
             return None
@@ -657,13 +669,18 @@ class WebServices:
             }
             if result.get("status") == "ok":
                 low, high = result["percent_min"], result["percent_max"]
+                verdict = self._verdict(low, high)
                 item.update({
                     "damage": [round(low, 1), round(high, 1)],
-                    "verdict": self._verdict(low, high),
+                    "verdict": verdict,
                     "attacker_stats": result.get("attacker_stats"),
                     "defender_stats": result.get("defender_stats"),
                     "rolls": result.get("rolls"), "note": result.get("note"),
                     "minimum": result.get("minimum"), "maximum": result.get("maximum"),
+                    "max_hp": result.get("max_hp"), "current_hp": result.get("current_hp"),
+                    "ko_chance": self._ko_chance(
+                        result.get("rolls"), result.get("current_hp")
+                    ) if verdict == "乱数击杀" else None,
                     "details": result.get("details"), "multi_hit": result.get("multi_hit"),
                 })
             moves.append(item)

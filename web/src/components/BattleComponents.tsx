@@ -65,20 +65,27 @@ export function PokemonSlot({ pokemon, side, selected, scanning, onSelect }: {
 
 export function DamageBar({ move, side = 'own' }: { move: Move; side?: 'own' | 'rival' }) {
   const [min, max] = move.damage ?? [0, 0]
+  const visibleMin = Math.min(min, 100)
+  const visibleMax = Math.min(max, 100)
+  const reachesLimit = max >= 100
+  const exceedsLimit = max > 100
+  const koChance = move.verdict === '乱数击杀' && move.ko_chance != null
+    ? `${Number.isInteger(move.ko_chance) ? move.ko_chance.toFixed(0) : move.ko_chance.toFixed(1)}%`
+    : null
   return (
-    <div className="damage-result" aria-label={`${move.name}，伤害 ${min}% 到 ${max}%，${move.verdict}`}>
+    <div className="damage-result" aria-label={`${move.name}，伤害 ${min}% 到 ${max}%，${move.verdict}${koChance ? `，命中后 ${koChance} 概率击杀` : ''}`}>
       <div className="damage-bar-copy">
         <span>{min}–{max}%</span>
-        <strong>{move.verdict}</strong>
+        <strong><span>{move.verdict}</span>{koChance && <small>命中后 {koChance} 概率击杀</small>}</strong>
       </div>
       <div className="damage-track" aria-hidden="true">
         <span className="threshold half" />
         <span className="threshold full" />
-        <span
+        {min < 100 && <span
           className={`damage-range ${side}`}
-          style={{ left: `${Math.min(min, 100)}%`, width: `${Math.max(4, Math.min(max, 100) - Math.min(min, 100))}%` }}
-        />
-        {max > 100 && <span className={`overflow-arrow ${side}`}>›</span>}
+          style={{ left: `${visibleMin}%`, width: `${Math.max(.75, visibleMax - visibleMin)}%` }}
+        />}
+        {reachesLimit && <span className={`damage-limit-marker ${side} ${exceedsLimit ? 'overflow' : ''}`} title={exceedsLimit ? '伤害超过 100%' : '伤害达到 100%'}>{exceedsLimit ? '+' : ''}</span>}
       </div>
     </div>
   )

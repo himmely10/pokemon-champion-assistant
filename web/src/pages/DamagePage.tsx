@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { Fragment, useEffect, useMemo, useState } from 'react'
 import { Calculator, ChevronDown, CircleHelp, Gauge, RotateCw, Shield, SlidersHorizontal, Zap } from 'lucide-react'
 import { api } from '../api'
 import type { AbilityOption, BattleState, DamageOptions, DamageResponse, Pokemon, PokemonDetail, Team, TeamMember } from '../model'
@@ -49,7 +49,7 @@ type DamagePageProps = {
 
 export function DamagePage({ teams, selectedTeamId, onTeamChange, own, ownMember, ownTeam, onOwnChange, rival, rivalTeam, onRivalChange }: DamagePageProps) {
   const [direction, setDirection] = useState<'own' | 'rival' | 'field'>('own')
-  const [selectedMove, setSelectedMove] = useState(0)
+  const [selectedMove, setSelectedMove] = useState<number | null>(null)
   const [selectedScenarios, setSelectedScenarios] = useState({ own: 0, rival: 0 })
   const [weather, setWeather] = useState('')
   const [terrain, setTerrain] = useState('')
@@ -130,7 +130,7 @@ export function DamagePage({ teams, selectedTeamId, onTeamChange, own, ownMember
         rivalBattle,
       })
       setResult(value)
-      setSelectedMove(0)
+      setSelectedMove(null)
       setSelectedScenarios({ own: 0, rival: 0 })
       setDirty(false)
     } catch (reason) {
@@ -147,7 +147,6 @@ export function DamagePage({ teams, selectedTeamId, onTeamChange, own, ownMember
   const activeScenarioIndex = direction === 'rival' ? selectedScenarios.rival : selectedScenarios.own
   const active = activeScenarios?.[activeScenarioIndex] ?? (direction === 'rival' ? result?.rival : result?.own)
   const displayed = active?.moves ?? []
-  const move = displayed[selectedMove]
   const ownAbilityOption = ownOptions?.abilities.find(item => item.id === ownAbility)
   const rivalAbilityOption = rivalOptions?.abilities.find(item => item.id === rivalAbility)
   const rivalChoices = useMemo(() => {
@@ -257,17 +256,20 @@ export function DamagePage({ teams, selectedTeamId, onTeamChange, own, ownMember
     <SpeedComparison result={result} ownName={displayedOwn.name} rivalName={displayedRival.name} />
 
     <section className="calculation-panel">
-      <div className="direction-tabs" role="tablist" aria-label="计算方向"><button type="button" role="tab" aria-selected={direction === 'own'} className={direction === 'own' ? 'active' : ''} onClick={() => { setDirection('own'); setSelectedMove(0) }}>我方打对手</button><button type="button" role="tab" aria-selected={direction === 'rival'} className={direction === 'rival' ? 'active' : ''} onClick={() => { setDirection('rival'); setSelectedMove(0) }}>对手打我方</button><button type="button" role="tab" aria-selected={direction === 'field'} className={direction === 'field' ? 'active' : ''} onClick={() => setDirection('field')}>计算口径</button></div>
+      <div className="direction-tabs" role="tablist" aria-label="计算方向"><button type="button" role="tab" aria-selected={direction === 'own'} className={direction === 'own' ? 'active' : ''} onClick={() => { setDirection('own'); setSelectedMove(null) }}>我方打对手</button><button type="button" role="tab" aria-selected={direction === 'rival'} className={direction === 'rival' ? 'active' : ''} onClick={() => { setDirection('rival'); setSelectedMove(null) }}>对手打我方</button><button type="button" role="tab" aria-selected={direction === 'field'} className={direction === 'field' ? 'active' : ''} onClick={() => { setDirection('field'); setSelectedMove(null) }}>计算口径</button></div>
       {direction === 'field' ? <CalculationScope result={result} weather={weather} terrain={terrain} ownBattle={ownBattle} rivalBattle={rivalBattle} /> : <>
-        <ScenarioSelector direction={direction} scenarios={activeScenarios ?? []} selected={activeScenarioIndex} onSelect={index => { setSelectedScenarios(value => ({ ...value, [direction]: index })); setSelectedMove(0) }} />
+        <ScenarioSelector direction={direction} scenarios={activeScenarios ?? []} selected={activeScenarioIndex} onSelect={index => { setSelectedScenarios(value => ({ ...value, [direction]: index })); setSelectedMove(null) }} />
         <div className="calculation-intro"><div><small>即时计算</small><h2>{active?.attacker.name ?? '正在准备'} 的招式</h2></div><div className="active-conditions"><span>{active?.preset ?? '预存配置'}</span><span>{active?.target_preset ?? '对手假设'}</span><span>{active?.speed.status === 'ok' ? `实算速度 ${active.speed.speed}` : '速度不可用'}</span></div></div>
         {loading && <div className="calculation-loading"><span className="spinner" />正在运行本地伤害引擎…</div>}
         {!loading && error && <div className="calculation-error">{error}</div>}
         {!loading && !error && <div className="damage-table" aria-label="伤害计算结果">
           <div className="damage-table-head"><span>招式</span><span>伤害范围</span><span>命中 / 先制</span><span>威力</span><span>击杀判断</span></div>
-          {displayed.map((item, index) => <button key={`${item.id ?? item.name}-${index}`} type="button" aria-label={`查看${item.name}的计算详情`} className={selectedMove === index ? 'selected' : ''} onClick={() => setSelectedMove(index)}><span className="damage-move"><strong>{item.name}</strong><TypeBadge type={item.type} /></span>{item.damage ? <DamageBar move={item} side={direction} /> : <span className="unavailable-result">{item.reason ?? '不可计算'}</span>}<span className="move-order"><b>{item.hit_chance?.percent == null ? '命中 —' : `命中 ${item.hit_chance.percent}%`}</b><small>{item.priority?.current == null ? '先制 —' : `先制 ${item.priority.current >= 0 ? '+' : ''}${item.priority.current}`}</small></span><span className="power-cell">{item.power ?? '—'}</span><span className="verdict-cell">{item.verdict ?? (item.category === '变化' ? '变化招式' : '不可用')}<ChevronDown size={16} /></span></button>)}
+          {displayed.map((item, index) => {
+            const expanded = selectedMove === index
+            const detailId = `move-detail-${direction}-${index}`
+            return <Fragment key={`${item.id ?? item.name}-${index}`}><button type="button" aria-label={`${expanded ? '收起' : '展开'}${item.name}的计算详情`} aria-expanded={expanded} aria-controls={detailId} className={expanded ? 'selected' : ''} onClick={() => setSelectedMove(current => current === index ? null : index)}><span className="damage-move"><strong>{item.name}</strong><TypeBadge type={item.type} /></span>{item.damage ? <DamageBar move={item} side={direction} /> : <span className="unavailable-result">{item.reason ?? '不可计算'}</span>}<span className="move-order"><b>{item.hit_chance?.percent == null ? '命中 —' : `命中 ${item.hit_chance.percent}%`}</b><small>{item.priority?.current == null ? '先制 —' : `先制 ${item.priority.current >= 0 ? '+' : ''}${item.priority.current}`}</small></span><span className="power-cell">{item.power ?? '—'}</span><span className="verdict-cell">{item.verdict ?? (item.category === '变化' ? '变化招式' : '不可用')}<ChevronDown className={`detail-chevron ${expanded ? 'expanded' : ''}`} size={16} /></span></button>{expanded && <MoveDetail id={detailId} move={item} dataset={result?.dataset_id} />}</Fragment>
+          })}
         </div>}
-        {move && <MoveDetail move={move} dataset={result?.dataset_id} />}
       </>}
     </section>
   </div>
@@ -338,8 +340,9 @@ function SpeedComparison({ result, ownName, rivalName }: { result: DamageRespons
   </section>
 }
 
-function MoveDetail({ move, dataset }: { move: DamageResponse['own']['moves'][number]; dataset?: string }) {
-  return <article className="calculation-detail expanded"><div className="move-detail-copy"><small>当前选择</small><h3>{move.name}</h3><p>{move.description}</p><div className="move-metrics"><span>{move.damage ? `${move.damage[0]}–${move.damage[1]}%` : '无直接伤害'}</span><span>{move.minimum != null ? `${move.minimum}–${move.maximum} HP` : 'HP 伤害 —'}</span><span>{move.hit_chance?.percent == null ? '命中 —' : `实际命中 ${move.hit_chance.percent}%`}</span><span>{move.priority?.current == null ? '先制 —' : `当前先制 ${move.priority.current >= 0 ? '+' : ''}${move.priority.current}`}</span></div></div><div className="effect-audit"><small>本招场况判定</small>{move.support_effects?.length ? move.support_effects.map((effect, index) => <div className={`effect-row ${effect.state}`} key={`${effect.key}-${effect.side}-${index}`}><Shield size={14} /><div><strong>{effect.side === 'attackerSide' ? '攻击方' : '防守方'} · {effect.label}</strong><span>{effect.state === 'applied' ? '已生效' : effect.state === 'ignored' ? '本招忽略' : '条件输入'}：{effect.reason}</span></div></div>) : <p>无额外辅助效果；携带辅助招式不会自动视为已生效。</p>}<div className="detail-notes">{move.hit_chance?.notes.map(note => <span key={note}>命中：{note}</span>)}{move.priority?.notes.map(note => <span key={note}>先制：{note}</span>)}<span>资料 {dataset?.slice(0, 12) ?? '—'}</span></div></div></article>
+function MoveDetail({ id, move, dataset }: { id: string; move: DamageResponse['own']['moves'][number]; dataset?: string }) {
+  const koChance = move.ko_chance == null ? null : `${Number.isInteger(move.ko_chance) ? move.ko_chance.toFixed(0) : move.ko_chance.toFixed(1)}%`
+  return <article id={id} className="calculation-detail expanded"><div className="move-detail-copy"><small>招式详情</small><h3>{move.name}</h3><p>{move.description}</p><div className="move-metrics"><span>{move.damage ? `${move.damage[0]}–${move.damage[1]}%` : '无直接伤害'}</span><span>{move.minimum != null ? `${move.minimum}–${move.maximum} HP` : 'HP 伤害 —'}</span>{koChance && <span className="ko-chance-detail">命中后击杀概率 {koChance}</span>}<span>{move.hit_chance?.percent == null ? '命中 —' : `实际命中 ${move.hit_chance.percent}%`}</span><span>{move.priority?.current == null ? '先制 —' : `当前先制 ${move.priority.current >= 0 ? '+' : ''}${move.priority.current}`}</span></div></div><div className="effect-audit"><small>本招场况判定</small>{move.support_effects?.length ? move.support_effects.map((effect, index) => <div className={`effect-row ${effect.state}`} key={`${effect.key}-${effect.side}-${index}`}><Shield size={14} /><div><strong>{effect.side === 'attackerSide' ? '攻击方' : '防守方'} · {effect.label}</strong><span>{effect.state === 'applied' ? '已生效' : effect.state === 'ignored' ? '本招忽略' : '条件输入'}：{effect.reason}</span></div></div>) : <p>无额外辅助效果；携带辅助招式不会自动视为已生效。</p>}<div className="detail-notes">{move.hit_chance?.notes.map(note => <span key={note}>命中：{note}</span>)}{move.priority?.notes.map(note => <span key={note}>先制：{note}</span>)}{move.current_hp != null && move.max_hp != null && <span>目标当前 HP {move.current_hp} / {move.max_hp}</span>}<span>资料 {dataset?.slice(0, 12) ?? '—'}</span></div></div></article>
 }
 
 function CalculationScope({ result, weather, terrain, ownBattle, rivalBattle }: { result: DamageResponse | null; weather: string; terrain: string; ownBattle: BattleState; rivalBattle: BattleState }) {

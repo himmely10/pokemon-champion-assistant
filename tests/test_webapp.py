@@ -237,6 +237,13 @@ def test_web_battle_state_defaults_to_full_hp_percentage():
     assert WebServices._battle_state({"hp": 37})["hp"] == 37
 
 
+def test_random_ko_chance_uses_damage_rolls_against_current_hp():
+    assert WebServices._ko_chance([90, 100, 110, 120], 101) == 50.0
+    assert WebServices._ko_chance([90, 100, 110, 120], 120) == 25.0
+    assert WebServices._ko_chance([], 100) is None
+    assert WebServices._ko_chance([[90], [110]], 100) is None
+
+
 def test_http_host_serves_spa_and_blocks_foreign_origin(services, tmp_path):
     (tmp_path / "index.html").write_text("<title>Champion Lab</title>", encoding="utf-8")
     server = create_server(port=0, static_root=tmp_path, services=services)

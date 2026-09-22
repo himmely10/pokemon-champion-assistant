@@ -26,7 +26,7 @@ const member: Team['members'][number] = {
   nature: null, ability: null, item: null, moves: [null, null, null, null], pokemon,
 }
 const bootstrap: Bootstrap = {
-  app: { name: 'Champion Lab', version: '0.4.1', dataset_id: 'test', pokemon_forms: 1, api: 'local' },
+  app: { name: 'Champion Lab', version: '0.4.2', dataset_id: 'test', pokemon_forms: 1, api: 'local' },
   settings: { host: '127.0.0.1', port: 4455, source: '', theme: 'light', reduced_motion: false, password_in_memory: false, password_saved: false, user_directory: 'test' },
   teams: [], featured: [pokemon],
 }

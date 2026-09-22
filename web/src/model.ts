@@ -32,6 +32,9 @@ export type Move = {
   rolls?: number[]
   minimum?: number | null
   maximum?: number | null
+  max_hp?: number | null
+  current_hp?: number | null
+  ko_chance?: number | null
   hit_chance?: { percent: number | null; notes: string[] }
   priority?: { original: number | null; current: number | null; notes: string[] }
   support_effects?: Array<{ key: string; label: string; side: 'attackerSide' | 'defenderSide'; state: 'applied' | 'ignored' | 'context'; reason: string }>

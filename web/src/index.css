@@ -239,17 +239,19 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
 
 .damage-result { min-width: 150px; }
 .damage-bar-copy { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 5px; font-family: "Bahnschrift", "Segoe UI", sans-serif; font-size: 11px; }
-.damage-bar-copy strong { color: var(--text); font-family: "Microsoft YaHei UI",sans-serif; font-size: 10px; }
-.damage-track { position: relative; height: 10px; background: color-mix(in srgb,var(--border) 60%,transparent); border-radius: 2px; }
+.damage-bar-copy strong { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: flex-end; gap: 3px 6px; color: var(--text); font-family: "Microsoft YaHei UI",sans-serif; font-size: 10px; text-align: right; }
+.damage-bar-copy strong small { color: var(--danger); font-size: 9px; font-weight: 700; }
+.damage-track { position: relative; height: 10px; overflow: hidden; background: color-mix(in srgb,var(--border) 60%,transparent); border-radius: 2px; }
 .damage-range { position: absolute; top: 1px; bottom: 1px; min-width: 4px; border-radius: 2px; }
 .damage-range.own { background: var(--trainer); }
 .damage-range.rival { background: var(--rival); }
 .threshold { position: absolute; top: -2px; bottom: -2px; width: 1px; background: var(--border-strong); opacity: .55; }
 .threshold.half { left: 50%; }
 .threshold.full { right: 0; }
-.overflow-arrow { position: absolute; right: -4px; top: -7px; font-size: 17px; font-weight: 800; }
-.overflow-arrow.own { color: var(--trainer); }
-.overflow-arrow.rival { color: var(--rival); }
+.damage-limit-marker { position: absolute; top: 1px; right: 1px; bottom: 1px; z-index: 1; width: 4px; border-radius: 2px 0 0 2px; }
+.damage-limit-marker.overflow { width: 16px; display: grid; place-items: center; color: #fff; font: 800 9px/1 Bahnschrift,"Segoe UI",sans-serif; }
+.damage-limit-marker.own { background: var(--trainer); }
+.damage-limit-marker.rival { background: var(--rival); }
 
 .intel-panel { margin-top: 14px; border-radius: 12px; overflow: hidden; }
 .tab-list, .direction-tabs, .dex-tabs { display: flex; gap: 2px; padding: 0 14px; background: var(--surface-muted); border-bottom: 1px solid var(--border); }
@@ -483,7 +485,9 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
 .move-order b { color: var(--text); font-size: 10px; }
 .power-cell { text-align: center; font-family: Bahnschrift,sans-serif; font-size: 15px; font-weight: 600; }
 .verdict-cell { display: flex; align-items: center; justify-content: space-between; color: var(--text-secondary); font-size: 11px; }
-.calculation-detail { display: grid; grid-template-columns: minmax(0,1fr) 1fr; gap: 24px; padding: 16px 18px; background: var(--surface-muted); }
+.detail-chevron { flex: 0 0 auto; transition: transform .16s ease; }
+.detail-chevron.expanded { transform: rotate(180deg); }
+.calculation-detail { display: grid; grid-template-columns: minmax(0,1fr) 1fr; gap: 24px; padding: 16px 18px; background: var(--surface-muted); border-bottom: 1px solid var(--border); box-shadow: inset 3px 0 var(--trainer); }
 .calculation-detail h3 { margin: 2px 0 4px; font-size: 16px; }
 .calculation-detail p { margin: 0; color: var(--text-secondary); font-size: 11px; line-height: 1.6; }
 .calculation-detail dl { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; margin: 0; }
@@ -493,6 +497,7 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
 .move-detail-copy { min-width: 0; }
 .move-metrics { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 12px; }
 .move-metrics span, .detail-notes span { padding: 4px 6px; color: var(--text-secondary); background: var(--surface); border: 1px solid var(--border); border-radius: 4px; font-size: 9px; }
+.move-metrics .ko-chance-detail { color: var(--danger); border-color: color-mix(in srgb,var(--danger) 30%,var(--border)); font-weight: 700; }
 .effect-audit { display: grid; gap: 6px; }
 .effect-audit > p { padding: 8px; background: var(--surface); border-radius: 6px; }
 .effect-row { display: flex; align-items: flex-start; gap: 7px; padding: 7px; background: var(--surface); border-left: 3px solid var(--border-strong); border-radius: 4px; }

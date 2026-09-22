@@ -90,6 +90,6 @@ def test_source_version_matches_frontend_and_installer_template():
     root = Path(__file__).parents[1]
     frontend = json.loads((root / 'web/package.json').read_text(encoding='utf-8'))
     installer = (root / 'packaging/installer.iss').read_text(encoding='utf-8')
-    assert __version__ == '0.4.1'
+    assert __version__ == '0.4.2'
     assert frontend['version'] == __version__
     assert f'#define AppVersion "{__version__}"' in installer
