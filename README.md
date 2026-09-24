@@ -1,11 +1,11 @@
 # Pokemon Champion Assistant
 
 
-**当前开发版本：v0.3.0 Windows 候选版。** [版本说明](docs/releases/v0.3.0.md) · [构建与发行](docs/release.md)
+**当前版本：v0.4.2 Windows 候选版。** [下载安装包](https://github.com/himmely10/pokemon-champion-assistant/releases/tag/v0.4.2) · [版本说明](docs/releases/v0.4.2.md) · [构建与发行](docs/release.md)
 
-最新公开安装包仍为 v0.2.1，包含 Python、Node、Qt、OCR 模型和离线公共资料。普通用户运行
-`PokemonChampionAssistant-0.2.1-windows-x64-Setup.exe` 后，从开始菜单启动；无需另外安装开发环境。
-安装包及 SHA-256 摘要见 GitHub Releases；本地与干净 Windows 系统验证范围见 [打包验收](docs/validation/packaging.md)。
+这是一个面向《宝可梦 Champions》对战的本地桌面助手。在同一个窗口中管理己方队伍、识别对手选队截图、比较双向伤害与速度线，并浏览本地宝可梦资料。网页界面通过仅监听 `127.0.0.1` 的本地 API 调用现有计算模块；它不是需要上传队伍或截图的在线服务。
+
+Windows 用户可从 GitHub Releases 下载 `PokemonChampionAssistant-0.4.2-windows-x64-Setup.exe`，安装后从开始菜单打开 **Pokemon Champion Assistant**。安装包包含 Python、Node.js、Qt、OCR 模型和离线资料，无需另外准备开发环境。安装包 SHA-256：`BA7A56A3DF3C0DEFCB1D37897C5395248A480F2A35A73FD54400E2108DCDBAA5`。
 
 新版从“资料更新”手动更新、导入 ZIP 或回滚；自动检查可选每天／三天／每周／关闭，
 仅软件运行时执行。新资料在下一次截图分析生效，已经打开的伤害对照保留原版本。
@@ -14,13 +14,13 @@
 
 ## Windows 安装包（普通用户）
 
-v0.3.0 安装包只提供一个用户入口：**Pokemon Champion Assistant**。它在原生窗口中直接承载 Champion Lab 网页工作台，队伍、伤害、资料百科与设置均在同一窗口切换，不再维护另一套弹窗界面。
+安装包只提供一个用户入口：**Pokemon Champion Assistant**。它在原生窗口中承载 Champion Lab 工作台，队伍仓库、伤害计算、资料百科与设置可在同一窗口切换。队伍仓库支持手动编辑，以及从本地截图或 OBS 导入待核对的队伍配置。伤害页支持形态切换、常用配置、条件场况、乱数击杀概率和展开招式详情。
 
-安装后无需另行安装 Python、Node.js 或 pnpm。`ChampionWorker.exe` 是内部更新与自检组件，不是启动入口；即使误双击也会进入同一个工作台，并且不会显示持续存在的 CMD 窗口。当前仍是未签名的候选包，干净 Windows 11 虚拟机验收状态见 [打包验收](docs/validation/packaging.md)。
+`ChampionWorker.exe` 是内部更新与自检组件，不是启动入口。当前安装包未签名；已完成开发机上的冻结自检和静默安装验证，尚未在无开发环境的全新 Windows 11 虚拟机上完成验收。队伍和 OBS 设置保存在当前用户目录，升级或卸载默认保留；验证成功后的 OBS 密码由 Windows 当前用户凭据加密保存。
 
 ## 从源码运行（开发者）
 
-## 首次安装（Windows）
+### 首次安装（Windows）
 
 安装官方 CPython 3.13 和 Node.js 22 或更高版本，并确保 `py -3.13 --version`、`node --version` 可用。克隆仓库后，在项目目录打开 PowerShell：
 
